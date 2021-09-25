@@ -94,40 +94,10 @@
 			"map"		"mvm_underworld_rc2"
 			"popfile"		"mvm_underworld_rc2"
 		}
-		"19"
-		{
-			"map"		"mvm_bigrock"
-			"popfile"		"mvm_bigrock"
-		}
-		"20"
-		{
-			"map"		"mvm_coaltown"
-			"popfile"		"mvm_coaltown"
-		}
-		"21"
-		{
-			"map"		"mvm_decoy"
-			"popfile"		"mvm_decoy"
-		}
 		"22"
 		{
 			"map"		"mvm_ghost_town"
 			"popfile"		"mvm_ghost_town"
-		}
-		"23"
-		{
-			"map"		"mvm_mannhattan"
-			"popfile"		"mvm_mannhattan"
-		}
-		"24"
-		{
-			"map"		"mvm_mannworks"
-			"popfile"		"mvm_mannworks"
-		}
-		"25"
-		{
-			"map"		"mvm_rottenburg"
-			"popfile"		"mvm_rottenburg"
 		}
 	}
 }
