@@ -43,28 +43,6 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" [$SIGSEGV]
 	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" [$SIGSEGV]
 
-	ExtraSpawnPoint // CONSTRAINT TANK SPAWN - spawns right next to the cactus for a meme
-	{
-		Name	"cactus_jack_sends_his_regards" 
-		TeamNum	3
-		X	"-1186.0"                     
-		Y	"550.0"                  
-		Z	"3945.0"   
-	}
-	ExtraTankPath [$SIGSEGV]
-	{
-		Name	"tank_path_blimp_cliffside"
-		Node	"-448 7552 1010"
-		Node	"-448 6272 1010"
-		Node	"-576 6144 1010"
-		Node	"-1024 5696 1010"	// ayo the 69's here
-		Node	"-1024 5376 1010"
-		Node	"-1024 3200 1010"
-		Node	"-1024 2496 1280"
-		Node	"-1024 1920 1280"
-		Node	"-576 704 1280"
-		Node	"-128 704 1280"
-	}
 	PointTemplates	[$SIGSEGV]
 	{
 		killcrumpkin	// no. more. crumpkins! no. more. bullshit! no. more. giants bazinga-ing the whole team because they picked up a crumpkin! nooooooooooooo mooooooooooooooore abusing crumpkin drops! you're getting killed
