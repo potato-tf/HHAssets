@@ -76,8 +76,8 @@
 		}
 		"15"
 		{
-			"map"		"mvm_silentsky_event_rc4c1"
-			"popfile"		"mvm_silentsky_event_rc4c1"
+			"map"		"mvm_nightsky_rc4d"
+			"popfile"		"mvm_nightsky_rc4d"
 		}
 		"16"
 		{
