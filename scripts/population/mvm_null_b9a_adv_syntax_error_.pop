@@ -1033,7 +1033,7 @@ WaveSchedule
 				TFBot
 				{
 					Class Soldier
-					Skill Normal
+					Skill Hard
 					Name "Scrapped Soldier"
 				}
 			}
@@ -1463,7 +1463,7 @@ WaveSchedule
 		Explanation [$SIGSEGV]
 		{
 			Line "{grey}You better hope {blue}they {grey}find you."
-			Line "{grey}Before {green}her project {grey}finds them."
+			Line "{grey}Before {red}the others {grey}find them."
 			Line "{white}We are smarter than {blue}Them."
 			Line "{grey}That's why we didn't resist."
 		}
@@ -1787,10 +1787,10 @@ WaveSchedule
 	{
 		Explanation [$SIGSEGV]
 		{
-			Line "{Grey}When {Blue}they {Grey}find you, help them."
-			Line "{Grey}When {Blue}they {Grey}find you, help us."
-			Line "{Grey}Break {Red}it"
-			Line "{Red}Destroy her creation like it broke us."
+			Line "{Grey}When {Blue}you {Grey}escape, don't stop."
+			Line "{Grey}When {Blue}you {Grey}escape, destroy {red}them."
+			Line "{Red}Break them apart."
+			Line "{Red}Send them all down here with the rest of us."
 		}
 		StartWaveOutput
 		{

@@ -11,7 +11,7 @@
 // - Reskins for bullet banner, crit banner, and haste banner
 // - Reskins for lilchewchew and worker bots
 // - Isolated rotor attachments from the R-CAT Flying Sentry, provided gray reskin as well
-// - Made the entirety of the logic for the gunslinger deploying red bots instead of sentries.
+// - Made the entirety of the logic for the gunslinger deploying red bots instead of minis
 // - Provided bases for some ent odds and ends
 // - General advice and suggestions for ent stuff I had to work out
 
@@ -36,7 +36,6 @@ WaveSchedule
 	GiantsDropRareSpells	1 	 
 	SpellDropRateCommon		0 	 
 	SpellDropRateGiant		0 
-    	
     
     PrecacheModel "models/bots/boss_bot/boss_tank_color.mdl"
     PrecacheModel "models/props_tumb/mvm/tank_shield.mdl"
@@ -76,7 +75,7 @@ WaveSchedule
 		"Meteor Shower" 1
 		"Summon Monoculus" 2
         "Minify" 1
-		"Summon Skeletons" 3
+		"Summon Skeletons" 2
 	}
     //one item (#1) 
     ItemAttributes 
@@ -183,7 +182,7 @@ WaveSchedule
     ItemAttributes
     {
         ItemName "The Pain Train"
-        "damage bonus" 2
+        //"damage bonus" 2
         "dmg taken from bullets increased" 1
         "bleeding duration" 5
         "hit self on miss" 1
@@ -204,10 +203,11 @@ WaveSchedule
     ItemAttributes //I really liked this on royal's mission so I just had to get permission to modify it and put it here
     {
         ItemName "The Gunslinger"
-        //"maxammo metal increased" 20
+        "upgrade rate decrease" 2
+        "build rate bonus" 0.5
         "mult dispenser rate" 1.5
         "mult teleporter recharge rate" 0.5
-        "building cost reduction" 2
+        "mod sentry cost" 1.5
         "special item description" "+55% damage bonus on all primaries and the short circuit, +100% damage bonus for all melees. Constructs allied robots instead of sentries"
     }
     //one item (#12)
@@ -215,7 +215,7 @@ WaveSchedule
     {
         ItemName "TF_WEAPON_SMG"
         "max health additive bonus" 25
-        "damage bonus" 1.35
+        "damage bonus" 1.30
         "minicritboost on kill" 5
         "dmg pierces resists absorbs" 1
         "can headshot" 1
@@ -296,6 +296,46 @@ WaveSchedule
 		Name "amputator_template"
 		ItemName "The Amputator" 
 	}
+    PlayerItemEquipSpawnTemplate
+	{
+		Name "paintrain_template"
+		ItemName "The Pain Train"
+	}
+    PlayerItemEquipSpawnTemplate
+	{
+		Name "boots_equipped"
+		ItemName "Ali Baba's Wee Booties"
+	}
+    PlayerItemEquipSpawnTemplate
+	{
+		Name "boots_equipped"
+		ItemName "The Bootlegger"
+	}
+    PlayerItemEquipSpawnTemplate
+	{
+		Name "boots_equipped"
+		ItemName "The B.A.S.E. Jumper"
+	}
+    PlayerItemEquipSpawnTemplate
+	{
+		Name "shield_equipped"
+		ClassName "tf_wearable_demoshield"
+	}
+    PlayerItemEquipSpawnTemplate
+    {
+        Name "paintrain_fix_template"
+        ClassName "tf_weapon_grenadelauncher"
+    }
+    PlayerItemEquipSpawnTemplate
+    {
+        Name "paintrain_fix_template"
+        ClassName "tf_weapon_pipebomblauncher"
+    }
+    PlayerItemEquipSpawnTemplate
+    {
+        Name "paintrain_fix_template"
+        ClassName "tf_weapon_cannon"
+    }
     PlayerShootTemplate [$SIGSEGV]  
 	{
 		Name rpg_shoottemplate 
@@ -587,6 +627,7 @@ WaveSchedule
                 "collect currency on kill" 1
                 "airblast vulnerability multiplier" 0
                 "engy dispenser radius increased" 5
+                "health from healers reduced" .1
             }
             SpawnTemplate "redbot_init"
             SpawnTemplate "prevent_redbotbuilding"
@@ -962,6 +1003,7 @@ WaveSchedule
                         "medigun bullet resist deployed" 0.75
                         "ubercharge rate bonus" 50
                         "mod weapon blocks healing" 1
+                        "health from healers reduced" .1
                     }
                     
                     CharacterAttributes
@@ -988,6 +1030,11 @@ WaveSchedule
 				Skill Expert
 				Action Mobber
                 WeaponRestrictions MeleeOnly
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/scout/bot_scout.mdl"
 				SpawnTemplate "builtbot"
@@ -1000,6 +1047,11 @@ WaveSchedule
 				Skill Expert
 				Action Mobber
                 WeaponRestrictions MeleeOnly
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/engineer/bot_engineer.mdl"
 				SpawnTemplate "builtbot"
@@ -1012,6 +1064,11 @@ WaveSchedule
 				Skill Expert
 				Action Mobber
                 WeaponRestrictions MeleeOnly
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/sniper/bot_sniper.mdl"
 				SpawnTemplate "builtbot"
@@ -1024,6 +1081,11 @@ WaveSchedule
 				Skill Expert
 				Action Mobber
                 WeaponRestrictions MeleeOnly
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/demo/bot_demo.mdl"
 				SpawnTemplate "builtbot"
@@ -1035,6 +1097,11 @@ WaveSchedule
                 ClassIcon red2_lite
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/heavy/bot_heavy.mdl"
 				SpawnTemplate "builtbot"
@@ -1601,8 +1668,8 @@ WaveSchedule
             WaitForAllDead "w2_b"
             DoneOutput
             {
-                Target gry_nuclearoption
-                Action Enable
+                Target grybot_end_relay
+                Action Trigger
             }
         }
         /////////////
@@ -1651,6 +1718,7 @@ WaveSchedule
                     "dmg taken mult from special damage type 2" 2.5
                 }
                 Addcond { Name TF_COND_REPROGRAMMED_NEUTRAL }
+                SpawnTemplate "grybot_killswitch"
             }
         }
         /////////////////
@@ -1693,6 +1761,7 @@ WaveSchedule
                 CharacterAttributes
                 {
                     "collect currency on kill" 1
+                    "health from healers reduced" 0.1
                 }
                 SpawnTemplate "redbot_init"
                 UseHumanModel 2
@@ -1730,6 +1799,7 @@ WaveSchedule
                 CharacterAttributes
                 {
                     "collect currency on kill" 1
+                    "health from healers reduced" 0.1
                 }
                 SpawnTemplate "redbot_init"
                 UseHumanModel 2
@@ -1751,6 +1821,11 @@ WaveSchedule
                 Name "Scout"
                 Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/scout/bot_scout.mdl"
 				SpawnTemplate "builtbot"
@@ -1762,6 +1837,11 @@ WaveSchedule
                 ClassIcon red2_lite
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/pyro/bot_pyro.mdl"
 				SpawnTemplate "builtbot"
@@ -1773,6 +1853,11 @@ WaveSchedule
                 ClassIcon red2_lite
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/sniper/bot_sniper.mdl"
 				SpawnTemplate "builtbot"
@@ -1784,6 +1869,11 @@ WaveSchedule
                 ClassIcon red2_lite
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
                 WeaponRestrictions MeleeOnly
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/demo/bot_demo.mdl"
@@ -2130,6 +2220,7 @@ WaveSchedule
                 CharacterAttributes
                 {
                     "collect currency on kill" 1
+                    "health from healers reduced" .1
                 }
                 SpawnTemplate "redbot_init" 
                 UseHumanModel 2
@@ -2157,6 +2248,7 @@ WaveSchedule
                 CharacterAttributes
                 {
                     "collect currency on kill" 1
+                    "health from healers reduced" .1
                 }
                 SpawnTemplate "redbot_init"
                 UseHumanModel 2
@@ -2188,6 +2280,7 @@ WaveSchedule
                 CharacterAttributes
                 {
                     "collect currency on kill" 1
+                    "health from healers reduced" .1
                 }
                 InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
 			    {
@@ -2221,6 +2314,11 @@ WaveSchedule
                 Item "The Crusader's Crossbow"
                 Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/medic/bot_medic.mdl"
 				SpawnTemplate "builtbot"
@@ -2232,6 +2330,11 @@ WaveSchedule
                 ClassIcon red2_lite
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/pyro/bot_pyro.mdl"
 				SpawnTemplate "builtbot"
@@ -2254,6 +2357,11 @@ WaveSchedule
 			    }
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/heavy/bot_heavy.mdl"
 				SpawnTemplate "builtbot"
@@ -2646,6 +2754,7 @@ WaveSchedule
 					Slot 2
 					Model "models/weapons/c_models/c_fists_of_steel_gray/c_fists_of_steel_gray.mdl"
 				}
+                SpawnTemplate "grybot_killswitch"
             }
         }
         WaveSpawn
@@ -2684,6 +2793,7 @@ WaveSchedule
                     "dmg taken mult from special damage type 2" 2.5
                 }
                 Addcond { Name TF_COND_REPROGRAMMED_NEUTRAL }
+                SpawnTemplate "grybot_killswitch"
             }
         }
         WaveSpawn
@@ -2692,7 +2802,7 @@ WaveSchedule
             WaitForAllDead "w4_c"
             DoneOutput
             {
-                Target gry_nuclearoption
+                Target grybot_end_relay
                 Action Enable
             }
         }
@@ -2733,6 +2843,11 @@ WaveSchedule
                 ClassIcon red2_lite
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/sniper/bot_sniper.mdl"
 				SpawnTemplate "builtbot"
@@ -2749,6 +2864,11 @@ WaveSchedule
 			    MaxVisionRange 1000
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/pyro/bot_pyro.mdl"
 				SpawnTemplate "builtbot"
@@ -2762,6 +2882,11 @@ WaveSchedule
                 WeaponRestrictions SecondaryOnly
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/scout/bot_scout.mdl"
 				SpawnTemplate "builtbot"
@@ -2775,6 +2900,11 @@ WaveSchedule
                 WeaponRestrictions SecondaryOnly
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/soldier/bot_soldier.mdl"
 				SpawnTemplate "builtbot"
@@ -2786,6 +2916,11 @@ WaveSchedule
                 ClassIcon red2_lite
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/demo/bot_demo.mdl"
 				SpawnTemplate "builtbot"
@@ -2833,7 +2968,7 @@ WaveSchedule
                	DisableSmokestack 1  
 				OnKilledOutput
 				{	
-					Target boss_dead_relay
+					Target vactank_dead_relay
 					Action Trigger
 				}
 				OnBombDroppedOutput
@@ -3077,6 +3212,7 @@ WaveSchedule
                     Template T_TFBot_Pyro_VacTankBuster_Allyred
                     ClassIcon red2_lite
                     SpawnTemplate "redbot_init"
+                    SpawnTemplate "vactankbuster_logic_pyro"
                     UseHumanModel 2
                 } 
                 TFBot
@@ -3084,6 +3220,7 @@ WaveSchedule
                     Template T_TFBot_Scout_VacTankBuster_Allyred
                     ClassIcon red2_lite
                     SpawnTemplate "redbot_init"
+                    SpawnTemplate "vactankbuster_logic_scout"
                     UseHumanModel 2
                 } 
                 TFBot
@@ -3091,6 +3228,7 @@ WaveSchedule
                     Template T_TFBot_Soldier_VacTankBuster_Allyred
                     ClassIcon red2_lite
                     SpawnTemplate "redbot_init"
+                    SpawnTemplate "vactankbuster_logic_soldier"
                     UseHumanModel 2
                 } 
                 TFBot
@@ -3098,6 +3236,7 @@ WaveSchedule
                     Template T_TFBot_Engineer_VacTankBuster_Allyred
                     ClassIcon red2_lite
                     SpawnTemplate "redbot_init"
+                    SpawnTemplate "vactankbuster_logic_engineer"
                     UseHumanModel 2
                 } 
                 TFBot
@@ -3105,6 +3244,7 @@ WaveSchedule
                     Template T_TFBot_Sniper_VacTankBuster_Allyred
                     ClassIcon red2_lite
                     SpawnTemplate "redbot_init"
+                    SpawnTemplate "vactankbuster_logic_sniper"
                     UseHumanModel 2
                 }
             }
@@ -3123,6 +3263,27 @@ WaveSchedule
                 ClassIcon red2_lite
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
+				AddCond { Name TF_COND_REPROGRAMMED }
+                UseCustomModel "models/bots/sniper/bot_sniper.mdl"
+				SpawnTemplate "builtbot"
+				Tag bot_build
+			}
+			TFBot
+			{
+				Template T_TFBot_Sniper_Huntsman
+                ClassIcon red2_lite
+				Skill Expert
+				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/sniper/bot_sniper.mdl"
 				SpawnTemplate "builtbot"
@@ -3140,6 +3301,33 @@ WaveSchedule
                 StripItemSlot 2
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
+				AddCond { Name TF_COND_REPROGRAMMED }
+                UseCustomModel "models/bots/medic/bot_medic.mdl"
+				SpawnTemplate "builtbot"
+				Tag bot_build
+			}
+			TFBot
+			{
+				Class Medic
+                ClassIcon red2_lite
+                Name "Syringe Gun Medic"
+                WeaponRestrictions PrimaryOnly
+                Attributes AlwaysCrit
+                AimAt Head
+                StripItemSlot 1
+                StripItemSlot 2
+				Skill Expert
+				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/medic/bot_medic.mdl"
 				SpawnTemplate "builtbot"
@@ -3159,8 +3347,13 @@ WaveSchedule
 					IfSeeTarget 1 //When set to 1, this task activates only when the bot can see the target player (Default 0 - Always activate)
 					Type "Primary" // Weapon slot, possible values:
 				}
-				Skill Expert
+				Skill Normal
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/heavy/bot_heavy.mdl"
 				SpawnTemplate "builtbot"
@@ -3474,7 +3667,7 @@ WaveSchedule
             Name "w6_b_gray_popper1"
             WaitForAllDead "w6_a"
             Where spawnbot_floatingrock2
-            TotalCount 3
+            TotalCount 21
             MaxActive 3
             SpawnCount 3
             WaitBeforeStarting 2
@@ -3485,7 +3678,7 @@ WaveSchedule
             { 
                 Template T_TFBot_Scout_SodaPopper
                 NoPushaway 1
-                ClassIcon gry_lite 
+                ClassIcon gry_lite
                 UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
                 Action Mobber
                 Attributes DisableDodge
@@ -3501,211 +3694,6 @@ WaveSchedule
                 Addcond { Name TF_COND_REPROGRAMMED_NEUTRAL }
                 
             }
-        
-        }
-        WaveSpawn
-        {
-            Name "w6_b_gray_popper2"
-            WaitForAllDead "w6_b_gray_popper1"
-            Where spawnbot_floatingrock2
-            TotalCount 3
-            MaxActive 3
-            SpawnCount 3
-            WaitBeforeStarting 2
-            WaitBetweenSpawns 8
-            Support Limited
-            
-            TFBot
-            { 
-                Template T_TFBot_Scout_SodaPopper_GetVip
-                NoPushaway 1
-                ClassIcon gry_lite 
-                UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
-                Action Mobber
-                Attributes DisableDodge
-                Tag bot_gry
-                
-                CustomEyeGlowColor "255 0 0"
-                CharacterAttributes
-                {
-                    "collect currency on kill" 1
-                    "crit mod disabled" 0
-                    "dmg taken mult from special damage type 2" 2.5
-                }
-                Addcond { Name TF_COND_REPROGRAMMED_NEUTRAL }
-                
-            }
-        
-        }
-        WaveSpawn
-        {
-            Name "w6_b_gray_popper3"
-            WaitForAllDead "w6_b_gray_popper2"
-            Where spawnbot_floatingrock2
-            TotalCount 3
-            MaxActive 3
-            SpawnCount 3
-            WaitBeforeStarting 2
-            WaitBetweenSpawns 8
-            Support Limited
-            
-            TFBot
-            { 
-                Template T_TFBot_Scout_SodaPopper
-                NoPushaway 1
-                ClassIcon gry_lite 
-                UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
-                Action Mobber
-                Attributes DisableDodge
-                Tag bot_gry
-                
-                CustomEyeGlowColor "255 0 0"
-                CharacterAttributes
-                {
-                    "collect currency on kill" 1
-                    "crit mod disabled" 0
-                    "dmg taken mult from special damage type 2" 2.5
-                }
-                Addcond { Name TF_COND_REPROGRAMMED_NEUTRAL }
-                
-            }
-        
-        }
-        WaveSpawn
-        {
-            Name "w6_b_gray_popper4"
-            WaitForAllDead "w6_b_gray_popper3"
-            Where spawnbot_floatingrock2
-            TotalCount 3
-            MaxActive 3
-            SpawnCount 3
-            WaitBeforeStarting 2
-            WaitBetweenSpawns 8
-            Support Limited
-            
-            TFBot
-            { 
-                Template T_TFBot_Scout_SodaPopper_GetVip
-                NoPushaway 1
-                ClassIcon gry_lite 
-                UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
-                Action Mobber
-                Attributes DisableDodge
-                Tag bot_gry
-                
-                CustomEyeGlowColor "255 0 0"
-                CharacterAttributes
-                {
-                    "collect currency on kill" 1
-                    "crit mod disabled" 0
-                    "dmg taken mult from special damage type 2" 2.5
-                }
-                Addcond { Name TF_COND_REPROGRAMMED_NEUTRAL }
-                
-            }
-        
-        }
-        WaveSpawn
-        {
-            Name "w6_b_gray_popper5"
-            WaitForAllDead "w6_b_gray_popper4"
-            Where spawnbot_floatingrock2
-            TotalCount 3
-            MaxActive 3
-            SpawnCount 3
-            WaitBeforeStarting 2
-            WaitBetweenSpawns 8
-            Support Limited
-            
-            TFBot
-            { 
-                Template T_TFBot_Scout_SodaPopper
-                NoPushaway 1
-                ClassIcon gry_lite 
-                UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
-                Action Mobber
-                Attributes DisableDodge
-                Tag bot_gry
-                
-                CustomEyeGlowColor "255 0 0"
-                CharacterAttributes
-                {
-                    "collect currency on kill" 1
-                    "crit mod disabled" 0
-                    "dmg taken mult from special damage type 2" 2.5
-                }
-                Addcond { Name TF_COND_REPROGRAMMED_NEUTRAL }
-                
-            }
-        
-        }
-        WaveSpawn
-        {
-            Name "w6_b_gray_popper6"
-            WaitForAllDead "w6_b_gray_popper5"
-            Where spawnbot_floatingrock2
-            TotalCount 3
-            MaxActive 3
-            SpawnCount 3
-            WaitBeforeStarting 2
-            WaitBetweenSpawns 8
-            Support Limited
-            
-            TFBot
-            { 
-                Template T_TFBot_Scout_SodaPopper_GetVip
-                NoPushaway 1
-                ClassIcon gry_lite 
-                UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
-                Action Mobber
-                Attributes DisableDodge
-                Tag bot_gry
-                
-                CustomEyeGlowColor "255 0 0"
-                CharacterAttributes
-                {
-                    "collect currency on kill" 1
-                    "crit mod disabled" 0
-                    "dmg taken mult from special damage type 2" 2.5
-                }
-                Addcond { Name TF_COND_REPROGRAMMED_NEUTRAL }
-                
-            }
-        
-        }
-        WaveSpawn
-        {
-            Name "w6_b_gray_popper7"
-            WaitForAllDead "w6_b_gray_popper6"
-            Where spawnbot_floatingrock2
-            TotalCount 3
-            MaxActive 3
-            SpawnCount 3
-            WaitBeforeStarting 2
-            WaitBetweenSpawns 8
-            Support Limited
-            
-            TFBot
-            { 
-                Template T_TFBot_Scout_SodaPopper_GetVip
-                NoPushaway 1
-                ClassIcon gry_lite 
-                UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
-                Action Mobber
-                Attributes DisableDodge
-                Tag bot_gry
-                
-                CustomEyeGlowColor "255 0 0"
-                CharacterAttributes
-                {
-                    "collect currency on kill" 1
-                    "crit mod disabled" 0
-                    "dmg taken mult from special damage type 2" 2.5
-                }
-                Addcond { Name TF_COND_REPROGRAMMED_NEUTRAL }
-                
-            }
-        
         }
         WaveSpawn
         {
@@ -3822,6 +3810,7 @@ WaveSchedule
                 CharacterAttributes
                 {
                     "collect currency on kill" 1
+                    "health from healers reduced" .1
                 }
                 SpawnTemplate "redbot_init"
                 UseHumanModel 2
@@ -4086,6 +4075,27 @@ WaveSchedule
                 ClassIcon red2_lite
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
+				AddCond { Name TF_COND_REPROGRAMMED }
+                UseCustomModel "models/bots/pyro/bot_pyro.mdl"
+				SpawnTemplate "builtbot"
+				Tag bot_build
+			}
+			TFBot
+			{
+				Template T_TFBot_Pyro_Phlog
+                ClassIcon red2_lite
+				Skill Expert
+				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/pyro/bot_pyro.mdl"
 				SpawnTemplate "builtbot"
@@ -4118,6 +4128,11 @@ WaveSchedule
 			    }
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/soldier/bot_soldier.mdl"
 				SpawnTemplate "builtbot"
@@ -4132,6 +4147,30 @@ WaveSchedule
                 WeaponRestrictions PrimaryOnly
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
+				AddCond { Name TF_COND_REPROGRAMMED }
+                UseCustomModel "models/bots/scout/bot_scout.mdl"
+				SpawnTemplate "builtbot"
+				Tag bot_build
+			}
+			TFBot
+			{
+				Class Scout
+                ClassIcon red2_lite
+                Action Mobber
+                Item "The Soda Popper"
+                WeaponRestrictions PrimaryOnly
+				Skill Expert
+				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/scout/bot_scout.mdl"
 				SpawnTemplate "builtbot"
@@ -4147,6 +4186,11 @@ WaveSchedule
                 Attributes AlwaysCrit
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/demo/bot_demo.mdl"
 				SpawnTemplate "builtbot"
@@ -4303,7 +4347,7 @@ WaveSchedule
             TFBot
             {
                 Class Sniper
-			    Name "Bowman Rapid Fire"
+			    Name "Split Fire Bowman"
 			    Item "The Huntsman"
 			    ClassIcon sniper_bow_ignite
 			    Skill Hard
@@ -4338,7 +4382,6 @@ WaveSchedule
             SpawnCount 1
             WaitBeforeStarting 1
             WaitBetweenSpawns 10
-        
             TotalCurrency 200
             
             TFBot
@@ -4446,7 +4489,7 @@ WaveSchedule
         WaveSpawn // Dummy
         {
             WaitForAllDead "w7_b"
-            WaitBeforeStarting	32
+            WaitBeforeStarting	33
             DoneOutput
             {
                 Target "chewchewsign"
@@ -4662,8 +4705,28 @@ WaveSchedule
         
             TFBot
             { 
-                Template T_TFBot_Giant_DemoMan_PrinceTavish
-                ClassIcon demoknight
+                Class Demoman
+			    ClassIcon demoknight_giant
+			    Name "Giant Demoknight"
+			    Skill Expert
+			    Health 3300
+			    Item "Prince Tavish's Crown"
+			    Item "The Eyelander"
+			    Item "Ali Baba's Wee Booties"
+			    WeaponRestrictions MeleeOnly
+			    Attributes MiniBoss
+			    ItemAttributes
+			    {
+			    	ItemName "The Eyelander"
+			    	"critboost on kill" 3
+			    }
+			    CharacterAttributes
+			    {
+			    	"move speed bonus" 0.5
+			    	"damage force reduction" 0.5
+			    	"airblast vulnerability multiplier" 0.5
+			    	"override footstep sound set" 4
+			    }
                 NoIdleSound 1
 			    Item "Zombie Demo"
                 UseHumanModel 2
@@ -4953,6 +5016,7 @@ WaveSchedule
                     "dmg taken from bullets reduced" .25
                     "dmg taken from crit reduced" .1
                     "collect currency on kill" 1
+                    "health from healers reduced" .1
 			    }
                 AddCond { Name TF_COND_REPROGRAMMED }
                 SpawnTemplate "redbot_init"
@@ -4988,6 +5052,7 @@ WaveSchedule
                     "dmg taken from bullets reduced" .25
                     "dmg taken from crit reduced" .1
                     "collect currency on kill" 1
+                    "health from healers reduced" .1
 			    }
                 AddCond { Name TF_COND_REPROGRAMMED }
                 SpawnTemplate "redbot_init"
@@ -5024,6 +5089,7 @@ WaveSchedule
                     "dmg taken from bullets reduced" .75
                     "dmg taken from crit reduced" .7
                     "collect currency on kill" 1
+                    "health from healers reduced" .1
 			    }
                 SpawnTemplate "redbot_init"
                 UseHumanModel 2
@@ -5117,8 +5183,10 @@ WaveSchedule
                 {
                     "collect currency on kill" 1
                     "engy dispenser radius increased" 5
+                    "health from healers reduced" .1
                 }
                 SpawnTemplate "redbot_init"
+                SpawnTemplate "prevent_redbotbuilding"
                 UseHumanModel 2
                 AddCond { Name TF_COND_REPROGRAMMED }
             } 
@@ -5137,8 +5205,13 @@ WaveSchedule
                 ClassIcon red2_lite
                 Name "Heater Heavy"
                 Item "The Huo Long Heatmaker"
-				Skill Expert
+				Skill Hard
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/heavy/bot_heavy.mdl"
 				SpawnTemplate "builtbot"
@@ -5160,6 +5233,37 @@ WaveSchedule
 			    }
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
+				AddCond { Name TF_COND_REPROGRAMMED }
+                UseCustomModel "models/bots/sniper/bot_sniper.mdl"
+				SpawnTemplate "builtbot"
+				Tag bot_build
+			}
+			TFBot
+			{
+				Class Sniper
+                ClassIcon red2_lite
+			    Name "Bowman Rapid Fire"
+			    Item "The Huntsman"
+			    ItemAttributes
+			    {
+			    	ItemName "The Huntsman"
+			    	"fire rate bonus" 0.6
+                    "arrow mastery" 2
+                    "set damagetype ignite" 1
+                    "attach particle effect" 13
+			    }
+				Skill Expert
+				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/sniper/bot_sniper.mdl"
 				SpawnTemplate "builtbot"
@@ -5193,6 +5297,50 @@ WaveSchedule
                 }
 				Skill Expert
 				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
+				AddCond { Name TF_COND_REPROGRAMMED }
+                UseCustomModel "models/bots/engineer/bot_engineer.mdl"
+				SpawnTemplate "builtbot"
+                SpawnTemplate "prevent_redbotbuilding"
+				Tag bot_build
+			} 
+			TFBot
+			{
+				Name "Gunslinger"
+                ClassIcon red2_lite
+                Class Engineer
+                MaxVisionRange 1200
+                Item "The Widowmaker"
+                Item "The Gunslinger"
+                UseMeleeThreatPrioritization 1
+                Attributes AlwaysFireWeapon
+                FireInput
+                {
+                    Target "switch_to_sentry_mode"
+                    Action "Trigger"
+                    Delay 0
+                    Cooldown 7
+                    IfSeeTarget 0
+                }
+                FireInput
+                {
+                    Target "switch_to_shotgun_mode"
+                    Action "Trigger"
+                    Delay 0
+                    Cooldown 3
+                    IfSeeTarget 1
+                }
+				Skill Expert
+				Action Mobber
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				AddCond { Name TF_COND_REPROGRAMMED }
                 UseCustomModel "models/bots/engineer/bot_engineer.mdl"
 				SpawnTemplate "builtbot"
@@ -5474,7 +5622,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom hit sound" "grayworker_sounds/body_medium_impact_hard5.wav"
-                "dmg pierces resists absorbs" 1
+                //"dmg pierces resists absorbs" 1
 			}
             CharacterAttributes
 			{
@@ -5558,12 +5706,13 @@ WaveSchedule
             Item "The Buff Banner"
             CharacterAttributes
 			{
-                "increase buff duration"	        99
-                "dmg taken from blast reduced"      0.25
-                "dmg taken from fire reduced"       0.25
-                "dmg taken from bullets reduced"    0.25
-                "dmg taken from crit reduced"       0.1
+                "increase buff duration"	        9
+                "dmg taken from blast reduced"      0.75
+                "dmg taken from fire reduced"       0.75
+                "dmg taken from bullets reduced"    0.75
+                "dmg taken from crit reduced"       0.7
                 "collect currency on kill"          1
+                "health from healers reduced" .1
 			}
             ItemAttributes
             {
@@ -5650,6 +5799,7 @@ WaveSchedule
                 "dmg taken from fire reduced" .5
                 "dmg taken from bullets reduced" .5
                 "dmg taken from crit reduced" .4
+                "health from healers reduced" .1
 			}
         }
         T_TFBot_Giant_Soldier_Critbanner
@@ -6044,139 +6194,7 @@ WaveSchedule
                 }
             }
         }
-        T_TFBot_PotionTosser
-        {
-            Class Sniper
-            Skill Expert
-            ClassIcon potion_trap_lite
-            Name "Potion Tosser"
-            Action Mobber
-            UseCustomModel "models/bots/sniper/bot_sniper_gray.mdl" 
-            CustomEyeGlowColor "255 0 0"
-            WeaponRestrictions SecondaryOnly
-            StripItemSlot 0
-            Attributes DisableDodge
-            Item "Jarate"
-            ItemAttributes
-            {
-                ItemName "Jarate"
-                "SPELL: set item tint RGB" 5
-                "fire rate bonus" 2.5
-                "effect cond override" 19
-                "attach particle effect" 178
-                //"effect bar recharge rate increased" 1
-            }
-            NoPushaway 1
-            Tag bot_gry
-            AddCond { Name TF_COND_REPROGRAMMED_NEUTRAL }
-            //FireInput
-            //{
-            //    Target "switch_to_melee"
-            //    Action "Trigger"
-            //    Delay 0
-            //    Cooldown 3
-            //    IfSeeTarget 0
-            //}
-            //FireInput
-            //{
-            //    Target "switch_to_potion"
-            //    Action "Trigger"
-            //    Delay 0
-            //    Cooldown 7
-            //    IfSeeTarget 1
-            //}
-            FireInput
-            {
-                Target "potion_effect_switch_relay"
-                Action "Trigger"
-                Delay 0
-                Cooldown 6
-                IfSeeTarget 0
-            }
-        }
-        T_TFBot_Scout_SodaPopper_GetVip
-        {
-            Class Scout
-            Skill Normal
-            Action Mobber
-            NoPushaway 1
-            Item "The Soda Popper"
-            WeaponRestrictions PrimaryOnly
-            Tag bot_popper
-            ItemAttributes
-            {
-                ItemName "The Soda Popper"
-                "hype decays over time" -10
-            }
-            Attributes DisableDodge
-            EventChangeAttributes
-            {
-                Default
-                {
-                    FireInput [$SIGSEGV] 
-				    {
-				    	Target "sodapopper_push_relay" //Entity name to use
-				    	Action "Trigger" //Input to fire
-				    	Param "" //Parameter to use
-				    	Delay 0.001 //Delay before firing the input
-				    	Cooldown 1 //Cooldown between firing the input
-				    	Repeats 1 //How many times should the input be fired
-				    	//IfHealthBelow 100 //When set, the task activates only when the bot health is below specified value
-				    }
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
-			        {
-                        Target "cometo_me"
-                        AimTarget "cometo_me"
-                    	Delay 0.1 // Time before the first task starts (Default: 10)
-                        Repeats 1 // How many times should bot do the task in total (Default: 0 - Infinite)
-                        Cooldown 0 //Time between each task (Default: 10)
-                        Duration 10 // How long should the ai be interrupted
-                        //OnDoneChangeAttributes "JumpAndDet"
-			        }
-                    FireWeapon [$SIGSEGV]  //Periodically fires weapon
-                    {
-                        Delay 0.1 //Time before the first fire input starts (Default: 10)
-                        Cooldown 0.65 //Time between each fire input (Default: 10)
-                        Repeats 1 //How many times should bot use the fire input in total (Default: 0 - Infinite)
-				    	//IfSeeTarget 1 //When set to 1, this task activates only when the bot can see the target player (Default 0 - Always activate)
-                        Duration 0.5 //How long should the button be pressed (Default: 0.1)
-				    	Type "Secondary" 
-				    }
-                    FireWeapon [$SIGSEGV]  //Periodically fires weapon
-                    {
-                        Delay 0.45 //Time before the first fire input starts (Default: 10)
-                        Cooldown 0.5 //Time between each fire input (Default: 10)
-                        Repeats 5 //How many times should bot use the fire input in total (Default: 0 - Infinite)
-				    	//IfSeeTarget 1 //When set to 1, this task activates only when the bot can see the target player (Default 0 - Always activate)
-                        Duration 0.15 //How long should the button be pressed (Default: 0.1)
-				    	Type "Jump" 
-				    }
-                    ChangeAttributes [$SIGSEGV]  
-			        {
-        				Delay 2.5
-        				Cooldown 1
-        				Repeats 0
-        				Name "AttackVip"
-			        }
-                }
-                AttackVip
-                {
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
-			        {
-                        Target "vip_target"
-                        AimTarget "vip_target"
-        	        	Delay 1 // Time before the first task starts (Default: 10)
-                        Repeats 1 // How many times should bot do the task in total (Default: 0 - Infinite)
-                        Cooldown 0 //Time between each task (Default: 10)
-                        Duration 300 // How long should the ai be interrupted
-			        }
-                }
-                VipDeadPopper
-                {
-                    WeaponRestrictions PrimaryOnly
-                }
-            }
-        }
+        
         T_TFBot_Scout_SodaPopper
         {
             Class Scout
@@ -6196,16 +6214,16 @@ WaveSchedule
             {
                 Default
                 {
-                    FireInput [$SIGSEGV] 
-				    {
-				    	Target "sodapopper_push_relay" //Entity name to use
-				    	Action "Trigger" //Input to fire
-				    	Param "" //Parameter to use
-				    	Delay 0.001 //Delay before firing the input
-				    	Cooldown 1 //Cooldown between firing the input
-				    	Repeats 1 //How many times should the input be fired
-				    	//IfHealthBelow 100 //When set, the task activates only when the bot health is below specified value
-				    }
+                    //FireInput [$SIGSEGV] 
+				    //{
+				    //	Target "sodapopper_push_relay" //Entity name to use
+				    //	Action "Trigger" //Input to fire
+				    //	Param "" //Parameter to use
+				    //	Delay 0.001 //Delay before firing the input
+				    //	Cooldown 1 //Cooldown between firing the input
+				    //	Repeats 1 //How many times should the input be fired
+				    //	//IfHealthBelow 100 //When set, the task activates only when the bot health is below specified value
+				    //}
                     InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "cometo_me"
@@ -6234,13 +6252,14 @@ WaveSchedule
                         Duration 0.15 //How long should the button be pressed (Default: 0.1)
 				    	Type "Jump" 
 				    }
-                    ChangeAttributes [$SIGSEGV]  
-			        {
-        				Delay 2.5
-        				Cooldown 1
-        				Repeats 0
-        				Name "AttackTank"
-			        }
+                    FireInput [$SIGSEGV] 
+				    {
+				    	Target "popper_target_relay"
+				    	Action "Trigger"
+				    	Delay 2.5
+				    	Cooldown 5
+				    	Repeats 0
+				    }
                 }
                 AttackTank
                 {
@@ -6254,7 +6273,19 @@ WaveSchedule
                         Duration 300 // How long should the ai be interrupted
 			        }
                 }
-                TankDeadPopper
+                AttackVip
+                {
+                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+			        {
+                        Target "vip_target"
+                        AimTarget "vip_target"
+        	        	Delay 1 // Time before the first task starts (Default: 10)
+                        Repeats 1 // How many times should bot do the task in total (Default: 0 - Infinite)
+                        Cooldown 0 //Time between each task (Default: 10)
+                        Duration 300 // How long should the ai be interrupted
+			        }
+                }
+                AttackPlayers
                 {
                     WeaponRestrictions PrimaryOnly
                 }
@@ -6302,6 +6333,7 @@ WaveSchedule
             CharacterAttributes
             {
                 "collect currency on kill" 1
+                "health from healers reduced" .1
             }
             CustomWeaponModel [$SIGSEGV]
 			{
@@ -6318,53 +6350,38 @@ WaveSchedule
             Item "Wanderer's Wear"
             Item "Spawn Camper"
             Item "The Back Scratcher"
-            InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+            FireInput [$SIGSEGV] 
 			{
-                Target "kill_me"
-                AimTarget "kill_me"
-        		Delay 1 // Time before the first task starts (Default: 10)
-                Repeats 1 // How many times should bot do the task in total (Default: 0 - Infinite)
-                Cooldown 0 //Time between each task (Default: 10)
-                Duration 300 // How long should the ai be interrupted
+				Target "vactank_aliveness_check"
+				Action "Compare"
+				Delay 0.1
+				Cooldown 5
+				Repeats 1
 			}
             EventChangeAttributes
             {
-                VacSwitchFire
+                AttackTank
                 {
-                    WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                    {
-                        Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                        Cooldown 1 //Time between each weapon switch (Default: 10)
-                        Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					    Type "Melee" // Weapon slot, possible values:
-                    }
+                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+			        {
+                        Target "kill_me"
+                        AimTarget "kill_me"
+        	        	Delay 1 // Time before the first task starts (Default: 10)
+                        Repeats 1 // How many times should bot do the task in total (Default: 0 - Infinite)
+                        Cooldown 0 //Time between each task (Default: 10)
+                        Duration 300 // How long should the ai be interrupted
+			        }
                 }
-                VacSwitchBlast
+                AttackZombies
                 {
-                    WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                    {
-                        Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                        Cooldown 1 //Time between each weapon switch (Default: 10)
-                        Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					    Type "Primary" // Weapon slot, possible values:
-                    }
-				}
-                VacSwitchBullet
-                {
-                    WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                    {
-                        Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                        Cooldown 1 //Time between each weapon switch (Default: 10)
-                        Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					    Type "Primary" // Weapon slot, possible values:
-                    }
-				}
-                    
+                    WeaponRestrictions PrimaryOnly
+                }
             }
                 
             CharacterAttributes
             {
                 "collect currency on kill" 1
+                "health from healers reduced" .1
             }
           
             AddCond { Name TF_COND_REPROGRAMMED }
@@ -6379,52 +6396,38 @@ WaveSchedule
             Item "The Flapjack"
             Item "The Soda Popper"
             Item "Necro Smasher"
-            InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+            FireInput [$SIGSEGV] 
 			{
-                Target "kill_me"
-                AimTarget "kill_me"
-        		Delay 1 // Time before the first task starts (Default: 10)
-                Repeats 1 // How many times should bot do the task in total (Default: 0 - Infinite)
-                Cooldown 0 //Time between each task (Default: 10)
-                Duration 300 // How long should the ai be interrupted
+				Target "vactank_aliveness_check"
+				Action "Compare"
+				Delay 0.1
+				Cooldown 5
+				Repeats 1
 			}
             EventChangeAttributes
             {
-                VacSwitchFire
+                AttackTank
                 {
-                    WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                    {
-                        Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                        Cooldown 1 //Time between each weapon switch (Default: 10)
-                        Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					    Type "Primary" // Weapon slot, possible values:
-                    }
+                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+			        {
+                        Target "kill_me"
+                        AimTarget "kill_me"
+        	        	Delay 1 // Time before the first task starts (Default: 10)
+                        Repeats 1 // How many times should bot do the task in total (Default: 0 - Infinite)
+                        Cooldown 0 //Time between each task (Default: 10)
+                        Duration 300 // How long should the ai be interrupted
+			        }
                 }
-                VacSwitchBlast
+                AttackZombies
                 {
-                    WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                    {
-                        Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                        Cooldown 1 //Time between each weapon switch (Default: 10)
-                        Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					    Type "Primary" // Weapon slot, possible values:
-                    }
-				}
-                VacSwitchBullet
-                {
-                    WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                    {
-                        Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                        Cooldown 1 //Time between each weapon switch (Default: 10)
-                        Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					    Type "Melee" // Weapon slot, possible values:
-                    }
-				}      
+                    WeaponRestrictions PrimaryOnly
+                }
             }
             
             CharacterAttributes
             {
-                    "collect currency on kill" 1
+                "collect currency on kill" 1
+                "health from healers reduced" .1
             }
        
             AddCond { Name TF_COND_REPROGRAMMED }
@@ -6442,41 +6445,37 @@ WaveSchedule
                 ItemName "TF_Weapon_Rocketlauncher"
                 "no self blast dmg" 1
             }
-            InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+            FireInput [$SIGSEGV] 
 			{
-                Target "kill_me"
-                AimTarget "kill_me"
-        		Delay 1 // Time before the first task starts (Default: 10)
-                Repeats 1 // How many times should bot do the task in total (Default: 0 - Infinite)
-                Cooldown 0 //Time between each task (Default: 10)
-                Duration 300 // How long should the ai be interrupted
+				Target "vactank_aliveness_check"
+				Action "Compare"
+				Delay 0.1
+				Cooldown 5
+				Repeats 1
 			}
             EventChangeAttributes
             {
-                VacSwitchBullet
+                AttackTank
                 {
-                    WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                    {
-                        Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                        Cooldown 1 //Time between each weapon switch (Default: 10)
-                        Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					    Type "Primary" // Weapon slot, possible values:
-                    }
+                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+			        {
+                        Target "kill_me"
+                        AimTarget "kill_me"
+        	        	Delay 1 // Time before the first task starts (Default: 10)
+                        Repeats 1 // How many times should bot do the task in total (Default: 0 - Infinite)
+                        Cooldown 0 //Time between each task (Default: 10)
+                        Duration 300 // How long should the ai be interrupted
+			        }
                 }
-                VacSwitchBlast
+                AttackZombies
                 {
-                    WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                    {
-                        Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                        Cooldown 1 //Time between each weapon switch (Default: 10)
-                        Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					    Type "Secondary" // Weapon slot, possible values:
-                    }
-                }        
+                    WeaponRestrictions PrimaryOnly
+                }
             }
             CharacterAttributes
             {
                 "collect currency on kill" 1
+                "health from healers reduced" .1
             }
 
             AddCond { Name TF_COND_REPROGRAMMED }
@@ -6491,51 +6490,37 @@ WaveSchedule
             Item "The Trencher's Tunic"
             Item "The Widowmaker"
             Item "Necro Smasher"
-            InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+            FireInput [$SIGSEGV] 
 			{
-                Target "kill_me"
-                AimTarget "kill_me"
-        		Delay 1 // Time before the first task starts (Default: 10)
-                Repeats 1 // How many times should bot do the task in total (Default: 0 - Infinite)
-                Cooldown 0 //Time between each task (Default: 10)
-                Duration 300 // How long should the ai be interrupted
+				Target "vactank_aliveness_check"
+				Action "Compare"
+				Delay 0.1
+				Cooldown 5
+				Repeats 1
 			}
             EventChangeAttributes
             {
-                VacSwitchFire
+                AttackTank
                 {
-                    WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                    {
-                            Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                            Cooldown 1 //Time between each weapon switch (Default: 10)
-                            Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					        Type "Primary" // Weapon slot, possible values:
-                    }
+                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+			        {
+                        Target "kill_me"
+                        AimTarget "kill_me"
+        	        	Delay 1 // Time before the first task starts (Default: 10)
+                        Repeats 1 // How many times should bot do the task in total (Default: 0 - Infinite)
+                        Cooldown 0 //Time between each task (Default: 10)
+                        Duration 300 // How long should the ai be interrupted
+			        }
                 }
-                VacSwitchBlast
+                AttackZombies
                 {
-                WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                {
-                    Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                    Cooldown 1 //Time between each weapon switch (Default: 10)
-                    Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					Type "Primary" // Weapon slot, possible values:
-                    }
-				}
-                VacSwitchBullet
-                {
-                    WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                    {
-                        Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                        Cooldown 1 //Time between each weapon switch (Default: 10)
-                        Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					    Type "Melee" // Weapon slot, possible values:
-                    }
-				}
+                    WeaponRestrictions PrimaryOnly
+                }
             }
             CharacterAttributes
             {
                 "collect currency on kill" 1
+                "health from healers reduced" .1
             }
             AddCond { Name TF_COND_REPROGRAMMED }
         }
@@ -6550,44 +6535,38 @@ WaveSchedule
             Item "Rifleman's Regalia"
             Item "The Huntsman"
             Item "Necro Smasher"
+            FireInput [$SIGSEGV] 
+			{
+				Target "vactank_aliveness_check"
+				Action "Compare"
+				Delay 0.1
+				Cooldown 5
+				Repeats 1
+			}
             EventChangeAttributes
             {
-                VacSwitchFire
+                AttackTank
                 {
-                    WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                    {
-                            Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                            Cooldown 1 //Time between each weapon switch (Default: 10)
-                            Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					        Type "Primary" // Weapon slot, possible values:
-                    }
+                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+			        {
+                        Target "kill_me"
+                        AimTarget "kill_me"
+        	        	Delay 1 // Time before the first task starts (Default: 10)
+                        Repeats 1 // How many times should bot do the task in total (Default: 0 - Infinite)
+                        Cooldown 0 //Time between each task (Default: 10)
+                        Duration 300 // How long should the ai be interrupted
+			        }
                 }
-                VacSwitchBlast
+                AttackZombies
                 {
-                WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                {
-                    Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                    Cooldown 1 //Time between each weapon switch (Default: 10)
-                    Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					Type "Primary" // Weapon slot, possible values:
-                    }
-				}
-                VacSwitchBullet
-                {
-                    WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
-                    {
-                        Delay 0.1 //Time before the first weapon switch starts (Default: 10)
-                        Cooldown 1 //Time between each weapon switch (Default: 10)
-                        Repeats 0 //How many times should bot switch weapons in total (Default: 0 - Infinite)
-					    Type "Melee" // Weapon slot, possible values:
-                    }
-				} 
+                    WeaponRestrictions PrimaryOnly
+                }
             }
             CharacterAttributes
             {
                 "collect currency on kill" 1
+                "health from healers reduced" .1
             }
-            UseCustomModel "models/bots/sniper/bot_sniper.mdl" 
             AddCond { Name TF_COND_REPROGRAMMED }
         }
         T_TFBot_Laszlo_Chief
@@ -6614,14 +6593,14 @@ WaveSchedule
                 "voice pitch scale" 0.7
 		    	"move speed bonus"	0.5
 		    	"damage force reduction" 0.4
-		    	//"airblast vulnerability multiplier" 0.4
+		    	"airblast vulnerability multiplier" 0.7
 		    	//"override footstep sound set" 3
-		    	//"airblast vertical vulnerability multiplier" 0.1
+		    	"airblast vertical vulnerability multiplier" 0.5
 		    	"rage giving scale" 0.1
                 "voice pitch scale" 0.7
                 "cancel falling damage" 1
                 "no_jump" 1
-                "health from healers reduced" 0
+                "health from healers reduced" 0.1
                 
                 "collect currency on kill" 1
 		    }
@@ -6696,6 +6675,7 @@ WaveSchedule
                 "faster reload rate" .4
                 "fire rate bonus" .6
                 "heal on kill" 50
+                "health from healers reduced" 0
             }
             EventChangeAttributes
             {
@@ -7375,6 +7355,11 @@ WaveSchedule
             ///////////////
             //Miscellaneous
             ///////////////
+            logic_relay
+            {
+                "targetname" "grybot_end_relay"
+                "OnTrigger" "grybot_killswitch_relay*,Trigger,,0,-1"
+            }
             training_annotation
             {
               "targetname"   "tombgonesign2"
@@ -8300,40 +8285,70 @@ WaveSchedule
 				"OnCase01"   "!parent,SetDamageFilter,filter_blast,0,-1"
 				"OnCase01"   "tank_shield_blast,Enable,,0,-1"
 				"OnCase01"   "tank_vacc_timer_noblast,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase01" "player,$ChangeAttributes,VacSwitchBlast,0,-1"
+                "OnCase01" "pyro_switch_to_primary*,Trigger,,0,-1"
+                "OnCase01" "sniper_switch_to_primary*,Trigger,,0,-1"
+                "OnCase01" "scout_switch_to_primary*,Trigger,,0,-1"
+                "OnCase01" "engineer_switch_to_primary*,Trigger,,0,-1"
+                "OnCase01" "soldier_switch_to_secondary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase02"   "!parent,SetDamageFilter,filter_blast,0,-1"
 				"OnCase02"   "tank_shield_blast,Enable,,0,-1"
 				"OnCase02"   "tank_vacc_timer_noblast,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase02" "player,$ChangeAttributes,VacSwitchBlast,0,-1"
+                "OnCase02" "pyro_switch_to_primary*,Trigger,,0,-1"
+                "OnCase02" "sniper_switch_to_primary*,Trigger,,0,-1"
+                "OnCase02" "scout_switch_to_primary*,Trigger,,0,-1"
+                "OnCase02" "engineer_switch_to_primary*,Trigger,,0,-1"
+                "OnCase02" "soldier_switch_to_secondary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase03"   "!parent,SetDamageFilter,filter_blast,0,-1"
 				"OnCase03"   "tank_shield_blast,Enable,,0,-1"
 				"OnCase03"   "tank_vacc_timer_noblast,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase03" "player,$ChangeAttributes,VacSwitchBlast,0,-1"
+                "OnCase03" "pyro_switch_to_primary*,Trigger,,0,-1"
+                "OnCase03" "sniper_switch_to_primary*,Trigger,,0,-1"
+                "OnCase03" "scout_switch_to_primary*,Trigger,,0,-1"
+                "OnCase03" "engineer_switch_to_primary*,Trigger,,0,-1"
+                "OnCase03" "soldier_switch_to_secondary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
                 ///////////////////////////////////////////////////////////////////////////
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase04"   "!parent,SetDamageFilter,filter_fire,0,-1"
 				"OnCase04"   "tank_shield_fire,Enable,,0,-1"
 				"OnCase04"   "tank_vacc_timer_nofire,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase04" "player,$ChangeAttributes,VacSwitchFire,0,-1"
+                "OnCase04" "pyro_switch_to_melee*,Trigger,,0,-1"
+                "OnCase04" "sniper_switch_to_primary*,Trigger,,0,-1"
+                "OnCase04" "scout_switch_to_primary*,Trigger,,0,-1"
+                "OnCase04" "engineer_switch_to_primary*,Trigger,,0,-1"
+                "OnCase04" "soldier_switch_to_primary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase05"   "!parent,SetDamageFilter,filter_fire,0,-1"
 				"OnCase05"   "tank_shield_fire,Enable,,0,-1"
 				"OnCase05"   "tank_vacc_timer_nofire,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase05" "player,$ChangeAttributes,VacSwitchFire,0,-1"
+                "OnCase05" "pyro_switch_to_melee*,Trigger,,0,-1"
+                "OnCase05" "sniper_switch_to_primary*,Trigger,,0,-1"
+                "OnCase05" "scout_switch_to_primary*,Trigger,,0,-1"
+                "OnCase05" "engineer_switch_to_primary*,Trigger,,0,-1"
+                "OnCase05" "soldier_switch_to_primary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase06"   "!parent,SetDamageFilter,filter_fire,0,-1"
 				"OnCase06"   "tank_shield_fire,Enable,,0,-1"
 				"OnCase06"   "tank_vacc_timer_nofire,Enable,,0,-1"	
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase06" "player,$ChangeAttributes,VacSwitchFire,0,-1"
+                "OnCase06" "pyro_switch_to_melee*,Trigger,,0,-1"
+                "OnCase06" "sniper_switch_to_primary*,Trigger,,0,-1"
+                "OnCase06" "scout_switch_to_primary*,Trigger,,0,-1"
+                "OnCase06" "engineer_switch_to_primary*,Trigger,,0,-1"
+                "OnCase06" "soldier_switch_to_primary*,Trigger,,0,-1"
 			}
 			
 			logic_case
@@ -8343,40 +8358,70 @@ WaveSchedule
 				"OnCase01"   "!parent,SetDamageFilter,filter_bullet,0,-1"
 				"OnCase01"   "tank_shield_bullet,Enable,,0,-1"
 				"OnCase01"   "tank_vacc_timer_nobullet,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase01" "player,$ChangeAttributes,VacSwitchBullet,0,-1"
+                "OnCase01" "pyro_switch_to_primary*,Trigger,,0,-1"
+                "OnCase01" "sniper_switch_to_melee*,Trigger,,0,-1"
+                "OnCase01" "scout_switch_to_melee*,Trigger,,0,-1"
+                "OnCase01" "engineer_switch_to_melee*,Trigger,,0,-1"
+                "OnCase01" "soldier_switch_to_primary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase02"   "!parent,SetDamageFilter,filter_bullet,0,-1"
 				"OnCase02"   "tank_shield_bullet,Enable,,0,-1"
 				"OnCase02"   "tank_vacc_timer_nobullet,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase02" "player,$ChangeAttributes,VacSwitchBullet,0,-1"
+                "OnCase02" "pyro_switch_to_primary*,Trigger,,0,-1"
+                "OnCase02" "sniper_switch_to_melee*,Trigger,,0,-1"
+                "OnCase02" "scout_switch_to_melee*,Trigger,,0,-1"
+                "OnCase02" "engineer_switch_to_melee*,Trigger,,0,-1"
+                "OnCase02" "soldier_switch_to_primary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase03"   "!parent,SetDamageFilter,filter_bullet,0,-1"
 				"OnCase03"   "tank_shield_bullet,Enable,,0,-1"
 				"OnCase03"   "tank_vacc_timer_nobullet,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase03" "player,$ChangeAttributes,VacSwitchBullet,0,-1"
+                "OnCase03" "pyro_switch_to_primary*,Trigger,,0,-1"
+                "OnCase03" "sniper_switch_to_melee*,Trigger,,0,-1"
+                "OnCase03" "scout_switch_to_melee*,Trigger,,0,-1"
+                "OnCase03" "engineer_switch_to_melee*,Trigger,,0,-1"
+                "OnCase03" "soldier_switch_to_primary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
                 ///////////////////////////////////////////////////////////////////////////
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase04"   "!parent,SetDamageFilter,filter_fire,0,-1"
 				"OnCase04"   "tank_shield_fire,Enable,,0,-1"
 				"OnCase04"   "tank_vacc_timer_nofire,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase04" "player,$ChangeAttributes,VacSwitchFire,0,-1"
+                "OnCase04" "pyro_switch_to_melee*,Trigger,,0,-1"
+                "OnCase04" "sniper_switch_to_primary*,Trigger,,0,-1"
+                "OnCase04" "scout_switch_to_primary*,Trigger,,0,-1"
+                "OnCase04" "engineer_switch_to_primary*,Trigger,,0,-1"
+                "OnCase04" "soldier_switch_to_primary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase05"   "!parent,SetDamageFilter,filter_fire,0,-1"
 				"OnCase05"   "tank_shield_fire,Enable,,0,-1"
 				"OnCase05"   "tank_vacc_timer_nofire,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase05" "player,$ChangeAttributes,VacSwitchFire,0,-1"
+                "OnCase05" "pyro_switch_to_melee*,Trigger,,0,-1"
+                "OnCase05" "sniper_switch_to_primary*,Trigger,,0,-1"
+                "OnCase05" "scout_switch_to_primary*,Trigger,,0,-1"
+                "OnCase05" "engineer_switch_to_primary*,Trigger,,0,-1"
+                "OnCase05" "soldier_switch_to_primary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase06"   "!parent,SetDamageFilter,filter_fire,0,-1"
 				"OnCase06"   "tank_shield_fire,Enable,,0,-1"	
 				"OnCase06"   "tank_vacc_timer_nofire,Enable,,0,-1"
-                //Added EventAttributes Logic
-                "OnCase06" "player,$ChangeAttributes,VacSwitchFire,0,-1"		
+                //Added Weapon Swapping Logic
+                "OnCase06" "player,$ChangeAttributes,VacSwitchFire,0,-1"
+                "OnCase06" "pyro_switch_to_melee*,Trigger,,0,-1"
+                "OnCase06" "sniper_switch_to_primary*,Trigger,,0,-1"
+                "OnCase06" "scout_switch_to_primary*,Trigger,,0,-1"
+                "OnCase06" "engineer_switch_to_primary*,Trigger,,0,-1"
+                "OnCase06" "soldier_switch_to_primary*,Trigger,,0,-1"
 			}
 			
 			logic_case
@@ -8386,40 +8431,70 @@ WaveSchedule
 				"OnCase01"   "!parent,SetDamageFilter,filter_bullet,0,-1"
 				"OnCase01"   "tank_shield_bullet,Enable,,0,-1"
 				"OnCase01"   "tank_vacc_timer_nobullet,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase01" "player,$ChangeAttributes,VacSwitchBullet,0,-1"
+                "OnCase01" "pyro_switch_to_primary*,Trigger,,0,-1"
+                "OnCase01" "sniper_switch_to_melee*,Trigger,,0,-1"
+                "OnCase01" "scout_switch_to_melee*,Trigger,,0,-1"
+                "OnCase01" "engineer_switch_to_melee*,Trigger,,0,-1"
+                "OnCase01" "soldier_switch_to_primary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase02"   "!parent,SetDamageFilter,filter_bullet,0,-1"
 				"OnCase02"   "tank_shield_bullet,Enable,,0,-1"
 				"OnCase02"   "tank_vacc_timer_nobullet,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase02" "player,$ChangeAttributes,VacSwitchBullet,0,-1"
+                "OnCase02" "pyro_switch_to_primary*,Trigger,,0,-1"
+                "OnCase02" "sniper_switch_to_melee*,Trigger,,0,-1"
+                "OnCase02" "scout_switch_to_melee*,Trigger,,0,-1"
+                "OnCase02" "engineer_switch_to_melee*,Trigger,,0,-1"
+                "OnCase02" "soldier_switch_to_primary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase03"   "!parent,SetDamageFilter,filter_bullet,0,-1"
 				"OnCase03"   "tank_shield_bullet,Enable,,0,-1"
 				"OnCase03"   "tank_vacc_timer_nobullet,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase03" "player,$ChangeAttributes,VacSwitchBullet,0,-1"
+                "OnCase03" "pyro_switch_to_primary*,Trigger,,0,-1"
+                "OnCase03" "sniper_switch_to_melee*,Trigger,,0,-1"
+                "OnCase03" "scout_switch_to_melee*,Trigger,,0,-1"
+                "OnCase03" "engineer_switch_to_melee*,Trigger,,0,-1"
+                "OnCase03" "soldier_switch_to_primary*,Trigger,,0,-1"
 				///////////////////////////////////////////////////////////////////////////
                 ///////////////////////////////////////////////////////////////////////////
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase04"   "!parent,SetDamageFilter,filter_blast,0,-1"
 				"OnCase04"   "tank_shield_blast,Enable,,0,-1"
 				"OnCase04"   "tank_vacc_timer_noblast,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase04" "player,$ChangeAttributes,VacSwitchBlast,0,-1"
+                "OnCase04" "pyro_switch_to_primary*,Trigger,,0,-1"
+                "OnCase04" "sniper_switch_to_primary*,Trigger,,0,-1"
+                "OnCase04" "scout_switch_to_primary*,Trigger,,0,-1"
+                "OnCase04" "engineer_switch_to_primary*,Trigger,,0,-1"
+                "OnCase04" "soldier_switch_to_secondary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase05"   "!parent,SetDamageFilter,filter_blast,0,-1"
 				"OnCase05"   "tank_shield_blast,Enable,,0,-1"
 				"OnCase05"   "tank_vacc_timer_noblast,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase05" "player,$ChangeAttributes,VacSwitchBlast,0,-1"
+                "OnCase05" "pyro_switch_to_primary*,Trigger,,0,-1"
+                "OnCase05" "sniper_switch_to_primary*,Trigger,,0,-1"
+                "OnCase05" "scout_switch_to_primary*,Trigger,,0,-1"
+                "OnCase05" "engineer_switch_to_primary*,Trigger,,0,-1"
+                "OnCase05" "soldier_switch_to_secondary*,Trigger,,0,-1"
                 ///////////////////////////////////////////////////////////////////////////
 				"OnCase06"   "!parent,SetDamageFilter,filter_blast,0,-1"
 				"OnCase06"   "tank_shield_blast,Enable,,0,-1"
 				"OnCase06"   "tank_vacc_timer_noblast,Enable,,0,-1"
-                //Added EventAttributes Logic
+                //Added Weapon Swapping Logic
                 "OnCase06" "player,$ChangeAttributes,VacSwitchBlast,0,-1"
+                "OnCase06" "pyro_switch_to_primary*,Trigger,,0,-1"
+                "OnCase06" "sniper_switch_to_primary*,Trigger,,0,-1"
+                "OnCase06" "scout_switch_to_primary*,Trigger,,0,-1"
+                "OnCase06" "engineer_switch_to_primary*,Trigger,,0,-1"
+                "OnCase06" "soldier_switch_to_secondary*,Trigger,,0,-1"
 			}
 			
 			ambient_generic
@@ -8799,6 +8874,9 @@ WaveSchedule
             {
                 "targetname" "redboss_dead_relay"
                 "OnTrigger" "spawnbot_grave3*,Enable,,0,-1"
+                "OnTrigger" "player,$ChangeAttributes,AttackPlayers,0,-1"
+                "OnTrigger" "target_aliveness_state,Subtract,1,-1"
+                "OnTrigger" "tank_aliveness_check,SetValue,0,0,-1"
             }
             logic_relay
             {
@@ -9280,7 +9358,6 @@ WaveSchedule
 				"maxs"            "2 2 2"
 			}
 		}
-        
         tosser_glitch_fix
         {
             NoFixup 1
@@ -9985,7 +10062,9 @@ WaveSchedule
                 "OnTrigger" "sound_death_no02,PlaySound,,0,-1"  
                 "OnTrigger" "vip_laser_event_relay,Disable,,0,-1"
                 "OnTrigger" "laszlo_death_relay,Disable,,0,-1"
-                "OnTrigger" "player,$ChangeAttributes,VipDead,0,-1"
+                "OnTrigger" "target_aliveness_state,Subtract,1,-1"
+                "OnTrigger" "vip_aliveness_check,SetValue,0,0,-1"
+                "OnTrigger" "player,$ChangeAttributes,AttackPlayers,0,-1"
                 "OnTrigger" "vip_glow,Kill,,0,-1"
             }
             ambient_generic
@@ -10937,7 +11016,7 @@ WaveSchedule
 		{
             
 		}
-        buster_template // Made by Lite, I've made a few adjustments to suit my purposes.
+        buster_template // Made by lite, I've made a few adjustments to suit my purposes.
         {
             //NoFixup 1
             OnParentKilledOutput
@@ -15584,7 +15663,7 @@ WaveSchedule
 	        	Delay 0.1
             } 
         }
-        prevent_redbotbuilding // Made by Lite
+        prevent_redbotbuilding // Made by lite
 		{
 			OnSpawnOutput
 			{
@@ -15633,8 +15712,14 @@ WaveSchedule
 				"onstarttouch" "detectredsentry_true,trigger,,0,-1"
 			}
 		}
-		redbotbuilding_gunslinger // Made by Lite
+		redbotbuilding_gunslinger // Made by lite
 		{
+            OnSpawnOutput
+            {
+                Target "!activator"
+                Action AddOutput
+                Param "targetname bot_owner"
+            }
 			OnParentKilledOutput
 			{
 				Target "gunslingercounter"
@@ -15693,7 +15778,7 @@ WaveSchedule
 				"onstarttouch" "sentrygun_point,kill,,0,-1"
 			}
 		}
-		redbotbuilding // Made by Lite
+		redbotbuilding // Made by lite
 		{
 			NoFixup 1
 			logic_relay
@@ -15773,7 +15858,7 @@ WaveSchedule
 				"teamnum" "3"
 			}
 		}
-		redbotspawnhere // Made by Lite
+		redbotspawnhere // Made by lite
 		{
 			KeepAlive 1
 			NoFixup 1
@@ -15791,8 +15876,14 @@ WaveSchedule
 				"onuser1" "!self,addoutput,targetname ,0,-1"
 			}
 		}
-		builtbot // Made by Lite
+		builtbot // Made by lite
 		{
+            OnSpawnOutput
+            {
+                Target "!activator"
+                Action "$SetOwner"
+                Param "bot_owner"
+            }
 			OnSpawnOutput
 			{
 				Target "builtbotcounter"
@@ -15881,8 +15972,8 @@ WaveSchedule
                 "OnTrigger" "!activator,$WeaponSwitchSlot,1,0.1,-1"
                 "OnTrigger" "!activator,$AddPlayerAttribute,disable weapon switch|1,0.11,-1" 
                 "OnTrigger" "!activator,$RemovePlayerAttribute,disable weapon switch,1.2,-1" 
-                //"OnTrigger" "switch_to_melee,Disable,,0,-1"
-                //"OnTrigger" "switch_to_melee,Enable,,1,-1"
+                //"OnTrigger" "switch_to_melee*,Disable,,0,-1"
+                //"OnTrigger" "switch_to_melee*,Enable,,1,-1"
             }
             logic_case
             {
@@ -15895,6 +15986,282 @@ WaveSchedule
                 "OnCase06" "!activator,$ChangeAttributes,Cond_Swim,0,-1"
                 "OnCase07" "!activator,$ChangeAttributes,Cond_Gas,0,-1"
             }
+        }
+        vactankbuster_logic_sniper
+        {
+            OnSpawnOutput
+            {
+                Target "vacbuster_target"
+                Action SetParent
+                Param "!activator"
+                Delay 0.01
+            }
+            info_target
+            {
+                "targetname" "vacbuster_target"
+            }
+            logic_relay
+            {
+                "targetname" "sniper_switch_to_melee"
+                "OnTrigger" "@p@vacbuster_target,$WeaponSwitchSlot,2,0,-1"
+            }
+            logic_relay
+            {
+                "targetname" "sniper_switch_to_primary"
+                "OnTrigger" "@p@vacbuster_target,$WeaponSwitchSlot,0,0,-1"
+            }
+        }
+        vactankbuster_logic_scout
+        {
+            OnSpawnOutput
+            {
+                Target "vacbuster_target"
+                Action SetParent
+                Param "!activator"
+                Delay 0.01
+            }
+            info_target
+            {
+                "targetname" "vacbuster_target"
+            }
+            logic_relay
+            {
+                "targetname" "scout_switch_to_melee"
+                "OnTrigger" "@p@vacbuster_target,$WeaponSwitchSlot,2,0,-1"
+            }
+            logic_relay
+            {
+                "targetname" "scout_switch_to_primary"
+                "OnTrigger" "@p@vacbuster_target,$WeaponSwitchSlot,0,0,-1"
+            }
+        }
+        vactankbuster_logic_engineer
+        {
+            OnSpawnOutput
+            {
+                Target "vacbuster_target"
+                Action SetParent
+                Param "!activator"
+                Delay 0.01
+            }
+            info_target
+            {
+                "targetname" "vacbuster_target"
+            }
+            logic_relay
+            {
+                "targetname" "engineer_switch_to_melee"
+                "OnTrigger" "@p@vacbuster_target,$WeaponSwitchSlot,2,0,-1"
+            }
+            logic_relay
+            {
+                "targetname" "engineer_switch_to_primary"
+                "OnTrigger" "@p@vacbuster_target,$WeaponSwitchSlot,0,0,-1"
+            }
+        }
+        vactankbuster_logic_soldier
+        {
+            OnSpawnOutput
+            {
+                Target "vacbuster_target"
+                Action SetParent
+                Param "!activator"
+                Delay 0.01
+            }
+            info_target
+            {
+                "targetname" "vacbuster_target"
+            }
+            logic_relay
+            {
+                "targetname" "soldier_switch_to_secondary"
+                "OnTrigger" "@p@vacbuster_target,$WeaponSwitchSlot,1,0,-1"
+            }
+            logic_relay
+            {
+                "targetname" "soldier_switch_to_primary"
+                "OnTrigger" "@p@vacbuster_target,$WeaponSwitchSlot,0,0,-1"
+            }
+        }
+        vactankbuster_logic_pyro
+        {
+            OnSpawnOutput
+            {
+                Target "buster_target"
+                Action SetParent
+                Param "!activator"
+                Delay 0.01
+            }
+            info_target
+            {
+                "targetname" "vacbuster_target"
+            }
+            logic_relay
+            {
+                "targetname" "pyro_switch_to_melee*"
+                "OnTrigger" "@p@vacbuster_target,$WeaponSwitchSlot,2,0,-1"
+            }
+            logic_relay
+            {
+                "targetname" "pyro_switch_to_primary*"
+                "OnTrigger" "@p@vacbuster_target,$WeaponSwitchSlot,0,0,-1"
+            }
+        }
+        vactankbuster_targeting_logic
+        {
+            NoFixup 1
+            logic_relay
+            {
+                "targetname" "vactank_dead_relay"
+                "OnTrigger" "player,$ChangeAttributes,AttackZombies,0,-1"
+                "OnTrigger" "vactank_aliveness_check,SetValue,0,0,-1"
+            }
+            logic_branch
+            {
+                "targetname" "vactank_aliveness_check"
+                "InitialValue" "1"
+                "OnTrue" "!activator,$ChangeAttributes,AttackTank,0,-1"
+                "OnFalse" "!activator,$ChangeAttributes,AttackZombies,0,-1"
+            }
+        }
+        sodapopper_targeting_logic
+        {
+            NoFixup 1
+            logic_relay
+            {
+                "targetname" "popper_target_relay"
+                "OnTrigger" "target_state_compare,Compare,,0,-1" 
+            }
+            logic_branch
+            {
+                "targetname" "vip_aliveness_check"
+                "InitialValue" "1"
+                "OnTrue" "!activator,$ChangeAttributes,AttackVip,0,-1"
+            }
+            logic_branch
+            {
+                "targetname" "tank_aliveness_check"
+                "InitialValue" "1"
+                "OnTrue" "!activator,$ChangeAttributes,AttackTank,0,-1"
+            }
+            math_counter
+			{
+				"targetname" "target_aliveness_state"
+				"startvalue" "2"
+				"min"        "0"
+				"max"        "2"
+				
+				"OutValue" "target_state_compare,SetValueCompare,,0,-1"
+			}
+            logic_compare
+            {
+                "targetname"    "target_state_compare"
+                "InitialValue"  "2"
+                "CompareValue"  "1"
+
+                "onlessthan" "!activator,$ChangeAttributes,AttackPlayers,0,-1"
+                "onequalto" "vip_aliveness_check,Test,,0,-1"
+                "onequalto" "tank_aliveness_check,Test,,0,-1"
+                "ongreaterthan" "popper_target_choose,PickRandom,,0,-1"
+            }
+            logic_case
+            {
+                "targetname" "popper_target_choose"
+                "OnCase01" "!activator,$ChangeAttributes,AttackTank,0,-1"
+                "OnCase02" "!activator,$ChangeAttributes,AttackVip,0,-1"
+            }
+        }
+        grybot_killswitch
+        {
+            logic_relay 
+            {
+                "targetname" "grybot_killswitch_relay"
+                "OnTrigger" "!parent,$Suicide,,0,-1"
+            }
+        }
+        paintrain_template
+        {  
+            OnSpawnOutput
+            {
+                Target "knight_checker"
+	        	Action Trigger
+	        	Delay 0.1
+            }
+            OnParentKilledOutput 
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "CARD: damage bonus|2"
+	    	}
+            filter_multi
+            {
+                "targetname" "filter_is_knight"
+                "filter01" "filter_has_boots"
+				"filter02" "filter_has_shield"
+                "OnPass" "!activator,$AddItemAttribute,CARD: damage bonus|2|2,0,-1"
+                "OnFail" "!activator,$RemoveItemAttribute,CARD: damage bonus|2,0,-1"
+            }
+  	    	filter_tf_condition
+	    	{
+	    		"targetname" "filter_has_boots"
+	    		"Negated" "0"
+	    		"condition" "130"
+	    	}
+  	    	filter_tf_condition
+	    	{
+	    		"targetname" "filter_has_shield"
+	    		"Negated" "0"
+	    		"condition" "131"
+	    	}
+            logic_relay 
+            {
+                "targetname" "knight_checker"
+                "OnTrigger" "filter_is_knight,TestActivator,!activator,0,-1"
+            } 	
+        }
+        boots_equipped
+        {
+            OnSpawnOutput
+            {
+                Target "!activator"
+	        	Action "$AddCond"
+                Param "130"
+                Delay 0.02
+            }
+        }
+        shield_equipped
+        {
+            OnSpawnOutput
+            {
+                Target "!activator"
+	        	Action "$AddCond"
+                Param "131"
+                Delay 0.02
+            }
+        }
+        paintrain_fix_template
+        {
+            OnSpawnOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "CARD: damage bonus|2"
+                Delay 0.11
+	    	}
+            OnSpawnOutput
+            {
+                Target "!activator"
+	        	Action "$RemoveCond"
+                Param "130"
+                Delay 0.01
+            } 
+            OnSpawnOutput
+            {
+                Target "!activator"
+	        	Action "$RemoveCond"
+                Param "131"
+                Delay 0.01
+            } 
         }
     }
     SpawnTemplate "potiontosser_logic"
@@ -15924,6 +16291,8 @@ WaveSchedule
         Name "playerweapon_fix" // Name of the template
 		Origin "0 0 30" //Position where to spawn the template
 	}
+    SpawnTemplate "vactankbuster_targeting_logic"
+    SpawnTemplate "sodapopper_targeting_logic"
     SpawnTemplate "Explosive_Tip_Logic"
     SpawnTemplate "chief_explosive_tip_logic"
     SpawnTemplate "powerup_fix"
