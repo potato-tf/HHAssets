@@ -6129,7 +6129,7 @@ WaveSchedule
 		T_TFBot_Chief_Medic_Uber
 		{
 			Health  55000
-			Name  "Ultimativer RÃ¤cher"
+			Name  "Ultimativer Rächer"
 			Class  Medic
 			ClassIcon  medic_uber_giant
 			Skill  Expert
