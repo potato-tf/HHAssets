@@ -94,7 +94,17 @@
 			"map"		"mvm_underworld_rc2"
 			"popfile"		"mvm_underworld_rc2"
 		}
-		"22"
+		"19"
+		{
+			"map"		"mvm_legerdemain_a5"
+			"popfile"		"mvm_legerdemain_a5"
+		}
+		"20"
+		{
+			"map"		"mvm_chateau_rc2d"
+			"popfile"		"mvm_chateau_rc2d"
+		}
+		"24"
 		{
 			"map"		"mvm_ghost_town"
 			"popfile"		"mvm_ghost_town"

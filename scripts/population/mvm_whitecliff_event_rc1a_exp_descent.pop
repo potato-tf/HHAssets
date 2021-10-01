@@ -25,7 +25,7 @@ Effort
     NoCritPumpkin 1
     ForceHoliday 2
     BotsAreHumans 2
-    StandableHeads 1 
+    StandableHeads 1
     TextPrintTime 0
     BodyPartScaleSpeed 10
     BluHumanFlagCapture 1
@@ -176,17 +176,18 @@ Effort
         "build rate bonus" 0.5
         "mvm sentry ammo" 2
         "engy sentry radius increased" 2
-        "special item description" "+55% damage bonus on all primaries and the short circuit, +100% damage bonus for all melees."
+        "special item description" "+65% damage bonus on all primaries and the short circuit, +100% damage bonus for all melees."
     }
     //one item (#12)
     ItemAttributes
     {
         ItemName "TF_WEAPON_SMG"
-        "damage bonus" 1.30
+        "damage bonus" 1.65
         "minicritboost on kill" 5
         "dmg pierces resists absorbs" 1
         "can headshot" 1
         "revolver use hit locations" 1
+        "add cond when active" 72
     }
     //one item (#13)
     ItemAttributes
@@ -5480,6 +5481,30 @@ Effort
 			}
             RemoveIfKilled "amputator_radius_brush"
         }
+        gunslinger_buff_fix
+        {
+            OnSpawnOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "damage bonus|0"
+	    		Delay 0.1
+	    	}
+            OnSpawnOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "damage bonus|1"
+	    		Delay 0.1
+	    	}
+            OnSpawnOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "damage bonus|2"
+	    		Delay 0.1
+	    	}
+        }
         gunslinger_buff
         {   
             OnSpawnOutput
@@ -5516,11 +5541,11 @@ Effort
 	    		"Negated" "0"
 	    		"condition" "130"
 
-                "OnPass" "!activator,$AddItemAttribute,damage bonus|1.55|0,0,-1" 
+                "OnPass" "!activator,$AddItemAttribute,damage bonus|1.65|0,0,-1" 
                 //"OnPass" "!activator,$AddItemAttribute,damage bonus|1|1,0,-1" //no pistol damage bonus
                 "OnPass" "!activator,$AddItemAttribute,damage bonus|2|2,0,-1"
-                "OnFail" "!activator,$AddItemAttribute,damage bonus|1.55|0,0,-1"
-                "OnFail" "!activator,$AddItemAttribute,damage bonus|1.55|1,0,-1"
+                "OnFail" "!activator,$AddItemAttribute,damage bonus|1.65|0,0,-1"
+                "OnFail" "!activator,$AddItemAttribute,damage bonus|1.65|1,0,-1"
                 "OnFail" "!activator,$AddItemAttribute,damage bonus|2|2,0,-1" 
 	    	}
     
