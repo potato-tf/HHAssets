@@ -104,7 +104,12 @@
 			"map"		"mvm_chateau_rc2d"
 			"popfile"		"mvm_chateau_rc2d"
 		}
-		"24"
+		"21"
+		{
+			"map"		"mvm_whitecliff_event_rc1a"
+			"popfile"		"mvm_whitecliff_event_rc1a"
+		}
+		"25"
 		{
 			"map"		"mvm_ghost_town"
 			"popfile"		"mvm_ghost_town"
