@@ -101,8 +101,8 @@
 		}
 		"20"
 		{
-			"map"		"mvm_chateau_rc2d"
-			"popfile"		"mvm_chateau_rc2d"
+			"map"		"mvm_chateau_rc3"
+			"popfile"		"mvm_chateau_rc3"
 		}
 		"21"
 		{
