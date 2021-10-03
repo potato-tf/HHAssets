@@ -31,6 +31,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo lol
-          #rsync -a --delete ./tf/addons /var/tf2server/tf
-          #rsync -a ./tf/cfg /var/tf2server/tf
-          #rsync -a ./*.sh /var/tf2server
+          rsync -a --delete . /var/tf2server/tf/custom/
