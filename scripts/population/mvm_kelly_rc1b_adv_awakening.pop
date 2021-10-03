@@ -28,6 +28,7 @@ WaveSchedule
     SendBotsToSpectatorImmediately  1   
     WaveStartCountdown              5   
     FastNPCUpdate                   1
+    NoRomevisionCosmetics           1
 
     //Spells
     BotsDropSpells                  1       

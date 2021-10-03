@@ -3,11 +3,12 @@
 
 WaveSchedule
 {
-    StartingCurrency 3500
-    CanBotsAttackWhileInSpawnRoom no
-    RespawnWaveTime 5
-    Advanced 1
-    EventPopfile Halloween
+    StartingCurrency                3500
+    CanBotsAttackWhileInSpawnRoom   no
+    RespawnWaveTime                 5
+    Advanced                        1
+    EventPopfile                    Halloween
+    NoRomevisionCosmetics 		    1
 
 //
 // Starting Currency: 3500
