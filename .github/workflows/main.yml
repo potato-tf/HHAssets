@@ -35,5 +35,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           mkdir -p /var/tf2server/tf/custom/uploaded/
-          rsync -a --delete . /var/tf2server/tf/custom/uploaded/
+          rsync -a --delete --update . /var/tf2server/tf/custom/uploaded/
           
