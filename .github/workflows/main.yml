@@ -16,7 +16,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ${{ [self-hosted, gameserver, matrix.os] }}
+    runs-on: ${{format('[self-hosted, gameserver, {0}]', matrix.os)}}
     
     strategy:
       matrix:
@@ -36,3 +36,4 @@ jobs:
         run: |
           mkdir -p /var/tf2server/tf/custom/uploaded/
           rsync -a --delete . /var/tf2server/tf/custom/uploaded/
+          
