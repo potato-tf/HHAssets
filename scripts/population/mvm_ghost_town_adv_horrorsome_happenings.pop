@@ -321,7 +321,7 @@ WaveSchedule
 			Class Pyro
 			Skill Expert
 			Health 25000
-			ClassIcon clown
+			ClassIcon pyro_slap_lite
 			Item	"Flavorful Baggies"
 			Item	"Bozo's Bouffant"
 			Item	"The Hot Hand"
