@@ -1551,7 +1551,7 @@ WaveSchedule
 			Health  900
 			Name  "Steel Gauntlet"
 			Class  HeavyWeapons
-			ClassIcon  heavy_steelfist
+			ClassIcon  heavy_steelfist_nys
 			Skill  Expert
 			Scale  1.5
 			WeaponRestrictions  MeleeOnly
@@ -1563,7 +1563,7 @@ WaveSchedule
 			Health 900
 			Name "Steel Gauntlet Pusher"
 			Class Heavyweapons
-			ClassIcon heavy_steelfist
+			ClassIcon heavy_steelfist_nys
 			Skill Expert
 			Scale 1.5
 			WeaponRestrictions MeleeOnly			
@@ -4083,7 +4083,7 @@ WaveSchedule
             Health  5000
             Name  "Junior Punch"
             Class  HeavyWeapons
-            ClassIcon  heavy_steelfist_giant
+            ClassIcon  heavy_steelfist_nys_giant
             Skill  Expert
             Attributes  MiniBoss
             WeaponRestrictions  MeleeOnly

@@ -2310,7 +2310,7 @@ popuwashyon
 		{
 			Template T_TFBot_Giant_Heavyweapons
 			Name "Cosmic Colossus"
-			ClassIcon heavy_steelfist
+			ClassIcon heavy_steelfist_nys
 			Item "Fists of Steel"
 			Item "War Head"
 			WeaponRestrictions MeleeOnly

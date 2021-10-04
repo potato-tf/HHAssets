@@ -1616,7 +1616,7 @@ population
 			{
 				TFBot
 				{
-                                ClassIcon heavy_steelfist
+                                ClassIcon heavy_steelfist_nys
 					Template	T_TFBot_Heavyweapons_Fist
                                         Item	"Mad Mask"
                                         CharacterAttributes
