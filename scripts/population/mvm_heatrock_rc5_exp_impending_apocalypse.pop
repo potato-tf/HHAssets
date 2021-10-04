@@ -253,7 +253,7 @@ WaveSchedule
 		}
 		T_TFBot_Medic_Armored
 		{
-			ClassIcon	medic_uber_armored
+			ClassIcon	medic_uber_armored_lite
 			Health	500
 			Name	"Armored Uber Medic"
 			Scale	1.3
@@ -273,7 +273,7 @@ WaveSchedule
 		}
 		T_TFBot_Medic_Bigheal_Armored
 		{
-			ClassIcon	medic_armored_qf
+			ClassIcon	medic_armored_lite
 			Health	500
 			Name	"Armored Medic"
 			Scale	1.3
@@ -295,7 +295,7 @@ WaveSchedule
 		{
 			Name Sniper
 			Class Sniper
-			ClassIcon sniper_machina
+			ClassIcon sniper_machina_nys
 			Skill Hard
 			Name "Machina Sniper"
 			ClassIcon sniper
@@ -616,7 +616,7 @@ WaveSchedule
 
 		T_TFBot_Giant_Medic_Shield
 		{
-			ClassIcon	medic_shield_qf_giant
+			ClassIcon	medic_shield_lite
 			Health	4500
 			Name	"Giant Shield Medic"
 			Class	Medic

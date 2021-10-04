@@ -3262,7 +3262,7 @@ population
 			TFBot
 			{
 			Class Demoman
-			Classicon pyro_axtinguish
+			Classicon pyro_jug_axtinguisher
 			Name "Brutal Beheader"
 			Skill Expert
 			Action mobber
@@ -4892,7 +4892,7 @@ population
 			Class Medic
 			Name "Protective Hazmat Suit Zombie"
 			Skill Expert
-			classicon medic_shield
+			classicon medic_shield_lite
 			item "zombie medic"
 			usehumanmodel 1
 			item "Das Hazmattenhatten"
@@ -5608,7 +5608,7 @@ population
 			Usehumanmodel 1
 			health 100
 			Action Mobber
-			classicon medic_vacc_trio
+			classicon medic_vac_trio_nys
 			WeaponRestrictions MeleeOnly
 			item "zombie medic"
 			item "memory maker"
@@ -5637,7 +5637,7 @@ population
 			Usehumanmodel 1
 			health 100
 			WeaponRestrictions MeleeOnly
-			classicon medic_vacc_trio
+			classicon medic_vac_trio_nys
 			item "zombie medic"
 			item "memory maker"
 			ItemAttributes
@@ -5663,7 +5663,7 @@ population
 			name "Fire Resist Zombie"
 			Usehumanmodel 1
 			WeaponRestrictions MeleeOnly
-			classicon medic_vacc_trio
+			classicon medic_vac_trio_nys
 			item "zombie medic"
 			item "memory maker"
 			health 100
@@ -5700,7 +5700,7 @@ population
 			{
 			Class Medic
 			name "Battle Healer"
-			classicon 	medic_jug_amputator
+			classicon 	medic_jug_amputator2
 			Usehumanmodel 1
 			Item "Zombie medic"
 			skill expert
@@ -6185,7 +6185,7 @@ population
 					Name "TF_COND_REPROGRAMMED"
 					Delay 0.1
 				    }
-					classicon red_lite
+					classicon red2_lite
 					CharacterAttributes
 					{
 					"damage bonus" 0.5
@@ -6855,7 +6855,7 @@ population
 				TFBot
 			{
 			Class Demoman
-			Classicon pyro_axtinguish
+			Classicon pyro_jug_axtinguisher
 			Name "Brutal Beheader"
 			Skill Expert
 			Action mobber

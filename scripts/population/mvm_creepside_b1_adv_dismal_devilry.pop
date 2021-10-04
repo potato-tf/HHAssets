@@ -832,7 +832,7 @@ WaveSchedule
                 Template T_TFBot_Giant_Heavyweapons_BrassBeast
                 Skill Normal
                 Name "Giant Brass Beast Heavy"
-                ClassIcon heavy_beast_h
+                ClassIcon heavy_brass_nys
                 UseMeleeThreatPrioritization 1
                 NoIdleSound 1
                 UseHumanModel 2
@@ -2036,7 +2036,7 @@ WaveSchedule
                 TFBot
                 { 
                     Class Heavyweapons
-			        ClassIcon heavy_shotgun_burst
+			        ClassIcon heavy_shotgun_burst_lite
 			        Name "Burst Shotgun"
 			        Skill Hard
 			        WeaponRestrictions SecondaryOnly
@@ -3080,7 +3080,7 @@ WaveSchedule
                 Class Pyro
                 Name "Panicking Pyro"
                 Skill Hard
-                ClassIcon heavy_shotgun_burst
+                ClassIcon heavy_shotgun_burst_lite
                 Item "Panic Attack Shotgun"
                 WeaponRestrictions SecondaryOnly
                 Attributes HoldFireUntilFullReload

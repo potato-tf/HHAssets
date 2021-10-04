@@ -1157,7 +1157,7 @@ population
 			{
 				TFBot
 				{
-                                ClassIcon heavy_heater_nys
+                                ClassIcon heavy_heater
 					Health	300
 					Name	"Heater Heavy"
 					Class	HeavyWeapons
@@ -1241,7 +1241,7 @@ population
 			{
 				TFBot
 				{
-                                ClassIcon soldier_dh_nys
+                                ClassIcon soldier_directhit
 					Health	200
 					Skill	Easy
 					Name	"Direct Hit Soldier"
@@ -1616,7 +1616,7 @@ population
 			{
 				TFBot
 				{
-                                ClassIcon heavy_steelfist_nys
+                                ClassIcon heavy_steelfist
 					Template	T_TFBot_Heavyweapons_Fist
                                         Item	"Mad Mask"
                                         CharacterAttributes

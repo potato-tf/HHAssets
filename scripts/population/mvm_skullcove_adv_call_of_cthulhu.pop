@@ -1250,7 +1250,7 @@ WaveSchedule
 				Template	T_TFBot_Giant_Scout
 				Name	"Giant Sun-on-a-Stick Scout"
 				WeaponRestrictions	MeleeOnly
-				ClassIcon	scout_sunstick
+				ClassIcon	scout_sunstick_swordstone
 				Item	"Sun-on-a-Stick"
 				Skill	Hard
 				Tag	bot_giant

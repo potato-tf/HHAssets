@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "hud\leaderboard_class_demoknight_headtaker_nys"
+	"$baseTexture" "hud/leaderboard_class_demoknight_headtaker_nys"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1

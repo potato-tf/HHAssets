@@ -199,7 +199,7 @@ WaveSchedule
 		{
 			Class Heavyweapons
 			Health 900
-			ClassIcon heavy_shotgun_burst
+			ClassIcon heavy_shotgun_burst_lite
 			Name "Elite Shotgun Heavy"
 			Item "The Purity Fist"
 			Item "The Eliminators Safeguard"
@@ -344,7 +344,7 @@ WaveSchedule
 		{
 			Class Scout
 			Skill Normal
-			ClassIcon scout_bonk_nys
+			ClassIcon scout_bonk
 			Name "Bonk! Scout"
 			Item "Bonk! Atomic Punch"
 			Item "Bonk Helm"

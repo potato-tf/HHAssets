@@ -783,7 +783,7 @@ WaveSchedule
         T_TFGateBot_Force_Scout_Melee_Sun
 		{
 			Class Scout
-            ClassIcon   scout_sunstick
+            ClassIcon   scout_sunstick_swordstone
 			EventChangeAttributes
 			{
 				Default

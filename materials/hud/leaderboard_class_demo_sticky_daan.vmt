@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "hud\leaderboard_class_demo_sticky_daan"
+	"$baseTexture" "hud/leaderboard_class_demo_sticky_daan"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1

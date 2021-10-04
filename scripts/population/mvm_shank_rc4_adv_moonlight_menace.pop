@@ -8647,7 +8647,7 @@ tomboy
         Class Soldier
         Skill Expert 
         Name "Direct Hit Soldier"
-        ClassIcon soldier_dh_nys
+        ClassIcon soldier_directhit
         item "The Direct Hit"
         item "Zombie Soldier"
         UseCustomModel "models/player/soldier.mdl"

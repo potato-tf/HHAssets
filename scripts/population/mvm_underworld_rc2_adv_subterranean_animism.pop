@@ -399,7 +399,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Pyro_Axtinguisher
 		{
 			Class Pyro
-			ClassIcon pyro_axtinguisher
+			ClassIcon pyro_jug_axtinguisher
 			Name "Axtinguisher Pyro"
 			Health 175
 			Skill Hard
@@ -2105,7 +2105,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Class Pyro
-					ClassIcon pyro_dragon_fury
+					ClassIcon pyro_dragon_fury_swordstone
 					Name "Dragon's Fury Pyro"
 					Skill Normal
 					Health 175
@@ -2943,7 +2943,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Class Pyro
-					ClassIcon pyro_dragon_fury
+					ClassIcon pyro_dragon_fury_swordstone
 					Name "Dragon's Fury Pyro"
 					Skill Hard
 					Health 175
@@ -3289,7 +3289,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				{
 					Template T_TFBot_Plague_Doctor
 					Name "Crossbow Bleed Medic"
-					ClassIcon medic_crossbow_bleed
+					ClassIcon medic_crossbow_bleed_v2
 					ItemAttributes
 					{
 						ItemName "the crusader's crossbow"
@@ -3619,7 +3619,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				{
 					Class Pyro
 					Name "Dragon's Fury Pyro"
-					ClassIcon pyro_dragon_fury
+					ClassIcon pyro_dragon_fury_swordstone
 					Skill Hard
 					Health 175
 					WeaponRestrictions PrimaryOnly

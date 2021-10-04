@@ -218,7 +218,7 @@ popuwashyon
 			Skill Normal
 			Item "The Air Strike"
 			Item "The B.A.S.E. Jumper"
-			ClassIcon soldier_airstrike_para
+			ClassIcon soldier_airstrike
 			ItemAttributes
 			{
 				ItemName "The Air Strike"
@@ -234,7 +234,7 @@ popuwashyon
 			Skill Normal
 			Item "The Air Strike"
 			Item "The B.A.S.E. Jumper"
-			ClassIcon soldier_airstrike_para
+			ClassIcon soldier_airstrike
 			ItemAttributes
 			{
 				ItemName "The Air Strike"
@@ -414,7 +414,7 @@ popuwashyon
 			{
 				Class Scout
 				WeaponRestrictions MeleeOnly
-				ClassIcon scout_bat_nys
+				ClassIcon scout_bat
 				Name "Playful Fairy"
 			}
 		}
@@ -503,7 +503,7 @@ popuwashyon
 			{
 				Class Scout
 				WeaponRestrictions MeleeOnly
-				ClassIcon scout_bat_nys
+				ClassIcon scout_bat
 				Name "Playful Fairy"
 			}
 		}

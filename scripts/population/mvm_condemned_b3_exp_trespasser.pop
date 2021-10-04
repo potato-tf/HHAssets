@@ -4982,7 +4982,7 @@ WaveSchedule
 		Machine_Steel
 		{
 			Template T_TFBot_Heavyweapons_Fist
-			Classicon heavy_steelfist_nys
+			Classicon heavy_steelfist
 			Name "Corrupted"
 			Skill Expert
 			MaxVisionRange 500
@@ -5008,7 +5008,7 @@ WaveSchedule
 		Machine_Steel_Money
 		{
 			Template T_TFBot_Heavyweapons_Fist
-			Classicon heavy_steelfist_nys
+			Classicon heavy_steelfist
 			Name "Definitely Corrupted"
 			Skill Easy
 			MaxVisionRange 500

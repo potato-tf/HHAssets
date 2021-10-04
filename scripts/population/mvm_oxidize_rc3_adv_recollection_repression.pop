@@ -125,7 +125,7 @@ WaveSchedule
 		{
 			Class Sniper
 			Name	"SMG Sniper"
-			ClassIcon	sniper_smg
+			ClassIcon	sniper_smg_tind
 			Skill Hard
 			Item "Zombie Sniper"
 			UseCustomModel "models/player/sniper.mdl" [$SIGSEGV]

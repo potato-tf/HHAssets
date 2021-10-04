@@ -690,7 +690,7 @@ WaveSchedule
 		T_TFBot_Spy_Revolver
 		{
 			Class Spy
-			ClassIcon spy_revolver
+			ClassIcon spy_revolver_lite
 			Skill Normal
 			Name "Gun Spy"
 			WeaponRestrictions PrimaryOnly

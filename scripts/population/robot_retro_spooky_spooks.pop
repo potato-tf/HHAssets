@@ -33,7 +33,7 @@ T_TFBot_quicky_Shield
 		{
 			Class Medic
 			Name "Quick Fix Shield Medic"
-			ClassIcon medic_shield_qf
+			ClassIcon medic_shield_lite
 			Skill Expert
 			Item "The Quick-Fix"
                         Item "Platinum Pickelhaube"
@@ -263,7 +263,7 @@ T_TFBot_Edgy_Sniper
 			Skill Normal
 			Item "The Huntsman"
 			Item "The Anger"
-			ClassIcon sniper_huntsman_bleed
+			ClassIcon sniper_bow_bleed
 			WeaponRestrictions PrimaryOnly
 			ItemAttributes
 			{

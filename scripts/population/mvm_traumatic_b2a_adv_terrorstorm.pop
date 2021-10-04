@@ -452,7 +452,7 @@ WaveSchedule
 			Class Heavyweapons
 			Skill Expert
 			Health 5000
-			ClassIcon heavy_shotgun_burst
+			ClassIcon heavy_shotgun_burst_lite
 			Attributes MiniBoss
 			WeaponRestrictions SecondaryOnly
 			MaxVisionRange 1200
@@ -2289,7 +2289,7 @@ WaveSchedule
                     Class Heavyweapons
                     Skill Expert
                     Health 5000
-                    ClassIcon heavy_deflector_heater
+                    ClassIcon heavy_deflector_fire
                     Item "The Huo Long Heatmaker"
                     Attributes MiniBoss
                     WeaponRestrictions PrimaryOnly

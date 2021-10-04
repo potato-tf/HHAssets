@@ -1557,7 +1557,7 @@ Effort
 			    Skill Hard
                 WeaponRestrictions PrimaryOnly
 			    Item "Crit-a-Cola"
-			    ClassIcon scout_cola_nys
+			    ClassIcon scout_cola
                 ItemAttributes
                 {
                     ItemName "Crit-a-Cola"
@@ -3992,7 +3992,7 @@ Effort
 			Class Heavyweapons
 			Skill Expert
 			Health 5000
-			ClassIcon heavy_shotgun_burst
+			ClassIcon heavy_shotgun_burst_lite
 			Attributes MiniBoss
 			WeaponRestrictions SecondaryOnly
             Attributes HoldFireUntilFullReload

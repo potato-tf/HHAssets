@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "hud\leaderboard_class_medic_infpop"
+	"$baseTexture" "hud/leaderboard_class_medic_infpop"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1

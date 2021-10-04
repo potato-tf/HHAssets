@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture" "hud/leaderboard_class_pyro_phlog"
+	"$baseTexture" "hud/leaderboard_class_pyro_phlog"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1

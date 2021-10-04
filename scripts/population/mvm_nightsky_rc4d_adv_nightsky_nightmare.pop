@@ -1402,7 +1402,7 @@ popuwashyon
 		{
 			Template T_TFBot_Giant_Scout
 			Name "Giant Demonic Pact Scout"
-			ClassIcon scout_cola_nys
+			ClassIcon scout_cola
 			Health 1600 //2500 + lower move speed as alternative
 			Item "Crit-a-Cola"
 			Item "Spine-Chilling Skull 2011 Style 2"
@@ -2310,7 +2310,7 @@ popuwashyon
 		{
 			Template T_TFBot_Giant_Heavyweapons
 			Name "Cosmic Colossus"
-			ClassIcon heavy_steelfist_nys
+			ClassIcon heavy_steelfist
 			Item "Fists of Steel"
 			Item "War Head"
 			WeaponRestrictions MeleeOnly
@@ -2392,7 +2392,7 @@ popuwashyon
 		{
 			Class Demoman
 			Skill Hard
-			ClassIcon demo_loch
+			ClassIcon demo_loch_nys
 			Name "Blazing Star Demo"
 			Item "The Loch-n-Load"
 			Item "The Splendid Screen"
@@ -3199,7 +3199,7 @@ popuwashyon
 			{
 				Template Naut_Scout
 				WeaponRestrictions MeleeOnly
-				ClassIcon scout_bat_nys
+				ClassIcon scout_bat
 			}
 		}
 		WaveSpawn

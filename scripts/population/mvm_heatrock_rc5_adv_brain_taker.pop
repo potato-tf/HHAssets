@@ -1460,7 +1460,7 @@ population
 		{
 			Class Heavyweapons
 			Name "Giant Brass Beast Heavy"
-			ClassIcon heavy_brassbeast
+			ClassIcon heavy_brass_nys
 			Item "The Brass Beast"
 			Item "The Eliminators Safeguard"
 			Skill Expert
@@ -1551,7 +1551,7 @@ population
 		{
 			Class Heavyweapons
 			Name "Giant Tomislav Heavy"
-			ClassIcon heavy_accurate
+			ClassIcon heavy_accurate_lite
 			Skill Expert
 			Health 5000
 			Attributes MiniBoss
@@ -4154,7 +4154,7 @@ population
 				SpawnAtEntity Where // Entity to spawn the template at, "Where" spawns at the bot spawn as indicated by where. If omitted, spawns at world origin
 				IsCrit 0 // Shows icon as critical (Default: 0)
 				IsMiniBoss 1 // Shows icon as mini boss (Default: 0)
-				ClassIcon heavy_brassbeast // ClassIcon to use
+				ClassIcon heavy_brass_nys // ClassIcon to use
 				Name "FakeIcon" // Template name to use
 				Origin "0 0 0" // Position where to spawn the template. If SpawnAtEntity is specified, relative to entity
 				Angles "0 0 0" // Rotation of the template

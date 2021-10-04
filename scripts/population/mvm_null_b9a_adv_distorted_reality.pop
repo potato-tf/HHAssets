@@ -2260,13 +2260,13 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFBot_Scout_Melee
-					ClassIcon	scout_bat_nys
+					ClassIcon	scout_bat
 					Name "Bat Scout"
 				}
 				TFBot
 				{
 					Template	T_TFBot_Scout_Melee
-					ClassIcon	scout_bat_nys
+					ClassIcon	scout_bat
 					Name "Bat Scout"
 					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" [$SIGSEGV]
 					SpawnTemplate	"distort" [$SIGSEGV]
@@ -2902,7 +2902,7 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFBot_Scout_Melee
-					ClassIcon	scout_bat_nys
+					ClassIcon	scout_bat
 					Attributes	AlwaysCrit
 					Name "Bat Scout"
 				}
@@ -2910,7 +2910,7 @@ WaveSchedule
 				{
 					Template	T_TFBot_Scout_Melee
 					Name "Distorted Bat Scout"
-					ClassIcon	scout_bat_nys
+					ClassIcon	scout_bat
 					Attributes	AlwaysCrit
 					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" [$SIGSEGV]
 					SpawnTemplate	"distort" [$SIGSEGV]
@@ -2968,7 +2968,7 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFBot_Scout_Melee
-					ClassIcon	scout_bat_nys
+					ClassIcon	scout_bat
 					Attributes	AlwaysCrit
 					Name "Bat Scout"
 				}
@@ -2976,7 +2976,7 @@ WaveSchedule
 				{
 					Template	T_TFBot_Scout_Melee
 					Name "Distorted Bat Scout"
-					ClassIcon	scout_bat_nys
+					ClassIcon	scout_bat
 					Attributes	AlwaysCrit
 					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" [$SIGSEGV]
 					SpawnTemplate	"distort" [$SIGSEGV]

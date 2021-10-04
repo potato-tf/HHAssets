@@ -619,7 +619,7 @@ WaveSchedule
 		{
 			Name "Burst Shotgun Heavy"
 			Class Heavyweapons
-			ClassIcon heavy_shotgun_burst
+			ClassIcon heavy_shotgun_burst_lite
 			Skill Normal
 			Health 300
 			MaxVisionRange 1000
@@ -968,7 +968,7 @@ WaveSchedule
 			Name "Giant Crossbow Medic"
 			Item "The Crusader's Crossbow"
 			Item "Berliner's Bucket Helm"
-			ClassIcon medic_crossbow_bleed_giant
+			ClassIcon medic_crossbow_bleed_v2
 			WeaponRestrictions PrimaryOnly
 			Tag strip_medigun
 			StripItemSlot 1 [$SIGSEGV]
@@ -1226,7 +1226,7 @@ WaveSchedule
 			Class Medic
 			Health 4500
 			Skill Expert
-			ClassIcon medic_armored_giant
+			ClassIcon medic_armored_lite
 			WeaponRestrictions SecondaryOnly
 			Attributes MiniBoss
 			Attributes ProjectileShield
@@ -1595,7 +1595,7 @@ WaveSchedule
         {
             Name "Axtinguisher Pyro"
             Class Pyro
-            ClassIcon pyro_axtinguisher
+            ClassIcon pyro_jug_axtinguisher
             Skill Expert
             Item "The Axtinguisher"
             WeaponRestrictions MeleeOnly

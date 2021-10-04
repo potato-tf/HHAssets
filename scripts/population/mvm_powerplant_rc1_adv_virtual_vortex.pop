@@ -4923,7 +4923,7 @@ population
 			WaitForAllSpawned	2
 			TFBot
 			{
-                        ClassIcon scout_bat_nys
+                        ClassIcon scout_giant
 				WeaponRestrictions	MeleeOnly
                                 Name "Giant Bat Scout"
 				Template	T_TFBot_Giant_Scout
@@ -5152,7 +5152,7 @@ population
 				}
 				TFBot
 				{
-                                ClassIcon medic_shield_qf
+                                ClassIcon medic_shield_lite
 					Name	"Shield Medic"
 					Template	T_TFBot_Medic_BigHeal
                                         Tag bot_squad_member

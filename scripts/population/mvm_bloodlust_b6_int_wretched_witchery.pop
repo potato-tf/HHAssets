@@ -893,7 +893,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			TFBot
 			{
 				Template	T_TFBot_Scout_Melee
-				ClassIcon	scout_bat_nys
+				ClassIcon	scout_bat
 			}
 		}
 		WaveSpawn
@@ -1205,7 +1205,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			TFBot
 			{
 				Template	T_TFBot_Scout_Melee
-				ClassIcon	scout_bat_nys
+				ClassIcon	scout_bat
 			}
 		}
 		WaveSpawn

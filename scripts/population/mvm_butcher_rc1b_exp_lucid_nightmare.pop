@@ -161,7 +161,7 @@ WaveSchedule_NamesArePointlessEksDee
 			Class Scout
 			Health 1200
 			Attributes MiniBoss
-			ClassIcon 	scout_superbonk_nys
+			ClassIcon 	scout_superbonk
 			Skill Expert
 			Item "Bonk Helm"
 			Item "The Soda Popper"
@@ -511,7 +511,7 @@ WaveSchedule_NamesArePointlessEksDee
 			Name "Giant Fury Pyro"
 			Class Pyro
 			Skill Expert
-			ClassIcon pyro_dragon_fury_giant
+			ClassIcon pyro_dragon_fury_swordstone_giant
 			MaxVisionRange 800
 			Attributes MiniBoss
 			Health 3300
@@ -696,7 +696,7 @@ WaveSchedule_NamesArePointlessEksDee
 		{
 			Name "Heater Heavy"
 			Class Heavyweapons
-			ClassIcon heavy_heater_nys
+			ClassIcon heavy_heater
 			Skill Normal
 			Item "The Huo Long Heatmaker"
 			Item "The Bunsen Brave"
@@ -711,7 +711,7 @@ WaveSchedule_NamesArePointlessEksDee
 		{
 			Class Heavy
 			Name "Bloodthirsty Heavy"
-			ClassIcon heavy_warrior_tind
+			ClassIcon heavy_warrior
 			Skill Expert
 			Scale 1.5
 			Health 900

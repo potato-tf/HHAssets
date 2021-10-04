@@ -774,7 +774,7 @@ WaveSchedule
             Skill    Hard
             Item         "the dragon's fury"
 			Item "The Triclops"
-            ClassIcon pyro_dragon_fury_giant_swordstone
+            ClassIcon pyro_dragon_fury_swordstone_giant
 			MaxVisionRange 600
 			
 			Attributes MiniBoss
@@ -2708,7 +2708,7 @@ WaveSchedule
 			{
 				Template  T_TFBot_Scout_Melee
 				Attributes AlwaysCrit
-				ClassIcon scout_bat_nys
+				ClassIcon scout_bat
 			}
 		}
 		
@@ -2986,7 +2986,7 @@ WaveSchedule
 			{
 				Template  T_TFBot_Scout_Melee
 				Attributes AlwaysCrit
-				ClassIcon scout_bat_nys
+				ClassIcon scout_bat
 			}
 		}
 		
@@ -3009,7 +3009,7 @@ WaveSchedule
 			{
 				Template  T_TFBot_Scout_Melee
 				Attributes AlwaysCrit
-				ClassIcon scout_bat_nys
+				ClassIcon scout_bat
 			}
 		}
 		

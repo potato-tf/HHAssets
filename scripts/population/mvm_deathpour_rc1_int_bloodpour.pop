@@ -619,7 +619,7 @@ WaveSchedule
 			TFBot
 			{
 				Class Pyro
-				ClassIcon pyro_detonator
+				ClassIcon pyro_detonator_lite
 				Name "Flare Pyro"
 				Skill Easy
 				WeaponRestrictions SecondaryOnly
@@ -663,7 +663,7 @@ WaveSchedule
 			TFBot
 			{
 				Class Pyro
-				ClassIcon pyro_detonator
+				ClassIcon pyro_detonator_lite
 				Name "Flare Pyro"
 				Skill Easy
 				WeaponRestrictions SecondaryOnly
@@ -690,7 +690,7 @@ WaveSchedule
 			TFBot
 			{
 				Class Scout
-				ClassIcon scout_bat_nys
+				ClassIcon scout_bat
 				Skill Hard
 				WeaponRestrictions MeleeOnly
 			}
@@ -763,7 +763,7 @@ WaveSchedule
 			TFBot
 			{
 				Class Soldier
-				ClassIcon soldier_equalizer
+				ClassIcon soldier_pickaxe_equalize
 				Name "Pickaxe Soldier"
 				Skill Hard
 				WeaponRestrictions MeleeOnly
@@ -974,7 +974,7 @@ WaveSchedule
 			TFBot
 			{
 				Class Pyro
-				ClassIcon pyro_detonator
+				ClassIcon pyro_detonator_lite
 				Name "Flare Pyro"
 				Skill Normal
 				WeaponRestrictions SecondaryOnly
@@ -1297,7 +1297,7 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Giant_Scout
-				ClassIcon scout_bat_nys_giant
+				ClassIcon scout_giant
 				WeaponRestrictions MeleeOnly
 				Item "Face Plante"
 			}
@@ -1420,7 +1420,7 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Scout_Melee
-				ClassIcon scout_bat_nys
+				ClassIcon scout_bat
 				Action Mobber			[$SIGSEGV]
 				Attributes DisableDodge
 			}

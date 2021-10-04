@@ -1377,7 +1377,7 @@ HellSchedule
 				{
 				    Class Scout
 					Name "Sun Chaser"
-					ClassIcon scout_sunstick
+					ClassIcon scout_sunstick_swordstone
 					WeaponRestrictions MeleeOnly
 					Item "The Wilson Weave"
 					Item "Sun-on-a-Stick"
@@ -1395,7 +1395,7 @@ HellSchedule
 				{
 				    Class Scout
 					Name "Sun Chaser"
-					ClassIcon scout_sunstick
+					ClassIcon scout_sunstick_swordstone
 					Tag nav_prefer_flank_front
 					WeaponRestrictions MeleeOnly
 					Item "The Wilson Weave"
@@ -1414,7 +1414,7 @@ HellSchedule
 				{
 				    Class Scout
 					Name "Sun Chaser"
-					ClassIcon scout_sunstick
+					ClassIcon scout_sunstick_swordstone
 					Tag nav_prefer_flank_front
 					WeaponRestrictions MeleeOnly
 					Item "The Wilson Weave"
@@ -1433,7 +1433,7 @@ HellSchedule
 				{
 				    Class Scout
 					Name "Sun Chaser"
-					ClassIcon scout_sunstick
+					ClassIcon scout_sunstick_swordstone
 					WeaponRestrictions MeleeOnly
 					Item "The Wilson Weave"
 					Item "Sun-on-a-Stick"

@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "hud\leaderboard_class_spy_revolver_atomic"
+	"$baseTexture" "hud/leaderboard_class_spy_revolver_atomic"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1

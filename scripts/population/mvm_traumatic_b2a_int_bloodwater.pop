@@ -638,7 +638,7 @@ we_do_a_little_trollllllllllllling
 					Template T_TFBot_Giant_Scout
 					WeaponRestrictions MeleeOnly
 					Health 1200
-					ClassIcon scout_bat_nys
+					ClassIcon scout_giant
 					Tag noflank
 				}
 		}

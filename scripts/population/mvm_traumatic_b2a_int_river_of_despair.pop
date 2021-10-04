@@ -185,7 +185,7 @@ ZombieSchedule
 	    br_giant_mace_knight
 		{
 			Class Demoman
-			ClassIcon scout_sunstick
+			ClassIcon scout_sunstick_swordstone
 			Name "Giant Fire Mace Knight"
 			Skill Expert
 			Health 3300
@@ -1846,7 +1846,7 @@ ZombieSchedule
 			TFBot
 			{
 			    Template T_TFBot_Giant_Scout
-				ClassIcon scout_bat_nys
+				ClassIcon scout_giant
 				WeaponRestrictions MeleeOnly
 				Tag noflank
 			    UseHumanModel 2

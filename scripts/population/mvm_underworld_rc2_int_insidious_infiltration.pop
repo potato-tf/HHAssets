@@ -526,7 +526,7 @@ WaveSchedule
         T_TFBot_Pyro_Axtinguisher
 		{
 			Class Pyro
-			ClassIcon pyro_axtinguisher
+			ClassIcon pyro_jug_axtinguisher
 			Name "Axtinguisher Pyro"
 			Health 175
 			Skill Hard
@@ -975,7 +975,7 @@ WaveSchedule
             TFBot
             { 
                 Template T_TFBot_Scout_Melee_Fix
-                ClassIcon scout_bat_nys
+                ClassIcon scout_bat
                 AddTemplate Zombify_Scout [$SIGSEGV]
             }
         }

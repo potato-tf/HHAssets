@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "hud\leaderboard_class_tank_skeleton"
+	"$baseTexture" "hud/leaderboard_class_tank_skeleton"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1

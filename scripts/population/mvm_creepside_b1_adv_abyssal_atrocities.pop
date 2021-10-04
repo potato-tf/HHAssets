@@ -196,7 +196,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		T_TFBot_Skeleton_Axtinguisher
 		{
 			Class	Sniper
-			ClassIcon	pyro_axtinguisher
+			ClassIcon	pyro_jug_axtinguisher
 			WeaponRestrictions	MeleeOnly
 			Name	"Soul Extinguisher"
 			UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
@@ -245,7 +245,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Skill	Hard
 			Scale	1.5
 			Health	900
-			ClassIcon	heavy_bread
+			ClassIcon	heavy_breadbite_nys
 			WeaponRestrictions	MeleeOnly
 			Item	"The Bread Bite"
 			Item	"Breadcrab"
@@ -260,7 +260,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		{
 			Name	"Heavier Shotgun"
 			Class	Heavyweapons
-			ClassIcon	heavy_shotgun_burst
+			ClassIcon	heavy_shotgun_burst_lite
 			Health	500
 			Scale	1.25
 			Item	"TF_WEAPON_SHOTGUN_HWG"
@@ -311,7 +311,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		{
 			Class	Scout
 			Name	"Super Sun-Stick Scout"
-			ClassIcon	scout_sunstick
+			ClassIcon	scout_sunstick_swordstone
 			Skill	Expert
 			Item	"Hephaistos' Handcraft"
 			Item	"Sun-on-a-Stick"
@@ -764,7 +764,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		{
 			Name	"Shield Medic"
 			Class	Medic
-			ClassIcon	medic_shield
+			ClassIcon	medic_shield_lite
 			Skill	Expert
 			Attributes	SpawnWithFullCharge
 			Attributes	ProjectileShield

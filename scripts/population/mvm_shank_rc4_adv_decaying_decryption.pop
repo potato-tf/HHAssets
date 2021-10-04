@@ -55,7 +55,7 @@ population
 		T_TFBot_Pyro_Fury
 		{
 			Class	Pyro
-			ClassIcon	pyro_dragon_fury
+			ClassIcon	pyro_dragon_fury_swordstone
 			Skill	Hard
 			Name	"Fury Pyro"
 			Item	"The Dragon's Fury"
@@ -233,7 +233,7 @@ population
 			Attributes	SpawnWithFullCharge
 			Attributes	ProjectileShield
 			Attributes	IgnoreEnemies
-			ClassIcon	medic_shield_qf
+			ClassIcon	medic_shield_lite
 			Item	"The Quick-Fix"
 			Item	"Medic Gatsby"
 			ItemAttributes
@@ -255,7 +255,7 @@ population
 		T_TFBot_Giant_Vaccinator_Bullet
 		{
 			Class	Medic
-			ClassIcon	medic_vacc_trio
+			ClassIcon	medic_vac_trio_nys
 			Health	4500
 			Skill	Expert
 			Name	"Giant Bullet Resist Medic"
@@ -283,7 +283,7 @@ population
 		T_TFBot_Giant_Vaccinator_Blast
 		{
 			Class	Medic
-			ClassIcon	medic_vacc_trio
+			ClassIcon	medic_vac_trio_nys
 			Health	4500
 			Skill	Expert
 			Name	"Giant Blast Resist Medic"
@@ -311,7 +311,7 @@ population
 		T_TFBot_Giant_Vaccinator_Fire
 		{
 			Class	Medic
-			ClassIcon	medic_vacc_trio
+			ClassIcon	medic_vac_trio_nys
 			Health	4500
 			Skill	Expert
 			Name	"Giant Fire Resist Medic"
@@ -384,7 +384,7 @@ population
 			Attributes	MiniBoss
 			Attributes	SpawnWithFullCharge
 			Attributes	ProjectileShield
-			ClassIcon	medic_shield_kritz
+			ClassIcon	medic_kritz_shield_lite
 			Item	"The Kritzkrieg"
 			Item	"German Gonzila"
 			ItemAttributes
@@ -410,7 +410,7 @@ population
 			Class	Soldier
 			Skill	Expert
 			Health	50000
-			ClassIcon	soldier_escape
+			ClassIcon	soldier_pickaxe_escape
 			MaxVisionRange	3500
 			Attributes	MiniBoss
 			Attributes	UseBossHealthBar
@@ -477,7 +477,7 @@ population
 			Name	"Sergeant Sixshot"
 			Class	Spy
 			Skill	Easy
-			ClassIcon	spy_revolver
+			ClassIcon	spy_revolver_lite
 			Attributes	MiniBoss
 			Attributes	UseBossHealthBar
 			Health	30000

@@ -313,7 +313,7 @@ WaveSchedule
 		{
 			Name  "Cola Scout"
 			Class  Scout
-			ClassIcon  scout_cola_nys
+			ClassIcon  scout_cola
 			Skill  Normal
 			Item  "The Soda Popper"
 			Item  "Crit-a-Cola"
@@ -1538,7 +1538,7 @@ WaveSchedule
 		T_TFBot_Heavyweapons_Tomislav
 		{
 			Class Heavy
-			ClassIcon heavy_accurate
+			ClassIcon heavy_accurate_lite
 			Name "Tomislav Heavy"
 			Skill Easy
 			WeaponRestrictions  PrimaryOnly
@@ -1551,7 +1551,7 @@ WaveSchedule
 			Health  900
 			Name  "Steel Gauntlet"
 			Class  HeavyWeapons
-			ClassIcon  heavy_steelfist_nys
+			ClassIcon  heavy_steelfist
 			Skill  Expert
 			Scale  1.5
 			WeaponRestrictions  MeleeOnly
@@ -1563,7 +1563,7 @@ WaveSchedule
 			Health 900
 			Name "Steel Gauntlet Pusher"
 			Class Heavyweapons
-			ClassIcon heavy_steelfist_nys
+			ClassIcon heavy_steelfist
 			Skill Expert
 			Scale 1.5
 			WeaponRestrictions MeleeOnly			
@@ -1678,7 +1678,7 @@ WaveSchedule
 		{
 			Name  "Burst Shotgun Heavy"
 			Class  HeavyWeapons
-			ClassIcon  heavy_shotgun_burst
+			ClassIcon  heavy_shotgun_burst_lite
 			Skill  Hard
 			WeaponRestrictions  SecondaryOnly
 			Item  "Panic Attack Shotgun"
@@ -2166,7 +2166,7 @@ WaveSchedule
 		T_TFBot_Medic_QuickFix_Shield
 		{
 			Class Medic
-			ClassIcon  medic_shield_qf
+			ClassIcon  medic_shield
 			Name "Shield Medic"
 			Skill Hard
 			Attributes  SpawnWithFullCharge
@@ -2184,7 +2184,7 @@ WaveSchedule
 		T_TFBot_Medic_QuickFix_Shield_Extended
 		{
 			Class Medic
-			ClassIcon  medic_shield_qf
+			ClassIcon  medic_shield
 			Name "Extended Shield Medic"
 			Skill Hard
 			Attributes  SpawnWithFullCharge
@@ -2383,7 +2383,7 @@ WaveSchedule
             Health  875
             Name  "Armored Big Heal Medic"
             Class  Medic
-            ClassIcon  medic_armored_qf
+            ClassIcon  medic_armored_lite
             Skill  Hard
             Scale  1.5
             Item  "The Quick-Fix"
@@ -4083,7 +4083,7 @@ WaveSchedule
             Health  5000
             Name  "Junior Punch"
             Class  HeavyWeapons
-            ClassIcon  heavy_steelfist_nys_giant
+            ClassIcon  heavy_steelfist_giant
             Skill  Expert
             Attributes  MiniBoss
             WeaponRestrictions  MeleeOnly
