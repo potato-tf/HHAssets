@@ -48,6 +48,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install web assets
         run: |
-          rsync -a --delete --update --exclude=".*" . /var/html/www/HHAssets/
+          rsync -a --delete --update --exclude=".*" . /var/www/html/HHAssets/
     
           
