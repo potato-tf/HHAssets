@@ -820,7 +820,7 @@ TFBot
 			{
 				 Class Demoman
 					Name "Davy Jones' Cousin"
-					ClassIcon demo_cannon
+					ClassIcon demo_loosecannon
 					Item "The Liquor Locker"
 					Item "The Buccaneer's Bicorne"
 					Skill Hard
