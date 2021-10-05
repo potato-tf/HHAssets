@@ -263,7 +263,7 @@ T_TFBot_Edgy_Sniper
 			Skill Normal
 			Item "The Huntsman"
 			Item "The Anger"
-			ClassIcon sniper_bow_bleed_v2
+			ClassIcon sniper_bow_bleed
 			WeaponRestrictions PrimaryOnly
 			ItemAttributes
 			{

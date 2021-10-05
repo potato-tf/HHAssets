@@ -1093,7 +1093,7 @@ yes_spy_counters_w4_got_a_fucking_problem?
 				{
 					Template T_TFBot_Giant_Soldier
 					Item "The Direct Hit"
-					ClassIcon soldier_dh_nys
+					ClassIcon soldier_directhit
 				}
 
 				TFBot

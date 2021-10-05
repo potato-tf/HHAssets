@@ -968,7 +968,7 @@ WaveSchedule
 			Name "Giant Crossbow Medic"
 			Item "The Crusader's Crossbow"
 			Item "Berliner's Bucket Helm"
-			ClassIcon medic_crossbow_bleed_v3
+			ClassIcon medic_crossbow_bleed_v2
 			WeaponRestrictions PrimaryOnly
 			Tag strip_medigun
 			StripItemSlot 1 [$SIGSEGV]
@@ -1705,7 +1705,7 @@ WaveSchedule
 		{
 			Name "Barbed Bowman"
 			Class Sniper
-			ClassIcon sniper_bow_bleed_v2
+			ClassIcon sniper_bow_bleed
 			Skill Expert
 			Item "The Fortified Compound"
 

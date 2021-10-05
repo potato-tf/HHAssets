@@ -1559,7 +1559,7 @@ popuwashyon
 			UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
 			Tag	giant
 			Action FetchFlag [$SIGSEGV]
-			ClassIcon medic_crossbow_bleed_v3
+			ClassIcon medic_crossbow_bleed_v2
 			DamageAppliesCond [$SIGSEGV]
 			{
 				Name "TF_COND_PLAGUE"
