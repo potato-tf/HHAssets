@@ -1241,7 +1241,7 @@ population
 			{
 				TFBot
 				{
-                                ClassIcon soldier_directhit
+                                ClassIcon soldier_dh_nys
 					Health	200
 					Skill	Easy
 					Name	"Direct Hit Soldier"

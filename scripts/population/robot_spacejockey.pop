@@ -2651,7 +2651,7 @@ WaveSchedule
 			Class  Sniper
 			Name  "Bloody Bowman"
 			Skill  Hard
-			ClassIcon  sniper_bow_bleed
+			ClassIcon  sniper_bow_bleed_v2
 			WeaponRestrictions  PrimaryOnly
 			Item  "The Huntsman"
 			ItemAttributes

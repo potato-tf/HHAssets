@@ -182,7 +182,7 @@ WaveSchedule
         {
             Class Soldier 
             Item "The Direct Hit"
-            ClassIcon soldier_directhit
+            ClassIcon soldier_dh_nys
             Skill Hard
             Item "Zombie Soldier"
             UseCustomModel "models/player/soldier.mdl"
@@ -203,7 +203,7 @@ WaveSchedule
         {
             Class Soldier 
             Item "The Direct Hit"
-            ClassIcon soldier_directhit
+            ClassIcon soldier_dh_nys
             Skill Hard
             Item "Zombie Soldier"
             UseCustomModel "models/player/soldier.mdl"

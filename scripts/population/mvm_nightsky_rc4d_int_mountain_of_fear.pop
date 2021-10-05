@@ -574,7 +574,7 @@ popuwashyon
 			TFBot
 			{
 				Template T_TFBot_Sniper_Huntsman
-				ClassIcon sniper_bow_bleed_giant
+				ClassIcon sniper_bow_bleed_v2_giant
 				Name "Great Fairy of Misfortune"
 				Health 2500
 				Attributes MiniBoss

@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "hud/leaderboard_class_medic_crossbow_bleed_v2"
+	"$baseTexture" "hud/leaderboard_class_scout_wrap_lite_heal"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1

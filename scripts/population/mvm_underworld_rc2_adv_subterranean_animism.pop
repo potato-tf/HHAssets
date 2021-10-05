@@ -3289,7 +3289,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				{
 					Template T_TFBot_Plague_Doctor
 					Name "Crossbow Bleed Medic"
-					ClassIcon medic_crossbow_bleed_v2
+					ClassIcon medic_crossbow_bleed_v3
 					ItemAttributes
 					{
 						ItemName "the crusader's crossbow"

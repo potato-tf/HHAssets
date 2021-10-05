@@ -1,9 +1,10 @@
 "UnlitGeneric"
 {
-	"$basetexture" "hud/leaderboard_class_sniper_bow_bleed"
+	"$baseTexture" "hud/leaderboard_class_soldier_dh_nys"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1
 	"%keywords" "tf"
 	"$translucent" 1
 }
+
