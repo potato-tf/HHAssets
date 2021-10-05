@@ -3155,6 +3155,7 @@ WaveSchedule
                 {
                     Template        T_TFBot_Scout_SunStick
                     Attributes      AlwaysCrit
+					ClassIcon scout_sunstick_swordstone
                     Item "Sun-on-a-Stick"
                     ItemAttributes
                     {
