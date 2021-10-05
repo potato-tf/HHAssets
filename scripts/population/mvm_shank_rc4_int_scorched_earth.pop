@@ -1468,7 +1468,7 @@ population
 			{
 				TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Normal
@@ -1483,7 +1483,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Normal
@@ -1496,7 +1496,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Normal
@@ -1509,7 +1509,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Hard
@@ -1522,7 +1522,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Hard
@@ -1539,7 +1539,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Hard
@@ -1556,7 +1556,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Normal
@@ -1575,7 +1575,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Hard
@@ -1588,7 +1588,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Hard
@@ -1601,7 +1601,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Hard
@@ -1614,7 +1614,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Hard
@@ -1627,7 +1627,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Normal
@@ -1644,7 +1644,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Hard
@@ -1661,7 +1661,7 @@ population
 				}
                 TFBot
 				{
-					ClassIcon	soldier_directhit
+					ClassIcon	soldier_dh_nys
 					Name	"Direct Hit Soldier"
 					Class	Soldier
 					Skill	Normal
