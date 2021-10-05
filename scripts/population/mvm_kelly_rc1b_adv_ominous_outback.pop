@@ -417,11 +417,11 @@ Wave
 		{
 			Name	wave2a	
 			TotalCurrency	100
-			TotalCount	35
+			TotalCount	30
 			MaxActive	15
 			SpawnCount	5
 			WaitBeforeStarting	1
-			WaitBetweenSpawns	4
+			WaitBetweenSpawns	8
 			Where	spawnbot_any
 			TFBot
 			{
@@ -476,7 +476,7 @@ FirstSpawnOutput
 			MaxActive 12
 			
 			
-			WaitBetweenSpawns 9
+			WaitBetweenSpawns 5
 			WaitBeforeStarting 5
 			
 			TotalCurrency 100
@@ -820,7 +820,7 @@ TFBot
 			{
 				 Class Demoman
 					Name "Davy Jones' Cousin"
-					ClassIcon demo_loosecannon
+					ClassIcon demo_cannon
 					Item "The Liquor Locker"
 					Item "The Buccaneer's Bicorne"
 					Skill Hard
@@ -1373,7 +1373,7 @@ Wave	// WAVE 5
 				{
 				ClassIcon	soldier_nuker
 			WeaponRestrictions	PrimaryOnly
-			Health	20000
+			Health	30000
 			Skill	Expert
 			Name	"Former Hell Raiser"  //reference to Okuu from Touhou project 11
 			Class	Soldier
@@ -1870,7 +1870,7 @@ Item "Larrikin Robin"
 				TFBot
 				{
 					ClassIcon	heavy_deflector_fire
-					Health	30000
+					Health	45000
 					Name	"Rising Phoenix"
 					Class	HeavyWeapons
 					Scale 1.8
@@ -1895,6 +1895,7 @@ Item "Larrikin Robin"
 				"attach particle effect"	701
 				"ragdolls plasma effect"	1
                                  "mini rockets" 1
+                                  "no self blast dmg" 1
 							}
                                                         ItemAttributes
 			{
@@ -1905,8 +1906,9 @@ Item "Larrikin Robin"
 				"Blast radius increased"	2.5
 				//"apply z velocity on damage"	200
 				//"apply look velocity on damage"	200
-				"Projectile speed increased"	0.35
-				
+				"Projectile speed increased"	0.5
+				"Set DamageType Ignite" 1
+                                 "no self blast dmg" 1
 			}
                                              	CharacterAttributes
 							{
@@ -1953,15 +1955,16 @@ Item "Larrikin Robin"
 			{
 		Class Sniper
 			Name "Flaming Projectile Zombie"
-			Skill Normal
-			Item "The Huntsman"
-			Item "The Anger"
+			Skill Hard
+			Item "The Fortified Compound"
+			Item "The Fruit Shoot"
 			ClassIcon sniper_bow_ignite
 			WeaponRestrictions PrimaryOnly
 			ItemAttributes
 			{
-				ItemName "The Huntsman"
+				ItemName Item "The Fortified Compound"
 				"Set DamageType Ignite" 1
+                                "attach particle effect" 13
 			}
 			}
 		
