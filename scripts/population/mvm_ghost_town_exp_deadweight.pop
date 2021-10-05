@@ -167,6 +167,28 @@ WaveSchedule
 				"modelscale"	"3"
             }
         }
+		annotation_blimp //Blimp Arrow //made by randomguy if you don't use this you are ape
+        {
+            NoFixup 1
+            training_annotation
+            {
+              "targetname"   "blimp_hint"
+              "display_text" "Blimp incoming!"
+              "lifetime"     "10"
+              "origin" "1100 5300 850"
+            }
+        }
+		Blimp_AutoCollect_Cash // skin king reported this to me so lulz
+		{
+		    NoFixup 1
+			trigger_hurt
+			{
+			    "name" "mr_dont_kll_mistress_blimp_too_fast"
+				"origin" "330 5150 850" 
+				"mins" "-2500 -2500 -2500"
+				"maxs" "2500 2500 2500"
+			}
+		}
 		Blimp_Pumpkin
 		{
             OnSpawnOutput
@@ -1069,6 +1091,8 @@ WaveSchedule
 	
 	Wave
 	{
+	    SpawnTemplate "annotation_blimp"
+		SpawnTemplate Blimp_AutoCollect_Cash
 		StartWaveOutput
 		{
 			Target wave_start_relay
@@ -1085,6 +1109,12 @@ WaveSchedule
 			Name "wave01"
 			TotalCount 1
 			TotalCurrency 200
+			
+			FirstSpawnOutput
+			{
+			    Target blimp_hint
+				Action Show
+			}
 			
 			FirstSpawnWarningSound "#music/hl1_song10.mp3"
 			
@@ -1142,6 +1172,17 @@ WaveSchedule
 					Target boss_deploy_relay
 					Action Trigger
 				}			    
+			}
+		}
+		
+		WaveSpawn
+		{
+		    WaitBeforeStarting 15
+			WaitForAllDead "wave01"
+			FirstSpawnOutput
+			{
+			    Target mr_dont_kll_mistress_blimp_too_fast
+				Action Kill
 			}
 		}
 		
