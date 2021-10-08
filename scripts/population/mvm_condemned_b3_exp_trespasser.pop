@@ -69,10 +69,10 @@ WaveSchedule
 	PrecacheSound "trespasser/mp40f1.wav" 									[$SIGSEGV]
 	PrecacheSound "trespasser/tank_fire_07.wav" 							[$SIGSEGV]
 	PrecacheSound "trespasser/tank_yell_10.wav" 							[$SIGSEGV]
-	PrecacheSound "trespasser/zombierobotest.wav" 							[$SIGSEGV]
+	PrecacheSound "trespasser/zombierobotest.mp3" 							[$SIGSEGV]
 	PrecacheSound "trespasser/zombiefinalequiet.mp3" 						[$SIGSEGV]
-	PrecacheSound "trespasser/zombieintroquiet.wav" 						[$SIGSEGV]
-	PrecacheSound "trespasser/zombiewait2.wav" 								[$SIGSEGV]
+	PrecacheSound "trespasser/zombieintroquiet.mp3" 						[$SIGSEGV]
+	PrecacheSound "trespasser/zombiewait2.mp3" 								[$SIGSEGV]
 
 	PrecacheModel "models\Bornacle.mdl"										[$SIGSEGV]
 	PrecacheModel "models\bots\soldier\bot_soldier_gibby.mdl"				[$SIGSEGV]
@@ -8023,8 +8023,8 @@ WaveSchedule
 				"OnCapTeam1" "horizon,StopSound,,3,-1"
 				"OnCapTeam1" "gogogo,Enable,,1,-1"
 				"OnCapTeam1" "camera3,$enableall,,3,-1"
-				"OnCapTeam1" "player,$PlaySoundToSelf,trespasser/zombieintroquiet.wav,3,-1"
-				"OnCapTeam1" "player,$PlaySoundToSelf,trespasser/zombieintroquiet.wav,3,-1"
+				"OnCapTeam1" "player,$PlaySoundToSelf,trespasser/zombieintroquiet.mp3,3,-1"
+				"OnCapTeam1" "player,$PlaySoundToSelf,trespasser/zombieintroquiet.mp3,3,-1"
 				"OnCapTeam1" "player,$displaytextcenter,You have survived! Awaiting departure...,3,-1"
 				//"OnCapTeam1" "cap_base,Skin,1,0,-1" 		//set the first number to 0 for neutral, 1 for red, 2 for blu
 			}
@@ -10623,7 +10623,7 @@ WaveSchedule
 		}
 		SoundLoop [$SIGSEGV]
 		{
-			SoundFile "trespasser/zombiewait2.wav"
+			SoundFile "trespasser/zombiewait2.mp3"
 		}
 
 		WaveSpawn
@@ -11284,7 +11284,7 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 63
-			FirstSpawnWarningSound #trespasser/zombieintroquiet.wav	
+			FirstSpawnWarningSound #trespasser/zombieintroquiet.mp3	
 		}
 		WaveSpawn
 		{
@@ -11557,7 +11557,7 @@ WaveSchedule
 		{
 			Name "CHECKPOINT1"
 			WaitForAllSpawned "REVIVE1"
-			FirstSpawnWarningSound trespasser/zombiewait2.wav
+			FirstSpawnWarningSound trespasser/zombiewait2.mp3
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target bro                       
@@ -12563,7 +12563,7 @@ WaveSchedule
 		{
 			Name "CHECKPOINT2"
 			WaitForAllSpawned "REVIVE2"
-			FirstSpawnWarningSound trespasser/zombiewait2.wav
+			FirstSpawnWarningSound trespasser/zombiewait2.mp3
 		}
 		WaveSpawn
 		{
@@ -13882,7 +13882,7 @@ WaveSchedule
 		{
 			Name "CHECKPOINT3"
 			WaitForAllSpawned "REVIVE3"
-			FirstSpawnWarningSound trespasser/zombiewait2.wav
+			FirstSpawnWarningSound trespasser/zombiewait2.mp3
 		}
 		WaveSpawn
 		{
@@ -15053,7 +15053,7 @@ WaveSchedule
 		{
 			Name "CHECKPOINT4"
 			WaitForAllSpawned "REVIVE4"
-			FirstSpawnWarningSound trespasser/zombiewait2.wav
+			FirstSpawnWarningSound trespasser/zombiewait2.mp3
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target GTFOEND                
@@ -15681,7 +15681,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllDead "PART5-2"
 			WaitBeforeStarting 20
-			FirstSpawnWarningSound #trespasser/zombierobotest.wav
+			FirstSpawnWarningSound #trespasser/zombierobotest.mp3
 		}
 
 		WaveSpawn
@@ -16038,7 +16038,7 @@ WaveSchedule
 		{
 			Name "checkpoint5"
 			WaitForAllSpawned "revive5"
-			FirstSpawnWarningSound trespasser/zombiewait2.wav
+			FirstSpawnWarningSound trespasser/zombiewait2.mp3
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target GTFOEND                
