@@ -45,7 +45,7 @@ Resources
 	"sound/trespasser/hs.wav"	"file"
 	"sound/trespasser/jetflyby1.wav"	"file"
 	"sound/trespasser/tank_yell_10.wav"	"file"
-	"sound/trespasser/zombieintroquiet.wav"	"file"
-	"sound/trespasser/zombierobotest.wav"	"file"
-	"sound/trespasser/zombiewait2.wav"	"file"
+	"sound/trespasser/zombieintroquiet.mp3"	"file"
+	"sound/trespasser/zombierobotest.mp3"	"file"
+	"sound/trespasser/zombiewait2.mp3"	"file"
 }
