@@ -74,16 +74,16 @@ WaveSchedule
 	PrecacheSound "trespasser/zombieintroquiet.mp3" 						[$SIGSEGV]
 	PrecacheSound "trespasser/zombiewait2.mp3" 								[$SIGSEGV]
 
-	PrecacheModel "models\Bornacle.mdl"										[$SIGSEGV]
-	PrecacheModel "models\bots\soldier\bot_soldier_gibby.mdl"				[$SIGSEGV]
-	PrecacheModel "models\bots\soldier_boss\bot_soldier_boss_gibby.mdl"		[$SIGSEGV]
-	PrecacheModel "models\bots\heavy\bot_heavy_gibby.mdl"					[$SIGSEGV]
-	PrecacheModel "models\bots\skeleton_sniper\skeleton_sniper_fixed.mdl"	[$SIGSEGV]
-	PrecacheModel "models\bots\boss_bot\boss_tank_color.mdl"				[$SIGSEGV]
-	PrecacheModel "models\tf2enhancedmodels\cargoplane_enh.mdl"				[$SIGSEGV]
-	PrecacheModel "models\weapons\c_models\c_rapidfire\c_rapidfire_1.mdl"						[$SIGSEGV]
-	PrecacheModel "models\workshop\weapons\c_models\c_xms_gloves\c_xms_gloves_ushanka.mdl"		[$SIGSEGV]
-	PrecacheModel "models\weapons\c_models\c_the_bolshevik_bomber\c_the_bolshevik_bomber_1.mdl"	[$SIGSEGV]
+	PrecacheModel "models/Bornacle.mdl"										[$SIGSEGV]
+	PrecacheModel "models/bots/soldier/bot_soldier_gibby.mdl"				[$SIGSEGV]
+	PrecacheModel "models/bots/soldier_boss/bot_soldier_boss_gibby.mdl"		[$SIGSEGV]
+	PrecacheModel "models/bots/heavy/bot_heavy_gibby.mdl"					[$SIGSEGV]
+	PrecacheModel "models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl"	[$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_tank_color.mdl"				[$SIGSEGV]
+	PrecacheModel "models/tf2enhancedmodels/cargoplane_enh.mdl"				[$SIGSEGV]
+	PrecacheModel "models/weapons/c_models/c_rapidfire/c_rapidfire_1.mdl"						[$SIGSEGV]
+	PrecacheModel "models/workshop/weapons/c_models/c_xms_gloves/c_xms_gloves_ushanka.mdl"		[$SIGSEGV]
+	PrecacheModel "models/weapons/c_models/c_the_bolshevik_bomber/c_the_bolshevik_bomber_1.mdl"	[$SIGSEGV]
 
 	//Custom Shop
 	CustomUpgradesFile "mvm_upgrades_trespasser.txt"					[$SIGSEGV]
@@ -286,8 +286,8 @@ WaveSchedule
 		"MVM.GiantCommonExplodes"				"misc/null.wav"
 		"Building_Sentrygun.Alert"				"misc/null.wav"
 		"Weapon_General.CritPower"				"misc/null.wav"
-		"BumperCar.SpeedBoostStart"				"npc\barnacle\barnacle_tongue_pull1.wav"
-		"BumperCar.SpeedBoostStop"				"items\medshot4.wav"
+		"BumperCar.SpeedBoostStart"				"npc/barnacle/barnacle_tongue_pull1.wav"
+		"BumperCar.SpeedBoostStop"				"items/medshot4.wav"
 	}
 
 ////////////////////////////////////////////////////////////
@@ -815,7 +815,7 @@ WaveSchedule
 		"health drain" -6
 		"set turn to ice" 1
 		"custom kill icon" "holiday_punch"
-		"custom item model" "models\workshop\weapons\c_models\c_xms_gloves\c_xms_gloves_ushanka.mdl"
+		"custom item model" "models/workshop/weapons/c_models/c_xms_gloves/c_xms_gloves_ushanka.mdl"
 	}
 
 	CustomWeapon [$SIGSEGV]
@@ -842,8 +842,8 @@ WaveSchedule
 		"revolver use hit locations" 1
 		"mark for death" 1
 		"crit kill will gib" 1
-		"custom weapon fire sound" "=80|weapons\shotgun\shotgun_fire6.wav"
-		"custom item model" "models\weapons\c_models\c_rapidfire\c_rapidfire_1.mdl"
+		"custom weapon fire sound" "=80|weapons/shotgun/shotgun_fire6.wav"
+		"custom item model" "models/weapons/c_models/c_rapidfire/c_rapidfire_1.mdl"
 	}
 
 	CustomWeapon [$SIGSEGV]
@@ -856,8 +856,8 @@ WaveSchedule
 		"add cond on hit" 126
 		"Set DamageType Ignite" 1
 		"minicrit vs burning player" 1
-		"custom weapon fire sound" "=80|weapons\flaregun\fire.wav"
-		"custom item model" "models\weapons\c_models\c_the_bolshevik_bomber\c_the_bolshevik_bomber_1.mdl"
+		"custom weapon fire sound" "=80|weapons/flaregun/fire.wav"
+		"custom item model" "models/weapons/c_models/c_the_bolshevik_bomber/c_the_bolshevik_bomber_1.mdl"
 	}
 
 	CustomWeapon [$SIGSEGV]
@@ -874,7 +874,7 @@ WaveSchedule
 		"weapon spread bonus" 0.5
 		"hidden secondary max ammo penalty" 0.68
 		"custom weapon fire sound" "=80|trespasser/de_shot1.wav"
-		"custom item model" "models\workshop\weapons\c_models\c_winger_distol\c_winger_distol.mdl"
+		"custom item model" "models/workshop/weapons/c_models/c_winger_distol/c_winger_distol.mdl"
 	}
 
 	CustomWeapon [$SIGSEGV]
@@ -889,7 +889,7 @@ WaveSchedule
 		"revolver use hit locations" 1
 		"maxammo secondary increased" 2
 		"custom weapon fire sound" "=80|trespasser/mp40f1.wav"
-		"custom item model" models\weapons\c_models\c_hmg\c_hmg.mdl
+		"custom item model" models/weapons/c_models/c_hmg/c_hmg.mdl
 	}
 
 	CustomWeapon [$SIGSEGV]
@@ -1042,8 +1042,8 @@ WaveSchedule
 				"override footstep sound set" 0
 				"increased jump height" 1.5
 			}
-			PainSound =65|physics\body\body_medium_break3.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break3.wav
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Generic2
@@ -1095,8 +1095,8 @@ WaveSchedule
 				"override footstep sound set" 0
 				"increased jump height" 1.5
 			}
-			PainSound =65|physics\body\body_medium_break4.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break4.wav
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Generic3
@@ -1153,8 +1153,8 @@ WaveSchedule
 				"override footstep sound set" 0
 				"increased jump height" 1.5
 			}
-			PainSound =65|physics\body\body_medium_break2.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break2.wav
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Zombie_Generic4
@@ -1205,8 +1205,8 @@ WaveSchedule
 				"override footstep sound set" 0
 				"increased jump height" 1.5
 			}
-			PainSound =65|physics\body\body_medium_break3.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break3.wav
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Generic5
@@ -1255,8 +1255,8 @@ WaveSchedule
 				"override footstep sound set" 0
 				"increased jump height" 1.5
 			}
-			PainSound =65|physics\body\body_medium_break4.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break4.wav
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Generic6
@@ -1312,8 +1312,8 @@ WaveSchedule
 				"override footstep sound set" 0
 				"increased jump height" 1.5
 			}
-			PainSound =65|physics\body\body_medium_break2.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break2.wav
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Zombie_Generic7
@@ -1372,8 +1372,8 @@ WaveSchedule
 				"override footstep sound set" 0
 				"increased jump height" 1.5
 			}
-			PainSound =65|physics\body\body_medium_break3.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break3.wav
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Generic8
@@ -1428,8 +1428,8 @@ WaveSchedule
 				"override footstep sound set" 0
 				"increased jump height" 1.5
 			}
-			PainSound =65|physics\body\body_medium_break4.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break4.wav
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Generic9
@@ -1483,8 +1483,8 @@ WaveSchedule
 				"override footstep sound set" 0
 				"increased jump height" 1.5
 			}
-			PainSound =65|physics\body\body_medium_break2.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break2.wav
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Zombie_Riot1
@@ -1545,7 +1545,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Riot2
@@ -1606,7 +1606,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Riot3
@@ -1673,7 +1673,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Zombie_Riot4
@@ -1734,7 +1734,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Riot4b
@@ -1787,7 +1787,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Riot5
@@ -1846,7 +1846,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Riot5b
@@ -1894,7 +1894,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Riot6
@@ -1960,7 +1960,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Zombie_Riot7
@@ -2022,7 +2022,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Riot8
@@ -2087,7 +2087,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Riot9
@@ -2152,7 +2152,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless1a
@@ -2180,7 +2180,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "fireaxe"
-				"custom hit sound" "weapons\axe_hit_flesh1.wav"
+				"custom hit sound" "weapons/axe_hit_flesh1.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -2205,8 +2205,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break3.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break3.wav
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless1b
@@ -2234,7 +2234,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "shovel"
-				"custom hit sound" "weapons\axe_hit_flesh3.wav"
+				"custom hit sound" "weapons/axe_hit_flesh3.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -2259,8 +2259,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break4.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break4.wav
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless2a
@@ -2288,7 +2288,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "bat"
-				"custom hit sound" "weapons\bat_hit.wav"
+				"custom hit sound" "weapons/bat_hit.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -2314,8 +2314,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break2.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break2.wav
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless2b
@@ -2343,7 +2343,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "axtinguisher"
-				"custom hit sound" "weapons\axe_hit_flesh2.wav"
+				"custom hit sound" "weapons/axe_hit_flesh2.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -2368,8 +2368,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break3.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break3.wav
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless3a
@@ -2397,7 +2397,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "demokatana"
-				"custom hit sound" "weapons\samurai\tf_katana_slice_01.wav"
+				"custom hit sound" "weapons/samurai/tf_katana_slice_01.wav"
 			}
 			ItemModel [$SIGSEGV]
 			{
@@ -2427,8 +2427,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break4.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break4.wav
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless3b
@@ -2456,7 +2456,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "shovel"
-				"custom hit sound" "weapons\axe_hit_flesh3.wav"
+				"custom hit sound" "weapons/axe_hit_flesh3.wav"
 			}
 			ItemModel [$SIGSEGV]
 			{
@@ -2486,8 +2486,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break2.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break2.wav
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless4a
@@ -2514,7 +2514,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "nessieclub"
-				"custom hit sound" "weapons\bat_baseball_hit_world2.wav"
+				"custom hit sound" "weapons/bat_baseball_hit_world2.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -2539,8 +2539,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break3.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break3.wav
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless4b
@@ -2567,7 +2567,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "fireaxe"
-				"custom hit sound" "weapons\axe_hit_flesh1.wav"
+				"custom hit sound" "weapons/axe_hit_flesh1.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -2593,8 +2593,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break4.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break4.wav
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless5a
@@ -2621,7 +2621,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "paintrain"
-				"custom hit sound" "weapons\cleaver_hit_07.wav"
+				"custom hit sound" "weapons/cleaver_hit_07.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -2646,8 +2646,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break2.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break2.wav
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless5b
@@ -2674,7 +2674,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "fireaxe"
-				"custom hit sound" "weapons\axe_hit_flesh1.wav"
+				"custom hit sound" "weapons/axe_hit_flesh1.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -2699,8 +2699,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break3.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break3.wav
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless6a
@@ -2757,8 +2757,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break4.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break4.wav
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless6b
@@ -2790,7 +2790,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "demokatana"
-				"custom hit sound" "weapons\samurai\tf_katana_slice_01.wav"
+				"custom hit sound" "weapons/samurai/tf_katana_slice_01.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -2815,8 +2815,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break2.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break2.wav
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless7a
@@ -2843,7 +2843,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "bat"
-				"custom hit sound" "weapons\bat_hit.wav"
+				"custom hit sound" "weapons/bat_hit.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -2870,8 +2870,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break3.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break3.wav
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless7b
@@ -2898,7 +2898,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "fireaxe"
-				"custom hit sound" "weapons\axe_hit_flesh1.wav"
+				"custom hit sound" "weapons/axe_hit_flesh1.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -2924,8 +2924,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break4.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break4.wav
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless8a
@@ -2981,8 +2981,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break2.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break2.wav
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless8b
@@ -3011,7 +3011,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "persian_persuader"
-				"custom hit sound" "weapons\blade_slice_3.wav"
+				"custom hit sound" "weapons/blade_slice_3.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -3038,8 +3038,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break3.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break3.wav
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless9a
@@ -3094,8 +3094,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break4.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break4.wav
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Zombie_Headless9b
@@ -3124,7 +3124,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "pickaxe"
-				"custom hit sound" "weapons\blade_slice_4.wav"
+				"custom hit sound" "weapons/blade_slice_4.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -3151,8 +3151,8 @@ WaveSchedule
 				"voice pitch scale" 0
 				"override footstep sound set" 0
 			}
-			PainSound =65|physics\body\body_medium_break2.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			PainSound =65|physics/body/body_medium_break2.wav
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Zombie_Poison1
@@ -3228,8 +3228,8 @@ WaveSchedule
 				"override footstep sound set" 9
 				"increased jump height" 1.5
 			}
-			PainSound =65|ambient\levels\canals\toxic_slime_gurgle4.wav
-			DeathSound ambient\levels\canals\toxic_slime_gurgle5.wav [$SIGSEGV]
+			PainSound =65|ambient/levels/canals/toxic_slime_gurgle4.wav
+			DeathSound ambient/levels/canals/toxic_slime_gurgle5.wav [$SIGSEGV]
 		}
 
 		Zombie_Poison2
@@ -3258,7 +3258,7 @@ WaveSchedule
 			{
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "mannpower_plague"
-				"custom hit sound" misc\bonzo_vomit01.wav
+				"custom hit sound" misc/bonzo_vomit01.wav
 				"add cond on hit" 25943
 				"fire input on hit" "shakeit^startshake^0"
 				"add cond on hit duration" 3
@@ -3332,8 +3332,8 @@ WaveSchedule
 				"override footstep sound set" 9
 				"increased jump height" 1.5
 			}
-			PainSound =65|ambient\levels\canals\toxic_slime_sizzle1.wav
-			DeathSound misc\bonzo_vomit02.wav [$SIGSEGV]
+			PainSound =65|ambient/levels/canals/toxic_slime_sizzle1.wav
+			DeathSound misc/bonzo_vomit02.wav [$SIGSEGV]
 		}
 
 		Zombie_Burning
@@ -3433,7 +3433,7 @@ WaveSchedule
                     }
                 }
             }
-			DeathSound ambient\fire\gascan_ignite1.wav [$SIGSEGV]
+			DeathSound ambient/fire/gascan_ignite1.wav [$SIGSEGV]
 		}
 
 		Zombie_Virophage
@@ -3455,8 +3455,8 @@ WaveSchedule
 			ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1
 			WeaponRestrictions MeleeOnly
-			UseCustomModel models\humans\charple01.mdl [$SIGSEGV]
-			RocketCustomModel "models\weapons\w_bugbait.mdl" [$SIGSEGV]
+			UseCustomModel models/humans/charple01.mdl [$SIGSEGV]
+			RocketCustomModel "models/weapons/w_bugbait.mdl" [$SIGSEGV]
 			RocketCustomParticle "eyeboss_projectile"
 			StripItemSlot 1
 			HomingRockets [$SIGSEGV]
@@ -3499,10 +3499,10 @@ WaveSchedule
 				"fire input on hit" "shakeit^startshake^0"
 				"add cond on hit" 25943
 				"add cond on hit duration" 5
-				"custom hit sound" "npc\barnacle\barnacle_digesting2.wav"
-				"custom weapon fire sound" "npc\headcrab_poison\ph_warning1.wav"
-				"custom weapon reload sound" "npc\barnacle\barnacle_digesting1.wav"
-				"custom impact sound" "npc\antlion_grub\squashed.wav"
+				"custom hit sound" "npc/barnacle/barnacle_digesting2.wav"
+				"custom weapon fire sound" "npc/headcrab_poison/ph_warning1.wav"
+				"custom weapon reload sound" "npc/barnacle/barnacle_digesting1.wav"
+				"custom impact sound" "npc/antlion_grub/squashed.wav"
 			}
 			ItemAttributes
 			{
@@ -3519,7 +3519,7 @@ WaveSchedule
 				"crit vs burning players" 1
 				"melee range multiplier" 0.35
 				"melee bounds multiplier" 0.35
-				"custom hit sound" npc\barnacle\barnacle_gulp2.wav
+				"custom hit sound" npc/barnacle/barnacle_gulp2.wav
 			}
 			FireWeapon [$SIGSEGV]
 			{
@@ -3562,8 +3562,8 @@ WaveSchedule
 				Name "p_skullhead"
 				Bone "bip_spine2"
 			}
-			PainSound ambient\creatures\town_scared_breathing2.wav
-			DeathSound vehicles\airboat\pontoon_splash1.wav
+			PainSound ambient/creatures/town_scared_breathing2.wav
+			DeathSound vehicles/airboat/pontoon_splash1.wav
 		}
 
 		Zombie_Brute
@@ -3639,7 +3639,7 @@ WaveSchedule
 				"override footstep sound set" 7
 			}
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound npc\zombie_poison\pz_alert2.wav [$SIGSEGV]
+			DeathSound npc/zombie_poison/pz_alert2.wav [$SIGSEGV]
 		}
 
 		Zombie_Brute2
@@ -3681,7 +3681,7 @@ WaveSchedule
 				"melee bounds multiplier" 0.85
 				//"hand scale" 1.25
 				"custom kill icon" "sledgehammer"
-				"custom hit sound" "player\pl_fallpain3.wav"
+				"custom hit sound" "player/pl_fallpain3.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -3715,7 +3715,7 @@ WaveSchedule
 				"override footstep sound set" 7
 			}
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound npc\zombie_poison\pz_alert2.wav [$SIGSEGV]
+			DeathSound npc/zombie_poison/pz_alert2.wav [$SIGSEGV]
 		}
 
 		Zombie_Brute3
@@ -3791,7 +3791,7 @@ WaveSchedule
 				"override footstep sound set" 7
 			}
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound npc\zombie_poison\pz_alert2.wav [$SIGSEGV]
+			DeathSound npc/zombie_poison/pz_alert2.wav [$SIGSEGV]
 		}
 
 		Zombie_Behemoth
@@ -3833,7 +3833,7 @@ WaveSchedule
 				//"hand scale" 1.5
 				"item style override" 1
 				"custom kill icon" "sword"
-				"custom hit sound" "=95|ambient\machines\slicer4.wav"
+				"custom hit sound" "=95|ambient/machines/slicer4.wav"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -3849,7 +3849,7 @@ WaveSchedule
 			ItemModel [$SIGSEGV]
 			{
 				ItemName "Iron Fist" 
-				Model "models\workshop\weapons\c_models\c_xms_gloves\c_xms_gloves_ushanka.mdl"
+				Model "models/workshop/weapons/c_models/c_xms_gloves/c_xms_gloves_ushanka.mdl"
 			}
 			Item "Steel-Toed Stompers"
 			Item "The Gunboats"
@@ -3928,7 +3928,7 @@ WaveSchedule
 			}
 			NoPushAway 1 [$SIGSEGV]
 			AlwaysGlow 1 [$SIGSEGV]
-			AdditionalStepSound =90|mvm\giant_heavy\giant_heavy_step02.wav [$SIGSEGV]
+			AdditionalStepSound =90|mvm/giant_heavy/giant_heavy_step02.wav [$SIGSEGV]
 			DeathSound trespasser/tank_fire_07.wav [$SIGSEGV]
 		}
 
@@ -4595,8 +4595,8 @@ WaveSchedule
 			StripItemSlot 0
 			StripItemSlot 2
 			AlwaysGlow 1 [$SIGSEGV]
-			PainSound =99|npc\metropolice\pain1.wav
-			AdditionalStepSound =99|npc\metropolice\gear6.wav
+			PainSound =99|npc/metropolice/pain1.wav
+			AdditionalStepSound =99|npc/metropolice/gear6.wav
 		}
 
 		Survivor_1_Zombie
@@ -4632,7 +4632,7 @@ WaveSchedule
 			StripItemSlot 0
 			StripItemSlot 2
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Survivor_2_Zombie
@@ -4666,7 +4666,7 @@ WaveSchedule
 			StripItemSlot 0
 			StripItemSlot 2
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound physics\body\body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
 		}
 
 		Survivor_3_Zombie
@@ -4708,7 +4708,7 @@ WaveSchedule
 			StripItemSlot 0
 			StripItemSlot 2
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound physics\body\body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
 		}
 
 		Survivor_4_Zombie
@@ -4753,7 +4753,7 @@ WaveSchedule
 			StripItemSlot 5
 			StripItemSlot 6
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound physics\body\body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
 		}
 
 		Machine_Unarmed
@@ -4817,7 +4817,7 @@ WaveSchedule
 			ItemModel [$SIGSEGV]
 			{
 				ItemName "Tyrant's Helm"
-				Model "models\bots\gameplay_cosmetic\bot_light_bomb_helmet.mdl"
+				Model "models/bots/gameplay_cosmetic/bot_light_bomb_helmet.mdl"
 			}
 			ItemAttributes
 			{
@@ -4837,8 +4837,8 @@ WaveSchedule
 				//"afterburn immunity" 1
 				"not solid to players" 1
 			}
-			PainSound =75|physics\metal\metal_solid_impact_hard1.wav
-			DeathSound =75|physics\metal\metal_solid_impact_bullet2.wav
+			PainSound =75|physics/metal/metal_solid_impact_hard1.wav
+			DeathSound =75|physics/metal/metal_solid_impact_bullet2.wav
 		}
 
 		Machine_RocketJumper
@@ -5087,7 +5087,7 @@ WaveSchedule
 				//"afterburn immunity" 1
 				"gesture speed increase" 1.5
 			}
-			DeathSound mvm\mvm_bought_upgrade.wav [$SIGSEGV]
+			DeathSound mvm/mvm_bought_upgrade.wav [$SIGSEGV]
 		}
 
 		Machine_Uber
@@ -5104,7 +5104,7 @@ WaveSchedule
 			Attributes SpawnWithFullCharge
 			CustomEyeGlowColor "255 0 0" [$SIGSEGV]
 			Item "The Trepanabotomizer"
-			UseCustomModel models\bots\medic\bot_medic.mdl [$SIGSEGV]
+			UseCustomModel models/bots/medic/bot_medic.mdl [$SIGSEGV]
 			StripItemSlot 0
 			NoBombUpgrades 1
 			ItemAttributes
@@ -5120,7 +5120,7 @@ WaveSchedule
 				"bombinomicon effect on death" 1
 				"move speed bonus" 3
 				"attach particle effect" 3044
-				"custom hit sound" "ambient\energy\weld1.wav"
+				"custom hit sound" "ambient/energy/weld1.wav"
 			}
 			CharacterAttributes
 			{
@@ -5131,7 +5131,7 @@ WaveSchedule
 				"overheal penalty" 0
 				"bot medic uber deploy delay duration" 0.75
 			}
-			DeathSound ambient\energy\zap9.wav [$SIGSEGV]
+			DeathSound ambient/energy/zap9.wav [$SIGSEGV]
 		}
 
 		Machine_Giant
@@ -5166,7 +5166,7 @@ WaveSchedule
 				//"afterburn immunity" 1
 				"override footstep sound set" 3
 			}
-			DeathSound mvm\sentrybuster\mvm_sentrybuster_explode.wav [$SIGSEGV]
+			DeathSound mvm/sentrybuster/mvm_sentrybuster_explode.wav [$SIGSEGV]
 		}
 
 		Machine_Giant2
@@ -5211,7 +5211,7 @@ WaveSchedule
 				//"afterburn immunity" 1
 				"override footstep sound set" 3
 			}
-			DeathSound mvm\sentrybuster\mvm_sentrybuster_explode.wav [$SIGSEGV]
+			DeathSound mvm/sentrybuster/mvm_sentrybuster_explode.wav [$SIGSEGV]
 		}
 
 		Machine_Giant_Boss
@@ -5257,7 +5257,7 @@ WaveSchedule
 				//"afterburn immunity" 1
 				"override footstep sound set" 3
 			}
-			DeathSound mvm\sentrybuster\mvm_sentrybuster_explode.wav [$SIGSEGV]
+			DeathSound mvm/sentrybuster/mvm_sentrybuster_explode.wav [$SIGSEGV]
 		}
 	}
 
@@ -5616,7 +5616,7 @@ WaveSchedule
 				"onstarttouch" "!activator,$AddPlayerAttribute,increased jump height|1,0,-1"
 				"onstarttouch" "!activator,$AddPlayerAttribute,health regen|0,0,-1"
 				"onstarttouch" "!activator,$AddPlayerAttribute,dmg taken from crit reduced|1,0,-1"
-				"onstarttouch" "!activator,$SetModelOverride,models\bots\soldier\bot_soldier_gibby.mdl,0.1,-1"
+				"onstarttouch" "!activator,$SetModelOverride,models/bots/soldier/bot_soldier_gibby.mdl,0.1,-1"
 				//"onstarttouch" "!activator,$addcond,51 3,0.1,-1"
 				//"onstarttouch" "!activator,color,0 100 100,0,-1"
 			}
@@ -5829,7 +5829,7 @@ WaveSchedule
 			prop_dynamic
 			{
 				"targetname" "skull1"
-				"model"      "models\props_viaduct_event\skull_island01.mdl"
+				"model"      "models/props_viaduct_event/skull_island01.mdl"
 				"rendercolor" "100 100 100"
 				"modelscale" "0.075"
 				"solid"      "0"
@@ -6460,7 +6460,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "70"
                 "pitch" "125"
-                "message" "#music\mvm_class_menu_bg.wav"
+                "message" "#music/mvm_class_menu_bg.wav"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -6487,7 +6487,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "105"
                 "pitch" "105"
-                "message" "#ambient\atmosphere\sewer_air1.wav"
+                "message" "#ambient/atmosphere/sewer_air1.wav"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -6509,7 +6509,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "#ambient\atmosphere\sewer_air1.wav"
+                "message" "#ambient/atmosphere/sewer_air1.wav"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -6922,7 +6922,7 @@ WaveSchedule
 				"solid" "0"
 				"spawnflags" "0"
 				"origin" "0 0 0"
-				"model" "models\bots\skeleton_sniper\skeleton_sniper.mdl"
+				"model" "models/bots/skeleton_sniper/skeleton_sniper.mdl"
 			}
 		}
 
@@ -6960,7 +6960,7 @@ WaveSchedule
 				"solid" "0"
 				"spawnflags" "0"
 				"origin" "0 0 0"
-				"model" "models\bots\skeleton_sniper\skeleton_sniper.mdl"
+				"model" "models/bots/skeleton_sniper/skeleton_sniper.mdl"
 			}
 		}
 
@@ -6998,7 +6998,7 @@ WaveSchedule
 				"solid" "0"
 				"spawnflags" "0"
 				"origin" "0 0 0"
-				"model" "models\bots\skeleton_sniper\skeleton_sniper.mdl"
+				"model" "models/bots/skeleton_sniper/skeleton_sniper.mdl"
 			}
 		}
 
@@ -7055,7 +7055,7 @@ WaveSchedule
 			{
 				"targetname" "cargodoor"
 				"classname" "prop_dynamic"
-				"model" "models\props_vehicles\train_flatcar_container.mdl"
+				"model" "models/props_vehicles/train_flatcar_container.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7072,7 +7072,7 @@ WaveSchedule
 			{
 				"targetname" "cargoshop1"
 				"classname" "prop_dynamic"
-				"model" "models\props_vehicles\train_flatcar_container.mdl"
+				"model" "models/props_vehicles/train_flatcar_container.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7091,7 +7091,7 @@ WaveSchedule
 			{
 				"targetname" "cargoshop2"
 				"classname" "prop_dynamic"
-				"model" "models\props_vehicles\train_flatcar_container.mdl"
+				"model" "models/props_vehicles/train_flatcar_container.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7110,7 +7110,7 @@ WaveSchedule
 			{
 				"targetname" "cargoshop3"
 				"classname" "prop_dynamic"
-				"model" "models\props_island\yeti_cell_door.mdl"
+				"model" "models/props_island/yeti_cell_door.mdl"
 				"disableshadows" "1"
 				"modelscale" "1.5"
 				"SetBodyGroup" "0"
@@ -7172,7 +7172,7 @@ WaveSchedule
 			{
 				"targetname" "table"
 				"classname" "prop_dynamic"
-				"model" "models\props_swamp\picnic_table.mdl"
+				"model" "models/props_swamp/picnic_table.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7189,7 +7189,7 @@ WaveSchedule
 			{
 				"targetname" "table"
 				"classname" "prop_dynamic"
-				"model" "models\props_swamp\picnic_table.mdl"
+				"model" "models/props_swamp/picnic_table.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7206,7 +7206,7 @@ WaveSchedule
 			{
 				"targetname" "desk"
 				"classname" "prop_dynamic"
-				"model" "models\props_medieval\bar_table.mdl"
+				"model" "models/props_medieval/bar_table.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7223,7 +7223,7 @@ WaveSchedule
 			{
 				"targetname" "shitcade"
 				"classname" "prop_dynamic"
-				"model" "models\props_medieval\bar_table.mdl"
+				"model" "models/props_medieval/bar_table.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7240,7 +7240,7 @@ WaveSchedule
 			{
 				"targetname" "shitcade"
 				"classname" "prop_dynamic"
-				"model" "models\props_manor\chair_01.mdl"
+				"model" "models/props_manor/chair_01.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7335,7 +7335,7 @@ WaveSchedule
 			{
 				"targetname" "beam"
 				"classname" "prop_dynamic"
-				"model" "models\props_farm\wood_pile.mdl"
+				"model" "models/props_farm/wood_pile.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7352,7 +7352,7 @@ WaveSchedule
 			{
 				"targetname" "stair"
 				"classname" "prop_dynamic"
-				"model" "models\props_coalmines\scaffolding1.mdl"
+				"model" "models/props_coalmines/scaffolding1.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7370,7 +7370,7 @@ WaveSchedule
 			{
 				"targetname" "chair"
 				"classname" "prop_dynamic"
-				"model" "models\props_spytech\chair.mdl"
+				"model" "models/props_spytech/chair.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7387,7 +7387,7 @@ WaveSchedule
 			{
 				"targetname" "shitcade"
 				"classname" "prop_dynamic"
-				"model" "models\props_manor\cardboard_box_set_01.mdl"
+				"model" "models/props_manor/cardboard_box_set_01.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7404,7 +7404,7 @@ WaveSchedule
 			{
 				"targetname" "box"
 				"classname" "prop_dynamic"
-				"model" "models\props_manor\cardboard_box_set_01.mdl"
+				"model" "models/props_manor/cardboard_box_set_01.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7421,7 +7421,7 @@ WaveSchedule
 			{
 				"targetname" "bookcase"
 				"classname" "prop_dynamic"
-				"model" "models\props_manor\bookcase_132_03.mdl"
+				"model" "models/props_manor/bookcase_132_03.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7438,7 +7438,7 @@ WaveSchedule
 			{
 				"targetname" "monstercage"
 				"classname" "prop_dynamic"
-				"model" "models\props_island\small_yeti_container01.mdl"
+				"model" "models/props_island/small_yeti_container01.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7455,7 +7455,7 @@ WaveSchedule
 			{
 				"targetname" "crate"
 				"classname" "prop_dynamic"
-				"model" "models\props_2fort\miningcrate001.mdl"
+				"model" "models/props_2fort/miningcrate001.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7473,7 +7473,7 @@ WaveSchedule
 			{
 				"targetname" "tomb"
 				"classname" "prop_dynamic"
-				"model" "models\props_2fort\miningcrate001.mdl"
+				"model" "models/props_2fort/miningcrate001.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7490,7 +7490,7 @@ WaveSchedule
 			prop_dynamic
 			{
 				"classname" "prop_dynamic"
-				"model" "models\props_island\island_helicopter.mdl"
+				"model" "models/props_island/island_helicopter.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7506,7 +7506,7 @@ WaveSchedule
 			prop_dynamic
 			{
 				"classname" "prop_dynamic"
-				"model" "models\props_2fort\miningcrate002.mdl"
+				"model" "models/props_2fort/miningcrate002.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7524,7 +7524,7 @@ WaveSchedule
 			{
 				"targetname" "shitcade"
 				"classname" "prop_dynamic"
-				"model" "models\props_2fort\miningcrate001.mdl"
+				"model" "models/props_2fort/miningcrate001.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7542,7 +7542,7 @@ WaveSchedule
 			{
 				"targetname" "shitcade_intro"
 				"classname" "prop_dynamic"
-				"model" "models\props_medieval\tank_entrance_rottenburg.mdl"
+				"model" "models/props_medieval/tank_entrance_rottenburg.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7560,7 +7560,7 @@ WaveSchedule
 			{
 				"targetname" "shitcade"
 				"classname" "prop_dynamic"
-				"model" "models\props_harbor\plates_harbor4.mdl"
+				"model" "models/props_harbor/plates_harbor4.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7577,7 +7577,7 @@ WaveSchedule
 			{
 				"targetname" "barricade_level1"
 				"classname" "prop_dynamic"
-				"model" "models\props_coalmines\wood_fence_64.mdl"
+				"model" "models/props_coalmines/wood_fence_64.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7594,7 +7594,7 @@ WaveSchedule
 			{
 				"targetname" "barricade_level"
 				"classname" "prop_dynamic"
-				"model" "models\props_coalmines\wood_fence_256.mdl"
+				"model" "models/props_coalmines/wood_fence_256.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7610,7 +7610,7 @@ WaveSchedule
 			prop_dynamic
 			{
 				"classname" "prop_dynamic"
-				"model" "models\props_coalmines\wood_fence_128.mdl"
+				"model" "models/props_coalmines/wood_fence_128.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7627,7 +7627,7 @@ WaveSchedule
 			{
 				"targetname" "barricade_level2"
 				"classname" "prop_dynamic"
-				"model" "models\props_coalmines\wood_fence_256.mdl"
+				"model" "models/props_coalmines/wood_fence_256.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7644,7 +7644,7 @@ WaveSchedule
 			{
 				"targetname" "barricade_level3"
 				"classname" "prop_dynamic"
-				"model" "models\props_coalmines\wood_fence_256.mdl"
+				"model" "models/props_coalmines/wood_fence_256.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7661,7 +7661,7 @@ WaveSchedule
 			{
 				"targetname" "barricade_level3"
 				"classname" "prop_dynamic"
-				"model" "models\props_coalmines\wood_fence_128.mdl"
+				"model" "models/props_coalmines/wood_fence_128.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7678,7 +7678,7 @@ WaveSchedule
 			{
 				"targetname" "barricade_level2"
 				"classname" "prop_dynamic"
-				"model" "models\props_harbor\plates_harbor4.mdl"
+				"model" "models/props_harbor/plates_harbor4.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7695,7 +7695,7 @@ WaveSchedule
 			{
 				"targetname" "barricade_level3"
 				"classname" "prop_dynamic"
-				"model" "models\props_harbor\plates_harbor4.mdl"
+				"model" "models/props_harbor/plates_harbor4.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -7712,7 +7712,7 @@ WaveSchedule
 			{
 				"targetname" "zombie"
 				"classname" "prop_dynamic"
-				"model" "models\zombie\poison.mdl"
+				"model" "models/zombie/poison.mdl"
 				"DefaultAnim" "idle01"
 				"DisableBoneFollowers" "1"
 				"RandomAnimation" "0"
@@ -8100,7 +8100,7 @@ WaveSchedule
 			prop_dynamic
 			{
 				"classname" "prop_dynamic"
-				"model" "models\props_2fort\miningcrate001.mdl"
+				"model" "models/props_2fort/miningcrate001.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -8114,7 +8114,7 @@ WaveSchedule
 			prop_dynamic
 			{
 				"classname" "prop_dynamic"
-				"model" "models\props_2fort\miningcrate001.mdl"
+				"model" "models/props_2fort/miningcrate001.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -8775,7 +8775,7 @@ WaveSchedule
 				"maxdxlevel" "0"
 				"MinAnimTime" "5"
 				"mindxlevel" "0"
-				"model" "models\props_2fort\corrugated_metal003.mdl"
+				"model" "models/props_2fort/corrugated_metal003.mdl"
 				"modelscale" "1"
 				"PerformanceMode" "0"
 				"pressuredelay" "0"
@@ -8812,7 +8812,7 @@ WaveSchedule
 				"maxdxlevel" "0"
 				"MinAnimTime" "5"
 				"mindxlevel" "0"
-				"model" "models\props_farm\stairs_wood001b.mdl"
+				"model" "models/props_farm/stairs_wood001b.mdl"
 				"modelscale" "1"
 				"PerformanceMode" "0"
 				"pressuredelay" "0"
@@ -8941,7 +8941,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "ambient\explosions\explode_9.wav"
+                "message" "ambient/explosions/explode_9.wav"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -8963,7 +8963,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "ambient\explosions\citadel_end_explosion1.wav"
+                "message" "ambient/explosions/citadel_end_explosion1.wav"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -8985,7 +8985,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "ambient\explosions\citadel_end_explosion1.wav"
+                "message" "ambient/explosions/citadel_end_explosion1.wav"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -9007,7 +9007,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "items\cart_explode.wav"
+                "message" "items/cart_explode.wav"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -9029,7 +9029,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "#music\stingers\hl1_stinger_song8.mp3"
+                "message" "#music/stingers/hl1_stinger_song8.mp3"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -9051,7 +9051,7 @@ WaveSchedule
                 "preset" "0"
                 "pitchstart" "100"
                 "pitch" "100"
-                "message" "#music\stingers\hl1_stinger_song8.mp3"
+                "message" "#music/stingers/hl1_stinger_song8.mp3"
                 "lfotype" "0"
                 "lforate" "0"
                 "lfomodvol" "0"
@@ -10677,7 +10677,7 @@ WaveSchedule
 		{
 			Name "shoptroll"
 			WaitBeforeStarting 1
-			FirstSpawnWarningSound vo\engineer_mvm_resurrect02.mp3
+			FirstSpawnWarningSound vo/engineer_mvm_resurrect02.mp3
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target helper                   
@@ -10714,7 +10714,7 @@ WaveSchedule
 		WaveSpawn
 		{
 			Name "shopcloser"
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard2.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fam                                  
@@ -10743,7 +10743,7 @@ WaveSchedule
 		{
 			Name "shopcloser"
 			WaitBeforeStarting 2
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard3.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard3.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                                
@@ -10994,7 +10994,7 @@ WaveSchedule
 			Name "PART1FX"
 			WaitBeforeStarting 6
 			Support 1
-			FirstSpawnWarningSound ambient\creatures\town_zombie_call1.wav
+			FirstSpawnWarningSound ambient/creatures/town_zombie_call1.wav
 		}
 		WaveSpawn
 		{
@@ -11010,25 +11010,25 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 10
-			FirstSpawnWarningSound ambient\creatures\town_moan1.wav
+			FirstSpawnWarningSound ambient/creatures/town_moan1.wav
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 10
-			FirstSpawnWarningSound ambient\creatures\town_moan1.wav
+			FirstSpawnWarningSound ambient/creatures/town_moan1.wav
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 20
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_zombie1.wav	
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_zombie1.wav	
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 20
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_zombie1.wav	
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_zombie1.wav	
 		}
 		WaveSpawn
 		{
@@ -11044,25 +11044,25 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 40
-			FirstSpawnWarningSound npc\zombie_poison\pz_alert1.wav
+			FirstSpawnWarningSound npc/zombie_poison/pz_alert1.wav
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 40
-			FirstSpawnWarningSound npc\zombie_poison\pz_alert2.wav
+			FirstSpawnWarningSound npc/zombie_poison/pz_alert2.wav
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 43
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 43
-			FirstSpawnWarningSound physics\wood\wood_plank_break1.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -11073,13 +11073,13 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 48.5
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav	
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav	
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 48.5
-			FirstSpawnWarningSound physics\wood\wood_plank_break1.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -11090,13 +11090,13 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 49
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 49
-			FirstSpawnWarningSound physics\wood\wood_plank_break2.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -11107,13 +11107,13 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 55
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav	
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav	
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 55
-			FirstSpawnWarningSound physics\wood\wood_plank_break1.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -11124,13 +11124,13 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 56
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 56
-			FirstSpawnWarningSound physics\wood\wood_plank_break1.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -11141,13 +11141,13 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 59
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 59
-			FirstSpawnWarningSound physics\wood\wood_plank_break2.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -11158,13 +11158,13 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 61
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav	
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav	
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 61
-			FirstSpawnWarningSound physics\wood\wood_plank_break1.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -11175,13 +11175,13 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 61.5
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 61.5
-			FirstSpawnWarningSound physics\wood\wood_plank_break2.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -11192,13 +11192,13 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 62
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 62
-			FirstSpawnWarningSound physics\wood\wood_plank_break1.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -11209,13 +11209,13 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 62.5
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav
 		}
 		WaveSpawn
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 62.5
-			FirstSpawnWarningSound physics\wood\wood_plank_break2.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -11262,7 +11262,7 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 63
-			FirstSpawnWarningSound ambient\rottenburg\barrier_smash.wav
+			FirstSpawnWarningSound ambient/rottenburg/barrier_smash.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target relay                               
@@ -11273,7 +11273,7 @@ WaveSchedule
 		{
 			Name "PART1FX"
 			WaitBeforeStarting 63
-			FirstSpawnWarningSound physics\wood\wood_crate_break5.wav
+			FirstSpawnWarningSound physics/wood/wood_crate_break5.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                              
@@ -11613,7 +11613,7 @@ WaveSchedule
 			Name "CHECKPOINT1"
 			WaitForAllSpawned "REVIVE1"
 			WaitBeforeStarting 2
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard3.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard3.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fam                                  
@@ -11647,7 +11647,7 @@ WaveSchedule
 			Name "CHECKPOINT1"
 			WaitForAllSpawned "REVIVE1"
 			WaitBeforeStarting 4
-			FirstSpawnWarningSound vo\engineer_mvm_collect_credits03.mp3	
+			FirstSpawnWarningSound vo/engineer_mvm_collect_credits03.mp3	
 		}
 		WaveSpawn
 		{
@@ -11688,7 +11688,7 @@ WaveSchedule
 			Where spawnbot_front
 			WaitForAllSpawned "REVIVE1"
 			WaitBeforeStarting 63.25
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard2.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fam                                  
@@ -11722,7 +11722,7 @@ WaveSchedule
 			Name "CHECKPOINT1"
 			WaitForAllSpawned "REVIVE1"
 			WaitBeforeStarting 64.25
-			FirstSpawnWarningSound vo\engineer_mvm_close_call01.mp3	
+			FirstSpawnWarningSound vo/engineer_mvm_close_call01.mp3	
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target helper                  
@@ -11797,21 +11797,21 @@ WaveSchedule
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 10
-			FirstSpawnWarningSound #music\hl1_song9.mp3
+			FirstSpawnWarningSound #music/hl1_song9.mp3
 		}
 		WaveSpawn
 		{
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 10
-			FirstSpawnWarningSound #music\hl1_song9.mp3
+			FirstSpawnWarningSound #music/hl1_song9.mp3
 		}
 		WaveSpawn
 		{
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 4
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_zombie1.wav	
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_zombie1.wav	
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                
@@ -11823,14 +11823,14 @@ WaveSchedule
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 4
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_zombie1.wav	
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_zombie1.wav	
 		}
 		WaveSpawn
 		{
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 20
-			FirstSpawnWarningSound npc\ichthyosaur\attack_growl1.wav
+			FirstSpawnWarningSound npc/ichthyosaur/attack_growl1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                
@@ -11842,14 +11842,14 @@ WaveSchedule
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 20
-			FirstSpawnWarningSound npc\ichthyosaur\attack_growl3.wav	
+			FirstSpawnWarningSound npc/ichthyosaur/attack_growl3.wav	
 		}
 		WaveSpawn
 		{
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 20.5
-			FirstSpawnWarningSound npc\ichthyosaur\attack_growl1.wav
+			FirstSpawnWarningSound npc/ichthyosaur/attack_growl1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                
@@ -11861,7 +11861,7 @@ WaveSchedule
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 20.5
-			FirstSpawnWarningSound npc\ichthyosaur\attack_growl3.wav	
+			FirstSpawnWarningSound npc/ichthyosaur/attack_growl3.wav	
 		}
 		WaveSpawn
 		{
@@ -11890,7 +11890,7 @@ WaveSchedule
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 21
-			FirstSpawnWarningSound ambient\rottenburg\barrier_smash.wav
+			FirstSpawnWarningSound ambient/rottenburg/barrier_smash.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                              
@@ -11902,21 +11902,21 @@ WaveSchedule
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 21
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav
 		}
 		WaveSpawn
 		{
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 21
-			FirstSpawnWarningSound physics\wood\wood_plank_break1.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break1.wav
 		}
 		WaveSpawn
 		{
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 21.5
-			FirstSpawnWarningSound ambient\rottenburg\barrier_smash.wav
+			FirstSpawnWarningSound ambient/rottenburg/barrier_smash.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                              
@@ -11928,14 +11928,14 @@ WaveSchedule
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 21.5
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav
 		}
 		WaveSpawn
 		{
 			Name "PART2FX"
 			WaitForAllSpawned "BUFFER1"
 			WaitBeforeStarting 21.5
-			FirstSpawnWarningSound physics\wood\wood_plank_break1.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break1.wav
 		}
 		WaveSpawn
 		{
@@ -12114,28 +12114,28 @@ WaveSchedule
 			Name "LEAPERSOUNDS"
 			WaitForAllDead "PART2-1"
 			WaitBeforeStarting 3
-			FirstSpawnWarningSound npc\fast_zombie\fz_alert_far1.wav
+			FirstSpawnWarningSound npc/fast_zombie/fz_alert_far1.wav
 		}
 		WaveSpawn
 		{
 			Name "LEAPERSOUNDS"
 			WaitForAllDead "PART2-1"
 			WaitBeforeStarting 3.5
-			FirstSpawnWarningSound npc\fast_zombie\fz_alert_far1.wav
+			FirstSpawnWarningSound npc/fast_zombie/fz_alert_far1.wav
 		}
 		WaveSpawn
 		{
 			Name "LEAPERSOUNDS"
 			WaitForAllDead "PART2-1"
 			WaitBeforeStarting 10
-			FirstSpawnWarningSound npc\fast_zombie\fz_alert_close1.wav
+			FirstSpawnWarningSound npc/fast_zombie/fz_alert_close1.wav
 		}
 		WaveSpawn
 		{
 			Name "LEAPERSOUNDS"
 			WaitForAllDead "PART2-1"
 			WaitBeforeStarting 10.5
-			FirstSpawnWarningSound npc\fast_zombie\fz_alert_close1.wav
+			FirstSpawnWarningSound npc/fast_zombie/fz_alert_close1.wav
 		}
 		WaveSpawn
 		{
@@ -12179,14 +12179,14 @@ WaveSchedule
 			Name "PART2FX"
 			WaitForAllDead "PART2-2"
 			WaitBeforeStarting 2
-			FirstSpawnWarningSound ambient\creatures\town_moan1.wav
+			FirstSpawnWarningSound ambient/creatures/town_moan1.wav
 		}
 		WaveSpawn
 		{
 			Name "PART2FX"
 			WaitForAllDead "PART2-2"
 			WaitBeforeStarting 2
-			FirstSpawnWarningSound ambient\creatures\town_moan1.wav
+			FirstSpawnWarningSound ambient/creatures/town_moan1.wav
 		}
 
 		WaveSpawn
@@ -12322,7 +12322,7 @@ WaveSchedule
 			Name "SKELETONWINDOW"
 			WaitForAllDead "PART2-2"
 			WaitBeforeStarting 30
-			FirstSpawnWarningSound npc\fast_zombie\fz_scream1.wav
+			FirstSpawnWarningSound npc/fast_zombie/fz_scream1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                           
@@ -12334,7 +12334,7 @@ WaveSchedule
 			Name "SKELETONWINDOW"
 			WaitForAllDead "PART2-2"
 			WaitBeforeStarting 31
-			FirstSpawnWarningSound physics\wood\wood_plank_break2.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target bro                         
@@ -12346,7 +12346,7 @@ WaveSchedule
 			Name "SKELETONWINDOW"
 			WaitForAllDead "PART2-2"
 			WaitBeforeStarting 31.5
-			FirstSpawnWarningSound physics\wood\wood_plank_break3.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break3.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target bro2                        
@@ -12358,7 +12358,7 @@ WaveSchedule
 			Name "SKELETONWINDOW"
 			WaitForAllDead "PART2-2"
 			WaitBeforeStarting 32
-			FirstSpawnWarningSound physics\wood\wood_plank_break4.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break4.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target bro3                   
@@ -12370,7 +12370,7 @@ WaveSchedule
 			Name "SKELETONWINDOW"
 			WaitForAllDead "PART2-2"
 			WaitBeforeStarting 32.5
-			FirstSpawnWarningSound physics\wood\wood_plank_break1.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                        
@@ -12382,28 +12382,28 @@ WaveSchedule
 			Name "SKELETONWINDOW"
 			WaitForAllDead "PART2-2"
 			WaitBeforeStarting 33
-			FirstSpawnWarningSound physics\wood\wood_plank_break2.wav	
+			FirstSpawnWarningSound physics/wood/wood_plank_break2.wav	
 		}
 		WaveSpawn
 		{
 			Name "SKELETONWINDOW"
 			WaitForAllDead "PART2-2"
 			WaitBeforeStarting 33.5
-			FirstSpawnWarningSound physics\wood\wood_plank_break3.wav	
+			FirstSpawnWarningSound physics/wood/wood_plank_break3.wav	
 		}
 		WaveSpawn
 		{
 			Name "SKELETONWINDOW"
 			WaitForAllDead "PART2-2"
 			WaitBeforeStarting 34
-			FirstSpawnWarningSound physics\wood\wood_plank_break1.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break1.wav
 		}
 		WaveSpawn
 		{
 			Name "SKELETONWINDOW"
 			WaitForAllDead "PART2-2"
 			WaitBeforeStarting 34
-			FirstSpawnWarningSound ambient\rottenburg\barrier_smash.wav
+			FirstSpawnWarningSound ambient/rottenburg/barrier_smash.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                              
@@ -12426,14 +12426,14 @@ WaveSchedule
 			Name "SKELETONWINDOW"
 			WaitForAllDead "PART2-2"
 			//WaitBeforeStarting 8
-			FirstSpawnWarningSound #music\hl1_song19.mp3
+			FirstSpawnWarningSound #music/hl1_song19.mp3
 		}
 		WaveSpawn
 		{
 			Name "SKELETONWINDOW"
 			WaitForAllDead "PART2-2"
 			//WaitBeforeStarting 8
-			FirstSpawnWarningSound #music\hl1_song19.mp3
+			FirstSpawnWarningSound #music/hl1_song19.mp3
 		}
 
 		WaveSpawn
@@ -12499,7 +12499,7 @@ WaveSchedule
 		{
 			Name "WINDOWCLOSE"
 			WaitForAllSpawned "PART2-3"
-			FirstSpawnWarningSound ambient\creatures\town_zombie_call1.wav
+			FirstSpawnWarningSound ambient/creatures/town_zombie_call1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target bro3                       
@@ -12614,7 +12614,7 @@ WaveSchedule
 			Name "CHECKPOINT2"
 			WaitForAllSpawned "REVIVE2"
 			WaitBeforeStarting 2
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard3.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard3.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fam                                  
@@ -12648,7 +12648,7 @@ WaveSchedule
 			Name "CHECKPOINT2"
 			WaitForAllSpawned "REVIVE2"
 			WaitBeforeStarting 4
-			FirstSpawnWarningSound vo\engineer_sf13_midnight02.mp3
+			FirstSpawnWarningSound vo/engineer_sf13_midnight02.mp3
 		}
 		WaveSpawn
 		{
@@ -12689,7 +12689,7 @@ WaveSchedule
 			Where spawnbot_front
 			WaitForAllSpawned "REVIVE2"
 			WaitBeforeStarting 63.25
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard2.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fam                                  
@@ -12723,7 +12723,7 @@ WaveSchedule
 			Name "CHECKPOINT2"
 			WaitForAllSpawned "REVIVE2"
 			WaitBeforeStarting 64.25
-			FirstSpawnWarningSound vo\engineer_mvm_wave_end02.mp3
+			FirstSpawnWarningSound vo/engineer_mvm_wave_end02.mp3
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target helper                  
@@ -12797,7 +12797,7 @@ WaveSchedule
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 4
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_antlion8.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_antlion8.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                
@@ -12809,14 +12809,14 @@ WaveSchedule
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 4
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_antlion8.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_antlion8.wav
 		}
 		WaveSpawn
 		{
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 8
-			FirstSpawnWarningSound physics\wood\wood_plank_break2.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -12828,7 +12828,7 @@ WaveSchedule
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 8.5
-			FirstSpawnWarningSound physics\wood\wood_plank_break3.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break3.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -12840,7 +12840,7 @@ WaveSchedule
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 9
-			FirstSpawnWarningSound physics\wood\wood_plank_break4.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break4.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -12852,7 +12852,7 @@ WaveSchedule
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 9.5
-			FirstSpawnWarningSound physics\wood\wood_plank_break1.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -12864,14 +12864,14 @@ WaveSchedule
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 10
-			FirstSpawnWarningSound physics\wood\wood_plank_break2.wav	
+			FirstSpawnWarningSound physics/wood/wood_plank_break2.wav	
 		}
 		WaveSpawn
 		{
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 10.5
-			FirstSpawnWarningSound physics\wood\wood_plank_break3.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break3.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                            
@@ -12883,7 +12883,7 @@ WaveSchedule
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 11
-			FirstSpawnWarningSound physics\wood\wood_plank_break1.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -12895,14 +12895,14 @@ WaveSchedule
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 11.5
-			FirstSpawnWarningSound physics\wood\wood_plank_break2.wav
+			FirstSpawnWarningSound physics/wood/wood_plank_break2.wav
 		}
 		WaveSpawn
 		{
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 11.75
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -12914,14 +12914,14 @@ WaveSchedule
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 12
-			FirstSpawnWarningSound ambient\explosions\explode_4.wav
+			FirstSpawnWarningSound ambient/explosions/explode_4.wav
 		}
 		WaveSpawn
 		{
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 12.25
-			FirstSpawnWarningSound ambient\rottenburg\barrier_smash.wav
+			FirstSpawnWarningSound ambient/rottenburg/barrier_smash.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -12933,7 +12933,7 @@ WaveSchedule
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 12.25
-			FirstSpawnWarningSound ambient\explosions\explode_3.wav
+			FirstSpawnWarningSound ambient/explosions/explode_3.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target top_barrier                 
@@ -12945,7 +12945,7 @@ WaveSchedule
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 12.5
-			FirstSpawnWarningSound ambient\explosions\explode_2.wav
+			FirstSpawnWarningSound ambient/explosions/explode_2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                              
@@ -12957,7 +12957,7 @@ WaveSchedule
 			Name "UPPERCADE"
 			WaitForAllSpawned "BUFFER2"
 			WaitBeforeStarting 12.5
-			FirstSpawnWarningSound ambient\rottenburg\barrier_smash.wav
+			FirstSpawnWarningSound ambient/rottenburg/barrier_smash.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target relay4                 
@@ -13067,7 +13067,7 @@ WaveSchedule
 			SpawnCount 5
 			WaitForAllSpawned "BUFFER2"
 			TotalCurrency 0	
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_antlion4.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_antlion4.wav
 
 			RandomChoice
 			{
@@ -13130,7 +13130,7 @@ WaveSchedule
 			WaitForAllDead "GROUP"
 			WaitBeforeStarting 3
 			WaitBetweenSpawns 0.5
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_antlion3.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_antlion3.wav
 			TotalCurrency 0	
 
 			RandomChoice
@@ -13194,7 +13194,7 @@ WaveSchedule
 			WaitForAllDead "GROUP"
 			WaitBeforeStarting 4
 			WaitBetweenSpawns 0.5
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_antlion2.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_antlion2.wav
 			TotalCurrency 0	
 
 			RandomChoice
@@ -13253,7 +13253,7 @@ WaveSchedule
 			Name "PART3MUSIC"
 			WaitForAllDead "PART3-1"
 			WaitBeforeStarting 3
-			FirstSpawnWarningSound #music\hl2_song19.mp3
+			FirstSpawnWarningSound #music/hl2_song19.mp3
 		}
 
 		WaveSpawn
@@ -13261,7 +13261,7 @@ WaveSchedule
 			Name "PART3MUSIC"
 			WaitForAllDead "PART3-1"
 			WaitBeforeStarting 3
-			FirstSpawnWarningSound #music\hl2_song19.mp3
+			FirstSpawnWarningSound #music/hl2_song19.mp3
 		}
 
 		WaveSpawn
@@ -13571,7 +13571,7 @@ WaveSchedule
 			Name "BURNFX"
 			WaitForAllDead "PART3-2"
 			WaitBeforeStarting 12
-			FirstSpawnWarningSound player\flame_out.wav
+			FirstSpawnWarningSound player/flame_out.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                
@@ -13584,7 +13584,7 @@ WaveSchedule
 			Name "BURNFX"
 			WaitForAllDead "PART3-2"
 			WaitBeforeStarting 12
-			FirstSpawnWarningSound player\flame_out.wav
+			FirstSpawnWarningSound player/flame_out.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target GTFOEND               
@@ -13597,7 +13597,7 @@ WaveSchedule
 			Name "BURNFX"
 			WaitForAllDead "PART3-2"
 			WaitBeforeStarting 12.5
-			FirstSpawnWarningSound ambient\fireball.wav
+			FirstSpawnWarningSound ambient/fireball.wav
 		}
 
 		WaveSpawn
@@ -13617,13 +13617,13 @@ WaveSchedule
 		{
 			Name "BURNMUSIC"
 			WaitForAllDead "PART3-3a"
-			FirstSpawnWarningSound #music\hl1_song5.mp3
+			FirstSpawnWarningSound #music/hl1_song5.mp3
 		}
 		WaveSpawn
 		{
 			Name "BURNMUSIC"
 			WaitForAllDead "PART3-3a"
-			FirstSpawnWarningSound #music\hl1_song5.mp3
+			FirstSpawnWarningSound #music/hl1_song5.mp3
 		}
 		
 		WaveSpawn
@@ -13933,7 +13933,7 @@ WaveSchedule
 			Name "CHECKPOINT3"
 			WaitForAllSpawned "REVIVE3"
 			WaitBeforeStarting 2
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard3.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard3.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fam                                  
@@ -13967,7 +13967,7 @@ WaveSchedule
 			Name "CHECKPOINT3"
 			WaitForAllSpawned "REVIVE3"
 			WaitBeforeStarting 4
-			FirstSpawnWarningSound vo\engineer_sf13_magic_reac01.mp3
+			FirstSpawnWarningSound vo/engineer_sf13_magic_reac01.mp3
 		}
 		WaveSpawn
 		{
@@ -14008,7 +14008,7 @@ WaveSchedule
 			Where spawnbot_front
 			WaitForAllSpawned "REVIVE3"
 			WaitBeforeStarting 63.25
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard2.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fam                                  
@@ -14042,7 +14042,7 @@ WaveSchedule
 			Name "CHECKPOINT3"
 			WaitForAllSpawned "REVIVE3"
 			WaitBeforeStarting 64.25
-			FirstSpawnWarningSound vo\engineer_wranglekills02.mp3
+			FirstSpawnWarningSound vo/engineer_wranglekills02.mp3
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target helper                  
@@ -14116,7 +14116,7 @@ WaveSchedule
 			Name "PART4FX"
 			WaitForAllSpawned "BUFFER3"
 			WaitBeforeStarting 8
-			FirstSpawnWarningSound npc\zombie_poison\pz_call1.wav
+			FirstSpawnWarningSound npc/zombie_poison/pz_call1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                            
@@ -14748,7 +14748,7 @@ WaveSchedule
 			Name "PART4FX"
 			WaitForAllDead "PART4-1"
 			WaitBeforeStarting 5
-			FirstSpawnWarningSound ambient\atmosphere\cave_hit5.wav
+			FirstSpawnWarningSound ambient/atmosphere/cave_hit5.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                               
@@ -14771,7 +14771,7 @@ WaveSchedule
 			Name "PART4FX"
 			WaitForAllDead "PART4-1"
 			WaitBeforeStarting 5
-			FirstSpawnWarningSound ambient\atmosphere\cave_hit5.wav
+			FirstSpawnWarningSound ambient/atmosphere/cave_hit5.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fade                               
@@ -14783,7 +14783,7 @@ WaveSchedule
 			Name "PART4FX"
 			WaitForAllDead "PART4-1"
 			WaitBeforeStarting 10
-			FirstSpawnWarningSound ambient\creatures\town_scared_breathing1.wav
+			FirstSpawnWarningSound ambient/creatures/town_scared_breathing1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fog_system                            
@@ -14795,7 +14795,7 @@ WaveSchedule
 			Name "PART4FX"
 			WaitForAllDead "PART4-1"
 			WaitBeforeStarting 10
-			FirstSpawnWarningSound ambient\creatures\town_scared_breathing1.wav
+			FirstSpawnWarningSound ambient/creatures/town_scared_breathing1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target overlay                            
@@ -14807,14 +14807,14 @@ WaveSchedule
 			Name "PART4FX"
 			WaitForAllDead "PART4-1"
 			WaitBeforeStarting 10
-			FirstSpawnWarningSound ambient\creatures\town_scared_breathing1.wav	
+			FirstSpawnWarningSound ambient/creatures/town_scared_breathing1.wav	
 		}
 		WaveSpawn
 		{
 			Name "PART4FX"
 			WaitForAllDead "PART4-1"
 			WaitBeforeStarting 15
-			FirstSpawnWarningSound ambient\atmosphere\cave_hit4.wav
+			FirstSpawnWarningSound ambient/atmosphere/cave_hit4.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                               
@@ -14826,7 +14826,7 @@ WaveSchedule
 			Name "PART4FX"
 			WaitForAllDead "PART4-1"
 			WaitBeforeStarting 15
-			FirstSpawnWarningSound ambient\atmosphere\cave_hit4.wav
+			FirstSpawnWarningSound ambient/atmosphere/cave_hit4.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fade2                               
@@ -14926,7 +14926,7 @@ WaveSchedule
 		{
 			Name "PART4FX"
 			WaitForAllDead "PART4-2"
-			FirstSpawnWarningSound vehicles\airboat\pontoon_splash2.wav
+			FirstSpawnWarningSound vehicles/airboat/pontoon_splash2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fade3                            
@@ -14937,7 +14937,7 @@ WaveSchedule
 		{
 			Name "PART4FX"
 			WaitForAllDead "PART4-2"
-			FirstSpawnWarningSound vehicles\airboat\pontoon_splash2.wav
+			FirstSpawnWarningSound vehicles/airboat/pontoon_splash2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target mist                         
@@ -14949,7 +14949,7 @@ WaveSchedule
 			Name "PART4FX"
 			WaitForAllDead "PART4-2"
 			//WaitBeforeStarting 1.5
-			//FirstSpawnWarningSound ambient\voices\playground_memory.wav
+			//FirstSpawnWarningSound ambient/voices/playground_memory.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fog_system                         
@@ -14961,7 +14961,7 @@ WaveSchedule
 			Name "PART4FX"
 			WaitForAllDead "PART4-2"
 			//WaitBeforeStarting 1.5
-			FirstSpawnWarningSound ambient\voices\playground_memory.wav
+			FirstSpawnWarningSound ambient/voices/playground_memory.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fog_old                     
@@ -15119,7 +15119,7 @@ WaveSchedule
 			Name "CHECKPOINT4"
 			WaitForAllSpawned "REVIVE4"
 			WaitBeforeStarting 2
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard3.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard3.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fam                                  
@@ -15153,7 +15153,7 @@ WaveSchedule
 			Name "CHECKPOINT4"
 			WaitForAllSpawned "REVIVE4"
 			WaitBeforeStarting 4
-			FirstSpawnWarningSound vo\engineer_revenge01.mp3
+			FirstSpawnWarningSound vo/engineer_revenge01.mp3
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target viro_beatoff                            
@@ -15199,7 +15199,7 @@ WaveSchedule
 			Where spawnbot_front
 			WaitForAllSpawned "REVIVE4"
 			WaitBeforeStarting 63.25
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard2.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target fam                                  
@@ -15233,7 +15233,7 @@ WaveSchedule
 			Name "CHECKPOINT4"
 			WaitForAllSpawned "REVIVE4"
 			WaitBeforeStarting 64.25
-			FirstSpawnWarningSound vo\engineer_mvm_taunt01.mp3
+			FirstSpawnWarningSound vo/engineer_mvm_taunt01.mp3
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target helper                        
@@ -15328,7 +15328,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllSpawned "BUFFER4"
 			WaitBeforeStarting 9
-			FirstSpawnWarningSound mvm\mvm_warning.wav
+			FirstSpawnWarningSound mvm/mvm_warning.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                            
@@ -15340,7 +15340,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllSpawned "BUFFER4"
 			WaitBeforeStarting 9
-			FirstSpawnWarningSound mvm\mvm_warning.wav
+			FirstSpawnWarningSound mvm/mvm_warning.wav
 		}
 		WaveSpawn
 		{
@@ -15367,7 +15367,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllSpawned "BUFFER4"
 			WaitBeforeStarting 16
-			FirstSpawnWarningSound mvm\mvm_warning.wav
+			FirstSpawnWarningSound mvm/mvm_warning.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                            
@@ -15379,7 +15379,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllSpawned "BUFFER4"
 			WaitBeforeStarting 16
-			FirstSpawnWarningSound mvm\mvm_warning.wav
+			FirstSpawnWarningSound mvm/mvm_warning.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target mvm_beaton                          
@@ -15406,14 +15406,14 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllSpawned "BUFFER4"
 			WaitBeforeStarting 24
-			FirstSpawnWarningSound ambient\energy\zap6.wav
+			FirstSpawnWarningSound ambient/energy/zap6.wav
 		}
 		WaveSpawn
 		{
 			Name "PART5FX"
 			WaitForAllSpawned "BUFFER4"
 			WaitBeforeStarting 24
-			FirstSpawnWarningSound ambient\energy\zap5.wav
+			FirstSpawnWarningSound ambient/energy/zap5.wav
 		}
 
 		WaveSpawn
@@ -15594,7 +15594,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllDead "PART5-2"
 			WaitBeforeStarting 6
-			FirstSpawnWarningSound mvm\mvm_warning.wav
+			FirstSpawnWarningSound mvm/mvm_warning.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                            
@@ -15606,7 +15606,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllDead "PART5-2"
 			WaitBeforeStarting 6
-			FirstSpawnWarningSound mvm\mvm_warning.wav
+			FirstSpawnWarningSound mvm/mvm_warning.wav
 		}
 		WaveSpawn
 		{
@@ -15628,7 +15628,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllDead "PART5-2"
 			WaitBeforeStarting 12
-			FirstSpawnWarningSound mvm\mvm_warning.wav
+			FirstSpawnWarningSound mvm/mvm_warning.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                            
@@ -15640,7 +15640,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllDead "PART5-2"
 			WaitBeforeStarting 12
-			FirstSpawnWarningSound mvm\mvm_warning.wav
+			FirstSpawnWarningSound mvm/mvm_warning.wav
 		}
 		WaveSpawn
 		{
@@ -15662,7 +15662,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllDead "PART5-2"
 			WaitBeforeStarting 20
-			FirstSpawnWarningSound mvm\mvm_warning.wav
+			FirstSpawnWarningSound mvm/mvm_warning.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                            
@@ -15674,7 +15674,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllDead "PART5-2"
 			WaitBeforeStarting 20
-			FirstSpawnWarningSound mvm\mvm_warning.wav
+			FirstSpawnWarningSound mvm/mvm_warning.wav
 		}
 		WaveSpawn
 		{
@@ -15871,7 +15871,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllDead "PART5-4"
 			WaitBeforeStarting 15
-			FirstSpawnWarningSound music\stingers\hl1_stinger_song28.mp3
+			FirstSpawnWarningSound music/stingers/hl1_stinger_song28.mp3
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target signbomb                           
@@ -15883,7 +15883,7 @@ WaveSchedule
 			Name "PART5FX"
 			WaitForAllDead "PART5-4"
 			WaitBeforeStarting 15
-			FirstSpawnWarningSound music\stingers\hl1_stinger_song28.mp3
+			FirstSpawnWarningSound music/stingers/hl1_stinger_song28.mp3
 		}
 
 		WaveSpawn
@@ -15981,7 +15981,7 @@ WaveSchedule
 			Name "TANKFX"
 			WaitForAllDead "PART5-4"
 			WaitBeforeStarting 14.4
-			FirstSpawnWarningSound ambient\materials\cartrap_explode_impact1.wav
+			FirstSpawnWarningSound ambient/materials/cartrap_explode_impact1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                
@@ -15993,7 +15993,7 @@ WaveSchedule
 			Name "TANKFX"
 			WaitForAllDead "PART5-4"
 			WaitBeforeStarting 14.4
-			FirstSpawnWarningSound ambient\materials\cartrap_explode_impact2.wav
+			FirstSpawnWarningSound ambient/materials/cartrap_explode_impact2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                
@@ -16094,7 +16094,7 @@ WaveSchedule
 			Name "checkpoint5"
 			WaitForAllSpawned "revive5"
 			WaitBeforeStarting 2
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard3.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard3.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target flag1_bomb                
@@ -16112,8 +16112,8 @@ WaveSchedule
 			WaitBeforeStarting 2
 			Support limited
 			TotalCurrency 0
-			FirstSpawnWarningSound vo\compmode\cm_engie_pregamefirst_rare_03.mp3
-			DoneWarningSound vo\engineer_paincrticialdeath01.mp3
+			FirstSpawnWarningSound vo/compmode/cm_engie_pregamefirst_rare_03.mp3
+			DoneWarningSound vo/engineer_paincrticialdeath01.mp3
 			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  I've made contact with the Military. This here be our last chance for rescue!" [$SIGSEGV]
 
 			FirstSpawnOutput                                                                                                                                                            
@@ -16180,7 +16180,7 @@ WaveSchedule
 			WaitBetweenSpawnsAfterDeath 0
 			Support 1
 			WaitBeforeStarting 40
-			FirstSpawnWarningSound vo\engineer_helpme02.mp3
+			FirstSpawnWarningSound vo/engineer_helpme02.mp3
 			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  Son, keep me alive and I will remotely operate my shop for you!" [$SIGSEGV]
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -16215,7 +16215,7 @@ WaveSchedule
 			Name "checkpoint5"
 			WaitForAllSpawned "revive5"
 			WaitBeforeStarting 4
-			//FirstSpawnWarningSound vo\engineer_revenge01.mp3
+			//FirstSpawnWarningSound vo/engineer_revenge01.mp3
 		}
 		WaveSpawn
 		{
@@ -16262,7 +16262,7 @@ WaveSchedule
 			Name "checkpoint5"
 			WaitForAllSpawned "revive5"
 			WaitBeforeStarting 64.25
-			//FirstSpawnWarningSound vo\engineer_mvm_taunt01.mp3
+			//FirstSpawnWarningSound vo/engineer_mvm_taunt01.mp3
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target helper                        
@@ -16366,7 +16366,7 @@ WaveSchedule
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 6
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle1.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target hudbgone                              
@@ -16378,14 +16378,14 @@ WaveSchedule
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 6.5
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle9.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle9.wav
 		}
 		WaveSpawn
 		{
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 7
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle8.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle8.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                           
@@ -16397,28 +16397,28 @@ WaveSchedule
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 7.5
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle7.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle7.wav
 		}
 		WaveSpawn
 		{
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 7.5
-			FirstSpawnWarningSound ambient\levels\streetwar\city_riot1.wav
+			FirstSpawnWarningSound ambient/levels/streetwar/city_riot1.wav
 		}
 		WaveSpawn
 		{
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 9
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle6.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle6.wav
 		}
 		WaveSpawn
 		{
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 10
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle5.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle5.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                           
@@ -16430,35 +16430,35 @@ WaveSchedule
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 10.5
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle4.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle4.wav
 		}
 		WaveSpawn
 		{
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 11.5
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle3.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle3.wav
 		}
 		WaveSpawn
 		{
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 12
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle2.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle2.wav
 		}
 		WaveSpawn
 		{
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 12
-			FirstSpawnWarningSound ambient\levels\streetwar\city_riot2.wav
+			FirstSpawnWarningSound ambient/levels/streetwar/city_riot2.wav
 		}
 		WaveSpawn
 		{
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 12
-			FirstSpawnWarningSound ambient\levels\streetwar\city_riot2.wav
+			FirstSpawnWarningSound ambient/levels/streetwar/city_riot2.wav
 		}
 		WaveSpawn
 		{
@@ -16494,14 +16494,14 @@ WaveSchedule
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 19
-			FirstSpawnWarningSound #music\hl1_song3.mp3
+			FirstSpawnWarningSound #music/hl1_song3.mp3
 		}
 		WaveSpawn
 		{
 			Name "PART6FX"
 			WaitForAllSpawned "BUFFER5"
 			WaitBeforeStarting 19
-			FirstSpawnWarningSound #music\hl1_song3.mp3
+			FirstSpawnWarningSound #music/hl1_song3.mp3
 		}
 		WaveSpawn
 		{
@@ -16563,7 +16563,7 @@ WaveSchedule
 			WaitBeforeStarting 14
 			TotalCurrency 0	
 			
-			FirstSpawnWarningSound ambient\creatures\town_moan1.wav
+			FirstSpawnWarningSound ambient/creatures/town_moan1.wav
 
 			RandomChoice
 			{
@@ -16752,7 +16752,7 @@ WaveSchedule
 			Name "PART6FX"
 			WaitForAllDead "part6-1"
 			WaitBeforeStarting 5
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_zombie1.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_zombie1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                           
@@ -16764,7 +16764,7 @@ WaveSchedule
 			Name "PAR61FX"
 			WaitForAllDead "part6-1"
 			WaitBeforeStarting 5
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_zombie1.wav	
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_zombie1.wav	
 		}
 
 		WaveSpawn
@@ -17003,42 +17003,42 @@ WaveSchedule
 			Name "LEAPERSOUNDS"
 			WaitBeforeStarting 6
 			WaitForAllDead "PART6-1"
-			FirstSpawnWarningSound npc\fast_zombie\fz_alert_far1.wav
+			FirstSpawnWarningSound npc/fast_zombie/fz_alert_far1.wav
 		}
 		WaveSpawn
 		{
 			Name "LEAPERSOUNDS"
 			WaitBeforeStarting 6.5
 			WaitForAllDead "PART6-1"
-			FirstSpawnWarningSound npc\fast_zombie\fz_alert_far1.wav
+			FirstSpawnWarningSound npc/fast_zombie/fz_alert_far1.wav
 		}
 		WaveSpawn
 		{
 			Name "LEAPERSOUNDS"
 			WaitBeforeStarting 7
 			WaitForAllDead "PART6-1"
-			FirstSpawnWarningSound npc\fast_zombie\fz_alert_far1.wav
+			FirstSpawnWarningSound npc/fast_zombie/fz_alert_far1.wav
 		}
 		WaveSpawn
 		{
 			Name "LEAPERSOUNDS"
 			WaitBeforeStarting 12
 			WaitForAllDead "PART6-1"
-			FirstSpawnWarningSound npc\fast_zombie\fz_alert_close1.wav
+			FirstSpawnWarningSound npc/fast_zombie/fz_alert_close1.wav
 		}
 		WaveSpawn
 		{
 			Name "LEAPERSOUNDS"
 			WaitBeforeStarting 12.5
 			WaitForAllDead "PART6-1"
-			FirstSpawnWarningSound npc\fast_zombie\fz_alert_close1.wav
+			FirstSpawnWarningSound npc/fast_zombie/fz_alert_close1.wav
 		}
 		WaveSpawn
 		{
 			Name "LEAPERSOUNDS"
 			WaitBeforeStarting 13
 			WaitForAllDead "PART6-1"
-			FirstSpawnWarningSound npc\fast_zombie\fz_alert_close1.wav
+			FirstSpawnWarningSound npc/fast_zombie/fz_alert_close1.wav
 		}
 		WaveSpawn
 		{
@@ -17096,7 +17096,7 @@ WaveSchedule
 			Name "PART6FX"
 			WaitForAllDead "PART6-2"
 			WaitBeforeStarting 3
-			FirstSpawnWarningSound mvm\mvm_warning.wav
+			FirstSpawnWarningSound mvm/mvm_warning.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                            
@@ -17108,14 +17108,14 @@ WaveSchedule
 			Name "PART6FX"
 			WaitForAllDead "PART6-2"
 			WaitBeforeStarting 3
-			FirstSpawnWarningSound mvm\mvm_warning.wav
+			FirstSpawnWarningSound mvm/mvm_warning.wav
 		}
 		WaveSpawn
 		{
 			Name "PART6FX"
 			WaitForAllDead "PART6-2"
 			WaitBeforeStarting 4.5
-			FirstSpawnWarningSound vo\mvm\norm\soldier_mvm_battlecry01.mp3
+			FirstSpawnWarningSound vo/mvm/norm/soldier_mvm_battlecry01.mp3
 			FirstSpawnMessage "{blue}The Corrupted{FFFFFF} :  CHARGE!" [$SIGSEGV]
 		}
 
@@ -17638,7 +17638,7 @@ WaveSchedule
 		{
 			Name "PART6FX"
 			WaitForAllDead "PART6-3"
-			FirstSpawnWarningSound physics\metal\metal_solid_strain2.wav
+			FirstSpawnWarningSound physics/metal/metal_solid_strain2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target spook_relay                      
@@ -17649,7 +17649,7 @@ WaveSchedule
 		{
 			Name "PART6FX"
 			WaitForAllDead "PART6-3"
-			FirstSpawnWarningSound physics\metal\metal_solid_strain5.wav
+			FirstSpawnWarningSound physics/metal/metal_solid_strain5.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                    
@@ -17661,7 +17661,7 @@ WaveSchedule
 			Name "PART6FX"
 			WaitForAllDead "PART6-3"
 			WaitBeforeStarting 1
-			FirstSpawnWarningSound music\stingers\hl1_stinger_song7.mp3
+			FirstSpawnWarningSound music/stingers/hl1_stinger_song7.mp3
 			FirstSpawnOutput
 			{
 				Target flag2_bomb
@@ -17673,7 +17673,7 @@ WaveSchedule
 			Name "PART6FX"
 			WaitForAllDead "PART6-3"
 			WaitBeforeStarting 1
-			FirstSpawnWarningSound music\stingers\hl1_stinger_song7.mp3
+			FirstSpawnWarningSound music/stingers/hl1_stinger_song7.mp3
 			FirstSpawnOutput
 			{
 				Target flag3_bomb
@@ -17685,14 +17685,14 @@ WaveSchedule
 			Name "PART6FX"
 			WaitForAllDead "PART6-3"
 			WaitBeforeStarting 5
-			FirstSpawnWarningSound physics\metal\metal_solid_strain5.wav
+			FirstSpawnWarningSound physics/metal/metal_solid_strain5.wav
 		}
 		WaveSpawn
 		{
 			Name "PART6FX"
 			WaitForAllDead "PART6-3"
 			WaitBeforeStarting 5
-			FirstSpawnWarningSound physics\metal\metal_solid_strain4.wav
+			FirstSpawnWarningSound physics/metal/metal_solid_strain4.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                    
@@ -17749,7 +17749,7 @@ WaveSchedule
 			WaitForAllDead "PART6-4"
 			WaitBeforeStarting 6
 			FirstSpawnMessage "{00FFFF}LAST CHANCE FOR PURCHASES" [$SIGSEGV]
-			FirstSpawnWarningSound ambient\alarms\klaxon1.wav
+			FirstSpawnWarningSound ambient/alarms/klaxon1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target Viro_beaton                         
@@ -17773,7 +17773,7 @@ WaveSchedule
 			WaitForAllDead "PART6-4"
 			WaitBeforeStarting 6
 			FirstSpawnMessage "{00FFFF}LAST CHANCE FOR PURCHASES" [$SIGSEGV]
-			FirstSpawnWarningSound ambient\alarms\klaxon1.wav
+			FirstSpawnWarningSound ambient/alarms/klaxon1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target cab                       
@@ -17821,14 +17821,14 @@ WaveSchedule
 			Name "LASTPAUSE2"
 			WaitForAllDead "PART6-4"
 			WaitBeforeStarting 3
-			FirstSpawnWarningSound music\stingers\hl1_stinger_song16.mp3
+			FirstSpawnWarningSound music/stingers/hl1_stinger_song16.mp3
 		}
 		WaveSpawn
 		{
 			Name "LASTPAUSE2"
 			WaitForAllDead "PART6-4"
 			WaitBeforeStarting 3
-			FirstSpawnWarningSound music\stingers\hl1_stinger_song16.mp3
+			FirstSpawnWarningSound music/stingers/hl1_stinger_song16.mp3
 		}
 		WaveSpawn
 		{
@@ -17911,7 +17911,7 @@ WaveSchedule
 		{
 			Name "CHECKPOINTLAST"
 			WaitForAllSpawned "LASTPAUSE"
-			FirstSpawnWarningSound ambient\alarms\klaxon1.wav
+			FirstSpawnWarningSound ambient/alarms/klaxon1.wav
 			WaitBeforeStarting 40
 			FirstSpawnOutput
 			{
@@ -17923,7 +17923,7 @@ WaveSchedule
 		{
 			Name "CHECKPOINTLAST"
 			WaitForAllSpawned "LASTPAUSE"
-			FirstSpawnWarningSound ambient\alarms\klaxon1.wav
+			FirstSpawnWarningSound ambient/alarms/klaxon1.wav
 			WaitBeforeStarting 40
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -17935,7 +17935,7 @@ WaveSchedule
 		{
 			Name "CHECKPOINTLAST"
 			WaitForAllSpawned "LASTPAUSE"
-			//FirstSpawnWarningSound ambient\alarms\klaxon1.wav
+			//FirstSpawnWarningSound ambient/alarms/klaxon1.wav
 			WaitBeforeStarting 40
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -17947,7 +17947,7 @@ WaveSchedule
 		{
 			Name "CHECKPOINTLAST"
 			WaitForAllSpawned "LASTPAUSE"
-			//FirstSpawnWarningSound ambient\alarms\klaxon1.wav
+			//FirstSpawnWarningSound ambient/alarms/klaxon1.wav
 			WaitBeforeStarting 40
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -17959,9 +17959,9 @@ WaveSchedule
 		{
 			Name "CHECKPOINTLAST"
 			WaitForAllSpawned "LASTPAUSE"
-			//FirstSpawnWarningSound ambient\alarms\klaxon1.wav
+			//FirstSpawnWarningSound ambient/alarms/klaxon1.wav
 			WaitBeforeStarting 40
-			FirstSpawnWarningSound physics\metal\metal_grate_impact_hard2.wav
+			FirstSpawnWarningSound physics/metal/metal_grate_impact_hard2.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                                
@@ -17974,7 +17974,7 @@ WaveSchedule
 			Name "FINALEFX"
 			WaitForAllSpawned "LASTPAUSE"
 			WaitBeforeStarting 43
-			FirstSpawnWarningSound npc\zombie_poison\pz_alert1.wav
+			FirstSpawnWarningSound npc/zombie_poison/pz_alert1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit2                            
@@ -18049,7 +18049,7 @@ WaveSchedule
 			Name "FINALEFX"
 			WaitForAllSpawned "LASTPAUSE"
 			WaitBeforeStarting 46
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_zombie1.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_zombie1.wav
 			FirstSpawnOutput
 			{
 				Target viro_beatoff
@@ -18061,7 +18061,7 @@ WaveSchedule
 			Name "FINALEFX"
 			WaitForAllSpawned "LASTPAUSE"
 			WaitBeforeStarting 46
-			FirstSpawnWarningSound ambient\levels\prison\inside_battle_zombie1.wav
+			FirstSpawnWarningSound ambient/levels/prison/inside_battle_zombie1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                           
@@ -18094,7 +18094,7 @@ WaveSchedule
 			Name "FINALEFX"
 			WaitForAllSpawned "LASTPAUSE"
 			WaitBeforeStarting 48
-			FirstSpawnWarningSound ambient\creatures\town_zombie_call1.wav
+			FirstSpawnWarningSound ambient/creatures/town_zombie_call1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                            
@@ -18120,7 +18120,7 @@ WaveSchedule
 			Name "FINALEFX"
 			WaitForAllSpawned "LASTPAUSE"
 			WaitBeforeStarting 49
-			FirstSpawnWarningSound npc\fast_zombie\fz_alert_far1.wav
+			FirstSpawnWarningSound npc/fast_zombie/fz_alert_far1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target shakeit                           
@@ -18619,7 +18619,7 @@ WaveSchedule
 			WaitForAllSpawned "LASTPAUSE"
 			WaitBeforeStarting 138
 			Support limited
-			FirstSpawnWarningSound npc\combine_soldier\vo\prison_soldier_visceratorsa5.wav
+			FirstSpawnWarningSound npc/combine_soldier/vo/prison_soldier_visceratorsa5.wav
 			//FirstSpawnMessage "{2EFF00}Soldier{FFFFFF} :  Big whisky delta on the LZ. We will distract it, stay away!" [$SIGSEGV]
 			TotalCurrency 0
 
@@ -18832,7 +18832,7 @@ WaveSchedule
 				}
 				Attributes IgnoreEnemies
 				Health 99999
-				UseCustomModel "models\empty.mdl" [$SIGSEGV]
+				UseCustomModel "models/empty.mdl" [$SIGSEGV]
 				CharacterAttributes
 				{
 					"voice pitch scale" 0
