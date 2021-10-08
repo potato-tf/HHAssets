@@ -1,0 +1,5 @@
+banned_missions
+{
+	"mvm_ghost_town" "normal"
+	"mvm_ghost_town" "mvm_ghost_town"
+}
