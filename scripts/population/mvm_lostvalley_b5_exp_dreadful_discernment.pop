@@ -51,33 +51,33 @@ WaveSchedule
 	Advanced	1
 	EventPopfile	Halloween
 
-	NoRomevisionCosmetics	1	
-	TextPrintTime			0	
-	BotsAreHumans        	1	
-	ForceHoliday          	2	
-	NoThrillerTaunt			1		// no more
-	NoCritPumpkin			1	
-	NoMissionInfo			1		// fixes false information
-	ZombiesNoWave666		1	
-	FastNPCUpdate			1	
-	ForceRobotBleed			1	
+	NoRomevisionCosmetics	1	[$SIGSEGV]
+	TextPrintTime			0	[$SIGSEGV]
+	BotsAreHumans        	1	[$SIGSEGV]
+	ForceHoliday          	2	[$SIGSEGV]
+	NoThrillerTaunt			1	[$SIGSEGV]	// no more
+	NoCritPumpkin			1	[$SIGSEGV]
+	NoMissionInfo			1	[$SIGSEGV]	// fixes false information
+	ZombiesNoWave666		1	[$SIGSEGV]
+	FastNPCUpdate			1	[$SIGSEGV]
+	ForceRobotBleed			1	[$SIGSEGV]
 
-	ItemBlacklist		// prevent spellbooks from showing up (map has spells enabled by default and causes it to forcefully equip the spellbooks)
+	ItemBlacklist	[$SIGSEGV]	// prevent spellbooks from showing up (map has spells enabled by default and causes it to forcefully equip the spellbooks)
 	{
 		Classname	"tf_weapon_spellbook"
 		Name		"Secret Diary"
 	}
 
-	PrecacheModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
-	PrecacheModel	"models/bots/boss_bot/boss_tank_color.mdl"				// hell-met moment
+	PrecacheModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
+	PrecacheModel	"models/bots/boss_bot/boss_tank_color.mdl"			[$SIGSEGV]	// hell-met moment
 	PrecacheSound	"w3_boss_spawn.mp3"
 	
-	FlagResetTime 
+	FlagResetTime [$SIGSEGV]
 	{
 		Name		"intel_classic"
 		ResetTime	90
 	}
-	PointTemplates	
+	PointTemplates	[$SIGSEGV]
 	{
 		killcrumpkin	// no. more. crumpkins! no. more. bullshit! no. more. giants bazinga-ing the whole team because they picked up a crumpkin! nooooooooooooo mooooooooooooooore abusing crumpkin drops! you're getting killed
 		{
@@ -388,42 +388,42 @@ WaveSchedule
 			SpawnTemplate	"Distortion_Effect"
 			Health			70000
 			Scale			1.9
-			ChangeAttributes   
+			ChangeAttributes [$SIGSEGV]  
 			{
 				Delay	0
 				Repeats	0
 				IfHealthBelow	60000
 				Name	"Sergeant_Crits_Form"
 			}
-			ChangeAttributes   
+			ChangeAttributes [$SIGSEGV]  
 			{
 				Delay	0
 				Repeats	0
 				IfHealthBelow	50000
 				Name	"Default"
 			}
-			ChangeAttributes   
+			ChangeAttributes [$SIGSEGV]  
 			{
 				Delay	0
 				Repeats	0
 				IfHealthBelow	40000
 				Name	"Sergeant_Crits_Form"
 			}
-			ChangeAttributes   
+			ChangeAttributes [$SIGSEGV]  
 			{
 				Delay	0
 				Repeats	0
 				IfHealthBelow	30000
 				Name	"Default"
 			}
-			ChangeAttributes   
+			ChangeAttributes [$SIGSEGV]  
 			{
 				Delay	0
 				Repeats	0
 				IfHealthBelow	20000
 				Name	"Sergeant_Crits_Form"
 			}
-			ChangeAttributes   
+			ChangeAttributes [$SIGSEGV]  
 			{
 				Delay	0
 				Repeats	0
@@ -448,7 +448,7 @@ WaveSchedule
 					WeaponRestrictions PrimaryOnly
 					Attributes HoldFireUntilFullReload
 					Tag	bot_giant
-					ItemColor			
+					ItemColor			[$SIGSEGV]
 					{
 						ItemName	"Honest Halo"
 						Red			255
@@ -488,7 +488,7 @@ WaveSchedule
 					Attributes AlwaysCrit
 					WeaponRestrictions PrimaryOnly
 					Attributes HoldFireUntilFullReload
-					ItemColor			
+					ItemColor			[$SIGSEGV]
 					{
 						ItemName	"Honest Halo"
 						Red			255
@@ -525,7 +525,7 @@ WaveSchedule
 			SpawnTemplate	"Distortion_Effect"
 			Health	50000
 			Scale	1.9
-			ChangeAttributes   
+			ChangeAttributes [$SIGSEGV]  
 			{
 				Delay	0
 				Repeats	0
@@ -540,13 +540,13 @@ WaveSchedule
 					Attributes	MiniBoss
 					Attributes	UseBossHealthBar
 					Item	"Honest Halo"
-					StripItemSlot	0	
-					StripItemSlot	1	
+					StripItemSlot	0	[$SIGSEGV]
+					StripItemSlot	1	[$SIGSEGV]
 					Skill	Expert
 					CustomEyeGlowColor	"255 0 0"
 					Tag		bot_giant
-					UseMeleeThreatPrioritization	1	
-					ItemColor			
+					UseMeleeThreatPrioritization	1	[$SIGSEGV]
+					ItemColor			[$SIGSEGV]
 					{
 						ItemName	"Honest Halo"
 						Red			255
@@ -587,18 +587,18 @@ WaveSchedule
 					Attributes	MiniBoss
 					Attributes	UseBossHealthBar
 					Item	"Honest Halo"
-					StripItemSlot	0	
-					StripItemSlot	1	
+					StripItemSlot	0	[$SIGSEGV]
+					StripItemSlot	1	[$SIGSEGV]
 					Item    "The Apparatchik's Apparel"
 					Skill	Expert
 					Tag		bot_giant
-					UseMeleeThreatPrioritization	1	
-					ItemModel			
+					UseMeleeThreatPrioritization	1	[$SIGSEGV]
+					ItemModel			[$SIGSEGV]
 					{
 						ItemName    "The Apparatchik's Apparel"
 						Model "models/bots/skeleton_sniper/skeleton_sniper.mdl"
 					}
-					ItemColor			
+					ItemColor			[$SIGSEGV]
 					{
 						ItemName	"Honest Halo"
 						Red			255
@@ -649,7 +649,7 @@ WaveSchedule
 			Item	"Spine-Chilling Skull 2011 Style 3"
 			SpawnTemplate	"Distortion_Effect"
 			CustomEyeGlowColor	"255 0 0"
-			ItemColor			
+			ItemColor			[$SIGSEGV]
 			{
 				ItemName	"Spine-Chilling Skull 2011 Style 3"
 				Red			255
@@ -958,7 +958,7 @@ WaveSchedule
 		"dmg taken increased"	0.000001
 		"heal on kill"	690
 	}
-	//ExtraLoadoutItems  // Extra loadout items available after typing !missionitems in chat
+	//ExtraLoadoutItems [$SIGSEGV] // Extra loadout items available after typing !missionitems in chat
 	//{
 	//	Engineer
 	//	{
@@ -1019,7 +1019,7 @@ WaveSchedule
 		TFBot
 		{
 			Template	T_TFBot_Spy
-			UseHumanModel	2	
+			UseHumanModel	2	[$SIGSEGV]
 		}
 	}
 	Mission
@@ -1036,7 +1036,7 @@ WaveSchedule
 			Template	T_TFBot_Sniper
 			Attributes	AlwaysCrit
 			Name	"Asshole Assassin"
-			UseHumanModel	2	
+			UseHumanModel	2	[$SIGSEGV]
 			CharacterAttributes
 			{
 				"kill forces attacker to laugh"	1
@@ -1091,26 +1091,26 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFBot_Giant_Scout_Baseball_Armored
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					Tag	bot_giant
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic_BigHeal
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					Name		"Big-Heal Medic"
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic_BigHeal
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					Name		"Big-Heal Medic"
 				}
 				TFBot
 				{
 
 					Template	T_TFBot_Medic_BigHeal
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					Name		"Big-Heal Medic"
 				}
 			}
@@ -1131,13 +1131,13 @@ WaveSchedule
 				TFBot
 				{
 					Class	Pyro
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					Skill	Easy
 				}
 				TFBot
 				{
 					Template	T_TFBot_Demoman_Knight
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					Attributes	AlwaysCrit
 				}
 			}
@@ -1156,7 +1156,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFGatebot_Giant_Demoman
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -1173,7 +1173,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFGatebot_Giant_Demoman
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -1193,27 +1193,27 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFBot_Heavyweapons_Fist
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFBot_Heavyweapons_Shotgun
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFBot_Heavyweapons_Shotgun
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFBot_Heavyweapons_Shotgun
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFBot_Heavyweapons_Shotgun
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 
 			}
@@ -1233,7 +1233,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFGateBot_Scout_Normal
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 				
 			}
 		}
@@ -1254,14 +1254,14 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFBot_Giant_Soldier
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					Tag	bot_giant
 					Attributes	AlwaysCrit
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic_QuickUber
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 			}
 		}
@@ -1282,7 +1282,7 @@ WaveSchedule
 				Class	Scout
 				Skill	Normal
 				ClassIcon	scout_giant
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -1302,7 +1302,7 @@ WaveSchedule
 				Class	Pyro
 				Skill	Easy
 				ClassIcon	pyro_giant
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -1320,23 +1320,23 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFBot_Giant_Heavyweapons
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					Tag	bot_giant
 				}
 				TFBot
 				{
 					Template	T_TFBot_Heavyweapons_Fist
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFBot_Heavyweapons_Fist
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFBot_Heavyweapons_Fist
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 
 			}
@@ -1372,7 +1372,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFBot_Giant_Scout_Fast
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 				Tag	bot_giant
 			}
 		}
@@ -1391,12 +1391,12 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFGateBot_Giant_Pyro_AlwaysFire
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFBot_Giant_Medic_Regen
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					Tag	bot_giant
 				}
 			}
@@ -1415,7 +1415,7 @@ WaveSchedule
 			TFBot
 			{
 				Class	Soldier
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 				Skill	Hard
 			}
 		}
@@ -1434,7 +1434,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFGateBot_Heavy_IronFist
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -1460,13 +1460,13 @@ WaveSchedule
 					Item	"The Dragon's Fury"
 					Item	"Pyromancer's Mask"
 					MaxVisionRange	600
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic_BigHeal
 					Name	"Big-Heal Medic"
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 			}
 		}
@@ -1484,7 +1484,7 @@ WaveSchedule
 				Speed	69
 				StartingPathTrackNode	"path_tank_1"
 				SpawnTemplate	"WHAT_IF_IT_WAS_PURPLE"
-				Model	"models/bots/boss_bot/boss_tank_color.mdl" 
+				Model	"models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
 				OnBombDroppedOutput 
 				{
 					Target boss_deploy_relay
@@ -1510,12 +1510,12 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFGateBot_Soldier_Hard
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFGateBot_Demoman_Hard
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 			}
 		}
@@ -1533,7 +1533,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFBot_Giant_Heavyweapons_Shotgun_Rapidfire
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 				Tag	bot_giant
 			}
 		}
@@ -1551,7 +1551,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFBot_Giant_Heavyweapons_Shotgun_Rapidfire
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 				Tag	bot_giant
 			}
 		}
@@ -1569,7 +1569,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFBot_Giant_Heavyweapons_Shotgun_Rapidfire
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 				Tag	bot_giant
 			}
 		}
@@ -1587,7 +1587,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFBot_Heavyweapons_Fist
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -1606,14 +1606,14 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFBot_Giant_Soldier_Spammer_Reload
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					Tag	bot_giant
 					Attributes	AlwaysCrit
 				}
 				TFBot
 				{
 					Template	T_TFBot_Giant_Medic
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 			}
 		}
@@ -1636,21 +1636,21 @@ WaveSchedule
 					Class	Demoman
 					Skill	Expert
 					ClassIcon	demo_giant
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Class	Demoman
 					Skill	Expert
 					ClassIcon	demo_giant
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFBot_Heavyweapons_Heavyweight_Champ_Fast
 					Attributes	AlwaysCrit
 					Name	"Featherweight Champ"
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 			}
 		}
@@ -1672,7 +1672,7 @@ WaveSchedule
 			Target	disable_spells
 			Action	Trigger
 		}
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line	"{red}The zombie forces have summoned the phantom of Captain Punch..."
 			Line	"{yellow}Be careful not to let it get too far with the bomb or else enemy Engineers will become a bigger threat!"
@@ -1692,12 +1692,12 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFGateBot_Demo_Burst_Normal_Crit
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 			}
 		}
@@ -1716,7 +1716,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Scout_Bonk
 				WeaponRestrictions	PrimaryOnly
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -1769,7 +1769,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFGateBot_Heavy_Normal
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -1795,13 +1795,13 @@ WaveSchedule
 					TeleportWhere	spawnbot_main1
 
 					Health			500
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot	// let's do a LITTLE trolling.
 				{
 					Template	T_TFBot_Medic
 					ClassIcon	medic_uber_giant	// prevent icon stacking
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 			}
 		}
@@ -1823,19 +1823,19 @@ WaveSchedule
 				TFBot
 				{
 					Class	Soldier
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					Skill	Expert
 				}
 				TFBot
 				{
 					Class	Demoman
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					Skill	Expert
 				}
 				TFBot
 				{
 					Template	T_TFBot_Pyro_Flaregun
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 			}
 		}
@@ -1862,7 +1862,7 @@ WaveSchedule
 				Item	"The Soda Popper"
 				Item	"The Bottle Cap"
 				Tag	bot_giant
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 				ItemAttributes
 				{
 					ItemName	"The Bottle Cap"
@@ -1899,7 +1899,7 @@ WaveSchedule
 				Speed	65
 				StartingPathTrackNode	"path_tank_alt"
 				SpawnTemplate	"WHAT_IF_IT_WAS_ORANGE"
-				Model	"models/bots/boss_bot/boss_tank_color.mdl" 
+				Model	"models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
 				OnBombDroppedOutput 
 				{
 					Target boss_deploy_relay
@@ -1922,7 +1922,7 @@ WaveSchedule
 				Speed	65
 				StartingPathTrackNode	"path_tank_1"
 				SpawnTemplate	"WHAT_IF_IT_WAS_GREEN"
-				Model	"models/bots/boss_bot/boss_tank_color.mdl" 
+				Model	"models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
 				OnBombDroppedOutput 
 				{
 					Target boss_deploy_relay
@@ -1943,7 +1943,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFBot_Scout_Bonk
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 				ClassIcon	scout_bonk_giant
 				Attributes	AlwaysCrit
 			}
@@ -1968,7 +1968,7 @@ WaveSchedule
 					Tag		bot_giant
 					Item	"Tomislav"	// no dmg bonus because accuracy with kritzkrieg is already brutal enough
 					Item	"Capone's Capper"
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
@@ -1983,7 +1983,7 @@ WaveSchedule
 					Item	"The Kritzkrieg"
 					Item	"Titanium Tyrolean"
 					Tag	bot_giant
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 					ItemAttributes
 					{
 						ItemName "The Kritzkrieg"
@@ -2077,7 +2077,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	Colonel_Barrage_Torture_CBT_For_Short
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -2094,7 +2094,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFGateBot_Giant_Heavyweapons_Deflector
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -2111,7 +2111,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFGateBot_Sniper_Huntsman_Event_Crit
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -2133,7 +2133,7 @@ WaveSchedule
 				ClassIcon	tank_mallet
 				Speed	60
 				SpawnTemplate	"WHAT_IF_IT_WAS_BROWN"
-				Model	"models/bots/boss_bot/boss_tank_color.mdl" 
+				Model	"models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
 				StartingPathTrackNode	"path_tank_alt"
 				OnBombDroppedOutput 
 				{
@@ -2163,7 +2163,7 @@ WaveSchedule
 			{
 				Class	Pyro
 				Skill	Expert	// bye bye trolldiers
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -2184,12 +2184,12 @@ WaveSchedule
 				{
 					Template	T_TFBot_Giant_Scout_Baseball_Armored
 					Attributes	AlwaysCrit
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFBot_Giant_Medic_Regen	// TOO MUCH TROLLING
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 			}
 		}
@@ -2210,12 +2210,12 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFGateBot_Heavy_Normal_Crit
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 			}
 		}
@@ -2236,12 +2236,12 @@ WaveSchedule
 				TFBot
 				{
 					Template	T_TFGateBot_Giant_Demo_Burst
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 				TFBot
 				{
 					Template	T_TFGateBot_Giant_Soldier_Extended_Concheror
-					UseHumanModel	2	
+					UseHumanModel	2	[$SIGSEGV]
 				}
 			}
 		}
@@ -2271,7 +2271,7 @@ WaveSchedule
 				Item	"The Dragon's Fury"
 				Item	"Pyromancer's Mask"
 				Tag	bot_giant
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 				CharacterAttributes
 				{
 					"move speed bonus"	0.5
@@ -2339,7 +2339,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Scout_Sandman_FastCharge
 				Attributes	AlwaysCrit
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -2359,7 +2359,7 @@ WaveSchedule
 				Template	T_TFBot_Scout_Shortstop
 				Attributes	AlwaysCrit
 				Skill	Hard
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 			}
 		}
 		WaveSpawn
@@ -2378,7 +2378,7 @@ WaveSchedule
 			{
 				Class	Pyro
 				Skill	Expert
-				UseHumanModel	2	
+				UseHumanModel	2	[$SIGSEGV]
 				ClassIcon	pyro_giant
 			}
 		}

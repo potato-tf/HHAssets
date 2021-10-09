@@ -9,9 +9,9 @@ WaveSchedule
 	RespawnWaveTime 		1 
 	CanBotsAttackWhileInSpawnRoom no
 	
-	TextPrintTime 7 
+	TextPrintTime 7 [$SIGSEGV]
 	
-	ExtraSpawnPoint   
+	ExtraSpawnPoint [$SIGSEGV]  
     {
         Name "spawnbot_sknight" 
         TeamNum 3 
@@ -20,7 +20,7 @@ WaveSchedule
         Z	"-139.97"   	
     }
 	
-	ExtraSpawnPoint   
+	ExtraSpawnPoint [$SIGSEGV]  
     {
         Name "spawnbot_man" 
         TeamNum 3 
@@ -29,7 +29,7 @@ WaveSchedule
         Z	"-51"   	
     }
 	
-	ExtraSpawnPoint   
+	ExtraSpawnPoint [$SIGSEGV]  
     {
         Name "spawnhorsemann" 
         TeamNum 3 
@@ -38,7 +38,7 @@ WaveSchedule
         Z	"-142.97"   //for headless mann	
     }
 	
-	PointTemplates 
+	PointTemplates [$SIGSEGV]
 	{
 		ScareCube
 		{
@@ -386,7 +386,7 @@ WaveSchedule
 			
 			Action Mobber
 			
-			VoiceCommand   //Periodacally uses voice commands
+			VoiceCommand [$SIGSEGV]  //Periodacally uses voice commands
             {
                 Delay 0 //Time before the first voice command starts (Default: 10)
                 Cooldown 6 //Time between each voice command (Default: 10)
@@ -412,7 +412,7 @@ WaveSchedule
 			
 			Action Mobber
 			
-			VoiceCommand   //Periodacally uses voice commands
+			VoiceCommand [$SIGSEGV]  //Periodacally uses voice commands
             {
                 Delay 0 //Time before the first voice command starts (Default: 10)
                 Cooldown 6 //Time between each voice command (Default: 10)
@@ -438,7 +438,7 @@ WaveSchedule
 			
 			Action Mobber
 			
-			VoiceCommand   //Periodacally uses voice commands
+			VoiceCommand [$SIGSEGV]  //Periodacally uses voice commands
             {
                 Delay 0 //Time before the first voice command starts (Default: 10)
                 Cooldown 4 //Time between each voice command (Default: 10)
@@ -464,7 +464,7 @@ WaveSchedule
 			
 			Action Mobber
 			
-			VoiceCommand   //Periodacally uses voice commands
+			VoiceCommand [$SIGSEGV]  //Periodacally uses voice commands
             {
                 Delay 0 //Time before the first voice command starts (Default: 10)
                 Cooldown 6 //Time between each voice command (Default: 10)
@@ -537,7 +537,7 @@ WaveSchedule
 			Attributes IgnoreEnemies
 			Item "The Quick-Fix"
 			
-			FireWeapon   
+			FireWeapon [$SIGSEGV]  
             {
                 Delay 1 
                 Cooldown 3 
@@ -1060,19 +1060,19 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes UseBossHealthBar
 			
-			RocketCustomParticle ghost_appearation 
+			RocketCustomParticle ghost_appearation [$SIGSEGV]
 			
 			
-			RocketCustomModel "models/props_mvm/mvm_human_skull.mdl" 
+			RocketCustomModel "models/props_mvm/mvm_human_skull.mdl" [$SIGSEGV]
 			
-			ChangeAttributes  
+			ChangeAttributes [$SIGSEGV] 
 			{
 				Delay  0
 				Cooldown  10
 				Name  "RocketPhase" 
 			}
 			
-			ChangeAttributes  
+			ChangeAttributes [$SIGSEGV] 
 			{
 				Delay  6
 				Cooldown  10
@@ -1165,9 +1165,9 @@ WaveSchedule
 			
 			Tag "sknight"
 			
-			RocketCustomParticle ghost_appearation 
+			RocketCustomParticle ghost_appearation [$SIGSEGV]
 			
-			RocketCustomModel "models/props_mvm/mvm_human_skull.mdl" 
+			RocketCustomModel "models/props_mvm/mvm_human_skull.mdl" [$SIGSEGV]
 			
 			ItemAttributes
 			{
@@ -1175,20 +1175,20 @@ WaveSchedule
 				"attach particle effect" 13
 			}
 			
-			ChangeAttributes  
+			ChangeAttributes [$SIGSEGV] 
 			{
 				Delay  0
 				Cooldown  8
 				Name  "KatanaPhase2" 
 			}
 			
-			ChangeAttributes  
+			ChangeAttributes [$SIGSEGV] 
 			{
 				Delay  4
 				Cooldown  8
 				Name  "RocketPhase2" 
 			}
-			HomingRockets  
+			HomingRockets [$SIGSEGV] 
 			{
 				IgnoreDisguisedSpies 1
 				IgnoreStealthedSpies 1
@@ -1293,9 +1293,9 @@ WaveSchedule
 			Tag "sknight"
 			
 			
-			RocketCustomParticle eyeboss_projectile 
+			RocketCustomParticle eyeboss_projectile [$SIGSEGV]
 		
-			RocketCustomModel "models/props_mvm/mvm_human_skull.mdl" 
+			RocketCustomModel "models/props_mvm/mvm_human_skull.mdl" [$SIGSEGV]
 			
 			
 				
@@ -1323,7 +1323,7 @@ WaveSchedule
 				"projectile spread angle penalty" 45
 			}
 		
-			HomingRockets  
+			HomingRockets [$SIGSEGV] 
 			{
 				IgnoreDisguisedSpies 1
 				IgnoreStealthedSpies 1
@@ -1335,7 +1335,7 @@ WaveSchedule
 				AimTime 1
 			}
 			
-			AddCond 
+			AddCond [$SIGSEGV]
 			{
 				Index 36
 				Delay 0.1
@@ -1363,9 +1363,9 @@ WaveSchedule
 			ClassIcon dead_glow_lite
 			
 			
-			RocketCustomParticle eyeboss_projectile 
+			RocketCustomParticle eyeboss_projectile [$SIGSEGV]
 			
-			RocketCustomModel "models/props_mvm/mvm_human_skull.mdl" 
+			RocketCustomModel "models/props_mvm/mvm_human_skull.mdl" [$SIGSEGV]
 
 			Item "The War on Smissmas Battle Hood"
 			Item "The King of Scotland Cape"
@@ -1424,11 +1424,11 @@ WaveSchedule
 			ClassIcon dead_glow2_lite
 			
 			
-			RocketCustomParticle eyeboss_projectile 
+			RocketCustomParticle eyeboss_projectile [$SIGSEGV]
 			
-			RocketCustomModel "models/props_mvm/mvm_human_skull.mdl" 
+			RocketCustomModel "models/props_mvm/mvm_human_skull.mdl" [$SIGSEGV]
 			
-			HomingRockets  
+			HomingRockets [$SIGSEGV] 
 			{
 				IgnoreDisguisedSpies 1
 				IgnoreStealthedSpies 1
@@ -1438,7 +1438,7 @@ WaveSchedule
 				AimTime 1
 			}
 
-			AddCond 
+			AddCond [$SIGSEGV]
 			{
 				Index 36
 				Delay 5
@@ -1559,13 +1559,13 @@ WaveSchedule
 			
 			Tag "horseman"
 			
-			UseHumanModel 1 
+			UseHumanModel 1 [$SIGSEGV]
 			
-			Skin 5 
+			Skin 5 [$SIGSEGV]
 			
-			SpawnTemplate "ScareCube" 
+			SpawnTemplate "ScareCube" [$SIGSEGV]
 			
-			FireInput 
+			FireInput [$SIGSEGV]
 			{
 				Target   "boss_spook_relay"
 				Action   Trigger
@@ -1574,14 +1574,14 @@ WaveSchedule
 				Repeats  0
 			}
 			
-			Taunt   //Taunt periodically
+			Taunt [$SIGSEGV]  //Taunt periodically
 			{
 				Delay 9 //Time before the first taunt starts (Default: 10)
 				Cooldown 14 //Time between each taunt (Default: 10)
 				Repeats 0 //How many times the bot should taunt in total (Default: 0 - Infinite)
 			}
 			
-			VoiceCommand   
+			VoiceCommand [$SIGSEGV]  
 			{
 				Delay 11 
 				Cooldown 14
@@ -1611,7 +1611,7 @@ WaveSchedule
 				"custom kill icon" "headtaker"
 			}
 			
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Scotsman's Skullcutter"
 				Model "models/weapons/c_models/c_headtaker/c_headtaker.mdl"
@@ -1802,7 +1802,7 @@ WaveSchedule
 			Action Trigger										
 		}
 		
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line "{12E8EE}Greetings mercs, I have been assigned to overlook your little game here."
 			Line "{12E8EE}My identity is top secret, but be aware that I am an ally."
@@ -2126,7 +2126,7 @@ WaveSchedule
 			Action Trigger										
 		}
 		
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line "{12E8EE}Nice work, but that was just the first wave."
 			Line "{12E8EE}Keep that performance and you'll be done with the assault in no time."
@@ -2645,7 +2645,7 @@ WaveSchedule
 	
 	Wave
 	{
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line "{12E8EE}Scanners show that a boss giant will appear in this wave."
 			Line "{12E8EE}Those robot bastards aren't messing around."
@@ -2664,7 +2664,7 @@ WaveSchedule
 			Action Trigger										
 		}
 		//Headless Mann Cube
-		SpawnTemplate "ScareCube" 
+		SpawnTemplate "ScareCube" [$SIGSEGV]
 		
 		WaveSpawn
 		{
@@ -3079,7 +3079,7 @@ WaveSchedule
 			Action Trigger										
 		}
 		
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line "{12E8EE}You're halfway through team! Good job on killing the robots."
 			Line "{12E8EE}That being said, something feels odd..."
@@ -3431,7 +3431,7 @@ WaveSchedule
 			Action Trigger										
 		}
 		
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line "{12E8EE}Mercs, bad news. Someone is jamming our comms."
 			Line "{12E8EE}Commu--tion might be impossible in the fut--" //Communication might be impossible in the future
@@ -3908,7 +3908,7 @@ WaveSchedule
 	
 	Wave
 	{
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line "{12E8EE}Hello? He---o? Team, if thi--- --ches you, prep--- y--rself." //Hello? Hello? Team, if this reaches you, prepare yourself.
 			Line "{12E8EE}Som---ng strong is --mi--- and I h-ve no idea what it is." //Something strong is coming and I have no idea 
@@ -3930,7 +3930,7 @@ WaveSchedule
 			Action Trigger										
 		}
 		
-		SpawnTemplate "PhaseActivator" 
+		SpawnTemplate "PhaseActivator" [$SIGSEGV]
 		
 		WaveSpawn
 		{
@@ -4308,7 +4308,7 @@ WaveSchedule
 		//!!BOSS ALERT!!
 		//!!BOSS ALERT!!
 		
-		SpawnTemplate "PhaseActivator" 
+		SpawnTemplate "PhaseActivator" [$SIGSEGV]
 		
 		WaveSpawn
 		{

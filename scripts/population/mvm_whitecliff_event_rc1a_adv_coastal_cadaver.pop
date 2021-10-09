@@ -32,11 +32,11 @@ WaveSchedule {
 		Advanced 						1 
 		FixedRespawnWaveTime Yes
 		EventPopFile halloween
-		ZombiesNoWave666 1 
-		PrecacheModel "models/weapons/c_models/c_breadmonster/c_breadmonster.mdl" 
+		ZombiesNoWave666 1 [$SIGSEGV]
+		PrecacheModel "models/weapons/c_models/c_breadmonster/c_breadmonster.mdl" [$SIGSEGV]
 	//	AddSentryBusterWhenKillCountExceeds 0
 
-	PointTemplates   
+	PointTemplates  [$SIGSEGV] 
 	{
 		BombTeleport
 		{
@@ -219,7 +219,7 @@ WaveSchedule {
 			Target wave_finished_relay
 			Action Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line "{blue}Spellbots Active this wave!"
 			Line "{blue}Haste - Carried by Scout"
@@ -251,8 +251,8 @@ WaveSchedule {
                     "head scale" 0.7
 				    "move speed bonus" 1.25
                 }
-				NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+				NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
 			}
 		}
 		WaveSpawn {
@@ -523,7 +523,7 @@ WaveSchedule {
 			Target wave_finished_relay
 			Action Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line "{blue}Spellbots Active this wave!"
 			Line "{blue}Crits - Carried by Demoman"
@@ -569,8 +569,8 @@ WaveSchedule {
                         "head scale" 0.7
                         "move speed bonus" 1.25
                     }
-                    NoBombUpgrades 1 
-                    SuppressTimedFetchFlag 1 
+                    NoBombUpgrades 1 [$SIGSEGV]
+                    SuppressTimedFetchFlag 1 [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -602,8 +602,8 @@ WaveSchedule {
                         "airblast vulnerability multiplier" 0.5
                         "override footstep sound set" 4
                     }
-                    NoBombUpgrades 1 
-                    SuppressTimedFetchFlag 1 
+                    NoBombUpgrades 1 [$SIGSEGV]
+                    SuppressTimedFetchFlag 1 [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -644,8 +644,8 @@ WaveSchedule {
                     {
                         "move speed bonus"	0.7
                     }
-                    NoBombUpgrades 1 
-                    SuppressTimedFetchFlag 1 
+                    NoBombUpgrades 1 [$SIGSEGV]
+                    SuppressTimedFetchFlag 1 [$SIGSEGV]
                 }
                 
             }
@@ -1059,8 +1059,8 @@ WaveSchedule {
 			Target wave_finished_relay
 			Action Trigger
 		}
-		SpawnTemplate "BombTeleport" 
-		Explanation   //Dispayed once the wave is initialized
+		SpawnTemplate "BombTeleport" [$SIGSEGV]
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line "{blue}Spellbots Active this wave!"
 			Line "{blue}Underworld - Carried by Heavy"
@@ -1104,8 +1104,8 @@ WaveSchedule {
                     "override footstep sound set" 2
                     "attach particle effect" 2
                 }
-                NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+                NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
 			}
 		}
 		WaveSpawn {
@@ -1504,12 +1504,12 @@ WaveSchedule {
 				Item "Point and Shoot"
 				Item "Big Steel Jaw of Summer Fun"
 				Item "The Apparatchik's Apparel"
-				DamageAppliesCond  //Adds conditions to players on hit
+				DamageAppliesCond [$SIGSEGV] //Adds conditions to players on hit
 				{
 					Name "TF_COND_URINE"
 					Duration 5
 				}
-				AimOffset "0 0 50" 
+				AimOffset "0 0 50" [$SIGSEGV]
 				ItemAttributes
 				{
 					ItemName "Iron Curtain"
@@ -1552,9 +1552,9 @@ WaveSchedule {
 				Skill Expert
 				Tag bombtp
 				WeaponRestrictions MeleeOnly
-				StripItem "Zombie Sniper" 
-				UseCustomModel "models\bots\skeleton_sniper\skeleton_sniper.mdl" 
-				Skin 2 
+				StripItem "Zombie Sniper" [$SIGSEGV]
+				UseCustomModel "models\bots\skeleton_sniper\skeleton_sniper.mdl" [$SIGSEGV]
+				Skin 2 [$SIGSEGV]
 				Item "The Bushwacka"
 				CharacterAttributes{
 					"move speed bonus" 1.2
@@ -1581,12 +1581,12 @@ WaveSchedule {
 					Attributes MiniBoss
 					Attributes UseBossHealthBar
 					WeaponRestrictions MeleeOnly
-					StripItem "Zombie Heavy" 
-					UseCustomModel "models\props_halloween\ghost_no_hat.mdl" 
-					Skin 1 
+					StripItem "Zombie Heavy" [$SIGSEGV]
+					UseCustomModel "models\props_halloween\ghost_no_hat.mdl" [$SIGSEGV]
+					Skin 1 [$SIGSEGV]
 					Scale 2
-					ExtAttr IgnoreBuildings 
-					ExtAttr IgnorePlayers 
+					ExtAttr IgnoreBuildings [$SIGSEGV]
+					ExtAttr IgnorePlayers [$SIGSEGV]
 					CharacterAttributes{
 						"move speed bonus" 3
 					}

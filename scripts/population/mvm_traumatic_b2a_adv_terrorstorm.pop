@@ -1735,7 +1735,7 @@ WaveSchedule
 			{
 				Health	10000
 				Name	tankboss_uber
-                ClassIcon   tank_uber_lite 
+                ClassIcon   tank_uber_lite [$SIGSEGV]
                 StartingPathTrackNode "boss_path_short_1"
 				Speed	75
 				OnKilledOutput

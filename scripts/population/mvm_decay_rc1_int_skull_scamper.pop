@@ -7,19 +7,19 @@
 
 WaveSchedule
 {
-	SpawnTemplate "Filters" 
+	SpawnTemplate "Filters" [$SIGSEGV]
 	StartingCurrency 1200
 	RespawnWaveTime 3
 	CanBotsAttackWhileInSpawnRoom no
-	SendBotsToSpectatorImmediately 1 
-	NoRomevisionCosmetics 1 
-	NoCritPumpkin 1 
-	SpawnTemplate "NoPumpkinBombs" 
-	SpawnTemplate "BombPathFix" 
-	SpawnTemplate "BombTrigger" 
-	SpawnTemplate "RespawnRoom_EurekaEffectBuff" 
-	DisallowUpgrade	"falling_impact_radius_stun" 
-	DisallowUpgrade	"thermal_thruster_air_launch" 
+	SendBotsToSpectatorImmediately 1 [$SIGSEGV]
+	NoRomevisionCosmetics 1 [$SIGSEGV]
+	NoCritPumpkin 1 [$SIGSEGV]
+	SpawnTemplate "NoPumpkinBombs" [$SIGSEGV]
+	SpawnTemplate "BombPathFix" [$SIGSEGV]
+	SpawnTemplate "BombTrigger" [$SIGSEGV]
+	SpawnTemplate "RespawnRoom_EurekaEffectBuff" [$SIGSEGV]
+	DisallowUpgrade	"falling_impact_radius_stun" [$SIGSEGV]
+	DisallowUpgrade	"thermal_thruster_air_launch" [$SIGSEGV]
 	Templates
 	{
 		T_TFBot_Medic_FlashUber
@@ -66,15 +66,15 @@ WaveSchedule
 						Class Soldier
 						Skill Easy
 						Name "Vita-Zombie"
-						SpawnTemplate "Teleport" 
-						UseHumanModel 1 
+						SpawnTemplate "Teleport" [$SIGSEGV]
+						UseHumanModel 1 [$SIGSEGV]
 						Item "Zombie Soldier"
 						Attributes HoldFireUntilFullReload
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_REPROGRAMMED"
 						}
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_INVULNERABLE_USER_BUFF"
 							Duration 3
@@ -85,15 +85,15 @@ WaveSchedule
 						Class Soldier
 						Skill Easy
 						Name "Vita-Zombie"
-						SpawnTemplate "Teleport" 
-						UseHumanModel 1 
+						SpawnTemplate "Teleport" [$SIGSEGV]
+						UseHumanModel 1 [$SIGSEGV]
 						Item "Zombie Soldier"
 						Attributes HoldFireUntilFullReload
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_REPROGRAMMED"
 						}
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_INVULNERABLE_USER_BUFF"
 							Duration 3
@@ -104,14 +104,14 @@ WaveSchedule
 						Class Pyro
 						Skill Easy
 						Name "Vita-Zombie"
-						SpawnTemplate "Teleport" 
-						UseHumanModel 1 
+						SpawnTemplate "Teleport" [$SIGSEGV]
+						UseHumanModel 1 [$SIGSEGV]
 						Item "Zombie Pyro"
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_REPROGRAMMED"
 						}
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_INVULNERABLE_USER_BUFF"
 							Duration 3
@@ -122,14 +122,14 @@ WaveSchedule
 						Class Pyro
 						Skill Easy
 						Name "Vita-Zombie"
-						SpawnTemplate "Teleport" 
-						UseHumanModel 1 
+						SpawnTemplate "Teleport" [$SIGSEGV]
+						UseHumanModel 1 [$SIGSEGV]
 						Item "Zombie Pyro"
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_REPROGRAMMED"
 						}
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_INVULNERABLE_USER_BUFF"
 							Duration 3
@@ -140,15 +140,15 @@ WaveSchedule
 						Class Demoman
 						Skill Easy
 						Name "Vita-Zombie"
-						SpawnTemplate "Teleport" 
-						UseHumanModel 1 
+						SpawnTemplate "Teleport" [$SIGSEGV]
+						UseHumanModel 1 [$SIGSEGV]
 						Item "Zombie Demo"
 						Attributes HoldFireUntilFullReload
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_REPROGRAMMED"
 						}
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_INVULNERABLE_USER_BUFF"
 							Duration 3
@@ -159,15 +159,15 @@ WaveSchedule
 						Class Demoman
 						Skill Easy
 						Name "Vita-Zombie"
-						SpawnTemplate "Teleport" 
-						UseHumanModel 1 
+						SpawnTemplate "Teleport" [$SIGSEGV]
+						UseHumanModel 1 [$SIGSEGV]
 						Item "Zombie Demo"
 						Attributes HoldFireUntilFullReload
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_REPROGRAMMED"
 						}
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_INVULNERABLE_USER_BUFF"
 							Duration 3
@@ -178,14 +178,14 @@ WaveSchedule
 						Class Heavyweapons
 						Skill Easy
 						Name "Vita-Zombie"
-						SpawnTemplate "Teleport" 
-						UseHumanModel 1 
+						SpawnTemplate "Teleport" [$SIGSEGV]
+						UseHumanModel 1 [$SIGSEGV]
 						Item "Zombie Heavy"
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_REPROGRAMMED"
 						}
-						AddCond 
+						AddCond [$SIGSEGV]
 						{
 							Name "TF_COND_INVULNERABLE_USER_BUFF"
 							Duration 3
@@ -195,7 +195,7 @@ WaveSchedule
 			}
 		}
 	}
-	PointTemplates 
+	PointTemplates [$SIGSEGV]
 	{
 		Filters
 		{
@@ -1300,7 +1300,7 @@ WaveSchedule
 		}
 		WaitWhenDone 65
 		Checkpoint Yes
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line "{yellow}15 weapons have received tweaks. For more detailed information, visit: https://pastebin.com/j0drGdfR"
 		}
@@ -1847,7 +1847,7 @@ WaveSchedule
 			TotalCurrency 100
 			Squad
 			{
-				NoWaitForFormation 1 
+				NoWaitForFormation 1 [$SIGSEGV]
 				TFBot
 				{
 					Template T_TFBot_Giant_Soldier_Spammer
@@ -2376,7 +2376,7 @@ WaveSchedule
 			TotalCurrency 100
 			Squad
 			{
-				NoFormation 1 
+				NoFormation 1 [$SIGSEGV]
 				TFBot
 				{
 					Template T_TFBot_Giant_Soldier_Extended_Buff_Banner
@@ -2550,7 +2550,7 @@ WaveSchedule
 			}
 		}
 	}
-	ExtraSpawnPoint 
+	ExtraSpawnPoint [$SIGSEGV]
     {
         Name "spawnbot_zombie"
 		StartDisabled 1
@@ -2559,7 +2559,7 @@ WaveSchedule
         Y "-1881"                  
         Z "493"        
     }
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "Baby Face's Blaster"
 		"boost on damage" 0
@@ -2569,13 +2569,13 @@ WaveSchedule
 		"stay after regenerate" 1
 		"special item description" "Damage robots to earn temporary move speed buffs. Kill robots to keep buffs for longer."
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "The Cow Mangler 5000"
 		"fire rate penalty" 1.15
 		"special item description" "Charged shot fires an electric orb that deals continuous damage to robots and fizzles out enemy projectiles."
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "The Air Strike"
 		"Blast radius decreased" 1
@@ -2584,21 +2584,21 @@ WaveSchedule
 		"Projectile speed decreased" 0.6
 		"special item description" "Marked for death while blast jumping."
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "The Pain Train"
 		"dmg taken from bullets increased" 1
 		"crit mod disabled" 0
 		"special item description" "100% crit chance while in range of the robot bomb."
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "The Thermal Thruster"
 		"holster_anim_time" 0
 		"item_meter_charge_rate" 1
 		"special item description" "On use: Fly indefinitely. Can't switch weapons while flying.	Recharge time upgrade has no effect on this item."
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "The Loch-N-Load"
 		"CARD: damage bonus" 1.2
@@ -2606,20 +2606,20 @@ WaveSchedule
 		"clip size penalty" 0.5
 		"Blast radius decreased" 1
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "Natascha"
 		"damage penalty" 1
 		"spread penalty" 0.75
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "Tomislav"
 		"minigun spinup time decreased" 0.6
 		"single wep deploy time decreased" 0.6
 		"mod minigun can holster while spinning" 1
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "Warrior's Spirit"
 		"dmg taken increased" 1
@@ -2631,7 +2631,7 @@ WaveSchedule
 		"crit mod disabled" 0
 		"special item description" "On Kill: Gain a Battalion's Backup banner buff for 5 seconds.	No ammo from dispensers while the primary weapon is active."
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "The Eviction Notice"
 		"mult_player_movespeed_active" 1
@@ -2644,7 +2644,7 @@ WaveSchedule
 		"heal on hit for slowfire" 25
 		"special item description" "On Kill: Gain a Concheror banner buff for 5 seconds."
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "The Eureka Effect"
 		"Construction rate decreased" 1
@@ -2654,14 +2654,14 @@ WaveSchedule
 		"fire rate penalty" 1.15
 		"special item description" "Restore your health and metal, as well as gain 5 seconds of mini-crits whenever you are in a respawn room."
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "The Gunslinger"
 		"engineer sentry build rate multiplier" 51
 		"Construction rate increased" 2.5
 		"special item description" "+80% faster deployment speed across all weapons."
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "The Vita-Saw"
 		"ubercharge_preserved_on_spawn_max" 1
@@ -2672,7 +2672,7 @@ WaveSchedule
 		"stay after regenerate" 1
 		"special item description" "On every 6th organ collected: Raise a Zombie to fight for you."
 	}
-	ItemAttributes 
+	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "Conniver's Kunai"
 		"sanguisuge" 0
@@ -2681,57 +2681,57 @@ WaveSchedule
 		"stay after regenerate" 1
 		"special item description" "On every fourth kill: Gain +25 max health, up to a maximum of +125. On max health cap: +100% damage vs giant robots."
 	}
-	PlayerItemEquipSpawnTemplate 
+	PlayerItemEquipSpawnTemplate [$SIGSEGV]
 	{
 		Name "BabyFaceBlaster_Rework"
 		ItemName "Baby Face's Blaster"
 	}
-	PlayerItemEquipSpawnTemplate 
+	PlayerItemEquipSpawnTemplate [$SIGSEGV]
 	{
 		Name "CowMangler_NoSlow"
 		ItemName "The Cow Mangler 5000"
 	}
-	PlayerItemEquipSpawnTemplate 
+	PlayerItemEquipSpawnTemplate [$SIGSEGV]
 	{
 		Name "AirStrike_BlastJumping"
 		ItemName "The Air Strike"
 	}
-	PlayerItemEquipSpawnTemplate 
+	PlayerItemEquipSpawnTemplate [$SIGSEGV]
 	{
 		Name "PainTrain_CritAura"
 		ItemName "The Pain Train"
 	}
-	PlayerItemEquipSpawnTemplate 
+	PlayerItemEquipSpawnTemplate [$SIGSEGV]
 	{
 		Name "SplendidScreen_Ram"
 		ItemName "The Splendid Screen"
 	}
-	PlayerItemEquipSpawnTemplate 
+	PlayerItemEquipSpawnTemplate [$SIGSEGV]
 	{
 		Name "ThermalThruster_Fly"
 		ItemName "The Thermal Thruster"
 	}
-	PlayerItemEquipSpawnTemplate 
+	PlayerItemEquipSpawnTemplate [$SIGSEGV]
 	{
 		Name "WarriorSpirit_MustHolsterPrimary"
 		ItemName "Warrior's Spirit"
 	}
-	PlayerItemEquipSpawnTemplate 
+	PlayerItemEquipSpawnTemplate [$SIGSEGV]
 	{
 		Name "Gunslinger_SwitchBuff"
 		ItemName "The Gunslinger"
 	}
-	PlayerItemEquipSpawnTemplate 
+	PlayerItemEquipSpawnTemplate [$SIGSEGV]
 	{
 		Name "EurekaEffect_MetalRegen"
 		ItemName "The Eureka Effect"
 	}
-	PlayerItemEquipSpawnTemplate 
+	PlayerItemEquipSpawnTemplate [$SIGSEGV]
 	{
 		Name "Kunai_HealthGain"
 		ItemName "Conniver's Kunai"
 	}
-	PlayerItemEquipSpawnTemplate 
+	PlayerItemEquipSpawnTemplate [$SIGSEGV]
 	{
 		Name "VitaSaw_Zombie"
 		ItemName "The Vita-Saw"

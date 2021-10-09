@@ -31,23 +31,23 @@ WaveSchedule
     AddSentryBusterWhenKillCountExceeds 15
     Advanced 1
     // EventPopfile Halloween
-    NoRomevisionCosmetics 1 
-    ForceHoliday 2 
-    FixSetCustomModelInput 1 
-    BodyPartScaleSpeed 50 
-	TextPrintTime 0 
-    NoThrillerTaunt 1  // No thriller taunt in halloween
-    NoCritPumpkin 1  // No crit pumpkin on player death drop in halloween
-    ForceRobotBleed 1 
-    WaveStartCountdown 5 
-    BotHumansHaveEyeGlow 1 
+    NoRomevisionCosmetics 1 [$SIGSEGV]
+    ForceHoliday 2 [$SIGSEGV]
+    FixSetCustomModelInput 1 [$SIGSEGV]
+    BodyPartScaleSpeed 50 [$SIGSEGV]
+	TextPrintTime 0 [$SIGSEGV]
+    NoThrillerTaunt 1 [$SIGSEGV] // No thriller taunt in halloween
+    NoCritPumpkin 1 [$SIGSEGV] // No crit pumpkin on player death drop in halloween
+    ForceRobotBleed 1 [$SIGSEGV]
+    WaveStartCountdown 5 [$SIGSEGV]
+    BotHumansHaveEyeGlow 1 [$SIGSEGV]
 
-    PrecacheModel "models/bots/boss_bot/boss_tank_color.mdl"   
-	PrecacheModel "models/workshop/player/items/all_class/hwn2019_horrible_horns/hwn2019_horrible_horns_heavy.mdl" 
-    PrecacheModel "models/weapons/c_models/c_rapidfire/c_rapidfire_1.mdl" 
-    PrecacheSound "weapons/shotgun/shotgun_dbl_fire7.wav" 
+    PrecacheModel "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]  
+	PrecacheModel "models/workshop/player/items/all_class/hwn2019_horrible_horns/hwn2019_horrible_horns_heavy.mdl" [$SIGSEGV]
+    PrecacheModel "models/weapons/c_models/c_rapidfire/c_rapidfire_1.mdl" [$SIGSEGV]
+    PrecacheSound "weapons/shotgun/shotgun_dbl_fire7.wav" [$SIGSEGV]
 
-    CustomWeapon  //Allows you to use an alias for items with custom attributes 
+    CustomWeapon [$SIGSEGV] //Allows you to use an alias for items with custom attributes 
 	{
 		Name "TF_WEAPON_SPAS"
 		OriginalItemName "Upgradeable TF_WEAPON_SHOTGUN_PRIMARY"
@@ -61,7 +61,7 @@ WaveSchedule
         "bullets per shot bonus" 0.5
 	}
 
-    ExtraSpawnPoint 
+    ExtraSpawnPoint [$SIGSEGV]
     {
         Name "hidden"
         TeamNum 3
@@ -70,7 +70,7 @@ WaveSchedule
         Z "-266"
     }
 
-    ExtraSpawnPoint 
+    ExtraSpawnPoint [$SIGSEGV]
     {
         Name "eyeboss"
         TeamNum 3
@@ -79,7 +79,7 @@ WaveSchedule
         Z "-85"
     }
 
-    ExtraTankPath  
+    ExtraTankPath [$SIGSEGV] 
     {
         Name "eyeboss_path"
         Node "-38 -1947 321"
@@ -97,7 +97,7 @@ WaveSchedule
         Node "652 3392 321"
     }
 
-    PointTemplates  
+    PointTemplates [$SIGSEGV] 
 	{
 		ColorTank_Red // At this point the horned tank might as well be a map feature
         {							 
@@ -426,62 +426,62 @@ WaveSchedule
         }
 	}
 
-    SpawnTemplate "decor" 
+    SpawnTemplate "decor" [$SIGSEGV]
 
 
     Templates 
     {
         Zombify_Scout
         {
-            UseCustomModel "models/player/scout.mdl" 
+            UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
             Item "Zombie Scout"
         }
 
         Zombify_Soldier
         {
-            UseCustomModel "models/player/soldier.mdl" 
+            UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
             Item "Zombie Soldier"
         }
 
         Zombify_Pyro
         {
-            UseCustomModel "models/player/pyro.mdl" 
+            UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
             Item "Zombie Pyro"
         }
 
         Zombify_Demo
         {
-            UseCustomModel "models/player/demo.mdl" 
+            UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
             Item "Zombie Demo"
         }
 
         Zombify_Heavy
         {
-            UseCustomModel "models/player/heavy.mdl" 
+            UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
             Item "Zombie Heavy"
         }
 
         Zombify_Engie
         {
-            UseCustomModel "models/player/engineer.mdl" 
+            UseCustomModel "models/player/engineer.mdl" [$SIGSEGV]
             Item "Zombie Engineer"
         }
 
         Zombify_Medic
         {
-            UseCustomModel "models/player/medic.mdl" 
+            UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
             Item "Zombie Medic"
         }
 
         Zombify_Sniper
         {
-            UseCustomModel "models/player/sniper.mdl" 
+            UseCustomModel "models/player/sniper.mdl" [$SIGSEGV]
             Item "Zombie Sniper"
         }
 
         Zombify_Spy
         {
-            UseCustomModel "models/player/spy.mdl" 
+            UseCustomModel "models/player/spy.mdl" [$SIGSEGV]
             Item "Zombie Spy"
         }
 
@@ -493,7 +493,7 @@ WaveSchedule
             Health 175
             Skill Normal
             WeaponRestrictions MeleeOnly
-            UseCustomModel "models/player/pyro.mdl" 
+            UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
             Item "Upgradeable TF_WEAPON_FIREAXE"
             Item "Flavorful Baggies"
             Item "Bozo's Bouffant"
@@ -513,7 +513,7 @@ WaveSchedule
 			Health 175
 			Skill Hard
 			WeaponRestrictions MeleeOnly
-            UseCustomModel "models/player/pyro.mdl" 
+            UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
 			Item "Sharpened Volcano Fragment"
 			Tag nav_prefer_main_back
 			Item "The Last Breath"
@@ -531,7 +531,7 @@ WaveSchedule
 			Health 175
 			Skill Hard
 			WeaponRestrictions MeleeOnly
-            UseCustomModel "models/player/pyro.mdl" 
+            UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
 			Item "The Axtinguisher"
 			Tag nav_prefer_main_back
 			Item "The Wraith Wrap"
@@ -548,8 +548,8 @@ WaveSchedule
             Health 125
             Skill Hard
             WeaponRestrictions PrimaryOnly
-            SpawnTemplate "ConchSound" 
-            UseCustomModel "models/player/sniper.mdl" 
+            SpawnTemplate "ConchSound" [$SIGSEGV]
+            UseCustomModel "models/player/sniper.mdl" [$SIGSEGV]
             Item "The Huntsman"
             Item "The Cozy Camper"
             Item "Crocodile Dandy"
@@ -560,17 +560,17 @@ WaveSchedule
                 ItemName "The Huntsman"
                 "damage penalty" 0.5
             }
-            AddCond 
+            AddCond [$SIGSEGV]
             {
                 Name "TF_COND_REGENONDAMAGEBUFF"
                 Delay 1.5
             }
-            ItemModel 
+            ItemModel [$SIGSEGV]
             {
                 ItemName "The Cozy Camper"
                 Model "models/workshop_partner/weapons/c_models/c_shogun_warpack/c_shogun_warpack.mdl"
             }
-            ItemModel 
+            ItemModel [$SIGSEGV]
             {
                 ItemName "Crocodile Dandy"
                 Model "models/workshop_partner/weapons/c_models/c_shogun_warbanner/c_shogun_warbanner.mdl"
@@ -587,9 +587,9 @@ WaveSchedule
             Skill Normal
             MaxVisionRange 1600
             WeaponRestrictions PrimaryOnly
-            Action FetchFlag 
-            UseCustomModel "models/player/engineer.mdl" 
-            DropWeapon 1 
+            Action FetchFlag [$SIGSEGV]
+            UseCustomModel "models/player/engineer.mdl" [$SIGSEGV]
+            DropWeapon 1 [$SIGSEGV]
             Item "TF_WEAPON_SPAS"
             Item "Sophisticated Smoker"
             Item "Zombie Engineer"
@@ -604,9 +604,9 @@ WaveSchedule
             Health 1200
             Skill Easy
             WeaponRestrictions MeleeOnly
-            Action FetchFlag 
-            AimTrackingInterval 0.001 
-            UseCustomModel "models/player/spy.mdl" 
+            Action FetchFlag [$SIGSEGV]
+            AimTrackingInterval 0.001 [$SIGSEGV]
+            UseCustomModel "models/player/spy.mdl" [$SIGSEGV]
             Item "Prinny Machete"
             Item "Zombie Spy"
             Item "The Bolt Action Blitzer"
@@ -641,7 +641,7 @@ WaveSchedule
             Skill Easy
             WeaponRestrictions MeleeOnly
             Tag bot_giant
-            FastUpdate 1 
+            FastUpdate 1 [$SIGSEGV]
             UseCustomModel "models/player/scout.mdl"
             Item "Remorseless Raptor"
             Item "Wild Whip"
@@ -664,7 +664,7 @@ WaveSchedule
                 "override footstep sound set" 7
                 "cancel falling damage" 1
             }
-            ItemModel 
+            ItemModel [$SIGSEGV]
             {
                 ItemName "Employee Badge C"
                 Model "models/workshop/player/items/scout/sf14_talon_trotters/sf14_talon_trotters.mdl"
@@ -681,7 +681,7 @@ WaveSchedule
             // Attributes AlwaysCrit
             Skill Expert
             WeaponRestrictions PrimaryOnly
-            UseCustomModel "models/player/pyro.mdl" 
+            UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
             Item "The Dragon's Fury"
             Item "The Hot Hand"
             Item "The Seared Sorcerer"
@@ -728,17 +728,17 @@ WaveSchedule
             MaxVisionRange 50000
             WeaponRestrictions PrimaryOnly
             Tag monoculus_shooter
-            Action Mobber 
-            AlwaysGlow 1 
-            NoIdleSound 1 
-            ExtAttr IgnoreBuildings 
-            UseCustomModel "models/empty.mdl" 
-            RocketCustomModel "models/props_halloween/eyeball_projectile.mdl" 
-            RocketCustomParticle "eyeboss_projectile" 
-            StripItemSlot 1 
-            StripItemSlot 2 
-            SpawnTemplate "Monoculus_Shooter_Init" 
-            SpawnTemplate "Monoculus_Death_Init" 
+            Action Mobber [$SIGSEGV]
+            AlwaysGlow 1 [$SIGSEGV]
+            NoIdleSound 1 [$SIGSEGV]
+            ExtAttr IgnoreBuildings [$SIGSEGV]
+            UseCustomModel "models/empty.mdl" [$SIGSEGV]
+            RocketCustomModel "models/props_halloween/eyeball_projectile.mdl" [$SIGSEGV]
+            RocketCustomParticle "eyeboss_projectile" [$SIGSEGV]
+            StripItemSlot 1 [$SIGSEGV]
+            StripItemSlot 2 [$SIGSEGV]
+            SpawnTemplate "Monoculus_Shooter_Init" [$SIGSEGV]
+            SpawnTemplate "Monoculus_Death_Init" [$SIGSEGV]
             ItemAttributes
             {
                 ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -764,7 +764,7 @@ WaveSchedule
                 "cancel falling damage" 1
                 "override footstep sound set" 0
             }
-            FireWeapon  
+            FireWeapon [$SIGSEGV] 
 			{
 				Delay 1
 				Cooldown 6
@@ -773,7 +773,7 @@ WaveSchedule
 				Duration 1
 				Type "Primary"
 			}
-            AddCond 
+            AddCond [$SIGSEGV]
             {
                 Name "TF_COND_INVULNERABLE_USER_BUFF"
             }
@@ -790,13 +790,13 @@ WaveSchedule
             Attributes DisableDodge
             Skill Expert
             MaxVisionRange 1
-            Action PushToCapturePoint 
-            NoIdleSound 1 
-            StripItemSlot 0 
-            StripItemSlot 1 
-            StripItemSlot 2 
-            SpawnTemplate "Monoculus_Base_Init" 
-            UseCustomModel "models/empty.mdl" 
+            Action PushToCapturePoint [$SIGSEGV]
+            NoIdleSound 1 [$SIGSEGV]
+            StripItemSlot 0 [$SIGSEGV]
+            StripItemSlot 1 [$SIGSEGV]
+            StripItemSlot 2 [$SIGSEGV]
+            SpawnTemplate "Monoculus_Base_Init" [$SIGSEGV]
+            UseCustomModel "models/empty.mdl" [$SIGSEGV]
             CharacterAttributes
             {
                 "move speed bonus" 0.3125
@@ -831,7 +831,7 @@ WaveSchedule
             Skill Expert
            // WeaponRestrictions MeleeOnly
             MaxVisionRange 1600
-            UseCustomModel "models/player/heavy.mdl" 
+            UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
             Item "The Brass Beast"
             Item "The Buffalo Steak Sandvich"
             Item "Warrior's Spirit"
@@ -870,7 +870,7 @@ WaveSchedule
                 "override footstep sound set" 2
                 "gesture speed increase" 2
             }
-            ItemModel 
+            ItemModel [$SIGSEGV]
             {
                 ItemName "Employee Badge A"
                 Model "models/workshop/player/items/heavy/sbox2014_leftover_trap/sbox2014_leftover_trap.mdl"
@@ -911,7 +911,7 @@ WaveSchedule
         TFBot
         { 
             Template T_TFBot_Engineer_Sentry_Battle
-            AddTemplate Zombify_Engie 
+            AddTemplate Zombify_Engie [$SIGSEGV]
         }
     }
 
@@ -927,7 +927,7 @@ WaveSchedule
         TFBot
         { 
             Template T_TFBot_Sniper_2
-            AddTemplate Zombify_Sniper 
+            AddTemplate Zombify_Sniper [$SIGSEGV]
         }
     }
 
@@ -943,7 +943,7 @@ WaveSchedule
         TFBot
         { 
             Template T_TFBot_Spy
-            AddTemplate Zombify_Spy 
+            AddTemplate Zombify_Spy [$SIGSEGV]
         }
     }
 
@@ -976,7 +976,7 @@ WaveSchedule
             { 
                 Template T_TFBot_Scout_Melee_Fix
                 ClassIcon scout_bat
-                AddTemplate Zombify_Scout 
+                AddTemplate Zombify_Scout [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -993,7 +993,7 @@ WaveSchedule
             { 
                 Class Soldier
                 Skill Easy
-                AddTemplate Zombify_Soldier 
+                AddTemplate Zombify_Soldier [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1010,7 +1010,7 @@ WaveSchedule
             TFBot
             { 
                 Template T_TFBot_Giant_Soldier
-                AddTemplate Zombify_Soldier 
+                AddTemplate Zombify_Soldier [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1029,7 +1029,7 @@ WaveSchedule
                 Class Spy
                 ClassIcon spy_letranger_nys
                 Skill Easy
-                Action FetchFlag 
+                Action FetchFlag [$SIGSEGV]
                 Item "L'Etranger"
                 Item "The Familiar Fez"
                 ItemAttributes
@@ -1039,7 +1039,7 @@ WaveSchedule
                     "fire rate penalty" 1.2
                 }
                 CharacterAttributes { "cannot disguise" 1 }
-                AddTemplate Zombify_Spy 
+                AddTemplate Zombify_Spy [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1057,7 +1057,7 @@ WaveSchedule
             { 
                 Template T_TFBot_Giant_Pyro_Improved
                 Attributes AlwaysFireWeapon
-                AddTemplate Zombify_Pyro 
+                AddTemplate Zombify_Pyro [$SIGSEGV]
             }
         }
     }
@@ -1090,7 +1090,7 @@ WaveSchedule
             TFBot
             { 
                 Template T_TFBot_Giant_DemoMan_PrinceTavish
-                AddTemplate Zombify_Demo 
+                AddTemplate Zombify_Demo [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1121,7 +1121,7 @@ WaveSchedule
             TFBot
             { 
                 Template T_TFBot_Sniper_Huntsman_2
-                AddTemplate Zombify_Sniper 
+                AddTemplate Zombify_Sniper [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1141,7 +1141,7 @@ WaveSchedule
                 Item "Idiot Box"
                 Item "Steel Pipes"
                 Item "Shoestring Budget"
-                AddTemplate Zombify_Soldier 
+                AddTemplate Zombify_Soldier [$SIGSEGV]
             }
         }
         WaveSpawn // Tank 13000 HP
@@ -1161,9 +1161,9 @@ WaveSchedule
                 Health 10000
                 Speed 75
                 Skin 0
-                SpawnTemplate ColorTank_Red 
-                Model "models/bots/boss_bot/boss_tank_color.mdl" 
-                ReplaceModelCollisions 1 
+                SpawnTemplate ColorTank_Red [$SIGSEGV]
+                Model "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+                ReplaceModelCollisions 1 [$SIGSEGV]
                 OnKilledOutput 
                 {
                     Target boss_dead_relay
@@ -1194,7 +1194,7 @@ WaveSchedule
                 {
                     Template T_TFBot_Pyro
                     Skill Easy
-                    AddTemplate Zombify_Pyro 
+                    AddTemplate Zombify_Pyro [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -1233,7 +1233,7 @@ WaveSchedule
             TFBot
             { 
                 Template T_TFBot_Scout_Scattergun_Slow
-                AddTemplate Zombify_Scout 
+                AddTemplate Zombify_Scout [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1251,30 +1251,30 @@ WaveSchedule
                 TFBot
                 {
                     Template T_TFBot_Giant_Soldier_Bison
-                    AddTemplate Zombify_Soldier 
+                    AddTemplate Zombify_Soldier [$SIGSEGV]
                 }
                 TFBot
                 {
                     Template T_TFBot_Medic_QuickFix
-                    AddTemplate Zombify_Medic 
+                    AddTemplate Zombify_Medic [$SIGSEGV]
                 }
                 TFBot
                 {
                     Class Heavyweapons
                     Skill Easy
-                    AddTemplate Zombify_Heavy 
+                    AddTemplate Zombify_Heavy [$SIGSEGV]
                 }
                 TFBot
                 {
                     Class Heavyweapons
                     Skill Easy
-                    AddTemplate Zombify_Heavy 
+                    AddTemplate Zombify_Heavy [$SIGSEGV]
                 }
                 TFBot
                 {
                     Class Heavyweapons
                     Skill Easy
-                    AddTemplate Zombify_Heavy 
+                    AddTemplate Zombify_Heavy [$SIGSEGV]
                 }
             }
         }
@@ -1308,7 +1308,7 @@ WaveSchedule
             TFBot
             { 
                 Template T_TFBot_Pyro_Flaregun_Hard
-                AddTemplate Zombify_Pyro 
+                AddTemplate Zombify_Pyro [$SIGSEGV]
             }
         }
         // WaveSpawn
@@ -1360,9 +1360,9 @@ WaveSchedule
                 Health 20000
                 Speed 75
                 Skin 0
-                SpawnTemplate "ColorTank_Red" 
-                Model "models/bots/boss_bot/boss_tank_color.mdl" 
-                ReplaceModelCollisions 1 
+                SpawnTemplate "ColorTank_Red" [$SIGSEGV]
+                Model "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+                ReplaceModelCollisions 1 [$SIGSEGV]
                 OnKilledOutput 
                 {
                     Target boss_dead_relay
@@ -1393,12 +1393,12 @@ WaveSchedule
                     ClassIcon sniper_kukri_lite
                     Skill Easy
                     WeaponRestrictions MeleeOnly
-                    AddTemplate Zombify_Sniper 
+                    AddTemplate Zombify_Sniper [$SIGSEGV]
                 }
                 TFBot
                 {
                     Template T_TFBot_Medic_QuickFix
-                    AddTemplate Zombify_Medic 
+                    AddTemplate Zombify_Medic [$SIGSEGV]
                 }
             }
         }
@@ -1416,7 +1416,7 @@ WaveSchedule
             TFBot
             { 
                 Template T_TFBot_Demoman_Knight
-                AddTemplate Zombify_Demo 
+                AddTemplate Zombify_Demo [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1439,22 +1439,22 @@ WaveSchedule
                 TFBot
                 { 
                     Template T_TFBot_Pyro_Flaregun_Hard
-                    AddTemplate Zombify_Pyro 
+                    AddTemplate Zombify_Pyro [$SIGSEGV]
                 }
                 TFBot
                 { 
                     Template T_TFBot_Pyro_Flaregun_Hard
-                    AddTemplate Zombify_Pyro 
+                    AddTemplate Zombify_Pyro [$SIGSEGV]
                 }
                 TFBot
                 { 
                     Template T_TFBot_Pyro_Flaregun_Hard
-                    AddTemplate Zombify_Pyro 
+                    AddTemplate Zombify_Pyro [$SIGSEGV]
                 }
                 TFBot
                 { 
                     Template T_TFBot_Pyro_Flaregun_Hard
-                    AddTemplate Zombify_Pyro 
+                    AddTemplate Zombify_Pyro [$SIGSEGV]
                 }
             }
         }
@@ -1472,7 +1472,7 @@ WaveSchedule
             TFBot
             { 
                 Template T_TFBot_Heavyweapons_Fist
-                AddTemplate Zombify_Heavy 
+                AddTemplate Zombify_Heavy [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1490,7 +1490,7 @@ WaveSchedule
             TFBot
             { 
                 Template T_TFBot_Sniper_Huntsman_2
-                AddTemplate Zombify_Sniper 
+                AddTemplate Zombify_Sniper [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1509,31 +1509,31 @@ WaveSchedule
                 TFBot
                 {
                     Template T_TFBot_Giant_Demoman
-                    AddTemplate Zombify_Demo 
+                    AddTemplate Zombify_Demo [$SIGSEGV]
                 }
                 TFBot
                 {
                     Class Soldier
                     Skill Easy
-                    AddTemplate Zombify_Soldier 
+                    AddTemplate Zombify_Soldier [$SIGSEGV]
                 }
                 TFBot
                 {
                     Class Soldier
                     Skill Easy
-                    AddTemplate Zombify_Soldier 
+                    AddTemplate Zombify_Soldier [$SIGSEGV]
                 }
                 TFBot
                 {
                     Class Soldier
                     Skill Easy
-                    AddTemplate Zombify_Soldier 
+                    AddTemplate Zombify_Soldier [$SIGSEGV]
                 }
                 // TFBot
                 // {
                 //     Class Soldier
                 //     Skill Easy
-                //     AddTemplate Zombify_Soldier 
+                //     AddTemplate Zombify_Soldier [$SIGSEGV]
                 // }
             }
         }
@@ -1582,7 +1582,7 @@ WaveSchedule
             TFBot
             { 
                 Template T_TFBot_Giant_Soldier_Spammer_Hatted
-                AddTemplate Zombify_Soldier 
+                AddTemplate Zombify_Soldier [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1600,7 +1600,7 @@ WaveSchedule
             { 
                 Template T_TFBot_Demoman
                 Skill Normal
-                AddTemplate Zombify_Demo 
+                AddTemplate Zombify_Demo [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1623,7 +1623,7 @@ WaveSchedule
                 TFBot
                 {
                     Template T_TFBot_Medic_Quick_Uber
-                    AddTemplate Zombify_Medic 
+                    AddTemplate Zombify_Medic [$SIGSEGV]
                 }
             }
         }
@@ -1643,31 +1643,31 @@ WaveSchedule
                 TFBot
                 {
                     Template T_TFBot_Giant_Heavyweapons_Improved
-                    AddTemplate Zombify_Heavy 
+                    AddTemplate Zombify_Heavy [$SIGSEGV]
                 }
                 TFBot
                 {
                     Template T_TFBot_Pyro
                     Attributes AlwaysFireWeapon
-                    AddTemplate Zombify_Pyro 
+                    AddTemplate Zombify_Pyro [$SIGSEGV]
                 }
                 TFBot
                 {
                     Template T_TFBot_Pyro
                     Attributes AlwaysFireWeapon
-                    AddTemplate Zombify_Pyro 
+                    AddTemplate Zombify_Pyro [$SIGSEGV]
                 }
                 TFBot
                 {
                     Template T_TFBot_Pyro
                     Attributes AlwaysFireWeapon
-                    AddTemplate Zombify_Pyro 
+                    AddTemplate Zombify_Pyro [$SIGSEGV]
                 }
                 TFBot
                 {
                     Template T_TFBot_Pyro
                     Attributes AlwaysFireWeapon
-                    AddTemplate Zombify_Pyro 
+                    AddTemplate Zombify_Pyro [$SIGSEGV]
                 }
             }
         }
@@ -1687,7 +1687,7 @@ WaveSchedule
             { 
                 Class Scout
                 Skill Easy
-                AddTemplate Zombify_Scout 
+                AddTemplate Zombify_Scout [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1737,7 +1737,7 @@ WaveSchedule
             TFBot
             { 
                 Template T_TFBot_Sniper_SMG
-                AddTemplate Zombify_Sniper 
+                AddTemplate Zombify_Sniper [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -1755,12 +1755,12 @@ WaveSchedule
                 TFBot
                 {
                     Template T_TFBot_Giant_Demoman
-                    AddTemplate Zombify_Demo 
+                    AddTemplate Zombify_Demo [$SIGSEGV]
                 }
                 TFBot
                 {
                     Template T_TFBot_Medic_BigHeal_Armored
-                    AddTemplate Zombify_Medic 
+                    AddTemplate Zombify_Medic [$SIGSEGV]
                 }
             }
         }
@@ -1780,7 +1780,7 @@ WaveSchedule
                 Template T_TFBot_Scout_Shortstop
                 Item "The Milkman"
                 CharacterAttributes { "head scale" 1 }
-                AddTemplate Zombify_Scout 
+                AddTemplate Zombify_Scout [$SIGSEGV]
             }
         }
         WaveSpawn // Tank 30000 HP
@@ -1800,9 +1800,9 @@ WaveSchedule
                 Health 30000
                 Speed 75
                 Skin 1
-                SpawnTemplate "ColorTank_Red" 
-                Model "models/bots/boss_bot/boss_tank_color.mdl" 
-                ReplaceModelCollisions 1 
+                SpawnTemplate "ColorTank_Red" [$SIGSEGV]
+                Model "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+                ReplaceModelCollisions 1 [$SIGSEGV]
                 OnKilledOutput 
                 {
                     Target boss_dead_relay
@@ -1831,22 +1831,22 @@ WaveSchedule
                 TFBot
                 {
                     Template T_TFBot_Giant_Soldier_Spammer_Reload_Hatted
-                    AddTemplate Zombify_Soldier 
+                    AddTemplate Zombify_Soldier [$SIGSEGV]
                 }
                 TFBot
                 {
                     Template T_TFBot_Medic_QuickFix
-                    AddTemplate Zombify_Medic 
+                    AddTemplate Zombify_Medic [$SIGSEGV]
                 }
                 TFBot
                 {
                     Template T_TFBot_Medic_QuickFix
-                    AddTemplate Zombify_Medic 
+                    AddTemplate Zombify_Medic [$SIGSEGV]
                 }
                 TFBot
                 {
                     Template T_TFBot_Medic_QuickFix
-                    AddTemplate Zombify_Medic 
+                    AddTemplate Zombify_Medic [$SIGSEGV]
                 }
             }
         }
@@ -1912,9 +1912,9 @@ WaveSchedule
                 Skin 0
                 Scale 0.9
                 ClassIcon boss_eyeball 
-                SpawnTemplate "Monoculus_Tank_Init" 
-                SpawnTemplate "Monoculus_Sweeper_Init" 
-                Model  //Set custom model on tank. Will spit harmless errors on client console if the model does not have enough sequences
+                SpawnTemplate "Monoculus_Tank_Init" [$SIGSEGV]
+                SpawnTemplate "Monoculus_Sweeper_Init" [$SIGSEGV]
+                Model [$SIGSEGV] //Set custom model on tank. Will spit harmless errors on client console if the model does not have enough sequences
 				{
 					Default "models/empty.mdl"
 					Damage1 "models/empty.mdl"
@@ -1925,12 +1925,12 @@ WaveSchedule
 					RightTrack "models/empty.mdl"
 					Bomb "models/empty.mdl"
 				}
-                Gravity 0 
-                DisableSmokestack 1 
-                MaxTurnRate 50 
-                StartSound "ui/halloween_boss_summoned.wav" 
-                PingSound "misc/null.wav" 
-                EngineLoopSound "misc/null.wav" 
+                Gravity 0 [$SIGSEGV]
+                DisableSmokestack 1 [$SIGSEGV]
+                MaxTurnRate 50 [$SIGSEGV]
+                StartSound "ui/halloween_boss_summoned.wav" [$SIGSEGV]
+                PingSound "misc/null.wav" [$SIGSEGV]
+                EngineLoopSound "misc/null.wav" [$SIGSEGV]
                 OnKilledOutput 
                 {
                     Target boss_dead_relay
@@ -2012,7 +2012,7 @@ WaveSchedule
             {  
                 Class Soldier
                 Skill Easy
-                AddTemplate Zombify_Soldier 
+                AddTemplate Zombify_Soldier [$SIGSEGV]
             }
         }
         WaveSpawn
@@ -2030,8 +2030,8 @@ WaveSchedule
             {  
                 Template T_TFBot_Medic_Syringe
                 Skill Easy
-                Action FetchFlag 
-                AddTemplate Zombify_Medic 
+                Action FetchFlag [$SIGSEGV]
+                AddTemplate Zombify_Medic [$SIGSEGV]
             }
         }
         WaveSpawn

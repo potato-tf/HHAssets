@@ -17,8 +17,8 @@
 
 WaveSchedule
 {
-    PrecacheModel "models/bots/merasmus/merasmussmall_animations.mdl" 
-    PointTemplates 
+    PrecacheModel "models/bots/merasmus/merasmussmall_animations.mdl" [$SIGSEGV]
+    PointTemplates [$SIGSEGV]
 	{
 		Bumpercar_Model
 		{
@@ -741,11 +741,11 @@ WaveSchedule
         {
             Class Pyro
             ClassIcon bumpercar
-            AddCond 
+            AddCond [$SIGSEGV]
             {
                 Index 82
             }
-            FireWeapon  //Periodically fires weapon
+            FireWeapon [$SIGSEGV] //Periodically fires weapon
             {
                 Delay 5 //Time before the first fire input starts (Default: 10)
                 Cooldown 6 //Time between each fire input (Default: 10)
@@ -754,7 +754,7 @@ WaveSchedule
                 Duration 0.5 //How long should the button be pressed (Default: 0.1)
                 Type "Primary"
             }
-            SpawnTemplate Bumpercar_Model 
+            SpawnTemplate Bumpercar_Model [$SIGSEGV]
             Skill Expert
             Scale 1.25
             Health 350
@@ -1124,7 +1124,7 @@ WaveSchedule
             Item "The Short Circuit"
             Action FetchFlag
             ClassIcon engineer_shortcircuit_lite_giant
-            FireWeapon  //Periodically fires weapon
+            FireWeapon [$SIGSEGV] //Periodically fires weapon
             {
                 Delay 0 //Time before the first fire input starts (Default: 10)
                 Cooldown 4.8 //Time between each fire input (Default: 10)
@@ -1157,7 +1157,7 @@ WaveSchedule
 			ClassIcon pyro_flare_giant
 			Health 3000
             Attributes SuppressFire
-            FireWeapon  //Periodically changes bot attributes, defined in EventChangeAttributes
+            FireWeapon [$SIGSEGV] //Periodically changes bot attributes, defined in EventChangeAttributes
             {
                 Delay 1 //Time before the first bot attribute change (Default: 10)
                 Cooldown 6 //Time between each bot attribute change (Default: 10)
@@ -1347,70 +1347,70 @@ WaveSchedule
             {
                 "TF_WEAPON_MINIGUN" 0.9
             }
-            ChangeAttributes   //Periodically changes bot attributes, defined in EventChangeAttributes
+            ChangeAttributes [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
 				Delay 0 //Time before the first bot attribute change (Default: 10)
 				Repeats 1 //How many times should bot change attributes in total (Default: 0 - Infinite)
 				Name "Stage1" // Name of the bot attributes listed in EventChangeAttributes
 			}
-            FireInput   //Periodically changes bot attributes, defined in EventChangeAttributes
+            FireInput [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
                 Target "tf_gamerules" Action "PlayVO" Param "Halloween.MerasmusControlPoint"
 				Delay 0 Repeats 1 IfHealthBelow 34000 
 			}
-            FireInput   //Periodically changes bot attributes, defined in EventChangeAttributes
+            FireInput [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
                 Target "MonoculusBlue" Action "ForceSpawnAtEntityOrigin" Param "!activator"
 				Delay 9 Repeats 1 IfHealthBelow 34000 
 			}
-            Sequence   //Periodically changes bot attributes, defined in EventChangeAttributes
+            Sequence [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
                 Name bomb_attack Delay 0 Repeats 1 IfHealthBelow 34000 
 			}
-            Sequence   //Periodically changes bot attributes, defined in EventChangeAttributes
+            Sequence [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
                 Name "Run_MELEE" Delay 6 Repeats 1 IfHealthBelow 34000 
 			}
-            ChangeAttributes   //Periodically changes bot attributes, defined in EventChangeAttributes
+            ChangeAttributes [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
 				Delay 3 //Time before the first bot attribute change (Default: 10)
 				Repeats 1 //How many times should bot change attributes in total (Default: 0 - Infinite)
 				IfHealthBelow 34000 //When set, the task activates only when the bot health is below specified value
 				Name "Stage2"
 			}
-            ChangeAttributes   //Periodically changes bot attributes, defined in EventChangeAttributes
+            ChangeAttributes [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
 				Delay 6 //Time before the first bot attribute change (Default: 10)
 				Repeats 1 //How many times should bot change attributes in total (Default: 0 - Infinite)
 				IfHealthBelow 34000 //When set, the task activates only when the bot health is below specified value
 				Name "Stage3" // Name of the bot attributes listed in EventChangeAttributes
 			}
-            FireInput   //Periodically changes bot attributes, defined in EventChangeAttributes
+            FireInput [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
                 Target "tf_gamerules" Action "PlayVO" Param "Halloween.MerasmusControlPoint"
 				Delay 0 Repeats 1 IfHealthBelow 17000 
 			}
-            Sequence   //Periodically changes bot attributes, defined in EventChangeAttributes
+            Sequence [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
                 Name bomb_attack Delay 0 Repeats 1 IfHealthBelow 17000 
 			}
-            Sequence   //Periodically changes bot attributes, defined in EventChangeAttributes
+            Sequence [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
                 Name "Run_MELEE" Delay 6 Repeats 1 IfHealthBelow 17000 
 			}
-            FireInput   //Periodically changes bot attributes, defined in EventChangeAttributes
+            FireInput [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
                 Target "MonoculusBlue" Action "ForceSpawnAtEntityOrigin" Param "!activator"
 				Delay 9 Repeats 1 IfHealthBelow 17000
 			}
-            ChangeAttributes   //Periodically changes bot attributes, defined in EventChangeAttributes
+            ChangeAttributes [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
 				Delay 3 //Time before the first bot attribute change (Default: 10)
 				Repeats 1 //How many times should bot change attributes in total (Default: 0 - Infinite)
 				IfHealthBelow 17000 //When set, the task activates only when the bot health is below specified value
 				Name "Stage2" // Name of the bot attributes listed in EventChangeAttributes
 			}
-            ChangeAttributes   //Periodically changes bot attributes, defined in EventChangeAttributes
+            ChangeAttributes [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
 			{
 				Delay 6 //Time before the first bot attribute change (Default: 10)
 				Repeats 1 //How many times should bot change attributes in total (Default: 0 - Infinite)

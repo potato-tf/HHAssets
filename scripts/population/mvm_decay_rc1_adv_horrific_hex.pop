@@ -9,28 +9,28 @@ yes_spy_counters_w4_got_a_fucking_problem?
 	StartingCurrency 800
 	Advanced 1
 	EventPopFile Halloween
-	ZombiesNoWave666 1  // If set to 1, the game will not display wave 666 when EventPopFile is set (default: 0)
-	NoRomevisionCosmetics 1 
-	SendBotsToSpectatorImmediately 1 
-	NoCritPumpkin 1 
-	ImprovedAirblast 0  //maybe this fixes always on
-	TextPrintTime 0 
-	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl" 
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl" 
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl" 
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl" 
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" 
-	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" 
-	PrecacheModel "models/bots/boss_bot/boss_tank_color.mdl"  //PRECACHE THESE
+	ZombiesNoWave666 1 [$SIGSEGV] // If set to 1, the game will not display wave 666 when EventPopFile is set (default: 0)
+	NoRomevisionCosmetics 1 [$SIGSEGV]
+	SendBotsToSpectatorImmediately 1 [$SIGSEGV]
+	NoCritPumpkin 1 [$SIGSEGV]
+	ImprovedAirblast 0 [$SIGSEGV] //maybe this fixes always on
+	TextPrintTime 0 [$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV] //PRECACHE THESE
 
-	ExtraTankPath  //haha blimp go brrrrr
+	ExtraTankPath [$SIGSEGV] //haha blimp go brrrrr
 	{
 		Name "decay_blimp_path"
 		Node "0 2976 1100"
 		Node "-100 -1700 500"
 	}
 
-	PointTemplates 
+	PointTemplates [$SIGSEGV]
 	{
 		ColorTank_Prpl //hellmet is ape
         {
@@ -309,12 +309,12 @@ yes_spy_counters_w4_got_a_fucking_problem?
 		}
 	}
 
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "remove_pumps"
 	}
 
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "annotation_blimp"
 	}
@@ -524,8 +524,8 @@ yes_spy_counters_w4_got_a_fucking_problem?
 					Target boss_deploy_relay
 					Action Trigger                         
 				}
-				SpawnTemplate "ColorTank_Prpl" 
-				Model  "models/bots/boss_bot/boss_tank_color.mdl" 
+				SpawnTemplate "ColorTank_Prpl" [$SIGSEGV]
+				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
 			}
 		}
 
@@ -809,13 +809,13 @@ yes_spy_counters_w4_got_a_fucking_problem?
 				{
 					Template T_TFBot_Giant_Soldier
 					ClassIcon soldier_homing_nys
-					AddCond 
+					AddCond [$SIGSEGV]
 					{
 						Index 36
 						Delay 1
 					}
-					RocketCustomParticle eyeboss_projectile 
-					HomingRockets  
+					RocketCustomParticle eyeboss_projectile [$SIGSEGV]
+					HomingRockets [$SIGSEGV] 
 					{
 						IgnoreDisguisedSpies 1
 						IgnoreStealthedSpies 1
@@ -1204,7 +1204,7 @@ yes_spy_counters_w4_got_a_fucking_problem?
 			Action forceresetsilent
 		}
 
-		//Explanation   //Dispayed once the wave is initialized
+		//Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		//{
 			//Line "{red}After five minutes, the time will end and blimps will invade.{reset}"
 		//}
@@ -1226,16 +1226,16 @@ yes_spy_counters_w4_got_a_fucking_problem?
 			{
 				Health 10000 //12500 //15000
 				Speed 75
-				DisableSmokestack 1 
-				ClassIcon blimp2_lite 
+				DisableSmokestack 1 [$SIGSEGV]
+				ClassIcon blimp2_lite [$SIGSEGV]
 				Skin 1 
-				Model "models/bots/boss_bot/boss_blimp.mdl" 
-				Gravity 0 
-				DisableTracks 1 
-				DisableChildModels 1 
-				ReplaceModelCollisions 1 
-				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" 
-				PingSound "npc\combine_gunship\ping_search.wav" 
+				Model "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
+				Gravity 0 [$SIGSEGV]
+				DisableTracks 1 [$SIGSEGV]
+				DisableChildModels 1 [$SIGSEGV]
+				ReplaceModelCollisions 1 [$SIGSEGV]
+				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" [$SIGSEGV]
+				PingSound "npc\combine_gunship\ping_search.wav" [$SIGSEGV]
 				Name "tankboss"
 				StartingPathTrackNode "decay_blimp_path_1"
 				OnKilledOutput
@@ -1456,8 +1456,8 @@ yes_spy_counters_w4_got_a_fucking_problem?
 					Target boss_deploy_relay
 					Action Trigger                         
 				}
-				SpawnTemplate "ColorTank_Prpl" 
-				Model  "models/bots/boss_bot/boss_tank_color.mdl" 
+				SpawnTemplate "ColorTank_Prpl" [$SIGSEGV]
+				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
 			}
 		}
 
@@ -1490,7 +1490,7 @@ yes_spy_counters_w4_got_a_fucking_problem?
 					//}
 					//Attributes SuppressFire
 					//Attributes IgnoreFlag
-					//AddCond  //Adds conditions to bots
+					//AddCond [$SIGSEGV] //Adds conditions to bots
 					//{
 						//Name "TF_COND_REPROGRAMMED" // Condition to apply. List of available conditions https://wiki.teamfortress.com/wiki/Cheats#addcond
 					//}
@@ -1512,16 +1512,16 @@ yes_spy_counters_w4_got_a_fucking_problem?
 			//{
 				//Health 10000
 				//Speed 100
-				//DisableSmokestack 1 
-				//ClassIcon blimp2_lite 
+				//DisableSmokestack 1 [$SIGSEGV]
+				//ClassIcon blimp2_lite [$SIGSEGV]
 				//Skin 1 
-				//Model "models/bots/boss_bot/boss_blimp.mdl" 
-				//Gravity 0 
-				//DisableTracks 1 
-				//DisableChildModels 1 
-				//ReplaceModelCollisions 1 
-				//EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" 
-				//PingSound "npc\combine_gunship\ping_search.wav" 
+				//Model "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
+				//Gravity 0 [$SIGSEGV]
+				//DisableTracks 1 [$SIGSEGV]
+				//DisableChildModels 1 [$SIGSEGV]
+				//ReplaceModelCollisions 1 [$SIGSEGV]
+				//EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" [$SIGSEGV]
+				//PingSound "npc\combine_gunship\ping_search.wav" [$SIGSEGV]
 				//Name "tankboss"
 				//StartingPathTrackNode "decay_blimp_path_1"
 				//OnKilledOutput

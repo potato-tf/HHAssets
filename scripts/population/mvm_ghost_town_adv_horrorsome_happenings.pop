@@ -10,22 +10,22 @@ WaveSchedule
 	CanBotsAttackWhileInSpawnRoom no
 	Advanced	1
 	EventPopfile Halloween	
-	ImprovedAirblast 1 
-	RobotLimit 24 
-	MedigunShieldDamage 1 
-	BotsDropSpells 1 
-	GiantsDropRareSpells 1 
-	SpellDropRateCommon 0.15 
-	SpellDropRateGiant 0.15 
-	NoThrillerTaunt 1 
-	SpellDropForBotsInTeam Blue 
-	NoRomevisionCosmetics 1 
+	ImprovedAirblast 1 [$SIGSEGV]
+	RobotLimit 24 [$SIGSEGV]
+	MedigunShieldDamage 1 [$SIGSEGV]
+	BotsDropSpells 1 [$SIGSEGV]
+	GiantsDropRareSpells 1 [$SIGSEGV]
+	SpellDropRateCommon 0.15 [$SIGSEGV]
+	SpellDropRateGiant 0.15 [$SIGSEGV]
+	NoThrillerTaunt 1 [$SIGSEGV]
+	SpellDropForBotsInTeam Blue [$SIGSEGV]
+	NoRomevisionCosmetics 1 [$SIGSEGV]
 	
 	//Fuck you
-	PrecacheModel "models/props_owo/sign001.mdl" 
-	PrecacheModel "models\props_2fort\cowtroll_reference.mdl" 
+	PrecacheModel "models/props_owo/sign001.mdl" [$SIGSEGV]
+	PrecacheModel "models\props_2fort\cowtroll_reference.mdl" [$SIGSEGV]
 	
-	PrecacheSound "bozo_entrance.mp3" 
+	PrecacheSound "bozo_entrance.mp3" [$SIGSEGV]
 	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"				    
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl"         
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl"         
@@ -103,7 +103,7 @@ WaveSchedule
 		T_TFBot_Giant_Engineer_Shotgun
 		{
 			Class 	Engineer
-			Action	FetchFlag 
+			Action	FetchFlag [$SIGSEGV]
 			Attributes	MiniBoss
 			Name	"Giant Monstrous Mechanic"
 			Health	3500
@@ -193,9 +193,9 @@ WaveSchedule
 			Class Medic
 			Skill Expert
 			WeaponRestrictions	PrimaryOnly
-			Action FetchFlag 
-			AimAt	Head 
-			AimLeadProjectileSpeed 1000 
+			Action FetchFlag [$SIGSEGV]
+			AimAt	Head [$SIGSEGV]
+			AimLeadProjectileSpeed 1000 [$SIGSEGV]
 			Item	"The Colonel's Coat"
 			Item	"Medic Gatsby"
 		}
@@ -203,9 +203,9 @@ WaveSchedule
 		// T_TFBot_Giant_Engineer_Nailgun
 		// {
 			// Class 	Engineer
-			// Action	FetchFlag 
-			// AimAt	Head 
-			// AimLeadProjectileSpeed 1000 
+			// Action	FetchFlag [$SIGSEGV]
+			// AimAt	Head [$SIGSEGV]
+			// AimLeadProjectileSpeed 1000 [$SIGSEGV]
 			// Attributes	MiniBoss
 			// Name	"Giant Necrotic Nailgunner"
 			// Health	3500
@@ -330,8 +330,8 @@ WaveSchedule
 			Attributes UseBossHealthBar
 			Attributes AlwaysCrit
 			WeaponRestrictions MeleeOnly
-			RingOfFire 15 
-			UseMeleeThreatPrioritization 1 
+			RingOfFire 15 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName	"The Hot Hand"
@@ -375,7 +375,7 @@ WaveSchedule
 				"set_item_texture_wear" 0
 			}
 			RocketCustomParticle	eyeboss_projectile
-			HomingRockets	
+			HomingRockets	[$SIGSEGV]
 			{
 				IgnoreDisguisedSpies 1
 				IgnoreStealthedSpies 1
@@ -384,7 +384,7 @@ WaveSchedule
 				MaxAimError 150
 				AimTime 3
 			}
-			AddCond	
+			AddCond	[$SIGSEGV]
 			{
 				Index	36
 			}
@@ -405,7 +405,7 @@ WaveSchedule
 			{
 				"voice pitch scale"	0.75
 			}
-			AddCond	
+			AddCond	[$SIGSEGV]
 			{
 				Index	66
 			}
@@ -575,9 +575,9 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes SpawnWithFullCharge
 			WeaponRestrictions	PrimaryOnly
-			Action FetchFlag 
-			AimAt	Head 
-			AimLeadProjectileSpeed 1000 
+			Action FetchFlag [$SIGSEGV]
+			AimAt	Head [$SIGSEGV]
+			AimLeadProjectileSpeed 1000 [$SIGSEGV]
 			Item	"The Colonel's Coat"
 			Item	"Medic Gatsby"
 			ItemAttributes
@@ -620,14 +620,14 @@ WaveSchedule
 				ItemName "Spine-Chilling Skull"
 				"atttach particle effect"	76
 			}
-			ItemColor  //Set item color
+			ItemColor [$SIGSEGV] //Set item color
 			{
 				ItemName "The Buff Banner"
 				Red 70
 				Green 99
 				Blue 179
 			}
-			Addcond 
+			Addcond [$SIGSEGV]
 			{
 				Index 6
 				Duration	9999999
@@ -707,7 +707,7 @@ WaveSchedule
 			Item	"Upgradeable TF_WEAPON_ROCKETLAUNCHER"
 			Item	"Full Metal Drill Hat"
 			Item	"Veterans Attire"
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName	"Full Metal Drill Hat"
@@ -731,7 +731,7 @@ WaveSchedule
 				"damage bonus" 1.4
 			}
 			RocketCustomParticle	eyeboss_projectile
-			HomingRockets	
+			HomingRockets	[$SIGSEGV]
 			{
 				IgnoreDisguisedSpies 1
 				IgnoreStealthedSpies 1
@@ -740,7 +740,7 @@ WaveSchedule
 				RocketSpeed 0.4
 				AimTime 1
 			}
-			AddCond	
+			AddCond	[$SIGSEGV]
 			{
 				Index	36
 			}
@@ -833,7 +833,7 @@ WaveSchedule
 			Attributes UseBossHealthBar
 			Attributes IgnoreFlag
 			Attributes MiniBoss
-			Action	Mobber	
+			Action	Mobber	[$SIGSEGV]
 			WeaponRestrictions MeleeOnly
 			Item	"Ali Baba's Wee Booties"
 			Item	"dec2014 Marauders Mask"
@@ -841,9 +841,9 @@ WaveSchedule
 			Item	"B'aaarrgh-n-Britches"
 			Item	"Claws And Infect"
 			Item	"Necro Smasher"
-			AlwaysGlow 1 
-			UseMeleeThreatPrioritization 1 
-			FireSound	"misc\halloween\strongman_fast_whoosh_01.wav"	
+			AlwaysGlow 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			FireSound	"misc\halloween\strongman_fast_whoosh_01.wav"	[$SIGSEGV]
 			ItemAttributes
 			{	
 				ItemName	"Necro Smasher"
@@ -870,10 +870,10 @@ WaveSchedule
 			Name	"Zombified Scout"
 			Class	Scout
 			Skill	Expert
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ClassIcon	heavy_zombie_lite
 			WeaponRestrictions	MeleeOnly
-			NoBombUpgrades 1 
+			NoBombUpgrades 1 [$SIGSEGV]
 			Item	"The Bat Outta Hell"
 			Health	250
 			ItemAttributes
@@ -887,7 +887,7 @@ WaveSchedule
 				"move speed bonus"	0.75
 				"voice pitch scale"	0.75
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -898,10 +898,10 @@ WaveSchedule
 			Name	"Zombified Soldier"
 			Class	Soldier
 			Skill	Expert
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ClassIcon	heavy_zombie_lite
 			WeaponRestrictions	MeleeOnly
-			NoBombUpgrades 1 
+			NoBombUpgrades 1 [$SIGSEGV]
 			Item	"The Bat Outta Hell"
 			Health	400
 			ItemAttributes
@@ -915,7 +915,7 @@ WaveSchedule
 				"move speed bonus"	0.75
 				"voice pitch scale"	0.75
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -926,10 +926,10 @@ WaveSchedule
 			Name	"Zombified Pyro"
 			Class	Pyro
 			Skill	Expert
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ClassIcon	heavy_zombie_lite
 			WeaponRestrictions	MeleeOnly
-			NoBombUpgrades 1 
+			NoBombUpgrades 1 [$SIGSEGV]
 			Item	"The Bat Outta Hell"
 			Health	350
 			ItemAttributes
@@ -943,7 +943,7 @@ WaveSchedule
 				"move speed bonus"	0.75
 				"voice pitch scale"	0.75
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -954,10 +954,10 @@ WaveSchedule
 			Name	"Zombified Demoman"
 			Class	Demoman
 			Skill	Expert
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ClassIcon	heavy_zombie_lite
 			WeaponRestrictions	MeleeOnly
-			NoBombUpgrades 1 
+			NoBombUpgrades 1 [$SIGSEGV]
 			Item	"The Bat Outta Hell"
 			Health	350
 			ItemAttributes
@@ -971,7 +971,7 @@ WaveSchedule
 				"move speed bonus"	0.75
 				"voice pitch scale"	0.75
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -982,10 +982,10 @@ WaveSchedule
 			Name	"Zombified Heavy"
 			Class	HeavyWeapons
 			Skill	Expert
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ClassIcon	heavy_zombie_lite
 			WeaponRestrictions	MeleeOnly
-			NoBombUpgrades 1 
+			NoBombUpgrades 1 [$SIGSEGV]
 			Health	600
 			ItemAttributes
 			{
@@ -997,7 +997,7 @@ WaveSchedule
 				"move speed bonus"	0.75
 				"voice pitch scale"	0.75
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -1008,13 +1008,13 @@ WaveSchedule
 			Name	"Zombified Medic"
 			Class	Medic
 			Skill	Expert
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ClassIcon	heavy_zombie_lite
 			WeaponRestrictions	MeleeOnly
-			NoBombUpgrades 1 
+			NoBombUpgrades 1 [$SIGSEGV]
 			Item	"The Bat Outta Hell"
 			Health	300
-			Action	FetchFlag	
+			Action	FetchFlag	[$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName	"The Bat Outta Hell"
@@ -1026,7 +1026,7 @@ WaveSchedule
 				"move speed bonus"	0.75
 				"voice pitch scale"	0.75
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -1037,13 +1037,13 @@ WaveSchedule
 			Name	"Zombified Engineer"
 			Class	Engineer
 			Skill	Expert
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ClassIcon	heavy_zombie_lite
 			WeaponRestrictions	MeleeOnly
-			NoBombUpgrades 1 
+			NoBombUpgrades 1 [$SIGSEGV]
 			Item	"The Bat Outta Hell"
 			Health	250
-			Action	FetchFlag	
+			Action	FetchFlag	[$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName	"The Bat Outta Hell"
@@ -1055,7 +1055,7 @@ WaveSchedule
 				"move speed bonus"	0.75
 				"voice pitch scale"	0.75
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -1066,13 +1066,13 @@ WaveSchedule
 			Name	"Zombified Spy"
 			Class	Spy
 			Skill	Expert
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ClassIcon	heavy_zombie_lite
 			WeaponRestrictions	MeleeOnly
-			NoBombUpgrades 1 
+			NoBombUpgrades 1 [$SIGSEGV]
 			Item	"The Bat Outta Hell"
 			Health	250
-			Action	FetchFlag	
+			Action	FetchFlag	[$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName	"The Bat Outta Hell"
@@ -1085,7 +1085,7 @@ WaveSchedule
 				"move speed bonus"	0.75
 				"voice pitch scale"	0.75
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -1096,10 +1096,10 @@ WaveSchedule
 			Name	"Zombified Sniper"
 			Class	Sniper
 			Skill	Expert
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ClassIcon	heavy_zombie_lite
 			WeaponRestrictions	MeleeOnly
-			NoBombUpgrades 1 
+			NoBombUpgrades 1 [$SIGSEGV]
 			Item	"The Bat Outta Hell"
 			Health	250
 			ItemAttributes
@@ -1113,7 +1113,7 @@ WaveSchedule
 				"move speed bonus"	0.75
 				"voice pitch scale"	0.75
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -1129,7 +1129,7 @@ WaveSchedule
 			Attributes MiniBoss
 			WeaponRestrictions MeleeOnly
 			Item	"The Bat Outta Hell"
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName	"The Bat Outta Hell"
@@ -1145,7 +1145,7 @@ WaveSchedule
 				"move speed bonus"	0.65
 				"bombinomicon effect on death" 1
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -1161,7 +1161,7 @@ WaveSchedule
 			Attributes MiniBoss
 			WeaponRestrictions MeleeOnly
 			Item	"The Bat Outta Hell"
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName	"The Bat Outta Hell"
@@ -1178,7 +1178,7 @@ WaveSchedule
 				"move speed bonus"	0.65
 				"bombinomicon effect on death" 1
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -1194,7 +1194,7 @@ WaveSchedule
 			Attributes MiniBoss
 			WeaponRestrictions MeleeOnly
 			Item	"The Bat Outta Hell"
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName	"The Bat Outta Hell"
@@ -1211,7 +1211,7 @@ WaveSchedule
 				"move speed bonus"	0.65
 				"bombinomicon effect on death" 1
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -1227,7 +1227,7 @@ WaveSchedule
 			Attributes MiniBoss
 			WeaponRestrictions MeleeOnly
 			Item	"The Bat Outta Hell"
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName	"The Bat Outta Hell"
@@ -1244,7 +1244,7 @@ WaveSchedule
 				"move speed bonus"	0.65
 				"bombinomicon effect on death" 1
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
@@ -1259,7 +1259,7 @@ WaveSchedule
 			ClassIcon heavy_zombie_lite
 			Attributes MiniBoss
 			WeaponRestrictions MeleeOnly
-			UseMeleeThreatPrioritization 1 
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName	"TF_WEAPON_FISTS"
@@ -1275,14 +1275,14 @@ WaveSchedule
 				"move speed bonus"	0.65
 				"bombinomicon effect on death" 1
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName "The Bat Outta Hell"
 				Model "models\empty.mdl"
 			}
 		}
 	}
-	PointTemplates 
+	PointTemplates [$SIGSEGV]
 	{
 		//OVERPOWERED
 		// spells 
@@ -2892,7 +2892,7 @@ WaveSchedule
             }
 		}
 	}
-	ExtraSpawnPoint 
+	ExtraSpawnPoint [$SIGSEGV]
 	{
 		Name spawnbot_left
 		TeamNum 3
@@ -2900,7 +2900,7 @@ WaveSchedule
 		Y "2431"
 		Z "413"
 	}
-	ExtraSpawnPoint 
+	ExtraSpawnPoint [$SIGSEGV]
 	{
 		Name spawnbot_front
 		TeamNum 3
@@ -2980,166 +2980,166 @@ WaveSchedule
 		Y "2892"
 		Z "352"
 	}
-	SpawnTemplate "arrows_ignition" 
-	SpawnTemplate "pumpkinbombs" 
-	SpawnTemplate "hallowsound" 
-	SpawnTemplate "wolf_sounds" 
-	SpawnTemplate "allprops"  
-	SpawnTemplate "medkits" 
-	SpawnTemplate "gravity" 
-	// SpawnTemplate "spells" 
-	SpawnTemplate "skull"  
-	SpawnTemplate 
+	SpawnTemplate "arrows_ignition" [$SIGSEGV]
+	SpawnTemplate "pumpkinbombs" [$SIGSEGV]
+	SpawnTemplate "hallowsound" [$SIGSEGV]
+	SpawnTemplate "wolf_sounds" [$SIGSEGV]
+	SpawnTemplate "allprops" [$SIGSEGV] 
+	SpawnTemplate "medkits" [$SIGSEGV]
+	SpawnTemplate "gravity" [$SIGSEGV]
+	// SpawnTemplate "spells" [$SIGSEGV]
+	SpawnTemplate "skull" [$SIGSEGV] 
+	SpawnTemplate [$SIGSEGV]
     {
         Name "brazier"
         Origin "-2 -2382 512"
         Angles "0 0 0"
     }
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier_flame"
 		Origin "-2 -2382 542"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
     {
         Name "brazier"
         Origin "-994 -1696 640"
         Angles "0 0 0"
     }
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier_flame"
 		Origin "-994 -1696 670"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
     {
         Name "brazier"
         Origin "1677 -1780 704"
         Angles "0 0 0"
     }
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier_flame"
 		Origin "1677 -1780 734"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
     {
         Name "brazier"
         Origin "-1295 -130 576"
         Angles "0 0 0"
     }
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier_flame"
 		Origin "-1295 -130 606"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
     {
         Name "brazier"
         Origin "-108 -1305 320"
         Angles "0 0 0"
     }
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier_flame"
 		Origin "-108 -1305 350"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
     {
         Name "brazier"
         Origin "687 -16 512"
         Angles "0 0 0"
     }
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier_flame"
 		Origin "687 -16 542"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
     {
         Name "brazier"
         Origin "-4 471 672"
         Angles "0 0 0"
     }
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier_flame"
 		Origin "-4 471 702"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
     {
         Name "brazier"
         Origin "-666 -382 736"
         Angles "0 0 0"
     }
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier_flame"
 		Origin "-666 -382 766"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
     {
         Name "brazier"
         Origin "1260 -412 736"
         Angles "0 0 0"
     }
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
     {
         Name "brazier_flame"
         Origin "1260 -412 766"
         Angles "0 0 0"
     }
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier"
 		Origin "505 1657 496"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier_flame"
 		Origin "505 1657 526"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier"
 		Origin "-326 1563 496"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier_flame"
 		Origin "-326 1563 526"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier"
 		Origin "-292 905 417"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier_flame"
 		Origin "-292 905 447"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier"
 		Origin "420 1036 416"
 		Angles "0 0 0"
 	}
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
 	{
 		Name "brazier_flame"
 		Origin "420 1036 446"
@@ -3242,7 +3242,7 @@ WaveSchedule
 	}
 	Wave //WAVE 1 $1,000
 	{
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "{green}+Spells are enabled for players."
@@ -3423,7 +3423,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "{yellow}Wave 2/7"
@@ -3622,7 +3622,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "{yellow}Wave 3/7"
@@ -3866,7 +3866,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "{yellow}Wave 4/7"
@@ -3944,7 +3944,7 @@ WaveSchedule
 			Where	spawnbot_cloak8
 			RandomSpawn	1
 			FirstSpawnWarningSound	"npc\stalker\breathing3.wav"
-			FirstSpawnMessage "{red}You feel like there's something behind you . . ." 
+			FirstSpawnMessage "{red}You feel like there's something behind you . . ." [$SIGSEGV]
 			TFBot
 			{
 				Template	T_TFBot_Heavy_Cloaked
@@ -4139,7 +4139,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "{yellow}Wave 5/7"
@@ -4454,7 +4454,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "{yellow}Wave 6/7"
@@ -4646,7 +4646,7 @@ WaveSchedule
                 PingSound "npc\combine_gunship\ping_search.wav"  
                 Name "blimpboss"
                 StartingPathTrackNode "blimp_rocket_1"
-				SpawnTemplate "rocketblimp" 
+				SpawnTemplate "rocketblimp" [$SIGSEGV]
 
                 OnKilledOutput
                 {
@@ -4729,12 +4729,12 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "{yellow}Wave 7/7"
 		}
-		HalloweenBoss  //Spawn halloween boss
+		HalloweenBoss [$SIGSEGV] //Spawn halloween boss
 		{
 			BossType MONOCULUS
 			TeamNum 5
@@ -5000,7 +5000,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "{red}⍓︎□︎◆︎🕯︎❒︎♏︎ ■︎□︎⧫︎ ⬧︎◆︎◻︎◻︎□︎⬧︎♏︎♎︎ ⧫︎□︎ ♌︎♏︎ ♒︎♏︎❒︎♏︎ / ⬧︎♏︎❖︎♏︎■︎"

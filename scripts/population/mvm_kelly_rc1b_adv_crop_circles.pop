@@ -1564,7 +1564,7 @@ WaveSchedule
 				Item	"The Cow Mangler 5000"
 				Item	"Sucker Slug" 
 				Name	"Alien Photon Launcher"
-				ExtAttr AlwaysFireWeaponAlt 
+				ExtAttr AlwaysFireWeaponAlt [$SIGSEGV]
 				
 				ItemAttributes
 				{
@@ -1841,7 +1841,7 @@ WaveSchedule
 				Name	"Giant Alien Rift Welder"
 				Item	"The Pomson 6000"
 				Item	"Sucker Slug"
-				Action FetchFlag 
+				Action FetchFlag [$SIGSEGV]
 				Attributes	MiniBoss
 				Attributes	AlwaysCrit
 				
@@ -2262,7 +2262,7 @@ WaveSchedule
 				Attributes	HoldFireUntilFullReload
 				Attributes	AlwaysCrit
 				Attributes	UseBossHealthBar
-				UseMeleeThreatPrioritization 1 
+				UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			
 				ItemAttributes
 				{

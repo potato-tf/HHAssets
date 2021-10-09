@@ -67,7 +67,7 @@ population
 		Node "-3040 5024 600"
 		Node "-3040 5232 600"
 	}
-        PlayerAttributes  // Medics can heal buildings
+        PlayerAttributes [$SIGSEGV] // Medics can heal buildings
 	{
 		Medic
 		{
@@ -1713,7 +1713,7 @@ population
 					Skill	Hard
 					Item	"camera helm"
 					Item	"bombinomicon"
-					VoiceCommand 
+					VoiceCommand [$SIGSEGV]
                 			{
                     				Delay 5
                     				Cooldown 15
@@ -1730,7 +1730,7 @@ population
 					Skill	Normal
 					Item	"mann co. cap"
 					Item	"tour of duty badge advanced 3"
-					VoiceCommand 
+					VoiceCommand [$SIGSEGV]
                 			{
                     				Delay 4
                     				Cooldown 12
@@ -1748,7 +1748,7 @@ population
 					Attributes	"AlwaysFireWeapon"
 					Item	"ghastly gibus 2011"
 					Item	"employee badge c"
-					VoiceCommand 
+					VoiceCommand [$SIGSEGV]
                 			{
                     				Delay 3
                     				Cooldown 13
@@ -1762,7 +1762,7 @@ population
                                         Skill Normal
 					Template	T_TFBot_Demoman
 					Item	"tf birthday hat 2011"
-					VoiceCommand 
+					VoiceCommand [$SIGSEGV]
                 			{
                     				Delay 4
                     				Cooldown 14
@@ -1779,7 +1779,7 @@ population
 					Skill	Normal
 					Item	"loyalty reward"
 					Item	"tour of duty badge intermediate 1"
-					VoiceCommand 
+					VoiceCommand [$SIGSEGV]
                 			{
                     				Delay 7
                     				Cooldown 15
@@ -1798,7 +1798,7 @@ population
 				        Action FetchFlag
 					Item	"parasite hat"
 					Item	"tour of duty badge advanced 3"
-					VoiceCommand 
+					VoiceCommand [$SIGSEGV]
                 			{
                     				Delay 3
                     				Cooldown 16
@@ -1817,7 +1817,7 @@ population
 				        Action FetchFlag
 					Item	"spiral sallet"
 					Item	"employee badge c"
-					VoiceCommand 
+					VoiceCommand [$SIGSEGV]
                 			{
                     				Delay 4
                     				Cooldown 15
@@ -1841,7 +1841,7 @@ population
 					}
 					Item	"ellis hat"
 					Item	"duel medal bronze"
-					VoiceCommand 
+					VoiceCommand [$SIGSEGV]
                 			{
                     				Delay 5
                     				Cooldown 13
@@ -1864,7 +1864,7 @@ population
 				        {
 					        "cannot disguise"	1
                                         }
-					VoiceCommand 
+					VoiceCommand [$SIGSEGV]
                 			{
                     				Delay 7
                     				Cooldown 12

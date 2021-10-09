@@ -26,19 +26,19 @@ WaveSchedule
 	AddSentryBusterWhenKillCountExceeds 20
 	AddSentryBusterWhenDamageDealtExceeds 3800
 	//Sigmod Stuff
-	//CustomUpgradesFile "mvm_upgrades_eyes_02.txt"    
-	NoRomevisionCosmetics 1	
-	ImprovedAirblast 0    	
-	NoCritPumpkin 1			
-	ForceHoliday 2        	
-	BotPushaway 0         	
+	//CustomUpgradesFile "mvm_upgrades_eyes_02.txt"    [$SIGSEGV]
+	NoRomevisionCosmetics 1	[$SIGSEGV]
+	ImprovedAirblast 0    	[$SIGSEGV]
+	NoCritPumpkin 1			[$SIGSEGV]
+	ForceHoliday 2        	[$SIGSEGV]
+	BotPushaway 0         	[$SIGSEGV]
 	
 	//////////===========================
 	////      Big wall of Rafmod shit below so if you wanna look at the waves, templates and missions skip to line 375
 	//////////===========================
-	PointTemplates 
+	PointTemplates [$SIGSEGV]
     {
-        NoSpells 
+        NoSpells [$SIGSEGV]
         {
             NoFixup 1
             logic_relay
@@ -82,288 +82,288 @@ WaveSchedule
             }
         }
     }
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
     {
         Name "NoSpells"
         Origin "5 5 5" //Position where to spawn the template
     }
-	SpawnTemplate 
+	SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4343 -2508 350"
 		"angles" "67 246 -16"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4247 -2554 360"
 		"angles" "67 246 43"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4452 -2572 324"
 		"angles" "0 266 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4240 -2709 363"
 		"angles" "0 205 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4167 -2648 347"
 		"angles" "57 175 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4241 -2756 380"
 		"angles" "61 37 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4254 2889 375"
 		"angles" "40 179 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4254 2889 375"
 		"angles" "40 179 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4288 -2752 400"
 		"angles" "27 233 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4232 -2957 380"
 		"angles" "32 135 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4293 -3066 438"
 		"angles" "32 129 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4753 -2624 413"
 		"angles" "8 -13 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4695 -2564 428"
 		"angles" "13 -35 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4495 -2744 400"
 		"angles" "60 5 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4223 -2784 400"
 		"angles" "13 -156 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4634 -2734 400"
 		"angles" "33 1 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4634 -2734 400"
 		"angles" "33 1 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4497 -2734 400"
 		"angles" "33 1 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4497 -2810 400"
 		"angles" "35 -2 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4485 -2994 399"
 		"angles" "29 46 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4580 -2792 431"
 		"angles" "27 -12 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4561 -3071 401"
 		"angles" "25 42 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4702 -2769 451"
 		"angles" "27 2 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4394 -2650 409"
 		"angles" "72 49 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4639 -3018 400"
 		"angles" "25 24 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4644 -3204 420"
 		"angles" "17 59 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4801 -3033 420"
 		"angles" "17 23 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4284 -2871 420"
 		"angles" "31 176 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4388 -2974 400"
 		"angles" "67 74 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4308 -2724 395"
 		"angles" "57 128 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4357 -2783 386"
 		"angles" "13 -143 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4399 -2948 400"
 		"angles" "39 91 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4423 -2871 392"
 		"angles" "80 49 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4418 -3224 400"
 		"angles" "24 104 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4423 -2871 392"
 		"angles" "80 49 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4318 -3198 350"
 		"angles" "24 107 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4564 -2604 400"
 		"angles" "45 -54 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4750 -2764 386"
 		"angles" "22 -4 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4699 -2653 386"
 		"angles" "25 -38 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4597 -2569 355"
 		"angles" "21 -69 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4624 -2558 340"
 		"angles" "4 -60 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4623 -2838 325"
 		"angles" "35 0 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4504 -2899 310"
 		"angles" "35 0 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4694 -2893 380"
 		"angles" "14 6 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4648 -2900 370"
 		"angles" "24 14 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4460 -2590 320"
 		"angles" "10 -75 0"
     }
-    SpawnTemplate 
+    SpawnTemplate [$SIGSEGV]
     {
         Name "skybox_eyes"
 		"origin" "-4513 -2559 419"
@@ -1404,7 +1404,7 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Demoman_Knight
-				Action Mobber			
+				Action Mobber			[$SIGSEGV]
 				Attributes DisableDodge
 			}
 			TFBot
@@ -1421,7 +1421,7 @@ WaveSchedule
 			{
 				Template T_TFBot_Scout_Melee
 				ClassIcon scout_bat
-				Action Mobber			
+				Action Mobber			[$SIGSEGV]
 				Attributes DisableDodge
 			}
 		  }

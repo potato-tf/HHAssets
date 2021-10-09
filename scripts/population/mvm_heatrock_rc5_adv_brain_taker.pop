@@ -14,28 +14,28 @@ population
     FixedRespawnWaveTime 1
 	CanBotsAttackWhileInSpawnRoom	no
 	Advanced	1
-    PrecacheModel "models/bots/sniper_boss/bot_sniper_boss.mdl" 
-    PrecacheModel "models/props_bigrock_event/bot_heavy_punchboss_nogibs.mdl" 
-    PrecacheModel "models/props_bigrock_event/bot_heavy_punchboss.mdl" 
-    PrecacheModel "models/props_halloween/crumpkin_loot.mdl" 
-	PrecacheModel "models/props_halloween/crumpkin_loot_large.mdl" 
-    NoMissionInfo 1 
-    ItemAttributes  //Adds attributes to specified item given to players
+    PrecacheModel "models/bots/sniper_boss/bot_sniper_boss.mdl" [$SIGSEGV]
+    PrecacheModel "models/props_bigrock_event/bot_heavy_punchboss_nogibs.mdl" [$SIGSEGV]
+    PrecacheModel "models/props_bigrock_event/bot_heavy_punchboss.mdl" [$SIGSEGV]
+    PrecacheModel "models/props_halloween/crumpkin_loot.mdl" [$SIGSEGV]
+	PrecacheModel "models/props_halloween/crumpkin_loot_large.mdl" [$SIGSEGV]
+    NoMissionInfo 1 [$SIGSEGV]
+    ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "The Air Strike"
 		"special damage type" 1
 	}
-    ItemAttributes  //Adds attributes to specified item given to players
+    ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "The Beggar's Bazooka"
 		"special damage type" 2
 	}
-    ItemAttributes  //Adds attributes to specified item given to players
+    ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "The Dragon's Fury"
 		"special damage type" 3
 	}
-    PointTemplates 
+    PointTemplates [$SIGSEGV]
     {
         FakeIcon
         {
@@ -1332,13 +1332,13 @@ population
             }
         }
     }
-    SpawnTemplate  //Spawn template once the mission loads
+    SpawnTemplate [$SIGSEGV] //Spawn template once the mission loads
 	{
 		Name "logic"
 		//Origin "0 0 0" //Position where to spawn the template
 		//Angles "0 0 0" //Rotation
 	}
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // "-990.076 -995.117 576.005"
@@ -1346,7 +1346,7 @@ population
         Y	"-995"                  
         Z	"577"        
     }
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // -1456.44 -604.986 576.005
@@ -1354,7 +1354,7 @@ population
         Y	"-604"                  
         Z	"577"
     }
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // "1393.67 -671.076 512.005"
@@ -1362,7 +1362,7 @@ population
         Y	"-671"                  
         Z	"513"        
     }
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // -1665.1 280.784 272.005
@@ -1370,7 +1370,7 @@ population
         Y	"280"                  
         Z	"273"        
     }
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // -720.041 537.147 576.005
@@ -1378,7 +1378,7 @@ population
         Y	"537"                  
         Z	"577"        
     }
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // 465.595 383.438 576.005
@@ -1386,7 +1386,7 @@ population
         Y	"383"                  
         Z	"577"        
     }
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // 647.584 -160.893 512.005
@@ -1394,7 +1394,7 @@ population
         Y	"-160.8"                  
         Z	"513"        
     }
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // -552.194 37.4913 576.005
@@ -1402,7 +1402,7 @@ population
         Y	"37"                  
         Z	"577"        
     }
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // -8.56138 -210.822 576.005
@@ -1410,7 +1410,7 @@ population
         Y	"-210"                  
         Z	"577"        
     }
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // -1389.79 703.282 576.005
@@ -1418,7 +1418,7 @@ population
         Y	"703"                  
         Z	"577"        
     }
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // -853.055 1656.08 416.005
@@ -1426,7 +1426,7 @@ population
         Y	"1656"                  
         Z	"417"        
     }
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // 1158.73 1587.9 224.043
@@ -1434,7 +1434,7 @@ population
         Y	"1587.9"                  
         Z	"225"        
     }
-    ExtraSpawnPoint   //Adds spawn points on specified location
+    ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
     {
         Name "punchjrspawn"
         TeamNum 3 // 1522.68 642.633 233.049
@@ -1442,8 +1442,8 @@ population
         Y	"642.63"                  
         Z	"234"        
     }
-    WaveStartCountdown 7 
-    //OverrideSounds  //Replace sounds. Only server side sounds can be overridden. Must use sound script unless there is only a raw version of the sound.
+    WaveStartCountdown 7 [$SIGSEGV]
+    //OverrideSounds [$SIGSEGV] //Replace sounds. Only server side sounds can be overridden. Must use sound script unless there is only a raw version of the sound.
 	//{
 	//    "music.mvm_end_last_wave" "song28"
 	//    "music.mvm_end_mid_wave" "song28"
@@ -1556,7 +1556,7 @@ population
 			Health 5000
 			Attributes MiniBoss
 			Attributes AlwaysCrit
-			//AimTrackingInterval 0.3 
+			//AimTrackingInterval 0.3 [$SIGSEGV]
             Item "Tomislav"
             Item "Commando Elite"
 			ItemAttributes
@@ -1617,7 +1617,7 @@ population
 			WeaponRestrictions PrimaryOnly
 			Attributes MiniBoss
 			Attributes AlwaysFireWeapon
-            UseCustomModel "models/bots/sniper_boss/bot_sniper_boss.mdl" 
+            UseCustomModel "models/bots/sniper_boss/bot_sniper_boss.mdl" [$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName "The Machina"
@@ -1673,7 +1673,7 @@ population
 			WeaponRestrictions MeleeOnly			
 			Skill Expert
             Attributes IgnoreFlag
-            Action Mobber 
+            Action Mobber [$SIGSEGV]
 			Item "War Head"
 			Item "Fists of Steel"
             Tag bossminion
@@ -1695,8 +1695,8 @@ population
 			Name "Punch Jr."
 			ClassIcon heavy_steelfist
 			Health 2500
-            AlwaysGlow 1  //If set, the bot is always highlighted
-            CustomEyeGlowColor "255 255 255"  // Custom eye glow color
+            AlwaysGlow 1 [$SIGSEGV] //If set, the bot is always highlighted
+            CustomEyeGlowColor "255 255 255" [$SIGSEGV] // Custom eye glow color
 			Scale 1.5
 			WeaponRestrictions PrimaryOnly
 			Skill Expert
@@ -1705,16 +1705,16 @@ population
             Item "The Sandvich Safe"
             Attributes IgnoreFlag
             Attributes SuppressFire
-            Action Mobber 
-            SpawnTemplate "PunchJrBeamParticle" 
-            NoBombUpgrades 1  //If set, the bomb carrier will not upgrade over time
-            ItemModel  // Replaces item model
+            Action Mobber [$SIGSEGV]
+            SpawnTemplate "PunchJrBeamParticle" [$SIGSEGV]
+            NoBombUpgrades 1 [$SIGSEGV] //If set, the bomb carrier will not upgrade over time
+            ItemModel [$SIGSEGV] // Replaces item model
             {
                 ItemName "The Sandvich Safe"
                 Model "models/workshop/weapons/c_models/c_fists_of_steel/c_fists_of_steel.mdl"
             }
             Item "The Direct Hit"
-            FireWeapon   //Periodically fires weapon
+            FireWeapon [$SIGSEGV]  //Periodically fires weapon
             {
                 Delay 0.01 //Time before the first fire input starts (Default: 10)
                 Cooldown 0.8 //Time between each fire input (Default: 10)
@@ -1749,13 +1749,13 @@ population
 		}
         DropsSmallCrumpkin
         {
-            SpawnTemplate "SmallCrumpkin" 
-            SpawnTemplate  //Spawn custom player template
+            SpawnTemplate "SmallCrumpkin" [$SIGSEGV]
+            SpawnTemplate [$SIGSEGV] //Spawn custom player template
             {
                 Name "SmallCrumpkinHeadParticle"
                 Bone "bip_head"
             }
-            FireInput  
+            FireInput [$SIGSEGV] 
             {
                 Target "make_bot_glow" //Entity name to use
                 Action "Trigger" //Input to fire
@@ -1767,13 +1767,13 @@ population
         }
         DropsLargeCrumpkin
         {
-            SpawnTemplate "LargeCrumpkin" 
-            SpawnTemplate  //Spawn custom player template
+            SpawnTemplate "LargeCrumpkin" [$SIGSEGV]
+            SpawnTemplate [$SIGSEGV] //Spawn custom player template
             {
                 Name "LargeCrumpkinHeadParticle"
                 Bone "bip_head"
             }
-            FireInput  
+            FireInput [$SIGSEGV] 
             {
                 Target "large_make_bot_glow" //Entity name to use
                 Action "Trigger" //Input to fire
@@ -1867,7 +1867,7 @@ population
                 {
                     Class	HeavyWeapons
                     Skill	Easy
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -1993,7 +1993,7 @@ population
                 {
                     Class	Soldier
                     Skill	Normal
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -2088,7 +2088,7 @@ population
                 {
                     Class	Pyro
                     Skill	Easy
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -2183,7 +2183,7 @@ population
                 TFBot
                 {
                     Template	T_TFBot_Scout_Bonk
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -2313,7 +2313,7 @@ population
                     Class	HeavyWeapons
                     Skill	Easy
                     Tag special_main_left
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -2326,7 +2326,7 @@ population
                     Class	HeavyWeapons
                     Skill	Easy
                     Tag special_main_right
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -2585,7 +2585,7 @@ population
 				{
 					Class	Soldier
 					Skill	Easy
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
 				}
 				TFBot
 				{
@@ -2701,7 +2701,7 @@ population
             TFBot
             {
                 Template	T_TFBot_Giant_Scout_Fast
-                AddTemplate DropsLargeCrumpkin 
+                AddTemplate DropsLargeCrumpkin [$SIGSEGV]
             }
 		}
 		WaveSpawn
@@ -2738,7 +2738,7 @@ population
                 {
                     Class	Demoman
                     Skill	Easy
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -2843,7 +2843,7 @@ population
                     Skill	Expert
                     WeaponRestrictions MeleeOnly
                     Attributes	"AlwaysCrit"
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -3040,7 +3040,7 @@ population
 				{
 					Template	T_TFBot_Giant_Heavyweapons
                     Tag special_main_left
-                    AddTemplate DropsLargeCrumpkin 
+                    AddTemplate DropsLargeCrumpkin [$SIGSEGV]
 				}
 				TFBot
 				{
@@ -3141,7 +3141,7 @@ population
 				{
 					Template	T_TFBot_Giant_Heavyweapons_Deflector
                     Tag special_main_right
-                    AddTemplate DropsLargeCrumpkin 
+                    AddTemplate DropsLargeCrumpkin [$SIGSEGV]
 				}
 				TFBot
 				{
@@ -3329,7 +3329,7 @@ population
                 TFBot
                 {
                     Template	T_TFBot_Sniper_Huntsman_Crit
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -3429,7 +3429,7 @@ population
 				TFBot
 				{
 					Template	T_TFBot_Giant_Medic_InfiniteHeal
-                    AddTemplate DropsLargeCrumpkin 
+                    AddTemplate DropsLargeCrumpkin [$SIGSEGV]
 				}
 			}
 		}
@@ -3467,7 +3467,7 @@ population
 					Template	T_TFBot_Giant_Pyro_BigFire
                     BehaviorModifiers Push
                     Tag nav_prefer_flank_left
-                    AddTemplate DropsLargeCrumpkin 
+                    AddTemplate DropsLargeCrumpkin [$SIGSEGV]
 				}
 				TFBot
 				{
@@ -3523,7 +3523,7 @@ population
                 TFBot
                 {
                     Template T_TFBot_Heavy_BigrockCrit
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -3575,7 +3575,7 @@ population
                 TFBot
                 {
                     Template	T_TFBot_Sniper_Huntsman_Crit
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -3691,7 +3691,7 @@ population
 					Template	T_TFBot_Giant_Pyro_BigFire
                     BehaviorModifiers Push
                     Tag nav_prefer_flank_right
-                    AddTemplate DropsLargeCrumpkin 
+                    AddTemplate DropsLargeCrumpkin [$SIGSEGV]
 				}
 				TFBot
 				{
@@ -3749,7 +3749,7 @@ population
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-        SpawnTemplate "ExtendRespawnTime" 
+        SpawnTemplate "ExtendRespawnTime" [$SIGSEGV]
         WaveSpawn
         {
             Name  BOSS
@@ -3772,18 +3772,18 @@ population
                 ClassIcon heavy_chief
                 Health 215000
                 Scale 1.9
-                AlwaysGlow 1 
-                UseMeleeThreatPrioritization 1 
-                Action Mobber 
-                SpawnTemplate "BossEntities" 
-                SpawnTemplate "RememberBossPosition" 
-                UseCustomModel "models/props_bigrock_event/bot_heavy_punchboss_nogibs.mdl" 
-                ItemModel  // Replaces item model
+                AlwaysGlow 1 [$SIGSEGV]
+                UseMeleeThreatPrioritization 1 [$SIGSEGV]
+                Action Mobber [$SIGSEGV]
+                SpawnTemplate "BossEntities" [$SIGSEGV]
+                SpawnTemplate "RememberBossPosition" [$SIGSEGV]
+                UseCustomModel "models/props_bigrock_event/bot_heavy_punchboss_nogibs.mdl" [$SIGSEGV]
+                ItemModel [$SIGSEGV] // Replaces item model
 				{
 					ItemName "The Toss-Proof Towel"
 					Model "models/props_bigrock_event/bone_cut_belt.mdl"
 				}
-                FireWeapon   //Periodically fires weapon
+                FireWeapon [$SIGSEGV]  //Periodically fires weapon
                 {
                     Delay 0.01 //Time before the first fire input starts (Default: 10)
                     Cooldown 0.8 //Time between each fire input (Default: 10)
@@ -3794,7 +3794,7 @@ population
                     IfHealthAbove 75000
                     IfHealthAbove 75000
                 }
-                FireWeapon   //Periodically fires weapon
+                FireWeapon [$SIGSEGV]  //Periodically fires weapon
                 {
                     Delay 0.01 //Time before the first fire input starts (Default: 10)
                     Cooldown 0.9 //Time between each fire input (Default: 10)
@@ -3805,7 +3805,7 @@ population
                     IfHealthBelow 75001
                     IfHealthAbove 15000
                 }
-                FireWeapon   //Periodically fires weapon
+                FireWeapon [$SIGSEGV]  //Periodically fires weapon
                 {
                     Delay 0.01 //Time before the first fire input starts (Default: 10)
                     Cooldown 0.1 //Time between each fire input (Default: 10)
@@ -3815,7 +3815,7 @@ population
                     //IfSeeTarget 1
                     IfHealthBelow 15001
                 }
-                FireInput  
+                FireInput [$SIGSEGV] 
 				{
 					Target "phase2_start" //Entity name to use
 					Action "Trigger" //Input to fire
@@ -3825,7 +3825,7 @@ population
 					Repeats 1 //How many times should the input be fired
 					IfHealthBelow 140000 //When set, the task activates only when the bot health is below specified value
 				}
-                FireInput  
+                FireInput [$SIGSEGV] 
 				{
 					Target "phase3_start" //Entity name to use
 					Action "Trigger" //Input to fire
@@ -3835,7 +3835,7 @@ population
 					Repeats 1 //How many times should the input be fired
 					IfHealthBelow 75000 //When set, the task activates only when the bot health is below specified value
 				}
-                FireInput  
+                FireInput [$SIGSEGV] 
 				{
 					Target "phase4_start" //Entity name to use
 					Action "Trigger" //Input to fire
@@ -3845,7 +3845,7 @@ population
 					Repeats 1 //How many times should the input be fired
 					IfHealthBelow 15000 //When set, the task activates only when the bot health is below specified value
 				}
-                WeaponResist  //Multiplies damage received from weapons listed below
+                WeaponResist [$SIGSEGV] //Multiplies damage received from weapons listed below
                 {
                     "TF_WEAPON_SCATTERGUN" 1.449
                     "tf_weapon_soda_popper" 1.412
@@ -3881,7 +3881,7 @@ population
                         Item "The Direct Hit"
                         Item "The Toss-Proof Towel"
                         Item "The Sandvich Safe"
-                        CustomEyeGlowColor "167 0 255"  // Custom eye glow color
+                        CustomEyeGlowColor "167 0 255" [$SIGSEGV] // Custom eye glow color
                         ItemAttributes
                         {
                             ItemName "The Direct Hit"
@@ -3942,7 +3942,7 @@ population
                         Item "The Quickiebomb Launcher"
                         Item "The Toss-Proof Towel"
                         Item "The Sandvich Safe"
-                        CustomEyeGlowColor "255 49 0"  // Custom eye glow color
+                        CustomEyeGlowColor "255 49 0" [$SIGSEGV] // Custom eye glow color
                         ItemAttributes
                         {
                             ItemName "The Quickiebomb Launcher"
@@ -3995,10 +3995,10 @@ population
                         Item "The Loch-n-Load"
                         Item "The Toss-Proof Towel"
                         Item "The Sandvich Safe"
-                        AimAt Feet 
-                        AimOffset "0 0 -75" 
-                        AimLeadProjectileSpeed 1 
-                        CustomEyeGlowColor "0 5 255"  // Custom eye glow color
+                        AimAt Feet [$SIGSEGV]
+                        AimOffset "0 0 -75" [$SIGSEGV]
+                        AimLeadProjectileSpeed 1 [$SIGSEGV]
+                        CustomEyeGlowColor "0 5 255" [$SIGSEGV] // Custom eye glow color
                         ItemAttributes
                         {
                             ItemName "The Loch-n-Load"
@@ -4060,7 +4060,7 @@ population
                         Item "The Direct Hit"
                         Item "The Toss-Proof Towel"
                         Item "The Sandvich Safe"
-                        CustomEyeGlowColor "0 255 8"  // Custom eye glow color
+                        CustomEyeGlowColor "0 255 8" [$SIGSEGV] // Custom eye glow color
                         ItemAttributes
                         {
                             ItemName "The Direct Hit"
@@ -4112,7 +4112,7 @@ population
                         }
                     }
                 }
-                ShootTemplate   //Shoot defined point template. Template is spawned at bot position in looking direction, forward velocity being applied to spawned entities
+                ShootTemplate [$SIGSEGV]  //Shoot defined point template. Template is spawned at bot position in looking direction, forward velocity being applied to spawned entities
 				{
 					Name OrangeFistRing //Name of the template
 					Speed 1 //Velocity of the spawned objects (Default: 1000)
@@ -4122,7 +4122,7 @@ population
 					AttachToProjectile 1 //If set, the template is spawned as a child of the projectile being fired. Incompatible with overrideshoot
 					ItemName "The Quickiebomb Launcher" //Can be specified to limit to a specific weapon
 				}
-                ShootTemplate   //Shoot defined point template. Template is spawned at bot position in looking direction, forward velocity being applied to spawned entities
+                ShootTemplate [$SIGSEGV]  //Shoot defined point template. Template is spawned at bot position in looking direction, forward velocity being applied to spawned entities
 				{
 					Name BlueFistTrail //Name of the template
 					Speed 1 //Velocity of the spawned objects (Default: 1000)
@@ -4132,7 +4132,7 @@ population
 					AttachToProjectile 1 //If set, the template is spawned as a child of the projectile being fired. Incompatible with overrideshoot
 					ItemName "The Loch-n-Load" //Can be specified to limit to a specific weapon
 				}
-                ItemModel  // Replaces item model
+                ItemModel [$SIGSEGV] // Replaces item model
                 {
                     ItemName "The Sandvich Safe"
                     Model "models/workshop/weapons/c_models/c_fists_of_steel/c_fists_of_steel.mdl"
@@ -4149,7 +4149,7 @@ population
 			WaitBeforeStarting	9
             WaitForAllDead Boss
 			Where	spawnbot
-            PointTemplate  // PointTemplate spawner. Counts as alive until all entites in the template are removed
+            PointTemplate [$SIGSEGV] // PointTemplate spawner. Counts as alive until all entites in the template are removed
 			{
 				SpawnAtEntity Where // Entity to spawn the template at, "Where" spawns at the bot spawn as indicated by where. If omitted, spawns at world origin
 				IsCrit 0 // Shows icon as critical (Default: 0)
@@ -4170,7 +4170,7 @@ population
 			WaitBeforeStarting	9
             WaitForAllDead Boss
 			Where	spawnbot
-            PointTemplate  // PointTemplate spawner. Counts as alive until all entites in the template are removed
+            PointTemplate [$SIGSEGV] // PointTemplate spawner. Counts as alive until all entites in the template are removed
 			{
 				SpawnAtEntity Where // Entity to spawn the template at, "Where" spawns at the bot spawn as indicated by where. If omitted, spawns at world origin
 				IsCrit 1 // Shows icon as critical (Default: 0)
@@ -4191,7 +4191,7 @@ population
 			WaitBeforeStarting	9
             WaitForAllDead Boss
 			Where	spawnbot
-            PointTemplate  // PointTemplate spawner. Counts as alive until all entites in the template are removed
+            PointTemplate [$SIGSEGV] // PointTemplate spawner. Counts as alive until all entites in the template are removed
 			{
 				SpawnAtEntity Where // Entity to spawn the template at, "Where" spawns at the bot spawn as indicated by where. If omitted, spawns at world origin
 				IsCrit 0 // Shows icon as critical (Default: 0)
@@ -4226,7 +4226,7 @@ population
                 {
                     Class	Soldier
                     Skill	Expert
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -4342,7 +4342,7 @@ population
                 {
                     Class	Soldier
                     Skill	Expert
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -4418,7 +4418,7 @@ population
                     Class	Pyro
                     Skill	Expert
                     Item "The Phlogistinator"
-                    AddTemplate DropsSmallCrumpkin 
+                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
                 }
                 TFBot
                 {
@@ -4551,7 +4551,7 @@ population
                     {
                         Template	T_TFBot_Giant_Heavyweapons_BrassBeast_Hatted
                         Tag special_main_left
-                        AddTemplate DropsLargeCrumpkin 
+                        AddTemplate DropsLargeCrumpkin [$SIGSEGV]
                     }
                     TFBot
                     {
@@ -4579,7 +4579,7 @@ population
                         Template	T_TFBot_Giant_Demo_Burst
                         Attributes AlwaysCrit
                         Tag special_main_right
-                        AddTemplate DropsLargeCrumpkin 
+                        AddTemplate DropsLargeCrumpkin [$SIGSEGV]
                     }
                     TFBot
                     {
@@ -4628,7 +4628,7 @@ population
                     {
                         Template	T_TFBot_Giant_Heavyweapons_BrassBeast_Hatted
                         Tag special_main_left
-                        AddTemplate DropsLargeCrumpkin 
+                        AddTemplate DropsLargeCrumpkin [$SIGSEGV]
                     }
                 }
             }
@@ -4675,7 +4675,7 @@ population
                         Template	T_TFBot_Giant_Demo_Burst
                         Attributes AlwaysCrit
                         Tag special_main_right
-                        AddTemplate DropsLargeCrumpkin 
+                        AddTemplate DropsLargeCrumpkin [$SIGSEGV]
                     }
                 }
             }
@@ -4698,7 +4698,7 @@ population
                     {
                         Template	T_TFBot_Giant_Heavyweapons_BrassBeast_Hatted
                         Tag special_main_left
-                        AddTemplate DropsLargeCrumpkin 
+                        AddTemplate DropsLargeCrumpkin [$SIGSEGV]
                     }
                 }
             }
@@ -4722,7 +4722,7 @@ population
                         Template	T_TFBot_Giant_Demo_Burst
                         Attributes AlwaysCrit
                         Tag special_main_right
-                        AddTemplate DropsLargeCrumpkin 
+                        AddTemplate DropsLargeCrumpkin [$SIGSEGV]
                     }
                 }
             }
@@ -4829,23 +4829,23 @@ population
                 Attributes MiniBoss
                 Scale 1.9
                 Health 10
-                AlwaysGlow 1 
-                ItemModel  // Replaces item model
+                AlwaysGlow 1 [$SIGSEGV]
+                ItemModel [$SIGSEGV] // Replaces item model
 				{
 					ItemName "The Toss-Proof Towel"
 					Model "models/props_bigrock_event/bone_cut_belt.mdl"
 				}
-                //AddCond  //Adds conditions to bots
+                //AddCond [$SIGSEGV] //Adds conditions to bots
                 //{
                 //    Index 5
                 //    Duration 0.5
                 //}
-                SpawnTemplate "BossDeathAnimation" 
+                SpawnTemplate "BossDeathAnimation" [$SIGSEGV]
                 Attributes SuppressFire
-                UseCustomModel "models/props_bigrock_event/bot_heavy_punchboss.mdl" 
+                UseCustomModel "models/props_bigrock_event/bot_heavy_punchboss.mdl" [$SIGSEGV]
                 Tag AnimDeathBossTag
                 WeaponRestrictions MeleeOnly
-                CustomEyeGlowColor "0 255 8"  // Custom eye glow color
+                CustomEyeGlowColor "0 255 8" [$SIGSEGV] // Custom eye glow color
                 CharacterAttributes
                 {
                     "move speed bonus" 0.0001

@@ -9,28 +9,28 @@ WaveSchedule
 	RespawnWaveTime 4
 	CanBotsAttackWhileInSpawnRoom no
 	Advanced	1
-	ImprovedAirblast 0 
-	RobotLimit 24 
-	NoThrillerTaunt 1 
-	NoRomevisionCosmetics 1 
+	ImprovedAirblast 0 [$SIGSEGV]
+	RobotLimit 24 [$SIGSEGV]
+	NoThrillerTaunt 1 [$SIGSEGV]
+	NoRomevisionCosmetics 1 [$SIGSEGV]
 	
-	PrecacheModel "models/bots/heavy/bot_heavy_gray.mdl" 
-	PrecacheModel "models/bots/pyro_boss/bot_pyro_gray_boss" 
-	PrecacheModel "models/bots/scout/bot_scout_gray" 
-	PrecacheModel "models/bots/soldier/bot_soldier_gray" 
-	PrecacheModel "models/bots/pyro/bot_pyro_gray.mdl" 
-	PrecacheModel "models/bots/demo_boss/bot_demo_gray_boss.mdl" 
-	PrecacheModel "models/bots/medic/bot_medic_gray.mdl" 
-	PrecacheModel "models/bots/scout_boss/bot_scout_gray_boss.mdl" 
-	PrecacheModel "models/bots/demo/bot_demo_gray.mdl" 
-	PrecacheModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" 
-	PrecacheModel "models/bots/demo/bot_sentry_buster_gray.mdl" 
-	PrecacheModel "models/bots/spy/bot_spy_gray.mdl" 
-	PrecacheModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" 
-	PrecacheModel "models/bots/sniper/bot_sniper_gray.mdl" 
-	PrecacheModel "models/bots/engineer/bot_engineer_gray.mdl" 
-	PrecacheModel "models/bots/boss_bot/boss_tank_color" 
-	PrecacheSound "perfect.mp3" 
+	PrecacheModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/pyro_boss/bot_pyro_gray_boss" [$SIGSEGV]
+	PrecacheModel "models/bots/scout/bot_scout_gray" [$SIGSEGV]
+	PrecacheModel "models/bots/soldier/bot_soldier_gray" [$SIGSEGV]
+	PrecacheModel "models/bots/pyro/bot_pyro_gray.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/demo_boss/bot_demo_gray_boss.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/medic/bot_medic_gray.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/scout_boss/bot_scout_gray_boss.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/demo/bot_demo_gray.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/demo/bot_sentry_buster_gray.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/spy/bot_spy_gray.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/sniper/bot_sniper_gray.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/engineer/bot_engineer_gray.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_tank_color" [$SIGSEGV]
+	PrecacheSound "perfect.mp3" [$SIGSEGV]
 	
 	PointTemplates
 	{
@@ -880,7 +880,7 @@ WaveSchedule
 				ItemName	"The Phlogistinator"
 				"airblast disabled"	0
 			}
-			Taunt   //Taunt periodically
+			Taunt [$SIGSEGV]  //Taunt periodically
 			{
 				Delay 0
 				Repeats 1
@@ -944,11 +944,11 @@ WaveSchedule
 			// Attributes IgnoreFlag
 			// Attributes MiniBoss
 			// WeaponRestrictions MeleeOnly
-			// UseCustomModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" 
-			// UseMeleeThreatPrioritization 1 
-			// SpawnTemplate	"distort" 
-			// Action	Mobber 
-			// AlwaysGlow 1 
+			// UseCustomModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" [$SIGSEGV]
+			// UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			// SpawnTemplate	"distort" [$SIGSEGV]
+			// Action	Mobber [$SIGSEGV]
+			// AlwaysGlow 1 [$SIGSEGV]
 			// ItemAttributes
 			// {
 				// ItemName "the killing gloves of boxing"
@@ -962,14 +962,14 @@ WaveSchedule
 				// ItemName	"Pugilist's Protector"
 				// "set item tint RGB"	1315860
 			// }
-			// ItemColor  //Set item color
+			// ItemColor [$SIGSEGV] //Set item color
 			// {
 				// ItemName "the killing gloves of boxing"
 				// Red 0
 				// Green 0
 				// Blue 0
 			// }
-			// Addcond	
+			// Addcond	[$SIGSEGV]
 			// {
 				// Index	5
 				// Duration	2
@@ -1000,11 +1000,11 @@ WaveSchedule
 			Attributes UseBossHealthBar
 			Attributes AlwaysCrit
 			Attributes MiniBoss
-			UseCustomModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" 
-			UseMeleeThreatPrioritization 1 
-			AimLeadProjectileSpeed 1 
-			SpawnTemplate	"distort" 
-			VoiceCommand 
+			UseCustomModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			AimLeadProjectileSpeed 1 [$SIGSEGV]
+			SpawnTemplate	"distort" [$SIGSEGV]
+			VoiceCommand [$SIGSEGV]
 			{
 				Delay 10
 				Cooldown 10
@@ -1012,7 +1012,7 @@ WaveSchedule
 				IfSeeTarget 1
 				Type "Battle Cry" 
 			}
-			VoiceCommand  
+			VoiceCommand [$SIGSEGV] 
 			{
 				Delay 15
 				Cooldown 15
@@ -1056,7 +1056,7 @@ WaveSchedule
 				"move speed bonus" 0.3
 				"health regen" 150
 			}
-			WeaponSwitch   //Periodically switches weapon
+			WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
             {
 				Delay 0
                 Repeats 1
@@ -1080,8 +1080,8 @@ WaveSchedule
 		{
 			Template	T_TFBot_Sentrybuster
 			Name	"Distortion Buster"
-			UseCustomModel "models/bots/demo/bot_sentry_buster_gray.mdl" 
-			SpawnTemplate	"distort" 
+			UseCustomModel "models/bots/demo/bot_sentry_buster_gray.mdl" [$SIGSEGV]
+			SpawnTemplate	"distort" [$SIGSEGV]
 			CharacterAttributes
 			{
 				"voice pitch scale"	0.5
@@ -1145,8 +1145,8 @@ WaveSchedule
 		{
 			Template	T_TFBot_Sniper
 			Name	"Distorted Sniper"
-			UseCustomModel "models/bots/sniper/bot_sniper_gray.mdl" 
-			SpawnTemplate	"distort" 
+			UseCustomModel "models/bots/sniper/bot_sniper_gray.mdl" [$SIGSEGV]
+			SpawnTemplate	"distort" [$SIGSEGV]
 			Skill Hard
 			CharacterAttributes
 			{
@@ -1167,8 +1167,8 @@ WaveSchedule
 		{
 			Template	T_TFBot_Sniper
 			Name	"Distorted Sniper"
-			UseCustomModel "models/bots/sniper/bot_sniper_gray.mdl" 
-			SpawnTemplate	"distort" 
+			UseCustomModel "models/bots/sniper/bot_sniper_gray.mdl" [$SIGSEGV]
+			SpawnTemplate	"distort" [$SIGSEGV]
 			Skill Hard
 			CharacterAttributes
 			{
@@ -1189,8 +1189,8 @@ WaveSchedule
 		{
 			Template	T_TFBot_Sniper_Sydney_Sleeper
 			Name	"Distorted Sydney Sniper"
-			UseCustomModel "models/bots/sniper/bot_sniper_gray.mdl" 
-			SpawnTemplate	"distort" 
+			UseCustomModel "models/bots/sniper/bot_sniper_gray.mdl" [$SIGSEGV]
+			SpawnTemplate	"distort" [$SIGSEGV]
 			Skill Hard
 			CharacterAttributes
 			{
@@ -1211,8 +1211,8 @@ WaveSchedule
 		{
 			Template	T_TFBot_Sniper
 			Name	"Distorted Sniper"
-			UseCustomModel "models/bots/sniper/bot_sniper_gray.mdl" 
-			SpawnTemplate	"distort" 
+			UseCustomModel "models/bots/sniper/bot_sniper_gray.mdl" [$SIGSEGV]
+			SpawnTemplate	"distort" [$SIGSEGV]
 			Skill Hard
 			CharacterAttributes
 			{
@@ -1240,8 +1240,8 @@ WaveSchedule
 			TeleportWhere spawnbot_alley
 			TeleportWhere spawnbot_tank
 			Name	"Distorted Engineer"
-			UseCustomModel "models/bots/engineer/bot_engineer_gray.mdl" 
-			SpawnTemplate	"distort" 
+			UseCustomModel "models/bots/engineer/bot_engineer_gray.mdl" [$SIGSEGV]
+			SpawnTemplate	"distort" [$SIGSEGV]
 			CharacterAttributes
 			{
 				"voice pitch scale"	0.5
@@ -1262,8 +1262,8 @@ WaveSchedule
 			Template	T_TFBot_Engineer_Sentry_Battle_TeleIn
 			Health	275
 			Name	"Distorted Engineer"
-			UseCustomModel "models/bots/engineer/bot_engineer_gray.mdl" 
-			SpawnTemplate	"distort" 
+			UseCustomModel "models/bots/engineer/bot_engineer_gray.mdl" [$SIGSEGV]
+			SpawnTemplate	"distort" [$SIGSEGV]
 			CharacterAttributes
 			{
 				"voice pitch scale"	0.5
@@ -1284,20 +1284,20 @@ WaveSchedule
 			Template	T_TFBot_Engineer_Sentry_Battle
 			Health	275
 			Name	"Distorted Engineer"
-			UseCustomModel "models/bots/engineer/bot_engineer_gray.mdl" 
-			SpawnTemplate	"distort" 
+			UseCustomModel "models/bots/engineer/bot_engineer_gray.mdl" [$SIGSEGV]
+			SpawnTemplate	"distort" [$SIGSEGV]
 			CharacterAttributes
 			{
 				"voice pitch scale"	0.5
 			}
 		}
 	}
-	SpawnTemplate "VacTankFilters" 
-	SpawnTemplate "hallowsound" 
-	SpawnTemplate "allprops" 
+	SpawnTemplate "VacTankFilters" [$SIGSEGV]
+	SpawnTemplate "hallowsound" [$SIGSEGv]
+	SpawnTemplate "allprops" [$SIGSEGv]
 	Wave //WAVE 1 $1,100
 	{
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "-wHy @re y0^ hEr#?"
@@ -1337,8 +1337,8 @@ WaveSchedule
 				{
 					Class	HeavyWeapons
 					Name	"Distorted Heavy"
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1374,8 +1374,8 @@ WaveSchedule
 					Name	"Distorted Tomislav Heavy"
 					Item	"Capone's Capper"
 					Item	"Tomislav"
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1413,8 +1413,8 @@ WaveSchedule
 					Item	"Copper's Hard Top"
 					Item	"The Brass Beast"
 					ClassIcon	heavy_brass_nys
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1450,8 +1450,8 @@ WaveSchedule
 					Name	"Distorted Heater Heavy"
 					Item	"The Huo Long Heatmaker"
 					ClassIcon	heavy_heater
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1479,8 +1479,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Giant_Pyro
 					Name	"Giant Distorted Pyro"
-					UseCustomModel "models/bots/pyro_boss/bot_pyro_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/pyro_boss/bot_pyro_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1509,8 +1509,8 @@ WaveSchedule
 				{
 					Class	HeavyWeapons
 					Name	"Distorted Heavy"
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1544,8 +1544,8 @@ WaveSchedule
 					Name	"Distorted Tomislav Heavy"
 					Item	"Capone's Capper"
 					Item	"Tomislav"
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1581,8 +1581,8 @@ WaveSchedule
 					Item	"Copper's Hard Top"
 					Item	"The Brass Beast"
 					ClassIcon	heavy_brass_nys
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1616,8 +1616,8 @@ WaveSchedule
 					Name	"Distorted Heater Heavy"
 					Item	"The Huo Long Heatmaker"
 					ClassIcon	heavy_heater
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1646,8 +1646,8 @@ WaveSchedule
 				{
 					Class	Scout
 					Name	"Distorted Scout"
-					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1676,8 +1676,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Giant_Pyro
 					Name	"Giant Distorted Pyro"
-					UseCustomModel "models/bots/pyro_boss/bot_pyro_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/pyro_boss/bot_pyro_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1700,7 +1700,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "L#@ve, n0W."
@@ -1750,8 +1750,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Soldier_RocketShotgun
 					Name	"Distorted Black Box Soldier"
-					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1768,8 +1768,8 @@ WaveSchedule
 			TotalCount	1
 			Tank
 			{
-				SpawnTemplate	"distort" 
-				SpawnTemplate	"ColorTank_Gray" 
+				SpawnTemplate	"distort" [$SIGSEGV]
+				SpawnTemplate	"ColorTank_Gray" [$SIGSEGV]
 				Model "models/bots/boss_bot/boss_tank_color.mdl"  
 				ClassIcon	tank_gry
 				Name tankbossdistorted
@@ -1808,8 +1808,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Giant_Demoman_Princetavish
 					Name	"Giant Distorted Demoknight"
-					UseCustomModel "models/bots/demo_boss/bot_demo_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/demo_boss/bot_demo_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1838,8 +1838,8 @@ WaveSchedule
 				{
 					class	Soldier
 					Name	"Distorted Soldier"
-					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1868,8 +1868,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Pyro_Phlogistinator
 					Name	"Distorted Phlogistinator Pyro"
-					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1894,8 +1894,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Giant_Demoman_Princetavish
 					Name	"Giant Distorted Demoknight"
-					UseCustomModel "models/bots/demo_boss/bot_demo_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/demo_boss/bot_demo_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1906,8 +1906,8 @@ WaveSchedule
 					Template	T_TFBot_Medic_Bigheal
 					Name	"Distorted Big-Heal Medic"
 					Item	"Halogen Head Lamp"
-					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1918,8 +1918,8 @@ WaveSchedule
 					Template	T_TFBot_Medic_Bigheal
 					Name	"Distorted Big-Heal Medic"
 					Item	"Halogen Head Lamp"
-					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1930,8 +1930,8 @@ WaveSchedule
 					Template	T_TFBot_Medic_Bigheal
 					Name	"Distorted Big-Heal Medic"
 					Item	"Halogen Head Lamp"
-					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -1954,7 +1954,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "T#eR3 !sN'1 @nyTh!nG 4or yUo h3r3."
@@ -1980,8 +1980,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Heavy_Shotgun_Armored
 					Name	"Armored Distorted Shotgun Heavy"
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2027,8 +2027,8 @@ WaveSchedule
 					Class	Pyro
 					Skill	Normal
 					Name	"Distorted Pyro"
-					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2039,8 +2039,8 @@ WaveSchedule
 					Class	Pyro
 					Skill	Normal
 					Name	"Distorted Pyro"
-					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2051,8 +2051,8 @@ WaveSchedule
 					Class	Pyro
 					Skill	Normal
 					Name	"Distorted Pyro"
-					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2064,8 +2064,8 @@ WaveSchedule
 					Skill	Hard
 					Attributes	AlwaysFireWeapon
 					Name	"Distorted Pyro"
-					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2110,8 +2110,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Heavy_Shotgun_Armored
 					Name	"Armored Distorted Shotgun Heavy"
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2122,8 +2122,8 @@ WaveSchedule
 					Template	T_TFBot_Medic_Bigheal
 					Name	"Distorted Big-Heal Medic"
 					Item	"Halogen Head Lamp"
-					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2154,8 +2154,8 @@ WaveSchedule
 					Class	Demoman
 					Skill	Normal
 					Name	"Distorted Demoman"
-					UseCustomModel "models/bots/demo/bot_demo_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/demo/bot_demo_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2184,8 +2184,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Giant_Soldier_Spammer
 					Name	"Giant Distorted RF Soldier"
-					UseCustomModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2208,7 +2208,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "{yellow}G0 AW@Y."
@@ -2236,8 +2236,8 @@ WaveSchedule
 					Class	Soldier
 					Skill	Hard
 					Name	"Distorted Soldier"
-					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2268,8 +2268,8 @@ WaveSchedule
 					Template	T_TFBot_Scout_Melee
 					ClassIcon	scout_bat
 					Name "Bat Scout"
-					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2293,8 +2293,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Giant_Pyro
 					Name	"Giant Distorted Pyro"
-					UseCustomModel "models/bots/pyro_boss/bot_pyro_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/pyro_boss/bot_pyro_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2304,8 +2304,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Giant_Medic_Regen
 					Name	"Giant Distorted Regen Medic"
-					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2324,8 +2324,8 @@ WaveSchedule
 			WaitBeforeStarting	4
 			Tank
 			{
-				SpawnTemplate	"distort" 
-				SpawnTemplate	"ColorTank_Gray" 
+				SpawnTemplate	"distort" [$SIGSEGV]
+				SpawnTemplate	"ColorTank_Gray" [$SIGSEGV]
 				Model "models/bots/boss_bot/boss_tank_color.mdl"  
 				ClassIcon	tank_gry
 				Name tankbossdistorted
@@ -2370,8 +2370,8 @@ WaveSchedule
 					Skill	Hard
 					Item	"The Direct Hit"
 					Name	"Distorted Direct Hit Soldier"
-					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2400,8 +2400,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Pyro_Flaregun
 					Name	"Distorted Flare Pyro"
-					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2434,8 +2434,8 @@ WaveSchedule
 					Name	"Giant Distorted Burst Fire Demo"
 					Attributes	AlwaysCrit
 					Item	"Scotch Bonnet"
-					UseCustomModel "models/bots/demo_boss/bot_demo_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/demo_boss/bot_demo_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2458,7 +2458,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "{yellow}W#Y TH3 {red}#*%& {yellow}@RE Y0U S#!LL H3RE?"
@@ -2486,8 +2486,8 @@ WaveSchedule
 					Template	T_TFBot_Pyro
 					Skill	Normal
 					Name	"Distorted Pyro"
-					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2517,8 +2517,8 @@ WaveSchedule
 					Template	T_TFBot_Soldier_Buff_Banner
 					Skill	Hard
 					Name	"Distorted Extended Buff Soldier"
-					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2546,8 +2546,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Heavyweapons_Fist
 					Name	"Distorted Steel Gauntlet"
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2572,8 +2572,8 @@ WaveSchedule
 					Template	T_TFBot_Giant_Soldier_Spammer_Reload
 					ClassIcon	soldier_burstfire_normal
 					Name	"Giant Distorted BF Soldier"
-					UseCustomModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2585,8 +2585,8 @@ WaveSchedule
 					Template	T_TFBot_Giant_Medic_Regen
 					Skill	Normal
 					Name	"Giant Distorted Regen Medic"
-					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2617,8 +2617,8 @@ WaveSchedule
 					Template	T_TFBot_Giant_Soldier_Spammer_Reload
 					Attributes	AlwaysCrit
 					Name	"Giant Distorted BF Soldier"
-					UseCustomModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2647,8 +2647,8 @@ WaveSchedule
 				{
 					Class	Scout
 					Name	"Distorted Scout"
-					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2677,8 +2677,8 @@ WaveSchedule
 				{
 					Class	HeavyWeapons
 					Name	"Distorted Heavy"
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2701,7 +2701,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "c@n y0U Ju$t Go A1R#aDY, plE&S3?"
@@ -2723,8 +2723,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Sniper_Hipfire
 					Name	"Distorted Hipfire Sniper"
-					UseCustomModel "models/bots/sniper/bot_sniper_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/sniper/bot_sniper_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2735,8 +2735,8 @@ WaveSchedule
 					Template	T_TFBot_Medic_Bigheal
 					Name	"Distorted Big-Heal Medic"
 					Item	"Halogen Head Lamp"
-					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2766,8 +2766,8 @@ WaveSchedule
 					Class	Soldier
 					Skill	Hard
 					Name	"Distorted Soldier"
-					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2797,8 +2797,8 @@ WaveSchedule
 					Template	T_TFBot_Giant_Demoman
 					ClassIcon	demo_spammer
 					Name	"Giant Distorted Rapid Fire Demo"
-					UseCustomModel "models/bots/demo_boss/bot_demo_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/demo_boss/bot_demo_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2829,8 +2829,8 @@ WaveSchedule
 					Template	T_TFBot_Giant_Demoman
 					ClassIcon	demo_spammer
 					Name	"Giant Distorted Rapid Fire Demo"
-					UseCustomModel "models/bots/demo_boss/bot_demo_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/demo_boss/bot_demo_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2877,8 +2877,8 @@ WaveSchedule
 					Class	Soldier
 					Skill	Hard
 					Name	"Distorted Soldier"
-					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/soldier/bot_soldier_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2912,8 +2912,8 @@ WaveSchedule
 					Name "Distorted Bat Scout"
 					ClassIcon	scout_bat
 					Attributes	AlwaysCrit
-					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -2931,9 +2931,9 @@ WaveSchedule
 			TotalCount	1
 			Tank
 			{
-				SpawnTemplate	"distort" 
-				SpawnTemplate	"ColorTank_Gray" 
-				SpawnTemplate 	"VacTankRandom" 
+				SpawnTemplate	"distort" [$SIGSEGV]
+				SpawnTemplate	"ColorTank_Gray" [$SIGSEGV]
+				SpawnTemplate 	"VacTankRandom" [$SIGSEGV]
 				Model "models/bots/boss_bot/boss_tank_color.mdl"  
 				ClassIcon	tank_vac_trio_lite
 				Name tankbossdistortedvacc
@@ -2978,8 +2978,8 @@ WaveSchedule
 					Name "Distorted Bat Scout"
 					ClassIcon	scout_bat
 					Attributes	AlwaysCrit
-					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/scout/bot_scout_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -3008,8 +3008,8 @@ WaveSchedule
 				{
 					Class	HeavyWeapons
 					Name	"Distorted Heavy"
-					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy/bot_heavy_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -3040,8 +3040,8 @@ WaveSchedule
 					Template	T_TFBot_Giant_Heavyweapons_Deflector
 					Attributes	AlwaysCrit
 					Name	"Giant Distorted Deflector Heavy"
-					UseCustomModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -3064,7 +3064,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "{red}L@$T CHANC3."
@@ -3088,7 +3088,7 @@ WaveSchedule
 			}
 			Tank
 			{
-				SpawnTemplate	"distort" 
+				SpawnTemplate	"distort" [$SIGSEGV]
 				ClassIcon	tank_sticky_hellmet
 				Name sticky_tank
 				Health	50000
@@ -3121,8 +3121,8 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Heavyweapons
 				Name	"Giant Distorted Heavy"
-				UseCustomModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" 
-				SpawnTemplate	"distort" 
+				UseCustomModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" [$SIGSEGV]
+				SpawnTemplate	"distort" [$SIGSEGV]
 				CharacterAttributes
 				{
 					"voice pitch scale"	0.5
@@ -3143,8 +3143,8 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Heavyweapons
 				Name	"Giant Distorted Heavy"
-				UseCustomModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" 
-				SpawnTemplate	"distort" 
+				UseCustomModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" [$SIGSEGV]
+				SpawnTemplate	"distort" [$SIGSEGV]
 				CharacterAttributes
 				{
 					"voice pitch scale"	0.5
@@ -3167,8 +3167,8 @@ WaveSchedule
 				Template	T_TFBot_Giant_Soldier_Spammer_Reload
 				Attributes	AlwaysCrit
 				Name	"Giant Distorted BF Soldier"
-				UseCustomModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" 
-				SpawnTemplate	"distort" 
+				UseCustomModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" [$SIGSEGV]
+				SpawnTemplate	"distort" [$SIGSEGV]
 				CharacterAttributes
 				{
 					"voice pitch scale"	0.5
@@ -3190,8 +3190,8 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Heavyweapons
 				Name	"Giant Distorted Heavy"
-				UseCustomModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" 
-				SpawnTemplate	"distort" 
+				UseCustomModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" [$SIGSEGV]
+				SpawnTemplate	"distort" [$SIGSEGV]
 				CharacterAttributes
 				{
 					"voice pitch scale"	0.5
@@ -3214,8 +3214,8 @@ WaveSchedule
 				Class	Pyro
 				MaxVisionRange	550
 				Name	"Distorted Pyro"
-				UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" 
-				SpawnTemplate	"distort" 
+				UseCustomModel "models/bots/pyro/bot_pyro_gray.mdl" [$SIGSEGV]
+				SpawnTemplate	"distort" [$SIGSEGV]
 				CharacterAttributes
 				{
 					"voice pitch scale"	0.5
@@ -3237,8 +3237,8 @@ WaveSchedule
 			{
 				Class	Scout
 				Name	"Distorted Scout"
-				UseCustomModel "models/bots/scout/bot_scout_gray.mdl" 
-				SpawnTemplate	"distort" 
+				UseCustomModel "models/bots/scout/bot_scout_gray.mdl" [$SIGSEGV]
+				SpawnTemplate	"distort" [$SIGSEGV]
 				CharacterAttributes
 				{
 					"voice pitch scale"	0.5
@@ -3260,8 +3260,8 @@ WaveSchedule
 			{
 				Template	T_TFBot_Demoman_Samurai
 				Name	"Distorted Samurai Demo"
-				UseCustomModel "models/bots/demo/bot_demo_gray.mdl" 
-				SpawnTemplate	"distort" 
+				UseCustomModel "models/bots/demo/bot_demo_gray.mdl" [$SIGSEGV]
+				SpawnTemplate	"distort" [$SIGSEGV]
 				CharacterAttributes
 				{
 					"voice pitch scale"	0.5
@@ -3285,8 +3285,8 @@ WaveSchedule
 				Skill	Expert
 				Name	"Distorted Demoman"
 				Attributes	AlwaysCrit
-				UseCustomModel "models/bots/demo/bot_demo_gray.mdl" 
-				SpawnTemplate	"distort" 
+				UseCustomModel "models/bots/demo/bot_demo_gray.mdl" [$SIGSEGV]
+				SpawnTemplate	"distort" [$SIGSEGV]
 				CharacterAttributes
 				{
 					"voice pitch scale"	0.5
@@ -3311,8 +3311,8 @@ WaveSchedule
 					Template	T_TFBot_Giant_Soldier_Spammer_Reload
 					Attributes	AlwaysCrit
 					Name	"Giant Distorted BF Soldier"
-					UseCustomModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/soldier_boss/bot_soldier_gray_boss.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -3322,8 +3322,8 @@ WaveSchedule
 				{
 					Template	T_TFBot_Giant_Medic_Regen
 					Name	"Giant Distorted Regen Medic"
-					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" 
-					SpawnTemplate	"distort" 
+					UseCustomModel "models/bots/medic/bot_medic_gray.mdl" [$SIGSEGV]
+					SpawnTemplate	"distort" [$SIGSEGV]
 					CharacterAttributes
 					{
 						"voice pitch scale"	0.5
@@ -3346,7 +3346,7 @@ WaveSchedule
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation   //Dispayed once the wave is initialized
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
 		{
 			Line ""
 			Line "{red}f!n# Y0u W@N1 2 sE3 wHa1 I hAVe? B3 mY gU#sT."

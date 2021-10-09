@@ -419,7 +419,7 @@ population
 			Item	"The Escape Plan"
 			Item	"Armored Authority"
 			Item	"tf_weapon_grenadelauncher"
-			DamageAppliesCond 
+			DamageAppliesCond [$SIGSEGV]
 			{
 				Index 54 //Stun effect
 				Duration 1 //2 seconds is deadly enough
@@ -452,7 +452,7 @@ population
 				"Blast radius decreased" 1.5
 				"Projectile speed increased" 0.7
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
             {
                 ItemName "tf_weapon_grenadelauncher"
                 Model "models/weapons/c_models/c_pickaxe/c_pickaxe.mdl" // no
@@ -470,7 +470,7 @@ population
 				"hand scale"	1.5
 				"wet immunity" 1
 			}
-			FireSound "weapons/pickaxe_swing_crit.wav" 
+			FireSound "weapons/pickaxe_swing_crit.wav" [$SIGSEGV]
 		}
 		T_TFBot_Boss_Chief_Sixshot
 		{
@@ -483,8 +483,8 @@ population
 			Health	30000
 			Item	"ttg sam revolver"
 			Item	"Detective Noir"
-			Action FetchFlag 
-			AimTrackingInterval 0.02 
+			Action FetchFlag [$SIGSEGV]
+			AimTrackingInterval 0.02 [$SIGSEGV]
 			WeaponRestrictions	PrimaryOnly
 			ItemAttributes
 			{

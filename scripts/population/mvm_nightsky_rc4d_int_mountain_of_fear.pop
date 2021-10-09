@@ -102,7 +102,7 @@ popuwashyon
 	
 	ForceHoliday 2
 	EventPopfile Halloween
-	ZombiesNoWave666 1 
+	ZombiesNoWave666 1 [$SIGSEGV]
 	
 	
 	PointTemplates
@@ -204,8 +204,8 @@ popuwashyon
 	}
 	
 	
-	SpawnTemplate "target_hint_y" 
-	SpawnTemplate powerup_logic 
+	SpawnTemplate "target_hint_y" [$SIGSEGV]
+	SpawnTemplate powerup_logic [$SIGSEGV]
 	
 	Templates
 	{
@@ -281,7 +281,7 @@ popuwashyon
 			Health 3000
 			Attributes MiniBoss
 			Tag giant
-			Action FetchFlag 
+			Action FetchFlag [$SIGSEGV]
 			CharacterAttributes
 			{
 				"move speed bonus" 0.5
@@ -825,7 +825,7 @@ popuwashyon
 					Name "Kappa-tech Inventor"
 					ClassIcon engineer_pomson
 					Item "The Pomson 6000"
-					AimLeadProjectileSpeed 1200 
+					AimLeadProjectileSpeed 1200 [$SIGSEGV]
 					ItemAttributes
 					{
 						ItemName "The Pomson 6000"
@@ -876,11 +876,11 @@ popuwashyon
 				WeaponRestrictions PrimaryOnly
 				Item "Upgradeable TF_WEAPON_SYRINGEGUN_MEDIC"
 				Item "Flatliner"
-				AimAt Body 
-				AimOffset "0 0 10" 
-				AimLeadProjectileSpeed 1500 
+				AimAt Body [$SIGSEGV]
+				AimOffset "0 0 10" [$SIGSEGV]
+				AimLeadProjectileSpeed 1500 [$SIGSEGV]
 				Tag giant
-				Action FetchFlag 
+				Action FetchFlag [$SIGSEGV]
 				ItemAttributes
 				{
 					ItemName "Upgradeable TF_WEAPON_SYRINGEGUN_MEDIC"
@@ -932,7 +932,7 @@ popuwashyon
 					Item "The Pomson 6000"
 					Attributes SuppressFire
 					Attributes UseBossHealthBar
-					FireWeapon 
+					FireWeapon [$SIGSEGV]
 					{
 						Delay 5
 						Duration 0.6
@@ -1189,7 +1189,7 @@ popuwashyon
 				Health 2500
 				Item "Baby Face's Blaster"
 				Tag giant
-				AddCond 
+				AddCond [$SIGSEGV]
 				{
 					Index 32
 					Delay 0
@@ -1359,7 +1359,7 @@ popuwashyon
 				Item "The Degreaser"
 				Item "The Flare Gun"
 				MaxVisionRange 1200
-				UseBestWeapon 1 
+				UseBestWeapon 1 [$SIGSEGV]
 				ItemAttributes
 				{
 					ItemName "The Degreaser"
@@ -1450,7 +1450,7 @@ popuwashyon
 				Item "The Degreaser"
 				Item "The Flare Gun"
 				MaxVisionRange 1200
-				UseBestWeapon 1 
+				UseBestWeapon 1 [$SIGSEGV]
 				ItemAttributes
 				{
 					ItemName "The Degreaser"
@@ -1476,7 +1476,7 @@ popuwashyon
 				Health 12000
 				Name "Deified Wielder of the Wind"
 				ClassIcon soldier_barrage
-                InterruptAction 
+                InterruptAction [$SIGSEGV]
                 {
 					Target "-5910.6 -2280.9 150.1"
 					AimTarget "ClosestPlayer"
@@ -1486,7 +1486,7 @@ popuwashyon
                     Duration 10
                     OnDoneChangeAttributes "Attack"
                 }
-				FireWeapon 
+				FireWeapon [$SIGSEGV]
 				{
 					Type "Primary"
 					Delay 1.5
@@ -1520,7 +1520,7 @@ popuwashyon
 				{
 					Attack
 					{
-						FireWeapon 
+						FireWeapon [$SIGSEGV]
 						{
 							Type "Primary"
 							Delay 1.5
@@ -1528,7 +1528,7 @@ popuwashyon
 							Duration 4
 							Cooldown 8
 						}
-						InterruptAction  // Stop current bot ai and force the bot to move to a location
+						InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
 						{
 							AimTarget "-5550 -2660 893" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 							WaitUntilDone 1
@@ -1556,7 +1556,7 @@ popuwashyon
 					}
 					Attack2
 					{
-						FireWeapon 
+						FireWeapon [$SIGSEGV]
 						{
 							Type "Primary"
 							Delay 1.5
@@ -1564,7 +1564,7 @@ popuwashyon
 							Duration 4
 							Cooldown 8
 						}
-						InterruptAction  // Stop current bot ai and force the bot to move to a location
+						InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
 						{
 							AimTarget "-5550 -2000 893" // Entity / bot / class name as an alternative. Also: RandomEnemy, ClosestPlayer
 							WaitUntilDone 1
@@ -1653,7 +1653,7 @@ popuwashyon
 				{
 					"health regen" 1
 				}
-                InterruptAction 
+                InterruptAction [$SIGSEGV]
                 {
 					Target "-6170.6 -2270.9 180.1"
 					AimTarget "ClosestPlayer"
@@ -1709,7 +1709,7 @@ popuwashyon
 				{
 					Template T_TFBot_Giant_Soldier_Crit
 					Tag giant
-					SpawnTemplate powerup_logic_owned 
+					SpawnTemplate powerup_logic_owned [$SIGSEGV]
 				}
 				TFBot
 				{
@@ -1723,7 +1723,7 @@ popuwashyon
 					Tag	giant
 					ClassIcon medic_king
 					Attributes MiniBoss
-					SpawnTemplate powerup_logic_medic 
+					SpawnTemplate powerup_logic_medic [$SIGSEGV]
 					ItemAttributes
 					{
 						ItemName "Festive Medigun 2011"
@@ -1759,7 +1759,7 @@ popuwashyon
 					Template T_TFBot_Giant_Heavyweapons_Shotgun
 					Tag giant
 					Name "Bullet Hell Fairy of Fear"
-					SpawnTemplate powerup_logic_owned 
+					SpawnTemplate powerup_logic_owned [$SIGSEGV]
 				}
 				TFBot
 				{
@@ -1773,7 +1773,7 @@ popuwashyon
 					Tag	giant
 					ClassIcon medic_king
 					Attributes MiniBoss
-					SpawnTemplate powerup_logic_medic 
+					SpawnTemplate powerup_logic_medic [$SIGSEGV]
 					ItemAttributes
 					{
 						ItemName "Festive Medigun 2011"
@@ -1833,10 +1833,10 @@ popuwashyon
 				Class Engineer
 				Name "Laser-tech Kappa"
 				Skill Hard
-				Action FetchFlag 
+				Action FetchFlag [$SIGSEGV]
 				ClassIcon engineer_pomson
 				Item "The Pomson 6000"
-				AimLeadProjectileSpeed 1200 
+				AimLeadProjectileSpeed 1200 [$SIGSEGV]
 				ItemAttributes
 				{
 					ItemName "The Pomson 6000"
@@ -1866,7 +1866,7 @@ popuwashyon
 				Health 20000
 				Attributes UseBossHealthBar
 				ClassIcon soldier_barrage_infinite
-				SpawnTemplate Teleporter_Invis 
+				SpawnTemplate Teleporter_Invis [$SIGSEGV]
 				Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
 				Item "Telefragger Toque"
 				Tag giant

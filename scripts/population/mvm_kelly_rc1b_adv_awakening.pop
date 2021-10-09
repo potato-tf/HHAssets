@@ -112,14 +112,14 @@ WaveSchedule
         Z	"-24"        
     }
 
-    ItemAttributes 
+    ItemAttributes [$SIGSEGV]
 	{
 		Classname                       "TF_WEAPON_FLAMETHROWER"
         "attach particle effect"        8
         "SPELL: Halloween green flames" 1
 	}
 
-    ItemAttributes 
+    ItemAttributes [$SIGSEGV]
 	{
 		Classname                       "TF_WEAPON_ROCKETLAUNCHER"
         "attach particle effect"        8
@@ -4847,34 +4847,34 @@ WaveSchedule
 			{
 				ItemName "TF_WEAPON_SPELLBOOK"
 			}
-            Spell 
+            Spell [$SIGSEGV]
 			{
 				Delay 15
 				Cooldown 999
                 Charges 3
 				Type "Summon Skeletons"
             }
-            Spell 
+            Spell [$SIGSEGV]
 			{
 				Delay 0
 				Cooldown 7
 				Type "Fireball"
             }
-            Spell 
+            Spell [$SIGSEGV]
 			{
 				Delay 30
                 Charges 2
 				Cooldown 23
 				Type "Pumpkin MIRV"
             }
-            Spell 
+            Spell [$SIGSEGV]
 			{
 				Delay 0
 				Cooldown 37
                 IfHealthBelow 40000
 				Type "Summon Monoculus"
             }
-            Spell 
+            Spell [$SIGSEGV]
 			{
 				Delay 0
 				Cooldown 999
@@ -5391,13 +5391,13 @@ WaveSchedule
             Item        "The Face of Mercy"
             Item        "The Bonedolier"
             Item        "Upgradeable TF_WEAPON_FLAMETHROWER"
-            WeaponSwitch  
+            WeaponSwitch [$SIGSEGV] 
             {
                 Delay 0.1
                 Cooldown 9999
 				Type "Melee" 
 			}
-            WeaponSwitch 
+            WeaponSwitch [$SIGSEGV]
             {
                 Delay 0.5
                 Cooldown 9999
@@ -5791,7 +5791,7 @@ WaveSchedule
                 { 
                     Template T_TFBot_Giant_Heavyweapons
                     Item        "The Mann of the House"
-                    FireWeapon  
+                    FireWeapon [$SIGSEGV] 
                     {
                         Delay 0
                         Duration 9999 
@@ -5833,7 +5833,7 @@ WaveSchedule
                 { 
                     Template T_TFBot_Giant_Heavyweapons
                     Item        "The Mann of the House"
-                    FireWeapon  
+                    FireWeapon [$SIGSEGV] 
                     {
                         Delay 0
                         Duration 9999 
@@ -6027,12 +6027,12 @@ WaveSchedule
                     Item                "The Chicken Kiev"
                     Item                "The Mann of the House"
                     Item                "Holiday Punch"
-                    Taunt   
+                    Taunt [$SIGSEGV]  
                     {
                         Delay 4
                         Duration 3
                     }
-                    VoiceCommand   //Periodacally uses voice commands
+                    VoiceCommand [$SIGSEGV]  //Periodacally uses voice commands
                     {
                         Delay 3 
                         Cooldown 2 
@@ -6054,7 +6054,7 @@ WaveSchedule
                     Item        "The Chronoscarf"
                     Item        "The Angel of Death"
                     Attributes	IgnoreEnemies
-                    VoiceCommand   //Periodacally uses voice commands
+                    VoiceCommand [$SIGSEGV]  //Periodacally uses voice commands
                     {
                         Delay 3 
                         Cooldown 8
@@ -6068,7 +6068,7 @@ WaveSchedule
                     Item        "The Chronoscarf"
                     Item        "The Angel of Death"
                     Attributes	IgnoreEnemies
-                    VoiceCommand   //Periodacally uses voice commands
+                    VoiceCommand [$SIGSEGV]  //Periodacally uses voice commands
                     {
                         Delay 3 
                         Cooldown 5.5
@@ -6150,13 +6150,13 @@ WaveSchedule
                     Item                "The Chicken Kiev"
                     Item                "The Mann of the House"
                     Item                "Holiday Punch"
-                    VoiceCommand   
+                    VoiceCommand [$SIGSEGV]  
                     {
                         Delay 3 
                         Cooldown 2 
                         Type "Dispenser here" 
                     }
-                    Taunt   
+                    Taunt [$SIGSEGV]  
                     {
                         Delay 4
                         Duration 3
@@ -6176,7 +6176,7 @@ WaveSchedule
                     Item        "The Chronoscarf"
                     Item        "The Angel of Death"
                     Attributes	IgnoreEnemies
-                    VoiceCommand   //Periodacally uses voice commands
+                    VoiceCommand [$SIGSEGV]  //Periodacally uses voice commands
                     {
                         Delay 3 
                         Cooldown 5.5
@@ -6198,7 +6198,7 @@ WaveSchedule
                     {
                         "voice pitch scale" 1.2
                     }
-                    VoiceCommand   //Periodacally uses voice commands
+                    VoiceCommand [$SIGSEGV]  //Periodacally uses voice commands
                     {
                         Delay 3 
                         Cooldown 12
@@ -6497,21 +6497,21 @@ WaveSchedule
                     Slot    2
                     Model "models\empty.mdl"
                 }
-                Spell  //Gives specified spell to bots.
+                Spell [$SIGSEGV] //Gives specified spell to bots.
 				{
 					Delay 0
                     IfHealthBelow 50000
 					Cooldown 15
 					Type "Summon Skeletons" 
 				}
-                Spell  //Gives specified spell to bots.
+                Spell [$SIGSEGV] //Gives specified spell to bots.
 				{
 					Delay 5
                     IfHealthBelow 30000
 					Cooldown 30
 					Type "Summon Monoculus" 
 				}
-                Spell  //Gives specified spell to bots.
+                Spell [$SIGSEGV] //Gives specified spell to bots.
 				{
 					Delay 5
                     IfHealthBelow 10000

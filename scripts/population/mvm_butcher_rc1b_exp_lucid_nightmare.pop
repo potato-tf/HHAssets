@@ -18,17 +18,17 @@ WaveSchedule_NamesArePointlessEksDee
 	Advanced	1
 	
 	EventPopFile Halloween
-	ZombiesNoWave666 1 			
-	NoMvMDeathTune 1 			
-	StandableHeads 1 			
-	ForceHoliday 2				
-	TextPrintTime 0 			
-	NoRomevisionCosmetics 1     
-	NoCritPumpkin 1				
-	SpawnTemplate "Ubertank"    
+	ZombiesNoWave666 1 			[$SIGSEGV]
+	NoMvMDeathTune 1 			[$SIGSEGV]
+	StandableHeads 1 			[$SIGSEGV]
+	ForceHoliday 2				[$SIGSEGV]
+	TextPrintTime 0 			[$SIGSEGV]
+	NoRomevisionCosmetics 1     [$SIGSEGV]
+	NoCritPumpkin 1				[$SIGSEGV]
+	SpawnTemplate "Ubertank"    [$SIGSEGV]
 	
-	PrecacheModel "models/bots/boss_bot/boss_tank_ubered.mdl"			
-	SpawnTemplate "annotations" 										
+	PrecacheModel "models/bots/boss_bot/boss_tank_ubered.mdl"			[$SIGSEGV]
+	SpawnTemplate "annotations" 										[$SIGSEGV]
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
@@ -231,7 +231,7 @@ WaveSchedule_NamesArePointlessEksDee
 			Item	"the black box"
 			Item	"the whirly warrior"
 			
-			RocketCustomParticle	flare_glow 
+			RocketCustomParticle	flare_glow [$SIGSEGV]
 			
 			ItemAttributes
 			{
@@ -265,7 +265,7 @@ WaveSchedule_NamesArePointlessEksDee
 			Item	"the black box"
 			Item	"the whirly warrior"
 			
-			RocketCustomParticle	flare_glow 
+			RocketCustomParticle	flare_glow [$SIGSEGV]
 			
 			ItemAttributes
 			{
@@ -435,7 +435,7 @@ WaveSchedule_NamesArePointlessEksDee
 			}
 			Item	"the black box"
 			Item	"the whirly warrior"
-			RocketCustomParticle	flare_glow 	// sig's - uses specified particle for rockets
+			RocketCustomParticle	flare_glow [$SIGSEGV]	// sig's - uses specified particle for rockets
 		}
 			
 		T_TFBot_Soldier_Homing_Giant_Slow
@@ -449,7 +449,7 @@ WaveSchedule_NamesArePointlessEksDee
 			Attributes MiniBoss
 			Tag bot_giant
 			Item "The Cross-Comm Crash Helmet"
-			RocketCustomParticle eyeboss_projectile 
+			RocketCustomParticle eyeboss_projectile [$SIGSEGV]
 			
 			HomingRockets
             {
@@ -716,7 +716,7 @@ WaveSchedule_NamesArePointlessEksDee
 			Scale 1.5
 			Health 900
 			WeaponRestrictions MeleeOnly
-			Action Mobber	
+			Action Mobber	[$SIGSEGV]
 			Attributes DisableDodge
 			Item "Warrior's Spirit"
 			
@@ -791,14 +791,14 @@ WaveSchedule_NamesArePointlessEksDee
 			Attributes UseBossHealthBar
 			Item "War Head"
 			Tag bot_giant
-			WeaponSwitch 
+			WeaponSwitch [$SIGSEGV]
 			{
 				Delay 0 
 				Cooldown 1
 				Repeats 1
 				Type "Melee"
 			}
-			WeaponSwitch 
+			WeaponSwitch [$SIGSEGV]
 			{
 				Delay 0
 				Cooldown 3
@@ -1809,7 +1809,7 @@ WaveSchedule_NamesArePointlessEksDee
 				Name "ubertank"
 				Skin 2
 				Classicon tank_uber_lite
-				Model "models/bots/boss_bot/boss_tank_ubered.mdl" 
+				Model "models/bots/boss_bot/boss_tank_ubered.mdl" [$SIGSEGV]
 				Speed	100
 				StartingPathTrackNode	tank_path_b_1
 				OnBombDroppedOutput
@@ -2136,7 +2136,7 @@ WaveSchedule_NamesArePointlessEksDee
 				Name "ubertank"
 				Skin 2
 				Classicon tank_uber_lite
-				Model "models/bots/boss_bot/boss_tank_ubered.mdl" 
+				Model "models/bots/boss_bot/boss_tank_ubered.mdl" [$SIGSEGV]
 				Speed	69
 				StartingPathTrackNode	tank_path_b_1
 				OnBombDroppedOutput
@@ -2709,7 +2709,7 @@ WaveSchedule_NamesArePointlessEksDee
 				Name "ubertank"
 				Skin 2
 				Classicon tank_uber_lite
-				Model "models/bots/boss_bot/boss_tank_ubered.mdl" 
+				Model "models/bots/boss_bot/boss_tank_ubered.mdl" [$SIGSEGV]
 				Speed	80
 				StartingPathTrackNode	tank_path_b_1
 				OnBombDroppedOutput

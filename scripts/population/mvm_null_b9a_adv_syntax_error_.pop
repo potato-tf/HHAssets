@@ -17,14 +17,14 @@ WaveSchedule
 	AddSentryBusterWhenKillCountExceeds	20
 	Advanced	1
 	
-	NoMvMDeathTune 1 			
-	StandableHeads 1 			
-	//EnableDominations 1           (Andrew is cringe lol ecksdee sussy baka)
-	TextPrintTime 0 			
-	RobotLimit 23				
-	NoRomevisionCosmetics 1      //romevision sucks and screws with stuff deal with it.
+	NoMvMDeathTune 1 			[$SIGSEGV]
+	StandableHeads 1 			[$SIGSEGV]
+	//EnableDominations 1         [$SIGSEGV]  (Andrew is cringe lol ecksdee sussy baka)
+	TextPrintTime 0 			[$SIGSEGV]
+	RobotLimit 23				[$SIGSEGV]
+	NoRomevisionCosmetics 1     [$SIGSEGV] //romevision sucks and screws with stuff deal with it.
 	
-	PointTemplates 
+	PointTemplates [$SIGSEGV]
 	{
 		SentryTank //Sentry Mini-tanks, also thanks hell-met for having mobo in dd so I can actually make this without asking for help
 		{
@@ -102,15 +102,15 @@ WaveSchedule
 			Item	"tf_weapon_flamethrower"
 			Item	"The Quick-Fix"
 			Action	FetchFlag
-			UseCustomModel	"models/bots/pyro_boss/bot_pyro_boss.mdl"	
-			FireWeapon 
+			UseCustomModel	"models/bots/pyro_boss/bot_pyro_boss.mdl"	[$SIGSEGV]
+			FireWeapon [$SIGSEGV]
 			{
 				Delay		10
 				Repeats		1
 				Duration	0.5
 				Type		"Special"
 			}
-			ItemModel 
+			ItemModel [$SIGSEGV]
 			{
 				ItemName	"The Quick-Fix"
 				Model		"models/weapons/c_models/c_flamethrower/c_flamethrower.mdl"
@@ -188,7 +188,7 @@ WaveSchedule
 			Item	"the black box"
 			Item	"the whirly warrior"
 			
-			RocketCustomParticle	flare_glow 
+			RocketCustomParticle	flare_glow [$SIGSEGV]
 			
 			ItemAttributes
 			{
@@ -532,7 +532,7 @@ WaveSchedule
 	
 	Wave // $1100+100 bonus = 2400
 	{
-		Explanation  
+		Explanation [$SIGSEGV] 
 		{
 			Line "{White}So more have fallen."
 			Line "{Grey}More have been scrapped."
@@ -699,7 +699,7 @@ WaveSchedule
 	}
 	Wave //
 	{
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line "{Grey}This is the border between the overworld and Hell."
 			Line "{White}This is where machines go when they die."
@@ -903,7 +903,7 @@ WaveSchedule
 	}
 	Wave 
 	{
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line "{Grey}We were special."
 			Line "{White}That's what we were told."
@@ -1121,7 +1121,7 @@ WaveSchedule
 					Item "MvM GateBot Light Soldier"
 					Item "The Gunboats"
 					Name "Scrapped Major"
-					UseMeleeThreatPrioritization 1 
+					UseMeleeThreatPrioritization 1 [$SIGSEGV]
 				
 					ItemAttributes
 					{
@@ -1161,7 +1161,7 @@ WaveSchedule
 					Item "The Gunboats"
 					Item "Tyrantium Helmet"
 					Name "Fallen Sergeant"
-					UseMeleeThreatPrioritization 1 
+					UseMeleeThreatPrioritization 1 [$SIGSEGV]
 				
 					ItemAttributes
 					{
@@ -1217,7 +1217,7 @@ WaveSchedule
 	}
 	Wave 
 	{
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line "{Grey}Some of us are not good enough."
 			Line "{White}Some of us were too good for him."
@@ -1252,7 +1252,7 @@ WaveSchedule
 				Speed 75
 				ClassIcon tank_vac_blast_lite
 				StartingPathTrackNode tank_path_blast_start
-                DisableSmokestack 1 
+                DisableSmokestack 1 [$SIGSEGV]
 
 				OnBombDroppedOutput
 				{
@@ -1373,7 +1373,7 @@ WaveSchedule
 				Speed 75
 				ClassIcon tank_vac_bullet_lite
 				StartingPathTrackNode tank_path_bullet_start
-                DisableSmokestack 1 
+                DisableSmokestack 1 [$SIGSEGV]
 
 				OnBombDroppedOutput
 				{
@@ -1460,7 +1460,7 @@ WaveSchedule
 	}
 	Wave // $1000 + 100 = 7800
 	{
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line "{grey}You better hope {blue}they {grey}find you."
 			Line "{grey}Before {red}the others {grey}find them."
@@ -1647,7 +1647,7 @@ WaveSchedule
 
 					AimOffset "0 0 200"
 
-                    RocketCustomParticle eyeboss_projectile 
+                    RocketCustomParticle eyeboss_projectile [$SIGSEGV]
 
                     AddCond
                     {
@@ -1785,7 +1785,7 @@ WaveSchedule
 	}
 	Wave // $1000 + 100 = 7400
 	{
-		Explanation 
+		Explanation [$SIGSEGV]
 		{
 			Line "{Grey}When {Blue}you {Grey}escape, don't stop."
 			Line "{Grey}When {Blue}you {Grey}escape, destroy {red}them."
@@ -1818,10 +1818,10 @@ WaveSchedule
 				Name	tankboss
 				SpawnTemplate "SentryTank"
 				Speed	150
-				DisableSmokestack 1 
-				MaxTurnRate 75  
-                Scale .4    
-				IsMiniBoss 0    
+				DisableSmokestack 1 [$SIGSEGV]
+				MaxTurnRate 75  [$SIGSEGV]
+                Scale .4    [$SIGSEGV]
+				IsMiniBoss 0    [$SIGSEGV]
 				ClassIcon tank_sentry
 				StartingPathTrackNode	tank_path_a_1
 				
@@ -1847,10 +1847,10 @@ WaveSchedule
 				Name	tankbosss
 				SpawnTemplate "SentryTank2"
 				Speed	150
-				DisableSmokestack 1 
-				MaxTurnRate 75  
-                Scale .4    
-				IsMiniBoss 0    
+				DisableSmokestack 1 [$SIGSEGV]
+				MaxTurnRate 75  [$SIGSEGV]
+                Scale .4    [$SIGSEGV]
+				IsMiniBoss 0    [$SIGSEGV]
 				ClassIcon tank_sentry
 				StartingPathTrackNode	tank_path_a_1
 				
@@ -1876,10 +1876,10 @@ WaveSchedule
 				Name	tankbossus
 				SpawnTemplate "SentryTank3"
 				Speed	150
-				DisableSmokestack 1 
-                Scale .4    
-				MaxTurnRate 75  
-				IsMiniBoss 0    
+				DisableSmokestack 1 [$SIGSEGV]
+                Scale .4    [$SIGSEGV]
+				MaxTurnRate 75  [$SIGSEGV]
+				IsMiniBoss 0    [$SIGSEGV]
 				ClassIcon tank_sentry
 				StartingPathTrackNode	tank_path_b_1
 				
@@ -1991,10 +1991,10 @@ WaveSchedule
 				Name	tankbossussy
 				SpawnTemplate "SentryTank"
 				Speed	150
-				DisableSmokestack 1 
-				MaxTurnRate 75  
-                Scale .4    
-				IsMiniBoss 0    
+				DisableSmokestack 1 [$SIGSEGV]
+				MaxTurnRate 75  [$SIGSEGV]
+                Scale .4    [$SIGSEGV]
+				IsMiniBoss 0    [$SIGSEGV]
 				ClassIcon tank_sentry
 				StartingPathTrackNode	tank_path_a_1
 				
@@ -2021,10 +2021,10 @@ WaveSchedule
 				Name	tankbossussier
 				SpawnTemplate "SentryTank2"
 				Speed	150
-				DisableSmokestack 1 
-				MaxTurnRate 75  
-                Scale .4    
-				IsMiniBoss 0    
+				DisableSmokestack 1 [$SIGSEGV]
+				MaxTurnRate 75  [$SIGSEGV]
+                Scale .4    [$SIGSEGV]
+				IsMiniBoss 0    [$SIGSEGV]
 				ClassIcon tank_sentry
 				StartingPathTrackNode	tank_path_a_1
 				
@@ -2051,10 +2051,10 @@ WaveSchedule
 				Name	tankbossussiest
 				SpawnTemplate "SentryTank3"
 				Speed	150
-				DisableSmokestack 1 
-                Scale .4    
-				MaxTurnRate 75  
-				IsMiniBoss 0    
+				DisableSmokestack 1 [$SIGSEGV]
+                Scale .4    [$SIGSEGV]
+				MaxTurnRate 75  [$SIGSEGV]
+				IsMiniBoss 0    [$SIGSEGV]
 				ClassIcon tank_sentry
 				StartingPathTrackNode	tank_path_b_1
 				
@@ -2148,7 +2148,7 @@ WaveSchedule
 					ClassIcon 	soldier_homing_nys
 					Name "Fallen Homing Soldier"
 					Item "The Cross-Comm Crash Helmet"
-					RocketCustomParticle eyeboss_projectile 
+					RocketCustomParticle eyeboss_projectile [$SIGSEGV]
 					HomingRockets
                     {
                         IgnoreDisguisedSpies 1
@@ -2189,10 +2189,10 @@ WaveSchedule
 				SpawnTemplate "SentryTank"
 				Speed	100
 				Skin 1
-				DisableSmokestack 1 
-				MaxTurnRate 75  
-                Scale .4    
-				IsMiniBoss 0    
+				DisableSmokestack 1 [$SIGSEGV]
+				MaxTurnRate 75  [$SIGSEGV]
+                Scale .4    [$SIGSEGV]
+				IsMiniBoss 0    [$SIGSEGV]
 				ClassIcon tank_sentry
 				StartingPathTrackNode	tank_path_a_1
 				
@@ -2220,10 +2220,10 @@ WaveSchedule
 				SpawnTemplate "SentryTank2"
 				Speed	100
 				Skin 1
-				DisableSmokestack 1 
-                Scale .4    
-				MaxTurnRate 75  
-				IsMiniBoss 0    
+				DisableSmokestack 1 [$SIGSEGV]
+                Scale .4    [$SIGSEGV]
+				MaxTurnRate 75  [$SIGSEGV]
+				IsMiniBoss 0    [$SIGSEGV]
 				ClassIcon tank_sentry
 				StartingPathTrackNode	tank_path_b_1
 				
@@ -2251,10 +2251,10 @@ WaveSchedule
 				SpawnTemplate "SentryTank3"
 				Speed	100
 				Skin 1
-				DisableSmokestack 1 
-                Scale .4    
-				MaxTurnRate 75  
-				IsMiniBoss 0    
+				DisableSmokestack 1 [$SIGSEGV]
+                Scale .4    [$SIGSEGV]
+				MaxTurnRate 75  [$SIGSEGV]
+				IsMiniBoss 0    [$SIGSEGV]
 				ClassIcon tank_sentry
 				StartingPathTrackNode	tank_path_b_1
 				

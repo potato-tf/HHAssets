@@ -465,7 +465,7 @@ WaveSchedule
 			ClassIcon medic_crossbow
 			WeaponRestrictions PrimaryOnly
 			Tag strip_medigun
-			StripItemSlot 1 
+			StripItemSlot 1 [$SIGSEGV]
 			Skill Hard
 			ItemAttributes
 			{
@@ -484,7 +484,7 @@ WaveSchedule
 			ClassIcon Medic_Crossbow_bleed_v2
 			WeaponRestrictions PrimaryOnly
 			Tag strip_medigun
-			StripItemSlot 1  
+			StripItemSlot 1 [$SIGSEGV] 
 			Skill Hard
 			ItemAttributes
 			{
@@ -971,7 +971,7 @@ WaveSchedule
 			ClassIcon medic_crossbow_bleed_v2
 			WeaponRestrictions PrimaryOnly
 			Tag strip_medigun
-			StripItemSlot 1 
+			StripItemSlot 1 [$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName "The Crusader's Crossbow"
@@ -1147,7 +1147,7 @@ WaveSchedule
 			ClassIcon medic_crossbow_burst
 			WeaponRestrictions PrimaryOnly
 			Tag strip_medigun
-			StripItemSlot 1 
+			StripItemSlot 1 [$SIGSEGV]
 			ItemAttributes {
 				ItemName "The Crusader's Crossbow"
 				"clip size bonus" 3
@@ -1170,7 +1170,7 @@ WaveSchedule
 			ClassIcon medic_crossbow_burst
 			WeaponRestrictions PrimaryOnly
 			Tag strip_medigun
-			StripItemSlot 1 
+			StripItemSlot 1 [$SIGSEGV]
 			Health 900
 			Scale 1.5
 			ItemAttributes {
@@ -1197,7 +1197,7 @@ WaveSchedule
 			ClassIcon medic_crossbow_burst_giant
 			WeaponRestrictions PrimaryOnly
 			Tag strip_medigun
-			StripItemSlot 1 
+			StripItemSlot 1 [$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName "The Crusader's Crossbow"
@@ -1725,7 +1725,7 @@ WaveSchedule
 			ClassIcon medic_meem
 			WeaponRestrictions PrimaryOnly
 			Tag strip_medigun
-			StripItemSlot 1 
+			StripItemSlot 1 [$SIGSEGV]
 			Scale 1.9
 			ItemAttributes
 			{

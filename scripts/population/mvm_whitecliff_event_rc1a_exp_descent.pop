@@ -276,7 +276,7 @@ Effort
         Name "paintrain_fix_template"
         ClassName "tf_weapon_cannon"
     }
-    PlayerShootTemplate   
+    PlayerShootTemplate [$SIGSEGV]  
 	{
 		Name rpg_shoottemplate
 		ItemName "The Liberty Launcher"
@@ -500,8 +500,8 @@ Effort
 					"attach particle effect" 150
 				}
                 Tag spell_crits
-				NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+				NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
                 AddCond { Name TF_COND_CRITBOOSTED_USER_BUFF }
                 SpawnTemplate "spellbook_bot_init"
             }
@@ -592,8 +592,8 @@ Effort
 					"attach particle effect" 149
 				}
                 Tag spell_haste
-				NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+				NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
                 AddCond { Name TF_COND_KING_BUFFED }
                 SpawnTemplate "spellbook_bot_init"
             }
@@ -788,8 +788,8 @@ Effort
             {
     			Template JURBot_Spell_Skeleton_One
                 Tag spell_underworld
-                NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+                NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
 			}
 		}
         WaveSpawn 
@@ -970,8 +970,8 @@ Effort
 					"attach particle effect" 147
 				}
                 Tag spell_regen
-				NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+				NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
                 AddCond { Name TF_COND_HALLOWEEN_QUICK_HEAL }
                 SpawnTemplate "regen_particle_template"
                 SpawnTemplate "spellbook_bot_init_flanker"
@@ -1052,8 +1052,8 @@ Effort
 					"attach particle effect" 149
 				}
                 Tag spell_haste
-				NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+				NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
                 AddCond { Name TF_COND_KING_BUFFED }
                 SpawnTemplate "spellbook_bot_init"
             }
@@ -1250,8 +1250,8 @@ Effort
 					"attach particle effect" 150
 				}
                 Tag spell_crits
-				NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+				NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
                 AddCond { Name TF_COND_CRITBOOSTED_USER_BUFF }
                 SpawnTemplate "spellbook_bot_init_flanker"
             }
@@ -1289,8 +1289,8 @@ Effort
             {
     			Template JURBot_Spell_Skeleton_Two
                 Tag spell_underworld
-                NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+                NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
 			}
 		}
         WaveSpawn 
@@ -1503,8 +1503,8 @@ Effort
 					"attach particle effect" 149
 				}
                 Tag spell_haste
-				NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+				NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
                 AddCond { Name TF_COND_KING_BUFFED }
                 SpawnTemplate "spellbook_bot_init_flanker"
             }
@@ -1738,8 +1738,8 @@ Effort
 					"attach particle effect" 147
 				}
                 Tag spell_regen
-				NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+				NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
                 AddCond { Name TF_COND_HALLOWEEN_QUICK_HEAL }
                 SpawnTemplate "regen_particle_template"
                 SpawnTemplate "spellbook_bot_init"
@@ -1760,8 +1760,8 @@ Effort
             {
     			Template JURBot_Spell_Skeleton_Three
                 Tag spell_underworld
-                NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+                NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
 			}
 		}
         WaveSpawn 
@@ -1876,8 +1876,8 @@ Effort
 					"attach particle effect" 150
 				}
                 Tag spell_crits
-				NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+				NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
                 AddCond { Name TF_COND_CRITBOOSTED_USER_BUFF }
                 SpawnTemplate "spellbook_bot_init_flanker"
             }
@@ -2037,7 +2037,7 @@ Effort
 			WaitBeforeStarting 20
 			WaitBetweenSpawns 5
 			Support 1
-			HalloweenBoss  // HalloweenBoss spawner. Spawns a boss
+			HalloweenBoss [$SIGSEGV] // HalloweenBoss spawner. Spawns a boss
 			{
 				FastUpdate 1 // Should do updates every tick (Default: 0)
 				BossType SkeletonNormal // Boss type: MONOCULUS, Merasmus, HHH, SkeletonSmall, SkeletonNormal, SkeletonKing. Skeletons default limit is 30 active at once unless modified by MaxActiveSkeletons
@@ -2286,8 +2286,8 @@ Effort
 					"attach particle effect" 150
 				}
                 Tag spell_crits
-				NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+				NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
                 AddCond { Name TF_COND_CRITBOOSTED_USER_BUFF }
                 SpawnTemplate "spellbook_bot_init"
                 SpawnTemplate "powerup_logic_critbuff_recipient"
@@ -2361,8 +2361,8 @@ Effort
 					"attach particle effect" 147
 				}
                 Tag spell_regen
-				NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+				NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
                 AddCond { Name TF_COND_HALLOWEEN_QUICK_HEAL }
                 SpawnTemplate "regen_particle_template"
                 SpawnTemplate "spellbook_bot_init_flanker"
@@ -2385,8 +2385,8 @@ Effort
             {
     			Template JURBot_Spell_Skeleton_Four
                 Tag spell_underworld
-                NoBombUpgrades 1 
-                SuppressTimedFetchFlag 1 
+                NoBombUpgrades 1 [$SIGSEGV]
+                SuppressTimedFetchFlag 1 [$SIGSEGV]
                 SpawnTemplate "powerup_logic_hastebuff_recipient"
                 SpawnTemplate "powerup_logic_critbuff_recipient"
 			}
@@ -2963,7 +2963,7 @@ Effort
                 Cooldown 2.96
                 Repeats 0
             } 
-            FireWeapon   //Periodically fires weapon
+            FireWeapon [$SIGSEGV]  //Periodically fires weapon
             {
                 Delay 8 //Time before the first fire input starts (Default: 10)
                 Cooldown 3 //Time between each fire input (Default: 10)
@@ -2984,7 +2984,7 @@ Effort
 	        	AttachToProjectile 1 
 	        	ItemName "The Huntsman"
 	        }
-            FireInput  
+            FireInput [$SIGSEGV] 
 			{
 				Target "!activator" //Entity name to use
 				Action "$ChangeAttributes" //Input to fire
@@ -2994,7 +2994,7 @@ Effort
 				Repeats 1 //How many times should the input be fired
 				IfHealthBelow 150000 //When set, the task activates only when the bot health is below specified value
 			}
-            FireInput  
+            FireInput [$SIGSEGV] 
 			{
 				Target "!activator" //Entity name to use
 				Action "$ChangeAttributes" //Input to fire
@@ -3004,7 +3004,7 @@ Effort
 				Repeats 1 //How many times should the input be fired
 				IfHealthBelow 100000 //When set, the task activates only when the bot health is below specified value
 			}
-            FireInput  
+            FireInput [$SIGSEGV] 
 			{
 				Target "!activator" //Entity name to use
 				Action "$ChangeAttributes" //Input to fire
@@ -3028,7 +3028,7 @@ Effort
 			        	ItemName    "The Spooky Sleeves"
 			        	Model models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl
 			        }
-                    //UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
+                    //UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
                 }
                 StageThree
                 {
@@ -3047,7 +3047,7 @@ Effort
 			        	ItemName    "Zombie Sniper"
 			        	Model models/empty.mdl
 			        }
-                    UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
+                    UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
                     Skin 1
                 }
                 StageFour
@@ -3072,7 +3072,7 @@ Effort
 			        //	ItemName    "The Triggerman's Tacticals"
 			        //	Model models/empty.mdl
 			        //}
-                    UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
+                    UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
                     Skin 4
                 }
             }
@@ -3149,7 +3149,7 @@ Effort
                 Model "models/empty.mdl"
             }
             Skin 4
-            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
+            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
         }
         JURBot_Spell_Skeleton_Two
         {
@@ -3176,7 +3176,7 @@ Effort
                 Model "models/empty.mdl"
             }
             Skin 4
-            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
+            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
         }
         JURBot_Spell_Skeleton_Three
         {
@@ -3209,7 +3209,7 @@ Effort
                 Model "models/empty.mdl"
             }
             Skin 4
-            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
+            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
         }
         JURBot_Spell_Skeleton_Four
         {
@@ -3244,7 +3244,7 @@ Effort
                 Model "models/empty.mdl"
             }
             Skin 4
-            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
+            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
         }
         JURBot_Hell_Skeleton_One
         {
@@ -3269,7 +3269,7 @@ Effort
                 Model "models/empty.mdl"
             }
             Skin 4
-            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
+            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
             SpawnTemplate "hellspawn_particle_template"
         }
         JURBot_Hell_Skeleton_Two
@@ -3296,7 +3296,7 @@ Effort
                 Model "models/empty.mdl"
             }
             Skin 4
-            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
+            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
             SpawnTemplate "hellspawn_particle_template"
         }
         JURBot_Hell_Skeleton_Three
@@ -3328,7 +3328,7 @@ Effort
                 Model "models/empty.mdl"
             }
             Skin 4
-            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
+            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
             SpawnTemplate "hellspawn_particle_template"
         }
         JURBot_Hell_Skeleton_Four
@@ -3362,7 +3362,7 @@ Effort
                 Model "models/empty.mdl"
             }
             Skin 4
-            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
+            UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
             SpawnTemplate "hellspawn_particle_template"
         }
         JURBot_Demo_Quickie_Burst
@@ -4022,7 +4022,7 @@ Effort
 			Item "The Gunboats"
             SpawnTemplate "haste_radius"
             SpawnTemplate "powerup_logic_hastebuff_recipient"
-            CustomWeaponModel 
+            CustomWeaponModel [$SIGSEGV]
 			{
 				Slot 1
 				Model "models/weapons/c_models/c_hastebanner/c_hastebanner.mdl"
@@ -4040,7 +4040,7 @@ Effort
 			Item "The Gunboats"
             SpawnTemplate "crit_radius"
             SpawnTemplate "powerup_logic_critbuff_recipient"
-            CustomWeaponModel 
+            CustomWeaponModel [$SIGSEGV]
 			{
 				Slot 1
 				Model "models/weapons/c_models/c_critbanner/c_critbanner.mdl"
@@ -4071,7 +4071,7 @@ Effort
 			Item "The Gunboats"
             SpawnTemplate "crit_radius"
             SpawnTemplate "powerup_logic_critbuff_recipient"
-            CustomWeaponModel 
+            CustomWeaponModel [$SIGSEGV]
 			{
 				Slot 1
 				Model "models/weapons/c_models/c_critbanner/c_critbanner.mdl"
