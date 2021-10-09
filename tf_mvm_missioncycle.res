@@ -96,8 +96,8 @@
 		}
 		"19"
 		{
-			"map"		"mvm_legerdemain_a5"
-			"popfile"		"mvm_legerdemain_a5"
+			"map"		"mvm_legerdemain_a5b"
+			"popfile"		"mvm_legerdemain_a5b"
 		}
 		"20"
 		{
