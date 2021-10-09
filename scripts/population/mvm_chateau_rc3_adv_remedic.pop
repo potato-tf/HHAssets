@@ -17,7 +17,7 @@
 #base robot_gatebot.pop
 population
 {
-	StartingCurrency	200
+	StartingCurrency	250
 	RespawnWaveTime	999
 	FixedRespawnWaveTime	Yes
 	CanBotsAttackWhileInSpawnRoom	no
@@ -93,22 +93,25 @@ population
 	{
 		ItemName "The Amputator"
 		"aoe heal chance" 80
-		"halloween fire rate bonus" 0.9
-		"special item description" "+10% fire rate"
+		"halloween fire rate bonus" 0.85
+		"special item description" "+15% fire rate"
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "The Solemn Vow"
 		"add cond when active" 42
-		"dmg penalty vs nonburning" 0.65
-		"damage bonus vs burning" 0.65
-		"special item description" "Do No Harm: When this weapon is out, you take 35% less damage, but also deal 35% less damage."
+		"dmg penalty vs nonburning" 0.75
+		"damage bonus vs burning" 0.75
+		"special item description" "When this weapon is out, you take 35% less damage, but also deal 25% less damage."
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "The Vita-Saw"
-		"add cond when active" 31
-		"special item description" "You do minicrits but you can't be healed when this weapon is out."
+		"melee cleave attack" 1
+		"dmg penalty vs nonburning" 1.35
+		"damage bonus vs burning" 1.35
+		"special item description" "Extremely sharp needle pierces through enemies and deals extra damage, but swing speed is heavily lowered."
+		"fire rate bonus" 2.33
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
@@ -131,21 +134,21 @@ population
 		ItemName "Festive Ubersaw"
 		"add uber charge on hit" 0.15
 		"damage bonus HIDDEN" 0.33
-		"special item description" "67% less damage and uber per hit"
+		"special item description" "67% less damage and uber per hit."
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "The Ubersaw"
 		"add uber charge on hit" 0.15
 		"damage bonus HIDDEN" 0.33
-		"special item description" "67% less damage and uber per hit"
+		"special item description" "67% less damage and uber per hit."
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "The Blutsauger"
 		"dmg penalty vs players" 0.85
 		"health drain" -4
-		"special item description" "Base regen and damage is decreased"
+		"special item description" "Base regen and damage is decreased."
 	}
 	ClassLimit [$SIGSEGV] //Limits the number of specified classes
 	{
@@ -1525,7 +1528,7 @@ population
 			Cap 1
 			Increment 1
 			description "Fire deadly beams at the cost of using 2% uber per shot"
-			Cost 150
+			Cost 200
             AllowedWeapons // Restricts upgrade to specified weapons
 			{
 				ItemName "The Blutsauger"
@@ -1536,7 +1539,7 @@ population
 			SecondaryAttributes
 			{
 			"override projectile type" 1
-			"damage bonus HIDDEN" 3.5
+			"damage bonus HIDDEN" 3.67
 			"ubercharge ammo" 2
 			"fire rate bonus HIDDEN" 3
 			"attach particle effect" 92
@@ -1567,12 +1570,12 @@ population
 			SecondaryAttributes
 			{
 		    "explosive bullets" 97
-			"damage bonus HIDDEN" 1.5
+			"damage bonus HIDDEN" 1.25
 			"override projectile type" 1
-			"fire rate bonus HIDDEN" 1.25
+			"fire rate bonus HIDDEN" 1.5
 			"maxammo primary reduced" -0.6
 			"clip size penalty" -0.75
-			"Reload time increased" 0.5
+			"Reload time increased" 0.4
 			}
 			DisallowedUpgrade
 			{
@@ -3634,7 +3637,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Start"
 					class heavy
-					scale 1.45
+					scale 1
 					health 4800
 					AlwaysGlow 1
 					tag no_reprogram
@@ -3673,7 +3676,7 @@ population
 			    {
 			    Template	T_TFBot_Giant_Boxing_Heavy
 			    SpawnTemplate "TeleChain_Continue"
-                    scale 1.4
+                    scale 1
 					health 3500
 					classicon heavy_zombie_lite
 					action mobber
@@ -3703,7 +3706,7 @@ population
 						"fire rate bonus"	0.7
 						"damage bonus"	0.6
 					}
-					scale 1.4
+					scale 1
 					health 3500
 					classicon heavy_zombie_lite
 					action mobber
@@ -3731,7 +3734,7 @@ population
 					SpawnTemplate "TeleChain_Continue"
 					Item	"the holiday punch"
 					Item	"tough guy's toque"
-					scale 1.4
+					scale 1
 					health 4000
 					classicon heavy_zombie_lite
 					action mobber
@@ -3757,7 +3760,7 @@ population
 					SpawnTemplate "TeleChain_Continue"
 					Item	"gold frying pan"
 					Item	"horseless headless horseman's head"
-					scale 1.4
+					scale 1
 					health 4000
 					classicon heavy_zombie_lite
 					action mobber
@@ -3781,7 +3784,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.4
+                    scale 1
 					health 4550
 					classicon heavy_zombie_lite
 					action mobber
@@ -3805,7 +3808,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.4
+                    scale 1
 					health 4000
 					classicon heavy_zombie_lite
 					action mobber
@@ -3829,7 +3832,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.4
+                    scale 1
 					health 3700
 					classicon heavy_zombie_lite
 					action mobber
@@ -3855,7 +3858,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.3
+                    scale 1
 					AlwaysGlow 1
 					health 3500
 					Attributes Miniboss
@@ -3889,7 +3892,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.4
+                    scale 1
 					AlwaysGlow 1
 					health 3700
 					classicon heavy_zombie_lite
@@ -3915,7 +3918,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.4
+                    scale 1
 					health 3800
 					classicon heavy_zombie_lite
 					action mobber
@@ -3940,7 +3943,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.4
+                    scale 1
 					health 3800
 					classicon heavy_zombie_lite
 					action mobber
@@ -3965,7 +3968,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.3
+                    scale 1
 					health 4000
 					classicon heavy_zombie_lite
 					action mobber
@@ -4005,7 +4008,7 @@ population
 			    {
 			    Template	T_TFBot_Giant_Boxing_Heavy
 			    SpawnTemplate "TeleChain_Continue"
-                    scale 1.4
+                    scale 1
 					health 3500
 					classicon heavy_zombie_lite
 					action mobber
@@ -4035,7 +4038,7 @@ population
 						"fire rate bonus"	0.7
 						"damage bonus"	0.6
 					}
-					scale 1.4
+					scale 1
 					health 3500
 					classicon heavy_zombie_lite
 					action mobber
@@ -4063,7 +4066,7 @@ population
 					SpawnTemplate "TeleChain_Continue"
 					Item	"the holiday punch"
 					Item	"tough guy's toque"
-					scale 1.4
+					scale 1
 					health 4000
 					classicon heavy_zombie_lite
 					action mobber
@@ -4089,7 +4092,7 @@ population
 					SpawnTemplate "TeleChain_Continue"
 					Item	"gold frying pan"
 					Item	"horseless headless horseman's head"
-					scale 1.4
+					scale 1
 					health 4000
 					classicon heavy_zombie_lite
 					action mobber
@@ -4113,7 +4116,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.4
+                    scale 1
 					health 3550
 					classicon heavy_zombie_lite
 					action mobber
@@ -4137,7 +4140,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.4
+                    scale 1
 					health 4000
 					classicon heavy_zombie_lite
 					action mobber
@@ -4161,7 +4164,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.4
+                    scale 1
 					health 3700
 					classicon heavy_zombie_lite
 					action mobber
@@ -4187,7 +4190,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.3
+                    scale 1
 					AlwaysGlow 1
 					health 3500
 					Attributes Miniboss
@@ -4221,7 +4224,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.4
+                    scale 1
 					AlwaysGlow 1
 					health 4500
 					classicon heavy_zombie_lite
@@ -4247,7 +4250,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.4
+                    scale 1
 					health 3800
 					classicon heavy_zombie_lite
 					action mobber
@@ -4272,7 +4275,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.4
+                    scale 1
 					health 3400
 					classicon heavy_zombie_lite
 					action mobber
@@ -4297,7 +4300,7 @@ population
 				{
 				    SpawnTemplate "TeleChain_Continue"
 					class heavy
-                    scale 1.3
+                    scale 1
 					health 3500
 					classicon heavy_zombie_lite
 					action mobber
@@ -4338,7 +4341,7 @@ population
 					action mobber
 					skill hard
 					Attributes miniboss
-					scale 1.4
+					scale 1
 					AlwaysGlow 1
 					health 5000
 					name "Weakened Regenerator"

@@ -14,12 +14,11 @@
 //Post-Judge notes
 
 //W1
-//- Make first GHeavy spawn after all gdemos are dead? Or after first 2 are dead?
+//- Lowered MaxActive of support scouts (8 -> 6), increased spawn time (0.75 -> 1.25)
 
-//Itemeio
-//- Nerf Liberty somewhat
-//- Added 25% fire rate penalty; nerfed damage down to +25%; increased acceleration.
-
+//W3
+//- Ditto (maybe no 2nd set of fan spawns?)
+//- Reduce Giant Uber duration to 6, health threshold to...1200?
 
 //Themed waves:
 //- Nautical Nightmares (FireWeapon)
@@ -28,6 +27,7 @@
 //- Bloodstained Bashing (blood botkiller bots!) 
 //- Honeycoated Horrors (the obligatory bee wave)
 //- Spatial Storm
+//- Cosmic Calamity
 
 // spawnbot - spawn bots in carrier
 
@@ -83,39 +83,14 @@
 // tank_path_drop0_a; tank_path_drop0_b; - spawns parachuting tanks that go down on ground, land after ~18 seconds and go on a/b path for usual tanks.
 // tank_path_drop1; - spawns parachuting tank close to hatch, that lands in ~16 seconds and proceeds to go towards the hatch.
 
-// It's best to have only 1 tank parachuting at the same time on drop0 or drop1. For reference, check the mission.
+// It's best to have only 1 tank parachuting at the same time on drop0 or drop1
 
 // tank_path_bullet_start_a tank_path_fire_start_a tank_path_blast_start_a - tank path a but used for vac tank spawns. please spawn tanks with names that match the path
 // tank_path_bullet_start_b tank_path_fire_start_b tank_path_blast_start_b - tank path b but used for vac tank spawns. please spawn tanks with names that match the path
 
 //"portal thing is wof_plane2.mdl and the sky aura is vortex_lakeside.mdl"
-//cool rising ghosts: "models/props_viaduct_event/ghost_cards01.mdl" --DONE (w6 only)
-//Spooky eyes in tunnel of tank -- DONE
 //cool hellerwern noise: ui\quest_turn_in_decode_halloween.wav
 //Blood for under doors: search "island" in props, or check mercenary park!
-
-//Map properties: --DONE
-//skybox sky_triage_01 | NEW: sky_harvest_night_01
-
-//light_environment stats:
-//brightness or light 248 197 139 400 | NEW: 133 101 159 275
-//ambient 153 159 187 200 | NEW: 114 100 151 57
-//sunSpreadAngle 5 | NEW: 3
-//pitch yaw roll 0 317 0
-//pitch -32
-
-//skybox_camera stats:
-//fogcolor 155 114 92 | NEW: 96 66 94
-// fogcolor2 91 71 79 | ditto
-// fogdir 1 0 0 | ditto
-// scale 16 | ditto
-// fogblend 0 | ditto
-// use_angles 0 | ditto
-
-//brightnessHdr -1 -1 -1 1
-//brightnessScaleHdr 1
-//ambientHdr -1 -1 -1 1
-//ambientScaleHdr 1
 
 #base robot_standard.pop
 #base robot_giant.pop
@@ -1609,13 +1584,13 @@ popuwashyon
 			Tag giant
 			CharacterAttributes
 			{
-				"bot medic uber health threshold" 2000
-				"bot medic uber deploy delay duration" 2
+				"bot medic uber health threshold" 1500
+				"bot medic uber deploy delay duration" 3
 			}
 			ItemAttributes
 			{
 				ItemName "Upgradeable TF_WEAPON_MEDIGUN"
-				// "uber duration bonus" -2 test to see if this is required
+				"uber duration bonus" -2
 				"ubercharge rate bonus" 8
 				"heal rate bonus" 75
 			}
@@ -1636,7 +1611,7 @@ popuwashyon
 			Class Scout
 			Skill Hard
 			Name "Hemoglobin Hunter Scout"
-			ClassIcon scout_cleaver
+			// ClassIcon scout_cleaver removed for consistent icons
 			Item "Blood Botkiller Scattergun Mk.I"
 			Item "The Flying Guillotine"
 			Item "Head Hunter"
@@ -3190,9 +3165,9 @@ popuwashyon
 			Name "Support"
 			WaitForAllDead "wave1b2"
 			Where spawnbot
-			WaitBetweenSpawns 0.75
-			TotalCount 8
-			MaxActive 8
+			WaitBetweenSpawns 1.25
+			TotalCount 6
+			MaxActive 6
 			SpawnCount 2
 			Support 1
 			TFBot
@@ -3776,6 +3751,11 @@ popuwashyon
 			MaxActive 2
 			SpawnCount 2
 			TotalCurrency 240
+			FirstSpawnOutput
+			{
+				Target limited_spawns_disable_a_relay
+				Action Trigger
+			}
 			Squad
 			{
 				TFBot
@@ -3807,7 +3787,8 @@ popuwashyon
 		{
 			Name "Support"
 			WaitForAllDead "wave3a2"
-			Where spawnbot_invasion
+			Where spawnbot_alt_limited_a
+			Where spawnbot_side_limited_a
 			WaitBeforeStarting 2
 			WaitBetweenSpawns 10
 			TotalCount 10
@@ -3820,21 +3801,22 @@ popuwashyon
 				Template Pest_Scout_Marker
 			}
 		}
-		WaveSpawn
-		{
-			Name "Support"
-			WaitForAllDead "wave3b2"
-			Where spawnbot
-			WaitBetweenSpawns 5
-			TotalCount 10
-			MaxActive 6
-			SpawnCount 2
-			Support 1
-			TFBot
-			{
-				Template Pest_Scout_Marker
-			}
-		}
+		// WaveSpawn
+		// {
+			// Name "Support"
+			// WaitForAllDead "wave3b2"
+			// Where spawnbot_alt_limited_b
+			// Where spawnbot_side_limited_b
+			// WaitBetweenSpawns 10
+			// TotalCount 10
+			// MaxActive 3
+			// SpawnCount 3
+			// Support 1
+			// TFBot
+			// {
+				// Template Pest_Scout_Marker
+			// }
+		// }
 	}
 	
 	// Wave 4 - Bloodstained Bashing
@@ -4240,6 +4222,7 @@ popuwashyon
 			Tank //blimp
             {
 				SpawnTemplate "BlimpBotTeleDest" [$SIGSEGV]
+				SpawnTemplate "colorer" [$SIGSEGV]
 				
                 Health 20000
 				Speed 85
@@ -4257,7 +4240,6 @@ popuwashyon
                 PingSound "npc\combine_gunship\ping_search.wav" [$SIGSEGV]
                 Name "tank"
                 StartingPathTrackNode "tank_path_blimp_1"
-				SpawnTemplate "colorer" [$SIGSEGV]
 
                 OnKilledOutput
                 {
@@ -4312,6 +4294,7 @@ popuwashyon
 		{
 			Name "wave5b2" //blimp spawns
 			WaitForAllDead "wave5b1"
+			WaitBeforeStarting 0.2
 			Where spawnbot
 			TotalCount 5
 			MaxActive 5

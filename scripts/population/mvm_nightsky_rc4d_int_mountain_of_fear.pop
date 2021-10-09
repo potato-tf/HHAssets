@@ -104,7 +104,6 @@ popuwashyon
 	EventPopfile Halloween
 	ZombiesNoWave666 1 [$SIGSEGV]
 	
-	
 	PointTemplates
 	{
 		target_hint_y
@@ -473,7 +472,7 @@ popuwashyon
 			WaitForAllDead "wave1a"
 			WaitBetweenSpawns 25
 			Where spawnbot
-			TotalCount 2
+			TotalCount 3
 			MaxActive 2
 			SpawnCount 1
 			TotalCurrency 240
@@ -1480,10 +1479,10 @@ popuwashyon
                 {
 					Target "-5910.6 -2280.9 150.1"
 					AimTarget "ClosestPlayer"
-                    WaitUntilDone 0
+                    WaitUntilDone 1
                     Delay 5
                     Repeats 1
-                    Duration 10
+                    Duration 1
                     OnDoneChangeAttributes "Attack"
                 }
 				FireWeapon [$SIGSEGV]
@@ -1599,6 +1598,7 @@ popuwashyon
 		{
 			Name "Support"
 			Where spawnbot_invasion
+			WaitBeforeStarting 1.5
 			WaitBetweenSpawns 8
 			TotalCount 10
 			MaxActive 4
@@ -1922,7 +1922,7 @@ popuwashyon
 							"paintkit_proto_def_index" 241
 							"faster reload rate" 0
 							"projectile lifetime" 15 //just in case some weird reflect shenanigan happens
-							"fire rate bonus" 0.12
+							"fire rate bonus" 0.1
 							"projectile speed decreased" 0.1
 							"projectile acceleration" 2200
 							"projectile acceleration time" 0.15 //total: 0.4 spd

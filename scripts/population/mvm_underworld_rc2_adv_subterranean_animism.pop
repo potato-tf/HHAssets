@@ -3,7 +3,7 @@
 // First ever making more serious mission
 
 // Big shoutout to:
-// Seelpit for providing the weaponswitch template.
+// Seelpit for providing the weaponswitch template. Extra bonus for creating Mountain of Fear.
 // PDA Expert for creating PointTemplate for the tanks.
 // Hellblade for creating Demonic Dominance. No Seriously, Demonic Dominance is an amazing mission i've tested.
 // Orinuse for helping stuff out in the missions channel.
@@ -12,7 +12,17 @@
 // Hell-met being tank expert reviewer.
 // Royal for being a god in PointTemplates and providing PointTemplates
 // Jurrell for providing conch effect and Spell Casting Wizard on the tanks
+// Remilia Scarlet for play testing and creating Scarlet Embodiment for Digital Directive
+// Retrowave for collabrating with the mission: Mountain of Faith
 // All the testers who played my mission.
+
+// Heavily inspired of the mission: Scarlet Embodiment, Mountain of Fear and Mountain of Faith
+// This is what i think i should use for the enemy types?
+//- Fairy: Playful/Fire (pyro), Mischievous (demo), Spring (medic)
+//Bullet Hell (heavy), Blitz (scout), Explosive (soldier), 
+//- Greater Fairy (minigiant)
+//- Kappa
+//- Tengu
 
 // Changelog of the test i've made: https://pastebin.com/dmT7rt2w
 #base robot_giant.pop
@@ -328,6 +338,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			Template T_TFBot_Sniper
 			Item "The Crone's Dome"
 			Item "The Merc's Muffler"
+			Name "Sharpshooter Fairy"
 		}
 	}
 	Mission // Sniper
@@ -344,6 +355,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			Template T_TFBot_Sniper
 			Item "The Crone's Dome"
 			Item "The Merc's Muffler"
+			Name "Sharpshooter Fairy"
 		}
 	}
 	Mission // Engineer
@@ -358,6 +370,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		TFBot
 		{
 			Template T_TFBot_Engineer_Sentry_Battle // Go for it Saki Kurokoma
+			Name "Kappa-tech Builder"
 			Item "The Texas Half-Pants"
 			Item "The Teufort Tooth Kicker"
 			ItemAttributes
@@ -385,12 +398,17 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		TFBot
 		{
 			Template	T_TFBot_Spy
+			Name "Hartmann's Youkai"
 			Item "Prinny Machete" // Give Koishi a real fucking big knife
 			Item "Madame Dixie"
 			ItemAttributes
 			{
 				ItemName "Madame Dixie"
 				"set item tint rgb" 1315860
+			}
+			CharacterAttributes
+			{
+				"cannot pick up intelligence" 1
 			}
 		}
 	}
@@ -400,7 +418,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 			Class Pyro
 			ClassIcon pyro_jug_axtinguisher
-			Name "Axtinguisher Pyro"
+			Name "Reaper Fairy"
 			Health 175
 			Skill Hard
 			WeaponRestrictions MeleeOnly
@@ -414,7 +432,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 			Class Pyro
 			ClassIcon pyro_volcano
-			Name "Volcano Fragment Pyro"
+			Name "Volcanic Fairy"
 			Health 175
 			Skill Hard
 			WeaponRestrictions MeleeOnly
@@ -435,7 +453,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 			Class Heavy
 			ClassIcon heavy_deflector
-			Name "Deflector Heavy"
+			Name "Bullet Hell Fairy"
 			Health 300
 			Skill Hard
 			Item "The U-clank-a"
@@ -454,7 +472,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Heater_Heavy // Haha Royal said i should rename it to Hooter heavy with the fucking Grand Duchess Tutu cosmetic
 		{
 			Class Heavyweapons
-			Name "Heater Heavy"
+			Name "Wanyudo"
 			ClassIcon heavy_heater
 			Skill Hard
 			Health 300
@@ -480,7 +498,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Kritz_Medic // Unused
 		{
 			Class Medic
-			Name "Kritzkrieg Medic"
+			Name "Spring Boosted"
 			ClassIcon medic_kritz
 			Health 150
 			Skill Expert
@@ -510,7 +528,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 			Class Soldier
 			ClassIcon soldier_directhit_buff // Thanks gettysburg for pointing that out i guess, I'm changing the icon back now
-			Name "Direct Hit Buff Soldier"
+			Name "Boosted Accurate Fairy"
 			Skill Expert
 			Health 200
 			Attributes SpawnWithFullCharge
@@ -528,7 +546,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 			Class Spy
 			ClassIcon spy_enforcer_nys
-			Name	"Enforcer Spy"
+			Name	"Piercing Raven"
 			WeaponRestrictions	PrimaryOnly
 			Skill Expert
 			Health 125
@@ -551,7 +569,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 			Class Soldier
 			ClassIcon soldier_fire_burst
-			Name "Burst Fire Ignite Soldier"
+			Name "Burst Fiery Fairy"
 			Skill Expert
 			Health 200
 			WeaponRestrictions PrimaryOnly
@@ -578,7 +596,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 			Class Soldier
 			ClassIcon soldier_fire_burst
-			Name "Giant Burst Ignite Soldier"
+			Name "Greater Burst Fiery Fairy"
 			Health 3800
 			Skill Expert
 			WeaponRestrictions PrimaryOnly
@@ -612,7 +630,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			Class Medic
 			ClassIcon medic_crossbow
 			Health 150
-			Name "Crossbow Medic"
+			Name "Warped Bolted Fairy"
 			//Cosmetics
 			Item "The Virus Doctor" 
 			//Item "The Byte'd Beak" // Just realised it also has a weird option with no hat and hat thing with the handsome devil
@@ -642,7 +660,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 			Class Sniper
 			ClassIcon sniper_bow_ignite
-			Name "Flame Tipped Bowman"
+			Name "Flame Tipped Archer"
 			Health 125
 			Skill Hard
 			WeaponRestrictions PrimaryOnly
@@ -666,7 +684,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 			Class Scout
 			ClassIcon scout_pop
-			Name "Soda Popper Scout"
+			Name "Hyped-up Tengu"
 			Skill Normal
 			Health 125
 			Item "The Soda Popper"
@@ -685,7 +703,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Demoman_Samurai_Rottenburg
 		{
 			Class Demoman
-			Name "Samurai Demo"
+			Name "Samurai Fairy"
 			ClassIcon demoknight_samurai
 			Skill Expert
 			Item "The Half-Zatoichi"
@@ -713,7 +731,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_GDragon_Pyro
 		{
 			Class Pyro
-			Name "Giant Dragon's Fury Pyro"
+			Name "Greater Furious Fairy"
 			ClassIcon pyro_dragonfury_giant
 			Skill Expert
 			Health 3300
@@ -740,7 +758,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Giant_Medic_Kritzkrieg // Unused
 		{
 			Class Medic
-			Name "Giant Kritz Medic"
+			Name "Mad Scientist"
 			ClassIcon medic_kritz_giant
 			Health 4500
 			Skill Expert
@@ -772,7 +790,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Giant_Shotgun_Heavy
 		{
 			Class Heavyweapons
-			Name "Giant Shotgun Heavy"
+			Name "Greater Armed Wizard"
 			ClassIcon heavy_shotgun
 			Skill Expert
 			Health 5000
@@ -803,7 +821,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Colonel_Barrage // No mission is complete without Colonel Barrage
 		{
 			Class Soldier
-			Name "Colonel Barrage"
+			Name "Greater Barraging Fairy"
 			ClassIcon soldier_barrage
 			Health 4000
 
@@ -838,7 +856,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Brain_Soldier // Kisume
 		{
 			Class Soldier
-			Name "Giant Charged Soldier"
+			Name "Greater Charged Fairy"
 			ClassIcon soldier_crit
 			Skill Normal
 			Health 3800
@@ -870,7 +888,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Cheerful_Overseer // Parsee Mizuhashi
 		{
 			Class Soldier
-			Name "Giant Concheror Soldier"
+			Name "Cheerful Hashihime"
 			ClassIcon soldier_conch_giant
 			Health 3800
 			Skill Expert
@@ -896,7 +914,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Jealous_Overseer //Parsee Mizuhashi Doppelganger
 		{
 			Class Soldier
-			Name "Giant Rapid Fire Soldier"
+			Name "Envious Hashihime"
 			ClassIcon soldier_spammer
 			Health 3800
 			Skill Expert
@@ -928,7 +946,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Cheerful_Overseer_Mk2 // Also Parsee Mizuhashi
 		{
 			Class Soldier
-			Name "Giant Concheror Soldier"
+			Name "Cheerful Hashihime"
 			ClassIcon soldier_banner_trio
 			Health 3800
 			Skill Expert
@@ -954,7 +972,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Enraged_Overseer_Mk2 // This Also Parsee Mizuhashi
 		{
 			Class Soldier
-			Name "Giant Buff Banner Soldier"
+			Name "Envious Hashihime"
 			ClassIcon soldier_banner_trio
 			Health 3800
 			Skill Expert
@@ -980,7 +998,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		T_TFBot_Jealous_Overseer_Mk2 // That also Parsee Mizuhashi
 		{
 			Class Soldier
-			Name "Giant Battalion Soldier"
+			Name "Menacing Hashihime"
 			ClassIcon soldier_banner_trio
 			Health 3800
 			Skill Expert
@@ -1007,7 +1025,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 			Class Heavyweapons
 			ClassIcon heavy_chief_fireball // Better Icon please
-			Name "Flaming Captain Punch"
+			Name "Greater Almighty Oni"
 			Health 25000 //20000 //30000
 			Skill Expert
 			Attributes "MiniBoss"
@@ -1064,7 +1082,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 			Class Heavyweapons
 			ClassIcon heavy_chief_fireball // Better Icon please
-			Name "Flaming Captain Punch"
+			Name "Greater Almighty Oni"
 			Health 7500
 			Skill Expert
 			Attributes "MiniBoss"
@@ -1120,7 +1138,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 			Class Pyro
 			ClassIcon pyro_flare_rain_nys
-			Name "Giant Rain Flare Pyro"
+			Name "Blazed Rainfall Kasha"
 			Skill Expert
 			WeaponRestrictions SecondaryOnly
 			Health 3300
@@ -1136,11 +1154,11 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			ItemAttributes
 			{
 				ItemName "The Flare Gun"
-				"damage bonus" 1.25
+				"damage bonus" 1.5
 				"fire rate bonus" 0.1
 				"faster reload rate" 0.8
-				"projectile spread angle penalty" 5
-				"projectile speed decreased" 0.3
+				"projectile spread angle penalty" 4
+				"projectile speed decreased" 0.6
 			}
 			CharacterAttributes
 			{
@@ -1149,14 +1167,13 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				"airblast vulnerability multiplier" 0.6
 				"override footstep sound set"	6
 			}
-			
 		}
 		T_TFBot_Nuclear_Yatagarasu // Utsuho Reiuji
 		{
 			SpawnTemplate "MeleePullout" // Aw look at you tiny little person body blocking me, Well Fuck you i'm pushing you away you little fucker.
 			Class Soldier
 			ClassIcon soldier_barrage_fire // Literally the last Icon that i can use
-			Name "Major Combustion" // Haha Cumbustion, gonna bust a nut
+			Name "Inferno Atomic Raven" // Haha Cumbustion, gonna bust a nut
 			Skill Expert
 			Health 40000 //60000 //45000
 			Scale 1.9
@@ -1181,7 +1198,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			ItemAttributes
 			{
 				ItemName "tf_weapon_rocketlauncher"
-				"damage bonus" 1.2
+				"damage bonus" 1.25
 				"projectile spread angle penalty" 13
 				"projectile speed increased" 0.35
 				"faster reload rate" 	0.25 //0.40//0.30
@@ -1196,6 +1213,8 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			ItemAttributes
 			{
 				ItemName "The Half-Zatoichi"
+				"damage bonus" 1.5
+				"melee range mulitplier" 1.25
 				"honorbound" 0 // Haha, No free melee kills for you.
 				"damage causes airblast" 1 // GO AWAY
 				"restore health on kill" 1.15 // Should only heal around 6000 hp
@@ -1217,7 +1236,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		{
 				Class Demoman
 				ClassIcon demoknight_fireball
-				Name "Spiritual Flame Demoknight" // Haha Spirits in Touhou, get it? You fight against spirits in a bullet hell game. Okay whatever you wouldn't understand anyways.
+				Name "Spiritual Flame Dullahan" // Haha Spirits in Touhou, get it? You fight against spirits in a bullet hell game. Okay whatever you wouldn't understand anyways.
 				Skill Expert
 				Health 3300
 				Attributes MiniBoss
@@ -1349,6 +1368,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Heavyweapons_Heavyweight_Champ_Fast
+					Name "Punchy Fairy"
 					Item "Pugilist's Protector"
 					Tag nav_prefer_main_front
 					Tag nav_prefer_main_back
@@ -1374,6 +1394,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickFix
+					Name "Spring Bringer"
 					Tag nav_prefer_main_back
 					Item "The Physician's Protector"
 					Item "The Surgeon's Stahlhelm"
@@ -1381,6 +1402,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickFix
+					Name "Spring Bringer"
 					Tag nav_prefer_main_back
 					Item "The Physician's Protector"
 					Item "The Surgeon's Stahlhelm"
@@ -1388,6 +1410,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickFix
+					Name "Spring Bringer"
 					Tag nav_prefer_main_back
 					Item "The Physician's Protector"
 					Item "The Surgeon's Stahlhelm"
@@ -1410,7 +1433,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				{
 				Template T_TFBot_Heavyweapons_Shotgun 
 				Skill Normal
-				Name "Shotgun Heavy"
+				Name "Armed Wizard"
 				Tag nav_prefer_main_back
 				Item "Point and Shoot"
 				Item "The All-Father"
@@ -1436,6 +1459,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickFix
+					Name "Spring Bringer"
 					Item "The Physician's Protector"
 					Item "The Surgeon's Stahlhelm"
 					Tag nav_prefer_main_back
@@ -1443,6 +1467,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickFix
+					Name "Spring Bringer"
 					Item "The Physician's Protector"
 					Item "The Surgeon's Stahlhelm"
 					Tag nav_prefer_main_back
@@ -1450,6 +1475,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickFix
+					Name "Spring Bringer"
 					Item "The Physician's Protector"
 					Item "The Surgeon's Stahlhelm"
 					Tag nav_prefer_main_back
@@ -1631,6 +1657,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Class Heavy
+					Name "Bullet Hell Fairy"
 					ClassIcon heavy
 					Health 300
 					Skill Easy
@@ -1654,9 +1681,11 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Giant_Scout_Fast 
+					Name "Hasty Tengu"
 					Tag nav_prefer_main_back
 					Item "Nugget Noggin"
 					Item "Fowl Fists"
+					Item "Talon Trotters"
 				}
 			}
 		}
@@ -1675,6 +1704,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			TFBot
 				{
 					Template T_TFBot_Soldier_Extended_Concheror
+					Name "Alleviate Explosive Fairy"
 					Tag nav_prefer_main_back
 					Item "Soldier Samurai Hat"
 					Item "The Shogun's Shoulder Guard"
@@ -1717,7 +1747,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				{
 					Class Pyro
 					ClassIcon pyro
-					Name "Pyro"
+					Name "Banished Junior Wizard"
 					Health 175
 					Skill Easy
 					WeaponRestrictions PrimaryOnly
@@ -1726,15 +1756,16 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 					Tag nav_prefer_main_front
 					Item 	"The Hot Case"
 					Item "The Seared Sorcerer"
-					ItemAttributes
-					{
-					ItemName "tf_weapon_flamethrower"
-					"airblast disabled" 1 // You don't need to add this since the pyro skill is set to easy anyways.
-					}
+					//ItemAttributes
+					//{
+					//ItemName "tf_weapon_flamethrower"
+					//"airblast disabled" 1 // You don't need to add this since the pyro skill is set to easy anyways.
+					//}
 				}
 				TFBot
 				{
 					Template T_TFBot_Sniper_Huntsman
+					Name "Archer Fairy"
 					Tag nav_prefer_main_back
 					Tag nav_prefer_main_front
 					Item "Holy Hunter"	
@@ -1744,6 +1775,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Sniper_Huntsman
+					Name "Archer Fairy"
 					Tag nav_prefer_main_back
 					Tag nav_prefer_main_front
 					Item "Holy Hunter"	
@@ -1767,6 +1799,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Demoman_Samurai
+					Name "Samurai Fairy"
 					Tag nav_prefer_main_back
 				}
 			}
@@ -1794,6 +1827,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Soldier_Extended_Concheror
+					Name "Alleviate Explosive Fairy"
 					Item "Soldier Samurai Hat"
 					Item "The Shogun's Shoulder Guard"
 					Tag nav_prefer_main_back
@@ -1801,6 +1835,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Soldier_Extended_Concheror
+					Name "Alleviate Explosive Fairy"
 					Item "Soldier Samurai Hat"
 					Item "The Shogun's Shoulder Guard"
 					Tag nav_prefer_main_back
@@ -1808,6 +1843,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Class Heavy
+					Name "Bullet Hell Fairy"
 					ClassIcon heavy
 					Health 300
 					Skill Easy
@@ -1817,6 +1853,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Class Heavy
+					Name "Bullet Hell Fairy"
 					ClassIcon heavy
 					Health 300
 					Skill Easy
@@ -1859,6 +1896,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 				Template T_TFBot_Demoman_Knight
+				Name "Dreadful Dullahan"
 				Tag nav_prefer_main_back
 				Tag nav_prefer_main_front
 				Item "The Tartan Shade"
@@ -2000,6 +2038,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Giant_Soldier_Extended_Buff_Banner
+					Name "Greater Boosted Fairy"
 					Tag nav_prefer_main_back
 					Item "Furious Fukaamigasa"
 					Item "The Shogun's Shoulder Guard"
@@ -2007,6 +2046,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Demo_Burst
+					Name "Bursty Mischievous Fairy"
 					Tag nav_prefer_main_back
 					Item "The Dark Age Defender"
 					Item "The Dark Falkirk Helm"
@@ -2015,6 +2055,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Demo_Burst
+					Name "Bursty Mischievous Fairy"
 					Tag nav_prefer_main_back
 					Item "The Dark Age Defender"
 					Item "The Dark Falkirk Helm"
@@ -2023,6 +2064,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Demo_Burst
+					Name "Bursty Mischievous Fairy"
 					Tag nav_prefer_main_back
 					Item "The Dark Age Defender"
 					Item "The Dark Falkirk Helm"
@@ -2031,6 +2073,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Demo_Burst
+					Name "Bursty Mischievous Fairy"
 					Tag nav_prefer_main_back
 					Item "The Dark Age Defender"
 					Item "The Dark Falkirk Helm"
@@ -2039,6 +2082,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Demo_Burst
+					Name "Bursty Mischievous Fairy"
 					Tag nav_prefer_main_back
 					Item "The Dark Age Defender"
 					Item "The Dark Falkirk Helm"
@@ -2062,6 +2106,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Giant_Demo_Burst
+					Name "Greater Mischievous Fairy"
 					Tag nav_prefer_main_back
 					Item "The Dark Age Defender"
 					Item "The Dark Falkirk Helm"
@@ -2106,7 +2151,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				{
 					Class Pyro
 					ClassIcon pyro_dragon_fury_swordstone
-					Name "Dragon's Fury Pyro"
+					Name "Furious Fairy"
 					Skill Normal
 					Health 175
 					WeaponRestrictions PrimaryOnly
@@ -2139,6 +2184,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Giant_Heavyweapons
+					Name "Greater Lotus Child"
 					Item "Hong Kong Cone"
 					Item "Bone-Cut Belt"
 					Tag nav_prefer_main_back
@@ -2146,6 +2192,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickUber
+					Name "Spring Bringer"
 					Tag nav_prefer_main_back
 					Item "Das Naggenvatcher"
 					Item "Practitioner's Processing Mask"
@@ -2153,6 +2200,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickUber
+					Name "Spring Bringer"
 					Tag nav_prefer_main_back
 					Item "Das Naggenvatcher"
 					Item "Practitioner's Processing Mask"
@@ -2160,6 +2208,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickUber
+					Name "Spring Bringer"
 					Tag nav_prefer_main_back
 					Item "Das Naggenvatcher"
 					Item "Practitioner's Processing Mask"
@@ -2182,6 +2231,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Heavyweapons_Fist
+					Name "Greater Punchy Oni"
 					Tag nav_prefer_main_back
 					Item "Handsome Devil"
 				}
@@ -2275,6 +2325,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 				Class Soldier
+				Name "Explosive Fairy"
 				Skill Normal
 				Item "Soldier Samurai Hat"
 				Item "The Shogun's Shoulder Guard"
@@ -2283,6 +2334,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 				Class Soldier
+				Name "Explosive Fairy"
 				Skill Easy
 				Item "Furious Fukaamigasa"
 				Item "The Shogun's Shoulder Guard"
@@ -2422,6 +2474,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 				Template T_TFBot_Giant_Pyro
+				Name "Banished Wizard"
 				Tag nav_prefer_main_front
 				Tag nav_prefer_main_back
 				Attributes AlwaysCrit
@@ -2431,6 +2484,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickUber
+					Name "Spring Bringer"
 					Tag	nav_prefer_main_back
 					Item "Das Naggenvatcher"
 					Item "Practitioner's Processing Mask"
@@ -2438,6 +2492,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickUber
+					Name "Spring Bringer"
 					Tag	nav_prefer_main_back
 					Item "Das Naggenvatcher"
 					Item "Practitioner's Processing Mask"
@@ -2445,6 +2500,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickUber
+					Name "Spring Bringer"
 					Tag	nav_prefer_main_back
 					Item "Das Naggenvatcher"
 					Item "Practitioner's Processing Mask"
@@ -2484,6 +2540,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Giant_Demoman
+					Name "Greater Mischievous Fairy"
 					Item "The Hood of Sorrows"
 					Item "The Gaelic Garb"
 					Item "The Tartantaloons"
@@ -2551,6 +2608,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickUber
+					Name "Spring Bringer"
 					Tag	nav_prefer_main_back
 					Item "Das Naggenvatcher"
 					Item "Practitioner's Processing Mask"
@@ -2558,6 +2616,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickUber
+					Name "Spring Bringer"
 					Tag	nav_prefer_main_back
 					Item "Das Naggenvatcher"
 					Item "Practitioner's Processing Mask"
@@ -2565,6 +2624,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickUber
+					Name "Spring Bringer"
 					Tag	nav_prefer_main_back
 					Item "Das Naggenvatcher"
 					Item "Practitioner's Processing Mask"
@@ -2587,6 +2647,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Giant_Heavyweapons_Deflector
+					Name "Greater Bullet Hell Fairy"
 					Item "The Tyurtlenek"
 					Item "The Mann of the House"
 					Tag nav_prefer_main_back
@@ -2595,7 +2656,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Giant_Medic_Regen
-					Name "Giant Regen Medic"
+					Name "Greater Regenerative Spring"
 					Tag nav_prefer_main_back
 					Item "The Surgeon's Stahlhelm"
 					Item "Das Metalmeatencasen"
@@ -2618,6 +2679,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			TFBot
 				{
 					Class Demoman
+					Name "Mischievous Fairy"
 					Health 175
 					Skill Hard
 					Item "The Chargin' Targe"
@@ -2696,6 +2758,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Soldier_Extended_Battalion
+					Name "Protective Explosive Fairy"
 					Skill Expert
 					Tag nav_prefer_main_back
 					Item "Hong Kong Cone"
@@ -2704,6 +2767,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Demo_Burst
+					Name "Bursty Mischievous Fairy"
 					Attributes AlwaysCrit
 					Tag nav_prefer_main_back
 					Item "The Dark Age Defender"
@@ -2727,6 +2791,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Giant_Scout_FAN
+					Name "Greater Offensive Tengu"
 					Item "Blizzard Britches"
 					Item "Airborne Attire"
 					Item "The Face Plante"
@@ -2773,6 +2838,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickUber
+					Name "Spring Bringer"
 					Tag	nav_prefer_main_back
 					Item "Das Naggenvatcher"
 					Item "Practitioner's Processing Mask"
@@ -2780,6 +2846,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickUber
+					Name "Spring Bringer"
 					Tag	nav_prefer_main_back
 					Item "Das Naggenvatcher"
 					Item "Practitioner's Processing Mask"
@@ -2787,6 +2854,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Medic_QuickUber
+					Name "Spring Bringer"
 					Tag	nav_prefer_main_back
 					Item "Das Naggenvatcher"
 					Item "Practitioner's Processing Mask"
@@ -2794,6 +2862,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Soldier_Extended_Battalion
+					Name "Protective Explosive Fairy"
 					Skill Expert
 					Tag nav_prefer_main_back
 					Item "Hong Kong Cone"
@@ -2802,6 +2871,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Soldier_Extended_Battalion
+					Name "Protective Explosive Fairy"
 					Skill Expert
 					Tag nav_prefer_main_back
 					Item "Hong Kong Cone"
@@ -2810,6 +2880,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Soldier_Extended_Battalion
+					Name "Protective Explosive Fairy"
 					Skill Expert
 					Tag nav_prefer_main_back
 					Item "Hong Kong Cone"
@@ -2887,7 +2958,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				{
 					Template T_TFBot_Heavyweapons_Heater
 					Tag nav_prefer_main_back
-					Name "Giant Heater Heavy"
+					Name "Greater Wanyudo"
 					Item "Pocket Medic"
 					Item "Mad Mask"
 					Item "The Bolshevik Biker"
@@ -2900,7 +2971,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Giant_Medic_Regen
-					Name "Giant Regen Medic"
+					Name "Greater Regenerative Spring"
 					Tag nav_prefer_main_back
 					Item "The Surgeon's Stahlhelm"
 					Item "Das Metalmeatencasen"
@@ -2944,7 +3015,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				{
 					Class Pyro
 					ClassIcon pyro_dragon_fury_swordstone
-					Name "Dragon's Fury Pyro"
+					Name "Furious Fairy"
 					Skill Hard
 					Health 175
 					WeaponRestrictions PrimaryOnly
@@ -2996,7 +3067,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
 			}
 		}
-		WaveSpawn // Cat Pyro
+		WaveSpawn // Cat Pyro + last squad
 		{
 			Name 5D-CatPyro
 			WaitForAllDead 5C-1-Heavy-Soldier
@@ -3015,7 +3086,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				{
 					Template T_TFBot_Heavyweapons_Heater
 					Tag nav_prefer_main_back
-					Name "Giant Heater Heavy"
+					Name "Greater Wanyudo"
 					Item "Pocket Medic"
 					Item "Mad Mask"
 					Item "The Bolshevik Biker"
@@ -3028,7 +3099,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Giant_Medic_Regen
-					Name "Giant Regen Medic"
+					Name "Greater Regenerative Spring"
 					Tag nav_prefer_main_back
 					Item "The Surgeon's Stahlhelm"
 					Item "Das Metalmeatencasen"
@@ -3288,7 +3359,6 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Plague_Doctor
-					Name "Crossbow Bleed Medic"
 					ClassIcon medic_crossbow_bleed_v2
 					ItemAttributes
 					{
@@ -3316,6 +3386,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Giant_Demo_Burst
+					Name "Greater Mischievous Fairy"
 					Attributes AlwaysCrit
 					Tag nav_prefer_main_back
 					Item "The Dark Age Defender"
@@ -3385,6 +3456,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Demo_Burst
+					Name "Bursty Mischievous Fairy"
 					Attributes AlwaysCrit
 					Tag nav_prefer_main_front
 					Tag nav_prefer_main_back
@@ -3460,6 +3532,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Soldier_Extended_Battalion
+					Name "Protective Explosive Fairy"
 					Tag nav_prefer_main_back
 					Tag nav_prefer_main_front
 					Item "Hong Kong Cone"
@@ -3482,6 +3555,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 				Template T_TFBot_Giant_Demo_Burst
+				Name "Greater Mischievous Fairy"
 				Attributes AlwaysCrit
 				Tag nav_prefer_main_back
 				Item "The Dark Age Defender"
@@ -3618,7 +3692,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Class Pyro
-					Name "Dragon's Fury Pyro"
+					Name "Furious Kasha"
 					ClassIcon pyro_dragon_fury_swordstone
 					Skill Hard
 					Health 175

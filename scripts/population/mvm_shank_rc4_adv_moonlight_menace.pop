@@ -1758,7 +1758,7 @@ tomboy
       {
         "origin" "1984 1984 99999"
         "targetname" "upper_text"
-        "message" "ROBOT FAMILY PATRIATCH, ELITE UNIT"
+        "message" "ROBOT FAMILY PATRIARCH, ELITE UNIT"
         "x" "-1"
         "y" "0.4"
         "spawnflags" "1"
@@ -1807,7 +1807,7 @@ tomboy
       {
         "origin" "1984 1984 99999"
         "targetname" "upper_text"
-        "message" "ROBOT FAMILY PATRIATCH, ELITE UNIT"
+        "message" "ROBOT FAMILY PATRIARCH, ELITE UNIT"
         "x" "-1"
         "y" "0.4"
         "spawnflags" "1"
@@ -3378,6 +3378,22 @@ tomboy
         Target "axtinguisher_checker"
 				Action "Trigger"
 				Delay 0.1
+      }
+
+      OnParentKilledOutput 
+      {
+        Target "!activator"
+        Action "$RemoveItemAttribute"
+        Param "damage bonus|1"
+        Delay 0
+      }
+
+      OnParentKilledOutput 
+      {
+        Target "!activator"
+        Action "$RemoveItemAttribute"
+        Param "damage bonus|2"
+        Delay 0
       }
 
   		filter_tf_condition
@@ -6393,7 +6409,7 @@ tomboy
       //Line "{FFD700}The B.A.S.E Jumper{FFFFFF}- While parachuting: grants homing rocket on primary weapon (Soldier only)"
       Line "{FFD700}The Candy Cane {FFFFFF}- On kill with any weapon: Adds stack. Each stack grants you and teammates +3% passive ammo regen up to a cap of 30% (effect will only be active for teammates when they're within 1000 hammer units)"
       Line "{FFD700}The Mantreads {FFFFFF}- On landing after a rocket jump: deal explosive damage in a 150 units radius, explosive landing damage is increased the longer you're airborne after a rocket jump"
-      Line "{FFD700}The Degreaser {FFFFFF}- +75% damage bonus on secondary weapon,  +125% damage bonus on melee weapon (+150% damage bonus with {FFD700}The Axtinguisher{FFFFFF})"
+      Line "{FFD700}The Degreaser {FFFFFF}- +75% damage bonus on secondary weapon,  +125% damage bonus on melee weapon (+150% damage bonus with {FFD700}The Axtinguisher{FFFFFF}). 90% damage penalty on primary"
       Line "{FFD700}The Ullapool Caber {FFFFFF}- Turns you into a Sentry Buster with increased speed, 800 health and reduced push force. Taunt to detonate. Detonation reverts you back to a normal Demoman with temporal uber and speed boost"
       //Line "{FFD700}The Huo-Long Heater {FFFFFF}- Fires a flare projectile every 6 seconds while shooting"
       Line "{FFD700}The Natascha {FFFFFF}- Deal damage to build Beserk. Taunt to activate Berserk and gain health on hit for 10 seconds"

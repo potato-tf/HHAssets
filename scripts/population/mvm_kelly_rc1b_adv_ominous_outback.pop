@@ -1373,7 +1373,7 @@ Wave	// WAVE 5
 				{
 				ClassIcon	soldier_nuker
 			WeaponRestrictions	PrimaryOnly
-			Health	30000
+			Health	20000
 			Skill	Expert
 			Name	"Former Hell Raiser"  //reference to Okuu from Touhou project 11
 			Class	Soldier
@@ -1870,7 +1870,7 @@ Item "Larrikin Robin"
 				TFBot
 				{
 					ClassIcon	heavy_deflector_fire
-					Health	45000
+					Health	30000
 					Name	"Rising Phoenix"
 					Class	HeavyWeapons
 					Scale 1.8
@@ -1944,7 +1944,7 @@ Item "Larrikin Robin"
 		}
 		WaveSpawn
 		{
-			Name wave6firesquad
+			Name wave6c_support
                         WaitForAllDead	wave6b
 			TotalCount	50
 			MaxActive	4
