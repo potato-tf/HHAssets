@@ -2,7 +2,7 @@
 
 WaveSchedule
 {
-	PointTemplates [$SIGSEGV]
+	PointTemplates 
 	{
 		WheelOfFate
 		{

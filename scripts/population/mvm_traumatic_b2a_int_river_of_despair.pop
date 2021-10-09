@@ -126,7 +126,7 @@ ZombieSchedule
         Z	"117"        
     }
 	
-    PointTemplates [$SIGSEGV] // purely for color tank
+    PointTemplates  // purely for color tank
     {
         Tank_Ghost
         {

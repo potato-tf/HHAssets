@@ -17,129 +17,129 @@ WaveSchedule
 	CanBotsAttackWhileInSpawnRoom 	Yes
 	//EventPopfile					Halloween
 
-	BotsAreHumans 1 					[$SIGSEGV]
-	BuybacksPerWave 0 					[$SIGSEGV]
-	BodyPartScaleSpeed 26 				[$SIGSEGV]
-	BotHumansHaveRobotVoice 1 			[$SIGSEGV]
-	BluHumanFlagCapture 0				[$SIGSEGV]
-	BluHumanFlagPickup 0				[$SIGSEGV]
-	DeathPenalty 250 					[$SIGSEGV]
-	DisplayRobotDeathNotice 1 			[$SIGSEGV]
-	ForceHoliday 2 						[$SIGSEGV]
-	ForceRobotBleed 1					[$SIGSEGV]
-	FixedBuybacks 1						[$SIGSEGV]
-	FlagEscortCountOffset -4 			[$SIGSEGV]
-	FixSetCustomModelInput 1 			[$SIGSEGV]
-	HHHNoControlPointLogic 1			[$SIGSEGV]
-	HHHNonSolidToPlayers 1				[$SIGSEGV]
-	HHHHealthPerPlayer 0				[$SIGSEGV]
-	HHHChaseRange 9999					[$SIGSEGV]
-	HHHQuitRange 10000					[$SIGSEGV]
-	HHHHealthBase 5000 					[$SIGSEGV]
-	HHHChaseDuration 9999				[$SIGSEGV]
-	HealOnKillOverhealMelee 0			[$SIGSEGV]
-	MaxSpeedLimit 1337 					[$SIGSEGV]
-	MaxSpectators 0 					[$SIGSEGV]
-	MinibossSentrySingleKill 1 			[$SIGSEGV]
-	MaxActiveSkeletons 26 				[$SIGSEGV]
-	NoJoinMidwave 1 					[$SIGSEGV]
-	NoReanimators 1						[$SIGSEGV]
-	NoHolidayPickups 1					[$SIGSEGV]
-	NoThrillerTaunt 1 					[$SIGSEGV]
-	NoRomevisionCosmetics 1 			[$SIGSEGV]
-	RobotLimit 26						[$SIGSEGV]
-	RemoveGrapplingHooks 1.5			[$SIGSEGV]
-	SandmanStun 1 						[$SIGSEGV] 
-	StandableHeads 1 					[$SIGSEGV]
-	SniperAllowHeadshots 1 				[$SIGSEGV]
-	TextPrintTime 0 					[$SIGSEGV] 
-	WaveStartCountdown 3				[$SIGSEGV]
+	BotsAreHumans 1 					
+	BuybacksPerWave 0 					
+	BodyPartScaleSpeed 26 				
+	BotHumansHaveRobotVoice 1 			
+	BluHumanFlagCapture 0				
+	BluHumanFlagPickup 0				
+	DeathPenalty 250 					
+	DisplayRobotDeathNotice 1 			
+	ForceHoliday 2 						
+	ForceRobotBleed 1					
+	FixedBuybacks 1						
+	FlagEscortCountOffset -4 			
+	FixSetCustomModelInput 1 			
+	HHHNoControlPointLogic 1			
+	HHHNonSolidToPlayers 1				
+	HHHHealthPerPlayer 0				
+	HHHChaseRange 9999					
+	HHHQuitRange 10000					
+	HHHHealthBase 5000 					
+	HHHChaseDuration 9999				
+	HealOnKillOverhealMelee 0			
+	MaxSpeedLimit 1337 					
+	MaxSpectators 0 					
+	MinibossSentrySingleKill 1 			
+	MaxActiveSkeletons 26 				
+	NoJoinMidwave 1 					
+	NoReanimators 1						
+	NoHolidayPickups 1					
+	NoThrillerTaunt 1 					
+	NoRomevisionCosmetics 1 			
+	RobotLimit 26						
+	RemoveGrapplingHooks 1.5			
+	SandmanStun 1 						 
+	StandableHeads 1 					
+	SniperAllowHeadshots 1 				
+	TextPrintTime 0 					 
+	WaveStartCountdown 3				
 	
-	PrecacheSound "trespasser/ap_rotor4.wav" 								[$SIGSEGV]
-	PrecacheSound "trespasser/SKELT05.mp3" 									[$SIGSEGV]
-	PrecacheSound "trespasser/SKELT03.mp3" 									[$SIGSEGV]
-	PrecacheSound "trespasser/aaa2.wav" 									[$SIGSEGV]
-	PrecacheSound "trespasser/dsclaw.wav" 									[$SIGSEGV]
-	PrecacheSound "trespasser/corrupt1.wav" 								[$SIGSEGV]
-	PrecacheSound "trespasser/corrupt2.wav" 								[$SIGSEGV]
-	PrecacheSound "trespasser/corrupt3.wav" 								[$SIGSEGV]
-	PrecacheSound "trespasser/corrupt4.wav" 								[$SIGSEGV]
-	PrecacheSound "trespasser/bullethitflesh1.wav" 							[$SIGSEGV]
-	PrecacheSound "trespasser/de_shot1.wav" 								[$SIGSEGV]
-	PrecacheSound "trespasser/mp40f1.wav" 									[$SIGSEGV]
-	PrecacheSound "trespasser/tank_fire_07.wav" 							[$SIGSEGV]
-	PrecacheSound "trespasser/tank_yell_10.wav" 							[$SIGSEGV]
-	PrecacheSound "trespasser/zombierobotest.mp3" 							[$SIGSEGV]
-	PrecacheSound "trespasser/zombiefinalequiet.mp3" 						[$SIGSEGV]
-	PrecacheSound "trespasser/zombieintroquiet.mp3" 						[$SIGSEGV]
-	PrecacheSound "trespasser/zombiewait2.mp3" 								[$SIGSEGV]
+	PrecacheSound "trespasser/ap_rotor4.wav" 								
+	PrecacheSound "trespasser/SKELT05.mp3" 									
+	PrecacheSound "trespasser/SKELT03.mp3" 									
+	PrecacheSound "trespasser/aaa2.wav" 									
+	PrecacheSound "trespasser/dsclaw.wav" 									
+	PrecacheSound "trespasser/corrupt1.wav" 								
+	PrecacheSound "trespasser/corrupt2.wav" 								
+	PrecacheSound "trespasser/corrupt3.wav" 								
+	PrecacheSound "trespasser/corrupt4.wav" 								
+	PrecacheSound "trespasser/bullethitflesh1.wav" 							
+	PrecacheSound "trespasser/de_shot1.wav" 								
+	PrecacheSound "trespasser/mp40f1.wav" 									
+	PrecacheSound "trespasser/tank_fire_07.wav" 							
+	PrecacheSound "trespasser/tank_yell_10.wav" 							
+	PrecacheSound "trespasser/zombierobotest.mp3" 							
+	PrecacheSound "trespasser/zombiefinalequiet.mp3" 						
+	PrecacheSound "trespasser/zombieintroquiet.mp3" 						
+	PrecacheSound "trespasser/zombiewait2.mp3" 								
 
-	PrecacheModel "models/Bornacle.mdl"										[$SIGSEGV]
-	PrecacheModel "models/bots/soldier/bot_soldier_gibby.mdl"				[$SIGSEGV]
-	PrecacheModel "models/bots/soldier_boss/bot_soldier_boss_gibby.mdl"		[$SIGSEGV]
-	PrecacheModel "models/bots/heavy/bot_heavy_gibby.mdl"					[$SIGSEGV]
-	PrecacheModel "models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl"	[$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_tank_color.mdl"				[$SIGSEGV]
-	PrecacheModel "models/tf2enhancedmodels/cargoplane_enh.mdl"				[$SIGSEGV]
-	PrecacheModel "models/weapons/c_models/c_rapidfire/c_rapidfire_1.mdl"						[$SIGSEGV]
-	PrecacheModel "models/workshop/weapons/c_models/c_xms_gloves/c_xms_gloves_ushanka.mdl"		[$SIGSEGV]
-	PrecacheModel "models/weapons/c_models/c_the_bolshevik_bomber/c_the_bolshevik_bomber_1.mdl"	[$SIGSEGV]
+	PrecacheModel "models/Bornacle.mdl"										
+	PrecacheModel "models/bots/soldier/bot_soldier_gibby.mdl"				
+	PrecacheModel "models/bots/soldier_boss/bot_soldier_boss_gibby.mdl"		
+	PrecacheModel "models/bots/heavy/bot_heavy_gibby.mdl"					
+	PrecacheModel "models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl"	
+	PrecacheModel "models/bots/boss_bot/boss_tank_color.mdl"				
+	PrecacheModel "models/tf2enhancedmodels/cargoplane_enh.mdl"				
+	PrecacheModel "models/weapons/c_models/c_rapidfire/c_rapidfire_1.mdl"						
+	PrecacheModel "models/workshop/weapons/c_models/c_xms_gloves/c_xms_gloves_ushanka.mdl"		
+	PrecacheModel "models/weapons/c_models/c_the_bolshevik_bomber/c_the_bolshevik_bomber_1.mdl"	
 
 	//Custom Shop
-	CustomUpgradesFile "mvm_upgrades_trespasser.txt"					[$SIGSEGV]
+	CustomUpgradesFile "mvm_upgrades_trespasser.txt"					
 
-	DisableSound "heavy_mvm_giant_robot01"								[$SIGSEGV]
-	DisableSound "heavy_mvm_giant_robot02"								[$SIGSEGV]
-	DisableSound "heavy_mvm_giant_robot03"								[$SIGSEGV]
-	DisableSound "heavy_mvm_giant_robot04"								[$SIGSEGV]
-	DisableSound "engineer_mvm_giant_robot01"							[$SIGSEGV]
-	DisableSound "engineer_mvm_giant_robot02"							[$SIGSEGV]
-	DisableSound "engineer_mvm_giant_robot03"							[$SIGSEGV]
-	DisableSound "soldier_mvm_giant_robot01"							[$SIGSEGV]
-	DisableSound "soldier_mvm_giant_robot02"							[$SIGSEGV]
-	DisableSound "soldier_mvm_giant_robot03"							[$SIGSEGV]
-	DisableSound "soldier_mvm_giant_robot04"							[$SIGSEGV]
-	DisableSound "medic_mvm_giant_robot01"								[$SIGSEGV]
-	DisableSound "medic_mvm_giant_robot02"								[$SIGSEGV]
-	DisableSound "medic_mvm_giant_robot03"								[$SIGSEGV]
-	DisableSound "music.mvm_end_last_wave"								[$SIGSEGV]
-	DisableSound "music.mvm_end_mid_wave"								[$SIGSEGV]
-	DisableSound "music.mvm_end_tank_wave"								[$SIGSEGV]
-	DisableSound "music.mvm_end_wave"									[$SIGSEGV]
-	DisableSound "music.mvm_lost_wave"									[$SIGSEGV]
-	DisableSound "music.mvm_start_last_wave"							[$SIGSEGV]
-	DisableSound "music.mvm_start_mid_wave"								[$SIGSEGV]
-	DisableSound "music.mvm_start_tank_wave"							[$SIGSEGV]
-	DisableSound "music.mvm_start_wave"									[$SIGSEGV]
-	DisableSound "Announcer.MVM_Get_To_Upgrade"							[$SIGSEGV]
-	DisableSound "Announcer.MVM_Spy_Alert" 								[$SIGSEGV]
-	DisableSound "Announcer.mvm_spybot_death"							[$SIGSEGV]
-	DisableSound "Announcer.mvm_spybot_death_all"						[$SIGSEGV]
-	DisableSound "Announcer.MVM_First_Wave_Start"						[$SIGSEGV]
-	DisableSound "Announcer.MVM_Wave_Start"								[$SIGSEGV]
-	DisableSound "Announcer.MVM_Wave_End"								[$SIGSEGV]
-	DisableSound "Announcer.MVM_Wave_Lose"								[$SIGSEGV]
-	DisableSound "Announcer.MVM_Final_Wave_Start"						[$SIGSEGV]	
-	DisableSound "Announcer.MVM_Final_Wave_End"							[$SIGSEGV]
-	DisableSound "Announcer.MVM_Robots_Planted"							[$SIGSEGV]
-	DisableSound "Announcer.MVM_All_Dead"								[$SIGSEGV]
-	DisableSound "Announcer.MVM_Sentry_Buster_Alert"					[$SIGSEGV]
-	DisableSound "Announcer.MVM_Sentry_Buster_Alert_Another"			[$SIGSEGV]
-	DisableSound "Announcer.MVM_General_Wave_Start"						[$SIGSEGV]
-	DisableSound "Announcer.MVM_Game_Over_Loss"							[$SIGSEGV]
-	DisableSound "Announcer.MVM_Tank_Planted"							[$SIGSEGV]
-	DisableSound "Announcer.MVM_Tank_Alert_Another"						[$SIGSEGV]
-	DisableSound "Announcer.MVM_Tank_Alert_Multiple"					[$SIGSEGV]
-	DisableSound "Announcer.MVM_Tank_Alert_Halfway"						[$SIGSEGV]
-	DisableSound "Announcer.MVM_Tank_Alert_Halfway_Multiple"			[$SIGSEGV]
-	DisableSound "Announcer.MVM_Tank_Alert_Near_Hatch"					[$SIGSEGV]
-	DisableSound "Announcer.MVM_Tank_Alert_Deploying"					[$SIGSEGV]
-	//DisableSound "Announcer.MVM_Tank_Alert_Spawn"						[$SIGSEGV]
-	//DisableSound "Announcer.MVM_Bomb_Alert_Entered"					[$SIGSEGV]
-	//DisableSound "Announcer.MVM_Bomb_Alert_Near_Hatch"				[$SIGSEGV]
-	//DisableSound "Announcer.MVM_Bomb_Alert_Deploying"					[$SIGSEGV]
+	DisableSound "heavy_mvm_giant_robot01"								
+	DisableSound "heavy_mvm_giant_robot02"								
+	DisableSound "heavy_mvm_giant_robot03"								
+	DisableSound "heavy_mvm_giant_robot04"								
+	DisableSound "engineer_mvm_giant_robot01"							
+	DisableSound "engineer_mvm_giant_robot02"							
+	DisableSound "engineer_mvm_giant_robot03"							
+	DisableSound "soldier_mvm_giant_robot01"							
+	DisableSound "soldier_mvm_giant_robot02"							
+	DisableSound "soldier_mvm_giant_robot03"							
+	DisableSound "soldier_mvm_giant_robot04"							
+	DisableSound "medic_mvm_giant_robot01"								
+	DisableSound "medic_mvm_giant_robot02"								
+	DisableSound "medic_mvm_giant_robot03"								
+	DisableSound "music.mvm_end_last_wave"								
+	DisableSound "music.mvm_end_mid_wave"								
+	DisableSound "music.mvm_end_tank_wave"								
+	DisableSound "music.mvm_end_wave"									
+	DisableSound "music.mvm_lost_wave"									
+	DisableSound "music.mvm_start_last_wave"							
+	DisableSound "music.mvm_start_mid_wave"								
+	DisableSound "music.mvm_start_tank_wave"							
+	DisableSound "music.mvm_start_wave"									
+	DisableSound "Announcer.MVM_Get_To_Upgrade"							
+	DisableSound "Announcer.MVM_Spy_Alert" 								
+	DisableSound "Announcer.mvm_spybot_death"							
+	DisableSound "Announcer.mvm_spybot_death_all"						
+	DisableSound "Announcer.MVM_First_Wave_Start"						
+	DisableSound "Announcer.MVM_Wave_Start"								
+	DisableSound "Announcer.MVM_Wave_End"								
+	DisableSound "Announcer.MVM_Wave_Lose"								
+	DisableSound "Announcer.MVM_Final_Wave_Start"							
+	DisableSound "Announcer.MVM_Final_Wave_End"							
+	DisableSound "Announcer.MVM_Robots_Planted"							
+	DisableSound "Announcer.MVM_All_Dead"								
+	DisableSound "Announcer.MVM_Sentry_Buster_Alert"					
+	DisableSound "Announcer.MVM_Sentry_Buster_Alert_Another"			
+	DisableSound "Announcer.MVM_General_Wave_Start"						
+	DisableSound "Announcer.MVM_Game_Over_Loss"							
+	DisableSound "Announcer.MVM_Tank_Planted"							
+	DisableSound "Announcer.MVM_Tank_Alert_Another"						
+	DisableSound "Announcer.MVM_Tank_Alert_Multiple"					
+	DisableSound "Announcer.MVM_Tank_Alert_Halfway"						
+	DisableSound "Announcer.MVM_Tank_Alert_Halfway_Multiple"			
+	DisableSound "Announcer.MVM_Tank_Alert_Near_Hatch"					
+	DisableSound "Announcer.MVM_Tank_Alert_Deploying"					
+	//DisableSound "Announcer.MVM_Tank_Alert_Spawn"						
+	//DisableSound "Announcer.MVM_Bomb_Alert_Entered"					
+	//DisableSound "Announcer.MVM_Bomb_Alert_Near_Hatch"				
+	//DisableSound "Announcer.MVM_Bomb_Alert_Deploying"					
 
-	ExtraTankPath [$SIGSEGV]
+	ExtraTankPath 
     {
         Name tank_path
         Node "1720 2840 324"
@@ -158,25 +158,25 @@ WaveSchedule
 		Node "0 655 4"
     }
 
-	FlagResetTime [$SIGSEGV]
+	FlagResetTime 
     {
         Name  "flag1_bomb"
         ResetTime 600
     }
 	
-	FlagResetTime [$SIGSEGV]
+	FlagResetTime 
     {
         Name  "flag2_bomb"
         ResetTime 600
     }
 	
-	FlagResetTime [$SIGSEGV]
+	FlagResetTime 
     {
         Name  "flag3_bomb"
         ResetTime 600
     }
 
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_red1"
         TeamNum 3
@@ -185,7 +185,7 @@ WaveSchedule
         Z	"0"        
     }
 
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_red2"
         TeamNum 3
@@ -194,7 +194,7 @@ WaveSchedule
         Z	"0"        
     }
 	
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_red3"
         TeamNum 3
@@ -203,7 +203,7 @@ WaveSchedule
         Z	"0"        
     }
 
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_red4"
         TeamNum 3
@@ -212,7 +212,7 @@ WaveSchedule
         Z	"250"        
     }
 
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_flood"
         TeamNum 3
@@ -221,7 +221,7 @@ WaveSchedule
         Z	"10"        
     }
 
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_flood"
         TeamNum 3
@@ -230,7 +230,7 @@ WaveSchedule
         Z	"10"        
     }
 
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_surprise1"
         TeamNum 3
@@ -239,7 +239,7 @@ WaveSchedule
         Z	"267"        
     }
 
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_surprise2"
         TeamNum 3
@@ -248,7 +248,7 @@ WaveSchedule
         Z	"267"        
     }
 
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_surprise3"
         TeamNum 3
@@ -257,7 +257,7 @@ WaveSchedule
         Z	"267"        
     }
 
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_surprise4"
         TeamNum 3
@@ -266,7 +266,7 @@ WaveSchedule
         Z	"267"        
     }
 
-	ClassLimit [$SIGSEGV]
+	ClassLimit 
     {
 		Scout		2
 		Soldier		2
@@ -279,7 +279,7 @@ WaveSchedule
         Spy			2
     }
 
-	OverrideSounds [$SIGSEGV]
+	OverrideSounds 
 	{
 		"MVM.PlayerDied"						"npc/stalker/go_alert2.wav"
 		"MVM.GiantHeavyExplodes"				"misc/null.wav"
@@ -300,7 +300,7 @@ WaveSchedule
 	//destroy PDA banned to give rescue ranger a small edge over shotguns
 	//huntsman allowed with large damage reduction because bows are cool with zombies
 
-	ItemBlacklist [$SIGSEGV]
+	ItemBlacklist 
 	{
 		Name "Kritz Or Treat Canteen"
 		Name "Default Power Up Canteen (MvM)"
@@ -349,7 +349,7 @@ WaveSchedule
 
 ////////////////////////////////////////////////////////////
 	
-	PlayerAttributes [$SIGSEGV]
+	PlayerAttributes 
 	{
 		"min respawn time" 999							//no respawn, works on scout
 		"always allow taunt" 1							//very good feature should be in default tf2
@@ -374,7 +374,7 @@ WaveSchedule
 		}
 	}
 
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemName "The Shortstop"
 		"special item description" "[INFO] Pistol reload speed, big damage penalty for being a primary"
@@ -382,70 +382,70 @@ WaveSchedule
 		"damage penalty" 0.65
 	}
 
-	ItemAttributes [$SIGSEGV]	//op for zombies, added vicious downside
+	ItemAttributes 	//op for zombies, added vicious downside
 	{
 		ItemName "Pretty Boy's Pocket Pistol"
 		"special item description" "[INFO] Permanently leeches health when wounded"
 		"health drain" -3
 	}
 
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemName "Bonk! Atomic Punch"
 		"special item description" "[INFO] Battalion Backup drink"
 		"effect cond override" 26
 	}
 
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemName "Festive Bonk 2014"
 		"special item description" "[INFO] Battalion Backup drink"
 		"effect cond override" 26
 	}
 
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemName "Crit-a-Cola"
 		"special item description" "[INFO] No self marking"
 		"effect cond override" 16
 	}
 
-	ItemAttributes [$SIGSEGV]	//reliable crit combo
+	ItemAttributes 	//reliable crit combo
 	{
 		ItemName "The Flying Guillotine"
 		"special item description" "[INFO] Conditional critical hit"
 		"minicrits become crits" 1
 	}
 
-	ItemAttributes [$SIGSEGV]	//huge milk duration nerf because recharge rate can easily be maxed out
+	ItemAttributes 	//huge milk duration nerf because recharge rate can easily be maxed out
 	{
 		ItemName "Mad Milk"
 		"special item description" "[INFO] Half duration"
 		"mult effect duration" 0.5
 	}
 
-	ItemAttributes [$SIGSEGV]	//huge milk duration nerf because recharge rate can easily be maxed out
+	ItemAttributes 	//huge milk duration nerf because recharge rate can easily be maxed out
 	{
 		ItemName "Mutated Milk"
 		"special item description" "[INFO] Half duration"
 		"mult effect duration" 0.5
 	}
 
-	ItemAttributes [$SIGSEGV]	//huge jarate duration nerf because recharge rate can easily be maxed out
+	ItemAttributes 	//huge jarate duration nerf because recharge rate can easily be maxed out
 	{
 		ItemName "Jarate"
 		"special item description" "[INFO] Half duration"
 		"mult effect duration" 0.5
 	}
 
-	ItemAttributes [$SIGSEGV]	//huge jarate duration nerf because recharge rate can easily be maxed out
+	ItemAttributes 	//huge jarate duration nerf because recharge rate can easily be maxed out
 	{
 		ItemName "The Self-Aware Beauty Mark"
 		"special item description" "[INFO] Half duration"
 		"mult effect duration" 0.5
 	}
 
-	ItemAttributes [$SIGSEGV]	//gaspasser rework so it acts like jars
+	ItemAttributes 	//gaspasser rework so it acts like jars
 	{
 		ItemName "The Gas Passer"
 		"special item description" "[INFO] Reworked recharge mechanic so its in line with Jarate/Milk"
@@ -458,7 +458,7 @@ WaveSchedule
 		"item_meter_starts_empty_DISPLAY_ONLY" 0
 	}
 
-	ItemAttributes [$SIGSEGV]	//double damage
+	ItemAttributes 	//double damage
 	{
 		ItemName "The Manmelter"
 		"special item description" "[INFO] Double damage"
@@ -466,7 +466,7 @@ WaveSchedule
 		"weapon burn dmg increased" 2
 	}
 
-	ItemAttributes [$SIGSEGV]	//too suicidal for survival mode
+	ItemAttributes 	//too suicidal for survival mode
 	{
 		ItemName "The Boston Basher"
 		"special item description" "[INFO] Less suicidal use"
@@ -474,7 +474,7 @@ WaveSchedule
 		"health regen" 8
 	}
 
-	ItemAttributes [$SIGSEGV]	//too suicidal for survival mode
+	ItemAttributes 	//too suicidal for survival mode
 	{
 		ItemName "Three-Rune Blade"
 		"special item description" "[INFO] Less suicidal use"
@@ -482,28 +482,28 @@ WaveSchedule
 		"health regen" 8
 	}
 
-	ItemAttributes [$SIGSEGV]	//little passive bonus since its extremely situational
+	ItemAttributes 	//little passive bonus since its extremely situational
 	{
 		ItemName "The B.A.S.E. Jumper"
 		"special item description" "[INFO] Bunnyhop"
 		"increased air control" 4
 	}
 
-	ItemAttributes [$SIGSEGV]	//passive bonus since no launchers
+	ItemAttributes 	//passive bonus since no launchers
 	{
 		ItemName "The Gunboats"
 		"special item description" "[INFO] No dirt slow"
 		"mult stun resistance" 0
 	}
 
-	ItemAttributes [$SIGSEGV]	//passive bonus since situational + higher hp = bigger stomp dmg
+	ItemAttributes 	//passive bonus since situational + higher hp = bigger stomp dmg
 	{
 		ItemName "The Mantreads"
 		"special item description" "[INFO] Extra health, stronger stomping damage"
 		"max health additive bonus" 50
 	}
 
-	ItemAttributes [$SIGSEGV]	//scout speed = op, reduced hp penalty for sword range
+	ItemAttributes 	//scout speed = op, reduced hp penalty for sword range
 	{
 		ItemName "The Eyelander"
 		"special item description" "[INFO] No longer haunted, claidheamor downside"
@@ -512,7 +512,7 @@ WaveSchedule
 		"max health additive penalty" 0
 	}
 	
-	ItemAttributes [$SIGSEGV]	//scout speed = op, reduced hp penalty for sword range
+	ItemAttributes 	//scout speed = op, reduced hp penalty for sword range
 	{
 		ItemName "Festive Eyelander"
 		"special item description" "[INFO] No longer haunted, claidheamor downside"
@@ -522,7 +522,7 @@ WaveSchedule
 		"set turn to ice" 1
 	}
 
-	ItemAttributes [$SIGSEGV]	//scout speed = op, reduced hp penalty for sword range
+	ItemAttributes 	//scout speed = op, reduced hp penalty for sword range
 	{
 		ItemName "Nessie's Nine Iron"
 		"special item description" "[INFO] No longer haunted, claidheamor downside"
@@ -531,7 +531,7 @@ WaveSchedule
 		"max health additive penalty" 0
 	}
 
-	ItemAttributes [$SIGSEGV]	//scout speed = op, reduced hp penalty for sword range
+	ItemAttributes 	//scout speed = op, reduced hp penalty for sword range
 	{
 		ItemName "The Horseless Headless Horseman's Headtaker"
 		"special item description" "[INFO] No longer haunted, claidheamor downside"
@@ -540,7 +540,7 @@ WaveSchedule
 		"max health additive penalty" 0
 	}
 	
-	ItemAttributes [$SIGSEGV]	//mega healing = op, can still be used for sword range
+	ItemAttributes 	//mega healing = op, can still be used for sword range
 	{
 		ItemName "The Half-Zatoichi"
 		"special item description" "[INFO] No longer heals, retains extended range, claidheamor downside"
@@ -549,21 +549,21 @@ WaveSchedule
 		"max health additive penalty" 0
 	}
 
-	ItemAttributes [$SIGSEGV]	//scout speed = op, reduced hp penalty for sword range
+	ItemAttributes 	//scout speed = op, reduced hp penalty for sword range
 	{
 		ItemName "The Persian Persuader"
 		"special item description" "[INFO] Extra downside due to no random crits in the mission"
 		"dmg taken increased" 1.15
 	}
 
-	ItemAttributes [$SIGSEGV]	//scout speed = op, reduced hp penalty for sword range
+	ItemAttributes 	//scout speed = op, reduced hp penalty for sword range
 	{
 		ItemName "The Scotsman's Skullcutter"
 		"special item description" "[INFO] Extra downside to even up with other swords"
 		"dmg taken increased" 1.15
 	}
 
-	ItemAttributes [$SIGSEGV]	//big dmg nerf cuz its a primary despite being in secondary slot, removed mobility and added some funny new thing
+	ItemAttributes 	//big dmg nerf cuz its a primary despite being in secondary slot, removed mobility and added some funny new thing
 	{
 		ClassName "TF_WEAPON_PIPEBOMBLAUNCHER"
 		"special item description" "[INFO] Big damage penalty for being a primary, less traps, no blast jump"
@@ -573,7 +573,7 @@ WaveSchedule
 		"stickybomb stick to enemies" 1
 	}
 
-	ItemAttributes [$SIGSEGV]	//too suicidal, removed mobility
+	ItemAttributes 	//too suicidal, removed mobility
 	{
 		ItemName "The Ullapool Caber"
 		"special item description" "[INFO] Consistent self damage, no blast jump"
@@ -583,7 +583,7 @@ WaveSchedule
 		"regenerate stickbomb" 1
 	}
 
-	ItemAttributes [$SIGSEGV]	//buff + tradition
+	ItemAttributes 	//buff + tradition
 	{
 		ItemName "The Holiday Punch"
 		"special item description" "[INFO] Critical hits deal damage due to unamused zombies"
@@ -592,7 +592,7 @@ WaveSchedule
 		"set turn to ice" 1
 	}
 
-	ItemAttributes [$SIGSEGV]	//free crit op, added melee penetration
+	ItemAttributes 	//free crit op, added melee penetration
 	{
 		ItemName "The Killing Gloves of Boxing"
 		"special item description" "[INFO] Exchanged critical hits for melee penetration"
@@ -600,7 +600,7 @@ WaveSchedule
 		"melee cleave attack" 1
 	}
 
-	ItemAttributes [$SIGSEGV]	//no slow no fall
+	ItemAttributes 	//no slow no fall
 	{
 		ItemName "Fists of Steel"
 		"special item description" "[INFO] No dirt slow, no gravity damage"
@@ -609,14 +609,14 @@ WaveSchedule
 		"cancel falling damage" 1
 	}
 
-	ItemAttributes [$SIGSEGV]	//extremely op with default valve values
+	ItemAttributes 	//extremely op with default valve values
 	{
 		ItemName "The Widowmaker"
 		"special item description" "[INFO] Higher metal cost due to extreme potency"
 		"mod ammo per shot" 65
 	}
 
-	ItemAttributes [$SIGSEGV]	//op for zombies, added vicious downside
+	ItemAttributes 	//op for zombies, added vicious downside
 	{
 		ItemName "The Blutsauger"
 		"special item description" "[INFO] Permanently leeches health when wounded"
@@ -624,7 +624,7 @@ WaveSchedule
 		"health drain" -6
 	}
 
-	ItemAttributes [$SIGSEGV]	//didn't want teammate healing, reconverted into milk syringes
+	ItemAttributes 	//didn't want teammate healing, reconverted into milk syringes
 	{
 		ItemName "The Crusader's Crossbow"
 		"special item description" "[INFO] Reworked into milk needler"
@@ -638,7 +638,7 @@ WaveSchedule
 		"mod max primary clip override" -1
 	}
 
-	ItemAttributes [$SIGSEGV]	//didn't want teammate healing, reconverted into milk syringes
+	ItemAttributes 	//didn't want teammate healing, reconverted into milk syringes
 	{
 		ItemName "Festive Crusader's Crossbow"
 		"special item description" "[INFO] Reworked into milk needler"
@@ -652,32 +652,32 @@ WaveSchedule
 		"mod max primary clip override" -1
 	}
 	
-	ItemAttributes [$SIGSEGV]	//large damage penalty since it's a full fledged primary
+	ItemAttributes 	//large damage penalty since it's a full fledged primary
 	{
 		ClassName "tf_weapon_compound_bow"
 		"special item description" "[INFO] No headshots"
 		"cannot headshot" 1
 	}
 
-	ItemAttributes [$SIGSEGV]	//large damage penalty since it's a full fledged primary
+	ItemAttributes 	//large damage penalty since it's a full fledged primary
 	{
 		ItemName "Darwin's Danger Shield"
 		"special item description" "[INFO] Replaced with grappling hook"
 	}
 
-	ItemAttributes [$SIGSEGV]	//large damage penalty since it's a full fledged primary
+	ItemAttributes 	//large damage penalty since it's a full fledged primary
 	{
 		ItemName "The Razorback"
 		"special item description" "[INFO] Replaced with grappling hook"
 	}
 
-	ItemAttributes [$SIGSEGV]	//large damage penalty since it's a full fledged primary
+	ItemAttributes 	//large damage penalty since it's a full fledged primary
 	{
 		ItemName "The Cozy Camper"
 		"special item description" "[INFO] Replaced with grappling hook"
 	}
 
-	ItemAttributes [$SIGSEGV]	//useless with no cloak
+	ItemAttributes 	//useless with no cloak
 	{
 		ItemName "L'Etranger"
 		"special item description" "[INFO] McCringe's own"
@@ -686,42 +686,42 @@ WaveSchedule
 		"Reload time increased" 2
 	}
 	
-	ItemAttributes [$SIGSEGV]	//too op with bush
+	ItemAttributes 	//too op with bush
 	{
 		ItemName  "The Cleaner's Carbine"
 		"special item description" "[INFO] Halved duration"
 		"mult effect duration" 0.5
 	}
 
-	ItemAttributes [$SIGSEGV]	//annoying nerf
+	ItemAttributes 	//annoying nerf
 	{
 		ItemName "The Ambassador"
 		"special item description" "[INFO] Removed nerf"
 		"crit_dmg_falloff" 0
 	}
 
-	ItemAttributes [$SIGSEGV]	//no disguises allowed
+	ItemAttributes 	//no disguises allowed
 	{
 		ItemName "Your Eternal Reward"
 		"special item description" "[INFO] No disguises allowed, stock reskin"
 		"disguise on backstab" 0
 	}
 	
-	ItemAttributes [$SIGSEGV]	//no disguises allowed
+	ItemAttributes 	//no disguises allowed
 	{
 		ItemName "The Wanga Prick"
 		"special item description" "[INFO] No disguises allowed, stock reskin"
 		"disguise on backstab" 0
 	}
 
-	ItemAttributes [$SIGSEGV]	//tradition
+	ItemAttributes 	//tradition
 	{
 		ItemName "The Spy-cicle"
 		"special item description" "[INFO] Produces ice statues on non-backstabs"
 		"set turn to ice" 1
 	}
 
-	ItemAttributes [$SIGSEGV]	//hook
+	ItemAttributes 	//hook
 	{
 		ItemName "TF_WEAPON_GRAPPLINGHOOK"
 		"special item description" "[INFO] Grapple marks enemy, +25 health on wearer, unlatch faster"
@@ -729,38 +729,38 @@ WaveSchedule
 		"mark for death" 1
 	}
 
-	ItemAttributes [$SIGSEGV] 	//easter egg
+	ItemAttributes  	//easter egg
 	{
 		ItemName "The Outdoorsman"
 		"SPELL: set item tint RGB" 5
 	}
 
-	ItemAttributes [$SIGSEGV] 	//easter egg
+	ItemAttributes  	//easter egg
 	{
 		ItemName "The Apparatchik's Apparel"
 		"SPELL: set item tint RGB" 5
 	}
 
-	ItemAttributes [$SIGSEGV] 	//easter egg
+	ItemAttributes  	//easter egg
 	{
 		ItemName "Basic Spellbook"
 		"voice pitch scale" 1.4
 		"gesture speed increase" 1.75
 	}
 
-	ItemAttributes [$SIGSEGV] 	//easter egg
+	ItemAttributes  	//easter egg
 	{
 		ItemName "Gold Frying Pan"
 		"dmg taken increased" 2
 	}
 
-	ItemAttributes [$SIGSEGV] 	//easter egg
+	ItemAttributes  	//easter egg
 	{
 		ItemName "Golden Wrench"
 		"dmg taken increased" 2
 	}
 
-	ItemAttributes [$SIGSEGV]	//horsemann nerf
+	ItemAttributes 	//horsemann nerf
 	{
 		ItemSlot "melee"
 		"special item description" "[INFO] 100% critical hits vs Horseless Headless Horsemann"
@@ -768,37 +768,37 @@ WaveSchedule
 		"is dropped weapon" 1
 	}
 
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemSlot "secondary"
 		"is dropped weapon" 1
 	}
 
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemSlot "primary"
 		"is dropped weapon" 1
 	}
 
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemSlot "pda"
 		"is dropped weapon" 1
 	}
 
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemSlot "pda2"
 		"is dropped weapon" 1
 	}
 
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemSlot "utility"
 		"is dropped weapon" 1
 	}
 
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemSlot "building"
 		"is dropped weapon" 1
@@ -806,7 +806,7 @@ WaveSchedule
 
 ////////////////////////////////////////////////////////////
 
-	CustomWeapon [$SIGSEGV]
+	CustomWeapon 
 	{
 		Name "NewHoliday"
 		OriginalItemName "Apoco-Fists"
@@ -818,7 +818,7 @@ WaveSchedule
 		"custom item model" "models/workshop/weapons/c_models/c_xms_gloves/c_xms_gloves_ushanka.mdl"
 	}
 
-	CustomWeapon [$SIGSEGV]
+	CustomWeapon 
 	{
 		Name "FakeFrontier"
 		OriginalItemName "TF_WEAPON_SHOTGUN_SOLDIER"
@@ -831,7 +831,7 @@ WaveSchedule
 		"custom item model" "models/weapons/c_models/c_frontierjustice/c_frontierjustice.mdl"
 	}
 
-	CustomWeapon [$SIGSEGV]
+	CustomWeapon 
 	{
 		Name "NewShotgun1"
 		OriginalItemName "TF_WEAPON_SHOTGUN_SOLDIER"
@@ -846,7 +846,7 @@ WaveSchedule
 		"custom item model" "models/weapons/c_models/c_rapidfire/c_rapidfire_1.mdl"
 	}
 
-	CustomWeapon [$SIGSEGV]
+	CustomWeapon 
 	{
 		Name "NewShotgun2"
 		OriginalItemName "TF_WEAPON_SHOTGUN_PYRO"
@@ -860,7 +860,7 @@ WaveSchedule
 		"custom item model" "models/weapons/c_models/c_the_bolshevik_bomber/c_the_bolshevik_bomber_1.mdl"
 	}
 
-	CustomWeapon [$SIGSEGV]
+	CustomWeapon 
 	{
 		Name "Deagle"
 		OriginalItemName "TF_WEAPON_PISTOL"
@@ -877,7 +877,7 @@ WaveSchedule
 		"custom item model" "models/workshop/weapons/c_models/c_winger_distol/c_winger_distol.mdl"
 	}
 
-	CustomWeapon [$SIGSEGV]
+	CustomWeapon 
 	{
 		Name "Rifle"
 		OriginalItemName "TF_WEAPON_SMG"
@@ -892,7 +892,7 @@ WaveSchedule
 		"custom item model" models/weapons/c_models/c_hmg/c_hmg.mdl
 	}
 
-	CustomWeapon [$SIGSEGV]
+	CustomWeapon 
 	{
 		Name "NeedleShotgun"
 		OriginalItemName "tf_weapon_syringegun_medic"
@@ -905,7 +905,7 @@ WaveSchedule
 		"custom item model" "models/workshop/weapons/c_models/c_trenchgun/c_trenchgun.mdl"
 	}
 
-	ItemReplacement [$SIGSEGV]	// easter egg
+	ItemReplacement 	// easter egg
 	{
 		"Deagle"
 		{
@@ -913,7 +913,7 @@ WaveSchedule
 		}
 	}
 
-	ItemReplacement [$SIGSEGV]	// easter egg
+	ItemReplacement 	// easter egg
 	{
 		"Deagle"
 		{
@@ -921,7 +921,7 @@ WaveSchedule
 		}
 	}
 
-	ItemReplacement [$SIGSEGV]	// easter egg
+	ItemReplacement 	// easter egg
 	{
 		"Rifle"
 		{
@@ -929,7 +929,7 @@ WaveSchedule
 		}
 	}
 
-	ItemReplacement [$SIGSEGV]	//easter egg
+	ItemReplacement 	//easter egg
 	{
 		"The Reserve Shooter"
 		{
@@ -937,7 +937,7 @@ WaveSchedule
 		}
 	}
 
-	ItemReplacement [$SIGSEGV]	// easter egg
+	ItemReplacement 	// easter egg
 	{
 		"Pretty Boy's Pocket Pistol"
 		{
@@ -945,7 +945,7 @@ WaveSchedule
 		}
 	}
 
-	ItemReplacement [$SIGSEGV]	// easter egg
+	ItemReplacement 	// easter egg
 	{
 		"The Family Business"
 		{
@@ -953,7 +953,7 @@ WaveSchedule
 		}
 	}
 
-	ItemReplacement [$SIGSEGV] 	// v1 gru
+	ItemReplacement  	// v1 gru
 	{
 		"NewHoliday"
 		{
@@ -961,7 +961,7 @@ WaveSchedule
 		}
 	}
 
-	ItemReplacement [$SIGSEGV]	// needler
+	ItemReplacement 	// needler
 	{
 		"NeedleShotgun"
 		{
@@ -1020,7 +1020,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1043,7 +1043,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|physics/body/body_medium_break3.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Generic2
@@ -1059,7 +1059,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Soldier"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -1073,7 +1073,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1096,7 +1096,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|physics/body/body_medium_break4.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Generic3
@@ -1112,7 +1112,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Pyro"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -1126,12 +1126,12 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "The Grisly Gumbo"
 				Model "models/empty.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1154,7 +1154,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|physics/body/body_medium_break2.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Zombie_Generic4
@@ -1170,7 +1170,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Demo"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -1183,7 +1183,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1206,7 +1206,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|physics/body/body_medium_break3.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Generic5
@@ -1222,7 +1222,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Heavy"
 			Item "Basic Spellbook"
 			StripItemSlot 0
@@ -1233,7 +1233,7 @@ WaveSchedule
 				"custom kill icon" "bread_bite"
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1256,7 +1256,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|physics/body/body_medium_break4.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Generic6
@@ -1272,7 +1272,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Engineer"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -1290,7 +1290,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1313,7 +1313,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|physics/body/body_medium_break2.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Zombie_Generic7
@@ -1329,7 +1329,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Medic"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -1343,14 +1343,14 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
 				IfSeeTarget 1
 				Type "Fireball"
 			}
-			Taunt [$SIGSEGV]
+			Taunt 
 			{
 				Delay 20
 				Cooldown 20
@@ -1373,7 +1373,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|physics/body/body_medium_break3.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Generic8
@@ -1389,7 +1389,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Sniper"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -1404,7 +1404,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1429,7 +1429,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|physics/body/body_medium_break4.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Generic9
@@ -1445,11 +1445,11 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Spy"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
-			UseCustomModel models/player/spy.mdl [$SIGSEGV]
+			UseCustomModel models/player/spy.mdl 
 			Skin 23
 			StripItemSlot 0
 			StripItemSlot 1
@@ -1460,7 +1460,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1484,7 +1484,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|physics/body/body_medium_break2.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Zombie_Riot1
@@ -1516,7 +1516,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1545,7 +1545,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Riot2
@@ -1561,7 +1561,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Soldier"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -1577,7 +1577,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1606,7 +1606,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Riot3
@@ -1622,7 +1622,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Pyro"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -1639,12 +1639,12 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "The Grisly Gumbo"
 				Model "models/empty.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1673,7 +1673,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Zombie_Riot4
@@ -1689,7 +1689,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Demo"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -1705,7 +1705,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1734,7 +1734,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Riot4b
@@ -1787,7 +1787,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Riot5
@@ -1803,7 +1803,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Heavy"
 			Item "Basic Spellbook"
 			Item "Breach and Bomb"
@@ -1817,7 +1817,7 @@ WaveSchedule
 				"custom kill icon" "bread_bite"
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1846,7 +1846,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Riot5b
@@ -1894,7 +1894,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Riot6
@@ -1910,7 +1910,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Engineer"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -1931,7 +1931,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -1960,7 +1960,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Zombie_Riot7
@@ -1976,7 +1976,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Medic"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -1992,7 +1992,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2022,7 +2022,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Riot8
@@ -2038,7 +2038,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Sniper"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2056,7 +2056,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2087,7 +2087,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Riot9
@@ -2103,14 +2103,14 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Spy"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
 			Item "Breach and Bomb"
 			Item "Blast Blocker"
 			Item "EOTL_Coldfront Curbstompers"
-			UseCustomModel models/player/spy.mdl [$SIGSEGV]
+			UseCustomModel models/player/spy.mdl 
 			Skin 23
 			StripItemSlot 0
 			StripItemSlot 1
@@ -2121,7 +2121,7 @@ WaveSchedule
 				"custom hit sound" "physics/flesh/flesh_bloody_break.wav"
 				"is invisible" 1
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2152,7 +2152,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|trespasser/hs.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Zombie_Headless1a
@@ -2169,7 +2169,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Scout"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2182,12 +2182,12 @@ WaveSchedule
 				"custom kill icon" "fireaxe"
 				"custom hit sound" "weapons/axe_hit_flesh1.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_fireaxe_pyro/c_fireaxe_pyro.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2206,7 +2206,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break3.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Headless1b
@@ -2223,7 +2223,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Scout"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2236,12 +2236,12 @@ WaveSchedule
 				"custom kill icon" "shovel"
 				"custom hit sound" "weapons/axe_hit_flesh3.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_shovel/c_shovel.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2260,7 +2260,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break4.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Headless2a
@@ -2277,7 +2277,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Soldier"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2290,12 +2290,12 @@ WaveSchedule
 				"custom kill icon" "bat"
 				"custom hit sound" "weapons/bat_hit.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_bat.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2315,7 +2315,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break2.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Zombie_Headless2b
@@ -2332,7 +2332,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Soldier"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2345,12 +2345,12 @@ WaveSchedule
 				"custom kill icon" "axtinguisher"
 				"custom hit sound" "weapons/axe_hit_flesh2.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_axtinguisher/c_axtinguisher_pyro.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2369,7 +2369,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break3.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Headless3a
@@ -2386,7 +2386,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Pyro"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2399,17 +2399,17 @@ WaveSchedule
 				"custom kill icon" "demokatana"
 				"custom hit sound" "weapons/samurai/tf_katana_slice_01.wav"
 			}
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "The Grisly Gumbo"
 				Model "models/empty.mdl"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/workshop_partner/weapons/c_models/c_shogun_katana/c_shogun_katana.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2428,7 +2428,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break4.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Headless3b
@@ -2445,7 +2445,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Pyro"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2458,17 +2458,17 @@ WaveSchedule
 				"custom kill icon" "shovel"
 				"custom hit sound" "weapons/axe_hit_flesh3.wav"
 			}
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "The Grisly Gumbo"
 				Model "models/empty.mdl"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_shovel/c_shovel.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2487,7 +2487,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break2.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Zombie_Headless4a
@@ -2504,7 +2504,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Demo"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2516,12 +2516,12 @@ WaveSchedule
 				"custom kill icon" "nessieclub"
 				"custom hit sound" "weapons/bat_baseball_hit_world2.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/workshop/weapons/c_models/c_golfclub/c_golfclub.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2540,7 +2540,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break3.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Headless4b
@@ -2557,7 +2557,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Demo"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2569,13 +2569,13 @@ WaveSchedule
 				"custom kill icon" "fireaxe"
 				"custom hit sound" "weapons/axe_hit_flesh1.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_fireaxe_pyro/c_fireaxe_pyro.mdl"
 			}
 
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2594,7 +2594,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break4.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Headless5a
@@ -2611,7 +2611,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Heavy"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2623,12 +2623,12 @@ WaveSchedule
 				"custom kill icon" "paintrain"
 				"custom hit sound" "weapons/cleaver_hit_07.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/workshop/weapons/c_models/c_paintrain/c_paintrain.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2647,7 +2647,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break2.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Zombie_Headless5b
@@ -2664,7 +2664,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Heavy"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2676,12 +2676,12 @@ WaveSchedule
 				"custom kill icon" "fireaxe"
 				"custom hit sound" "weapons/axe_hit_flesh1.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_fireaxe_pyro/c_fireaxe_pyro.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2700,7 +2700,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break3.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Headless6a
@@ -2717,7 +2717,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Engineer"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2734,12 +2734,12 @@ WaveSchedule
 				"custom kill icon" "fryingpan"
 				"custom hit sound" "FryingPan.HitFlesh"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_frying_pan/c_frying_pan.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2758,7 +2758,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break4.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Headless6b
@@ -2775,7 +2775,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Engineer"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2792,12 +2792,12 @@ WaveSchedule
 				"custom kill icon" "demokatana"
 				"custom hit sound" "weapons/samurai/tf_katana_slice_01.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/workshop_partner/weapons/c_models/c_shogun_katana/c_shogun_katana.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2816,7 +2816,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break2.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Zombie_Headless7a
@@ -2833,7 +2833,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Medic"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2845,12 +2845,12 @@ WaveSchedule
 				"custom kill icon" "bat"
 				"custom hit sound" "weapons/bat_hit.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_bat.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2871,7 +2871,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break3.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Headless7b
@@ -2888,7 +2888,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Medic"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2900,12 +2900,12 @@ WaveSchedule
 				"custom kill icon" "fireaxe"
 				"custom hit sound" "weapons/axe_hit_flesh1.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_fireaxe_pyro/c_fireaxe_pyro.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2925,7 +2925,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break4.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Headless8a
@@ -2942,7 +2942,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Sniper"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -2955,12 +2955,12 @@ WaveSchedule
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "sandman"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_wooden_bat/c_wooden_bat.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -2982,7 +2982,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break2.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Zombie_Headless8b
@@ -2999,7 +2999,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Sniper"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -3013,12 +3013,12 @@ WaveSchedule
 				"custom kill icon" "persian_persuader"
 				"custom hit sound" "weapons/blade_slice_3.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/workshop/weapons/c_models/c_demo_sultan_sword/c_demo_sultan_sword.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -3039,7 +3039,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break3.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Zombie_Headless9a
@@ -3056,11 +3056,11 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Spy"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
-			UseCustomModel models/player/spy.mdl [$SIGSEGV]
+			UseCustomModel models/player/spy.mdl 
 			Skin 23
 			StripItemSlot 0
 			StripItemSlot 1
@@ -3069,12 +3069,12 @@ WaveSchedule
 				ItemName "The Bat Outta Hell"
 				"custom kill icon" "boston_basher"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/workshop/weapons/c_models/c_boston_basher/c_boston_basher.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -3095,7 +3095,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break4.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Zombie_Headless9b
@@ -3112,11 +3112,11 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Spy"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
-			UseCustomModel models/player/spy.mdl [$SIGSEGV]
+			UseCustomModel models/player/spy.mdl 
 			Skin 23
 			StripItemSlot 0
 			StripItemSlot 1
@@ -3126,12 +3126,12 @@ WaveSchedule
 				"custom kill icon" "pickaxe"
 				"custom hit sound" "weapons/blade_slice_4.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_pickaxe/c_pickaxe.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -3152,7 +3152,7 @@ WaveSchedule
 				"override footstep sound set" 0
 			}
 			PainSound =65|physics/body/body_medium_break2.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Zombie_Poison1
@@ -3168,7 +3168,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Sniper"
 			Item "Basic Spellbook"
 			Item "The Bat Outta Hell"
@@ -3185,29 +3185,29 @@ WaveSchedule
 				"custom hit sound" "trespasser/dsclaw.wav"
 				"is invisible" 1
 			}
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Name TF_COND_SPEED_BOOST
 				Duration 3
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
 				IfSeeTarget 1
 				Type "Fireball"
 			}
-			DamageAppliesCond [$SIGSEGV]
+			DamageAppliesCond 
 			{
 				Name TF_COND_LOST_FOOTING
 				Duration 5
 			}
-			DamageAppliesCond [$SIGSEGV]
+			DamageAppliesCond 
 			{
 				Name TF_COND_HALLOWEEN_KART_DASH
 				Duration 5
 			}
-			DamageAppliesCond [$SIGSEGV]
+			DamageAppliesCond 
 			{
 				Name TF_COND_URINE
 				Duration 5
@@ -3229,7 +3229,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|ambient/levels/canals/toxic_slime_gurgle4.wav
-			DeathSound ambient/levels/canals/toxic_slime_gurgle5.wav [$SIGSEGV]
+			DeathSound ambient/levels/canals/toxic_slime_gurgle5.wav 
 		}
 
 		Zombie_Poison2
@@ -3245,7 +3245,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Zombie Sniper"
 			Item "The Bat Outta Hell"
 			Item "The Vicious Visage"
@@ -3269,48 +3269,48 @@ WaveSchedule
 				ItemName "The Biomech Backpack"
 				"attach particle effect" 3043
 			}
-			ItemColor [$SIGSEGV]
+			ItemColor 
 			{
 				ItemName "The Mucous Membrain"
 				Red   255
 				Green 0
 				Blue  255
 			}
-			ItemColor [$SIGSEGV]
+			ItemColor 
 			{
 				ItemName "Skinless Slashers"
 				Red   255
 				Green 0
 				Blue  255
 			}
-			ItemColor [$SIGSEGV]
+			ItemColor 
 			{
 				ItemName "Zombie Sniper"
 				Red   255
 				Green 0
 				Blue  255
 			}
-			DamageAppliesCond [$SIGSEGV]
+			DamageAppliesCond 
 			{
 				Name TF_COND_CANNOT_SWITCH_FROM_MELEE
 				Duration 13
 			}
-			DamageAppliesCond [$SIGSEGV]
+			DamageAppliesCond 
 			{
 				Name TF_COND_HALLOWEEN_KART_DASH
 				Duration 13
 			}
-			DamageAppliesCond [$SIGSEGV]
+			DamageAppliesCond 
 			{
 				Name TF_COND_REPROGRAMMED
 				Duration 13
 			}
-			DamageAppliesCond [$SIGSEGV]
+			DamageAppliesCond 
 			{
 				Name TF_COND_URINE
 				Duration 13
 			}
-			DamageAppliesCond [$SIGSEGV]
+			DamageAppliesCond 
 			{
 				Name TF_COND_PREVENT_DEATH
 				Duration 13
@@ -3333,7 +3333,7 @@ WaveSchedule
 				"increased jump height" 1.5
 			}
 			PainSound =65|ambient/levels/canals/toxic_slime_sizzle1.wav
-			DeathSound misc/bonzo_vomit02.wav [$SIGSEGV]
+			DeathSound misc/bonzo_vomit02.wav 
 		}
 
 		Zombie_Burning
@@ -3349,7 +3349,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "The Backburner"
 			Item "Basic Spellbook"
 			Item "Crusader's Getup"
@@ -3377,12 +3377,12 @@ WaveSchedule
 				ItemName "The Hollowhead"
 				"attach particle effect" 2
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 0
 				Model "models/empty.mdl"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -3408,7 +3408,7 @@ WaveSchedule
                     {
                         "move speed bonus" 0.5
                     }
-                    ChangeAttributes [$SIGSEGV]  
+                    ChangeAttributes   
                     {
                         Delay 0.001
                         Cooldown 0.001
@@ -3423,7 +3423,7 @@ WaveSchedule
                     {
                         "move speed bonus" 1.3
                     }
-                    ChangeAttributes [$SIGSEGV]  
+                    ChangeAttributes   
                     {
                         Delay 0
                         Cooldown 0
@@ -3433,7 +3433,7 @@ WaveSchedule
                     }
                 }
             }
-			DeathSound ambient/fire/gascan_ignite1.wav [$SIGSEGV]
+			DeathSound ambient/fire/gascan_ignite1.wav 
 		}
 
 		Zombie_Virophage
@@ -3455,11 +3455,11 @@ WaveSchedule
 			ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1
 			WeaponRestrictions MeleeOnly
-			UseCustomModel models/humans/charple01.mdl [$SIGSEGV]
-			RocketCustomModel "models/weapons/w_bugbait.mdl" [$SIGSEGV]
+			UseCustomModel models/humans/charple01.mdl 
+			RocketCustomModel "models/weapons/w_bugbait.mdl" 
 			RocketCustomParticle "eyeboss_projectile"
 			StripItemSlot 1
-			HomingRockets [$SIGSEGV]
+			HomingRockets 
 			{
 				Enable	1
 				IgnoreDisguisedSpies 0
@@ -3468,7 +3468,7 @@ WaveSchedule
 				MaxAimError 45
 				RocketSpeed 0.45
 			}
-			FireWeapon [$SIGSEGV]
+			FireWeapon 
 			{
 				Delay 10
 				Cooldown 20
@@ -3477,7 +3477,7 @@ WaveSchedule
 				IfSeeTarget 0
 				Type "Crouch"	
 			}
-			NoCrouchButtonRelease 1 [$SIGSEGV]
+			NoCrouchButtonRelease 1 
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -3521,7 +3521,7 @@ WaveSchedule
 				"melee bounds multiplier" 0.35
 				"custom hit sound" npc/barnacle/barnacle_gulp2.wav
 			}
-			FireWeapon [$SIGSEGV]
+			FireWeapon 
 			{
 				Delay 0
 				Cooldown 0
@@ -3579,12 +3579,12 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "The Bolshevik Biker"
 			//Item "Zombie Heavy"
 			Item "Employee Badge A"
 			Skin 5
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "Employee Badge A"
 				Model "models/player/items/heavy/heavy_zombie.mdl"
@@ -3607,12 +3607,12 @@ WaveSchedule
 				"custom kill icon" "guillotine"
 				"custom hit sound" "physics/body/body_medium_break2.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/workshop_partner/weapons/c_models/c_sd_cleaver/c_sd_cleaver.mdl"
 			}
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "Support Spurs"
 				Model "models/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask.mdl"
@@ -3639,7 +3639,7 @@ WaveSchedule
 				"override footstep sound set" 7
 			}
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound npc/zombie_poison/pz_alert2.wav [$SIGSEGV]
+			DeathSound npc/zombie_poison/pz_alert2.wav 
 		}
 
 		Zombie_Brute2
@@ -3655,12 +3655,12 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "The Bolshevik Biker"
 			//Item "Zombie Heavy"
 			Item "Employee Badge A"
 			Skin 5
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "Employee Badge A"
 				Model "models/player/items/heavy/heavy_zombie.mdl"
@@ -3683,12 +3683,12 @@ WaveSchedule
 				"custom kill icon" "sledgehammer"
 				"custom hit sound" "player/pl_fallpain3.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/workshop/weapons/c_models/c_sledgehammer/c_sledgehammer.mdl"
 			}
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "Support Spurs"
 				Model "models/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask.mdl"
@@ -3715,7 +3715,7 @@ WaveSchedule
 				"override footstep sound set" 7
 			}
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound npc/zombie_poison/pz_alert2.wav [$SIGSEGV]
+			DeathSound npc/zombie_poison/pz_alert2.wav 
 		}
 
 		Zombie_Brute3
@@ -3731,12 +3731,12 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "The Bolshevik Biker"
 			//Item "Zombie Heavy"
 			Item "Employee Badge A"
 			Skin 5
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "Employee Badge A"
 				Model "models/player/items/heavy/heavy_zombie.mdl"
@@ -3759,12 +3759,12 @@ WaveSchedule
 				"custom kill icon" "southern_comfort_kill"
 				"custom hit sound" "physics/body/body_medium_break3.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/workshop/weapons/c_models/c_spikewrench/c_spikewrench.mdl"
 			}
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "Support Spurs"
 				Model "models/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask.mdl"
@@ -3791,7 +3791,7 @@ WaveSchedule
 				"override footstep sound set" 7
 			}
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound npc/zombie_poison/pz_alert2.wav [$SIGSEGV]
+			DeathSound npc/zombie_poison/pz_alert2.wav 
 		}
 
 		Zombie_Behemoth
@@ -3810,10 +3810,10 @@ WaveSchedule
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
 			WeaponRestrictions MeleeOnly
-			//UseMeleeThreatPrioritization 1 [$SIGSEGV]
-			CustomEyeParticle "killstreak_t6_lvl2" [$SIGSEGV]
-			CustomEyeGlowColor "255 255 255" [$SIGSEGV]
-			UseCustomModel models/bots/heavy/bot_heavy_gibby.mdl [$SIGSEGV]
+			//UseMeleeThreatPrioritization 1 
+			CustomEyeParticle "killstreak_t6_lvl2" 
+			CustomEyeGlowColor "255 255 255" 
+			UseCustomModel models/bots/heavy/bot_heavy_gibby.mdl 
 			Item "The Persian Persuader"
 			Item "Bone-Cut Belt"
 			Item "Employee Badge B"
@@ -3835,18 +3835,18 @@ WaveSchedule
 				"custom kill icon" "sword"
 				"custom hit sound" "=95|ambient/machines/slicer4.wav"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/weapons/c_models/c_claymore/c_claymore.mdl"
 			}
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "Employee Badge B"
 				Model "models/player/items/heavy/heavy_zombie.mdl"
 			}
 			Item "Iron Fist" 
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "Iron Fist" 
 				Model "models/workshop/weapons/c_models/c_xms_gloves/c_xms_gloves_ushanka.mdl"
@@ -3869,7 +3869,7 @@ WaveSchedule
 				"damage bonus" 1.5
 				"ammo regen" 1
 			}
-			WeaponSwitch [$SIGSEGV]
+			WeaponSwitch 
 			{
 				Delay 0
 				Repeats 1
@@ -3877,7 +3877,7 @@ WaveSchedule
 				Type "Primary"
 				IfHealthBelow "10001"
 			}
-			WeaponSwitch [$SIGSEGV]
+			WeaponSwitch 
 			{
 				Delay 0
 				Repeats 1
@@ -3885,7 +3885,7 @@ WaveSchedule
 				Type "Melee"
 				IfHealthBelow "5001"
 			}
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "The Gunboats"
 				Model "models/workshop/player/items/heavy/hwn2016_mad_mask/hwn2016_mad_mask.mdl"
@@ -3910,7 +3910,7 @@ WaveSchedule
 				"voice pitch scale" 0.4
 				"override footstep sound set" 7
 			}
-			//AddCond [$SIGSEGV]
+			//AddCond 
 			//{
 			//	Name TF_COND_REPROGRAMMED_NEUTRAL
 			//}
@@ -3919,17 +3919,17 @@ WaveSchedule
 				Name "p_tank"
 				Bone "bip_head"
 			}
-			VoiceCommand [$SIGSEGV]
+			VoiceCommand 
 			{
 				Delay 1
 				Cooldown 5
 				IfSeeTarget 1
 				Type "Go"
 			}
-			NoPushAway 1 [$SIGSEGV]
-			AlwaysGlow 1 [$SIGSEGV]
-			AdditionalStepSound =90|mvm/giant_heavy/giant_heavy_step02.wav [$SIGSEGV]
-			DeathSound trespasser/tank_fire_07.wav [$SIGSEGV]
+			NoPushAway 1 
+			AlwaysGlow 1 
+			AdditionalStepSound =90|mvm/giant_heavy/giant_heavy_step02.wav 
+			DeathSound trespasser/tank_fire_07.wav 
 		}
 
 		Zombie_Leaper
@@ -3947,7 +3947,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Basic Spellbook"
 			Item "Zombie Scout"
 			Item "Baseball Bill's Sports Shine"
@@ -3974,7 +3974,7 @@ WaveSchedule
 				"special damage type" 1
 				"dmg taken mult from special damage type 1" 0.01
 			}
-			FireWeapon [$SIGSEGV]
+			FireWeapon 
 			{
 				Delay 5
 				Cooldown 0
@@ -3983,14 +3983,14 @@ WaveSchedule
 				Duration 0
 				Type "Primary"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
 				IfSeeTarget 1
 				Type "Fireball"
 			}
-			FireWeapon [$SIGSEGV]
+			FireWeapon 
 			{
 				Delay 5
 				Cooldown 0.25
@@ -4021,7 +4021,7 @@ WaveSchedule
 				"override footstep sound set" 7
 			}
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound npc/fast_zombie/fz_frenzy1.wav [$SIGSEGV]
+			DeathSound npc/fast_zombie/fz_frenzy1.wav 
 		}
 
 		Zombie_Skeleton1
@@ -4029,7 +4029,7 @@ WaveSchedule
 			Class Sniper
 			Classicon dead_blu_lite
 			Name "Skeleton"
-			UseCustomModel models/bots/skeleton_sniper/skeleton_sniper.mdl [$SIGSEGV]
+			UseCustomModel models/bots/skeleton_sniper/skeleton_sniper.mdl 
 			Scale 1
 			Skill Expert
 			Health 200
@@ -4038,7 +4038,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Basic Spellbook"
 			Item "Brigade Helm"
 			Item "Trickster's Turnout Gear"
@@ -4055,7 +4055,7 @@ WaveSchedule
 				"dmg taken from blast increased" 2
 				"custom hit sound" "trespasser/SKELT03.mp3"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -4079,7 +4079,7 @@ WaveSchedule
 				"cannot be backstabbed" 1
 				"override footstep sound set" 0
 			}
-			DeathSound trespasser/SKELT05.mp3 [$SIGSEGV]
+			DeathSound trespasser/SKELT05.mp3 
 		}
 
 		Zombie_Skeleton2
@@ -4087,7 +4087,7 @@ WaveSchedule
 			Class Sniper
 			Classicon dead_blu_lite
 			Name "Skeleton"
-			UseCustomModel models/bots/skeleton_sniper/skeleton_sniper.mdl [$SIGSEGV]
+			UseCustomModel models/bots/skeleton_sniper/skeleton_sniper.mdl 
 			Scale 1
 			Skill Expert
 			Health 200
@@ -4096,7 +4096,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Basic Spellbook"
 			Item "The Head Hedge"
 			Item "Attack Packs"
@@ -4111,12 +4111,12 @@ WaveSchedule
 				"dmg taken from blast increased" 2
 				"custom hit sound" npc/zombie/claw_strike3.wav
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model models/workshop/weapons/c_models/c_pro_smg/c_pro_smg.mdl
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -4139,7 +4139,7 @@ WaveSchedule
 				"cannot be backstabbed" 1
 				"override footstep sound set" 0
 			}
-			DeathSound trespasser/SKELT05.mp3 [$SIGSEGV]
+			DeathSound trespasser/SKELT05.mp3 
 		}
 
 		Zombie_Skeleton3
@@ -4147,7 +4147,7 @@ WaveSchedule
 			Class Sniper
 			Classicon dead_blu_lite
 			Name "Skeleton"
-			UseCustomModel models/bots/skeleton_sniper/skeleton_sniper.mdl [$SIGSEGV]
+			UseCustomModel models/bots/skeleton_sniper/skeleton_sniper.mdl 
 			Scale 1
 			Skill Expert
 			Health 200
@@ -4156,7 +4156,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Basic Spellbook"
 			Item "The Law"
 			Item "dec2014 engineer_detectiveradio"
@@ -4173,7 +4173,7 @@ WaveSchedule
 				"dmg taken from blast increased" 2
 				"custom hit sound" "trespasser/SKELT03.mp3"
 			}
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -4197,7 +4197,7 @@ WaveSchedule
 				"cannot be backstabbed" 1
 				"override footstep sound set" 0
 			}
-			DeathSound trespasser/SKELT05.mp3 [$SIGSEGV]
+			DeathSound trespasser/SKELT05.mp3 
 		}
 
 		Survivor_1
@@ -4218,7 +4218,7 @@ WaveSchedule
 			Item "The Pain Train"	
 			Action Idle
 			StripItemSlot 0	
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -4232,7 +4232,7 @@ WaveSchedule
 				"increase player capture value" 2
 				"dmg taken from crit reduced" 0
 			}
-			WeaponSwitch [$SIGSEGV]
+			WeaponSwitch 
 			{
 				Delay 0
 				Repeats 1
@@ -4240,14 +4240,14 @@ WaveSchedule
 				Type "Melee"
 				IfHealthBelow "76"
 			}
-			InterruptAction [$SIGSEGV]
+			InterruptAction 
 			{
 				Target "moveup"
 				Delay 78
 				Repeats 1 
 				Duration 1
 			}
-			WeaponSwitch [$SIGSEGV]
+			WeaponSwitch 
 			{
 				Delay 93
 				Repeats 1 
@@ -4255,7 +4255,7 @@ WaveSchedule
 				IfSeeTarget 0
 				Type "Secondary"
 			}
-			AimAt Head [$SIGSEGV]
+			AimAt Head 
 			EventChangeAttributes
             {
                 Shop
@@ -4264,7 +4264,7 @@ WaveSchedule
                     {
                         "health regen" 5
                     }
-                    InterruptAction [$SIGSEGV]
+                    InterruptAction 
 					{
 						Target "target_shop1"
 						Delay 1
@@ -4274,7 +4274,7 @@ WaveSchedule
                 }
 				Defense
                 {
-                    InterruptAction [$SIGSEGV]
+                    InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -4284,7 +4284,7 @@ WaveSchedule
                 }
 				Exit
                 {
-                    InterruptAction [$SIGSEGV]
+                    InterruptAction 
 					{
 						Target "moveup3"
 						Delay 1
@@ -4312,7 +4312,7 @@ WaveSchedule
 			Item "Fireman's Essentials"
 			Action Idle
 			StripItemSlot 0
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -4326,7 +4326,7 @@ WaveSchedule
 				"increase player capture value" 3
 				"dmg taken from crit reduced" 0
 			}
-			WeaponSwitch [$SIGSEGV]
+			WeaponSwitch 
 			{
 				Delay 0
 				Repeats 1
@@ -4334,14 +4334,14 @@ WaveSchedule
 				Type "Melee"
 				IfHealthBelow "76"
 			}
-			InterruptAction [$SIGSEGV]
+			InterruptAction 
 			{
 				Target "moveup"
 				Delay 78
 				Repeats 1 
 				Duration 1
 			}
-			WeaponSwitch [$SIGSEGV]
+			WeaponSwitch 
 			{
 				Delay 93
 				Repeats 1 
@@ -4356,7 +4356,7 @@ WaveSchedule
                     {
                         "health regen" 5
                     }
-                    InterruptAction [$SIGSEGV]
+                    InterruptAction 
 					{
 						Target "target_shop2"
 						Delay 1
@@ -4366,7 +4366,7 @@ WaveSchedule
                 }
 				Defense
                 {
-                    InterruptAction [$SIGSEGV]
+                    InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -4376,7 +4376,7 @@ WaveSchedule
                 }
 				Exit
                 {
-                    InterruptAction [$SIGSEGV]
+                    InterruptAction 
 					{
 						Target "moveup3"
 						Delay 1
@@ -4415,7 +4415,7 @@ WaveSchedule
 			}
 			Action Idle
 			StripItemSlot 0
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -4424,7 +4424,7 @@ WaveSchedule
 				ItemName "Frying Pan"
 				"is dropped weapon" 1
 			}
-			WeaponSwitch [$SIGSEGV]
+			WeaponSwitch 
 			{
 				Delay 0
 				Repeats 1
@@ -4432,21 +4432,21 @@ WaveSchedule
 				Type "Melee"
 				IfHealthBelow "76"
 			}
-			InterruptAction [$SIGSEGV]
+			InterruptAction 
 			{
 				Target "moveup"
 				Delay 78
 				Repeats 1 
 				Duration 1
 			}
-			WeaponSwitch [$SIGSEGV]
+			WeaponSwitch 
 			{
 				Delay 93
 				Repeats 1 
 				Duration 1
 				Type "Secondary"
 			}
-			AimAt Head [$SIGSEGV]
+			AimAt Head 
 			EventChangeAttributes
             {
                 Shop
@@ -4455,7 +4455,7 @@ WaveSchedule
                     {
                         "health regen" 5
                     }
-                    InterruptAction [$SIGSEGV]
+                    InterruptAction 
 					{
 						Target "target_shop3"
 						Delay 1
@@ -4465,7 +4465,7 @@ WaveSchedule
                 }
 				Defense
                 {
-                    InterruptAction [$SIGSEGV]
+                    InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -4475,7 +4475,7 @@ WaveSchedule
                 }
 				Exit
                 {
-                    InterruptAction [$SIGSEGV]
+                    InterruptAction 
 					{
 						Target "moveup3"
 						Delay 1
@@ -4515,19 +4515,19 @@ WaveSchedule
 				"not solid to players" 1
 				"increased air control" 100
 			}
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName "Employee Badge C"
 				Model "models/workshop/player/items/engineer/spr17_double_observatory/spr17_double_observatory.mdl"
 			}
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Name TF_COND_REPROGRAMMED
 			}
 			Action Idle
 			//AimTrackingInterval 0.25
-			AlwaysGlow 1 [$SIGSEGV]
-			AimAt Head [$SIGSEGV]
+			AlwaysGlow 1 
+			AimAt Head 
 			StripItemSlot 0
 			StripItemSlot 2
 			StripItemSlot 3
@@ -4569,21 +4569,21 @@ WaveSchedule
 				"dmg taken increased" 0.0025
 				"faster reload rate" 0.5
 			}
-			InterruptAction [$SIGSEGV]
+			InterruptAction 
 			{
 				AimTarget "target_tank"
 				Delay 1
 				Repeats 1 
 				Duration 10
 			}
-			FireWeapon [$SIGSEGV]
+			FireWeapon 
 			{
 				Delay 1
                 Repeats 1
                 Duration 10
 				Type "Primary"
 			}
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Name TF_COND_REPROGRAMMED
 			}
@@ -4594,7 +4594,7 @@ WaveSchedule
 			Attributes Parachute
 			StripItemSlot 0
 			StripItemSlot 2
-			AlwaysGlow 1 [$SIGSEGV]
+			AlwaysGlow 1 
 			PainSound =99|npc/metropolice/pain1.wav
 			AdditionalStepSound =99|npc/metropolice/gear6.wav
 		}
@@ -4628,11 +4628,11 @@ WaveSchedule
 				"cancel falling damage" 1
 			}
 			Action Mobber
-			AimAt Head [$SIGSEGV]
+			AimAt Head 
 			StripItemSlot 0
 			StripItemSlot 2
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Survivor_2_Zombie
@@ -4666,7 +4666,7 @@ WaveSchedule
 			StripItemSlot 0
 			StripItemSlot 2
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound physics/body/body_medium_break3.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break3.wav 
 		}
 
 		Survivor_3_Zombie
@@ -4704,11 +4704,11 @@ WaveSchedule
 				"cancel falling damage" 1
 			}		
 			Action Mobber
-			AimAt Head [$SIGSEGV]
+			AimAt Head 
 			StripItemSlot 0
 			StripItemSlot 2
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound physics/body/body_medium_break4.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break4.wav 
 		}
 
 		Survivor_4_Zombie
@@ -4745,7 +4745,7 @@ WaveSchedule
 				"cancel falling damage" 1
 			}
 			Action Mobber
-			AimAt Head [$SIGSEGV]
+			AimAt Head 
 			StripItemSlot 0
 			StripItemSlot 2
 			StripItemSlot 3
@@ -4753,7 +4753,7 @@ WaveSchedule
 			StripItemSlot 5
 			StripItemSlot 6
 			PainSound =85|trespasser/bullethitflesh1.wav
-			DeathSound physics/body/body_medium_break2.wav [$SIGSEGV]
+			DeathSound physics/body/body_medium_break2.wav 
 		}
 
 		Machine_Unarmed
@@ -4766,13 +4766,13 @@ WaveSchedule
 			Action Mobber
 			ExtAttr IgnoreBuildings
 			NoBombUpgrades 1
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
-			UseCustomModel models/bots/soldier/bot_soldier_gibby.mdl [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
+			UseCustomModel models/bots/soldier/bot_soldier_gibby.mdl 
 			Item "The Bat Outta Hell"
 			StripItemSlot 0
 			StripItemSlot 1
 			Item "Basic Spellbook"
-			Spell [$SIGSEGV]
+			Spell 
 			{
 				delay 150
 				cooldown 150
@@ -4812,9 +4812,9 @@ WaveSchedule
 			Attributes SuppressFire
 			NoBombUpgrades 1
 			Item "The Bat Outta Hell"
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
-			UseCustomModel models/bots/soldier/bot_soldier_gibby.mdl [$SIGSEGV]
-			ItemModel [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
+			UseCustomModel models/bots/soldier/bot_soldier_gibby.mdl 
+			ItemModel 
 			{
 				ItemName "Tyrant's Helm"
 				Model "models/bots/gameplay_cosmetic/bot_light_bomb_helmet.mdl"
@@ -4858,17 +4858,17 @@ WaveSchedule
 			AimTrackingInterval 0
 			Attributes DisableDodge
 			Action Sniper
-			//UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			//UseMeleeThreatPrioritization 1 
 			Item "Rocket Jumper"
 			Item "The Market Gardener"
-			UseCustomModel models/bots/soldier/bot_soldier_gibby.mdl [$SIGSEGV]
+			UseCustomModel models/bots/soldier/bot_soldier_gibby.mdl 
 			StripItemSlot 1
 			ItemAttributes
 			{
 				ItemName "The Hellmet"
 				"set item tint rgb" 13595446
 			}
-			InterruptAction [$SIGSEGV]
+			InterruptAction 
 			{
 				Target "target_mg"
 				Delay 1
@@ -4913,17 +4913,17 @@ WaveSchedule
 			AimTrackingInterval 0
 			Attributes DisableDodge
 			Action Sniper
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			Item "Rocket Jumper"
 			Item "The Market Gardener"
-			UseCustomModel models/bots/soldier/bot_soldier_gibby.mdl [$SIGSEGV]
+			UseCustomModel models/bots/soldier/bot_soldier_gibby.mdl 
 			StripItemSlot 1
 			ItemAttributes
 			{
 				ItemName "The Hellmet"
 				"set item tint rgb" 13595446
 			}
-			InterruptAction [$SIGSEGV]
+			InterruptAction 
 			{
 				Target "target_mg"
 				Delay 1
@@ -4967,9 +4967,9 @@ WaveSchedule
 			Attributes HoldFireUntilFullReload
 			NoBombUpgrades 1
 			AimTrackingInterval 0.5
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			WeaponRestrictions SecondaryOnly
-			UseCustomModel models/bots/soldier/bot_soldier_gibby.mdl [$SIGSEGV]
+			UseCustomModel models/bots/soldier/bot_soldier_gibby.mdl 
 			StripItemSlot 0
 			StripItemSlot 2
 			CharacterAttributes
@@ -4989,9 +4989,9 @@ WaveSchedule
 			ExtAttr IgnoreBuildings
 			Action Mobber
 			Attributes DisableDodge
-			CustomEyeGlowColor "255 0 0" [$SIGSEGV]
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
-			UseCustomModel models/bots/heavy/bot_heavy_gibby.mdl [$SIGSEGV]
+			CustomEyeGlowColor "255 0 0" 
+			UseMeleeThreatPrioritization 1 
+			UseCustomModel models/bots/heavy/bot_heavy_gibby.mdl 
 			StripItemSlot 0
 			StripItemSlot 1
 			Action Mobber
@@ -5016,18 +5016,18 @@ WaveSchedule
 			Attributes DisableDodge
 			Item "Dillinger's Duffel"
 			AimTrackingInterval 3
-			CustomEyeGlowColor "0 255 0" [$SIGSEGV]
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
-			UseCustomModel models/bots/heavy/bot_heavy_gibby.mdl [$SIGSEGV]
+			CustomEyeGlowColor "0 255 0" 
+			UseMeleeThreatPrioritization 1 
+			UseCustomModel models/bots/heavy/bot_heavy_gibby.mdl 
 			StripItemSlot 0
 			StripItemSlot 1
 			//Action Mobber
 			//NoBombUpgrades 1
-			//AddCond [$SIGSEGV]
+			//AddCond 
 			//{
 			//	Name TF_COND_CRITBOOSTED_ON_KILL
 			//}
-			ItemColor [$SIGSEGV]
+			ItemColor 
 			{
 				ItemName "Fists of Steel"
 				Red   0
@@ -5087,7 +5087,7 @@ WaveSchedule
 				//"afterburn immunity" 1
 				"gesture speed increase" 1.5
 			}
-			DeathSound mvm/mvm_bought_upgrade.wav [$SIGSEGV]
+			DeathSound mvm/mvm_bought_upgrade.wav 
 		}
 
 		Machine_Uber
@@ -5102,9 +5102,9 @@ WaveSchedule
 			ExtAttr IgnoreBuildings
 			Attributes DisableDodge
 			Attributes SpawnWithFullCharge
-			CustomEyeGlowColor "255 0 0" [$SIGSEGV]
+			CustomEyeGlowColor "255 0 0" 
 			Item "The Trepanabotomizer"
-			UseCustomModel models/bots/medic/bot_medic.mdl [$SIGSEGV]
+			UseCustomModel models/bots/medic/bot_medic.mdl 
 			StripItemSlot 0
 			NoBombUpgrades 1
 			ItemAttributes
@@ -5131,7 +5131,7 @@ WaveSchedule
 				"overheal penalty" 0
 				"bot medic uber deploy delay duration" 0.75
 			}
-			DeathSound ambient/energy/zap9.wav [$SIGSEGV]
+			DeathSound ambient/energy/zap9.wav 
 		}
 
 		Machine_Giant
@@ -5146,9 +5146,9 @@ WaveSchedule
 			Attributes HoldFireUntilFullReload
 			NoBombUpgrades 1
 			Action Mobber
-			AimLeadProjectileSpeed 1100 [$SIGSEGV] 
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
-			UseCustomModel models/bots/soldier_boss/bot_soldier_boss_gibby.mdl [$SIGSEGV]
+			AimLeadProjectileSpeed 1100  
+			UseMeleeThreatPrioritization 1 
+			UseCustomModel models/bots/soldier_boss/bot_soldier_boss_gibby.mdl 
 			StripItemSlot 1
 			StripItemSlot 2
 			Attributes MiniBoss
@@ -5166,7 +5166,7 @@ WaveSchedule
 				//"afterburn immunity" 1
 				"override footstep sound set" 3
 			}
-			DeathSound mvm/sentrybuster/mvm_sentrybuster_explode.wav [$SIGSEGV]
+			DeathSound mvm/sentrybuster/mvm_sentrybuster_explode.wav 
 		}
 
 		Machine_Giant2
@@ -5190,10 +5190,10 @@ WaveSchedule
 			//	"auto fires full clip" 0
 			//	"can overload" 0
 			//}
-			//AimLeadProjectileSpeed 1100 [$SIGSEGV] 
-			//AimLeadProjectileSpeed 1980 [$SIGSEGV] 
-			//UseMeleeThreatPrioritization 1 [$SIGSEGV]
-			UseCustomModel models/bots/soldier_boss/bot_soldier_boss_gibby.mdl [$SIGSEGV]
+			//AimLeadProjectileSpeed 1100  
+			//AimLeadProjectileSpeed 1980  
+			//UseMeleeThreatPrioritization 1 
+			UseCustomModel models/bots/soldier_boss/bot_soldier_boss_gibby.mdl 
 			StripItemSlot 1
 			StripItemSlot 2
 			Attributes MiniBoss
@@ -5211,7 +5211,7 @@ WaveSchedule
 				//"afterburn immunity" 1
 				"override footstep sound set" 3
 			}
-			DeathSound mvm/sentrybuster/mvm_sentrybuster_explode.wav [$SIGSEGV]
+			DeathSound mvm/sentrybuster/mvm_sentrybuster_explode.wav 
 		}
 
 		Machine_Giant_Boss
@@ -5228,10 +5228,10 @@ WaveSchedule
 			Attributes UseBossHealthBar
 			NoBombUpgrades 1
 			Action Mobber
-			AimLeadProjectileSpeed 0 [$SIGSEGV] 
-			//UseMeleeThreatPrioritization 1 [$SIGSEGV]
-			AimAt Head [$SIGSEGV]
-			UseCustomModel models/bots/soldier_boss/bot_soldier_boss_gibby.mdl [$SIGSEGV]
+			AimLeadProjectileSpeed 0  
+			//UseMeleeThreatPrioritization 1 
+			AimAt Head 
+			UseCustomModel models/bots/soldier_boss/bot_soldier_boss_gibby.mdl 
 			StripItemSlot 1
 			StripItemSlot 2
 			Attributes MiniBoss
@@ -5257,7 +5257,7 @@ WaveSchedule
 				//"afterburn immunity" 1
 				"override footstep sound set" 3
 			}
-			DeathSound mvm/sentrybuster/mvm_sentrybuster_explode.wav [$SIGSEGV]
+			DeathSound mvm/sentrybuster/mvm_sentrybuster_explode.wav 
 		}
 	}
 
@@ -5335,25 +5335,25 @@ WaveSchedule
 		Origin "0 0 0" 
 	}
 
-	PlayerItemEquipSpawnTemplate [$SIGSEGV]
+	PlayerItemEquipSpawnTemplate 
     {
         Name "p_switcharoo1"
         ItemName "Darwin's Danger Shield"
     }
 
-	PlayerItemEquipSpawnTemplate [$SIGSEGV]
+	PlayerItemEquipSpawnTemplate 
     {
         Name "p_switcharoo2"
         ItemName "The Razorback"
     }
 
-	PlayerItemEquipSpawnTemplate [$SIGSEGV]
+	PlayerItemEquipSpawnTemplate 
     {
         Name "p_switcharoo3"
         ItemName "The Cozy Camper"
     }
 
-	PointTemplates [$SIGSEGV]
+	PointTemplates 
     {
 
 		overlay_stuff
@@ -9154,1439 +9154,1439 @@ WaveSchedule
 
 ////////////////////////////////////////////////////////////
 	
-	SpawnTemplate "reviveredasblu" [$SIGSEGV]
+	SpawnTemplate "reviveredasblu" 
 
-	SpawnTemplate "p_beginrelay" [$SIGSEGV]
+	SpawnTemplate "p_beginrelay" 
 
-	SpawnTemplate "p_spawnremover1" [$SIGSEGV]
+	SpawnTemplate "p_spawnremover1" 
 	
-	SpawnTemplate "p_spawnremover2" [$SIGSEGV]
+	SpawnTemplate "p_spawnremover2" 
 
-	SpawnTemplate "p_spawnremover3" [$SIGSEGV]
+	SpawnTemplate "p_spawnremover3" 
 
-	SpawnTemplate "p_shake" [$SIGSEGV]
+	SpawnTemplate "p_shake" 
 
-	SpawnTemplate "p_shakelong" [$SIGSEGV]
+	SpawnTemplate "p_shakelong" 
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_voice"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_lastbot"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_camera"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_camera2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_camera3"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_pointmaker"
 		Origin "626 -942 -85"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_pointmaker2"
 		Origin "500 -985 -80"
 		Angles "0 25 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_planemaker"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_signbomb"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_sign0"
 	}
 	
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_sign2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_sign3"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_chat1"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_sign1"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_sign4"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_sign5"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_sign6"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_sign7"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_sign8"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_sign9"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_sign10"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_shopitem1"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_shopitem2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_shopitem3"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_shopitem4"
 	}
 	
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_shopitem5"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_virofix"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_virofix2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_spawnfix"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_pusher"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_pusher2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_mvm_beat"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"r_virobeat"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"r_virobeatoff"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"r_beatson"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"r_beatsoff"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_kaboom"
 		Origin 	"0 1163 70"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_kaboom"
 		Origin 	"0 560 -55"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_kaboom"
 		Origin 	"0 -240 -80"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_kaboom"
 		Origin 	"0 80 -80"
 		Angles "-35 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_kaboom"
 		Origin 	"0 1792 178"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_kaboom"
 		Origin 	"532 2522 267"
 		Angles "0 45 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_kaboom"
 		Origin 	"-835 1705 200"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_kaboom"
 		Origin 	"852 1445 200"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_nuke"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_survrelay1"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_survrelay2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_survrelay3"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_navblocker"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_navblocker2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_survmoveup"
 		Origin 	"0 380 267"
 		//Origin 	"230 1312 267"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_survmoveup2"
 		Origin 	"-647 465 267"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_survmoveup3"
 		Origin "626 -942 -90"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_survshop1"
 		Origin 	"800 1514 267"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_survshop2"
 		Origin 	"870 1514 267"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_survshop3"
 		Origin 	"940 1514 267"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_marketgardener"
 		Origin 	"0 676 10"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_tankgo"
 		Origin 	"706 -700 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_threaten"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_threaten2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_keepertarget"
 		Origin 	"620 1430 267"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_deskblock"
 		Origin 	"0 488 192"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_cover"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_leap"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_screen"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_screenblu"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_spawns"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_fog"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_fogold"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_nohud1"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name	"p_nohud2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_fade1"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_fade2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_fade3"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_fade4"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_shutter_pusher"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_brokenwall_pusher"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_yeet"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_yeet2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_yeet3"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_yeet4"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_mapblock"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_bonus"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "viro_music"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "lose_music"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "lose_music2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_hhhteleporter"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_teleporter_brush"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_teleporter_brush_finale"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_finale_facer"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_finale_facerblu"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_teleporter"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_teleporterfinale"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "r_cade_relay_last"
 		Origin "720 1280 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_shitcade"
 		Origin "0 250 -85"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_shitcade2"
 		Origin "75 250 -85"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_shitcade2"
 		Origin "-75 250 -85"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_shitcade2"
 		Origin "75 240 -85"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_shitcade2"
 		Origin "-75 240 -85"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_box_intro"
 		Origin "9 320 -25"
 		Angles "0 -15 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_crate_intro"
 		Origin "45 380 -65"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_crate_intro"
 		Origin "-30 380 -65"
 		Angles "0 110 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_chair_intro"
 		Origin "0 300 60"
 		Angles "130 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_chair_intro"
 		Origin "-33 320 64"
 		Angles "170 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_chair_intro"
 		Origin "127 332 -65"
 		Angles "-30 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_chair_intro"
 		Origin "-100 332 -65"
 		Angles "-30 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_desk_intro"
 		Origin "9 320 -65"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_table2"
 		Origin "-184 1000 -65"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-184 1000 -65"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_crate"
 		Origin "-164 1007 -17"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_crate"
 		Origin "-197 993 -65"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_plank2"
 		Origin "-223 1600 220"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_plank2"
 		Origin "-287 1600 220"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-223 1600 220"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-287 1600 220"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_plank"
 		Origin "-300 1575 205"
 		Angles "45 90 90"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_plank"
 		Origin "-250 1575 205"
 		Angles "45 90 90"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_plank"
 		Origin "-350 1575 205"
 		Angles "45 90 90"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-300 1575 205"
 		Angles "45 90 90"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-250 1575 205"
 		Angles "45 90 90"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-350 1575 205"
 		Angles "45 90 90"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-184 1000 -65"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_table"
 		Origin "462 854 -65"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "462 854 -65"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_desk_intro"
 		Origin "19 315 -25"
 		Angles "0 0 90"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_nolevel"
 		Origin "-650 250 -85"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_nolevel2"
 		Origin "390 2020 382"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "r_cade_relay"
 		Origin "720 1280 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "r_cade_relay_lower"
 		Origin "720 1280 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "r_cade_relay_window"
 		Origin "720 1280 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "r_respawn_relay"
 		Origin "720 1280 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_newlife"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cabinet"
 		Origin "720 1296 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "720 1296 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_shopengi"
 		Origin "945 1616 192"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_spook"
 		Origin "580 235 290"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_spook2"
 		Origin "520 220 225"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_spook3"
 		Origin "570 220 195"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cargodoor"
 		Origin "636 1435 190"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cargoshop1"
 		Origin "936 1603 198"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "936 1603 198"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cargoshop2"
 		Origin "936 1603 335"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cargoshop3"
 		Origin "855 1520 255"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_desk"
 		Origin "0 488 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "0 488 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_rick"
 		Origin "0 -35 788"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_level1"
 		Origin "580 260 353"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_level1"
 		Origin "520 260 353"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_level2"
 		Origin "-698 900 -65"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_plate2"
 		Origin "-715 810 -65"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_level2"
 		Origin "-710 350 -50"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_level2"
 		Origin "700 415 -65"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_plate2"
 		Origin "720 515 -65"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_plate2"
 		Origin "700 515 -85"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_level3a"
 		Origin "-475 1610 240"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-475 1610 240"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_plate3"
 		Origin "-540 1640 185"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_level3a"
 		Origin "500 1610 310"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "500 1610 310"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_plate3"
 		Origin "540 1640 185"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_level3b"
 		Origin "-225 1600 350"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_level3a"
 		Origin "-715 1280 280"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-715 1280 280"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_barricade_plate3"
 		Origin "-735 1150 185"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_box"
 		Origin "-630 550 192"
 		Angles "0 -25 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-630 550 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_fullkit"
 		Origin "697 617 350"
 		Angles "90 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_fullammo"
 		Origin "-697 895 350"
 		Angles "90 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_mediumkit"
 		Origin "-655 1225 30"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_mediumammo"
 		Origin "-84 1258 80"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_mediumammo"
 		Origin "400 1039 176"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallammo"
 		Origin "20 498 230"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallammo"
 		Origin "-20 498 230"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallammo"
 		Origin "0 474 230"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallammo"
 		Origin "-671 1436 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallammo"
 		Origin "-671 1462 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallammo"
 		Origin "-671 1410 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_fullammo"
 		Origin "444 262 93"
 		Angles "90 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallammoskin"
 		Origin "1130 2525 212"
 		Angles "-90 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallammoskin"
 		Origin "1130 2505 212"
 		Angles "-90 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallammoskin"
 		Origin "1130 2545 212"
 		Angles "-90 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallmedkitskin"
 		Origin "1115 2525 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallmedkitskin"
 		Origin "1115 2505 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallmedkitskin"
 		Origin "1115 2545 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_fullkit"
 		Origin "554 793 93"
 		Angles "90 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallmedkit"
 		Origin "20 298 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallmedkit"
 		Origin "-20 298 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallmedkit"
 		Origin "0 325 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallmedkit"
 		Origin "671 945 -65"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallmedkit"
 		Origin "671 919 -65"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallammo"
 		Origin "671 893 -65"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_smallammo"
 		Origin "671 867 -65"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_chair"
 		Origin "0 450 192"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_bookcase"
 		Origin "555 792 -65"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "555 792 -65"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_bookcase"
 		Origin "447 265 -65"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "447 265 -65"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_bookcase"
 		Origin "-696 895 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-696 895 192"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_bookcase"
 		Origin "696 620 192"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "696 620 192"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_beam"
 		Origin "360 1200 162"
 		Angles "0 0 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_stair"
 		Origin "710 250 105"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_monstercage"
 		Origin "-655 1225 -65"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-655 1225 -65"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_crate"
 		Origin "-597 1245 -65"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_crate"
 		Origin "-660 1146 -65"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-660 1146 -65"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "600 303 -65"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_heli"
 		Origin "1200 3200 500"
 		Angles "36 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_crash"
 		Origin "1200 3500 500"
 	}	
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_crate"
 		Origin "275 2350 100"
 		Angles "5 90 -5"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "275 2350 100"
 		Angles "5 90 -5"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_cashsave"
 		Origin "-597 1245 -65"
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_zombie"
 		Origin "562 1600 -140"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_beam"
 		Origin "562 1500 -50"
 		Angles "0 -90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name   "p_beam"
 		Origin "562 1500 -25"
 		Angles "0 90 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "p_slower0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "p_slower1"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "p_slower2"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "p_slower3"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "p_slower4"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "p_slower5"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "p_slower6"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "p_slower7"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "p_slower8"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "p_slower9"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "p_leet"
 		Origin "-152 1255 -65"
 		Angles "0 45 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "p_leet"
 		Origin "-388 2173 -35"
@@ -10598,9 +10598,9 @@ WaveSchedule
 	Wave
 	{
 
-	RedTeamWipeCausesWaveLoss 1 [$SIGSEGV]
+	RedTeamWipeCausesWaveLoss 1 
 
-	Explanation [$SIGSEGV]
+	Explanation 
     {
         Line "{red}You have once again entered the world of survival horror."
 		Line "{D500FF}MOST PRIMARY WEAPONS ARE UNAVAILABLE"
@@ -10621,7 +10621,7 @@ WaveSchedule
 			Target wave_finished_relay
 			Action trigger
 		}
-		SoundLoop [$SIGSEGV]
+		SoundLoop 
 		{
 			SoundFile "trespasser/zombiewait2.mp3"
 		}
@@ -10769,45 +10769,45 @@ WaveSchedule
 			TFBot
 			{
 				Template Survivor_1
-				InterruptAction [$SIGSEGV]
+				InterruptAction 
 				{
 					AimTarget "sign3"
 					Delay 1
 					Repeats 1 
 					Duration 3
 				}
-				InterruptAction [$SIGSEGV]
+				InterruptAction 
 				{
 					AimTarget "sign2"
 					Delay 43
 					Repeats 1 
 					Duration 20
 				}
-				VoiceCommand [$SIGSEGV]
+				VoiceCommand 
 				{
 					Delay 16
 					Cooldown 1337
 					Type "Dispenser Here"
 				}
-				VoiceCommand [$SIGSEGV]
+				VoiceCommand 
 				{
 					Delay 19
 					Cooldown 1337
 					Type "Negative"
 				}
-				VoiceCommand [$SIGSEGV]
+				VoiceCommand 
 				{
 					Delay 47
 					Cooldown 1337
 					Type "Incoming"
 				}
-				VoiceCommand [$SIGSEGV]
+				VoiceCommand 
 				{
 					Delay 60
 					Cooldown 1337
 					Type "Incoming"
 				}
-				VoiceCommand [$SIGSEGV]
+				VoiceCommand 
 				{
 					Delay 1
 					Cooldown 0
@@ -10840,45 +10840,45 @@ WaveSchedule
 			TFBot
 			{
 				Template Survivor_2
-				InterruptAction [$SIGSEGV]
+				InterruptAction 
 				{
 					AimTarget "sign3"
 					Delay 3
 					Repeats 1 
 					Duration 3
 				}
-				VoiceCommand [$SIGSEGV]
+				VoiceCommand 
 				{
 					Delay 12
 					Cooldown 1337
 					Type "Right"
 				}
-				VoiceCommand [$SIGSEGV]
+				VoiceCommand 
 				{
 					Delay 18
 					Cooldown 1337
 					Type "No"
 				}
-				VoiceCommand [$SIGSEGV]
+				VoiceCommand 
 				{
 					Delay 23
 					Cooldown 1337
 					Type "Jeers"
 				}
-				VoiceCommand [$SIGSEGV]
+				VoiceCommand 
 				{
 					Delay 45
 					Cooldown 1337
 					Type "Help"
 				}
-				VoiceCommand [$SIGSEGV]
+				VoiceCommand 
 				{
 					Delay 58
 					Cooldown 1337
 					Type "Help"
 				}
-				NoCrouchButtonRelease 1 [$SIGSEGV]
-				FireWeapon [$SIGSEGV]
+				NoCrouchButtonRelease 1 
+				FireWeapon 
 				{
 					Delay 46
 					Cooldown 1337
@@ -10886,14 +10886,14 @@ WaveSchedule
 					Duration 8
 					Type "Crouch"	
 				}
-				InterruptAction [$SIGSEGV]
+				InterruptAction 
 				{
 					AimTarget "sign2"
 					Delay 43
 					Repeats 1 
 					Duration 20
 				}
-				VoiceCommand [$SIGSEGV]
+				VoiceCommand 
 				{
 					Delay 1
 					Cooldown 0
@@ -10925,34 +10925,34 @@ WaveSchedule
 			TFBot
 			{
 				Template Survivor_3
-				InterruptAction [$SIGSEGV]
+				InterruptAction 
 				{
 					AimTarget "sign3"
 					Delay 2
 					Repeats 1 
 					Duration 3
 				}
-				Taunt [$SIGSEGV]
+				Taunt 
 				{
 					Delay 12
 					Cooldown 1337
 					Repeats 1
 				}
-				Taunt [$SIGSEGV]
+				Taunt 
 				{
 					Delay 45
 					Cooldown 1337
 					Repeats 1
 				}
-				FireWeapon [$SIGSEGV]
+				FireWeapon 
 				{
 					Delay 40
 					Cooldown 1337
 					Repeats 1
 					Type "Jump"	
 				}
-				NoCrouchButtonRelease 1 [$SIGSEGV]
-				FireWeapon [$SIGSEGV]
+				NoCrouchButtonRelease 1 
+				FireWeapon 
 				{
 					Delay 58
 					Cooldown 1337
@@ -10960,21 +10960,21 @@ WaveSchedule
 					Duration 4
 					Type "Crouch"	
 				}
-				FireWeapon [$SIGSEGV]
+				FireWeapon 
 				{
 					Delay 2
 					Cooldown 2
 					Type "Jump"
 					IfSeeTarget 1
 				}
-				InterruptAction [$SIGSEGV]
+				InterruptAction 
 				{
 					AimTarget "sign2"
 					Delay 43
 					Repeats 1 
 					Duration 20
 				}
-				VoiceCommand [$SIGSEGV]
+				VoiceCommand 
 				{
 					Delay 1
 					Cooldown 0
@@ -11493,7 +11493,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Brute3
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_CRITBOOSTED_ON_KILL
 				}
@@ -11535,7 +11535,7 @@ WaveSchedule
 			WaitBetweenSpawnsAfterDeath 0
 			Support 1
 			WaitBeforeStarting 2
-			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  A good smack breaks them skeletons easy." [$SIGSEGV]
+			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  A good smack breaks them skeletons easy." 
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target helper                  
@@ -11734,7 +11734,7 @@ WaveSchedule
 			Name "CHECKPOINT1"
 			WaitForAllSpawned "REVIVE1"
 			WaitBeforeStarting 58.25
-			FirstSpawnMessage "{00FFFF}5..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}5..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign4                      
@@ -11746,7 +11746,7 @@ WaveSchedule
 			Name "CHECKPOINT1"
 			WaitForAllSpawned "REVIVE1"
 			WaitBeforeStarting 59.25
-			FirstSpawnMessage "{00FFFF}4..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}4..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign5                    
@@ -11758,7 +11758,7 @@ WaveSchedule
 			Name "CHECKPOINT1"
 			WaitForAllSpawned "REVIVE1"
 			WaitBeforeStarting 60.25
-			FirstSpawnMessage "{00FFFF}3..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}3..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign6                   
@@ -11770,7 +11770,7 @@ WaveSchedule
 			Name "CHECKPOINT1"
 			WaitForAllSpawned "REVIVE1"
 			WaitBeforeStarting 61.25
-			FirstSpawnMessage "{00FFFF}2..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}2..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign7                    
@@ -11782,7 +11782,7 @@ WaveSchedule
 			Name "BUFFER1"
 			WaitForAllSpawned "REVIVE1"
 			WaitBeforeStarting 62.25
-			FirstSpawnMessage "{00FFFF}1..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}1..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign8                   
@@ -11966,7 +11966,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Brute2
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -12018,7 +12018,7 @@ WaveSchedule
 			{
 				Template Zombie_Brute
 				NoPushaway 1
-				InterruptAction [$SIGSEGV]
+				InterruptAction 
 				{
 					Target "gate_nav_blocker_2"
 					Delay 1
@@ -12072,7 +12072,7 @@ WaveSchedule
 			{
 				Template Zombie_Brute
 				NoPushaway 1
-				InterruptAction [$SIGSEGV]
+				InterruptAction 
 				{
 					Target "gate_nav_blocker_3"
 					Delay 1
@@ -12454,7 +12454,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Skeleton1
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_INVULNERABLE_HIDE_UNLESS_DAMAGED
 					Duration 1
@@ -12464,7 +12464,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Skeleton2
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_INVULNERABLE_HIDE_UNLESS_DAMAGED
 					Duration 1
@@ -12474,7 +12474,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Skeleton3
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_INVULNERABLE_HIDE_UNLESS_DAMAGED
 					Duration 1
@@ -12541,7 +12541,7 @@ WaveSchedule
 			WaitBetweenSpawnsAfterDeath 0
 			Support 1
 			WaitBeforeStarting 2
-			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  Smells extra crispy. Hope you're ready for a barbecue." [$SIGSEGV]
+			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  Smells extra crispy. Hope you're ready for a barbecue." 
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target helper                  
@@ -12735,7 +12735,7 @@ WaveSchedule
 			Name "CHECKPOINT2"
 			WaitForAllSpawned "REVIVE2"
 			WaitBeforeStarting 58.25
-			FirstSpawnMessage "{00FFFF}5..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}5..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign4                      
@@ -12747,7 +12747,7 @@ WaveSchedule
 			Name "CHECKPOINT2"
 			WaitForAllSpawned "REVIVE2"
 			WaitBeforeStarting 59.25
-			FirstSpawnMessage "{00FFFF}4..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}4..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign5                    
@@ -12759,7 +12759,7 @@ WaveSchedule
 			Name "CHECKPOINT2"
 			WaitForAllSpawned "REVIVE2"
 			WaitBeforeStarting 60.25
-			FirstSpawnMessage "{00FFFF}3..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}3..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign6                   
@@ -12771,7 +12771,7 @@ WaveSchedule
 			Name "CHECKPOINT2"
 			WaitForAllSpawned "REVIVE2"
 			WaitBeforeStarting 61.25
-			FirstSpawnMessage "{00FFFF}2..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}2..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign7                    
@@ -12783,7 +12783,7 @@ WaveSchedule
 			Name "BUFFER2"
 			WaitForAllSpawned "REVIVE2"
 			WaitBeforeStarting 62.25
-			FirstSpawnMessage "{00FFFF}1..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}1..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign8                   
@@ -13014,11 +13014,11 @@ WaveSchedule
 					Template Zombie_Skeleton1
 					Name "Atomic Skeleton"
 					Skin 2
-					//AddCond [$SIGSEGV]
+					//AddCond 
 					//{
 					//	Name TF_COND_SPEED_BOOST
 					//}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_OFFENSEBUFF
 					}
@@ -13029,11 +13029,11 @@ WaveSchedule
 					Template Zombie_Skeleton2
 					Name "Atomic Skeleton"
 					Skin 2
-					//AddCond [$SIGSEGV]
+					//AddCond 
 					//{
 					//	Name TF_COND_SPEED_BOOST
 					//}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_OFFENSEBUFF
 					}
@@ -13044,11 +13044,11 @@ WaveSchedule
 					Template Zombie_Skeleton3
 					Name "Atomic Skeleton"
 					Skin 2
-					//AddCond [$SIGSEGV]
+					//AddCond 
 					//{
 					//	Name TF_COND_SPEED_BOOST
 					//}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_OFFENSEBUFF
 					}
@@ -13076,11 +13076,11 @@ WaveSchedule
 					Template Zombie_Skeleton1
 					Name "Atomic Skeleton"
 					Skin 2
-					//AddCond [$SIGSEGV]
+					//AddCond 
 					//{
 					//	Name TF_COND_SPEED_BOOST
 					//}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_OFFENSEBUFF
 					}
@@ -13091,11 +13091,11 @@ WaveSchedule
 					Template Zombie_Skeleton2
 					Name "Atomic Skeleton"
 					Skin 2
-					//AddCond [$SIGSEGV]
+					//AddCond 
 					//{
 					//	Name TF_COND_SPEED_BOOST
 					//}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_OFFENSEBUFF
 					}
@@ -13106,11 +13106,11 @@ WaveSchedule
 					Template Zombie_Skeleton3
 					Name "Atomic Skeleton"
 					Skin 2
-					//AddCond [$SIGSEGV]
+					//AddCond 
 					//{
 					//	Name TF_COND_SPEED_BOOST
 					//}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_OFFENSEBUFF
 					}
@@ -13140,11 +13140,11 @@ WaveSchedule
 					Template Zombie_Skeleton1
 					Name "Atomic Skeleton"
 					Skin 2
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_OFFENSEBUFF
 					}
@@ -13155,11 +13155,11 @@ WaveSchedule
 					Template Zombie_Skeleton2
 					Name "Atomic Skeleton"
 					Skin 2
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_OFFENSEBUFF
 					}
@@ -13170,11 +13170,11 @@ WaveSchedule
 					Template Zombie_Skeleton3
 					Name "Atomic Skeleton"
 					Skin 2
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_OFFENSEBUFF
 					}
@@ -13204,11 +13204,11 @@ WaveSchedule
 					Template Zombie_Skeleton1
 					Name "Atomic Skeleton"
 					Skin 2
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_OFFENSEBUFF
 					}
@@ -13219,11 +13219,11 @@ WaveSchedule
 					Template Zombie_Skeleton2
 					Name "Atomic Skeleton"
 					Skin 2
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_OFFENSEBUFF
 					}
@@ -13234,11 +13234,11 @@ WaveSchedule
 					Template Zombie_Skeleton3
 					Name "Atomic Skeleton"
 					Skin 2
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_OFFENSEBUFF
 					}
@@ -13287,7 +13287,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless1a
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13301,7 +13301,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless1b
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13315,7 +13315,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless2a
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13329,7 +13329,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless2b
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13343,7 +13343,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless3a
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13357,7 +13357,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless3b
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13371,7 +13371,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless4a
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13385,7 +13385,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless4b
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13399,7 +13399,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless5a
 				Health 400
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13413,7 +13413,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless5b
 				Health 400
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13427,7 +13427,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless6a
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13441,7 +13441,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless6b
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13455,7 +13455,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless7a
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13469,7 +13469,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless7b
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13483,7 +13483,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless8a
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13497,7 +13497,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless8b
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13511,7 +13511,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless9a
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13525,7 +13525,7 @@ WaveSchedule
 			{
 				Template Zombie_Headless9b
 				Health 200
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -13554,7 +13554,7 @@ WaveSchedule
 				Target GTFOSTART                
 				Action trigger      
 			}
-			HalloweenBoss [$SIGSEGV]
+			HalloweenBoss 
 			{
 				ClassIcon horsemann_lite
 				BossType HHH
@@ -13668,7 +13668,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Burning
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13693,7 +13693,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic1
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13703,7 +13703,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic2
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13713,7 +13713,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic3
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13723,7 +13723,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic4
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13733,7 +13733,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic5
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13743,7 +13743,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic6
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13753,7 +13753,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic7
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13763,7 +13763,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic8
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13773,7 +13773,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic9
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13784,7 +13784,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic2
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13794,7 +13794,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic3
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13804,7 +13804,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic4
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13814,7 +13814,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Generic6
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 5
@@ -13860,7 +13860,7 @@ WaveSchedule
 			WaitBetweenSpawnsAfterDeath 0
 			Support 1
 			WaitBeforeStarting 2
-			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  I've supplied you with antitoxins should you turn, buddy." [$SIGSEGV]
+			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  I've supplied you with antitoxins should you turn, buddy." 
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target helper                  
@@ -14054,7 +14054,7 @@ WaveSchedule
 			Name "CHECKPOINT3"
 			WaitForAllSpawned "REVIVE3"
 			WaitBeforeStarting 58.25
-			FirstSpawnMessage "{00FFFF}5..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}5..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign4                      
@@ -14066,7 +14066,7 @@ WaveSchedule
 			Name "CHECKPOINT3"
 			WaitForAllSpawned "REVIVE3"
 			WaitBeforeStarting 59.25
-			FirstSpawnMessage "{00FFFF}4..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}4..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign5                    
@@ -14078,7 +14078,7 @@ WaveSchedule
 			Name "CHECKPOINT3"
 			WaitForAllSpawned "REVIVE3"
 			WaitBeforeStarting 60.25
-			FirstSpawnMessage "{00FFFF}3..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}3..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign6                   
@@ -14090,7 +14090,7 @@ WaveSchedule
 			Name "CHECKPOINT3"
 			WaitForAllSpawned "REVIVE3"
 			WaitBeforeStarting 61.25
-			FirstSpawnMessage "{00FFFF}2..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}2..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign7                    
@@ -14102,7 +14102,7 @@ WaveSchedule
 			Name "BUFFER3"
 			WaitForAllSpawned "REVIVE3"
 			WaitBeforeStarting 62.25
-			FirstSpawnMessage "{00FFFF}1..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}1..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign8                   
@@ -14676,12 +14676,12 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Brute
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 10
 				}
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -14719,11 +14719,11 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Brute
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 				}
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_OFFENSEBUFF
 				}
@@ -15013,7 +15013,7 @@ WaveSchedule
 			WaitBetweenSpawnsAfterDeath 0
 			Support 1
 			WaitBeforeStarting 2
-			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  Them robots are coming. Explosives, bullets, the whole package!" [$SIGSEGV]
+			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  Them robots are coming. Explosives, bullets, the whole package!" 
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target viro_beatoff                            
@@ -15245,7 +15245,7 @@ WaveSchedule
 			Name "CHECKPOINT4"
 			WaitForAllSpawned "REVIVE4"
 			WaitBeforeStarting 58.25
-			FirstSpawnMessage "{00FFFF}5..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}5..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign4                      
@@ -15257,7 +15257,7 @@ WaveSchedule
 			Name "CHECKPOINT4"
 			WaitForAllSpawned "REVIVE4"
 			WaitBeforeStarting 59.25
-			FirstSpawnMessage "{00FFFF}4..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}4..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign5                    
@@ -15269,7 +15269,7 @@ WaveSchedule
 			Name "CHECKPOINT4"
 			WaitForAllSpawned "REVIVE4"
 			WaitBeforeStarting 60.25
-			FirstSpawnMessage "{00FFFF}3..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}3..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign6                   
@@ -15281,7 +15281,7 @@ WaveSchedule
 			Name "CHECKPOINT4"
 			WaitForAllSpawned "REVIVE4"
 			WaitBeforeStarting 61.25
-			FirstSpawnMessage "{00FFFF}2..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}2..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign7                    
@@ -15293,7 +15293,7 @@ WaveSchedule
 			Name "BUFFER4"
 			WaitForAllSpawned "REVIVE4"
 			WaitBeforeStarting 62.25
-			FirstSpawnMessage "{00FFFF}1..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}1..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign8                   
@@ -15348,7 +15348,7 @@ WaveSchedule
 			WaitForAllSpawned "BUFFER4"
 			WaitBeforeStarting 12
 			FirstSpawnWarningSound trespasser/corrupt4.wav
-			FirstSpawnMessage "{blue}The Corrupted{FFFFFF} :  I... am a robot. I was built to scare you." [$SIGSEGV][$SIGSEGV]
+			FirstSpawnMessage "{blue}The Corrupted{FFFFFF} :  I... am a robot. I was built to scare you." 
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target mvm_beaton                          
@@ -15392,7 +15392,7 @@ WaveSchedule
 			WaitForAllSpawned "BUFFER4"
 			WaitBeforeStarting 19
 			FirstSpawnWarningSound trespasser/corrupt3.wav
-			FirstSpawnMessage "{blue}The Corrupted{FFFFFF} :  Crush! Kill. Kill! KILL. KILL! KILLLL <garbled>" [$SIGSEGV][$SIGSEGV]
+			FirstSpawnMessage "{blue}The Corrupted{FFFFFF} :  Crush! Kill. Kill! KILL. KILL! KILLLL <garbled>" 
 		}
 		WaveSpawn
 		{
@@ -15501,7 +15501,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Machine_Shotgun
-				//AddCond [$SIGSEGV]
+				//AddCond 
 				//{
 				//	Name TF_COND_SPEED_BOOST
 				//	Duration 5
@@ -15614,7 +15614,7 @@ WaveSchedule
 			WaitForAllDead "PART5-2"
 			WaitBeforeStarting 9
 			FirstSpawnWarningSound trespasser/corrupt2.wav
-			FirstSpawnMessage "{blue}The Corrupted{FFFFFF} :  I am programmed to be scary!" [$SIGSEGV][$SIGSEGV]
+			FirstSpawnMessage "{blue}The Corrupted{FFFFFF} :  I am programmed to be scary!" 
 		}
 		WaveSpawn
 		{
@@ -15648,7 +15648,7 @@ WaveSchedule
 			WaitForAllDead "PART5-2"
 			WaitBeforeStarting 15
 			FirstSpawnWarningSound trespasser/corrupt1.wav
-			FirstSpawnMessage "{blue}The Corrupted{FFFFFF} :  ... I will find {red}YOU{FFFFFF}. That's what I do! That's ALL I do!" [$SIGSEGV][$SIGSEGV]
+			FirstSpawnMessage "{blue}The Corrupted{FFFFFF} :  ... I will find {red}YOU{FFFFFF}. That's what I do! That's ALL I do!" 
 		}
 		WaveSpawn
 		{
@@ -15729,7 +15729,7 @@ WaveSchedule
 					Cooldown 0.1
 					Repeats 10
 				}
-				InterruptAction [$SIGSEGV]
+				InterruptAction 
 				{
 					Delay 1
 					Repeats 1 
@@ -15786,7 +15786,7 @@ WaveSchedule
 					Cooldown 0.1
 					Repeats 10
 				}
-				InterruptAction [$SIGSEGV]
+				InterruptAction 
 				{
 					Delay 1
 					Repeats 1 
@@ -15846,7 +15846,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Machine_RocketJumper
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_INVULNERABLE_HIDE_UNLESS_DAMAGED
 					Duration 1
@@ -15856,7 +15856,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Machine_RocketJumper2
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_INVULNERABLE_HIDE_UNLESS_DAMAGED
 					Duration 1
@@ -15908,7 +15908,7 @@ WaveSchedule
 			{
 				Template Machine_Unarmed2
 				Classicon soldier_banner_trio
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 3
@@ -15939,7 +15939,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Machine_Unarmed2
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 					Duration 3
@@ -15961,10 +15961,10 @@ WaveSchedule
 				Speed 75
 				Classicon tank_black
 				//DisableSmokestack 1
-				//CritImmune 1 [$SIGSEGV]
+				//CritImmune 1 
 				MaxTurnRate 75
 				Scale 0.9
-				Model "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				Model "models/bots/boss_bot/boss_tank_color.mdl" 
 				Name "dread_tank"
 				SpawnTemplate p_tankcolored
 				StartingPathTrackNode "tank_path1"
@@ -16114,7 +16114,7 @@ WaveSchedule
 			TotalCurrency 0
 			FirstSpawnWarningSound vo/compmode/cm_engie_pregamefirst_rare_03.mp3
 			DoneWarningSound vo/engineer_paincrticialdeath01.mp3
-			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  I've made contact with the Military. This here be our last chance for rescue!" [$SIGSEGV]
+			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  I've made contact with the Military. This here be our last chance for rescue!" 
 
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -16136,14 +16136,14 @@ WaveSchedule
 				TFBot
 				{
 					Template Survivor_4
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "target_shop1"
 						Delay 1
 						Repeats 1
 						Duration 30
 					}
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup2"
 						Delay 31
@@ -16154,7 +16154,7 @@ WaveSchedule
 					{
 						Exit
 						{
-							InterruptAction [$SIGSEGV]
+							InterruptAction 
 							{
 								Target "moveup3"
 								Delay 1
@@ -16181,7 +16181,7 @@ WaveSchedule
 			Support 1
 			WaitBeforeStarting 40
 			FirstSpawnWarningSound vo/engineer_helpme02.mp3
-			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  Son, keep me alive and I will remotely operate my shop for you!" [$SIGSEGV]
+			FirstSpawnMessage "{2EFF00}Shopkeeper{FFFFFF} :  Son, keep me alive and I will remotely operate my shop for you!" 
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target slower0                                
@@ -16274,7 +16274,7 @@ WaveSchedule
 			Name "checkpoint5"
 			WaitForAllSpawned "revive5"
 			WaitBeforeStarting 58.25
-			FirstSpawnMessage "{00FFFF}5..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}5..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign4                      
@@ -16286,7 +16286,7 @@ WaveSchedule
 			Name "checkpoint5"
 			WaitForAllSpawned "revive5"
 			WaitBeforeStarting 59.25
-			FirstSpawnMessage "{00FFFF}4..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}4..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign5                    
@@ -16298,7 +16298,7 @@ WaveSchedule
 			Name "checkpoint5"
 			WaitForAllSpawned "revive5"
 			WaitBeforeStarting 60.25
-			FirstSpawnMessage "{00FFFF}3..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}3..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign6                   
@@ -16310,7 +16310,7 @@ WaveSchedule
 			Name "checkpoint5"
 			WaitForAllSpawned "revive5"
 			WaitBeforeStarting 61.25
-			FirstSpawnMessage "{00FFFF}2..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}2..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign7                    
@@ -16322,7 +16322,7 @@ WaveSchedule
 			Name "BUFFER5"
 			WaitForAllSpawned "revive5"
 			WaitBeforeStarting 62.25
-			FirstSpawnMessage "{00FFFF}1..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}1..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign8                   
@@ -16572,7 +16572,7 @@ WaveSchedule
 				{
 					Template Zombie_Headless2a
 					Attributes AlwaysCrit
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -16582,7 +16582,7 @@ WaveSchedule
 				{
 					Template Zombie_Headless2b
 					Attributes AlwaysCrit
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -16592,7 +16592,7 @@ WaveSchedule
 				{
 					Template Zombie_Headless3a
 					Attributes AlwaysCrit
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -16602,7 +16602,7 @@ WaveSchedule
 				{
 					Template Zombie_Headless3b
 					Attributes AlwaysCrit
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -16612,7 +16612,7 @@ WaveSchedule
 				{
 					Template Zombie_Headless4a
 					Attributes AlwaysCrit
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -16622,7 +16622,7 @@ WaveSchedule
 				{
 					Template Zombie_Headless4b
 					Attributes AlwaysCrit
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -16632,7 +16632,7 @@ WaveSchedule
 				{
 					Template Zombie_Headless5a
 					Attributes AlwaysCrit
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -16642,7 +16642,7 @@ WaveSchedule
 				{
 					Template Zombie_Headless5b
 					Attributes AlwaysCrit
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -16652,7 +16652,7 @@ WaveSchedule
 				{
 					Template Zombie_Headless6a
 					Attributes AlwaysCrit
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -16662,7 +16662,7 @@ WaveSchedule
 				{
 					Template Zombie_Headless6b
 					Attributes AlwaysCrit
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -16694,10 +16694,10 @@ WaveSchedule
 				{
 					Template Zombie_Skeleton1
 					Name "Dire Skeleton"
-					UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
+					UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
 					//Health 300
 					Skin 4
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -16712,14 +16712,14 @@ WaveSchedule
 				{
 					Template Zombie_Skeleton2
 					Name "Dire Skeleton"
-					UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
+					UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
 					//Health 300
 					Skin 4
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_CRITBOOSTED_ON_KILL
 					}
@@ -16729,10 +16729,10 @@ WaveSchedule
 				{
 					Template Zombie_Skeleton3
 					Name "Dire Skeleton"
-					UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
+					UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl 
 					//Health 300
 					Skin 4
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -16787,7 +16787,7 @@ WaveSchedule
 			{
 				Template Zombie_Generic1
 				Name "Rotting Corpse"
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 				}
@@ -16808,7 +16808,7 @@ WaveSchedule
 			{
 				Template Zombie_Generic2
 				Name "Rotting Corpse"
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 				}
@@ -16829,7 +16829,7 @@ WaveSchedule
 			{
 				Template Zombie_Generic3
 				Name "Rotting Corpse"
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 				}
@@ -16850,7 +16850,7 @@ WaveSchedule
 			{
 				Template Zombie_Generic4
 				Name "Rotting Corpse"
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 				}
@@ -16871,7 +16871,7 @@ WaveSchedule
 			{
 				Template Zombie_Generic5
 				Name "Rotting Corpse"
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 				}
@@ -16892,7 +16892,7 @@ WaveSchedule
 			{
 				Template Zombie_Generic6
 				Name "Rotting Corpse"
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 				}
@@ -16913,7 +16913,7 @@ WaveSchedule
 			{
 				Template Zombie_Generic7
 				Name "Rotting Corpse"
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 				}
@@ -16934,7 +16934,7 @@ WaveSchedule
 			{
 				Template Zombie_Generic8
 				Name "Rotting Corpse"
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 				}
@@ -16955,7 +16955,7 @@ WaveSchedule
 			{
 				Template Zombie_Generic9
 				Name "Rotting Corpse"
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_SPEED_BOOST
 				}
@@ -16990,7 +16990,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Burning
-				//AddCond [$SIGSEGV]
+				//AddCond 
 				//{
 				//	Name TF_COND_SPEED_BOOST
 				//}
@@ -17116,7 +17116,7 @@ WaveSchedule
 			WaitForAllDead "PART6-2"
 			WaitBeforeStarting 4.5
 			FirstSpawnWarningSound vo/mvm/norm/soldier_mvm_battlecry01.mp3
-			FirstSpawnMessage "{blue}The Corrupted{FFFFFF} :  CHARGE!" [$SIGSEGV]
+			FirstSpawnMessage "{blue}The Corrupted{FFFFFF} :  CHARGE!" 
 		}
 
 		WaveSpawn
@@ -17136,7 +17136,7 @@ WaveSchedule
 				TFBot
 				{
 					Template Zombie_Brute
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -17200,7 +17200,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "Panic Attack Shotgun"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17213,7 +17213,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "The Reserve Shooter"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17226,7 +17226,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "The Family Business"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17239,7 +17239,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "Panic Attack Shotgun"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17252,7 +17252,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "The Reserve Shooter"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17265,7 +17265,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "The Family Business"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17278,7 +17278,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "FakeFrontier"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17308,7 +17308,7 @@ WaveSchedule
 				TFBot
 				{
 					Template Zombie_Brute2
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -17372,7 +17372,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "Panic Attack Shotgun"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17385,7 +17385,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "The Reserve Shooter"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17398,7 +17398,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "The Family Business"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17411,7 +17411,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "Panic Attack Shotgun"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17424,7 +17424,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "The Reserve Shooter"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17437,7 +17437,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "The Family Business"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17450,7 +17450,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "FakeFrontier"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17480,7 +17480,7 @@ WaveSchedule
 				TFBot
 				{
 					Template Zombie_Brute3
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Name TF_COND_SPEED_BOOST
 					}
@@ -17543,7 +17543,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "Panic Attack Shotgun"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17556,7 +17556,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "The Reserve Shooter"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17569,7 +17569,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "The Family Business"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17582,7 +17582,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "Panic Attack Shotgun"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17595,7 +17595,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "The Reserve Shooter"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17608,7 +17608,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "The Family Business"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17621,7 +17621,7 @@ WaveSchedule
 				{
 					Template Machine_Shotgun
 					Item "FakeFrontier"
-					InterruptAction [$SIGSEGV]
+					InterruptAction 
 					{
 						Target "moveup"
 						Delay 1
@@ -17748,7 +17748,7 @@ WaveSchedule
 			Name "LASTPAUSE"
 			WaitForAllDead "PART6-4"
 			WaitBeforeStarting 6
-			FirstSpawnMessage "{00FFFF}LAST CHANCE FOR PURCHASES" [$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}LAST CHANCE FOR PURCHASES" 
 			FirstSpawnWarningSound ambient/alarms/klaxon1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -17772,7 +17772,7 @@ WaveSchedule
 			Name "LASTPAUSE"
 			WaitForAllDead "PART6-4"
 			WaitBeforeStarting 6
-			FirstSpawnMessage "{00FFFF}LAST CHANCE FOR PURCHASES" [$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}LAST CHANCE FOR PURCHASES" 
 			FirstSpawnWarningSound ambient/alarms/klaxon1.wav
 			FirstSpawnOutput                                                                                                                                                            
 			{
@@ -17785,7 +17785,7 @@ WaveSchedule
 			Name "LASTPAUSE"
 			WaitForAllDead "PART6-4"
 			WaitBeforeStarting 6
-			FirstSpawnMessage "{00FFFF}LAST CHANCE FOR PURCHASES" [$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}LAST CHANCE FOR PURCHASES" 
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target flag1_bomb                
@@ -17797,7 +17797,7 @@ WaveSchedule
 			Name "LASTPAUSE"
 			WaitForAllDead "PART6-4"
 			WaitBeforeStarting 6
-			FirstSpawnMessage "{00FFFF}LAST CHANCE FOR PURCHASES" [$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}LAST CHANCE FOR PURCHASES" 
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target flag2_bomb                
@@ -17809,7 +17809,7 @@ WaveSchedule
 			Name "LASTPAUSE"
 			WaitForAllDead "PART6-4"
 			WaitBeforeStarting 6.1
-			FirstSpawnMessage "{00FFFF}LAST CHANCE FOR PURCHASES... {FF6666}if your shopkeeper is still alive!" [$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}LAST CHANCE FOR PURCHASES... {FF6666}if your shopkeeper is still alive!" 
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target flag3_bomb                
@@ -17841,7 +17841,7 @@ WaveSchedule
 			Name "CHECKPOINTLAST"
 			WaitForAllSpawned "LASTPAUSE"
 			WaitBeforeStarting 35
-			FirstSpawnMessage "{00FFFF}5..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}5..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign4                      
@@ -17853,7 +17853,7 @@ WaveSchedule
 			Name "CHECKPOINTLAST"
 			WaitForAllSpawned "LASTPAUSE"
 			WaitBeforeStarting 36
-			FirstSpawnMessage "{00FFFF}4..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}4..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign5                    
@@ -17865,7 +17865,7 @@ WaveSchedule
 			Name "CHECKPOINTLAST"
 			WaitForAllSpawned "LASTPAUSE"
 			WaitBeforeStarting 37
-			FirstSpawnMessage "{00FFFF}3..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}3..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign6                   
@@ -17877,7 +17877,7 @@ WaveSchedule
 			Name "CHECKPOINTLAST"
 			WaitForAllSpawned "LASTPAUSE"
 			WaitBeforeStarting 38
-			FirstSpawnMessage "{00FFFF}2..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}2..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign7                    
@@ -17889,7 +17889,7 @@ WaveSchedule
 			Name "CHECKPOINTLAST"
 			WaitForAllSpawned "LASTPAUSE"
 			WaitBeforeStarting 39
-			FirstSpawnMessage "{00FFFF}1..."[$SIGSEGV]
+			FirstSpawnMessage "{00FFFF}1..."
 			FirstSpawnOutput                                                                                                                                                            
 			{
 				Target sign8                   
@@ -18577,7 +18577,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Behemoth
-				InterruptAction [$SIGSEGV]
+				InterruptAction 
 				{
 					Target "target_tankgo"
 					Delay 1
@@ -18599,7 +18599,7 @@ WaveSchedule
 			WaitBeforeStarting 133
 			WaitBetweenSpawns 4
 			Support 1
-			HalloweenBoss [$SIGSEGV]
+			HalloweenBoss 
 			{
 				ClassIcon dead2_blu_lite
 				BossType SkeletonNormal
@@ -18620,7 +18620,7 @@ WaveSchedule
 			WaitBeforeStarting 138
 			Support limited
 			FirstSpawnWarningSound npc/combine_soldier/vo/prison_soldier_visceratorsa5.wav
-			//FirstSpawnMessage "{2EFF00}Soldier{FFFFFF} :  Big whisky delta on the LZ. We will distract it, stay away!" [$SIGSEGV]
+			//FirstSpawnMessage "{2EFF00}Soldier{FFFFFF} :  Big whisky delta on the LZ. We will distract it, stay away!" 
 			TotalCurrency 0
 
 			FirstSpawnOutput                                                                                                                                                            
@@ -18632,7 +18632,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Survivor_Army
-				InterruptAction [$SIGSEGV]
+				InterruptAction 
 				{
 					Target "finale_face_target"
 					Delay 30
@@ -18826,13 +18826,13 @@ WaveSchedule
 				Name "Victory!"
 				Action Idle
 				Scale 0.1
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name TF_COND_STEALTHED_USER_BUFF_FADING
 				}
 				Attributes IgnoreEnemies
 				Health 99999
-				UseCustomModel "models/empty.mdl" [$SIGSEGV]
+				UseCustomModel "models/empty.mdl" 
 				CharacterAttributes
 				{
 					"voice pitch scale" 0

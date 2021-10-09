@@ -26,14 +26,14 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 	AddSentryBusterWhenDamageDealtExceeds	3000
 	AddSentryBusterWhenKillCountExceeds 20
 	Advanced 1
-	TextPrintTime 0 					[$SIGSEGV]
-	ImprovedAirblast 0 			[$SIGSEGV]
-	SniperAllowHeadshots 0 [$SIGSEGV]
-	NoRomevisionCosmetics 1 [$SIGSEGV] // Fuck Romevision,  it adds Rome Cosmetics and it fucks up with the cosmetics I already added
-	NoCritPumpkin 1 					[$SIGSEGV] // During the first test i saw some crit pumpkins spawning, So i put big flipping bird to that ever existed
-	//ForceHoliday 2 						[$SIGSEGV] // Might not be needed cuz halloween map?
-	NoThrillerTaunt 1				[$SIGSEGV] // Thanks Yoovy for pointing that one out, didn't know thriller taunt was a thing on this map
-	NoMissionInfo 1				[$SIGSEGV] // No weapon changes anyways, it's mostly vanilla
+	TextPrintTime 0 					
+	ImprovedAirblast 0 			
+	SniperAllowHeadshots 0 
+	NoRomevisionCosmetics 1  // Fuck Romevision,  it adds Rome Cosmetics and it fucks up with the cosmetics I already added
+	NoCritPumpkin 1 					 // During the first test i saw some crit pumpkins spawning, So i put big flipping bird to that ever existed
+	//ForceHoliday 2 						 // Might not be needed cuz halloween map?
+	NoThrillerTaunt 1				 // Thanks Yoovy for pointing that one out, didn't know thriller taunt was a thing on this map
+	NoMissionInfo 1				 // No weapon changes anyways, it's mostly vanilla
 	PrecacheModel "models/player/items/all_class/trn_wiz_hat_soldier.mdl"
 	PrecacheModel "models/player/items/soldier/soldier_samurai.mdl"
     PrecacheModel "models/workshop_partner/weapons/c_models/c_shogun_warpack/c_shogun_warpack.mdl"
@@ -56,7 +56,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		Y	"2608"                  
 		Z	"-1203"   
 	}
-	PointTemplates [$SIGSEGV]
+	PointTemplates 
 	{
 		WizardTank
 		{
@@ -425,7 +425,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			//Item "The Warsworn Helmet"
 			Item "Blazing Bull"
 			Item "Pocket Admin"
-			ItemModel [$SIGSEGV] // Should fix the cosmetics style override
+			ItemModel  // Should fix the cosmetics style override
 			{
 			ItemName "Pocket Admin"
 			Model "models/player/items/all_class/all_reckoning_eagonn_pyro.mdl"
@@ -465,7 +465,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			Item "Pocket Medic"
 			Item "Mad Mask"
 			Item "The Bolshevik Biker"
-			ItemModel [$SIGSEGV] // Should fix the cosmetics style override
+			ItemModel  // Should fix the cosmetics style override
 			{
 			ItemName "Pocket Medic"
 			Model "models/workshop/player/items/heavy/robo_heavy_chief/robo_heavy_chief.mdl"
@@ -632,7 +632,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			"projectile penetration" 1
 			// "bleeding duration" 10 // Removed bleed on the first wave
 			}
-			ItemModel [$SIGSEGV] // Should fix the cosmetics style override
+			ItemModel  // Should fix the cosmetics style override
 			{
 			ItemName "Pocket-Medes"
 			Model "models/workshop/player/items/medic/robo_medic_blighted_beak/robo_medic_blighted_beak.mdl"
@@ -1036,7 +1036,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			"override projectile type"  6
 			"set damagetype ignite" 1
 			"dmg bonus vs buildings" 5
-			"mod projectile heat seek power" 10 [$SIGSEGV] // Don't look at this one
+			"mod projectile heat seek power" 10  // Don't look at this one
 			"projectile trail particle"	spell_fireball_small_red
 			"custom projectile model" models/weapons/w_models/w_drg_ball.mdl
 			"custom kill icon" "spellbook_fireball"
@@ -1092,7 +1092,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			"override projectile type"  6
 			"set damagetype ignite" 1
 			"dmg bonus vs buildings" 5
-			"mod projectile heat seek power" 10 [$SIGSEGV] // Don't look at this one
+			"mod projectile heat seek power" 10  // Don't look at this one
 			"projectile trail particle"	spell_fireball_small_red
 			"custom projectile model" models/weapons/w_models/w_drg_ball.mdl
 			"custom kill icon" "spellbook_fireball"
@@ -1165,7 +1165,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 			Attributes	"UseBossHealthBar"
 			WeaponRestrictions PrimaryOnly
 			Tag nav_prefer_main_back
-			StripItemSlot 1 [$SIGSEGV] // Removed the shotgun, what how can he use the shotgun wtf
+			StripItemSlot 1  // Removed the shotgun, what how can he use the shotgun wtf
 			//Cosmetics
 			Item "The Diplomat"
 			Item "The Man in Slacks"
@@ -1230,7 +1230,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				Item "The Dark Age Defender"
 			
 				//Items // Primary --> 1. it displays a weird overheal on the boss healthbar 2. it negates -25 max health on the eyelander, Nessie's nine iron, Headtaker
-				Item "Ali Baba's Wee Booties" //StripItemSlot 0 [$SIGSEGV] //Use the Wee booties or the Bootlegger
+				Item "Ali Baba's Wee Booties" //StripItemSlot 0  //Use the Wee booties or the Bootlegger
 				Item "The Chargin' Targe"
 				Item "The Eyelander"
 				Item "tf_weapon_spellbook"
@@ -1246,7 +1246,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				ItemAttributes
 				{
 					ItemName "tf_weapon_spellbook"
-					"mod projectile heat seek power" 15 [$SIGSEGV]  // Hellblade i swear to god, if you're reading this I hope you're proud of this homing shit.
+					"mod projectile heat seek power" 15   // Hellblade i swear to god, if you're reading this I hope you're proud of this homing shit.
 					"deploy time decreased" 0.01										// Haha Fireball with no homing projectile is useless. 
 					"fire rate bonus" 0.01	
 					"dmg penalty vs players" 0.5
@@ -1260,7 +1260,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 					"airblast vulnerability multiplier" 0.5
 					"override footstep sound set" 4
 				}
-				Spell [$SIGSEGV] //Gives specified spell to bots.
+				Spell  //Gives specified spell to bots.
 				{
 				Delay 3 //Time before the first spell charges are given (Default: 10)
 				Cooldown 10 //Time between each spell changes (Default: 10)
@@ -1275,7 +1275,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 	}
 	Wave // Wave 1 Payout 700
 	{ // Oh fuck, i still left the lore of the mission for no reason.
-	//Explanation [$SIGSEGV]  // Guess what? Who wants Dialogue? Nobody...? Yeah Nobody.
+	//Explanation   // Guess what? Who wants Dialogue? Nobody...? Yeah Nobody.
 	//	{ // If you whatever reason are intersted into this go read it here: https://en.touhouwiki.net/wiki/Subterranean_Animism
 	//		Line "{red}/////////////////////////////////////////////////"
 	//		Line "{9933FF}Yukari: {EDEA15}A geyser erupted out of nowhere, you and your mercenaries are here to investigate the source of it."
@@ -1486,8 +1486,8 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 					Action Trigger                         
 				}
 				SpawnTemplate "spelltank_init"
-				SpawnTemplate "WizardTank" [$SIGSEGV]
-				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				SpawnTemplate "WizardTank" 
+				Model  "models/bots/boss_bot/boss_tank_color.mdl" 
 			}
 		}
 		WaveSpawn // Pyro support 
@@ -1555,7 +1555,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 						ItemAttributes
 						{
 						ItemName "tf_weapon_spellbook"
-						"mod projectile heat seek power" 10 [$SIGSEGV]
+						"mod projectile heat seek power" 10 
 						"deploy time decreased" 0.01										
 						"fire rate bonus" 0.01	
 						"dmg penalty vs players" 0.5
@@ -1577,7 +1577,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
                             "dmg from ranged reduced" 0.0001
                             "afterburn immunity" 1
                         }
-						Spell [$SIGSEGV] //Gives specified spell to bots.
+						Spell  //Gives specified spell to bots.
 						{
 						Delay 8 //Time before the first spell charges are given (Default: 10)
 						Cooldown 5 //Time between each spell changes (Default: 10)
@@ -1599,7 +1599,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 	{
 		WaitWhenDone	65
 		Checkpoint	Yes
-		//Explanation [$SIGSEGV]
+		//Explanation 
 		//{
 		//	Line "{red}/////////////////////////////////////////////////"
 		//	Line "{9933FF}Yukari: {EDEA15}You’ve made it out alive through {581111}Yamame? {EDEA15}Good, There should be a Bridge ahead. There you can cross that Bridge further to the Formal Capital."
@@ -1873,7 +1873,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 	{
 		WaitWhenDone	65
 		Checkpoint	Yes
-		//Explanation [$SIGSEGV]
+		//Explanation 
 		//{
 		//	Line "{red}/////////////////////////////////////////////////"
 		//	Line "{9933FF}Yukari: {EDEA15}More good news. I knew {00FF00}Parsee {EDEA15}would let you pass. You could’ve ask her {blue}Kindly {EDEA15}to cross the bridge, you know?"
@@ -1927,8 +1927,8 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				}
 				DisableSmokestack 1 
                 SpawnTemplate "conchtank_init"
-				SpawnTemplate "Oni_Tank" [$SIGSEGV]
-				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				SpawnTemplate "Oni_Tank" 
+				Model  "models/bots/boss_bot/boss_tank_color.mdl" 
 			}
 		}
 		WaveSpawn // Conch Tank 18k
@@ -1963,8 +1963,8 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				}
 				DisableSmokestack 1 
                 SpawnTemplate "conchtank_init"
-				SpawnTemplate "Oni_Tank" [$SIGSEGV]
-				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				SpawnTemplate "Oni_Tank" 
+				Model  "models/bots/boss_bot/boss_tank_color.mdl" 
 			}
 		}
 		WaveSpawn // Bowman
@@ -2223,13 +2223,13 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 					TFBot
 					{
 					Template T_TFBot_Phenomenal_Oni
-					WeaponSwitch [$SIGSEGV]
+					WeaponSwitch 
 					{
 					Delay 0
 					Repeats 1 // 0 = infinite
 					Type "Melee"
 					}
-					WeaponSwitch [$SIGSEGV]
+					WeaponSwitch 
 					{
 					Delay 0
 					IfHealthBelow 15000
@@ -2391,7 +2391,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 	{
 		WaitWhenDone	65
 		Checkpoint	Yes
-		//Explanation [$SIGSEGV]
+		//Explanation 
 		//{
 		//	Line "{red}/////////////////////////////////////////////////"
 		//	Line "{9933FF}Yukari: {EDEA15}Friendly sparring or not, that was a tough one. What? {red}She {EDEA15}told you to go the Palace of the Earth Spirits?"
@@ -2663,7 +2663,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 	{
 		WaitWhenDone	65
 		Checkpoint	Yes
-		//Explanation [$SIGSEGV]
+		//Explanation 
 		//{
 		//	Line "{red}/////////////////////////////////////////////////"
 		//	Line "{9933FF}Yukari: {EDEA15}Seems {FF99FF}Satori {EDEA15}permits you to talk 2 of her pets. One is {red}Rin Kaenbyou {EDEA15}and the other one is {00FF00}Utsuho Reiuji."
@@ -2846,8 +2846,8 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 					Action Trigger                         
 				}
 				SpawnTemplate "spelltank_init"
-				SpawnTemplate "WizardTank" [$SIGSEGV]
-				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				SpawnTemplate "WizardTank" 
+				Model  "models/bots/boss_bot/boss_tank_color.mdl" 
 			}
 		}
 		WaveSpawn // Flame Bowman
@@ -2891,7 +2891,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 					Item "Pocket Medic"
 					Item "Mad Mask"
 					Item "The Bolshevik Biker"
-					ItemModel [$SIGSEGV] // Should fix the cosmetics style override
+					ItemModel  // Should fix the cosmetics style override
 					{
 					ItemName "Pocket Medic"
 					Model "models/workshop/player/items/heavy/robo_heavy_chief/robo_heavy_chief.mdl"
@@ -2992,8 +2992,8 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 					Action Trigger                         
 				}
 				SpawnTemplate "spelltank_init"
-				SpawnTemplate "WizardTank" [$SIGSEGV]
-				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				SpawnTemplate "WizardTank" 
+				Model  "models/bots/boss_bot/boss_tank_color.mdl" 
 			}
 		}
 		WaveSpawn // Cat Pyro
@@ -3019,7 +3019,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 					Item "Pocket Medic"
 					Item "Mad Mask"
 					Item "The Bolshevik Biker"
-					ItemModel [$SIGSEGV] // Should fix the cosmetics style override
+					ItemModel  // Should fix the cosmetics style override
 					{
 					ItemName "Pocket Medic"
 					Model "models/workshop/player/items/heavy/robo_heavy_chief/robo_heavy_chief.mdl"
@@ -3085,7 +3085,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 						ItemAttributes
 						{
 						ItemName "tf_weapon_spellbook"
-						"mod projectile heat seek power" 10 [$SIGSEGV]
+						"mod projectile heat seek power" 10 
 						"deploy time decreased" 0.01										
 						"fire rate bonus" 0.01	
 						"dmg penalty vs players" 0.5
@@ -3107,7 +3107,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
                             "dmg from ranged reduced" 0.0001
                             "afterburn immunity" 1
                         }
-						Spell [$SIGSEGV] //Gives specified spell to bots.
+						Spell  //Gives specified spell to bots.
 						{
 						Delay 8 //Time before the first spell charges are given (Default: 10)
 						Cooldown 5 //Time between each spell changes (Default: 10)
@@ -3154,7 +3154,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 						ItemAttributes
 						{
 						ItemName "tf_weapon_spellbook"
-						"mod projectile heat seek power" 10 [$SIGSEGV]
+						"mod projectile heat seek power" 10 
 						"deploy time decreased" 0.01										
 						"fire rate bonus" 0.01	
 						"dmg penalty vs players" 0.5
@@ -3176,7 +3176,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
                             "dmg from ranged reduced" 0.0001
                             "afterburn immunity" 1
                         }
-						Spell [$SIGSEGV] //Gives specified spell to bots.
+						Spell  //Gives specified spell to bots.
 						{
 						Delay 8 //Time before the first spell charges are given (Default: 10)
 						Cooldown 5 //Time between each spell changes (Default: 10)
@@ -3198,7 +3198,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 	{
 		WaitWhenDone	65
 		Checkpoint	Yes
-		//Explanation [$SIGSEGV]
+		//Explanation 
 		//{
 		//	Line "{red}/////////////////////////////////////////////////"
 		//	Line "{9933FF}Yukari: {EDEA15}Wait, {red}Rin {EDEA15}warns you about {00FF00}Utsuho? {EDEA15}That she infused herself with an Yatagarasu and claimed the nuclear powers?"
@@ -3268,8 +3268,8 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				}
 				DisableSmokestack 1 
                 SpawnTemplate "conchtank_init"
-				SpawnTemplate "Oni_Tank" [$SIGSEGV]
-				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				SpawnTemplate "Oni_Tank" 
+				Model  "models/bots/boss_bot/boss_tank_color.mdl" 
 			}
 		}
 		WaveSpawn // Return of the Plague doctors 45
@@ -3409,13 +3409,13 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				TFBot
 				{
 					Template T_TFBot_Enraged_Oni
-					WeaponSwitch [$SIGSEGV]
+					WeaponSwitch 
 					{
 					Delay 0
 					Repeats 1
 					Type "Melee"
 					}
-					WeaponSwitch [$SIGSEGV]
+					WeaponSwitch 
 					{
 					Delay 0
 					IfHealthBelow 5000
@@ -3512,7 +3512,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 				//	Item "The Virus Doctor" 
 				//	//Item "The Heat of Winter"
 				//	Item "Pocket-Medes"
-				//	ItemModel [$SIGSEGV] // Should fix the cosmetics style override
+				//	ItemModel  // Should fix the cosmetics style override
 				//	{
 				//	ItemName "Pocket-Medes"
 				//	Model "models/workshop/player/items/medic/robo_medic_blighted_beak/robo_medic_blighted_beak.mdl"
@@ -3729,7 +3729,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 	//				Item "The Virus Doctor" 
 	//				//Item "The Heat of Winter"
 	//				Item "Pocket-Medes"
-	//				ItemModel [$SIGSEGV] // Should fix the cosmetics style override
+	//				ItemModel  // Should fix the cosmetics style override
 	//				{
 	//				ItemName "Pocket-Medes"
 	//				Model "models/workshop/player/items/medic/robo_medic_blighted_beak/robo_medic_blighted_beak.mdl"

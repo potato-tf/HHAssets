@@ -91,22 +91,22 @@ WaveSchedule
 	StartingCurrency 1600 //1200 //1600 yoovy you fucking ape
 	Advanced 1
 	EventPopFile Halloween
-	ZombiesNoWave666 1 [$SIGSEGV] // If set to 1, the game will not display wave 666 when EventPopFile is set (default: 0)
-	NoRomevisionCosmetics 1 [$SIGSEGV]
-	SendBotsToSpectatorImmediately 1 [$SIGSEGV]
-	MedigunShieldDamage 1 [$SIGSEGV] //Shield Medics can now harm human team
-	NoCritPumpkin 1 [$SIGSEGV]
-	ImprovedAirblast 0 [$SIGSEGV] //APEEEEEEEEEEEEEEEEEEEE
-	TextPrintTime 0 [$SIGSEGV] //rafradek you retard why is this on by default who even watned this
-	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV] //PRECACHE THESE
+	ZombiesNoWave666 1  // If set to 1, the game will not display wave 666 when EventPopFile is set (default: 0)
+	NoRomevisionCosmetics 1 
+	SendBotsToSpectatorImmediately 1 
+	MedigunShieldDamage 1  //Shield Medics can now harm human team
+	NoCritPumpkin 1 
+	ImprovedAirblast 0  //APEEEEEEEEEEEEEEEEEEEE
+	TextPrintTime 0  //rafradek you retard why is this on by default who even watned this
+	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_tank_color.mdl"  //PRECACHE THESE
 
-	ExtraTankPath [$SIGSEGV] //haha blimp go brrrrr
+	ExtraTankPath  //haha blimp go brrrrr
 	{
 		Name "downpour_blimp_path"
 		Node "-2500 -4900 500"
@@ -115,9 +115,9 @@ WaveSchedule
 		Node "-1650 -290 500"
 	}
 	
-	PointTemplates [$SIGSEGV]
+	PointTemplates 
 	{
-		//DeleteRain [$SIGSEGV] //tindall pls
+		//DeleteRain  //tindall pls
 		//{
 			//NoFixup 1
 			//logic_relay
@@ -137,7 +137,7 @@ WaveSchedule
             }
         }
 
-		NoSpells [$SIGSEGV] //no fuck you no spells
+		NoSpells  //no fuck you no spells
 		{
 			NoFixup 1
 			logic_relay
@@ -195,295 +195,295 @@ WaveSchedule
         }
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "NoSpells"
 		Origin "5 5 5" //Position where to spawn the template
 	}
 
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "annotation_blimp"
 	}
 
 	//BY CREATORFORCE. THANK YOU.
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4343 -2508 350"
 		"angles" "67 246 -16"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4247 -2554 360"
 		"angles" "67 246 43"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4452 -2572 324"
 		"angles" "0 266 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4240 -2709 363"
 		"angles" "0 205 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4167 -2648 347"
 		"angles" "57 175 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4241 -2756 380"
 		"angles" "61 37 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4254 2889 375"
 		"angles" "40 179 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4254 2889 375"
 		"angles" "40 179 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4288 -2752 400"
 		"angles" "27 233 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4232 -2957 380"
 		"angles" "32 135 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4293 -3066 438"
 		"angles" "32 129 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4753 -2624 413"
 		"angles" "8 -13 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4695 -2564 428"
 		"angles" "13 -35 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4495 -2744 400"
 		"angles" "60 5 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4223 -2784 400"
 		"angles" "13 -156 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4634 -2734 400"
 		"angles" "33 1 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4634 -2734 400"
 		"angles" "33 1 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4497 -2734 400"
 		"angles" "33 1 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4497 -2810 400"
 		"angles" "35 -2 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4485 -2994 399"
 		"angles" "29 46 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4580 -2792 431"
 		"angles" "27 -12 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4561 -3071 401"
 		"angles" "25 42 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4702 -2769 451"
 		"angles" "27 2 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4394 -2650 409"
 		"angles" "72 49 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4639 -3018 400"
 		"angles" "25 24 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4644 -3204 420"
 		"angles" "17 59 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4801 -3033 420"
 		"angles" "17 23 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4284 -2871 420"
 		"angles" "31 176 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4388 -2974 400"
 		"angles" "67 74 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4308 -2724 395"
 		"angles" "57 128 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4357 -2783 386"
 		"angles" "13 -143 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4399 -2948 400"
 		"angles" "39 91 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4423 -2871 392"
 		"angles" "80 49 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4418 -3224 400"
 		"angles" "24 104 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4423 -2871 392"
 		"angles" "80 49 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4318 -3198 350"
 		"angles" "24 107 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4564 -2604 400"
 		"angles" "45 -54 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4750 -2764 386"
 		"angles" "22 -4 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4699 -2653 386"
 		"angles" "25 -38 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4597 -2569 355"
 		"angles" "21 -69 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4624 -2558 340"
 		"angles" "4 -60 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4623 -2838 325"
 		"angles" "35 0 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4504 -2899 310"
 		"angles" "35 0 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4694 -2893 380"
 		"angles" "14 6 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4648 -2900 370"
 		"angles" "24 14 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4460 -2590 320"
 		"angles" "10 -75 0"
     }
-    SpawnTemplate [$SIGSEGV]
+    SpawnTemplate 
     {
         Name "skybox_eyes"
 		"origin" "-4513 -2559 419"
@@ -923,7 +923,7 @@ WaveSchedule
 				//"backstab shield" 1 //peak 2020 randomguy right here
 				"rage giving scale" 0.1
 			}
-			UseMeleeThreatPrioritization 1 [$SIGSEGV] //Prefer players close to the bot
+			UseMeleeThreatPrioritization 1  //Prefer players close to the bot
 		}
 	}
 	
@@ -1093,7 +1093,7 @@ WaveSchedule
 				}
 		}
 		
-		WaveSpawn [$SIGSEGV]
+		WaveSpawn 
 		{
 			Name stage2
 			WaitForAllDead stage1
@@ -1107,17 +1107,17 @@ WaveSchedule
 			{
 				Health 7500 //10000 //15000 //12500
 				Speed 150 //225
-				DisableSmokestack 1 [$SIGSEGV]
-				Classicon blimp2_lite [$SIGSEGV]
+				DisableSmokestack 1 
+				Classicon blimp2_lite 
 				Skin 1 
-				MaxTurnRate 75 [$SIGSEGV]
-				Model "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
-				Gravity 0 [$SIGSEGV]
-				DisableTracks 1 [$SIGSEGV]
-				DisableChildModels 1 [$SIGSEGV]
-				ReplaceModelCollisions 1 [$SIGSEGV]
-				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" [$SIGSEGV]
-				PingSound "npc\combine_gunship\ping_search.wav" [$SIGSEGV]
+				MaxTurnRate 75 
+				Model "models/bots/boss_bot/boss_blimp.mdl" 
+				Gravity 0 
+				DisableTracks 1 
+				DisableChildModels 1 
+				ReplaceModelCollisions 1 
+				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" 
+				PingSound "npc\combine_gunship\ping_search.wav" 
 				Name "tankboss"
 				StartingPathTrackNode "downpour_blimp_path_1"
 				OnKilledOutput
@@ -1435,8 +1435,8 @@ WaveSchedule
 					Target boss_deploy_relay
 					Action Trigger                         
 				}
-				SpawnTemplate "ColorTank_Prpl" [$SIGSEGV]
-				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				SpawnTemplate "ColorTank_Prpl" 
+				Model  "models/bots/boss_bot/boss_tank_color.mdl" 
 			}
 		}
 	}
@@ -1744,7 +1744,7 @@ WaveSchedule
 					Template T_TFBot_Medic_Crossbow
 					Attributes AlwaysCrit
 					Skill Expert
-					Action FetchFlag [$SIGSEGV]
+					Action FetchFlag 
 					ItemAttributes
 					{
 						ItemName "The Crusader's Crossbow"
@@ -1759,7 +1759,7 @@ WaveSchedule
 					Name "Revolver Spy"
 					Item "The Stealth Steeler"
 					ClassIcon spy_revolver_lite
-					Action FetchFlag [$SIGSEGV]
+					Action FetchFlag 
 					Attributes AlwaysCrit
 					WeaponRestrictions PrimaryOnly
 					CharacterAttributes
@@ -1880,8 +1880,8 @@ WaveSchedule
 					Target boss_deploy_relay
 					Action Trigger                         
 				}
-				SpawnTemplate "ColorTank_Prpl" [$SIGSEGV]
-				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				SpawnTemplate "ColorTank_Prpl" 
+				Model  "models/bots/boss_bot/boss_tank_color.mdl" 
 			}
 		}
 	}
@@ -1900,7 +1900,7 @@ WaveSchedule
 			Action trigger
 		}
 
-		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
+		Explanation   //Dispayed once the wave is initialized
 		{
 			Line "{red}There are support giants coming this wave!{reset}"
 		}
@@ -1929,7 +1929,7 @@ WaveSchedule
 					Item "The Sandman"
 					Item "The Hanger-On Hood"
 					Item "The Flight of the Monarch"
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					Attributes MiniBoss Tag bot_giant 
 					Attributes AutoJump //lollery
 						AutoJumpMin 3 //5
@@ -1939,7 +1939,7 @@ WaveSchedule
 						ItemName "The Sandman"
 						"effect bar recharge rate increased" 0.2
 						"max health additive penalty" -0
-						//"mod bat launches balls" 2 [$SIGSEGV] //Overrides the global sandman stun toggle, the ball will stun players regardless //this is retarded
+						//"mod bat launches balls" 2  //Overrides the global sandman stun toggle, the ball will stun players regardless //this is retarded
 					}
 					CharacterAttributes
 					{
@@ -2024,13 +2024,13 @@ WaveSchedule
 						"airblast vulnerability multiplier" 0.0 
 						"override footstep sound set" 3
 					}
-					AddCond [$SIGSEGV]
+					AddCond 
 					{
 						Index 36
 						Delay 1
 					}
-					RocketCustomParticle eyeboss_projectile [$SIGSEGV]
-					HomingRockets [$SIGSEGV] 
+					RocketCustomParticle eyeboss_projectile 
+					HomingRockets  
 					{
 						IgnoreDisguisedSpies 1
 						IgnoreStealthedSpies 1

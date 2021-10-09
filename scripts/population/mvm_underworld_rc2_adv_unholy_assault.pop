@@ -59,7 +59,7 @@ HellSchedule
         Z	"-1"        
     }
 	
-    PointTemplates [$SIGSEGV] // purely for color tank
+    PointTemplates  // purely for color tank
     {
         TankDemon
         {
@@ -2571,8 +2571,8 @@ HellSchedule
 				ClassIcon scout_milk_allyred
 				Skill Expert
 				Health 1600
-				AddCond [$SIGSEGV] { Name TF_COND_REPROGRAMMED } 
-				Action Mobber [$SIGSEGV]
+				AddCond  { Name TF_COND_REPROGRAMMED } 
+				Action Mobber 
 				Attributes MiniBoss
 				ExtAttr IgnoreNPC // makes them not target tank like a DUMBASS
 				WeaponRestrictions SecondaryOnly

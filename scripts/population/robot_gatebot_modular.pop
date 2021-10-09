@@ -1,7 +1,7 @@
 // Modular gatebot templates (Sigsegv only)
 // Can be used alongside other templates
 // Add
-// AddTemplate GatebotScout [$SIGSEGV]
+// AddTemplate GatebotScout 
 // to TFBot Spawner to make use of it
 WaveSchedule
 {

@@ -13,29 +13,29 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 	Advanced	1
 	EventPopfile	Halloween
 
-	NoRomevisionCosmetics	1	[$SIGSEGV]
-	TextPrintTime			0	[$SIGSEGV]
-	BotsAreHumans        	1	[$SIGSEGV]
-	ForceHoliday          	2	[$SIGSEGV]
-	NoThrillerTaunt			1	[$SIGSEGV]	// no more
-	NoCritPumpkin			1	[$SIGSEGV]
-	ZombiesNoWave666		1	[$SIGSEGV]
-	FastNPCUpdate			1	[$SIGSEGV]
-	ForceRobotBleed			1	[$SIGSEGV]
+	NoRomevisionCosmetics	1	
+	TextPrintTime			0	
+	BotsAreHumans        	1	
+	ForceHoliday          	2	
+	NoThrillerTaunt			1		// no more
+	NoCritPumpkin			1	
+	ZombiesNoWave666		1	
+	FastNPCUpdate			1	
+	ForceRobotBleed			1	
 
-	BotsDropSpells			1 [$SIGSEGV] //If set, bots will drop spells
-	GiantsDropRareSpells	1 [$SIGSEGV] //If set, giants will drop rare spells rather than common
-	SpellDropRateCommon		0.07 [$SIGSEGV] //Drop chance for common spell books, from 0 to 1
-	SpellDropRateGiant		0.15 [$SIGSEGV] //Drop chance for rare spell books, from 0 to 1
+	BotsDropSpells			1  //If set, bots will drop spells
+	GiantsDropRareSpells	1  //If set, giants will drop rare spells rather than common
+	SpellDropRateCommon		0.07  //Drop chance for common spell books, from 0 to 1
+	SpellDropRateGiant		0.15  //Drop chance for rare spell books, from 0 to 1
 
-	PrecacheModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
-	PrecacheModel	"models/bots/boss_bot/boss_tank_color.mdl"			[$SIGSEGV]	// hell-met moment
-	PrecacheModel	"models/props_halloween/flask_tub.mdl"				[$SIGSEGV]
+	PrecacheModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
+	PrecacheModel	"models/bots/boss_bot/boss_tank_color.mdl"				// hell-met moment
+	PrecacheModel	"models/props_halloween/flask_tub.mdl"				
 
 	// CUSTOM WEAPONS:
-	PrecacheModel	"models/workshop/weapons/c_models/c_nailgun/c_nailgun.mdl"				[$SIGSEGV]
+	PrecacheModel	"models/workshop/weapons/c_models/c_nailgun/c_nailgun.mdl"				
 
-	PointTemplates	[$SIGSEGV]
+	PointTemplates	
 	{
 		killcrumpkin	// no. more. crumpkins! no. more. bullshit! no. more. giants bazinga-ing the whole team because they picked up a crumpkin! nooooooooooooo mooooooooooooooore abusing crumpkin drops! you're getting killed
 		{
@@ -100,7 +100,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 	}
 	SpawnTemplate	"killcrumpkin"
 	SpawnTemplate	"underworld_warning"
-	SpellBookNormalRoll	[$SIGSEGV]
+	SpellBookNormalRoll	
 	{
 		"Fireball"		1
 		"Fireball"		1
@@ -113,7 +113,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"Invisibility"	2
 		"Teleport"		4
 	}
-	SpellBookRareRoll [$SIGSEGV]
+	SpellBookRareRoll 
 	{
 		"Fireball" 			4
 		"Fireball"			4
@@ -146,13 +146,13 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 	//	15. Gunslinger: Gains 2 free disposable sentries, faster dispenser build rate and dispensing rate but with 50% less range
 	//////////////////////////////
 
-	ItemAttributes	[$SIGSEGV]
+	ItemAttributes	
 	{
 		ItemName	"The Liberty Launcher"
 		"mod projectile heat seek power"	360
 		"mod projectile heat aim error"		90
 	}
-	CustomWeapon	[$SIGSEGV]
+	CustomWeapon	
 	{
 		Name	"Nailgun"
 		OriginalItemName	"TF_WEAPON_PISTOL"
@@ -163,7 +163,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"maxammo secondary reduced"		2.78
 		"override projectile type"		5
 	}
-	//ItemAttributes	[$SIGSEGV]	// removed for being too strong lmfao
+	//ItemAttributes		// removed for being too strong lmfao
 	//{
 	//	ItemName	"Tomislav"
 	//	"special item description"		"Artillery Cannon; can be used to blast jump and the sheer fucking weight of it lets you stomp bots too"
@@ -178,7 +178,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 	//	"boots falling stomp"			1
 	//	"no primary ammo from dispensers while active"	1	
 	//}
-	CustomWeapon	[$SIGSEGV]
+	CustomWeapon	
 	{
 		Name	"THE TRUE BOLSHEVIK BOMBER"
 		OriginalItemName	"The Family Business"
@@ -196,7 +196,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"spread penalty"				1.5
 		"self dmg push force decreased"	0.6
 	}
-	CustomWeapon	[$SIGSEGV]
+	CustomWeapon	
 	{
 		Name	"Assault Rifle"
 		OriginalItemName	"TF_WEAPON_SMG"
@@ -211,7 +211,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"fire rate penalty HIDDEN"		1.15
 		"revolver use hit locations"	1
 	}
-	ItemAttributes	[$SIGSEGV]
+	ItemAttributes	
 	{
 		ItemName	"The Quickiebomb Launcher"
 		"special item description"		"Speed boost on hit for 1.5 seconds; speed boost for 4 seconds on kill; stickies stick to enemies but fizzle out after 4 seconds"
@@ -220,7 +220,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"speed_boost_on_kill"			4
 		"stickybomb stick to enemies"	1
 	}
-	ItemAttributes	[$SIGSEGV]
+	ItemAttributes	
 	{
 		ItemName	"The Loose Cannon"
 		"override projectile type" 		3
@@ -230,7 +230,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"blast radius increased"		1.3
 		"fire rate penalty HIDDEN"		1.2
 	}
-	ItemAttributes	[$SIGSEGV]	// become senator armstrong (yes I did in fact listen to It Has To Be This Way while designing this rebalance)
+	ItemAttributes		// become senator armstrong (yes I did in fact listen to It Has To Be This Way while designing this rebalance)
 	{
 		ItemName	"TF_WEAPON_FISTS"
 		"special item description"		"Melee hits boost speed for 1.5 seconds; kills boost speed for 8 seconds; kills grant 75% dodge chance for 5 seconds; 50% more damage and minicrit boost on kill; no minigun or shotguns"
@@ -246,7 +246,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"maxammo secondary reduced"		0
 		"maxammo primary reduced"		0
 	}
-	ItemAttributes	[$SIGSEGV]
+	ItemAttributes	
 	{
 		ItemName	"The Panic Attack"
 		"special item description"	"Hybrid Pre and Post-Jungle Inferno Panic Attack"
@@ -254,7 +254,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"auto fires full clip"	1
 		"auto fires when full"	1
 	}
-	ItemAttributes	[$SIGSEGV]
+	ItemAttributes	
 	{
 		ItemName	"TF_WEAPON_REVOLVER"
 		"extra damage on hit" 	6
@@ -265,7 +265,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"weapon spread bonus"	0.01
 		"fire rate penalty HIDDEN"		0.6
 	}
-	ItemAttributes	[$SIGSEGV]
+	ItemAttributes	
 	{
 		ItemName	"The Pomson 6000"
 		"mod projectile heat seek power"	69
@@ -279,14 +279,14 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"mod projectile heat aim error"		60
 		"set item tint RGB"					16738740
 	}
-	ItemAttributes	[$SIGSEGV]
+	ItemAttributes	
 	{
 		ItemName	"Baby Face's Blaster"
 		"lose hype on take damage"	0
 		"special item description"	"Finally! No more losing boost on taking damage!"
 		"weapon spread bonus"		0.66
 	}
-	//ItemAttributes	[$SIGSEGV]
+	//ItemAttributes	
 	//{
 	//	ItemName	"The Detonator"
 	//	"override projectile type"				2	// and yet this still doesn't count as rocket jumping according to the game
@@ -295,7 +295,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 	//	"self dmg push force decreased"			1.50
 	//	"projectile speed increased"			1.69
 	//}
-	//ItemAttributes	[$SIGSEGV]
+	//ItemAttributes	
 	//{
 	//	ItemName	"The Third Degree"
 	//	"special item description"			"Bootleg Market Gardener for Pyro"
@@ -322,7 +322,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"damage penalty"			0.8
 		"single wep holster time increased" 1
 	}
-	ItemAttributes	[$SIGSEGV]
+	ItemAttributes	
 	{
 		ItemName	"The Market Gardener"
 		"special item description"	"big slappy (Increased melee range, double damage, melee cleave; has slower firing speed)"
@@ -331,7 +331,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"damage bonus"				2
 		"melee range multiplier"	1.7
 	}
-	ItemAttributes	[$SIGSEGV]
+	ItemAttributes	
 	{
 		ItemName	"The Gunslinger"
 		"special item description"			"+2 Disposable Sentries, x2 dispenser heal/ammo rate, x2 dispenser build rate, -50% dispenser range"
@@ -343,7 +343,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 		"engineer teleporter build rate multiplier"	2
 		"engineer sentry build rate multiplier"		2
 	}
-	ItemReplacement [$SIGSEGV]
+	ItemReplacement 
 	{
 		"Nailgun"
 		{
@@ -403,7 +403,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				"gesture speed increase"	2
 				"voice pitch scale"			2
 			}
-			Taunt	[$SIGSEGV]
+			Taunt	
 			{
 				Delay 		2
 				Cooldown	2
@@ -424,7 +424,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Item	"Big Steel Jaw of Summer Fun"
 			Item	"The Amputator"
 			Action	FetchFlag
-			Taunt [$SIGSEGV]
+			Taunt 
 			{
 				Delay 		10
 				Cooldown	10
@@ -448,7 +448,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Attributes	UseBossHealthBar
 			Item	"Berliner's Bucket Helm"
 			Item	"The Crusader's Crossbow"
-			Action	FetchFlag					[$SIGSEGV]
+			Action	FetchFlag					
 			ItemAttributes
 			{
 				ItemName	"The Crusader's Crossbow"
@@ -603,12 +603,12 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Item	"The Flare Gun"
 			Item	"Graybanns"
 			Item    "The Apparatchik's Apparel"
-			ItemModel			[$SIGSEGV]
+			ItemModel			
 			{
 				ItemName   	"The Apparatchik's Apparel"
 				Model		"models/workshop/player/items/pyro/hw2013_gothic_guise/hw2013_gothic_guise.mdl"
 			}
-			ItemModel			[$SIGSEGV]
+			ItemModel			
 			{
 				ItemName   	"Graybanns"
 				Model		"models/workshop/player/items/pyro/hwn2020_seared_sorcerer/hwn2020_seared_sorcerer.mdl"
@@ -649,17 +649,17 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Item	"The Loose Cannon"
 			Item	"The Crone's Dome"
 			Item	"The Horsemann's Hand-Me-Down"
-			DamageAppliesCond	[$SIGSEGV]
+			DamageAppliesCond	
 			{
 				Name		"TF_COND_URINE"
 				Duration	8
 			}
-			DamageAppliesCond	[$SIGSEGV]
+			DamageAppliesCond	
 			{
 				Name		"TF_COND_OFFENSEBUFF"
 				Duration	8
 			}
-			DamageAppliesCond	[$SIGSEGV]
+			DamageAppliesCond	
 			{
 				Name		"TF_COND_SPEED_BOOST"
 				Duration	8
@@ -832,7 +832,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line	"{blue}Certain weapons have been rebalanced! Type '!missioninfo' to see what's changed."
 			Line	"{green}Spellbooks are enabled! {yellow}However, the spells found in dropped books are different than normal..."
@@ -1071,7 +1071,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				ClassIcon	medic_battle
 				WeaponRestrictions	MeleeOnly
 				Skill	Normal
-				Action	FetchFlag	[$SIGSEGV]
+				Action	FetchFlag	
 			}
 		}
 		WaveSpawn
@@ -1136,12 +1136,12 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				ClassIcon	medic_jug_amputator2
 				WeaponRestrictions	MeleeOnly
 				Skill	Expert
-				Action	FetchFlag	[$SIGSEGV]
+				Action	FetchFlag	
 				Name	"Amputator Medic"
 				Item	"The Amputator"
 				Item	"Berliner's Bucket Helm"
 
-				Taunt [$SIGSEGV]  //Taunt periodically
+				Taunt   //Taunt periodically
 				{
 					Delay 		6
 					Cooldown	9
@@ -1356,7 +1356,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				Speed	69
 				StartingPathTrackNode	"boss_path_a_1"
 				SpawnTemplate	"WHAT_IF_IT_WAS_PURPLE"
-				Model	"models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				Model	"models/bots/boss_bot/boss_tank_color.mdl" 
 				OnBombDroppedOutput 
 				{
 					Target boss_deploy_relay
@@ -1379,7 +1379,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				Speed	69
 				StartingPathTrackNode	"boss_path_b_1"
 				SpawnTemplate	"WHAT_IF_IT_WAS_PURPLE"
-				Model	"models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				Model	"models/bots/boss_bot/boss_tank_color.mdl" 
 				OnBombDroppedOutput 
 				{
 					Target boss_deploy_relay
@@ -1406,9 +1406,9 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 					Template	T_TFBot_Sniper_Huntsman_Spammer
 					ClassIcon	sniper_bow_multi
 					Name	"Rapid-fire Bowman"
-					Skin	1 [$SIGSEGV]
-					UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
-					UseHumanAnimations 1 [$SIGSEGV]
+					Skin	1 
+					UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
+					UseHumanAnimations 1 
 					ItemModel
 					{
 						ItemName	"Zombie Sniper"
@@ -1714,7 +1714,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				Skin	1
 				StartingPathTrackNode	"boss_path_a_1"
 				SpawnTemplate	"WHAT_IF_IT_WAS_PURPLE"
-				Model	"models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				Model	"models/bots/boss_bot/boss_tank_color.mdl" 
 				OnBombDroppedOutput 
 				{
 					Target boss_deploy_relay
@@ -1833,16 +1833,16 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line	"{red}The Underworld calls out for you... Red team is cursed with a longer respawn time during this wave."
 			Line	"{yellow}If all players are dead at once during this wave, the wave will fail!"
 		}
-		PlayerAttributes [$SIGSEGV]
+		PlayerAttributes 
 		{
 			"min respawn time"	20
 		}
-		RedTeamWipeCausesWaveLoss	1	[$SIGSEGV]
+		RedTeamWipeCausesWaveLoss	1	
         WaveSpawn
         {
             Name SHAMELESSLY_STOLEN_FROM_VOIDLINGS
@@ -1873,7 +1873,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 						Scale 0.1
 						Attributes SuppressFire
 						WeaponRestrictions MeleeOnly
-						NoGlow	1	[$SIGSEGV]
+						NoGlow	1	
 						CharacterAttributes
 						{
 							"move speed penalty" 0.0001
@@ -1919,10 +1919,10 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				{
 					Template	T_TFBot_Sniper_Huntsman
 					Name	"Skeletal Archer"
-					Skin	1 [$SIGSEGV]
+					Skin	1 
 					Attributes	AlwaysCrit
-					UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
-					UseHumanAnimations 1 [$SIGSEGV]
+					UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
+					UseHumanAnimations 1 
 					ItemModel
 					{
 						ItemName	"Zombie Sniper"

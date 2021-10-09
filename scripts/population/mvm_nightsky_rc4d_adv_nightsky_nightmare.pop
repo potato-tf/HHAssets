@@ -126,20 +126,20 @@ popuwashyon
 	RespawnWaveTime 3
 	FixedRespawnWaveTime 1 //Feels better...probably
 	
-	ForceHoliday 2 [$SIGSEGV]
-	TextPrintTime 0 [$SIGSEGV]
-	BonusRatioHalf 1.1 [$SIGSEGV]
-	BonusRatioFull 1.1 [$SIGSEGV] //cash becomes more consistent; lessens desire for A+
+	ForceHoliday 2 
+	TextPrintTime 0 
+	BonusRatioHalf 1.1 
+	BonusRatioFull 1.1  //cash becomes more consistent; lessens desire for A+
 	
-	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" [$SIGSEGV]
-	PrecacheModel "models/props_mvm/robot_spawnpoint.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" 
+	PrecacheModel "models/props_mvm/robot_spawnpoint.mdl" 
 	
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
 	{
 		Name "vortexspawn"
 		TeamNum 3
@@ -147,7 +147,7 @@ popuwashyon
 		Y "-1270"
 		Z "1524"
 	}
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
 	{
 		Name "swirlspawn"
 		TeamNum 3
@@ -155,7 +155,7 @@ popuwashyon
 		Y "-2270"
 		Z "100"
 	}
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
 	{
 		Name "airspawn_1"
 		TeamNum 3
@@ -166,7 +166,7 @@ popuwashyon
 	
 	//I blatantly took these from Ground Zero, gotem
 	
-	ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location
+	ExtraSpawnPoint   //Adds spawn points on specified location
     {
         Name	"spawnbot_reprogrammed"	// Spawns just outside of RED door on a fancy hatch. the jackpot
         TeamNum	3
@@ -174,7 +174,7 @@ popuwashyon
         Y		"-3074.0"                  
         Z		"770.0"        
     }
-	ExtraTankPath [$SIGSEGV] // Blimp spawn
+	ExtraTankPath  // Blimp spawn
 	{
 		Name	"tank_path_blimp"
 		Node	"-5650 250 270"
@@ -186,7 +186,7 @@ popuwashyon
 		Node	"-2715 -3340 900"
 		Node	"-2450 -3120 900"
 	}
-	ExtraTankPath [$SIGSEGV] // Blood tank path
+	ExtraTankPath  // Blood tank path
 	{
 		Name	"tank_path_blood"
 		//START NODES
@@ -229,7 +229,7 @@ popuwashyon
 		Node "-2528 -3264 592"
 		Node "-2428 -3124 592"
 	}
-	PointTemplates [$SIGSEGV]
+	PointTemplates 
 	{
 		//Special thanks to lite for providing these + the base for texts:
 		spawnpoint
@@ -750,13 +750,13 @@ popuwashyon
 	
 	
 	//Vortex-es. Vortices?
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "VortexSky"
 		Origin	"2020 3880 2200"
 	}
 	
-	// SpawnTemplate [$SIGSEGV]
+	// SpawnTemplate 
 	// {
 		// Name "SwirlyFull"
 		// Origin "1918 4208 2103"
@@ -766,7 +766,7 @@ popuwashyon
 								////// Props //////
 	//Angle: Z+ = clockwise, when towards 0 0 0!!
 	//Eyes
-	// SpawnTemplate [$SIGSEGV]
+	// SpawnTemplate 
 	// {
 		// Name "spookeyes"
 		// Origin "-5646 -271 -34"
@@ -774,7 +774,7 @@ popuwashyon
 	// }
 	
 	
-	SpawnTemplate [$SIGSEGV] //scaffold
+	SpawnTemplate  //scaffold
 	{
 		Name "halloween_candle"
 		Origin "-4125 -3800 342"
@@ -832,7 +832,7 @@ popuwashyon
 	}
 	
 	//Stolen from Tindall - thanks, cute moth ^3^
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemName	"The Original"	// player variant of giant charged soldier's weapon: no reload, no ammo from dispensers, slower rockets, increased damage that stacks with upgrades, smaller blast radius
 		"mod max primary clip override"					-1
@@ -862,7 +862,7 @@ popuwashyon
 		OverrideShoot 1 //Stop default projectile from being spawned (Default: 0)
 		ItemName "The Manmelter" //Can be specified to limit to a specific weapon
 	}
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemName "The Manmelter"
 		"fire rate penalty" 5
@@ -873,7 +873,7 @@ popuwashyon
 	//Quickiebomb does not currently occupy any meaningful niche.
 	//So why not turn it into the funny stick-on-player launcher?
 	//Slightly faster charge rate, but limited sticky exist time to discourage proper traps.
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemName "The Quickiebomb Launcher"
 		"stickybomb stick to enemies" 1
@@ -881,7 +881,7 @@ popuwashyon
 		"stickybomb fizzle time" 4
 	}
 	
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemName "The Family Business"
 		"bullets per shot bonus" 10
@@ -894,7 +894,7 @@ popuwashyon
 	}
 	//The same SH from White Noise c:
 	//Support wrench: stronk dispenser, weaker sentry
-	ItemAttributes [$SIGSEGV]
+	ItemAttributes 
 	{
 		ItemName	"The Southern Hospitality"
 		"mult dispenser rate"			2
@@ -951,7 +951,7 @@ popuwashyon
 			Item "The Sydney Sleeper"
 			Item "The Razorback"
 			Item "The Bushwacka"
-			Action Sniper [$SIGSEGV]
+			Action Sniper 
 			ItemAttributes
 			{
 				ItemName "The Sydney Sleeper"
@@ -960,7 +960,7 @@ popuwashyon
 				"sniper charge per sec" 2
 				"faster reload rate" 0.4
 			}
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Name "TF_COND_REPROGRAMMED"
 				Duration 1601680
@@ -977,7 +977,7 @@ popuwashyon
 		Red_Soldier_Buff //Finds enemies
 		{
 			Template T_TFBot_Soldier_Extended_Buff_Banner
-			Action Mobber [$SIGSEGV]
+			Action Mobber 
 			Attributes IgnoreFlag
 			Attributes DisableDodge
 			Attributes HoldFireUntilFullReload
@@ -993,7 +993,7 @@ popuwashyon
 				ItemName "The Buff Banner"
 				"mod soldier buff range" 1.5
 			}
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Name "TF_COND_REPROGRAMMED"
 				Duration 1801660
@@ -1024,7 +1024,7 @@ popuwashyon
 				"cancel falling damage"	1
 				"collect currency on kill" 1
 			}
-			FireWeapon [$SIGSEGV]
+			FireWeapon 
 			{
 				Delay 1
 				Type "Primary"
@@ -1032,7 +1032,7 @@ popuwashyon
 				Cooldown 0.1
 				IfSeeTarget 1
 			}
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Name "TF_COND_REPROGRAMMED"
 				Duration 1606180
@@ -1054,7 +1054,7 @@ popuwashyon
 			Item "Field Practice"
 			Item "The B.A.S.E. Jumper"
 			Tag giant
-			FireWeapon [$SIGSEGV]
+			FireWeapon 
 			{
 				Delay 12
 				Repeats 0
@@ -1076,7 +1076,7 @@ popuwashyon
 				"voice pitch scale" 0
 				"cancel falling damage" 1
 			}
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Name "TF_COND_REPROGRAMMED"
 				Duration 1681600
@@ -1088,21 +1088,21 @@ popuwashyon
 			Template T_TFBot_Giant_Soldier_SlowBarrage
 			Name "Giant Homing Barrage Soldier"
 			ClassIcon soldier_barrage_ally
-			Action Mobber [$SIGSEGV]
+			Action Mobber 
 			Item "The B.A.S.E. Jumper"
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Name "TF_COND_REPROGRAMMED"
 				Duration 1610680
 				Delay 0.01
 			}
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Index 36
 				Duration 1061680
 				Delay 0.01
 			}
-			RocketCustomParticle eyeboss_projectile [$SIGSEGV] //coole purp glow
+			RocketCustomParticle eyeboss_projectile  //coole purp glow
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -1119,7 +1119,7 @@ popuwashyon
 		Red_Giant_Pyro_Flare_Rain
 		{
 			Template T_TFBot_Giant_Pyro_Flare_Spammer
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Name "TF_COND_REPROGRAMMED"
 				Duration 1610680
@@ -1131,8 +1131,8 @@ popuwashyon
 			Item "The B.A.S.E. Jumper"
 			Attributes AlwaysCrit
 			Tag giant
-			Action Mobber [$SIGSEGV]
-			AimAt Head [$SIGSEGV]
+			Action Mobber 
+			AimAt Head 
 			ItemAttributes
 			{
 				ItemName "The Flare Gun"
@@ -1164,7 +1164,7 @@ popuwashyon
 			Item "The Neon Annihilator"
 			Item "The Electric Escorter"
 			Item "Zombie Pyro"
-			UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/pyro.mdl" 
 			WeaponRestrictions MeleeOnly
 			ClassIcon pyro_neon
 			Attributes DisableDodge //no silly movement
@@ -1179,7 +1179,7 @@ popuwashyon
 			Item "Glow from Below"
 			Item "The Jarmaments"
 			Item "Zombie Sniper"
-			UseCustomModel "models/player/sniper.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/sniper.mdl" 
 			MaxVisionRange 750
 			ItemAttributes
 			{
@@ -1187,7 +1187,7 @@ popuwashyon
 				"damage penalty" 0.7
 				"faster reload rate" 0.6
 			}
-			FireWeapon [$SIGSEGV]
+			FireWeapon 
 			{
 				IfSeeTarget 1
 				Delay 4
@@ -1195,7 +1195,7 @@ popuwashyon
 				Duration 0.1
 				Type "Primary"
 			}
-			DamageAppliesCond [$SIGSEGV]
+			DamageAppliesCond 
 			{
 				Name "TF_COND_URINE"
 				Duration 5
@@ -1210,7 +1210,7 @@ popuwashyon
 			Item "Buccaneer's Bicorne"
 			Item "A Whiff of the Old Brimstone"
 			Item "Zombie Demo"
-			UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/demo.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Loose Cannon"
@@ -1229,7 +1229,7 @@ popuwashyon
 			Item "The Pompous Privateer"
 			Item "B'aaarrgh-n-Britches"
 			Item "Zombie Scout"
-			UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/scout.mdl" 
 		}
 		Naut_Pyro
 		{
@@ -1239,7 +1239,7 @@ popuwashyon
 			Item "Neptune's Nightmare"
 			Item "Abhorrent Appendages"
 			Item "Zombie Pyro"
-			UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/pyro.mdl" 
 		}
 		
 		Naut_Giant_Pyro
@@ -1250,7 +1250,7 @@ popuwashyon
 			Item "Neptune's Nightmare"
 			Item "Abhorrent Appendages"
 			Item "Zombie Pyro"
-			UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/pyro.mdl" 
 			Tag giant
 			Attributes AlwaysFireWeapon
 			ItemAttributes
@@ -1268,7 +1268,7 @@ popuwashyon
 			Item "The Loose Cannon"
 			Item "Cap'n Calamari"
 			Item "Zombie Demo"
-			UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/demo.mdl" 
 			Tag giant
 			ItemAttributes
 			{
@@ -1292,7 +1292,7 @@ popuwashyon
 			Item "Treasure Hat 3" //HOUWAR
 			Item "Kapitan's Kaftan"
 			Item "Zombie Heavy"
-			UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/heavy.mdl" 
 			Tag giant
 			ItemAttributes
 			{
@@ -1317,12 +1317,12 @@ popuwashyon
 			Class Engineer
 			Skill Normal
 			Name "Possessed Engineer"
-			Action FetchFlag [$SIGSEGV]
+			Action FetchFlag 
 			ClassIcon shotgun_panic_lite
 			Item "Panic Attack Shotgun"
 			Item "Misfortune Fedora"
 			Item "Zombie Engineer"
-			UseCustomModel "models/player/engineer.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/engineer.mdl" 
 		}
 		Demon_Demoknight
 		{
@@ -1334,7 +1334,7 @@ popuwashyon
 			Item "Forgotten King's Restless Head"
 			Item "Forgotten King's Pauldrons"
 			Item "Zombie Demo"
-			UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/demo.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Headless Horseless Horsemann's Headtaker"
@@ -1348,7 +1348,7 @@ popuwashyon
 			Name "Immortal Soldier"
 			Item "The Infernal Impaler"
 			Item "Zombie Soldier"
-			UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/soldier.mdl" 
 		}
 		Demon_Sniper_Carbine
 		{
@@ -1363,7 +1363,7 @@ popuwashyon
 			Item "The Criminal Cloak"
 			Item "The Triggerman's Tacticals"
 			Item "Zombie Sniper"
-			UseCustomModel "models/player/sniper.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/sniper.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Cleaner's Carbine"
@@ -1383,7 +1383,7 @@ popuwashyon
 			Item "Zombie Medic"
 			Item "The Horrible Horns"
 			Item "Herzensbrecher"
-			UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/medic.mdl" 
 			ItemAttributes
 			{
 				ItemName "tf_weapon_syringegun_medic"
@@ -1409,7 +1409,7 @@ popuwashyon
 			Item "Claws and Infect"
 			Item "Transparent Trousers"
 			Item "Zombie Scout"
-			UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/scout.mdl" 
 			Tag giant
 			ItemAttributes
 			{
@@ -1430,9 +1430,9 @@ popuwashyon
 			Item "Spine-Chilling Skull 2011 Style 3"
 			
 			Item "Zombie Pyro"
-			UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/pyro.mdl" 
 			Tag giant
-			AimAt Head [$SIGSEGV]
+			AimAt Head 
 			MaxVisionRange 750
 			ItemAttributes
 			{
@@ -1459,9 +1459,9 @@ popuwashyon
 			Item "The Phlogistinator"
 			ClassIcon pyro_phlog
 			Attributes AlwaysFireWeapon
-			ExtAttr AlwaysFireWeaponAlt [$SIGSEGV]
+			ExtAttr AlwaysFireWeaponAlt 
 			Item "Zombie Pyro"
-			UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/pyro.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Phlogistinator"
@@ -1493,11 +1493,11 @@ popuwashyon
 			Item "Das Naggenvatcher"
 			Item "The Byte'd Beak"
 			Item "Zombie Medic"
-			UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
-			Action FetchFlag [$SIGSEGV]
-			AimAt Body [$SIGSEGV]
-			AimOffset "0 0 10" [$SIGSEGV]
-			AimLeadProjectileSpeed 1100 [$SIGSEGV] //overaims slightly
+			UseCustomModel "models/player/medic.mdl" 
+			Action FetchFlag 
+			AimAt Body 
+			AimOffset "0 0 10" 
+			AimLeadProjectileSpeed 1100  //overaims slightly
 			ItemAttributes
 			{
 				ItemName "Upgradeable TF_WEAPON_SYRINGEGUN_MEDIC"
@@ -1517,9 +1517,9 @@ popuwashyon
 			Item "The Crusader's Crossbow"
 			Item "Medic MtG Hat"
 			Item "Zombie Medic"
-			UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
-			Action FetchFlag [$SIGSEGV]
-			AimAt Head [$SIGSEGV]
+			UseCustomModel "models/player/medic.mdl" 
+			Action FetchFlag 
+			AimAt Head 
 		}
 		// Infested Demo
 		Pest_Demo
@@ -1530,7 +1530,7 @@ popuwashyon
 			Item "The Toadstool Topper"
 			Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
 			Item "Zombie Demo"
-			UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/demo.mdl" 
 		}
 		// Pest Marker Scout
 		Pest_Scout_Marker
@@ -1543,7 +1543,7 @@ popuwashyon
 			Item "The Fan O'War"
 			WeaponRestrictions MeleeOnly
 			Item "Zombie Scout"
-			UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/scout.mdl" 
 		}
 		
 		// Giant Plague Medic (%Bow)
@@ -1556,11 +1556,11 @@ popuwashyon
 			Item "Blighted Beak"
 			Item "The Surgeon's Sidearms"
 			Item "Zombie Medic"
-			UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/medic.mdl" 
 			Tag	giant
-			Action FetchFlag [$SIGSEGV]
+			Action FetchFlag 
 			ClassIcon medic_crossbow_bleed_v2
-			DamageAppliesCond [$SIGSEGV]
+			DamageAppliesCond 
 			{
 				Name "TF_COND_PLAGUE"
 				Duration 1
@@ -1582,7 +1582,7 @@ popuwashyon
 			Name "Giant Infested Burst Soldier"
 			Item "The Toadstool Topper"
 			Item "Zombie Soldier"
-			UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/soldier.mdl" 
 			Tag giant
 		}
 		Pest_Giant_Heavy
@@ -1593,7 +1593,7 @@ popuwashyon
 			// Item "Mad Mask"
 			Item "Big Steel Jaw of Summer Fun"
 			Item "Zombie Heavy"
-			UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/heavy.mdl" 
 			Tag giant
 		}
 		Pest_Giant_Medic_Uber
@@ -1604,7 +1604,7 @@ popuwashyon
 			ClassIcon medic_uber_giant
 			Item "The Virus Doctor"
 			Item "Zombie Medic"
-			UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/medic.mdl" 
 			Item "Upgradeable TF_WEAPON_MEDIGUN"
 			Tag giant
 			CharacterAttributes
@@ -1641,13 +1641,13 @@ popuwashyon
 			Item "The Flying Guillotine"
 			Item "Head Hunter"
 			Item "Zombie Scout"
-			UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/scout.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Flying Guillotine"
 				"dmg penalty vs players" 0.7
 			}
-			WeaponSwitch [$SIGSEGV]
+			WeaponSwitch 
 			{
 				Delay 1.5
 				Cooldown 6.5
@@ -1665,7 +1665,7 @@ popuwashyon
 			ClassIcon demo_sticky_daan_bleed
 			WeaponRestrictions SecondaryOnly
 			Item "Zombie Demo"
-			UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/demo.mdl" 
 			ItemAttributes
 			{
 				ItemName "Blood Botkiller Stickybomb Launcher Mk.I"
@@ -1685,7 +1685,7 @@ popuwashyon
 			Item "Blood Botkiller Minigun Mk.I"
 			Item "Madness vs Machines Hopeful Heart 2019"
 			Item "Zombie Heavy"
-			UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/heavy.mdl" 
 			ItemAttributes
 			{
 				ItemName "Madness vs Machines Hopeful Heart 2019"
@@ -1702,7 +1702,7 @@ popuwashyon
 			Item "Berlin Brain Bowl"
 			Item "Herzensbrecher"
 			Item "Zombie Medic"
-			UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/medic.mdl" 
 			ItemAttributes
 			{
 				ItemName "tf_weapon_syringegun_medic"
@@ -1727,11 +1727,11 @@ popuwashyon
 			Item "The Blutsauger"
 			Item "Flatliner"
 			Item "Zombie Medic"
-			UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
-			Action FetchFlag [$SIGSEGV]
-			AimAt Body [$SIGSEGV]
-			AimOffset "0 0 10" [$SIGSEGV]
-			AimLeadProjectileSpeed 1100 [$SIGSEGV] //overaims slightly
+			UseCustomModel "models/player/medic.mdl" 
+			Action FetchFlag 
+			AimAt Body 
+			AimOffset "0 0 10" 
+			AimLeadProjectileSpeed 1100  //overaims slightly
 			ItemAttributes
 			{
 				ItemName "The Blutsauger"
@@ -1750,12 +1750,12 @@ popuwashyon
 			Item "The Blutsauger"
 			Item "Flatliner"
 			Item "Zombie Medic"
-			UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
-			AimAt Body [$SIGSEGV]
-			AimOffset "0 0 10" [$SIGSEGV]
-			AimLeadProjectileSpeed 1100 [$SIGSEGV]
+			UseCustomModel "models/player/medic.mdl" 
+			AimAt Body 
+			AimOffset "0 0 10" 
+			AimLeadProjectileSpeed 1100 
 			Tag giant
-			Action FetchFlag [$SIGSEGV]
+			Action FetchFlag 
 			ItemAttributes
 			{
 				ItemName "The Blutsauger" //stats copied from Ciaran's giant, ty ty
@@ -1777,7 +1777,7 @@ popuwashyon
 			Item "Blood Botkiller Rocket Launcher Mk.I"
 			Item "Hellhunter's Headpiece"
 			Item "Zombie Soldier"
-			UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/soldier.mdl" 
 			Tag giant
 			ItemAttributes
 			{
@@ -1796,7 +1796,7 @@ popuwashyon
 				// "critboost" 1
 				// "powerup charges" 1
 			// }
-			// FireWeapon [$SIGSEGV]
+			// FireWeapon 
 			// {
 				// Delay 0
 				// IfHealthBelow 2400
@@ -1817,7 +1817,7 @@ popuwashyon
 			Item "Blood Botkiller Flame Thrower Mk.I"
 			Item "PY-40 Incinibot"
 			Tag giant
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			//AlwaysFire when seeing peeps
 			FireWeapon
 			{
@@ -1957,7 +1957,7 @@ popuwashyon
 			Item "The Flight of the Monarch"
 			Item "Bumble Beenie"
 			Item "Zombie Scout"
-			UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/scout.mdl" 
 			ClassIcon scout_killerbee_nys
 			Attributes HoldFireUntilFullReload
 			MaxVisionRange 800
@@ -1984,7 +1984,7 @@ popuwashyon
 			Item "The Flight of the Monarch"
 			Item "Bumble Beenie"
 			Item "Zombie Scout"
-			UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/scout.mdl" 
 			ClassIcon scout_nightmarebee_nys
 			Attributes HoldFireUntilFullReload
 			MaxVisionRange 800
@@ -2020,10 +2020,10 @@ popuwashyon
 			Item "The B.A.S.E. Jumper"
 			Item "The Bumble Beenie"
 			Item "Zombie Soldier"
-			UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/soldier.mdl" 
 			ClassIcon soldier_homing_nys
-			RocketCustomParticle eyeboss_projectile [$SIGSEGV]
-			HomingRockets [$SIGSEGV] //keeps them homing on reflect
+			RocketCustomParticle eyeboss_projectile 
+			HomingRockets  //keeps them homing on reflect
 			{
 				IgnoreDisguisedSpies 1
 				IgnoreStealthedSpies 1
@@ -2049,9 +2049,9 @@ popuwashyon
 			Item "The Detonator"
 			Item "Bumble Beenie"
 			Item "Zombie Pyro"
-			UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/pyro.mdl" 
 			Tag giant
-			AimAt Head [$SIGSEGV]
+			AimAt Head 
 			MaxVisionRange 750
 			Tag giant
 			ItemAttributes
@@ -2081,9 +2081,9 @@ popuwashyon
 			ClassIcon demo_sticky_spammer_daan
 			Item "Bumble Beenie"
 			Item "Zombie Demo"
-			UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
-			AimLeadProjectileSpeed 1000 [$SIGSEGV]
-			AimAt Feet [$SIGSEGV]
+			UseCustomModel "models/player/demo.mdl" 
+			AimLeadProjectileSpeed 1000 
+			AimAt Feet 
 			Tag giant
 			ItemAttributes
 			{
@@ -2108,7 +2108,7 @@ popuwashyon
 			Item "The Flight of the Monarch"
 			Item "Bumble Beenie"
 			Item "Zombie Scout"
-			UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/scout.mdl" 
 			ClassIcon scout_nightmarebee_nys_giant
 			Attributes HoldFireUntilFullReload
 			Attributes AlwaysCrit
@@ -2144,7 +2144,7 @@ popuwashyon
 			Item "The Quick-Fix"
 			Item "Bumble Beenie"
 			Item "Zombie Medic"
-			UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/medic.mdl" 
 			Tag giant
 			ItemAttributes
 			{
@@ -2194,7 +2194,7 @@ popuwashyon
 			Item "Idiot Box"
 			Item "Steel Pipes"
 			Item "Zombie Soldier"
-			UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/soldier.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Beggar's Bazooka"
@@ -2214,16 +2214,16 @@ popuwashyon
 			Health 275
 			Scale 1.2
 			ClassIcon engineer_shortcircuit_lite
-			Action FetchFlag [$SIGSEGV]
+			Action FetchFlag 
 			MaxVisionRange 750
-			UseMeleeThreatPrioritization 1 [$SIGSEGV]
+			UseMeleeThreatPrioritization 1 
 			WeaponRestrictions SecondaryOnly
 			Item "The Short Circuit"
 			Item "Life Support System"
 			Item "Iron Lung"
 			Item "Defragmenting Hard Hat 17%"
 			Item "Zombie Engineer"
-			UseCustomModel "models/player/engineer.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/engineer.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Short Circuit"
@@ -2240,8 +2240,8 @@ popuwashyon
 			Scale 1.2
 			Health 350
 			ClassIcon pyro_flare
-			AimAt Head [$SIGSEGV]
-			FireWeapon [$SIGSEGV]
+			AimAt Head 
+			FireWeapon 
 			{
 				Delay 0
 				Type "Primary"
@@ -2257,7 +2257,7 @@ popuwashyon
 			Item "The Space Diver"
 			Item "Triclops"
 			Item "Zombie Pyro"
-			UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/pyro.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Flare Gun"
@@ -2275,7 +2275,7 @@ popuwashyon
 			Item "The Eliminators Safeguard"
 			Item "Immobile Suit"
 			Item "Zombie Heavy"
-			UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/heavy.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Eliminators Safeguard"
@@ -2297,7 +2297,7 @@ popuwashyon
 			Item "The Direct Hit"
 			Item "Captain Space Mann"
 			Item "Zombie Soldier"
-			UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/soldier.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Direct Hit"
@@ -2315,7 +2315,7 @@ popuwashyon
 			Item "War Head"
 			WeaponRestrictions MeleeOnly
 			Item "Zombie Heavy"
-			UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/heavy.mdl" 
 			ItemAttributes
 			{
 				ItemName "War Head"
@@ -2338,7 +2338,7 @@ popuwashyon
 			Item "Upgradeable TF_WEAPON_MINIGUN"
 			Item "War Head"
 			Item "Zombie Heavy"
-			UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/heavy.mdl" 
 			ItemAttributes
 			{
 				ItemName "War Head"
@@ -2371,14 +2371,14 @@ popuwashyon
 			Item "Fire Fighter"
 			Item "The Space Diver"
 			Item "Zombie Pyro"
-			UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/pyro.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Detonator"
 				"paintkit_proto_def_index" 225 //cosmic calamity
 				"fire rate bonus" 0.75 //1.5s
 			}
-			ShootTemplate [$SIGSEGV]  //Shoot point template
+			ShootTemplate   //Shoot point template
 			{
 				Name Spellbomb
 				Speed 800 //Velocity
@@ -2397,9 +2397,9 @@ popuwashyon
 			Item "The Loch-n-Load"
 			Item "The Splendid Screen"
 			Item "Frag Proof Fragger"
-			AimAt Body [$SIGSEGV]
+			AimAt Body 
 			Item "Zombie Demo"
-			UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/demo.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Loch-n-Load"
@@ -2424,7 +2424,7 @@ popuwashyon
 			ClassIcon scout_giant_fast
 			WeaponRestrictions SecondaryOnly
 			Item "Zombie Scout"
-			UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/scout.mdl" 
 			ItemAttributes
 			{
 				ItemName "The C.A.P.P.E.R"
@@ -2446,7 +2446,7 @@ popuwashyon
 			Item "A Head Full of Hot Air"
 			WeaponRestrictions SecondaryOnly
 			Item "Zombie Pyro"
-			UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/pyro.mdl" 
 			ItemAttributes
 			{
 				ItemName "Upgradeable TF_WEAPON_FLAMETHROWER"
@@ -2475,7 +2475,7 @@ popuwashyon
 			Item "Upgradeable TF_WEAPON_GRENADELAUNCHER"
 			Item "Mannhattan Project"
 			Item "Zombie Demo"
-			UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/demo.mdl" 
 			ItemAttributes
 			{
 				ItemName "Upgradeable TF_WEAPON_GRENADELAUNCHER"
@@ -2498,8 +2498,8 @@ popuwashyon
 			Class Demoman
 			Health 58000
 			ClassIcon demoman_critcan
-			ExtAttr SuppressCanteenUse [$SIGSEGV]
-			AddCond [$SIGSEGV]
+			ExtAttr SuppressCanteenUse 
+			AddCond 
 			{
 				Index 80
 				Delay 0.3
@@ -2548,7 +2548,7 @@ popuwashyon
 						ItemName "The Iron Bomber"
 						"paintkit_proto_def_index" 225 //cosmic calamity
 						"damage bonus" 1.3
-						"mult dmg vs giants" 2 [$SIGSEGV]
+						"mult dmg vs giants" 2 
 						"fire rate bonus" 0.3
 						"clip size upgrade atomic" 6
 						"faster reload rate" 0.4
@@ -2583,7 +2583,7 @@ popuwashyon
 					Item "The Iron Bomber"
 					Item "Battery Canteens"
 					Item "Phobos Filter"
-					AimOffset "0 0 20" [$SIGSEGV]
+					AimOffset "0 0 20" 
 					ItemAttributes
 					{
 						ItemName "Phobos Filter"
@@ -2779,7 +2779,7 @@ popuwashyon
 			Template T_TFBot_Spy
 			Name "Corpse Disposer Spy"
 			Item "Zombie Spy"
-			UseCustomModel "models/player/spy.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/spy.mdl" 
 		}
 	}
 	//W6 spies
@@ -2800,7 +2800,7 @@ popuwashyon
 				Name "Galactic Infiltrator"
 				Item "Captain Space Mann"
 				Item "Zombie Spy"
-				UseCustomModel "models/player/spy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/spy.mdl" 
 			}
 			TFBot
 			{
@@ -2808,7 +2808,7 @@ popuwashyon
 				Name "Galactic Infiltrator"
 				Item "Captain Space Mann"
 				Item "Zombie Spy"
-				UseCustomModel "models/player/spy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/spy.mdl" 
 			}
 			TFBot
 			{
@@ -2816,7 +2816,7 @@ popuwashyon
 				Name "Galactic Infiltrator"
 				Item "Captain Space Mann"
 				Item "Zombie Spy"
-				UseCustomModel "models/player/spy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/spy.mdl" 
 			}
 			TFBot
 			{
@@ -2824,7 +2824,7 @@ popuwashyon
 				Name "Galactic Infiltrator"
 				Item "Captain Space Mann"
 				Item "Zombie Spy"
-				UseCustomModel "models/player/spy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/spy.mdl" 
 			}
 			TFBot
 			{
@@ -2832,7 +2832,7 @@ popuwashyon
 				Name "Galactic Infiltrator"
 				Item "Captain Space Mann"
 				Item "Zombie Spy"
-				UseCustomModel "models/player/spy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/spy.mdl" 
 			}
 			TFBot
 			{
@@ -2840,7 +2840,7 @@ popuwashyon
 				Name "Galactic Infiltrator"
 				Item "Captain Space Mann"
 				Item "Zombie Spy"
-				UseCustomModel "models/player/spy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/spy.mdl" 
 			}
 			TFBot
 			{
@@ -2848,12 +2848,12 @@ popuwashyon
 				Name "The Impostor Among Us"
 				Item "HazMat Headcase"
 				Item "Zombie Spy"
-				UseCustomModel "models/player/spy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/spy.mdl" 
 				ItemAttributes
 				{
 					ItemName "HazMat Headcase"
 					"item style override" 2
-					"attachment scale" 1.25 [$SIGSEGV]
+					"attachment scale" 1.25 
 				}
 			}
 		}
@@ -2873,17 +2873,17 @@ popuwashyon
 			Template T_TFBot_Sniper
 			Name "Vein Sniper"
 			Item "Zombie Sniper"
-			UseCustomModel "models/player/sniper.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/sniper.mdl" 
 		}
 	}
 	
-	SpawnTemplate [$SIGSEGV]
+	SpawnTemplate 
 	{
 		Name "spawnpoint"
 		"origin" "-1315 -3074 702"
 	}
-	SpawnTemplate "spawnpoint_changeskin_invis" [$SIGSEGV]	
-	SpawnTemplate "spawnpoint_changeskin_red" [$SIGSEGV]
+	SpawnTemplate "spawnpoint_changeskin_invis" 	
+	SpawnTemplate "spawnpoint_changeskin_red" 
 	
 	//CURRENT:
 	// Wave 1 -	Nautical Nightmare (8 icons)
@@ -2924,7 +2924,7 @@ popuwashyon
 	
 	Wave
 	{
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line "{5E98D9}=== NOTICE FROM MANN CO. ==="
 			Line "{5E98D9}You have been sent to this mountain to investigate a {EB4B4B}RIFT {5E98D9}that has been impeding deliveries."
@@ -3264,7 +3264,7 @@ popuwashyon
 	
 	Wave
 	{
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line "{5E98D9}=== MESSAGE FROM LOCAL MANN CO. FACTORY ==="
 			Line "{5E98D9}Mann Co. HQ might be able to bring in aerial reinforcements later."
@@ -3589,7 +3589,7 @@ popuwashyon
 	//Support: Corpse Disposer Spies, Red Sydney Snipers
 	Wave
 	{
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line "{5E98D9}=== MESSAGE FROM LOCAL MANN CO. FACTORY ==="
 			Line "{5E98D9}It's not much, but we've managed to get a few {EE8585}Sydney Sniper {5E98D9}bots almost battle-ready."
@@ -3870,15 +3870,15 @@ popuwashyon
 			Action	Trigger
 		}
 		
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line "{5E98D9}=== MESSAGE FROM LOCAL MANN CO. FACTORY ==="
 			Line "{5E98D9}Due to most leftover parts being broken, we won't be able to supply you with red robots during the incoming attack."
 			Line "{5E98D9}On the bright side, the {EB4B4B}RIFT {5E98D9}is almost closed. Keep up the work, mercs."
 		}
-		SpawnTemplate "tanktext" [$SIGSEGV]
-		SpawnTemplate "tanktp" [$SIGSEGV]
-		SpawnTemplate [$SIGSEGV]
+		SpawnTemplate "tanktext" 
+		SpawnTemplate "tanktp" 
+		SpawnTemplate 
 		{
 			Name "EyebossTpVortex"
 			Origin "-5550 -2000 -88"
@@ -4134,7 +4134,7 @@ popuwashyon
 	
 	Wave
 	{
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line "{5E98D9}=== MESSAGE FROM LOCAL MANN CO. FACTORY ==="
 			Line "{5E98D9}The good news: we aren't detecting any new arrivals from within the {EB4B4B}RIFT."
@@ -4156,7 +4156,7 @@ popuwashyon
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		SpawnTemplate "BlimpBotTele" [$SIGSEGV]
+		SpawnTemplate "BlimpBotTele" 
 		WaveSpawn
 		{
 			Name "Red Support"
@@ -4239,25 +4239,25 @@ popuwashyon
 			TotalCurrency 100
 			Tank //blimp
             {
-				SpawnTemplate "BlimpBotTeleDest" [$SIGSEGV]
+				SpawnTemplate "BlimpBotTeleDest" 
 				
                 Health 20000
 				Speed 85
-				DisableSmokestack 1 [$SIGSEGV] //honestly idk what this does but I'm gonna presume it's needed
+				DisableSmokestack 1  //honestly idk what this does but I'm gonna presume it's needed
                 Classicon blimp2_lite
-                Scale 1.5 [$SIGSEGV]
+                Scale 1.5 
 				Skin 2 //grey aka colorable
-                MaxTurnRate 25 [$SIGSEGV]
-                Model "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
-                Gravity 0 [$SIGSEGV] //prevents it from yeeting itself down
-				RotatePitch 0 [$SIGSEGV] //prevents it from turning upwards
-                DisableTracks 1 [$SIGSEGV] //prevents its ghooooost tracks from making noise
-                DisableChildModels 1 [$SIGSEGV] //HOPEFULLY prevents the bomb from sticking out
-				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" [$SIGSEGV]
-                PingSound "npc\combine_gunship\ping_search.wav" [$SIGSEGV]
+                MaxTurnRate 25 
+                Model "models/bots/boss_bot/boss_blimp.mdl" 
+                Gravity 0  //prevents it from yeeting itself down
+				RotatePitch 0  //prevents it from turning upwards
+                DisableTracks 1  //prevents its ghooooost tracks from making noise
+                DisableChildModels 1  //HOPEFULLY prevents the bomb from sticking out
+				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" 
+                PingSound "npc\combine_gunship\ping_search.wav" 
                 Name "tank"
                 StartingPathTrackNode "tank_path_blimp_1"
-				SpawnTemplate "colorer" [$SIGSEGV]
+				SpawnTemplate "colorer" 
 
                 OnKilledOutput
                 {
@@ -4321,7 +4321,7 @@ popuwashyon
 			{
 				Template Bee_Scout
 				Tag blimpbot
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Index 51
 					Duration 1.5
@@ -4526,7 +4526,7 @@ popuwashyon
 	//- SUPPORT: Disintegration Engineer, Moonshot Soldier (inf DHit), Spy (amogus)
 	Wave
 	{
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line "{5E98D9}=== NOTICE FROM MANN CO. ==="
 			Line "{5E98D9}We have received word that the {EB4B4B}RIFT {5E98D9}has been succesfully closed."
@@ -4545,39 +4545,39 @@ popuwashyon
 		}
 		
 		//Wormhole spawn
-		SpawnTemplate "airtext" [$SIGSEGV]
-		SpawnTemplate [$SIGSEGV]
+		SpawnTemplate "airtext" 
+		SpawnTemplate 
 		{
 			Name "Wormhole"
 			Origin "-5800 -1440 1230"
 		}
 		
 		//Ghosties, the now-double-dead fps killers
-		// SpawnTemplate [$SIGSEGV] //tree, left spawn
+		// SpawnTemplate  //tree, left spawn
 		// {
 			// Name "GhostsSky"
 			// Angles	"0 0 0"
 			// Origin	"-5275 -330 400"
 		// }
-		// SpawnTemplate [$SIGSEGV] //tower on the right
+		// SpawnTemplate  //tower on the right
 		// {
 			// Name "GhostsSky"
 			// Angles	"0 100 0"
 			// Origin	"-6255 -470 405"
 		// }
-		// SpawnTemplate [$SIGSEGV] //tree, high lefter
+		// SpawnTemplate  //tree, high lefter
 		// {
 			// Name "GhostsSky"
 			// Angles	"0 185 0"
 			// Origin	"-5025 -720 530"
 		// }
-		// SpawnTemplate [$SIGSEGV] //path next to right building exit
+		// SpawnTemplate  //path next to right building exit
 		// {
 			// Name "GhostsSky"
 			// Angles	"0 270 0"
 			// Origin	"-4555 -560 350"
 		// }
-		SpawnTemplate "AirTeleport" [$SIGSEGV]
+		SpawnTemplate "AirTeleport" 
 		WaveSpawn
 		{
 			WaitBeforeStarting 22
@@ -4623,9 +4623,9 @@ popuwashyon
 				Name "tank"
 				ClassIcon tank_red
 				Speed 0 //prevents it from trying to turn upwards
-				TeamNum 2 [$SIGSEGV] //red
+				TeamNum 2  //red
 				StartingPathTrackNode "tank_path_air_bomb"
-				Model "models/bots/boss_bot/boss_tankred.mdl" [$SIGSEGV]
+				Model "models/bots/boss_bot/boss_tankred.mdl" 
 			}
 		}
 		WaveSpawn
@@ -4689,7 +4689,7 @@ popuwashyon
 			{
 				Template Space_Giant_Pyro_Comet
 				Tag airtp
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Index 80
 					Delay 0.3
@@ -4748,7 +4748,7 @@ popuwashyon
 				Skin 1
 				Speed 75
 				StartingPathTrackNode "tank_path_a"
-				SpawnTemplate Teleporter [$SIGSEGV]
+				SpawnTemplate Teleporter 
 			}
 		}
 		WaveSpawn
@@ -4832,7 +4832,7 @@ popuwashyon
 				// Health 10000
 				// Tag giant
 				// Attributes UseBossHealthBar
-				// InterruptAction [$SIGSEGV] //Stop current bot ai and force the bot to move to a location
+				// InterruptAction  //Stop current bot ai and force the bot to move to a location
 				// {
 					// AimTarget "-5860 -2390 716" //Where the bot should look at
 					// Delay 0.1 //Time before the first task starts (Default: 10)
@@ -4888,7 +4888,7 @@ popuwashyon
 	//Support: Giant Nebula Pyro (gas), 
 	Wave
 	{
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line "{5E98D9}=== NOTICE === NOTICE === ICENOT"
 			Line "{5E98D9}You might much leftover aren't the whatever our take side honeycomb to protect tank before almost nearby remaining"
@@ -4908,9 +4908,9 @@ popuwashyon
 			Action	Trigger
 		}
 		
-		SpawnTemplate AirTeleport [$SIGSEGV]
-		SpawnTemplate "airtext_boss" [$SIGSEGV]
-		SpawnTemplate [$SIGSEGV]
+		SpawnTemplate AirTeleport 
+		SpawnTemplate "airtext_boss" 
+		SpawnTemplate 
 		{
 			Name "Wormhole_b"
 			Origin "-5800 -1440 1230"

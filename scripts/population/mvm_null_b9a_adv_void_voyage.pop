@@ -11,21 +11,21 @@ WaveSchedule
 	StartingCurrency 800
 	RespawnWaveTime 3
 	CanBotsAttackWhileInSpawnRoom no
-	SendBotsToSpectatorImmediately 1 [$SIGSEGV]
-	NoRomevisionCosmetics 1 [$SIGSEGV]
-	ForceHoliday 2 [$SIGSEGV]
-	NoThrillerTaunt 1 [$SIGSEGV]
-	SpawnTemplate "Filters" [$SIGSEGV]
-	SpawnTemplate "StatueDefense" [$SIGSEGV]
-	SpawnTemplate "BlimpAlert" [$SIGSEGV]
-	SpawnTemplate "Lightning" [$SIGSEGV]
-	PrecacheModel "models/soldier_statue/soldier_statue.mdl" [$SIGSEGV]
-	PrecacheModel "models/props_halloween/halloween_gift.mdl" [$SIGSEGV]
-	PrecacheModel "models/weapons/w_models/w_drg_ball.mdl" [$SIGSEGV]
-	PrecacheModel "models/props_foliage/tree_pine_huge.mdl" [$SIGSEGV]
-	PrecacheParticle "lava_fireball" [$SIGSEGV]
-	PrecacheParticle "wrenchmotron_teleport_beam" [$SIGSEGV]
-	ExtraTankPath [$SIGSEGV] // blimp path 
+	SendBotsToSpectatorImmediately 1 
+	NoRomevisionCosmetics 1 
+	ForceHoliday 2 
+	NoThrillerTaunt 1 
+	SpawnTemplate "Filters" 
+	SpawnTemplate "StatueDefense" 
+	SpawnTemplate "BlimpAlert" 
+	SpawnTemplate "Lightning" 
+	PrecacheModel "models/soldier_statue/soldier_statue.mdl" 
+	PrecacheModel "models/props_halloween/halloween_gift.mdl" 
+	PrecacheModel "models/weapons/w_models/w_drg_ball.mdl" 
+	PrecacheModel "models/props_foliage/tree_pine_huge.mdl" 
+	PrecacheParticle "lava_fireball" 
+	PrecacheParticle "wrenchmotron_teleport_beam" 
+	ExtraTankPath  // blimp path 
 	{
 		Name "null_blimp_path"
 		Node "-3004 -4371 184"
@@ -72,13 +72,13 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes AlwaysFireWeapon // must have this or otherwise it won't shoot fireballs
 			WeaponRestrictions PrimaryOnly
-			FireSound "=70|misc/halloween/spell_fireball_impact.wav" [$SIGSEGV]
-			ShootTemplate [$SIGSEGV]
+			FireSound "=70|misc/halloween/spell_fireball_impact.wav" 
+			ShootTemplate 
 			{
 				Name IgniteOnHit
 				AttachToProjectile 1
 			}
-			AddCond [$SIGSEGV]
+			AddCond 
 			{
 				Index 30 // for some reason attributes don't work
 			}
@@ -114,8 +114,8 @@ WaveSchedule
 			Attributes UseBossHealthBar
 			Attributes MiniBoss
 			Attributes HoldFireUntilFullReload
-			SpawnTemplate "ResurrectLaterOn" [$SIGSEGV]
-			SpawnTemplate [$SIGSEGV]
+			SpawnTemplate "ResurrectLaterOn" 
+			SpawnTemplate 
 			{
 				Name "BouncealotTeleporter"
 				Bone "bip_spine_2"
@@ -164,19 +164,19 @@ WaveSchedule
 			Attributes UseBossHealthBar
 			Attributes MiniBoss
 			Attributes HoldFireUntilFullReload
-			UseHumanModel 1 [$SIGSEGV]
-			AlwaysGlow 1 [$SIGSEGV]
-			SpawnTemplate [$SIGSEGV]
+			UseHumanModel 1 
+			AlwaysGlow 1 
+			SpawnTemplate 
 			{
 				Name "BouncealotTeleporter_2"
 				Bone "bip_spine_2"
 			}
-			ShootTemplate [$SIGSEGV]
+			ShootTemplate 
 			{
 				Name CannonballAoE
 				AttachToProjectile 1
 			}
-			Taunt [$SIGSEGV]
+			Taunt 
 			{
 				Delay 0.1
 				Cooldown 3600
@@ -235,11 +235,11 @@ WaveSchedule
 		}
 		Zombify
 		{
-			Action Mobber [$SIGSEGV]
-			ExtAttr IgnoreRealPlayers [$SIGSEGV]
-			ExtAttr IgnoreBuildings [$SIGSEGV]
-			UseHumanModel 1 [$SIGSEGV]
-			SpawnTemplate "ZombieMarker" [$SIGSEGV]
+			Action Mobber 
+			ExtAttr IgnoreRealPlayers 
+			ExtAttr IgnoreBuildings 
+			UseHumanModel 1 
+			SpawnTemplate "ZombieMarker" 
 			Tag zombiebot
 			Tag bot_giant
 		}
@@ -253,7 +253,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Scout_Fast
 						Item "Zombie Scout"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -262,7 +262,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Scout_FAN
 						Item "Zombie Scout"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -271,7 +271,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Scout_Baseball
 						Item "Zombie Scout"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -280,7 +280,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Scout_Baseball_Armored
 						Item "Zombie Scout"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -290,7 +290,7 @@ WaveSchedule
 						Template T_TFBot_Giant_Scout_Bonk
 						Name "Giant Bonk Scout"
 						Item "Zombie Scout"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -299,7 +299,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Scout_Jumping_Sandman
 						Item "Zombie Scout"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -308,7 +308,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Scout_Fast
 						Item "Zombie Scout"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -317,7 +317,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Scout_FAN
 						Item "Zombie Scout"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -326,7 +326,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Scout_Baseball
 						Item "Zombie Scout"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -335,7 +335,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Scout_Baseball_Armored
 						Item "Zombie Scout"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -345,7 +345,7 @@ WaveSchedule
 						Template T_TFBot_Giant_Scout_Bonk
 						Name "Giant Bonk Scout"
 						Item "Zombie Scout"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -354,7 +354,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Scout_Jumping_Sandman
 						Item "Zombie Scout"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -363,7 +363,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -372,7 +372,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Spammer
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -381,7 +381,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Spammer_Reload
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -390,7 +390,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Crit
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -399,7 +399,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Extended_Buff_Banner
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -408,7 +408,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Extended_Battalion
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -417,7 +417,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Extended_Concheror
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -426,7 +426,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_RocketShotgun
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -435,7 +435,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_RocketPush
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -444,7 +444,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_SlowBarrage
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -453,7 +453,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -462,7 +462,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Spammer
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -471,7 +471,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Spammer_Reload
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -480,7 +480,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Crit
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -489,7 +489,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Extended_Buff_Banner
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -498,7 +498,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Extended_Battalion
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -507,7 +507,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Extended_Concheror
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -516,7 +516,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_RocketShotgun
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -525,7 +525,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_RocketPush
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -534,7 +534,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_SlowBarrage
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -543,7 +543,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -552,7 +552,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Spammer
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -561,7 +561,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Spammer_Reload
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -570,7 +570,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Crit
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -579,7 +579,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Extended_Buff_Banner
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -588,7 +588,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Extended_Battalion
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -597,7 +597,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_Extended_Concheror
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -606,7 +606,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_RocketShotgun
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -615,7 +615,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_RocketPush
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -624,7 +624,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Soldier_SlowBarrage
 						Item "Zombie Soldier"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -633,7 +633,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -642,7 +642,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -651,7 +651,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -660,7 +660,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -669,7 +669,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -678,7 +678,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -687,7 +687,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -696,7 +696,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -705,7 +705,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -714,7 +714,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -723,7 +723,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -732,7 +732,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -741,7 +741,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -750,7 +750,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -759,7 +759,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -768,7 +768,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -777,7 +777,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -786,7 +786,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -795,7 +795,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -804,7 +804,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -813,7 +813,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -822,7 +822,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -831,7 +831,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -840,7 +840,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -849,7 +849,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -858,7 +858,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -867,7 +867,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -876,7 +876,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -885,7 +885,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -894,7 +894,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Pyro_Flare_Spammer
 						Item "Zombie Pyro"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -903,7 +903,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demoman
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -912,7 +912,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demo_Burst
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -921,7 +921,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_DemoMan_PrinceTavish
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -930,7 +930,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demoman
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -939,7 +939,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demo_Burst
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -948,7 +948,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_DemoMan_PrinceTavish
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -957,7 +957,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demoman
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -966,7 +966,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demo_Burst
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -975,7 +975,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_DemoMan_PrinceTavish
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -984,7 +984,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demoman
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -993,7 +993,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demo_Burst
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1002,7 +1002,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_DemoMan_PrinceTavish
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1011,7 +1011,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demoman
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1020,7 +1020,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demo_Burst
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1029,7 +1029,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_DemoMan_PrinceTavish
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1038,7 +1038,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demoman
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1047,7 +1047,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demo_Burst
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1056,7 +1056,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_DemoMan_PrinceTavish
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1065,7 +1065,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demoman
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1074,7 +1074,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demo_Burst
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1083,7 +1083,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_DemoMan_PrinceTavish
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1092,7 +1092,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demoman
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1101,7 +1101,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demo_Burst
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1110,7 +1110,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_DemoMan_PrinceTavish
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1119,7 +1119,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demoman
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1128,7 +1128,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demo_Burst
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1137,7 +1137,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_DemoMan_PrinceTavish
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1146,7 +1146,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demoman
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1155,7 +1155,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Demo_Burst
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1164,7 +1164,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_DemoMan_PrinceTavish
 						Item "Zombie Demo"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1173,7 +1173,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1182,7 +1182,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons_Deflector
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1193,7 +1193,7 @@ WaveSchedule
 						Name "Giant Heal-on-Kill Heavy"
 						Item "Deflector"
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1203,7 +1203,7 @@ WaveSchedule
 						Template T_TFBot_Heavyweapons_Heater
 						Name "Giant Heater Heavy"
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1212,7 +1212,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons_Shotgun
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1221,7 +1221,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1230,7 +1230,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons_Deflector
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1241,7 +1241,7 @@ WaveSchedule
 						Name "Giant Heal-on-Kill Heavy"
 						Item "Deflector"
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1251,7 +1251,7 @@ WaveSchedule
 						Template T_TFBot_Heavyweapons_Heater
 						Name "Giant Heater Heavy"
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1260,7 +1260,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons_Shotgun
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1269,7 +1269,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1278,7 +1278,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons_Deflector
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1289,7 +1289,7 @@ WaveSchedule
 						Name "Giant Heal-on-Kill Heavy"
 						Item "Deflector"
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1299,7 +1299,7 @@ WaveSchedule
 						Template T_TFBot_Heavyweapons_Heater
 						Name "Giant Heater Heavy"
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1308,7 +1308,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons_Shotgun
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1317,7 +1317,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1326,7 +1326,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons_Deflector
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1337,7 +1337,7 @@ WaveSchedule
 						Name "Giant Heal-on-Kill Heavy"
 						Item "Deflector"
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1347,7 +1347,7 @@ WaveSchedule
 						Template T_TFBot_Heavyweapons_Heater
 						Name "Giant Heater Heavy"
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1356,7 +1356,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons_Shotgun
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1365,7 +1365,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1374,7 +1374,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons_Deflector
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1385,7 +1385,7 @@ WaveSchedule
 						Name "Giant Heal-on-Kill Heavy"
 						Item "Deflector"
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1395,7 +1395,7 @@ WaveSchedule
 						Template T_TFBot_Heavyweapons_Heater
 						Name "Giant Heater Heavy"
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1404,7 +1404,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons_Shotgun
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1413,7 +1413,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1422,7 +1422,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons_Deflector
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1433,7 +1433,7 @@ WaveSchedule
 						Name "Giant Heal-on-Kill Heavy"
 						Item "Deflector"
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1443,7 +1443,7 @@ WaveSchedule
 						Template T_TFBot_Heavyweapons_Heater
 						Name "Giant Heater Heavy"
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 				Squad
@@ -1452,7 +1452,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Heavyweapons_Shotgun
 						Item "Zombie Heavy"
-						AddTemplate "Zombify" [$SIGSEGV]
+						AddTemplate "Zombify" 
 					}
 				}
 			}
@@ -1583,7 +1583,7 @@ WaveSchedule
 		}
 		WaitWhenDone 65
 		Checkpoint Yes
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line "{red}Prevent the robots from deploying their bomb underneath the Soldier's statue!"
 		}
@@ -1906,7 +1906,7 @@ WaveSchedule
 			TotalCurrency 125
 			Squad
 			{
-				NoFormation 1 [$SIGSEGV]
+				NoFormation 1 
 				TFBot
 				{
 					Template T_TFBot_Demoman_Knight
@@ -1969,7 +1969,7 @@ WaveSchedule
 		}
 		WaitWhenDone 65
 		Checkpoint Yes
-		SpawnTemplate "Makers" [$SIGSEGV]
+		SpawnTemplate "Makers" 
 		WaveSpawn
 		{
 			Name "W3A-1"
@@ -2037,7 +2037,7 @@ WaveSchedule
 			TotalCurrency 100
 			Squad
 			{
-				NoFormation 1 [$SIGSEGV]
+				NoFormation 1 
 				TFBot
 				{
 					Template T_TFBot_Sniper_Huntsman
@@ -2178,7 +2178,7 @@ WaveSchedule
 			TotalCurrency 50
 			Squad
 			{
-				NoFormation 1 [$SIGSEGV]
+				NoFormation 1 
 				TFBot
 				{
 					Class Heavyweapons
@@ -2318,18 +2318,18 @@ WaveSchedule
 			{
 				Health 20000
 				Speed 100
-				DisableSmokestack 1 [$SIGSEGV]
-				ClassIcon blimp2_lite [$SIGSEGV]
-				Scale 0.5 [$SIGSEGV]
-				MaxTurnRate 50 [$SIGSEGV]
-				Model "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
-				Gravity 0 [$SIGSEGV]
+				DisableSmokestack 1 
+				ClassIcon blimp2_lite 
+				Scale 0.5 
+				MaxTurnRate 50 
+				Model "models/bots/boss_bot/boss_blimp.mdl" 
+				Gravity 0 
 				Skin 1
-				RotatePitch 0 [$SIGSEGV]
-				DisableTracks 1 [$SIGSEGV]
-				DisableChildModels 1 [$SIGSEGV]
-				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" [$SIGSEGV]
-				PingSound "npc\combine_gunship\ping_search.wav" [$SIGSEGV]
+				RotatePitch 0 
+				DisableTracks 1 
+				DisableChildModels 1 
+				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" 
+				PingSound "npc\combine_gunship\ping_search.wav" 
 				Name "tankboss"
 				StartingPathTrackNode "null_blimp_path_1"
 				OnBombDroppedOutput
@@ -2366,7 +2366,7 @@ WaveSchedule
 			TotalCurrency 100
 			Squad
 			{
-				NoWaitForFormation 1 [$SIGSEGV]
+				NoWaitForFormation 1 
 				TFBot
 				{
 					Template T_TFBot_Giant_Soldier_Extended_Buff_Banner
@@ -2416,7 +2416,7 @@ WaveSchedule
 			TotalCurrency 150
 			Squad
 			{
-				NoWaitForFormation 1 [$SIGSEGV]
+				NoWaitForFormation 1 
 				TFBot
 				{
 					Template T_TFBot_Giant_Heavyweapons_Deflector
@@ -2475,7 +2475,7 @@ WaveSchedule
 			TotalCurrency 125
 			Squad
 			{
-				NoFormation 1 [$SIGSEGV]
+				NoFormation 1 
 				TFBot
 				{
 					Template T_TFBot_Pyro_Flaregun
@@ -2528,19 +2528,19 @@ WaveSchedule
 			{
 				Health 18000
 				Speed 100
-				DisableSmokestack 1 [$SIGSEGV]
+				DisableSmokestack 1 
 				Classicon blimp2_lite
 				Skin 1
-				MaxTurnRate 50 [$SIGSEGV]
-				Scale 0.5 [$SIGSEGV]
-				Model "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
-				Gravity 0 [$SIGSEGV]
-				RotatePitch 0 [$SIGSEGV]
-				DisableTracks 1 [$SIGSEGV]
-				DisableChildModels 1 [$SIGSEGV]
-				ReplaceModelCollisions 1 [$SIGSEGV]
-				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" [$SIGSEGV]
-				PingSound "npc\combine_gunship\ping_search.wav" [$SIGSEGV]
+				MaxTurnRate 50 
+				Scale 0.5 
+				Model "models/bots/boss_bot/boss_blimp.mdl" 
+				Gravity 0 
+				RotatePitch 0 
+				DisableTracks 1 
+				DisableChildModels 1 
+				ReplaceModelCollisions 1 
+				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" 
+				PingSound "npc\combine_gunship\ping_search.wav" 
 				Name "tankboss"
 				StartingPathTrackNode "null_blimp_path_1"
 				OnKilledOutput
@@ -2568,7 +2568,7 @@ WaveSchedule
 			TotalCurrency 100
 			Squad
 			{
-				NoWaitForFormation 1 [$SIGSEGV]
+				NoWaitForFormation 1 
 				TFBot
 				{
 					Template T_TFBot_Soldier_Spammer
@@ -2619,7 +2619,7 @@ WaveSchedule
 			}
 		}
 	}
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_alley_bouncealot_support"
         TeamNum 3
@@ -2627,7 +2627,7 @@ WaveSchedule
         Y "-2560"                  
         Z "-214.995"    
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_alley_bouncealot_support_2"
         TeamNum 3
@@ -2635,7 +2635,7 @@ WaveSchedule
         Y "-2560"                  
         Z "-214.995"    
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_jeep_wave5support"
         TeamNum 3
@@ -2657,9 +2657,9 @@ WaveSchedule
 		}
 		WaitWhenDone 65
 		Checkpoint Yes
-		SpawnTemplate "ResurrectLogic" [$SIGSEGV]
-		SpawnTemplate "NoFallDamage" [$SIGSEGV]
-		SpawnTemplate "TeleportMe" [$SIGSEGV]
+		SpawnTemplate "ResurrectLogic" 
+		SpawnTemplate "NoFallDamage" 
+		SpawnTemplate "TeleportMe" 
 		WaveSpawn
 		{
 			Name "W5A"
@@ -2670,7 +2670,7 @@ WaveSchedule
 			WaitBeforeStarting 0
 			WaitBetweenSpawns 0
 			TotalCurrency 100
-			DoneMessage "{red}Fall damage has been reenabled!" [$SIGSEGV]
+			DoneMessage "{red}Fall damage has been reenabled!" 
 			DoneOutput
 			{
 				Target nofalldamage_disable_relay
@@ -2686,7 +2686,7 @@ WaveSchedule
 			Name "W5-BounceSupportRequest"
 			WaitBeforeStarting 7
 			FirstSpawnWarningSound "vo/mvm/mght/demoman_mvm_m_helpmedefend02.mp3"
-			FirstSpawnMessage "{green}Fall damage has been disabled!" [$SIGSEGV]
+			FirstSpawnMessage "{green}Fall damage has been disabled!" 
 			FirstSpawnOutput
 			{
 				Target nofalldamage_enable_relay
@@ -3019,13 +3019,13 @@ WaveSchedule
 				}
 				Item "The Glasgow Great Helm"
 				Item "Zombie Demo"
-				UseHumanModel 1 [$SIGSEGV]
+				UseHumanModel 1 
 				Scale "1.3"
 				Health 650
 				WeaponRestrictions MeleeOnly
 				Attributes AirChargeOnly
 				Attributes AutoJump
-				Action Mobber [$SIGSEGV]
+				Action Mobber 
 				AutoJumpMin 4
 				AutoJumpMax 4
 				CharacterAttributes
@@ -3055,19 +3055,19 @@ WaveSchedule
 			Target wave_finished_relay
 			Action trigger
 		}
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line "{green}The forward Upgrade Station will be active permanently for this wave."
 		}
 		WaitWhenDone 65
 		Checkpoint Yes
-		SpawnTemplate "TowerTeleport" [$SIGSEGV]
-		SpawnTemplate "WheelOfFate" [$SIGSEGV]
-		SpawnTemplate "PhaseSystem" [$SIGSEGV]
-		SpawnTemplate "ZombieBotBehavior" [$SIGSEGV]
-		SpawnTemplate "Makers" [$SIGSEGV]
-		SpawnTemplate "TeleportFinale" [$SIGSEGV]
-		PlayerAttributes [$SIGSEGV]
+		SpawnTemplate "TowerTeleport" 
+		SpawnTemplate "WheelOfFate" 
+		SpawnTemplate "PhaseSystem" 
+		SpawnTemplate "ZombieBotBehavior" 
+		SpawnTemplate "Makers" 
+		SpawnTemplate "TeleportFinale" 
+		PlayerAttributes 
 		{
 			"cannot pick up intelligence" 1
 			"player gravity ballon head" -0.1
@@ -3126,24 +3126,24 @@ WaveSchedule
 				Attributes UseBossHealthBar
 				Attributes MiniBoss
 				Scale 1
-				UseHumanModel 1 [$SIGSEGV]
-				AlwaysGlow 1 [$SIGSEGV]
-				Action Mobber [$SIGSEGV]
-				NoIdleSound 1 [$SIGSEGV]
-				FastUpdate 1 [$SIGSEGV]
-				SpawnTemplate FlagLocator [$SIGSEGV]
-				SpawnTemplate BuffEffect [$SIGSEGV]
-				FireSound "=70|weapons/rocket_shoot.wav" [$SIGSEGV]
+				UseHumanModel 1 
+				AlwaysGlow 1 
+				Action Mobber 
+				NoIdleSound 1 
+				FastUpdate 1 
+				SpawnTemplate FlagLocator 
+				SpawnTemplate BuffEffect 
+				FireSound "=70|weapons/rocket_shoot.wav" 
 				DeathSound "vo/soldier_sf12_badmagic07.mp3"
 				Tag vip
-				Taunt [$SIGSEGV]
+				Taunt 
 				{
 					Delay 0.1
 					Cooldown 3600
 					Repeats 1
 					Name "Fresh Brewed Victory Taunt"
 				}
-				AddCond [$SIGSEGV]
+				AddCond 
 				{
 					Name "TF_COND_REPROGRAMMED"
 				}
@@ -3167,11 +3167,11 @@ WaveSchedule
 					"health from healers reduced" 0.25
 					"healing received penalty" 0.75
 				}
-				EventChangeAttributes [$SIGSEGV]
+				EventChangeAttributes 
 				{
 					Clutch1
 					{
-						InterruptAction [$SIGSEGV]
+						InterruptAction 
 						{
 							Target "spawnbot_frontline1"
 							Delay 0.1
@@ -3183,7 +3183,7 @@ WaveSchedule
 					}
 					Clutch2
 					{
-						InterruptAction [$SIGSEGV]
+						InterruptAction 
 						{
 							Target "spawnbot_frontline2"
 							Delay 0.1
@@ -3195,7 +3195,7 @@ WaveSchedule
 					}
 					Clutch3
 					{
-						InterruptAction [$SIGSEGV]
+						InterruptAction 
 						{
 							Target "spawnbot_soldier"
 							Delay 0.1
@@ -3207,7 +3207,7 @@ WaveSchedule
 					}
 					Clutch4
 					{
-						InterruptAction [$SIGSEGV]
+						InterruptAction 
 						{
 							Target "spawnbot_frontline3"
 							Delay 0.1
@@ -3219,7 +3219,7 @@ WaveSchedule
 					}
 					Ending
 					{
-						InterruptAction [$SIGSEGV]
+						InterruptAction 
 						{
 							AimTarget "teleport_humans_here"
 							Delay 0.5 
@@ -3227,13 +3227,13 @@ WaveSchedule
 							Duration 3600
 						}
 						WeaponRestrictions SecondaryOnly
-						Taunt [$SIGSEGV]
+						Taunt 
 						{
 							Delay 6.5
 							Cooldown 3600
 							Repeats 1
 						}
-						NoPushaway 1 [$SIGSEGV]
+						NoPushaway 1 
 						CharacterAttributes
 						{
 							"move speed bonus" 0
@@ -3288,7 +3288,7 @@ WaveSchedule
 			WaitBetweenSpawns 0
 			TotalCurrency 25
 			Support Limited
-			FirstSpawnMessage "{red}Survive 5 phases! Don't let Soldier die!" [$SIGSEGV]
+			FirstSpawnMessage "{red}Survive 5 phases! Don't let Soldier die!" 
 			RandomChoice
 			{
 				Squad
@@ -3297,9 +3297,9 @@ WaveSchedule
 					{
 						Template T_TFBot_Demoman_Knight
 						Attributes AlwaysCrit
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 					}
 				}
 			}
@@ -3317,7 +3317,7 @@ WaveSchedule
 			Support Limited
 			Template T_WaveSpawn_EveryoneGetInHere
 			TotalCurrency 25
-			FirstSpawnMessage "{green}Stay close to Soldier for mutual banner buffs!" [$SIGSEGV]
+			FirstSpawnMessage "{green}Stay close to Soldier for mutual banner buffs!" 
 		}
 		WaveSpawn
 		{
@@ -3358,11 +3358,11 @@ WaveSchedule
 						Tag bot_giant
 						Item "Point and Shoot"
 						Attributes MiniBoss
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 						Item "TF_WEAPON_SPELLBOOK"
-						Spell [$SIGSEGV]
+						Spell 
 						{
 							Delay 0.1
 							Cooldown 1.5
@@ -3406,9 +3406,9 @@ WaveSchedule
 						Class Soldier
 						Skill Expert
 						Name "Balloon Ray Soldier"
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 						Item "The Righteous Bison"
 						WeaponRestrictions SecondaryOnly
 						ItemAttributes
@@ -3416,7 +3416,7 @@ WaveSchedule
 							ItemName "The Righteous Bison"
 							"faster reload rate" -1.8
 						}
-						ShootTemplate [$SIGSEGV]
+						ShootTemplate 
 						{
 							Name BalloonRay
 							AttachToProjectile 1
@@ -3429,8 +3429,8 @@ WaveSchedule
 					{
 						Template T_TFBot_Scout_Sandman_FastCharge
 						Attributes AlwaysCrit
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
 					}
 				}
 				Squad
@@ -3440,8 +3440,8 @@ WaveSchedule
 						Class Pyro
 						Skill Easy
 						Attributes AlwaysFireWeapon
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
 					}
 				}
 				Squad
@@ -3450,8 +3450,8 @@ WaveSchedule
 					{
 						Template T_TFBot_Sniper_Huntsman
 						Attributes AlwaysCrit
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
 					}
 				}
 			}
@@ -3508,10 +3508,10 @@ WaveSchedule
 						Health 1600
 						WeaponRestrictions SecondaryOnly
 						Attributes MiniBoss
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
-						ShootTemplate [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
+						ShootTemplate 
 						{
 							Name MoreCleavers
 							Speed 3000
@@ -3554,12 +3554,12 @@ WaveSchedule
 						WeaponRestrictions SecondaryOnly
 						Attributes SuppressFire
 						Item "The Quick-Fix"
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
 						Tag bot_giant
 						Tag aoe_medic
-						SpawnTemplate "UberRadius" [$SIGSEGV]
-						AddCond [$SIGSEGV]
+						SpawnTemplate "UberRadius" 
+						AddCond 
 						{
 							Index 55
 						}
@@ -3568,49 +3568,49 @@ WaveSchedule
 					{
 						Class Soldier
 						Skill Normal
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 					}
 					TFBot
 					{
 						Class Soldier
 						Skill Normal
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 					}
 					TFBot
 					{
 						Class Heavyweapons
 						Skill Normal
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 					}
 					TFBot
 					{
 						Class Heavyweapons
 						Skill Normal
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 					}
 					TFBot
 					{
 						Class Pyro
 						Skill Normal
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 					}
 					TFBot
 					{
 						Class Pyro
 						Skill Normal
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 					}
 				}
 			}
@@ -3644,9 +3644,9 @@ WaveSchedule
 							"faster reload rate" 0.2
 							"fire rate penalty" 2
 						}
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 					}
 				}
 			}
@@ -3694,8 +3694,8 @@ WaveSchedule
 						Item "The Gift Bringer"
 						Item "The All-Father"
 						Tag bot_giant
-						UseHumanModel 1 [$SIGSEGV]
-						ShootTemplate [$SIGSEGV]
+						UseHumanModel 1 
+						ShootTemplate 
 						{
 							Name ApplyRandomGift
 							AttachToProjectile 1
@@ -3709,9 +3709,9 @@ WaveSchedule
 							"explosion particle" "bday_confetti"
 						}
 						RocketCustomParticle "flamethrower_rainbow"
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 					}
 				}
 			}
@@ -3736,10 +3736,10 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Boxing_Heavy
 						Tag bot_giant
-						Action Mobber [$SIGSEGV]
+						Action Mobber 
 						Attributes AlwaysCrit
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 					}
 				}
 			}
@@ -3771,9 +3771,9 @@ WaveSchedule
 						Item "The Black Watch"
 						Attributes MiniBoss
 						Tag bot_giant
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 						ItemAttributes
 						{
 							ItemName "The Loose Cannon"
@@ -3829,9 +3829,9 @@ WaveSchedule
 					{
 						Template T_TFBot_Scout_Melee
 						Attributes AlwaysCrit
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 					}
 				}
 			}
@@ -3879,9 +3879,9 @@ WaveSchedule
 						Name "Odd Memento"
 						Item "The Marxman"
 						Item "The Liberty Launcher"
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 						ItemAttributes
 						{
 							ItemName "The Liberty Launcher"
@@ -3927,9 +3927,9 @@ WaveSchedule
 						Item "The Hanger-On Hood"
 						Item "Bumble Beenie"
 						Item "The Killing Gloves of Boxing"
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 						ItemAttributes
 						{
 							ItemName "The Killing Gloves of Boxing"
@@ -3969,9 +3969,9 @@ WaveSchedule
 						Attributes MiniBoss
 						Attributes AlwaysFireWeapon
 						Tag bot_giant
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 						ItemAttributes
 						{
 							ItemName "The Nostromo Napalmer"
@@ -4017,9 +4017,9 @@ WaveSchedule
 					{
 						Template T_TFBot_Demoman_Knight
 						Attributes AlwaysCrit
-						Action Mobber [$SIGSEGV]
-						ExtAttr IgnoreRealPlayers [$SIGSEGV]
-						ExtAttr IgnoreBuildings [$SIGSEGV]
+						Action Mobber 
+						ExtAttr IgnoreRealPlayers 
+						ExtAttr IgnoreBuildings 
 					}
 				}
 			}
@@ -4061,7 +4061,7 @@ WaveSchedule
 					TFBot
 					{
 						Template T_TFBot_Giant_Metalbeard
-						Action Mobber [$SIGSEGV]
+						Action Mobber 
 					}
 				}
 			}
@@ -4086,7 +4086,7 @@ WaveSchedule
 					TFBot
 					{
 						Template T_TFBot_Chief_Gauntlet
-						Action Mobber [$SIGSEGV]
+						Action Mobber 
 					}
 				}
 			}
@@ -4111,13 +4111,13 @@ WaveSchedule
 					TFBot
 					{
 						Template T_TFBot_Chief_Soldier
-						Action Mobber [$SIGSEGV]
+						Action Mobber 
 					}
 				}
 			}
 		}
 	}
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_soldier"
         TeamNum 3
@@ -4125,7 +4125,7 @@ WaveSchedule
         Y "-2854"                  
         Z "-220"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_alley_zombie"
         TeamNum 3
@@ -4133,7 +4133,7 @@ WaveSchedule
         Y "-2560"                  
         Z "-214.995"
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_frontline1"
         TeamNum 3
@@ -4141,7 +4141,7 @@ WaveSchedule
         Y "-1711"                  
         Z "-148"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_frontline2"
         TeamNum 3
@@ -4149,7 +4149,7 @@ WaveSchedule
         Y "-1711"                  
         Z "-148"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_frontline3"
         TeamNum 3
@@ -4157,7 +4157,7 @@ WaveSchedule
         Y "-2874"                  
         Z "-148"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_victory"
 		StartDisabled 1
@@ -4166,7 +4166,7 @@ WaveSchedule
         Y "-3056"                  
         Z "-15.9954"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_phase1"
 		StartDisabled 1
@@ -4175,7 +4175,7 @@ WaveSchedule
         Y "-3056"                  
         Z "-15.9954"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_phase2"
 		StartDisabled 1
@@ -4184,7 +4184,7 @@ WaveSchedule
         Y "-3056"                  
         Z "-15.9954"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_phase3"
 		StartDisabled 1
@@ -4193,7 +4193,7 @@ WaveSchedule
         Y "-3056"                  
         Z "-15.9954"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_phase4"
 		StartDisabled 1
@@ -4202,7 +4202,7 @@ WaveSchedule
         Y "-3056"                  
         Z "-15.9954"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_phase5"
 		StartDisabled 1
@@ -4211,7 +4211,7 @@ WaveSchedule
         Y "-3056"                  
         Z "-15.9954"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_left_phase1"
 		StartDisabled 1
@@ -4220,7 +4220,7 @@ WaveSchedule
         Y "-3456"                  
         Z "-16"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_left_phase2"
 		StartDisabled 1
@@ -4229,7 +4229,7 @@ WaveSchedule
         Y "-3456"                  
         Z "-16"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_left_phase3"
 		StartDisabled 1
@@ -4238,7 +4238,7 @@ WaveSchedule
         Y "-3456"                  
         Z "-16"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_left_phase4"
 		StartDisabled 1
@@ -4247,7 +4247,7 @@ WaveSchedule
         Y "-3456"                  
         Z "-16"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_left_phase5"
 		StartDisabled 1
@@ -4256,7 +4256,7 @@ WaveSchedule
         Y "-3456"                  
         Z "-16"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_jeep_phase1"
 		StartDisabled 1
@@ -4265,7 +4265,7 @@ WaveSchedule
         Y "-3440"                  
         Z "-192"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_jeep_phase2"
 		StartDisabled 1
@@ -4274,7 +4274,7 @@ WaveSchedule
         Y "-3440"                  
         Z "-192"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_jeep_phase3"
 		StartDisabled 1
@@ -4283,7 +4283,7 @@ WaveSchedule
         Y "-3440"                  
         Z "-192"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_jeep_phase4"
 		StartDisabled 1
@@ -4292,7 +4292,7 @@ WaveSchedule
         Y "-3440"                  
         Z "-192"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_jeep_phase5"
 		StartDisabled 1
@@ -4301,7 +4301,7 @@ WaveSchedule
         Y "-3440"                  
         Z "-192"        
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_alley_phase1"
 		StartDisabled 1
@@ -4310,7 +4310,7 @@ WaveSchedule
         Y "-2560"                  
         Z "-214.995"    
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_alley_phase2"
 		StartDisabled 1
@@ -4319,7 +4319,7 @@ WaveSchedule
         Y "-2560"                  
         Z "-214.995"    
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_alley_phase3"
 		StartDisabled 1
@@ -4328,7 +4328,7 @@ WaveSchedule
         Y "-2560"                  
         Z "-214.995"    
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_alley_phase4"
 		StartDisabled 1
@@ -4337,7 +4337,7 @@ WaveSchedule
         Y "-2560"                  
         Z "-214.995"    
     }
-	ExtraSpawnPoint [$SIGSEGV]
+	ExtraSpawnPoint 
     {
         Name "spawnbot_alley_phase5"
 		StartDisabled 1

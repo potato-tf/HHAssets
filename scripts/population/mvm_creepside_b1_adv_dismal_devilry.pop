@@ -70,7 +70,7 @@ WaveSchedule
     PrecacheSound "music/vlvx_song23.mp3"
     PrecacheSound "penulti_cmprsd.mp3" 
     PrecacheSound "music/lastlegs_cmprsd.mp3"	
-    SpellBookRareRoll [$SIGSEGV]
+    SpellBookRareRoll 
 	{
 		"Meteor Shower" 1
 		"Summon Monoculus" 2
@@ -342,7 +342,7 @@ WaveSchedule
         Name "paintrain_fix_template"
         ClassName "tf_weapon_cannon"
     }
-    PlayerShootTemplate [$SIGSEGV]  
+    PlayerShootTemplate   
 	{
 		Name rpg_shoottemplate 
 		ItemName "The Liberty Launcher"
@@ -381,7 +381,7 @@ WaveSchedule
         Node "32 792 1250"
     }
 
-    ExtraTankPath [$SIGSEGV] 
+    ExtraTankPath  
 	{
 		Name "tomb_destroy_path" 
 		
@@ -976,7 +976,7 @@ WaveSchedule
                         "collect currency on kill" 1
                     }
                     AddCond { Name TF_COND_REPROGRAMMED }
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "kill_me"
                         AimTarget "kill_me"
@@ -1118,7 +1118,7 @@ WaveSchedule
     }
     Wave // Wave #2
     {
-        Explanation [$SIGSEGV]
+        Explanation 
 		{
 			Line "{C0C0C0}Something long forgotten stirs in the depths..."
 			Line "{B266FF}Built to serve their {C0C0C0}creator{B266FF}, and decomissioned due to an inability to distinguish between {blue}friend {B266FF}and {red}foe."
@@ -2143,7 +2143,7 @@ WaveSchedule
                         }
                         
                         Item "TF_WEAPON_SPELLBOOK"
-                        Spell [$SIGSEGV]
+                        Spell 
 			            {
 			            	Type     "Pumpkin MIRV"
 			            	Delay    7.05
@@ -2151,7 +2151,7 @@ WaveSchedule
 			            	Charges  1
 			            	Limit    1
 			            }	
-                        Spell [$SIGSEGV]
+                        Spell 
 			            {
 			            	Type     "Summon Monoculus"
 			            	Delay    14.1
@@ -2199,7 +2199,7 @@ WaveSchedule
                     IfSeeTarget 0
                     Type Special
                 }
-                InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                InterruptAction  // Stop current bot ai and force the bot to move to a location
 			    {
                     Target "bash_me"
                     AimTarget "kill_me"
@@ -2288,7 +2288,7 @@ WaveSchedule
                     "collect currency on kill" 1
                     "health from healers reduced" .1
                 }
-                InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                InterruptAction  // Stop current bot ai and force the bot to move to a location
 			    {
                     Target "kill_me2"
                     AimTarget "kill_me2"
@@ -2755,7 +2755,7 @@ WaveSchedule
                 UseCustomModel "models/bots/heavy_boss/bot_heavy_gray_boss.mdl" 
                 Action Mobber
                 Addcond { Name TF_COND_REPROGRAMMED_NEUTRAL }
-                CustomWeaponModel [$SIGSEGV]
+                CustomWeaponModel 
 				{
 					Slot 2
 					Model "models/weapons/c_models/c_fists_of_steel_gray/c_fists_of_steel_gray.mdl"
@@ -3001,7 +3001,7 @@ WaveSchedule
                 Skill Normal
                 WeaponRestrictions MeleeOnly
                 Item "Gloves of Running Urgently MvM"
-                WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
+                WeaponSwitch   //Periodically switches weapon
                 {
                     Delay 1 //Time before the first weapon switch starts (Default: 10)
                     Cooldown 3 //Time between each weapon switch (Default: 10)
@@ -3345,7 +3345,7 @@ WaveSchedule
                 ClassIcon red2_lite
                 WeaponRestrictions MeleeOnly
                 Item "Gloves of Running Urgently MvM"
-                WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
+                WeaponSwitch   //Periodically switches weapon
                 {
                     Delay 1 //Time before the first weapon switch starts (Default: 10)
                     Cooldown 3 //Time between each weapon switch (Default: 10)
@@ -3774,12 +3774,12 @@ WaveSchedule
 					Slot 0
 					Model "models/empty.mdl"
 				}
-				CustomWeaponModel [$SIGSEGV]
+				CustomWeaponModel 
 				{
 					Slot 1
 					Model "models/empty.mdl"
 				}
-				CustomWeaponModel [$SIGSEGV]
+				CustomWeaponModel 
 				{
 					Slot 2
 					Model "models/empty.mdl"
@@ -4777,7 +4777,7 @@ WaveSchedule
             { 
                 Template T_TFBot_Workerbot_Chief_Gray
                 SpawnTemplate "killtarget4"
-                InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                InterruptAction  // Stop current bot ai and force the bot to move to a location
 		        {
                     Target "kill_me3"
                 	Delay 25 // Time before the first task starts (Default: 10)
@@ -4862,7 +4862,7 @@ WaveSchedule
 			            {
 			                "move speed bonus" 1
 			            }
-                        FireInput [$SIGSEGV] 
+                        FireInput  
 			            {
 			            	Target "robot_phase_relay1" //Entity name to use
 			            	Action "Trigger" //Input to fire
@@ -4913,7 +4913,7 @@ WaveSchedule
 			            {
 			                "move speed bonus" 1
 			            }
-                        FireInput [$SIGSEGV] 
+                        FireInput  
 			            {
 			            	Target "robot_phase_relay2" //Entity name to use
 			            	Action "Trigger" //Input to fire
@@ -4964,7 +4964,7 @@ WaveSchedule
 			            {
 			                "move speed bonus" 1
 			            }
-                        FireInput [$SIGSEGV] 
+                        FireInput  
 			            {
 			            	Target "robot_phase_relay3" //Entity name to use
 			            	Action "Trigger" //Input to fire
@@ -5122,7 +5122,7 @@ WaveSchedule
                 Item "Sky High Fly Guy"
                 Item "The Macho Mann"
                 Item "Private Maggot Muncher"
-                InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                InterruptAction  // Stop current bot ai and force the bot to move to a location
 		        {
                     Target "stand_target"
                     AimTarget "kill_me"
@@ -5152,7 +5152,7 @@ WaveSchedule
                 Item "Reader's Choice"
                 Item "The Man in Slacks"
                 Item "The Grenadier's Softcap"
-                InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                InterruptAction  // Stop current bot ai and force the bot to move to a location
 		        {
                     Target "stand_target"
                     AimTarget "kill_me"
@@ -5427,12 +5427,12 @@ WaveSchedule
 				Slot 0
 				Model "models/empty.mdl"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 1
 				Model "models/empty.mdl"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/empty.mdl"
@@ -5498,7 +5498,7 @@ WaveSchedule
 	        	AttachToProjectile 1 
 	        	ItemName "The Righteous Bison"
 	        }
-            InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+            InterruptAction  // Stop current bot ai and force the bot to move to a location
 		        {
                     Target "kill_me2"
                 	Delay 7 // Time before the first task starts (Default: 10)
@@ -5510,7 +5510,7 @@ WaveSchedule
             {
                 Default
                 {
-                    ChangeAttributes [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
+                    ChangeAttributes   //Periodically changes bot attributes, defined in EventChangeAttributes
 			        {
 			        	Delay 0.1 //Time before the first bot attribute change (Default: 10)
 			        	Cooldown 3 //Time between each bot attribute change (Default: 10)
@@ -5526,7 +5526,7 @@ WaveSchedule
 			        {
 			            "move speed bonus" 1
 			        }
-                    ChangeAttributes [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
+                    ChangeAttributes   //Periodically changes bot attributes, defined in EventChangeAttributes
 			        {
 			        	Delay 10 //Time before the first bot attribute change (Default: 10)
 			        	Cooldown 0 //Time between each bot attribute change (Default: 10)
@@ -5540,7 +5540,7 @@ WaveSchedule
                 {
                     WeaponRestrictions PrimaryOnly
                     AimOffset "0 0 2000"
-                    ChangeAttributes [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
+                    ChangeAttributes   //Periodically changes bot attributes, defined in EventChangeAttributes
 			        {
 			        	Delay 3 //Time before the first bot attribute change (Default: 10)
 			        	Cooldown 0 //Time between each bot attribute change (Default: 10)
@@ -5559,7 +5559,7 @@ WaveSchedule
 			            "stomp player force" 1000
                         "stomp player time" 0.1
                     }
-                    ChangeAttributes [$SIGSEGV]  //Periodically changes bot attributes, defined in EventChangeAttributes
+                    ChangeAttributes   //Periodically changes bot attributes, defined in EventChangeAttributes
 			        {
 			        	Delay 0.5 //Time before the first bot attribute change (Default: 10)
 			        	Cooldown 0 //Time between each bot attribute change (Default: 10)
@@ -5595,12 +5595,12 @@ WaveSchedule
 				Slot 0
 				Model "models/empty.mdl"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 1
 				Model "models/empty.mdl"
 			}
-			CustomWeaponModel [$SIGSEGV]
+			CustomWeaponModel 
 			{
 				Slot 2
 				Model "models/empty.mdl"
@@ -5681,7 +5681,7 @@ WaveSchedule
             {
                 Default
                 {
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 		            {
                         Target "kill_me"
                         AimTarget "kill_me"
@@ -5736,7 +5736,7 @@ WaveSchedule
                 "custom weapon fire sound" "=50|rpg_sounds/rocketfire1.wav"
                 "mod projectile heat aim time" 10
             }
-            ShootTemplate [$SIGSEGV]  
+            ShootTemplate   
 	        {
 	        	Name rpg_shoottemplate 
 	        	ItemName "The Liberty Launcher"
@@ -6220,7 +6220,7 @@ WaveSchedule
             {
                 Default
                 {
-                    //FireInput [$SIGSEGV] 
+                    //FireInput  
 				    //{
 				    //	Target "sodapopper_push_relay" //Entity name to use
 				    //	Action "Trigger" //Input to fire
@@ -6230,7 +6230,7 @@ WaveSchedule
 				    //	Repeats 1 //How many times should the input be fired
 				    //	//IfHealthBelow 100 //When set, the task activates only when the bot health is below specified value
 				    //}
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "cometo_me"
                         AimTarget "cometo_me"
@@ -6240,7 +6240,7 @@ WaveSchedule
                         Duration 10 // How long should the ai be interrupted
                         //OnDoneChangeAttributes "JumpAndDet"
 			        }
-                    FireWeapon [$SIGSEGV]  //Periodically fires weapon
+                    FireWeapon   //Periodically fires weapon
                     {
                         Delay 0.1 //Time before the first fire input starts (Default: 10)
                         Cooldown 0.65 //Time between each fire input (Default: 10)
@@ -6249,7 +6249,7 @@ WaveSchedule
                         Duration 0.5 //How long should the button be pressed (Default: 0.1)
 				    	Type "Secondary" 
 				    }
-                    FireWeapon [$SIGSEGV]  //Periodically fires weapon
+                    FireWeapon   //Periodically fires weapon
                     {
                         Delay 0.45 //Time before the first fire input starts (Default: 10)
                         Cooldown 0.5 //Time between each fire input (Default: 10)
@@ -6258,7 +6258,7 @@ WaveSchedule
                         Duration 0.15 //How long should the button be pressed (Default: 0.1)
 				    	Type "Jump" 
 				    }
-                    FireInput [$SIGSEGV] 
+                    FireInput  
 				    {
 				    	Target "popper_target_relay"
 				    	Action "Trigger"
@@ -6269,7 +6269,7 @@ WaveSchedule
                 }
                 AttackTank
                 {
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "kill_me"
                         AimTarget "kill_me"
@@ -6281,7 +6281,7 @@ WaveSchedule
                 }
                 AttackVip
                 {
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "vip_target"
                         AimTarget "vip_target"
@@ -6308,7 +6308,7 @@ WaveSchedule
             Tag bot_hastebanner
             SpawnTemplate "haste_radius"
             SpawnTemplate "powerup_logic_banner_recipient"
-            CustomWeaponModel [$SIGSEGV]
+            CustomWeaponModel 
 			{
 				Slot 1
 				Model "models/weapons/c_models/c_hastebanner/c_hastebanner.mdl"
@@ -6341,7 +6341,7 @@ WaveSchedule
                 "collect currency on kill" 1
                 "health from healers reduced" .1
             }
-            CustomWeaponModel [$SIGSEGV]
+            CustomWeaponModel 
 			{
 				Slot 1
 				Model "models/weapons/c_models/c_bulletbanner/c_bulletbanner.mdl"
@@ -6356,7 +6356,7 @@ WaveSchedule
             Item "Wanderer's Wear"
             Item "Spawn Camper"
             Item "The Back Scratcher"
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 				Target "vactank_aliveness_check"
 				Action "Compare"
@@ -6368,7 +6368,7 @@ WaveSchedule
             {
                 AttackTank
                 {
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "kill_me"
                         AimTarget "kill_me"
@@ -6402,7 +6402,7 @@ WaveSchedule
             Item "The Flapjack"
             Item "The Soda Popper"
             Item "Necro Smasher"
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 				Target "vactank_aliveness_check"
 				Action "Compare"
@@ -6414,7 +6414,7 @@ WaveSchedule
             {
                 AttackTank
                 {
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "kill_me"
                         AimTarget "kill_me"
@@ -6451,7 +6451,7 @@ WaveSchedule
                 ItemName "TF_Weapon_Rocketlauncher"
                 "no self blast dmg" 1
             }
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 				Target "vactank_aliveness_check"
 				Action "Compare"
@@ -6463,7 +6463,7 @@ WaveSchedule
             {
                 AttackTank
                 {
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "kill_me"
                         AimTarget "kill_me"
@@ -6496,7 +6496,7 @@ WaveSchedule
             Item "The Trencher's Tunic"
             Item "The Widowmaker"
             Item "Necro Smasher"
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 				Target "vactank_aliveness_check"
 				Action "Compare"
@@ -6508,7 +6508,7 @@ WaveSchedule
             {
                 AttackTank
                 {
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "kill_me"
                         AimTarget "kill_me"
@@ -6541,7 +6541,7 @@ WaveSchedule
             Item "Rifleman's Regalia"
             Item "The Huntsman"
             Item "Necro Smasher"
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 				Target "vactank_aliveness_check"
 				Action "Compare"
@@ -6553,7 +6553,7 @@ WaveSchedule
             {
                 AttackTank
                 {
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "kill_me"
                         AimTarget "kill_me"
@@ -6631,7 +6631,7 @@ WaveSchedule
 				Repeats 1 //How many times should bot display the message (Default: 0 - Infinite)
 				IfSeeTarget 0 //When set to 1, this task activates only when the bot can see the target player (Default 0 - Always activate)
 			}
-            InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+            InterruptAction  // Stop current bot ai and force the bot to move to a location
 		    {
                 Target "kill_me4"
             	Delay 25 // Time before the first task starts (Default: 10)
@@ -6687,7 +6687,7 @@ WaveSchedule
             {
                 Default
                 {
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
 			            Target "vip_target" // Move target location
                         //Target "203 290 769"
@@ -6705,7 +6705,7 @@ WaveSchedule
                 VipAscended
                 {
                     AddCond { Index 51 }
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 		            {
                         Target "laszlo_stand"
                         AimTarget "laszlo_look"
@@ -6740,14 +6740,14 @@ WaveSchedule
 				    	Repeats 1 //How many times should bot display the message (Default: 0 - Infinite)
 				    	IfSeeTarget 0 //When set to 1, this task activates only when the bot can see the target player (Default 0 - Always activate)
 				    }
-                    FireInput [$SIGSEGV] 
+                    FireInput  
 			        {
 			            Target "laszlo_goodend_relay"
     		        	Action "Trigger"
     	            	Repeats 1
                         Delay 37.5
 	    	        }
-                    FireInput [$SIGSEGV] 
+                    FireInput  
 			        {
 			            Target "spawnbot_laszlo_chief"
     		        	Action "Enable"
@@ -6798,7 +6798,7 @@ WaveSchedule
             AddCond   { Name TF_COND_REPROGRAMMED }
             UseHumanModel 1
             SpawnTemplate "vip_logic_on_his_person"
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_13"
     			Action "Trigger" 
@@ -6807,7 +6807,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 649 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_12"
     			Action "Trigger" 
@@ -6816,7 +6816,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 600 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_11"
     			Action "Trigger" 
@@ -6825,7 +6825,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 550 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_10"
     			Action "Trigger" 
@@ -6834,7 +6834,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 500 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_09"
     			Action "Trigger" 
@@ -6843,7 +6843,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 450 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_08"
     			Action "Trigger" 
@@ -6852,7 +6852,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 400 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_07"
     			Action "Trigger" 
@@ -6861,7 +6861,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 350 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_06"
     			Action "Trigger" 
@@ -6871,7 +6871,7 @@ WaveSchedule
             	IfHealthBelow 300 
 	    	}
             
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_05"
     			Action "Trigger"  
@@ -6880,7 +6880,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 250 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_04"
     			Action "Trigger" 
@@ -6889,7 +6889,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 200 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "moveon_relay*"
     			Action "Disable" 
@@ -6898,7 +6898,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 200 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "gethealth_relay*"
     			Action "Enable" 
@@ -6907,7 +6907,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 200 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "vip_destination_state"
     			Action "GetValue" 
@@ -6916,7 +6916,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 200 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "injured_voiceline_relay"
     			Action "Trigger" 
@@ -6925,7 +6925,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 200 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_03"
     			Action "Trigger" 
@@ -6934,7 +6934,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 150
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_02"
     			Action "Trigger" 
@@ -6943,7 +6943,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 100 
 	    	}
-            FireInput [$SIGSEGV] 
+            FireInput  
 			{
 			    Target "hurt_voiceline_relay_01"
     			Action "Trigger" 
@@ -6952,7 +6952,7 @@ WaveSchedule
                 Delay 0
             	IfHealthBelow 50 
 	    	}
-            WeaponSwitch [$SIGSEGV]  //Periodically switches weapon
+            WeaponSwitch   //Periodically switches weapon
             {
                 Delay 0.01 //Time before the first weapon switch starts (Default: 10)
                 Cooldown 3 //Time between each weapon switch (Default: 10)
@@ -6963,7 +6963,7 @@ WaveSchedule
 			{
 				Default
 				{
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "vip_destination_1"
                         Repeats 0
@@ -6974,7 +6974,7 @@ WaveSchedule
 				}
 				MoveOnCalm
 				{
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "vip_destination_2"
                         Repeats 0
@@ -6985,7 +6985,7 @@ WaveSchedule
 				}
                 MoveOnCalm2
 				{
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "vip_destination_3"
                         Repeats 0 
@@ -6997,7 +6997,7 @@ WaveSchedule
                 
                 MoveOnCalm3
 				{
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "vip_destination_1"
                         Repeats 0
@@ -7008,7 +7008,7 @@ WaveSchedule
 				}
                 GetHealth
 				{
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "vip_health_destination_1"
                         Repeats 0
@@ -7019,7 +7019,7 @@ WaveSchedule
 				}
                 GetHealth2
 				{
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "vip_health_destination_2"
                         Repeats 0
@@ -7030,7 +7030,7 @@ WaveSchedule
 				}
                 GetHealth3
 				{
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "vip_health_destination_3"
                         Repeats 0
@@ -7041,7 +7041,7 @@ WaveSchedule
 				}
                 AvoidBuster
 				{
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "vip_avoidbuster_destination_1"
                         Repeats 0
@@ -7052,7 +7052,7 @@ WaveSchedule
 				}
                 AvoidBuster2
 				{
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "vip_avoidbuster_destination_2"
                         Repeats 0
@@ -7063,7 +7063,7 @@ WaveSchedule
 				}
                 AvoidBuster3
 				{
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "vip_avoidbuster_destination_3"
                         Repeats 0
@@ -7075,7 +7075,7 @@ WaveSchedule
                 BeginLasering
                 {
                     WeaponRestrictions SecondaryOnly
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         AimTarget "vip_laser_target"
                         Repeats 0
@@ -7087,7 +7087,7 @@ WaveSchedule
                 Farewell
                 {
                     WeaponRestrictions SecondaryOnly
-                    InterruptAction [$SIGSEGV] // Stop current bot ai and force the bot to move to a location
+                    InterruptAction  // Stop current bot ai and force the bot to move to a location
 			        {
                         Target "igonow_target*"
                         Repeats 5
@@ -16362,7 +16362,7 @@ WaveSchedule
         Z "642"
     }
     PlayerSpawnTemplate "powerup_logic_player"
-    PlayerSpawnTemplate [$SIGSEGV] //Spawn custom player template
+    PlayerSpawnTemplate  //Spawn custom player template
 	{
         Name "playerweapon_fix" // Name of the template
 		Origin "0 0 30" //Position where to spawn the template

@@ -29,7 +29,7 @@ WaveSchedule
 	//EventPopfile Halloween (Disable halloween mode)
 	Advanced 1
 	ForceHoliday 2 //to make the green flames work
-	TextPrintTime 0 [$SIGSEGV]
+	TextPrintTime 0 
 	
 	  //Class model
 	  PrecacheModel "models/player/scout.mdl"
@@ -42,29 +42,29 @@ WaveSchedule
 	  PrecacheModel "models/player/sniper.mdl"
 	  PrecacheModel "models/player/spy.mdl"
 	
-	DisableSound "mvm_end_last_wave" [$SIGSEGV] //Disable sound. Note that client side sounds (which include player's own weapon) cannot be disabled. Must use sound script unless there is only a raw version of the sound
-	DisableSound "mvm_start_last_wave" [$SIGSEGV]
+	DisableSound "mvm_end_last_wave"  //Disable sound. Note that client side sounds (which include player's own weapon) cannot be disabled. Must use sound script unless there is only a raw version of the sound
+	DisableSound "mvm_start_last_wave" 
 	
 	//FUCK ME
-	DisableSound "mvm_final_wave_start01" [$SIGSEGV]
-	DisableSound "mvm_final_wave_start02" [$SIGSEGV]
-	DisableSound "mvm_final_wave_start03" [$SIGSEGV]
-	DisableSound "mvm_final_wave_start04" [$SIGSEGV]
-	DisableSound "mvm_final_wave_start05" [$SIGSEGV]
-	DisableSound "mvm_final_wave_start06" [$SIGSEGV]
-	DisableSound "mvm_final_wave_start07" [$SIGSEGV]
-	DisableSound "mvm_final_wave_start08" [$SIGSEGV]
-	DisableSound "mvm_final_wave_start09" [$SIGSEGV]
-	DisableSound "mvm_final_wave_start10" [$SIGSEGV]
-	DisableSound "mvm_final_wave_start11" [$SIGSEGV]
-	DisableSound "mvm_final_wave_start12" [$SIGSEGV]
+	DisableSound "mvm_final_wave_start01" 
+	DisableSound "mvm_final_wave_start02" 
+	DisableSound "mvm_final_wave_start03" 
+	DisableSound "mvm_final_wave_start04" 
+	DisableSound "mvm_final_wave_start05" 
+	DisableSound "mvm_final_wave_start06" 
+	DisableSound "mvm_final_wave_start07" 
+	DisableSound "mvm_final_wave_start08" 
+	DisableSound "mvm_final_wave_start09" 
+	DisableSound "mvm_final_wave_start10" 
+	DisableSound "mvm_final_wave_start11" 
+	DisableSound "mvm_final_wave_start12" 
 	
-	DisableSound "mvm_final_wave_end01" [$SIGSEGV]
-	DisableSound "mvm_final_wave_end02" [$SIGSEGV]
-	DisableSound "mvm_final_wave_end03" [$SIGSEGV]
-	DisableSound "mvm_final_wave_end04" [$SIGSEGV]
-	DisableSound "mvm_final_wave_end05" [$SIGSEGV]
-	DisableSound "mvm_final_wave_end06" [$SIGSEGV]
+	DisableSound "mvm_final_wave_end01" 
+	DisableSound "mvm_final_wave_end02" 
+	DisableSound "mvm_final_wave_end03" 
+	DisableSound "mvm_final_wave_end04" 
+	DisableSound "mvm_final_wave_end05" 
+	DisableSound "mvm_final_wave_end06" 
 	
 	NoRomevisionCosmetics 1 // SIG
 	ExtraSpawnPoint // SIG
@@ -108,7 +108,7 @@ WaveSchedule
         Z    "-29"        
     }
 	//Final Flash
-	PointTemplates    [$SIGSEGV]
+	PointTemplates    
     {
         TitanSpawnShake
         {
@@ -319,7 +319,7 @@ WaveSchedule
 	//Balance mod
 	
 		//Homing Lib Launcher
-		ItemAttributes [$SIGSEGV]
+		ItemAttributes 
 		{
 			ItemName "The Liberty Launcher" // homing launcher! more for funzies than practical use -Seelpit
 			"damage penalty"                      0.85
@@ -331,31 +331,31 @@ WaveSchedule
 		}
 		
 		//Flaming Eyelander
-		ItemAttributes [$SIGSEGV]
+		ItemAttributes 
 		{
 			ItemName "The Eyelander"  // For testing purposes only cos I don't have the axe
 			//"damage penalty"                  0.5
 			"fire rate penalty"                 1.5
-			"melee cleave attack" 	 			1	[$SIGSEGV]
+			"melee cleave attack" 	 			1	
 			"set damagetype ignite" 			1
 			"attach particle effect" 			2
 
 		}
 		
 		//Headtaker becomes a powerful axe.
-		ItemAttributes [$SIGSEGV]
+		ItemAttributes 
 		{
 			ItemName "The Horseless Headless Horseman's Headtaker" // Spoooky Axe gains new powers during halloween time. Yes I'm talking like Seelpit now BEAT THAT SEELPIT >:3
 			//"damage penalty"                  0.5
 			"fire rate penalty"                 1.5
-			"melee cleave attack" 	 			1	[$SIGSEGV]
+			"melee cleave attack" 	 			1	
 			"set damagetype ignite" 			1
 			"attach particle effect" 			2
 			
 		}
 		
 		//Booties get melee resist
-		ItemAttributes [$SIGSEGV]
+		ItemAttributes 
 		{
 			ItemName "Ali Baba's Wee Booties" // Melee resist boots lol
 			"dmg from melee increased" 			0.5
@@ -363,7 +363,7 @@ WaveSchedule
 		}
 		
 		//Bootlegger becomes a hybrid knight alternative
-		ItemAttributes [$SIGSEGV]
+		ItemAttributes 
 		{
 			ItemName "The Bootlegger" // This ones weaker but has regen 
 			"dmg from melee increased" 			0.5
@@ -371,21 +371,21 @@ WaveSchedule
 		}	
 		
 		//Hell weapons enpowerment
-		ItemAttributes [$SIGSEGV]
+		ItemAttributes 
 		{
 			ItemName "Sharpened Volcano Fragment" // New axtinguisher
 			"crit vs burning players"			1
 			"damage bonus"						1.5
-			"melee cleave attack" 	 			1	[$SIGSEGV]
+			"melee cleave attack" 	 			1	
 			"set damagetype ignite" 			0
 		}	
-		ItemAttributes [$SIGSEGV]
+		ItemAttributes 
 		{
 			ItemName "Sun-on-a-Stick" // 
 
 			"crit vs burning players"			1
 			"damage bonus"						1.5
-			"melee cleave attack" 	 			1	[$SIGSEGV]
+			"melee cleave attack" 	 			1	
 		}	
 	
 	Templates
@@ -409,7 +409,7 @@ WaveSchedule
 							"Projectile speed increased" 0.8
 							"projectile spread angle penalty" 1
 							"override projectile type"  6
-							"mod projectile heat seek power" 10 [$SIGSEGV]
+							"mod projectile heat seek power" 10 
 							"attach particle effect" 1
 							"set damagetype ignite" 1
 						
@@ -453,7 +453,7 @@ WaveSchedule
 							ItemName "Sharpened Volcano Fragment" // New axtinguisher
 							"crit vs burning players"			1
 							"damage bonus"						1.5
-							"melee cleave attack" 	 			1	[$SIGSEGV]
+							"melee cleave attack" 	 			1	
 							"set damagetype ignite" 			0
 							"attach particle effect" 			1
 						}	
@@ -560,7 +560,7 @@ WaveSchedule
 						UseCustomModel "models/player/pyro.mdl"
 						Item "Zombie Pyro"
 						
-						AddCond [$SIGSEGV] //cool fire
+						AddCond  //cool fire
 						{
 							//Name "TF_COND_REPROGRAMMED" // Condition to apply. List of available conditions https://wiki.teamfortress.com/wiki/Cheats#addcond
 							Index 123 //Condition index can be used instead
@@ -580,7 +580,7 @@ WaveSchedule
 							ItemName "The Flare Gun"
 							 "fire rate bonus" 1
 
-							"mod projectile heat seek power" 30 [$SIGSEGV]
+							"mod projectile heat seek power" 30 
 							"faster reload rate" 0.05
 							
 							"damage bonus"	4
@@ -644,7 +644,7 @@ WaveSchedule
 						WeaponRestrictions SecondaryOnly
 						Attributes HoldFireUntilFullReload
 						
-						CustomWeaponModel [$SIGSEGV] //Sets custom weapon model for the passive weapon
+						CustomWeaponModel  //Sets custom weapon model for the passive weapon
 						{
 							Slot 1 //Valid loadout positions:
 								//0 - LOADOUT_POSITION_PRIMARY
@@ -657,7 +657,7 @@ WaveSchedule
 							Model "models/weapons/c_models/c_rift_fire_axe/c_rift_fire_axe.mdl"
 						}
 						
-						 FireWeapon [$SIGSEGV] //makes them not do dumb aiming :> //Thanks Seelpit uwu
+						 FireWeapon  //makes them not do dumb aiming :> //Thanks Seelpit uwu
 						{
 							Delay 0
 							Type "Secondary"
@@ -693,7 +693,7 @@ WaveSchedule
 							ItemName "Sharpened Volcano Fragment" // New axtinguisher
 							"crit vs burning players"			1
 							"damage bonus"						1.5
-							"melee cleave attack" 	 			1	[$SIGSEGV]
+							"melee cleave attack" 	 			1	
 							"set damagetype ignite" 			0
 							"is_passive_weapon" 1
 						}	
@@ -719,8 +719,8 @@ WaveSchedule
 						UseCustomModel "models/player/pyro.mdl"
 						Item "Zombie Pyro"
 						
-						StripItemSlot 0 [$SIGSEGV] //Remove Flame and shotgun
-						StripItemSlot 1 [$SIGSEGV] 
+						StripItemSlot 0  //Remove Flame and shotgun
+						StripItemSlot 1  
 						Item "Sharpened Volcano Fragment"
 						Item "TF_WEAPON_SPELLBOOK"
 						Skill Expert
@@ -728,7 +728,7 @@ WaveSchedule
 
 
 
-						CustomWeaponModel [$SIGSEGV] //Sets custom weapon model for the passive weapon
+						CustomWeaponModel  //Sets custom weapon model for the passive weapon
 						{
 							Slot 2 //Valid loadout positions:
 								//0 - LOADOUT_POSITION_PRIMARY
@@ -743,7 +743,7 @@ WaveSchedule
 						ItemAttributes
 						{
 							ItemName "TF_WEAPON_SPELLBOOK"
-							"mod projectile heat seek power" 15 [$SIGSEGV]
+							"mod projectile heat seek power" 15 
 							"deploy time decreased" 0.01
 							"fire rate bonus" 0.01	
 							"projectile spread angle penalty" 4
@@ -751,7 +751,7 @@ WaveSchedule
 							"Projectile speed increased" 0.7
 							"projectile trail particle"	spell_fireball_small_red
 						}
-						Spell [$SIGSEGV] //Gives specified spell to bots.
+						Spell  //Gives specified spell to bots.
 						{
 							Delay 3 //Time before the first spell charges are given (Default: 10)
 							Cooldown 5 //Time between each spell changes (Default: 10)
@@ -762,7 +762,7 @@ WaveSchedule
 							//IfHealthBelow 3000 //When set, the task activates only when the bot health is below specified value
 							Type "Fireball"
 						}
-						Spell [$SIGSEGV] //Gives specified spell to bots.
+						Spell  //Gives specified spell to bots.
 						{
 							Delay 0 //Time before the first spell charges are given (Default: 10)
 							Cooldown 10 //Time between each spell changes (Default: 10)
@@ -773,7 +773,7 @@ WaveSchedule
 							//IfHealthBelow 3000 //When set, the task activates only when the bot health is below specified value
 							Type "Summon Skeletons"
 						}
-						Spell [$SIGSEGV] //Gives specified spell to bots.
+						Spell  //Gives specified spell to bots.
 						{
 							Delay 0 //Time before the first spell charges are given (Default: 10)
 							Cooldown 0 //Time between each spell changes (Default: 10)
@@ -789,7 +789,7 @@ WaveSchedule
 							ItemName "Sharpened Volcano Fragment" // New axtinguisher
 							"crit vs burning players"			1
 							"damage bonus"						1.5
-							"melee cleave attack" 	 			1	[$SIGSEGV]
+							"melee cleave attack" 	 			1	
 							"set damagetype ignite" 			0
 						}	
 						Attributes MiniBoss
@@ -856,8 +856,8 @@ WaveSchedule
 						Item "Zombie Pyro"
 						Skin 1
 						
-						StripItemSlot 0 [$SIGSEGV] //Remove Flame and shotgun
-						StripItemSlot 1 [$SIGSEGV] 
+						StripItemSlot 0  //Remove Flame and shotgun
+						StripItemSlot 1  
 						Item "Sharpened Volcano Fragment"
 						Item "TF_WEAPON_SPELLBOOK"
 						Skill Expert
@@ -865,7 +865,7 @@ WaveSchedule
 
 
 
-						CustomWeaponModel [$SIGSEGV] //Sets custom weapon model for the passive weapon
+						CustomWeaponModel  //Sets custom weapon model for the passive weapon
 						{
 							Slot 2 //Valid loadout positions:
 								//0 - LOADOUT_POSITION_PRIMARY
@@ -880,7 +880,7 @@ WaveSchedule
 						ItemAttributes
 						{
 							ItemName "TF_WEAPON_SPELLBOOK"
-							"mod projectile heat seek power" 15 [$SIGSEGV]
+							"mod projectile heat seek power" 15 
 							"deploy time decreased" 0.01
 							"fire rate bonus" 0.01	
 							"projectile spread angle penalty" 4
@@ -888,7 +888,7 @@ WaveSchedule
 							"Projectile speed increased" 0.7
 							"projectile trail particle"	spell_fireball_small_red
 						}
-						Spell [$SIGSEGV] //Gives specified spell to bots.
+						Spell  //Gives specified spell to bots.
 						{
 							Delay 0 //Time before the first spell charges are given (Default: 10)
 							Cooldown 5 //Time between each spell changes (Default: 10)
@@ -904,7 +904,7 @@ WaveSchedule
 							ItemName "Sharpened Volcano Fragment" // New axtinguisher
 							"crit vs burning players"			1
 							"damage bonus"						1.5
-							"melee cleave attack" 	 			1	[$SIGSEGV]
+							"melee cleave attack" 	 			1	
 							"set damagetype ignite" 			0
 						}	
 						Attributes MiniBoss
@@ -1041,7 +1041,7 @@ WaveSchedule
 			Target wave_finished_relay
 			Action Trigger
 		}
-		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
+		Explanation   //Dispayed once the wave is initialized
 		{
 			Line "{red}/////////////////////////////////////////////////"
 			Line "{white}Welcome to Hell"
@@ -1082,7 +1082,7 @@ WaveSchedule
 							"set item tint rgb"  13595446
 						}
 					//Items
-					StripItemSlot 0 [$SIGSEGV] //Remove booties
+					StripItemSlot 0  //Remove booties
 					Item "The Splendid Screen" //Chargin Targe gives too more beefyness
 					Item "The Eyelander"
 					Item "TF_WEAPON_SPELLBOOK"
@@ -1100,7 +1100,7 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName "TF_WEAPON_SPELLBOOK"
-						"mod projectile heat seek power" 15 [$SIGSEGV]
+						"mod projectile heat seek power" 15 
 						"deploy time decreased" 0.01
 						"fire rate bonus" 0.01	
 						"projectile spread angle penalty" 4
@@ -1108,7 +1108,7 @@ WaveSchedule
 						"Projectile speed increased" 0.7
 						"projectile trail particle"	spell_fireball_small_red
 					}
-					Spell [$SIGSEGV] //Gives specified spell to bots.
+					Spell  //Gives specified spell to bots.
 					{
 						Delay 3 //Time before the first spell charges are given (Default: 10)
 						Cooldown 10 //Time between each spell changes (Default: 10)
@@ -1162,7 +1162,7 @@ WaveSchedule
 							"set item tint rgb"  13595446
 						}
 					//Itemsw
-					StripItemSlot 0 [$SIGSEGV] //Remove booties
+					StripItemSlot 0  //Remove booties
 					Item "The Splendid Screen" //Chargin Targe gives too more beefyness
 					Item "The Eyelander"
 					Item "TF_WEAPON_SPELLBOOK"
@@ -1180,7 +1180,7 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName "TF_WEAPON_SPELLBOOK"
-						"mod projectile heat seek power" 15 [$SIGSEGV]
+						"mod projectile heat seek power" 15 
 						"deploy time decreased" 0.01
 						"fire rate bonus" 0.01	
 						"projectile spread angle penalty" 4
@@ -1188,7 +1188,7 @@ WaveSchedule
 						"Projectile speed increased" 0.7
 						"projectile trail particle"	spell_fireball_small_red
 					}
-					Spell [$SIGSEGV] //Gives specified spell to bots.
+					Spell  //Gives specified spell to bots.
 					{
 						Delay 3 //Time before the first spell charges are given (Default: 10)
 						Cooldown 10 //Time between each spell changes (Default: 10)
@@ -1479,9 +1479,9 @@ WaveSchedule
 			{
 				Class Pyro
 				Name "Volcanic Demon Pyro"
-				Action Mobber [$SIGSEGV]
+				Action Mobber 
 				//Removes for being too annoying
-				//RingOfFire 15   //Enable Ring of Fire from Huo Long Heater. Value is damage done by the ring [$SIGSEGV]
+				//RingOfFire 15   //Enable Ring of Fire from Huo Long Heater. Value is damage done by the ring 
 				ClassIcon Pyro_Volcano
 				Skill Expert
 				Item "Sharpened Volcano Fragment"
@@ -1511,9 +1511,9 @@ WaveSchedule
 			{
 				Class Pyro
 				Name "Volcanic Demon Pyro"
-				Action Mobber [$SIGSEGV]
+				Action Mobber 
 				//Removes for being too annoying
-				//RingOfFire 15   //Enable Ring of Fire from Huo Long Heater. Value is damage done by the ring [$SIGSEGV]
+				//RingOfFire 15   //Enable Ring of Fire from Huo Long Heater. Value is damage done by the ring 
 				ClassIcon Pyro_Volcano
 				Skill Expert
 				Item "Sharpened Volcano Fragment"
@@ -1599,8 +1599,8 @@ WaveSchedule
 					UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
 					Skin 3
 					//Items
-					StripItemSlot 0 [$SIGSEGV] //Remove grenade
-					StripItemSlot 1 [$SIGSEGV] //Remove sticky
+					StripItemSlot 0  //Remove grenade
+					StripItemSlot 1  //Remove sticky
 					Item "The Bat Outta Hell"
 					Item "TF_WEAPON_SPELLBOOK"
 					
@@ -1621,7 +1621,7 @@ WaveSchedule
 						"damage bonus" 0.5
 						"Projectile speed increased" 5
 					}
-					Spell [$SIGSEGV] //Gives specified spell to bots.
+					Spell  //Gives specified spell to bots.
 					{
 						Delay 3 //Time before the first spell charges are given (Default: 10)
 						Cooldown 8 //Time between each spell changes (Default: 10)
@@ -1632,7 +1632,7 @@ WaveSchedule
 						//IfHealthBelow 100 //When set, the task activates only when the bot health is below specified value
 						Type "Pumpkin MIRV"
 					}
-					Spell [$SIGSEGV] //Gives specified spell to bots.
+					Spell  //Gives specified spell to bots.
 					{
 						Delay 0 //Time before the first spell charges are given (Default: 10)
 						Cooldown 10 //Time between each spell changes (Default: 10)
@@ -1682,7 +1682,7 @@ WaveSchedule
 					Class Pyro
 					Name "Volcanic Demon Pyro"
 					//Removes for being too annoying
-					//RingOfFire 15   //Enable Ring of Fire from Huo Long Heater. Value is damage done by the ring [$SIGSEGV]
+					//RingOfFire 15   //Enable Ring of Fire from Huo Long Heater. Value is damage done by the ring 
 					ClassIcon Pyro_Volcano
 					Skill Expert
 					Item "Sharpened Volcano Fragment"
@@ -1758,8 +1758,8 @@ WaveSchedule
 					UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	 
 					Skin 3
 					//Items
-					StripItemSlot 0 [$SIGSEGV] //Remove grenade
-					StripItemSlot 1 [$SIGSEGV] //Remove sticky
+					StripItemSlot 0  //Remove grenade
+					StripItemSlot 1  //Remove sticky
 					Item "The Bat Outta Hell"
 					Item "TF_WEAPON_SPELLBOOK"
 					
@@ -1780,7 +1780,7 @@ WaveSchedule
 						"damage bonus" 0.5
 						"Projectile speed increased" 5
 					}
-					Spell [$SIGSEGV] //Gives specified spell to bots.
+					Spell  //Gives specified spell to bots.
 					{
 						Delay 3 //Time before the first spell charges are given (Default: 10)
 						Cooldown 8 //Time between each spell changes (Default: 10)
@@ -1791,7 +1791,7 @@ WaveSchedule
 						//IfHealthBelow 100 //When set, the task activates only when the bot health is below specified value
 						Type "Pumpkin MIRV"
 					}
-					Spell [$SIGSEGV] //Gives specified spell to bots.
+					Spell  //Gives specified spell to bots.
 					{
 						Delay 0 //Time before the first spell charges are given (Default: 10)
 						Cooldown 8 //Time between each spell changes (Default: 10)
@@ -1851,7 +1851,7 @@ WaveSchedule
 					
 					Item "The Anger"
 					
-					 FireWeapon [$SIGSEGV] //makes them not do dumb aiming :> //Thanks Seelpit uwu
+					 FireWeapon  //makes them not do dumb aiming :> //Thanks Seelpit uwu
 					{
 						Delay 0
 						Type "Primary"
@@ -1895,7 +1895,7 @@ WaveSchedule
 						"projectile trail particle"	superrare_burning1
 						"custom projectile model" models/weapons/w_models/w_arrow.mdl
 						
-						CustomWeaponModel [$SIGSEGV] //Sets custom weapon model for the passive weapon
+						CustomWeaponModel  //Sets custom weapon model for the passive weapon
 						{
 							Slot 1 //Valid loadout positions:
 								//0 - LOADOUT_POSITION_PRIMARY
@@ -1958,7 +1958,7 @@ WaveSchedule
 					
 					Item "The Anger"
 					
-					 FireWeapon [$SIGSEGV] //makes them not do dumb aiming :> //Thanks Seelpit uwu
+					 FireWeapon  //makes them not do dumb aiming :> //Thanks Seelpit uwu
 					{
 						Delay 0
 						Type "Primary"
@@ -2002,7 +2002,7 @@ WaveSchedule
 						"projectile trail particle"	superrare_burning1
 						"custom projectile model" models/weapons/w_models/w_arrow.mdl
 						
-						CustomWeaponModel [$SIGSEGV] //Sets custom weapon model for the passive weapon
+						CustomWeaponModel  //Sets custom weapon model for the passive weapon
 						{
 							Slot 1 //Valid loadout positions:
 								//0 - LOADOUT_POSITION_PRIMARY
@@ -2061,7 +2061,7 @@ WaveSchedule
 					
 					Item "The Anger"
 					
-					 FireWeapon [$SIGSEGV] //makes them not do dumb aiming :> //Thanks Seelpit uwu
+					 FireWeapon  //makes them not do dumb aiming :> //Thanks Seelpit uwu
 					{
 						Delay 0
 						Type "Primary"
@@ -2105,7 +2105,7 @@ WaveSchedule
 						"projectile trail particle"	superrare_burning1
 						"custom projectile model" models/weapons/w_models/w_arrow.mdl
 						
-						CustomWeaponModel [$SIGSEGV] //Sets custom weapon model for the passive weapon
+						CustomWeaponModel  //Sets custom weapon model for the passive weapon
 						{
 							Slot 1 //Valid loadout positions:
 								//0 - LOADOUT_POSITION_PRIMARY
@@ -2347,7 +2347,7 @@ WaveSchedule
 						"use large smoke explosion" 1
 
 					}
-				//	Spell [$SIGSEGV] //Gives specified spell to bots.
+				//	Spell  //Gives specified spell to bots.
 			//		{
 			//			Delay 5 //Time before the first spell charges are given (Default: 10)
 			//			Cooldown 15 //Time between each spell changes (Default: 10)
@@ -2373,7 +2373,7 @@ WaveSchedule
 			//				//"Rare"
 			//				//"All"
 				//	}
-					Spell [$SIGSEGV] //Gives specified spell to bots.
+					Spell  //Gives specified spell to bots.
 					{
 						Delay 0 //Time before the first spell charges are given (Default: 10)
 						Cooldown 0 //Time between each spell changes (Default: 10)
@@ -2429,8 +2429,8 @@ WaveSchedule
 						Skill Expert
 						Health 1200
 						Attributes MiniBoss
-						StripItemSlot 0 [$SIGSEGV] //Remove scatter
-						StripItemSlot 1 [$SIGSEGV] //Remove pistol
+						StripItemSlot 0  //Remove scatter
+						StripItemSlot 1  //Remove pistol
 						
 						Item "Hephaistos' Handcraft"
 						
@@ -2455,7 +2455,7 @@ WaveSchedule
 							"Projectile speed increased" 0.1
 							"projectile trail particle"	spell_fireball_small_red
 						}
-						Spell [$SIGSEGV] //Gives specified spell to bots.
+						Spell  //Gives specified spell to bots.
 						{
 							Delay 1 //Time before the first spell charges are given (Default: 10)
 							Cooldown 0 //Time between each spell changes (Default: 10)
@@ -3418,7 +3418,7 @@ WaveSchedule
 							"Projectile speed increased" 0.5
 							"projectile spread angle penalty" 1
 							"override projectile type"  6
-							"mod projectile heat seek power" 10 [$SIGSEGV]
+							"mod projectile heat seek power" 10 
 							"attach particle effect" 1
 							"set damagetype ignite" 1
 							
@@ -3698,7 +3698,7 @@ WaveSchedule
 							"set item tint rgb"  13595446
 						}
 					//Items
-					StripItemSlot 0 [$SIGSEGV] //Remove booties
+					StripItemSlot 0  //Remove booties
 					Item "The Splendid Screen" //Chargin Targe gives too more beefyness
 					Item "The Eyelander"
 					Item "TF_WEAPON_SPELLBOOK"
@@ -3718,7 +3718,7 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName "TF_WEAPON_SPELLBOOK"
-						"mod projectile heat seek power" 15 [$SIGSEGV]
+						"mod projectile heat seek power" 15 
 						"deploy time decreased" 0.01
 						"fire rate bonus" 0.01	
 						"projectile spread angle penalty" 4
@@ -3726,7 +3726,7 @@ WaveSchedule
 						"Projectile speed increased" 0.7
 						"projectile trail particle"	spell_fireball_small_red
 					}
-					Spell [$SIGSEGV] //Gives specified spell to bots.
+					Spell  //Gives specified spell to bots.
 					{
 						Delay 3 //Time before the first spell charges are given (Default: 10)
 						Cooldown 10 //Time between each spell changes (Default: 10)
@@ -3780,7 +3780,7 @@ WaveSchedule
 							"set item tint rgb"  13595446
 						}
 					//Items
-					StripItemSlot 0 [$SIGSEGV] //Remove booties
+					StripItemSlot 0  //Remove booties
 					Item "The Splendid Screen" //Chargin Targe gives too more beefyness
 					Item "The Eyelander"
 					Item "TF_WEAPON_SPELLBOOK"
@@ -3800,7 +3800,7 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName "TF_WEAPON_SPELLBOOK"
-						"mod projectile heat seek power" 15 [$SIGSEGV]
+						"mod projectile heat seek power" 15 
 						"deploy time decreased" 0.01
 						"fire rate bonus" 0.01	
 						"projectile spread angle penalty" 4
@@ -3808,7 +3808,7 @@ WaveSchedule
 						"Projectile speed increased" 0.7
 						"projectile trail particle"	spell_fireball_small_red
 					}
-					Spell [$SIGSEGV] //Gives specified spell to bots.
+					Spell  //Gives specified spell to bots.
 					{
 						Delay 3 //Time before the first spell charges are given (Default: 10)
 						Cooldown 10 //Time between each spell changes (Default: 10)
@@ -3924,7 +3924,7 @@ WaveSchedule
 			Target wave_finished_relay
 			Action Trigger
 		}
-		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
+		Explanation   //Dispayed once the wave is initialized
 		{
 			Line "{red}/////////////////////////////////////////////////"
 			Line "{white}You've reached the end. Congratulations."
@@ -4059,8 +4059,8 @@ WaveSchedule
 						Skill Expert
 						Health 7500
 						Attributes MiniBoss
-						StripItemSlot 0 [$SIGSEGV] //Remove scatter
-						StripItemSlot 1 [$SIGSEGV] //Remove pistol
+						StripItemSlot 0  //Remove scatter
+						StripItemSlot 1  //Remove pistol
 						
 						UseCustomModel "models/player/scout.mdl"
 						Item "Zombie Scout"
@@ -4085,7 +4085,7 @@ WaveSchedule
 							"Projectile speed increased" 0.1
 							"projectile trail particle"	spell_fireball_small_red
 						}
-						Spell [$SIGSEGV] //Gives specified spell to bots.
+						Spell  //Gives specified spell to bots.
 						{
 							Delay 3 //Time before the first spell charges are given (Default: 10)
 							Cooldown 4 //Time between each spell changes (Default: 10)
@@ -4166,9 +4166,9 @@ WaveSchedule
 				{
 					Class Pyro
 					Name "Volcanic Demon Pyro"
-					Action Mobber [$SIGSEGV]
+					Action Mobber 
 					//Removes for being too annoying
-					//RingOfFire 15   //Enable Ring of Fire from Huo Long Heater. Value is damage done by the ring [$SIGSEGV]
+					//RingOfFire 15   //Enable Ring of Fire from Huo Long Heater. Value is damage done by the ring 
 					ClassIcon Pyro_Volcano
 					Skill Expert
 					Health 900
@@ -4207,7 +4207,7 @@ WaveSchedule
 					UseCustomModel "models/player/sniper.mdl"
 					Item "Zombie Sniper"
 					
-					 FireWeapon [$SIGSEGV] //makes them not do dumb aiming :> //Thanks Seelpit uwu
+					 FireWeapon  //makes them not do dumb aiming :> //Thanks Seelpit uwu
 					{
 						Delay 0
 						Type "Primary"
@@ -4250,7 +4250,7 @@ WaveSchedule
 						"projectile trail particle"	superrare_burning1
 						"custom projectile model" models/weapons/w_models/w_arrow.mdl
 						
-						CustomWeaponModel [$SIGSEGV] //Sets custom weapon model for the passive weapon
+						CustomWeaponModel  //Sets custom weapon model for the passive weapon
 						{
 							Slot 1 //Valid loadout positions:
 								//0 - LOADOUT_POSITION_PRIMARY
@@ -4565,7 +4565,7 @@ WaveSchedule
 							"Projectile speed increased" 0.5
 							"projectile spread angle penalty" 1
 							"override projectile type"  6
-							"mod projectile heat seek power" 10 [$SIGSEGV]
+							"mod projectile heat seek power" 10 
 							"attach particle effect" 1
 							"set damagetype ignite" 1
 						
@@ -5066,9 +5066,9 @@ WaveSchedule
 					{
 							Class Pyro
 							Name "Volcanic Demon Pyro"
-							Action Mobber [$SIGSEGV]
+							Action Mobber 
 							//Removes for being too annoying
-							//RingOfFire 15   //Enable Ring of Fire from Huo Long Heater. Value is damage done by the ring [$SIGSEGV]
+							//RingOfFire 15   //Enable Ring of Fire from Huo Long Heater. Value is damage done by the ring 
 							ClassIcon Pyro_Volcano
 							Skill Expert
 							Health 900
@@ -5554,7 +5554,7 @@ WaveSchedule
 									"set item tint rgb"  13595446
 								}
 							//Items
-							StripItemSlot 0 [$SIGSEGV] //Remove booties
+							StripItemSlot 0  //Remove booties
 							Item "The Splendid Screen" //Chargin Targe gives too more beefyness
 							Item "The Eyelander"
 							Item "TF_WEAPON_SPELLBOOK"
@@ -5572,7 +5572,7 @@ WaveSchedule
 							ItemAttributes
 							{
 								ItemName "TF_WEAPON_SPELLBOOK"
-								"mod projectile heat seek power" 15 [$SIGSEGV]
+								"mod projectile heat seek power" 15 
 								"deploy time decreased" 0.01
 								"fire rate bonus" 0.01	
 								"projectile spread angle penalty" 4
@@ -5580,7 +5580,7 @@ WaveSchedule
 								"Projectile speed increased" 0.7
 								"projectile trail particle"	spell_fireball_small_red
 							}
-							Spell [$SIGSEGV] //Gives specified spell to bots.
+							Spell  //Gives specified spell to bots.
 							{
 								Delay 3 //Time before the first spell charges are given (Default: 10)
 								Cooldown 10 //Time between each spell changes (Default: 10)

@@ -24,7 +24,7 @@ population
 	DisableSound "Announcer.MVM_Spy_Alert" 						 
 	DisableSound "Announcer.mvm_spybot_death"					 
 	DisableSound "Announcer.mvm_spybot_death_all"
-        PlayerAttributes [$SIGSEGV]
+        PlayerAttributes 
 	{
 		Scout
 		{

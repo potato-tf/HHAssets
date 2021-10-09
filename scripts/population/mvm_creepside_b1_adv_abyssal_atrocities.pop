@@ -21,29 +21,29 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 	EventPopfile	Halloween
 	
 	// oh yeah since fuckmod is enabled it's time to do a miniscule amount of trolling
-	NoRomevisionCosmetics	1	[$SIGSEGV]
-	TextPrintTime			0	[$SIGSEGV]
-	BotsAreHumans        	1	[$SIGSEGV]
-	ForceHoliday          	2	[$SIGSEGV]
-	NoThrillerTaunt			1	[$SIGSEGV]	// no more
-	NoCritPumpkin			1	[$SIGSEGV]
-	NoMissionInfo			1	[$SIGSEGV]	// fixes false information
-	ZombiesNoWave666		1	[$SIGSEGV]
+	NoRomevisionCosmetics	1	
+	TextPrintTime			0	
+	BotsAreHumans        	1	
+	ForceHoliday          	2	
+	NoThrillerTaunt			1		// no more
+	NoCritPumpkin			1	
+	NoMissionInfo			1		// fixes false information
+	ZombiesNoWave666		1	
 	
 	
-	PrecacheModel	"models/props_mvm/mvm_human_skull.mdl"				[$SIGSEGV]
-	PrecacheSound	"misc/halloween/spell_mirv_cast.wav"				[$SIGSEGV]
-	PrecacheModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
-	PrecacheModel	"models/bots/boss_bot/boss_tank_color.mdl"			[$SIGSEGV]	// hell-met moment
+	PrecacheModel	"models/props_mvm/mvm_human_skull.mdl"				
+	PrecacheSound	"misc/halloween/spell_mirv_cast.wav"				
+	PrecacheModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
+	PrecacheModel	"models/bots/boss_bot/boss_tank_color.mdl"				// hell-met moment
 
-	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" [$SIGSEGV]
+	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" 
 
-	PointTemplates	[$SIGSEGV]
+	PointTemplates	
 	{
 		killcrumpkin	// no. more. crumpkins! no. more. bullshit! no. more. giants bazinga-ing the whole team because they picked up a crumpkin! nooooooooooooo mooooooooooooooore abusing crumpkin drops! you're getting killed
 		{
@@ -87,12 +87,12 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Item	"The Bunsen Brave"
 			Item	"The Ullapool Caber"
 			Item	"The B.A.S.E. Jumper"
-			RocketCustomParticle    spell_fireball_small_red				[$SIGSEGV]
-			RocketCustomModel		"models/props_mvm/mvm_human_skull.mdl"	[$SIGSEGV]
-			RingOfFire	125								[$SIGSEGV]
-			UseMeleeThreatPrioritization	1			[$SIGSEGV]
+			RocketCustomParticle    spell_fireball_small_red				
+			RocketCustomModel		"models/props_mvm/mvm_human_skull.mdl"	
+			RingOfFire	125								
+			UseMeleeThreatPrioritization	1			
 			Tag	giant
-			HomingRockets	[$SIGSEGV]
+			HomingRockets	
 			{
 				IgnoreDisguisedSpies	1
 				IgnoreStealthedSpies	1
@@ -100,12 +100,12 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				MaxAimError	90
 				RocketSpeed	0.5
 			}
-			DamageAppliesCond	[$SIGSEGV]	// not even pyros can escape :ujel:
+			DamageAppliesCond		// not even pyros can escape :ujel:
 			{
 				Name	"TF_COND_GAS"
 				Duration	6.9
 			}
-			ItemModel [$SIGSEGV] // Replaces item model
+			ItemModel  // Replaces item model
 			{
 				ItemName	"TF_WEAPON_ROCKETLAUNCHER"
 				Model		"models/weapons/c_models/c_claymore/c_claymore.mdl"
@@ -168,9 +168,9 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			ClassIcon	pyro_volcano
 			WeaponRestrictions	MeleeOnly
 			Name	"Hellfire Revenant"
-			UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
-			UseHumanAnimations 1 [$SIGSEGV]
-			Skin	1 [$SIGSEGV]
+			UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
+			UseHumanAnimations 1 
+			Skin	1 
 			Scale	1.5
 			Health	900
 			Item	"Blazing Bull"
@@ -180,7 +180,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				ItemName	"Zombie Sniper"
 				Model		"models/empty.mdl"
 			}
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName	"TF_WEAPON_CLUB"
 				Model		"models/workshop/weapons/c_models/c_rift_fire_axe/c_rift_fire_axe.mdl"
@@ -199,9 +199,9 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			ClassIcon	pyro_jug_axtinguisher
 			WeaponRestrictions	MeleeOnly
 			Name	"Soul Extinguisher"
-			UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
-			UseHumanAnimations 1 [$SIGSEGV]
-			Skin	1 [$SIGSEGV]
+			UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
+			UseHumanAnimations 1 
+			Skin	1 
 			Scale	1.5
 			Health	900
 			Item	"Blazing Bull"
@@ -225,7 +225,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Item	"Soldier Samurai Hat"
 			Name	"Phantom Samurai"
 			WeaponRestrictions	MeleeOnly
-			Action	Mobber	[$SIGSEGV]
+			Action	Mobber	
 			ItemAttributes
 			{
 				ItemName	"The Half-Zatoichi"
@@ -285,9 +285,9 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Skill	Expert
 			Attributes	MiniBoss
 			Item	"The Huntsman"
-			Skin	1 [$SIGSEGV]
-			UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
-			UseHumanAnimations 1 [$SIGSEGV]
+			Skin	1 
+			UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
+			UseHumanAnimations 1 
 			ItemModel
 			{
 				ItemName	"Zombie Sniper"
@@ -344,7 +344,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Tag	bot_giant
 			Action	FetchFlag
 			Attributes	AlwaysFireWeapon
-			ItemModel [$SIGSEGV]
+			ItemModel 
 			{
 				ItemName	"The Wrangler"
 				Model		"models/workshop/weapons/c_models/c_tele_shotgun/c_tele_shotgun.mdl"
@@ -445,7 +445,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Item	"The Caped Crusader"
 			Item	"The Professor's Pineapple"
 			Item	"TF_WEAPON_SPELLBOOK"
-			Spell	[$SIGSEGV]
+			Spell	
 			{
 				Type	"Meteor Shower"
 				Cooldown		20
@@ -472,7 +472,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Item	"The Caped Crusader"
 			Item	"The Professor's Pineapple"
 			Item	"TF_WEAPON_SPELLBOOK"
-			Spell	[$SIGSEGV]
+			Spell	
 			{
 				Type	"Summon Monoculus"
 				Cooldown		15
@@ -499,7 +499,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Item	"The Caped Crusader"
 			Item	"The Professor's Pineapple"
 			Item	"TF_WEAPON_SPELLBOOK"
-			Spell	[$SIGSEGV]
+			Spell	
 			{
 				Type	"Tesla Bolt"
 				Cooldown		15
@@ -525,9 +525,9 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Item	"The Crone's Dome"
 			Item	"The Caped Crusader"
 			Item	"TF_WEAPON_SPELLBOOK"
-			Skin	1 [$SIGSEGV]
-			UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
-			UseHumanAnimations 1 [$SIGSEGV]
+			Skin	1 
+			UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
+			UseHumanAnimations 1 
 			ItemModel
 			{
 				ItemName	"Zombie Sniper"
@@ -538,7 +538,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				ItemName	"TF_WEAPON_SPELLBOOK"
 				"is_passive_weapon"	1
 			}
-			Spell	[$SIGSEGV]
+			Spell	
 			{
 				Type	"Summon Skeletons"
 				Cooldown		15
@@ -567,9 +567,9 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Attributes	MiniBoss
 			Attributes	IgnoreFlag
 			WeaponRestrictions	MeleeOnly
-			UseMeleeThreatPrioritization	1	[$SIGSEGV]
-			Action	Mobber	[$SIGSEGV]
-			AimAt	Body	[$SIGSEGV]
+			UseMeleeThreatPrioritization	1	
+			Action	Mobber	
+			AimAt	Body	
 			Attributes	AutoJump
 			AutoJumpMin	60
 			AutoJumpMax	60
@@ -586,18 +586,18 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			//	Duration	30
 			//}
 			// cope cope seethe cope
-			Spell	[$SIGSEGV]	// primary method of attack used throughout all phases
+			Spell		// primary method of attack used throughout all phases
 			{
 				Type	"Fireball"
 				Cooldown	4
 			}
-			Spell	[$SIGSEGV]	// "end of phase 1" attack
+			Spell		// "end of phase 1" attack
 			{
 				Type	"Meteor Shower"
 				Delay		30
 				Cooldown	30
 			}
-			VoiceCommand	[$SIGSEGV]
+			VoiceCommand	
 			{
 				IfSeeTarget	1
 				Type "Battle cry"
@@ -635,9 +635,9 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Item	"TF_WEAPON_SPELLBOOK"
 			Attributes	IgnoreFlag
 			WeaponRestrictions	MeleeOnly
-			UseMeleeThreatPrioritization	1	[$SIGSEGV]
-			Action	Mobber	[$SIGSEGV]
-			AimAt	Body	[$SIGSEGV]
+			UseMeleeThreatPrioritization	1	
+			Action	Mobber	
+			AimAt	Body	
 			AddCond	// "phase" 1; stealth intro 1
 			{
 				Name	"TF_COND_STEALTHED_USER_BUFF_FADING"
@@ -901,9 +901,9 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 					Template	T_TFBot_Sniper_Huntsman_Spammer
 					ClassIcon	sniper_bow_multi
 					Name	"Rapid-fire Bowman"
-					Skin	1 [$SIGSEGV]
-					UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
-					UseHumanAnimations 1 [$SIGSEGV]
+					Skin	1 
+					UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
+					UseHumanAnimations 1 
 					ItemModel
 					{
 						ItemName	"Zombie Sniper"
@@ -915,9 +915,9 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 					Template	T_TFBot_Sniper_Huntsman_Spammer
 					ClassIcon	sniper_bow_multi
 					Name	"Rapid-fire Bowman"
-					Skin	1 [$SIGSEGV]
-					UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
-					UseHumanAnimations 1 [$SIGSEGV]
+					Skin	1 
+					UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
+					UseHumanAnimations 1 
 					ItemModel
 					{
 						ItemName	"Zombie Sniper"
@@ -1035,7 +1035,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			Target	wave_finished_relay
 			Action	Trigger
 		}
-		Explanation [$SIGSEGV]
+		Explanation 
 		{
 			Line	"{e0ff79}Tombs are located around the map and contain corpses that can flank you from behind or pressure an important chokepoint! A distinct chime will play at the start of a wave if a tomb will be active during the wave."
 		}
@@ -1095,7 +1095,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				Speed	69
 				StartingPathTrackNode	"boss_path_wbomb"
 				SpawnTemplate	"WHAT_IF_IT_WAS_PURPLE"
-				Model	"models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				Model	"models/bots/boss_bot/boss_tank_color.mdl" 
 				OnBombDroppedOutput 
 				{
 					Target boss_deploy_relay
@@ -1442,9 +1442,9 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 			{
 				Template	T_TFBot_Sniper_Huntsman
 				Name	"Skeletal Archer"
-				Skin	1 [$SIGSEGV]
-				UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
-				UseHumanAnimations 1 [$SIGSEGV]
+				Skin	1 
+				UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
+				UseHumanAnimations 1 
 				ItemModel
 				{
 					ItemName	"Zombie Sniper"
@@ -1592,7 +1592,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				Speed	60
 				StartingPathTrackNode	"boss_path_1"
 				SpawnTemplate	"WHAT_IF_IT_WAS_PURPLE"
-				Model	"models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				Model	"models/bots/boss_bot/boss_tank_color.mdl" 
 				OnBombDroppedOutput 
 				{
 					Target boss_deploy_relay
@@ -2002,7 +2002,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				Skin	1
 				StartingPathTrackNode	"boss_path_1"
 				SpawnTemplate	"WHAT_IF_IT_WAS_PURPLE"
-				Model	"models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
+				Model	"models/bots/boss_bot/boss_tank_color.mdl" 
 				OnBombDroppedOutput 
 				{
 					Target boss_deploy_relay
@@ -2326,9 +2326,9 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 				Template	T_TFBot_Sniper_Huntsman
 				Name	"Skeletal Archer"
 				Attributes	AlwaysCrit
-				Skin	1 [$SIGSEGV]
-				UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	[$SIGSEGV]
-				UseHumanAnimations 1 [$SIGSEGV]
+				Skin	1 
+				UseCustomModel	"models/bots/skeleton_sniper/skeleton_sniper.mdl"	
+				UseHumanAnimations 1 
 				ItemModel
 				{
 					ItemName	"Zombie Sniper"

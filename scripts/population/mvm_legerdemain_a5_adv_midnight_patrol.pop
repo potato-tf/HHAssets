@@ -11,12 +11,12 @@ WaveSchedule
 	StartingCurrency 700
 	RespawnWaveTime 3
 	CanBotsAttackWhileInSpawnRoom no
-	EventPopfile Halloween [$SIGSEGV]
-	ZombiesNoWave666 1 [$SIGSEGV] // If set to 1, the game will not display wave 666 when EventPopFile is set (default: 0)
-	BotTeleportUberDuration 2 [$SIGSEGV]
-	BotHumansHaveEyeGlow 1 [$SIGSEGV] // If set to 1, bots with human models have eye glow (default: 0)
-	NoSkeletonSplit 1 [$SIGSEGV]
-	FastNPCUpdate 1 [$SIGSEGV] // If set to 1, NPCs such as halloween bosses will update every tick (default: 0)
+	EventPopfile Halloween 
+	ZombiesNoWave666 1  // If set to 1, the game will not display wave 666 when EventPopFile is set (default: 0)
+	BotTeleportUberDuration 2 
+	BotHumansHaveEyeGlow 1  // If set to 1, bots with human models have eye glow (default: 0)
+	NoSkeletonSplit 1 
+	FastNPCUpdate 1  // If set to 1, NPCs such as halloween bosses will update every tick (default: 0)
 
 	// CustomWeapon
 	// {
@@ -341,7 +341,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Medic_Crossbow
-				Action FetchFlag [$SIGSEGV] 
+				Action FetchFlag  
 			}
 		}
 		WaveSpawn
@@ -361,7 +361,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Medic_Crossbow
-				Action FetchFlag [$SIGSEGV] 
+				Action FetchFlag  
 			}
 		}
 		WaveSpawn
@@ -698,7 +698,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Medic_Crossbow_Giant
-				Action FetchFlag [$SIGSEGV] 
+				Action FetchFlag  
 			}
 		}
 		WaveSpawn
@@ -1167,7 +1167,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Medic_Crossbow_Bleed
-				Action FetchFlag [$SIGSEGV] 
+				Action FetchFlag  
 			}
 		}
 		WaveSpawn
@@ -1188,7 +1188,7 @@ WaveSchedule
 			TFBot
 			{
 				Template Medic_Crossbow_Bleed
-				Action FetchFlag [$SIGSEGV] 
+				Action FetchFlag  
 			}
 		}
 		WaveSpawn
@@ -1313,7 +1313,7 @@ WaveSchedule
 				Speed 76.666
 				Name "boss"
 				StartingPathTrackNode "path_tank_default"
-				Template TankGhostMove [$SIGSEGV]
+				Template TankGhostMove 
 
 				OnKilledOutput                                  
 				{
@@ -1991,7 +1991,7 @@ WaveSchedule
 			DoneWarningSound Halloween.MerasmusBanish
 			Squad
 			{
-				NoWaitForFormation 1 [$SIGSEGV] // Prevents squad leader from waiting for squad members
+				NoWaitForFormation 1  // Prevents squad leader from waiting for squad members
 				TFBot
 				{
 					Template Boss_Merasmus_Stationary

@@ -721,7 +721,7 @@ WaveSchedule
 				Class	Demoman
 				Skill	Normal
 				Item	"The Loch-n-Load"
-				AimAt Body [$SIGSEGV]				
+				AimAt Body 				
 			}		
 		}
 		

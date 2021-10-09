@@ -6,19 +6,19 @@ population
 	StartingCurrency	400
 	RespawnWaveTime	7
 	CanBotsAttackWhileInSpawnRoom	no
-    PrecacheModel "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
-    PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" [$SIGSEGV]
-	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" [$SIGSEGV]
-	PrecacheModel "models/props_halloween/crumpkin_loot.mdl" [$SIGSEGV]
-	PrecacheModel "models/props_halloween/crumpkin_loot_large.mdl" [$SIGSEGV]
+    PrecacheModel "models/bots/boss_bot/boss_blimp.mdl" 
+    PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" 
+	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" 
+	PrecacheModel "models/props_halloween/crumpkin_loot.mdl" 
+	PrecacheModel "models/props_halloween/crumpkin_loot_large.mdl" 
     EventPopfile	Halloween
     ZombiesNoWave666 1
-    NoCritPumpkin 1 [$SIGSEGV] // No crit pumpkin on player death drop in halloween (default: 0)
+    NoCritPumpkin 1  // No crit pumpkin on player death drop in halloween (default: 0)
 
-    ExtraTankPath [$SIGSEGV]
+    ExtraTankPath 
     {
         Name "blimp_path_left"
         Node "1280 312 500"
@@ -41,7 +41,7 @@ population
         Node "-2400 5408 672"
         Node "-2872 5408 672"
     }
-    ExtraTankPath [$SIGSEGV]
+    ExtraTankPath 
     {
         Name "blimp_path_right"
         Node "1280 312 500"
@@ -321,7 +321,7 @@ population
             }
         }
     }
-    SpawnTemplate [$SIGSEGV] //Spawn template once the mission loads
+    SpawnTemplate  //Spawn template once the mission loads
 	{
 		Name "logic"
 		//Origin "0 0 0" //Position where to spawn the template
@@ -397,13 +397,13 @@ population
 		}
         DropsSmallCrumpkin
         {
-            SpawnTemplate "SmallCrumpkin" [$SIGSEGV]
-            SpawnTemplate [$SIGSEGV] //Spawn custom player template
+            SpawnTemplate "SmallCrumpkin" 
+            SpawnTemplate  //Spawn custom player template
             {
                 Name "SmallCrumpkinHeadParticle"
                 Bone "bip_head"
             }
-            FireInput [$SIGSEGV] 
+            FireInput  
             {
                 Target "make_bot_glow" //Entity name to use
                 Action "Trigger" //Input to fire
@@ -415,13 +415,13 @@ population
         }
         DropsLargeCrumpkin
         {
-            SpawnTemplate "LargeCrumpkin" [$SIGSEGV]
-            SpawnTemplate [$SIGSEGV] //Spawn custom player template
+            SpawnTemplate "LargeCrumpkin" 
+            SpawnTemplate  //Spawn custom player template
             {
                 Name "LargeCrumpkinHeadParticle"
                 Bone "bip_head"
             }
-            FireInput [$SIGSEGV] 
+            FireInput  
             {
                 Target "large_make_bot_glow" //Entity name to use
                 Action "Trigger" //Input to fire
@@ -534,7 +534,7 @@ population
                 TFBot
                 {
                     Template T_TFBot_Soldier_Bison_Burstfire
-                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
+                    AddTemplate DropsSmallCrumpkin 
                 }
                 TFBot
                 {
@@ -768,7 +768,7 @@ population
                 TFBot
                 {
                     Template T_TFBot_Pyro_Jockey
-                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
+                    AddTemplate DropsSmallCrumpkin 
                 }
                 TFBot
                 {
@@ -863,7 +863,7 @@ population
                 {
                     Class	HeavyWeapons
                     Skill	Easy
-                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
+                    AddTemplate DropsSmallCrumpkin 
                 }
                 TFBot
                 {
@@ -979,7 +979,7 @@ population
             TFBot
             {
                 Template	T_TFBot_Giant_DemoMan_PrinceTavish
-                AddTemplate DropsLargeCrumpkin [$SIGSEGV]
+                AddTemplate DropsLargeCrumpkin 
             }
 		}
         WaveSpawn
@@ -1008,7 +1008,7 @@ population
             TFBot
             {
                 Template	T_TFBot_Giant_DemoMan_PrinceTavish
-                AddTemplate DropsLargeCrumpkin [$SIGSEGV]
+                AddTemplate DropsLargeCrumpkin 
             }
 		}
         WaveSpawn
@@ -1092,10 +1092,10 @@ population
                 DisableSmokestack 1  
                 DisableTracks 1  
                 Model "models/bots/boss_bot/boss_blimp.mdl"  
-                DisableChildModels 1 [$SIGSEGV]
+                DisableChildModels 1 
 				ReplaceModelCollisions 1  
                 Gravity 0  
-                RotatePitch 0 [$SIGSEGV] // If tank should change its pitch rotation (Default: 1) 
+                RotatePitch 0  // If tank should change its pitch rotation (Default: 1) 
                 EngineLoopSound "npc/combine_gunship/dropship_engine_distant_loop1.wav"   
 				PingSound "npc/combine_gunship/ping_search.wav"  
                 OnKilledOutput 
@@ -1125,7 +1125,7 @@ population
                 {
                     Class	Pyro
                     Skill	Easy
-                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
+                    AddTemplate DropsSmallCrumpkin 
                 }
                 TFBot
                 {
@@ -1199,7 +1199,7 @@ population
                 {
                     Class	Soldier
                     Skill	Normal
-                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
+                    AddTemplate DropsSmallCrumpkin 
                 }
                 TFBot
                 {
@@ -1373,7 +1373,7 @@ population
                 Item "The Electric Escorter"
                 Attributes MiniBoss
                 Item "TF_WEAPON_SPELLBOOK"
-                Spell [$SIGSEGV] //Gives specified spell to bots.
+                Spell  //Gives specified spell to bots.
                 {
                     Delay 0 //Time before the first spell charges are given (Default: 10)
                     Cooldown 8 //Time between each spell changes (Default: 10)
@@ -1383,7 +1383,7 @@ population
                     Limit 1 //How many spell charges the bot can store (Default: Same as charges given)
                     Type "Fireball"
                 }
-                Spell [$SIGSEGV] //Gives specified spell to bots.
+                Spell  //Gives specified spell to bots.
                 {
                     Delay 4 //Time before the first spell charges are given (Default: 10)
                     Cooldown 8 //Time between each spell changes (Default: 10)
@@ -1401,7 +1401,7 @@ population
                     "override footstep sound set" 6
                     "airblast disabled" 1
                 }
-                AddTemplate DropsLargeCrumpkin [$SIGSEGV]
+                AddTemplate DropsLargeCrumpkin 
             }
 		}
         WaveSpawn
@@ -1424,7 +1424,7 @@ population
                 Item "The Electric Escorter"
                 Attributes MiniBoss
                 Item "TF_WEAPON_SPELLBOOK"
-                Spell [$SIGSEGV] //Gives specified spell to bots.
+                Spell  //Gives specified spell to bots.
                 {
                     Delay 0 //Time before the first spell charges are given (Default: 10)
                     Cooldown 8 //Time between each spell changes (Default: 10)
@@ -1434,7 +1434,7 @@ population
                     Limit 1 //How many spell charges the bot can store (Default: Same as charges given)
                     Type "Fireball"
                 }
-                Spell [$SIGSEGV] //Gives specified spell to bots.
+                Spell  //Gives specified spell to bots.
                 {
                     Delay 4 //Time before the first spell charges are given (Default: 10)
                     Cooldown 8 //Time between each spell changes (Default: 10)
@@ -1473,13 +1473,13 @@ population
 					Class	Soldier
 					Skill	Normal
 					Item	"the direct hit"
-                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
+                    AddTemplate DropsSmallCrumpkin 
 				}
 				TFBot
 				{
 					Class	Scout
 					Skill	Easy
-                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
+                    AddTemplate DropsSmallCrumpkin 
 				}
                 TFBot
 				{
@@ -1696,7 +1696,7 @@ population
                 {
                     Class	HeavyWeapons
                     Skill	Easy
-                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
+                    AddTemplate DropsSmallCrumpkin 
                 }
                 TFBot
                 {
@@ -1862,7 +1862,7 @@ population
 				TFBot
 				{
 					Template	T_TFBot_Giant_Heavyweapons_Deflector
-                    AddTemplate DropsLargeCrumpkin [$SIGSEGV]
+                    AddTemplate DropsLargeCrumpkin 
 				}
 				TFBot
 				{
@@ -1989,13 +1989,13 @@ population
                 Speed 75
                 ClassIcon blimp2_lite  
                 DisableSmokestack 1  
-                DisableChildModels 1 [$SIGSEGV]
+                DisableChildModels 1 
                 DisableTracks 1
                 Skin 1
                 Model "models/bots/boss_bot/boss_blimp.mdl"  
 				ReplaceModelCollisions 1  
                 Gravity 0  
-                RotatePitch 0 [$SIGSEGV] // If tank should change its pitch rotation (Default: 1) 
+                RotatePitch 0  // If tank should change its pitch rotation (Default: 1) 
                 EngineLoopSound "npc/combine_gunship/dropship_engine_distant_loop1.wav"   
 				PingSound "npc/combine_gunship/ping_search.wav"  
                 OnKilledOutput 
@@ -2028,13 +2028,13 @@ population
                 Speed 75
                 Skin 1
                 ClassIcon blimp2_lite 
-                DisableChildModels 1 [$SIGSEGV]                
+                DisableChildModels 1                 
                 DisableSmokestack 1  
                 DisableTracks 1  
                 Model "models/bots/boss_bot/boss_blimp.mdl"  
 				ReplaceModelCollisions 1  
                 Gravity 0  
-                RotatePitch 0 [$SIGSEGV] // If tank should change its pitch rotation (Default: 1) 
+                RotatePitch 0  // If tank should change its pitch rotation (Default: 1) 
                 EngineLoopSound "npc/combine_gunship/dropship_engine_distant_loop1.wav"   
 				PingSound "npc/combine_gunship/ping_search.wav"  
                 OnKilledOutput 
@@ -2069,11 +2069,11 @@ population
                 ClassIcon blimp2_lite  
                 DisableSmokestack 1  
                 DisableTracks 1  
-                DisableChildModels 1 [$SIGSEGV]
+                DisableChildModels 1 
                 Model "models/bots/boss_bot/boss_blimp.mdl"  
 				ReplaceModelCollisions 1  
                 Gravity 0  
-                RotatePitch 0 [$SIGSEGV] // If tank should change its pitch rotation (Default: 1) 
+                RotatePitch 0  // If tank should change its pitch rotation (Default: 1) 
                 EngineLoopSound "npc/combine_gunship/dropship_engine_distant_loop1.wav"   
 				PingSound "npc/combine_gunship/ping_search.wav"  
                 OnKilledOutput 
@@ -2188,7 +2188,7 @@ population
                 TFBot
                 {
                     Template	T_TFBot_Giant_Pyro_Fury
-                    AddTemplate DropsLargeCrumpkin [$SIGSEGV]
+                    AddTemplate DropsLargeCrumpkin 
                 }
                 TFBot
                 {
@@ -2489,7 +2489,7 @@ population
 					Skill	Easy
                     Tag flank_back
                     BehaviorModifiers Push
-                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
+                    AddTemplate DropsSmallCrumpkin 
 				}
 				TFBot
 				{
@@ -2497,7 +2497,7 @@ population
 					Template	T_TFBot_Scout_Sandman
                     Tag flank_back
                     BehaviorModifiers Push
-                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
+                    AddTemplate DropsSmallCrumpkin 
 				}
                 TFBot
 				{
@@ -2505,7 +2505,7 @@ population
 					Template	T_TFBot_Pyro_Jockey
                     Tag flank_back
                     BehaviorModifiers Push
-                    AddTemplate DropsSmallCrumpkin [$SIGSEGV]
+                    AddTemplate DropsSmallCrumpkin 
 				}
 			}
 		}

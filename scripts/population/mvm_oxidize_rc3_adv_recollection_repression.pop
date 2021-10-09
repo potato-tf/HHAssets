@@ -9,12 +9,12 @@ WaveSchedule
 	CanBotsAttackWhileInSpawnRoom	no
 	FixedRespawnWaveTime	Yes
 	Advanced	1
-	NoRomevisionCosmetics 1 [$SIGSEGV]
-	ForceHoliday 2 [$SIGSEGV]
-	NoThrillerTaunt 1 [$SIGSEGV]
-	NoCritPumpkin 1 [$SIGSEGV]
-	ZombiesNoWave666 1 [$SIGSEGV]
-	ExtraSpawnPoint [$SIGSEGV]  //Adds spawn points on specified location. 
+	NoRomevisionCosmetics 1 
+	ForceHoliday 2 
+	NoThrillerTaunt 1 
+	NoCritPumpkin 1 
+	ZombiesNoWave666 1 
+	ExtraSpawnPoint   //Adds spawn points on specified location. 
     {
         Name	"spawnbot_redbot"
         TeamNum	3
@@ -35,7 +35,7 @@ WaveSchedule
 			Item	"The Righteous Bison"
 			Item	"bucket hat"
 			Item "Zombie Soldier"
-			UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/soldier.mdl" 
 			ItemAttributes
 			{
 				ItemName	"the righteous bison"
@@ -54,7 +54,7 @@ WaveSchedule
 			Item	"The Righteous Bison"
 			Item	"bucket hat"
 			Item "Zombie Soldier"
-			UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/soldier.mdl" 
 			ItemAttributes
 			{
 				ItemName	"the righteous bison"
@@ -71,10 +71,10 @@ WaveSchedule
 			ClassIcon soldier_homing_nys
 			Item "the tin-1000"
 			Item "Zombie Soldier"
-			UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/soldier.mdl" 
 			Attributes HoldFireUntilFullReload
-			RocketCustomParticle eyeboss_projectile [$SIGSEGV]
-			HomingRockets [$SIGSEGV]
+			RocketCustomParticle eyeboss_projectile 
+			HomingRockets 
 			{
 				IgnoreDisguisedSpies 1
 				IgnoreStealthedSpies 1
@@ -93,7 +93,7 @@ WaveSchedule
 			Item "The Flare Gun"
 			Item "Brim of Fire"
 			Item "Zombie Pyro"
-			UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/pyro.mdl" 
 			WeaponRestrictions SecondaryOnly
 			ItemAttributes
 			{
@@ -110,7 +110,7 @@ WaveSchedule
 			ClassIcon demo_burst
 			Item "Glengarry Bonnet"
 			Item "Zombie Demo"
-			UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/demo.mdl" 
 			Attributes HoldFireUntilFullReload
 			WeaponRestrictions PrimaryOnly
 			ItemAttributes
@@ -128,7 +128,7 @@ WaveSchedule
 			ClassIcon	sniper_smg_tind
 			Skill Hard
 			Item "Zombie Sniper"
-			UseCustomModel "models/player/sniper.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/sniper.mdl" 
 			WeaponRestrictions	SecondaryOnly
 		}
 		Inky_Giant_Charged_Mangler_Soldier
@@ -140,10 +140,10 @@ WaveSchedule
 			Health 4000
 			ClassIcon	soldier_mangler_giant
 			Attributes MiniBoss
-			ExtAttr AlwaysFireWeaponAlt [$SIGSEGV]
+			ExtAttr AlwaysFireWeaponAlt 
 			Item "modest metal pile of scrap"
 			Item "Zombie Soldier"
-			UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/soldier.mdl" 
 			Tag bot_giant
 			ItemAttributes
 			{
@@ -171,7 +171,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Item "modest metal pile of scrap"
 			Item "Zombie Soldier"
-			UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/soldier.mdl" 
 			Tag bot_giant
 			ItemAttributes
 			{
@@ -199,7 +199,7 @@ WaveSchedule
 			ClassIcon soldier_burstfire_buff
 			Item "The Buff Banner"
 			Item "Zombie Soldier"
-			UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/soldier.mdl" 
 			Attributes HoldFireUntilFullReload
 			Attributes MiniBoss
 			Attributes SpawnWithFullCharge
@@ -232,7 +232,7 @@ WaveSchedule
 			Item "Natascha"
 			Item "officer's ushanka"
 			Item "Zombie Heavy"
-			UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/heavy.mdl" 
 			Attributes MiniBoss
 			WeaponRestrictions PrimaryOnly
 			MaxVisionRange 1200
@@ -313,7 +313,7 @@ WaveSchedule
 		{
 			Template	T_TFBot_Sniper
 			Item "Zombie Sniper"
-			UseCustomModel "models/player/sniper.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/sniper.mdl" 
 		}
 	}
 	Mission
@@ -329,7 +329,7 @@ WaveSchedule
 		{
 			Template	T_TFBot_Spy
 			Item "Zombie Spy"
-			UseCustomModel "models/player/spy.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/spy.mdl" 
 		}
 	}
 	Mission
@@ -345,7 +345,7 @@ WaveSchedule
 		{
 			Template	T_TFBot_Spy
 			Item "Zombie Spy"
-			UseCustomModel "models/player/spy.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/spy.mdl" 
 		}
 	}
 	Mission
@@ -361,7 +361,7 @@ WaveSchedule
 		{
 			Template	T_TFBot_Engineer_Sentry_Battle_TeleIn
 			Item "Zombie Engineer"
-			UseCustomModel "models/player/engineer.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/engineer.mdl" 
 		}
 	}
 	Mission
@@ -381,7 +381,7 @@ WaveSchedule
 			Item "darwin's danger shield"
 			Item "the bushwacka"
 			Item "Zombie Sniper"
-			UseCustomModel "models/player/sniper.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/sniper.mdl" 
 		}
 	}
 	Mission
@@ -403,7 +403,7 @@ WaveSchedule
 			Item "The Chargin' Targe"
 			Item "The Eyelander"
 			Item "Zombie Demo"
-			UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/demo.mdl" 
 			ItemAttributes
 			{
 				ItemName "The Eyelander"
@@ -430,7 +430,7 @@ WaveSchedule
 		{
 			Template	T_TFBot_Engineer_Sentry_Battle_TeleIn
 			Item "Zombie Engineer"
-			UseCustomModel "models/player/engineer.mdl" [$SIGSEGV]
+			UseCustomModel "models/player/engineer.mdl" 
 		}
 	}
 	Wave
@@ -469,7 +469,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Scout_Baseball_Armored
 				Item "Zombie Scout"
-				UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/scout.mdl" 
 			}
 		}
 		WaveSpawn
@@ -486,7 +486,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Demoman_Knight
 				Item "Zombie Demo"
-				UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/demo.mdl" 
 			}
 		}
 		WaveSpawn
@@ -504,7 +504,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Heavyweapons_Shotgun
 				Item "Zombie Heavy"
-				UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/heavy.mdl" 
 			}
 		}
 		WaveSpawn
@@ -522,7 +522,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Soldier_Crit
 				Item "Zombie Soldier"
-				UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/soldier.mdl" 
 			}
 		}
 		WaveSpawn
@@ -557,7 +557,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Scout_Fast
 				Item "Zombie Scout"
-				UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/scout.mdl" 
 			}
 		}
 		WaveSpawn
@@ -576,7 +576,7 @@ WaveSchedule
 				Template	T_TFBot_Pyro
 				Skill	Easy
 				Item "Zombie Pyro"
-				UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/pyro.mdl" 
 			}
 		}
 		WaveSpawn
@@ -594,7 +594,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Pyro
 				Item "Zombie Pyro"
-				UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/pyro.mdl" 
 			}
 		}
 	}
@@ -637,7 +637,7 @@ WaveSchedule
 				Attributes	AlwaysCrit
 				ClassIcon	scout_bat
 				Item "Zombie Scout"
-				UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/scout.mdl" 
 			}
 		}
 		WaveSpawn
@@ -654,7 +654,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Soldier_Extended_Battalion
 				Item "Zombie Soldier"
-				UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/soldier.mdl" 
 				CharacterAttributes
 				{
 					"single wep deploy time increased" 0.5
@@ -676,7 +676,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Demoman
 				Item "Zombie Demo"
-				UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/demo.mdl" 
 			}
 		}
 		WaveSpawn
@@ -693,7 +693,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Demoman
 				Item "Zombie Demo"
-				UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/demo.mdl" 
 			}
 		}
 		WaveSpawn
@@ -711,7 +711,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Pyro_Flaregun
 				Item "Zombie Pyro"
-				UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/pyro.mdl" 
 			}
 		}
 		WaveSpawn
@@ -729,7 +729,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Demoman
 				Item "Zombie Demo"
-				UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/demo.mdl" 
 			}
 		}
 		WaveSpawn
@@ -747,7 +747,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Heavyweapons_Fist
 				Item "Zombie Heavy"
-				UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/heavy.mdl" 
 			}
 		}
 		WaveSpawn
@@ -765,7 +765,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Demoman
 				Item "Zombie Demo"
-				UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/demo.mdl" 
 			}
 		}
 		WaveSpawn
@@ -783,7 +783,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Pyro_Flaregun
 				Item "Zombie Pyro"
-				UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/pyro.mdl" 
 			}
 		}
 		WaveSpawn
@@ -802,7 +802,7 @@ WaveSchedule
 				Template	T_TFBot_Giant_Scout_Jumping_Sandman
 				Name "Giant Jumping Sandman Scout"
 				Item "Zombie Scout"
-				UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/scout.mdl" 
 			}
 		}
 	}
@@ -845,7 +845,7 @@ WaveSchedule
 				Skill	Easy
 				WeaponRestrictions	PrimaryOnly
 				Item "Zombie Heavy"
-				UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/heavy.mdl" 
 			}
 		}
 		WaveSpawn
@@ -862,7 +862,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Demoman
 				Item "Zombie Demo"
-				UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/demo.mdl" 
 			}
 		}
 		WaveSpawn
@@ -879,7 +879,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Pyro_Flare_Spammer
 				Item "Zombie Pyro"
-				UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/pyro.mdl" 
 			}
 		}
 		WaveSpawn
@@ -927,13 +927,13 @@ WaveSchedule
 				{
 					Template	T_TFBot_Heavyweapons_Fist
 					Item "Zombie Heavy"
-					UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/heavy.mdl" 
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic_BigHeal
 					Item "Zombie Medic"
-					UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/medic.mdl" 
 				}
 			}
 		}
@@ -958,19 +958,19 @@ WaveSchedule
 				{
 					Template	T_TFBot_Medic_BigHeal
 					Item "Zombie Medic"
-					UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/medic.mdl" 
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic_BigHeal
 					Item "Zombie Medic"
-					UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/medic.mdl" 
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic_BigHeal
 					Item "Zombie Medic"
-					UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/medic.mdl" 
 				}
 			}
 		}
@@ -989,7 +989,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Heavyweapons_Shotgun
 				Item "Zombie Heavy"
-				UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/heavy.mdl" 
 			}
 		}
 		WaveSpawn
@@ -1010,7 +1010,7 @@ WaveSchedule
 				Skill	Easy
 				Attributes	"HoldFireUntilFullReload"
 				Item "Zombie Scout"
-				UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/scout.mdl" 
 			}
 		}
 	}
@@ -1080,7 +1080,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Demoman_Samurai
 				Item "Zombie Demo"
-				UseCustomModel "models/player/demo.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/demo.mdl" 
 			}
 		}
 		WaveSpawn
@@ -1098,7 +1098,7 @@ WaveSchedule
 				Template	T_TFBot_Giant_Scout
 				Attributes HoldFireUntilFullReload
 				Item "Zombie Scout"
-				UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/scout.mdl" 
 			}
 		}
 		WaveSpawn
@@ -1118,14 +1118,14 @@ WaveSchedule
 					Template	T_TFBot_Pyro
 					Skill Easy
 					Item "Zombie Pyro"
-					UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/pyro.mdl" 
 				}
 				TFBot
 				{
 					Template	T_TFBot_Pyro
 					Skill Normal
 					Item "Zombie Pyro"
-					UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/pyro.mdl" 
 				}
 			}
 		}
@@ -1174,31 +1174,31 @@ WaveSchedule
 				{
 					Template	T_TFBot_Giant_Heavyweapons_Deflector
 					Item "Zombie Heavy"
-					UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/heavy.mdl" 
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic_QuickUber
 					Item "Zombie Medic"
-					UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/medic.mdl" 
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic_QuickUber
 					Item "Zombie Medic"
-					UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/medic.mdl" 
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic_QuickUber
 					Item "Zombie Medic"
-					UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/medic.mdl" 
 				}
 				TFBot
 				{
 					Template	T_TFBot_Medic_QuickUber
 					Item "Zombie Medic"
-					UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/medic.mdl" 
 				}
 			}
 		}
@@ -1239,7 +1239,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Scout_Fast
 				Item "Zombie Scout"
-				UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/scout.mdl" 
 			}
 		}
 		WaveSpawn
@@ -1257,7 +1257,7 @@ WaveSchedule
 				Template	T_TFBot_Scout_Jumping_Sandman
 				Name "Jumping Sandman Scout"
 				Item "Zombie Scout"
-				UseCustomModel "models/player/scout.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/scout.mdl" 
 			}
 		}
 		WaveSpawn
@@ -1308,7 +1308,7 @@ WaveSchedule
 				{
 					Template	T_TFBot_Giant_Soldier_Extended_Buff_Banner
 					Item "Zombie Soldier"
-					UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/soldier.mdl" 
 					CharacterAttributes
 					{
 						"single wep deploy time increased" 0.5
@@ -1392,7 +1392,7 @@ WaveSchedule
 				Template	T_TFBot_Pyro
 				Skill Normal
 				Item "Zombie Pyro"
-				UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/pyro.mdl" 
 			}
 		}
 		WaveSpawn
@@ -1445,13 +1445,13 @@ WaveSchedule
 					Template	T_TFBot_Heavyweapons_Heater
 					Name	"Giant Huo-Long Heater Heavy"
 					Item "Zombie Heavy"
-					UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/heavy.mdl" 
 				}
 				TFBot
 				{
 					Template	T_TFBot_Giant_Medic_Regen
 					Item "Zombie Medic"
-					UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/medic.mdl" 
 				}
 			}
 		}
@@ -1492,8 +1492,8 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Soldier_Extended_Buff_Banner
 				ClassIcon	red2_lite
-				Action Mobber [$SIGSEGV]
-				AddCond [$SIGSEGV]
+				Action Mobber 
+				AddCond 
 				{
 					Name "TF_COND_REPROGRAMMED"
 					Delay 0
@@ -1526,13 +1526,13 @@ WaveSchedule
 					Template	T_TFBot_Giant_Pyro
 					Attributes AlwaysFireWeapon
 					Item "Zombie Pyro"
-					UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/pyro.mdl" 
 				}
 				TFBot
 				{
 					Template	T_TFBot_Giant_Medic_Regen
 					Item "Zombie Medic"
-					UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/medic.mdl" 
 				}
 			}
 		}
@@ -1553,13 +1553,13 @@ WaveSchedule
 					Template	T_TFBot_Giant_Pyro
 					Attributes AlwaysFireWeapon
 					Item "Zombie Pyro"
-					UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/pyro.mdl" 
 				}
 				TFBot
 				{
 					Template	T_TFBot_Giant_Medic_Regen
 					Item "Zombie Medic"
-					UseCustomModel "models/player/medic.mdl" [$SIGSEGV]
+					UseCustomModel "models/player/medic.mdl" 
 				}
 			}
 		}
@@ -1581,7 +1581,7 @@ WaveSchedule
 				WeaponRestrictions	PrimaryOnly
 				Attributes AlwaysCrit
 				Item "Zombie Heavy"
-				UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/heavy.mdl" 
 			}
 		}
 		WaveSpawn
@@ -1599,7 +1599,7 @@ WaveSchedule
 				Template	T_TFBot_Heavyweapons_Heater
 				Name	"Giant Huo-Long Heater Heavy"
 				Item "Zombie Heavy"
-				UseCustomModel "models/player/heavy.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/heavy.mdl" 
 			}
 		}
 		WaveSpawn
@@ -1645,7 +1645,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Soldier_RocketPush
 				Item "Zombie Soldier"
-				UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/soldier.mdl" 
 			}
 		}
 		WaveSpawn
@@ -1696,7 +1696,7 @@ WaveSchedule
 				Template	T_TFBot_Giant_Pyro
 				Attributes AlwaysCrit
 				Item "Zombie Pyro"
-				UseCustomModel "models/player/pyro.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/pyro.mdl" 
 			}
 		}
 		WaveSpawn
@@ -1714,7 +1714,7 @@ WaveSchedule
 			{
 				Template	T_TFBot_Soldier_RocketPush
 				Item "Zombie Soldier"
-				UseCustomModel "models/player/soldier.mdl" [$SIGSEGV]
+				UseCustomModel "models/player/soldier.mdl" 
 			}
 		}
 		WaveSpawn
@@ -1778,8 +1778,8 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Soldier_Extended_Buff_Banner
 				ClassIcon	red2_lite
-				Action Mobber [$SIGSEGV]
-				AddCond [$SIGSEGV]
+				Action Mobber 
+				AddCond 
 				{
 					Name "TF_COND_REPROGRAMMED"
 					Delay 0
@@ -1810,8 +1810,8 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Soldier_Extended_Battalion
 				ClassIcon	red2_lite
-				Action Mobber [$SIGSEGV]
-				AddCond [$SIGSEGV]
+				Action Mobber 
+				AddCond 
 				{
 					Name "TF_COND_REPROGRAMMED"
 					Delay 0
@@ -1842,8 +1842,8 @@ WaveSchedule
 			{
 				Template	T_TFBot_Giant_Soldier_Extended_Concheror
 				ClassIcon	red2_lite
-				Action Mobber [$SIGSEGV]
-				AddCond [$SIGSEGV]
+				Action Mobber 
+				AddCond 
 				{
 					Name "TF_COND_REPROGRAMMED"
 					Delay 0
