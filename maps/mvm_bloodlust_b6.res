@@ -30,5 +30,4 @@ Resources
 	"models/empty.phy"	"file"
 	"models/props_halloween/flask_tub.phy"	"file"
 	"models/workshop/player/items/demo/tw_sentrybuster/tw_sentrybuster.phy"	"file"
-	"models/workshop/weapons/c_models/c_nailgun/c_nailgun.phy" "file"
 }
