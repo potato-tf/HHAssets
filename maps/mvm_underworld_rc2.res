@@ -221,8 +221,6 @@ Resources
 	"materials/hud/leaderboard_class_sniper_bow_giant.vmt"	"file"
 	"materials/hud/leaderboard_class_sniper_bow_ignite.vmt"	"file"
 	"materials/hud/leaderboard_class_sniper_bow_ignite.vtf"	"file"
-	"materials/hud/leaderboard_class_sniper_bow_multi_fire_hel.vmt"	"file"
-	"materials/hud/leaderboard_class_sniper_bow_multi_fire_hel.vtf"	"file"
 	"materials/hud/leaderboard_class_sniper_bow_multi_giant.vmt"	"file"
 	"materials/hud/leaderboard_class_sniper_bow_penetrate_allyred.vmt"	"file"
 	"materials/hud/leaderboard_class_sniper_bow_penetrate_allyred.vtf"	"file"

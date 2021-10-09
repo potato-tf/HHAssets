@@ -1842,7 +1842,7 @@ WaveSchedule
 				{
 					Class Sniper
 					Name "Giant Flaming Burst Bowman"
-					ClassIcon sniper_bow_multi_fire_hel
+					ClassIcon sniper_bow_ignite_multi
 					Skill Expert
 					Health 2000
 					WeaponRestrictions PrimaryOnly
@@ -1949,7 +1949,7 @@ WaveSchedule
 				{
 						Class Sniper
 					Name "Giant Flaming Burst Bowman"
-					ClassIcon sniper_bow_multi_fire_hel
+					ClassIcon sniper_bow_ignite_multi
 					Skill Expert
 					Health 2000
 					WeaponRestrictions PrimaryOnly
@@ -2052,7 +2052,7 @@ WaveSchedule
 				{
 					Class Sniper
 					Name "Giant Flaming Burst Bowman"
-					ClassIcon sniper_bow_multi_fire_hel
+					ClassIcon sniper_bow_ignite_multi
 					Skill Expert
 					Health 2000
 					WeaponRestrictions PrimaryOnly
@@ -4196,7 +4196,7 @@ WaveSchedule
 				{
 					Class Sniper
 					Name "Guardian of Storms"
-					ClassIcon sniper_bow_multi_fire_hel
+					ClassIcon sniper_bow_ignite_multi
 					Skill Expert
 					Health 10000
 					WeaponRestrictions PrimaryOnly
