@@ -23,7 +23,7 @@ Why_yes,_I_infact_DO_give_my_WaveSchedules_a_custom_name._How_could_you_tell?
 	// oh yeah since fuckmod is enabled it's time to do a miniscule amount of trolling
 	NoRomevisionCosmetics	1	[$SIGSEGV]
 	TextPrintTime			0	[$SIGSEGV]
-	BotsAreHumans        	1	[$SIGSEGV]
+	BotsAreHumans        	2	[$SIGSEGV]
 	ForceHoliday          	2	[$SIGSEGV]
 	NoThrillerTaunt			1	[$SIGSEGV]	// no more
 	NoCritPumpkin			1	[$SIGSEGV]
