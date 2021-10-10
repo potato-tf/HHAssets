@@ -30,4 +30,12 @@ Resources
 	"models/empty.phy"	"file"
 	"models/props_halloween/flask_tub.phy"	"file"
 	"models/workshop/player/items/demo/tw_sentrybuster/tw_sentrybuster.phy"	"file"
+	"models/workshop/weapons/c_models/c_nailgun/c_nailgun.dx80"	"file"
+	"models/workshop/weapons/c_models/c_nailgun/c_nailgun.dx90"	"file"
+	"models/workshop/weapons/c_models/c_nailgun/c_nailgun.mdl"	"file"
+	"models/workshop/weapons/c_models/c_nailgun/c_nailgun.phy"	"file"
+	"models/workshop/weapons/c_models/c_nailgun/c_nailgun.sw"	"file"
+	"models/workshop/weapons/c_models/c_nailgun/c_nailgun.vvd"	"file"
+	"materials/models/workshop/weapons/c_models/c_nailgun/c_nailgun.vmt"	"file"
+	"materials/models/workshop/weapons/c_models/c_nailgun/c_nailgun.vtf"	"file"
 }
