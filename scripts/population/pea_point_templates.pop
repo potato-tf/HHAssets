@@ -4,6 +4,84 @@ WaveSchedule
 {
 	PointTemplates [$SIGSEGV]
 	{
+		Push
+		{
+			OnSpawnOutput
+			{
+				Target push_red3
+				Action Kill
+				Delay 0.5
+			}
+			OnSpawnOutput
+			{
+				Target lightning_template_3x
+				Action ForceSpawnAtEntityOrigin
+				Param "spawnbot_frontline1"
+				Delay 0.5
+			}
+			OnSpawnOutput
+			{
+				Target lightning_template_3x
+				Action ForceSpawnAtEntityOrigin
+				Param "spawnbot_frontline2"
+				Delay 0.5
+			}
+			OnSpawnOutput
+			{
+				Target lightning_template_3x
+				Action ForceSpawnAtEntityOrigin
+				Param "spawnbot_frontline3"
+				Delay 0.5
+			}
+			trigger_catapult
+			{
+				"targetname" "push_red3"
+				"useThresholdCheck" "0"
+				"useExactVelocity" "1"
+				"upperThreshold" "0.30"
+				"StartDisabled" "0"
+				"spawnflags" "9"
+				"playerSpeed" "800"
+				"physicsSpeed" "900"
+				"onlyVelocityCheck" "0"
+				"lowerThreshold" "0.15"
+				"launchDirection" "-10 35 30"
+				"filtername" "filter_redteam"
+				"mins" "-50 -50 -50"
+				"maxs" "50 50 50"
+				"exactVelocityChoiceType" "0"
+				"entryAngleTolerance" "0.0"
+				"applyAngularImpulse" "0"
+				"AirCtrlSupressionTime" "1"
+			}
+		}
+		DemoknightName
+		{
+			OnSpawnOutput
+			{
+				Target !activator
+				Action AddOutput
+				Param "targetname demoknight_icon_visualizer"
+			}
+		}
+		PyroName
+		{
+			OnSpawnOutput
+			{
+				Target !activator
+				Action AddOutput
+				Param "targetname pyro_icon_visualizer"
+			}
+		}
+		SamuraiName
+		{
+			OnSpawnOutput
+			{
+				Target !activator
+				Action AddOutput
+				Param "targetname samurai_icon_visualizer"
+			}
+		}
 		WheelOfFate
 		{
 			NoFixup 1
@@ -222,6 +300,49 @@ WaveSchedule
 				"OnTrigger" "overlay*,StopOverlays,,0,-1"
 				"OnTrigger" "statue,Kill,,0,-1"
 			}
+			logic_relay
+			{
+				"targetname" "demoknight_support_icon_activate_relay"
+				"StartDisabled" "0"
+				"spawnflags" "0"
+				"OnTrigger" "spawnbot_demoknight_support_time,Enable,,0,-1"
+			}
+			logic_relay
+			{
+				"targetname" "pyro_support_icon_activate_relay"
+				"StartDisabled" "0"
+				"spawnflags" "0"
+				"OnTrigger" "spawnbot_pyro_support_time,Enable,,0,-1"
+			}
+			logic_relay
+			{
+				"targetname" "samurai_support_icon_activate_relay"
+				"StartDisabled" "0"
+				"spawnflags" "0"
+				"OnTrigger" "spawnbot_samurai_support_time,Enable,,0,-1"
+			}
+			logic_relay
+			{
+				"targetname" "deactivate_pyro_support_relay"
+				"StartDisabled" "0"
+				"spawnflags" "0"
+				"OnTrigger" "killallsupportpyros,Enable,,0,-1"
+				"OnTrigger" "killallsupportpyros,Disable,,0.5,-1"
+				"OnTrigger" "spawnbot_pyro_support_time,Disable,,0,-1"
+				"OnTrigger" "spawnbot_jeep_wave5support,Disable,,0,-1"
+				"OnTrigger" "pyro_icon_visualizer,$Suicide,,0.01,-1"
+			}
+			trigger_multiple
+			{
+				"targetname" "killallsupportpyros"
+				"wait" "0.01"
+				"StartDisabled" "1"
+				"spawnflags" "1"
+				"filtername" "filter_pyrosupport"
+				"mins" "-9000 -9000 -9000"
+				"maxs" "9000 9000 9000"
+				"OnStartTouch" "!activator,$Suicide,,0,-1"
+			}
 		}
 		CannonballAoE // bouncealot's revenge cannonball aoe
 		{
@@ -287,6 +408,20 @@ WaveSchedule
 				"target" "!activator"
 				"origin" "0 0 32"
 			}
+			trigger_hurt // prevent from blocking bouncealot with buildings
+			{
+			 	"StartDisabled" "0"
+				"targetname" "no_building1"
+				"spawnflags" "1088"
+			 	"mins" "-100 -100 -100"
+			 	"maxs" "100 100 100"
+				"filtername" "filter_vip"
+			 	"nodmgforce" "0"
+			 	"damagetype" "0"
+			 	"damagemodel" "0"
+			 	"damagecap" "0"
+			 	"damage" "1"
+			}
 		}
 		TeleportMe
 		{
@@ -305,6 +440,7 @@ WaveSchedule
 			 	"damagecap" "0"
 			 	"damage" "0"
 			 	"OnStartTouch" "teleport_me,Teleport,,0,-1"
+			 	"OnStartTouch" "no_building1,Kill,,0,-1"
 			}
 		}
 		Lightning // bouncealot's revenge stuff
@@ -404,7 +540,9 @@ WaveSchedule
 				"OnTrigger" "nofalldamage_effect_end,Enable,,0,-1"
 				"OnTrigger" "spawnbot_alley_bouncealot_support,Disable,,0,-1"
 				"OnTrigger" "killallbouncesupport,Enable,,0,-1"
-				"OnTrigger" "killallbouncesupport,Disable,,0.1,-1"
+				"OnTrigger" "killallbouncesupport,Disable,,0.5,-1"
+				"OnTrigger" "spawnbot_demoknight_support_time,Disable,,0,-1"
+				"OnTrigger" "demoknight_icon_visualizer,$Suicide,,0.01,-1"
 			}
 			trigger_add_or_remove_tf_player_attributes
 			{
@@ -459,11 +597,16 @@ WaveSchedule
 		}
 		bounce_annotation_template
 		{
-			NoFixup 1
 			OnSpawnOutput
 			{
 				Target bounce_alert
 				Action Show
+			}
+			OnSpawnOutput
+			{
+				Target push_red1
+				Action Kill
+				Delay 1
 			}
 			training_annotation
 			{
@@ -471,6 +614,27 @@ WaveSchedule
 				"parentname" "res"
 				"display_text" "Bouncealot is being resurrected!"
 				"lifetime" "3"
+			}
+			trigger_catapult
+			{
+				"targetname" "push_red1"
+				"useThresholdCheck" "0"
+				"useExactVelocity" "1"
+				"upperThreshold" "0.30"
+				"StartDisabled" "0"
+				"spawnflags" "9"
+				"playerSpeed" "800"
+				"physicsSpeed" "900"
+				"onlyVelocityCheck" "0"
+				"lowerThreshold" "0.15"
+				"launchDirection" "-10 35 30"
+				"filtername" "filter_redteam"
+				"mins" "-50 -50 -50"
+				"maxs" "50 50 50"
+				"exactVelocityChoiceType" "0"
+				"entryAngleTolerance" "0.0"
+				"applyAngularImpulse" "0"
+				"AirCtrlSupressionTime" "1"
 			}
 		}
 		lightning_template_3x
@@ -1827,10 +1991,22 @@ WaveSchedule
 			}
 			OnParentKilledOutput
 			{
+				Target "no_building2"
+				Action Enable
+				Delay 0.01
+			}
+			OnParentKilledOutput
+			{
 				Target "disappearer"
 				Action ForceSpawnAtEntityOrigin
 				Param "skull"
 				Delay 0.02
+			}
+			OnParentKilledOutput
+			{
+				Target "push_red2"
+				Action Enable
+				Delay 9
 			}
 			OnParentKilledOutput
 			{
@@ -1849,6 +2025,18 @@ WaveSchedule
 			{
 				Target "skull"
 				Action Kill
+				Delay 9.99
+			}
+			OnParentKilledOutput
+			{
+				Target "no_building2"
+				Action Kill
+				Delay 9.99
+			}
+			OnParentKilledOutput
+			{
+				Target "push_red2"
+				Action Disable
 				Delay 9.99
 			}
 			prop_dynamic
@@ -1888,6 +2076,41 @@ WaveSchedule
 				"pitch" "100"
 				"message" "misc/halloween/spell_lightning_ball_impact.wav"
 				"health" "1"
+			}
+			trigger_catapult
+			{
+				"targetname" "push_red2"
+				"useThresholdCheck" "0"
+				"useExactVelocity" "1"
+				"upperThreshold" "0.30"
+				"StartDisabled" "1"
+				"spawnflags" "9"
+				"playerSpeed" "800"
+				"physicsSpeed" "900"
+				"onlyVelocityCheck" "0"
+				"lowerThreshold" "0.15"
+				"launchDirection" "-10 35 30"
+				"filtername" "filter_redteam"
+				"mins" "-50 -50 -50"
+				"maxs" "50 50 50"
+				"exactVelocityChoiceType" "0"
+				"entryAngleTolerance" "0.0"
+				"applyAngularImpulse" "0"
+				"AirCtrlSupressionTime" "1"
+			}
+			trigger_hurt
+			{
+			 	"StartDisabled" "0"
+				"targetname" "no_building2"
+				"spawnflags" "1088"
+			 	"mins" "-100 -100 -100"
+			 	"maxs" "100 100 100"
+				"filtername" "filter_vip"
+			 	"nodmgforce" "0"
+			 	"damagetype" "0"
+			 	"damagemodel" "0"
+			 	"damagecap" "0"
+			 	"damage" "1"
 			}
 		}
 		disappear // w6 zombie giant stuff
@@ -2025,6 +2248,13 @@ WaveSchedule
 			{
 				"targetname" "filter_bouncesupportbot"
 				"tags" "bouncesupportbot"
+				"require_all_tags" "1"
+				"Negated" "0"
+			}
+			filter_tf_bot_has_tag
+			{
+				"targetname" "filter_pyrosupport"
+				"tags" "pyro_support"
 				"require_all_tags" "1"
 				"Negated" "0"
 			}

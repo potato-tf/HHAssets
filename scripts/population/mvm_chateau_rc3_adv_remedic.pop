@@ -100,9 +100,12 @@ population
 	{
 		ItemName "The Solemn Vow"
 		"add cond when active" 42
-		"dmg penalty vs nonburning" 0.75
-		"damage bonus vs burning" 0.75
-		"special item description" "When this weapon is out, you take 35% less damage, but also deal 25% less damage."
+		"damage penalty" 0
+		"melee bounds multiplier" 0
+		"stomp player time" 0.25
+		"stomp player damage" 5
+		"stomp player force" 10
+		"special item description" "When this weapon is out, you take 35% less damage, your attacks do no damage but touching enemies hurt them."
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
@@ -111,37 +114,27 @@ population
 		"dmg penalty vs nonburning" 1.35
 		"damage bonus vs burning" 1.35
 		"special item description" "Extremely sharp needle pierces through enemies and deals extra damage, but swing speed is heavily lowered."
-		"fire rate bonus" 2.33
-	}
-	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
-	{
-		ItemName "TF_WEAPON_SYRINGEGUN_MEDIC"
-		"minicritboost on kill" 1
+		"fire rate bonus" 1.75
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "The Kritzkrieg"
-		"special item description" "Doubled uber charge rate."
-        "ubercharge rate bonus" 2
-	}
-	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
-	{
-		ItemName "Upgradeable TF_WEAPON_SYRINGEGUN_MEDIC"
-		"minicritboost on kill" 1
+		"special item description" "Tripled uber charge rate."
+        "ubercharge rate bonus" 3
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "Festive Ubersaw"
 		"add uber charge on hit" 0.15
 		"damage bonus HIDDEN" 0.33
-		"special item description" "67% less damage and uber per hit."
+		"special item description" "67% less damage and 15% uber per hit."
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "The Ubersaw"
 		"add uber charge on hit" 0.15
 		"damage bonus HIDDEN" 0.33
-		"special item description" "67% less damage and uber per hit."
+		"special item description" "67% less damage and 15% uber per hit."
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
@@ -277,7 +270,7 @@ population
       NoFixup 1
 	  OnSpawnOutput
 	  {
-		  Target "blimpmodel"
+		  Target "blimpcollision"
 		  Action DisableCollision
 		  Delay 0.1
 	  }
@@ -306,19 +299,139 @@ population
         "skin" "2"
         "origin" "-2179 3821 -1250"
         "angles" "0 0 0"
-        "solid" "2"
+        "solid" "6"
 
         "StartDisabled" "1"
       }
+	  prop_dynamic
+      {
+		"targetname" "blimpcollision"
+        "origin" "-2081 3773 -1152"
+        "disableshadows" "1"
+        "rendermode" "10"
+        "renderfx" "6"
+        "solid" "2"
+        "model" "models/props_hydro/barrel_crate.mdl"
+      }
+	  prop_dynamic
+      {
+		"targetname" "blimpcollision"
+        "origin" "-2180 3774 -1152"
+        "disableshadows" "1"
+        "rendermode" "10"
+        "renderfx" "6"
+        "solid" "2"
+        "model" "models/props_hydro/barrel_crate.mdl"
+      }
+	  prop_dynamic
+      {
+		"targetname" "blimpcollision"
+        "origin" "-2278 3777 -1152"
+        "disableshadows" "1"
+        "rendermode" "10"
+        "renderfx" "6"
+        "solid" "2"
+        "model" "models/props_hydro/barrel_crate.mdl"
+      }
+	  prop_dynamic
+      {
+		"targetname" "blimpcollision"
+        "origin" "-2080 3773 -1270"
+        "disableshadows" "1"
+        "rendermode" "10"
+        "renderfx" "6"
+        "solid" "2"
+        "model" "models/props_hydro/barrel_crate.mdl"
+      }
+	  prop_dynamic
+      {
+		"targetname" "blimpcollision"
+        "origin" "-2179 3774 -1270"
+        "disableshadows" "1"
+        "rendermode" "10"
+        "renderfx" "6"
+        "solid" "2"
+        "model" "models/props_hydro/barrel_crate.mdl"
+      }
+	  prop_dynamic
+      {
+		"targetname" "blimpcollision"
+        "origin" "-2277 3777 -1270"
+        "disableshadows" "1"
+        "rendermode" "10"
+        "renderfx" "6"
+        "solid" "2"
+        "model" "models/props_hydro/barrel_crate.mdl"
+      }
 
+	  prop_dynamic
+      {
+		"targetname" "blimpcollision"
+        "origin" "-2079 3870 -1270"
+        "disableshadows" "1"
+        "rendermode" "10"
+        "renderfx" "6"
+        "solid" "2"
+        "model" "models/props_hydro/barrel_crate.mdl"
+      }
+	  prop_dynamic
+      {
+		"targetname" "blimpcollision"
+        "origin" "-2178 3871 -1270"
+        "disableshadows" "1"
+        "rendermode" "10"
+        "renderfx" "6"
+        "solid" "2"
+        "model" "models/props_hydro/barrel_crate.mdl"
+      }
+	  prop_dynamic
+      {
+		"targetname" "blimpcollision"
+        "origin" "-2276 3874 -1270"
+        "disableshadows" "1"
+        "rendermode" "10"
+        "renderfx" "6"
+        "solid" "2"
+        "model" "models/props_hydro/barrel_crate.mdl"
+      }
+	  prop_dynamic
+      {
+		"targetname" "blimpcollision"
+        "origin" "-2080 3870 -1152"
+        "disableshadows" "1"
+        "rendermode" "10"
+        "renderfx" "6"
+        "solid" "2"
+        "model" "models/props_hydro/barrel_crate.mdl"
+      }
+	  prop_dynamic
+      {
+		"targetname" "blimpcollision"
+        "origin" "-2179 3871 -1152"
+        "disableshadows" "1"
+        "rendermode" "10"
+        "renderfx" "6"
+        "solid" "2"
+        "model" "models/props_hydro/barrel_crate.mdl"
+      }
+	  prop_dynamic
+      {
+		"targetname" "blimpcollision"
+        "origin" "-2277 3874 -1152"
+        "disableshadows" "1"
+        "rendermode" "10"
+        "renderfx" "6"
+        "solid" "2"
+        "model" "models/props_hydro/barrel_crate.mdl"
+      }
       math_counter
       {
         "targetname" "amount_in_escape"
         "startvalue" "0"
         "min" "0"
         "max" "4"
-		
-		"OnHitMax" "blimp_end_relay,Trigger,,0,-1"
+		"OnHitMax" "red_checker,Trigger,,0,-1"
+		"OnHitMax" "blimp_end_relay,Trigger,,0.1,-1"
         //"OnHitMax" "win_bot,$Suicide,,0,-1"
       } 
 	  filter_multi
@@ -362,7 +475,7 @@ population
       {
         "targetname" "activate_blimp_escape"
         "OnTrigger" "blimpescapezone,Enable,,0,-1"
-		"OnTrigger" "blimpmodel,EnableCollision,,0,-1"
+		"OnTrigger" "blimpcollision,EnableCollision,,0,-1"
         "OnTrigger" "blimpmodel,Enable,,0,-1"
         "OnTrigger" "blimpstuckfix,Enable,,0,-1"
         "OnTrigger" "blimpstuckfix,Disable,,0.1,-1"
@@ -410,6 +523,18 @@ population
 		blimp_ending
 		{
 			NoFixup 1
+			filter_activator_tfteam
+            {
+                "TeamNum" "2"
+                "targetname" "filter_redteam_check"
+                "Negated" "Allow entities that match criteria"
+                "onpass" "!activator,addoutput,targetname red_player,0,-1"
+            }
+            logic_relay 
+            {
+                "targetname" "red_checker"
+                "OnTrigger" "filter_redteam_check,$TestEntity,player,0,-1"
+            }
 			filter_tf_bot_has_tag 
 	    	{
 	    		"targetname" "filter_blimpbot"
@@ -1318,11 +1443,11 @@ population
 		{
 			Name "Uber Armor"
 			Attribute "uber on damage taken"
-			Cap 0.35
+			Cap 0.25
 			playerupgrade 1
-			Increment 0.35
+			Increment 0.25
 			Cost 600
-			description "35% chance of being ubered for 3s when attacked"
+			description "25% chance of being ubered for 3s when attacked"
 		}
 		armorer
 		{
@@ -1723,15 +1848,19 @@ population
 		}
 		upgrade
 		{
-			Name "Longer Arm"
+			Name "Melee Enhancement"
 			Attribute "melee range multiplier"
 			Cap 2
 			Increment 0.5
-			description "Longer melee range and tiny bit more damage"
+			description "Longer melee range and more damage"
 			Cost 100
             AllowedWeapons // Restricts upgrade to specified weapons
 			{
 				Slot "Melee"
+			}
+			DisallowedWeapons // Disallow those weapons
+			{
+				ItemName "The Solemn Vow"
 			}
 			SecondaryAttributes
 			{
@@ -2060,7 +2189,6 @@ population
 					AddCond [$SIGSEGV] //Adds conditions to bots
 				    {
 					Name "TF_COND_REPROGRAMMED"
-					Delay 0.1
 				    }
 			}
 		}
@@ -2509,6 +2637,7 @@ population
 			Template	T_TFBot_Giant_Boxing_Heavy
 			Name "Giant Brawler Zombie"
 			Usehumanmodel 1
+			action Mobber
 			item "zombie heavy"
 			tag no_reprogram
 			CharacterAttributes
@@ -2689,7 +2818,6 @@ population
 					AddCond [$SIGSEGV] //Adds conditions to bots
 				    {
 					Name "TF_COND_REPROGRAMMED"
-					Delay 0.1
 				    }
 			}
 		}
@@ -4390,7 +4518,6 @@ population
 					AddCond [$SIGSEGV] //Adds conditions to bots
 				    {
 					Name "TF_COND_REPROGRAMMED"
-					Delay 0.1
 				    }
 			}
 		}
@@ -4480,7 +4607,6 @@ population
 					AddCond [$SIGSEGV] //Adds conditions to bots
 				    {
 					Name "TF_COND_REPROGRAMMED"
-					Delay 0.1
 				    }
 			}
 		}
@@ -5179,7 +5305,6 @@ population
 					AddCond [$SIGSEGV] //Adds conditions to bots
 				    {
 					Name "TF_COND_REPROGRAMMED"
-					Delay 0.1
 				    }
 			}
 		}
@@ -6080,7 +6205,7 @@ population
       MaxActive 1
       SpawnCount 1
       WaitBetweenSpawns 0
-      WaitBeforeStarting 60
+      WaitBeforeStarting 5
       TotalCurrency 0
 	  FirstSpawnMessage "{blue}The Blimp has arrived!{green} AT LEAST 4{blue} people must be on board. Run to point C!"
 	  FirstSpawnOutput
@@ -6163,7 +6288,6 @@ population
 					AddCond [$SIGSEGV] //Adds conditions to bots
 				    {
 					Name "TF_COND_REPROGRAMMED"
-					Delay 0.1
 				    }
 			}
 			}
@@ -6186,12 +6310,11 @@ population
 			AddCond [$SIGSEGV] //Adds conditions to bots
 				    {
 					Name "TF_COND_REPROGRAMMED"
-					Delay 0.1
 				    }
 					classicon red2_lite
 					CharacterAttributes
 					{
-					"damage bonus" 0.5
+					"damage bonus" 0.9
 					}
 			}
 		}

@@ -41,7 +41,6 @@ Effort
     PrecacheSound "music/vlvx_song4_cmprsd.mp3"
     PrecacheSound "music/vlvx_song23ambient_cmprsd.mp3"
     PrecacheSound "music/vlvx_song25_cmprsd.mp3"
-    
     //one item (#1) 
     ItemAttributes 
 	{
@@ -92,7 +91,6 @@ Effort
         ItemName "The B.A.S.E. Jumper"
         "dmg taken from blast reduced" 0.65
         "increased air control" 4
-        "air dash count" 1
     }
     //one item (#6)
     ItemAttributes
@@ -187,7 +185,6 @@ Effort
         "dmg pierces resists absorbs" 1
         "can headshot" 1
         "revolver use hit locations" 1
-        "add cond when active" 72
     }
     //one item (#13)
     ItemAttributes
@@ -1910,7 +1907,6 @@ Effort
                     {
                         ItemName "TF_WEAPON_REVOLVER"
                         "hand scale" 1.5
-                        "dmg pierces resists absorbs" 1
                         "override projectile type" 2
                         "fire rate penalty" 2
                         "faster reload rate" 1.4
@@ -2464,7 +2460,7 @@ Effort
         {
             Line "{FFC144}Something {B266FF}seeks to draw you in to the underworld."
             Line "{B266FF}Allow yourself to be {white}conveyed {B266FF}and you'll have the opportunity to take down one of hell's {FFC144}most prominent lieutenants."
-            Line "{B266FF}But be wary, there's {999900}something in the air {B266FF}down there. If you take too long to kill the hellish beast, you'll become {red}one of them."
+            Line "{B266FF}But be wary, there's {999900}something in the air {B266FF}down there. If you take too long to kill the brute, you'll become {red}one of them."
         }
         StartWaveOutput
         {
@@ -2503,9 +2499,17 @@ Effort
                         Attributes SuppressFire
                         Attributes IgnoreFlag
                         Scale 0.01
-                        Health 247
+                        Health 268
                         Attributes UseBossHealthBar
-
+                        FireInput [$SIGSEGV] 
+			            {
+			            	Target "!activator" //Entity name to use
+			            	Action "$TakeDamage" //Input to fire
+			            	Param "1" //Parameter to use
+			            	Delay 1 //Delay before firing the input
+			            	Cooldown 1 //Cooldown between firing the input
+			            	Repeats 0 //How many times should the input be fired
+			            }
                         CharacterAttributes
                         {
                             "dmg taken from blast reduced" 0
@@ -2517,7 +2521,7 @@ Effort
                             "cancel falling damage" 1
                             "increased jump height" 0.1
                             "no_jump" 1
-                            "health regen" -1
+                            //"health regen" -1
                         }
                     }
                 }
@@ -2911,8 +2915,8 @@ Effort
             ClassIcon sniper_bow_multi
 			Item "The Huntsman"
 			Skill Expert
-			Health 220000
-			Scale 18
+			Health 160000
+			Scale 15
 			ExtAttr IgnoreBuildings
 			Attributes UseBossHealthBar
 			Attributes MiniBoss
@@ -2934,7 +2938,7 @@ Effort
                 ItemName "TF_WEAPON_SMG"
                 "override projectile type" 2
                 "clip size upgrade atomic" 10
-                "damage bonus" 5
+                "damage bonus" 15
                 "no damage falloff" 1
                 "custom projectile model" "models/weapons/w_models/w_rocketbullet.mdl"
                 "projectile trail particle" "rockettrail_airstrike_line"
@@ -2961,6 +2965,14 @@ Effort
                 Action "PickRandomShuffle"
                 Delay 8
                 Cooldown 2.96
+                Repeats 0
+            } 
+            FireInput 
+            {
+                Target "choose_colossus_location"
+                Action "PickRandom"
+                Delay 45
+                Cooldown 30
                 Repeats 0
             } 
             FireWeapon [$SIGSEGV]  //Periodically fires weapon
@@ -2992,7 +3004,7 @@ Effort
 				Delay 0 //Delay before firing the input
 				Cooldown 1 //Cooldown between firing the input
 				Repeats 1 //How many times should the input be fired
-				IfHealthBelow 150000 //When set, the task activates only when the bot health is below specified value
+				IfHealthBelow 120000 //When set, the task activates only when the bot health is below specified value
 			}
             FireInput [$SIGSEGV] 
 			{
@@ -3002,7 +3014,7 @@ Effort
 				Delay 0 //Delay before firing the input
 				Cooldown 1 //Cooldown between firing the input
 				Repeats 1 //How many times should the input be fired
-				IfHealthBelow 100000 //When set, the task activates only when the bot health is below specified value
+				IfHealthBelow 80000 //When set, the task activates only when the bot health is below specified value
 			}
             FireInput [$SIGSEGV] 
 			{
@@ -3012,7 +3024,7 @@ Effort
 				Delay 0 //Delay before firing the input
 				Cooldown 1 //Cooldown between firing the input
 				Repeats 1 //How many times should the input be fired
-				IfHealthBelow 50000 //When set, the task activates only when the bot health is below specified value
+				IfHealthBelow 40000 //When set, the task activates only when the bot health is below specified value
 			}
             EventChangeAttributes
             {
@@ -3028,7 +3040,6 @@ Effort
 			        	ItemName    "The Spooky Sleeves"
 			        	Model models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl
 			        }
-                    //UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
                 }
                 StageThree
                 {
@@ -4115,32 +4126,32 @@ Effort
 				"message" "Left Click to Fire | Right Click to Swap Weapons"
 			}
 			// main logic
-			trigger_multiple
-			{
-				"targetname" "launchertrigger"
-				"parentname" "launchertrain"
-				"origin" "0 0 8"
-				"mins" "-32 -32 -8"
-				"maxs" "32 32 8"
-				"filtername" "filter_red*"
-				"spawnflags" "1"
-				
-				"OnStartTouch" "!self,Disable,,0,-1"
-                "OnStartTouch" "!activator,$AddCond,51,0,-1"
-				"OnStartTouch" "!activator,AddOutput,targetname inlauncher,0,-1"
-				"OnStartTouch" "launchermove,SetMeasureTarget,inlauncher,0.01,-1"
-				"OnStartTouch" "launcherui,Activate,,0,-1"
-				"OnStartTouch" "launchercam,Enable,,0,-1"
-				"OnStartTouch" "launcherbuildingmaker,ForceSpawn,,0,-1"
-				"OnStartTouch" "launcherprop_wep,Enable,,0,-1"
-				"OnStartTouch" "launcherparticle,Start,,0,-1"
-				"OnStartTouch" "!activator,SetModelScale,0.0001,0,-1"
-				"OnStartTouch" "classfilters,TestActivator,,0,-1"
-				"OnStartTouch" "launchershoot,$setowner,!activator,0,-1"
-				"OnStartTouch" "minimimic,$setowner,!activator,0,-1"
-				"OnStartTouch" "spawnsound,PlaySound,,0,-1"
-				"OnStartTouch" "launcherinfo,Display,,0,-1"
-			}
+			//trigger_multiple
+			//{
+			//	"targetname" "launchertrigger"
+			//	"parentname" "launchertrain"
+			//	"origin" "0 0 8"
+			//	"mins" "-32 -32 -8"
+			//	"maxs" "32 32 8"
+			//	"filtername" "filter_red*"
+			//	"spawnflags" "1"
+			//	
+			//	"OnStartTouch" "!self,Disable,,0,-1"
+            //    "OnStartTouch" "!activator,$AddCond,51,0,-1"
+			//	"OnStartTouch" "!activator,AddOutput,targetname inlauncher,0,-1"
+			//	"OnStartTouch" "launchermove,SetMeasureTarget,inlauncher,0.01,-1"
+			//	"OnStartTouch" "launcherui,Activate,,0,-1"
+			//	"OnStartTouch" "launchercam,Enable,,0,-1"
+			//	"OnStartTouch" "launcherbuildingmaker,ForceSpawn,,0,-1"
+			//	"OnStartTouch" "launcherprop_wep,Enable,,0,-1"
+			//	"OnStartTouch" "launcherparticle,Start,,0,-1"
+			//	"OnStartTouch" "!activator,SetModelScale,0.0001,0,-1"
+			//	"OnStartTouch" "classfilters,TestActivator,,0,-1"
+			//	"OnStartTouch" "launchershoot,$setowner,!activator,0,-1"
+			//	"OnStartTouch" "minimimic,$setowner,!activator,0,-1"
+			//	"OnStartTouch" "spawnsound,PlaySound,,0,-1"
+			//	"OnStartTouch" "launcherinfo,Display,,0,-1"
+			//}
 			//trigger_multiple
 			//{
 			//	"targetname" "launchertrigger"
@@ -4720,6 +4731,30 @@ Effort
             }
             logic_relay
             {
+                "targetname" "underworld_loottest_relay"
+                "OnTrigger" "underworld_hurt_zone,Disable,,0,-1"
+                "OnTrigger" "yea room,Disable,,0,-1"
+                "OnTrigger" "yea room finale,Enable,,0,-1"
+                "OnTrigger" "island_door_fx,Enable,,0,-1"
+                "OnTrigger" "teleport_loot,Enable,,0,-1"
+                "OnTrigger" "clearbuildings_trigger,Enable,,3,-1"
+                "OnTrigger" "trigger_add_tf_player_condition,Disable,,0,-1"
+                "OnTrigger" "env_soundscape,Disable,,0,-1"
+                "OnTrigger" "spawnbot_underworld*,Enable,,0,-1"
+                "OnTrigger" "intel*,Kill,,0.01,-1"
+                "OnTrigger" "underworld_main_spawn_trigger,Disable,,0,-1"
+                "OnTrigger" "underworld_loot_spawn_trigger,Disable,,0,-1"
+                //"OnTrigger" "finale_suspense_music,PlaySound,,0,-1"
+                //"OnTrigger" "finale_suspense_music,Volume,0,28,-1"
+                //"OnTrigger" "finale_music,PlaySound,,30,-1"
+                //"OnTrigger" "underworld_gatehouse_open,PlaySound,,4,-1"
+                //"OnTrigger" "underworld_sfx_shake,StartShake,,4,-1"
+                //"OnTrigger"
+                //"OnTrigger"
+                //"OnTrigger"
+            }
+            logic_relay
+            {
                 "targetname" "underworld_loot_relay"
                 "OnTrigger" "gamerules,SetRedTeamRespawnWaveTime,3,0,-1"
                 "OnTrigger" "underworld_hurt_zone,Disable,,0,-1"
@@ -4793,21 +4828,172 @@ Effort
 				"tags" "bot_colossus"
 				"targetname" "filter_colossus"
 			}
+            info_particle_system
+            {
+                "targetname" "teleport_particle_arrive"
+                "effect_name" "doomsday_tentpole_vanish01"
+                "flag_as_weather" "0"
+                "start_active" "0"
+            }
+            info_particle_system
+            {
+                "targetname" "teleport_particle_depart"
+                "effect_name" "doomsday_tentpole_vanish01"
+                "flag_as_weather" "0"
+                "start_active" "0"
+            }
+            info_particle_system
+            {
+                "targetname" "teleport_particle_preteleport"
+                "effect_name" "merasmus_spawn"
+                "flag_as_weather" "0"
+                "start_active" "0"
+            }
+            
+            
+            logic_relay
+            {
+                "targetname" "colossus_teleport_relay"
+                "ontrigger" "teleport_particle_preteleport,$TeleportToEntity,colossus_target2*,0,-1"
+                "ontrigger" "teleport_particle_preteleport,start,0.01,-1"
+                "ontrigger" "teleport_particle_depart,$TeleportToEntity,colossus_target*,0.59,-1"
+                "ontrigger" "teleport_particle_arrive,$TeleportToEntity,colossus_target*,0.62,-1"
+                //"ontrigger" "colossus_tele_startsound*,PlaySound,,0,-1"
+                //"ontrigger" "colossus_tele_startsound*,StopSound,,1,-1"
+                "ontrigger" "colossus_tele_endsound*,PlaySound,,0,-1"
+                "ontrigger" "colossus_tele_endsound*,StopSound,,4,-1"
+                "ontrigger" "teleport_particle_depart,Start,,0.6,-1"
+                "ontrigger" "choose_colossus_location,PickRandom,,0.61,-1"
+                "ontrigger" "teleport_particle_arrive,Start,,0.63,-1"
+                
+                "ontrigger" "teleport_particle_depart,Stop,,6,-1"
+                "ontrigger" "teleport_particle_arrive,Stop,,6.02,-1"
+                "ontrigger" "teleport_particle_preteleport,Stop,,4.02,-1"
+               // "ontrigger" "player,$DisplayTextChat,teleported,1,-1"
+            }
+            math_counter
+			{
+				"targetname" "colossus_location_state"
+				"startvalue" "1"
+				"min"        "1"
+				"max"        "3"
+				
+				"OutValue" "colossus_location_compare,SetValueCompare,,0,-1"
+                //"OutValue" "player,$DisplayTextChat,,0,-1"
+			}
+            logic_compare
+            {
+                "targetname"    "colossus_location_compare"
+                "InitialValue"  "1"
+                "CompareValue"  "1"
+
+                "OnEqualTo" "choose_colossus_location,PickRandom,,0,-1"
+                "OnNotEqualTo" "colossus_location_state,Disable,,0,-1"
+                "OnNotEqualTo" "colossus_location_state,Enable,,5,-1"
+                "OnNotEqualTo" "colossus_teleport_relay,Trigger,,0,-1"
+                "OnNotEqualTo" "change_colossus_location,InValue,,0.6,-1"
+                "OnNotEqualTo" "!self,SetCompareValue,,0,-1"
+            }
+            logic_case
+            {
+                "targetname" "change_colossus_location"
+                
+                "Case01" "1"
+                "Case02" "2"
+                "Case03" "3"
+
+                "OnCase01" "teleport_colossus1,Enable,,0,-1"
+                "OnCase01" "teleport_colossus2,Disable,,0,-1"
+                "OnCase01" "teleport_colossus3,Disable,,0,-1"
+                "OnCase02" "teleport_colossus1,Disable,,0,-1"
+                "OnCase02" "teleport_colossus2,Enable,,0,-1"
+                "OnCase02" "teleport_colossus3,Disable,,0,-1"
+                "OnCase03" "teleport_colossus1,Disable,,0,-1"
+                "OnCase03" "teleport_colossus2,Disable,,0,-1"
+                "OnCase03" "teleport_colossus3,Enable,,0,-1"
+            }
+            logic_case
+            {
+                "targetname" "choose_colossus_location"
+                "OnCase01" "colossus_location_state,SetValue,1,0,-1"
+                "OnCase02" "colossus_location_state,SetValue,2,0,-1"
+                "OnCase03" "colossus_location_state,SetValue,3,0,-1"
+            }
             info_target
             {
-                "targetname" "colossus_telehere"
+                "targetname" "colossus_telehere1"
                 "angles" "0 140 0"
-                "origin" "367 712 -10637"
-                //"origin" "833 675 -10637"
-                //"origin" "-407 4942 -10637"
-                //"origin" "-1492 5106 -9961"
-                //"origin" "49 5454 -9839"
+                "origin" "348 205 -10637"
+            }
+            
+            //prop_dynamic
+			//{
+			//	"targetname" "pre_teleport_prop1"
+			//	"disableshadows" "1"
+			//	"model" "models/props_lakeside_event/wof_plane2.mdl"
+            //    "modelscale" "1.2"
+            //    "origin" "348 205 -10437"
+            //    "angles" "0 0 -90"
+			//}
+            info_target
+            {
+                "targetname" "colossus_telehere2"
+                "angles" "0 140 0"
+                "origin" "381 -1582 -10637"
+            }
+            //prop_dynamic
+			//{
+			//	"targetname" "pre_teleport_prop2"
+			//	"disableshadows" "1"
+			//	"model" "models/props_lakeside_event/wof_plane2.mdl"
+            //    "modelscale" "1.2"
+            //    "origin" "381 -1582 -10437"
+            //    "angles" "0 0 -90"
+			//}
+            info_target
+            {
+                "targetname" "colossus_telehere3"
+                "angles" "0 140 0"
+                "origin" "-313 4906 -10637"
+            }
+            //prop_dynamic
+			//{
+			//	"targetname" "pre_teleport_prop3"
+			//	"disableshadows" "1"
+			//	"model" "models/props_lakeside_event/wof_plane2.mdl"
+            //    "modelscale" "1.2"
+            //    "origin" "-313 4906 -10437"
+            //    "angles" "0 0 -90"
+			//}
+            trigger_teleport
+            {
+                "targetname" "teleport_colossus1"
+	            "target" "colossus_telehere1"
+	            "StartDisabled" "0"
+	            "spawnflags" "1"
+                "landmark" "!activator"
+	            "origin" "-64 -1408 -4000"
+                "mins" "-9999 -9999 -29999"
+                "maxs" "9999 9999 19999"
+	            "filtername" "filter_colossus"
             }
             trigger_teleport
             {
-                "targetname" "teleport_colossus"
-	            "target" "colossus_telehere"
-	            "StartDisabled" "0"
+                "targetname" "teleport_colossus2"
+	            "target" "colossus_telehere2"
+	            "StartDisabled" "1"
+	            "spawnflags" "1"
+                "landmark" "!activator"
+	            "origin" "-64 -1408 -4000"
+                "mins" "-9999 -9999 -29999"
+                "maxs" "9999 9999 19999"
+	            "filtername" "filter_colossus"
+            }
+            trigger_teleport
+            {
+                "targetname" "teleport_colossus3"
+	            "target" "colossus_telehere3"
+	            "StartDisabled" "1"
 	            "spawnflags" "1"
                 "landmark" "!activator"
 	            "origin" "-64 -1408 -4000"
@@ -4845,6 +5031,22 @@ Effort
 	            "origin" "288 4200 -10228"
                 "mins" "-56 -24 -84"
                 "maxs" "56 24 84"
+	            "filtername" "filter_redteam"
+                "OnTrigger" "!activator,$AddCond,56,0,-1"
+                "OnTrigger" "!activator,$AddCond,57,0,-1"
+                "OnTrigger" "!activator,$AddCond,73,0,-1"
+                "OnTrigger" "!activator,$RemoveCond,56,10,-1"
+                "OnTrigger" "!activator,$RemoveCond,57,10,-1"
+                "OnTrigger" "!activator,$RemoveCond,73,1,-1"
+            }
+            trigger_multiple
+            {
+                "targetname" "yea room finale"
+	            "StartDisabled" "1"
+	            "spawnflags" "1"
+	            "origin" "360 -2248 -10328"
+                "mins" "-56 -40 -80"
+                "maxs" "56 40 80"
 	            "filtername" "filter_redteam"
                 "OnTrigger" "!activator,$AddCond,56,0,-1"
                 "OnTrigger" "!activator,$AddCond,57,0,-1"
@@ -5057,10 +5259,10 @@ Effort
                 "OnTrigger" "player,$ForceRespawnDead,,0,-1"
                 "OnTrigger" "player,SetHudVisibility,0,0,-1"
 
-                "Ontrigger" "cameratrain_loot,Speed,150,0.2,-1"
+                "Ontrigger" "cameratrain_loot,Speed,1,0.2,-1"
                 "Ontrigger" "cameratrain_loot,StartForward,,0,-1"
                 "OnTrigger" "camera_loot,$EnableAll,,0.001,-1"
-
+                "OnTrigger" "redplayer,$TeleportToEntity,teleport_capzone_failsafe_destination,2.49,-1"
                 "OnTrigger" "camera_merasmus,$EnableAll,,2.5,-1"
                 "OnTrigger" "cameratrain_loot,Speed,20,2.5,-1"
                 "OnTrigger" "booth_sound,PlaySound,,2.5,-1"
@@ -5156,6 +5358,66 @@ Effort
                 Target "!activator"
                 Action SetDamageFilter
                 Param "filter_drown"
+            }
+            OnSpawnOutput
+			{
+				Target "colossus_target"
+				Action SetParent
+				Param "!activator"
+				Delay 0.01
+			}
+            info_target
+            {
+                "targetname" "colossus_target"
+            }
+            info_target
+            {
+                "targetname" "colossus_target2"
+                "origin" "0 0 800"
+            }
+            ambient_generic
+            {
+                "targetname" "colossus_tele_endsound"
+                "health"     "7"
+                "message"    "misc\halloween\merasmus_disappear.wav"
+                "pitch"      "100"
+                "pitchstart" "100"
+                "radius"     "24000"
+                "spawnflags" "48"
+                "origin" "0 0 800"
+            }
+            ambient_generic
+            {
+                "targetname" "colossus_tele_endsound"
+                "health"     "7"
+                "message"    "\misc\halloween\merasmus_disappear.wav"
+                "pitch"      "100"
+                "pitchstart" "100"
+                "radius"     "24000"
+                "spawnflags" "48"
+                "origin" "0 0 800"
+            }
+            ambient_generic
+            {
+                "targetname" "colossus_tele_startsound"
+                "health"     "7"
+                "message"    "weapons\physcannon\physcannon_charge.wav"
+                "pitch"      "100"
+                "pitchstart" "100"
+                "radius"     "24000"
+                "spawnflags" "48"
+                "origin" "0 0 800"
+            }
+            ambient_generic
+            {
+                "targetname" "colossus_tele_startsound"
+                "health"     "7"
+                "message"    "weapons\physcannon\physcannon_charge.wav"
+                "pitch"      "100"
+                "pitchstart" "100"
+                "radius"     "24000"
+                "spawnflags" "48"
+                "origin" "0 0 800"
             }
         }
         bumpercar_logic
@@ -6405,7 +6667,8 @@ Effort
             logic_relay
             {
                 "targetname" "crystal_reset_relay"
-                "OnTrigger" "crystal_teamflag,ForceResetSilent,,50,-1"
+                "OnTrigger" "crystal_teamflag,ForceResetSilent,,30,-1"
+                "OnTrigger" "crystalresetsign,Show,,30,-1"
             }
             training_annotation
             {
@@ -6418,7 +6681,7 @@ Effort
             {
               "targetname"   "crystalsign"
               "display_text" "Bring the crystal to the booth for a ride in the spectral gun!"
-              "lifetime"     "12"
+              "lifetime"     "20"
               "origin" "551 7386 -10041"   
             }
 			item_teamflag
@@ -6445,6 +6708,12 @@ Effort
                 "OnReturn" "crystal_reset_relay,CancelPending,,0,-1"
                 "OnReturn" "crystalresetsign,Show,,0,-1"
 			}
+            tf_glow
+            {
+                "targetname" "crystal_glow"
+                "GlowColor" "178 102 255 205"
+	            "target" "crystal_prop"
+            }  
             prop_dynamic
             {
 				"origin" "124 1677 -10374"
@@ -6512,7 +6781,22 @@ Effort
 				"OnStartTouchFlag" "crystal_teamflag,ForceResetAndDisableSilent,,0,-1"
 				"OnStartTouchFlag" "crystal_particle,Stop,,0,-1"
                 "OnStartTouchFlag" "crystal_prop,Disable,,0,-1"
+                //"OnStartTouchFlag" "!activator,$DisplayTextChat,yourethecapper,0,-1"
                 "OnStartTouchFlag" "crystalinfo,Disable,,0,-1"
+                
+                "OnStartTouchFlag" "!activator,$AddCond,51,0.1,-1"
+                "OnStartTouchFlag" "!activator,AddOutput,targetname inlauncher,0.1,-1"
+                "OnStartTouchFlag" "launchermove*,SetMeasureTarget,inlauncher,0.11,-1"
+                "OnStartTouchFlag" "launcherui*,Activate,,0.1,-1"
+                "OnStartTouchFlag" "launchercam*,Enable,,0.1,-1"
+                "OnStartTouchFlag" "launcherbuildingmaker*,ForceSpawn,,0.1,-1"
+                "OnStartTouchFlag" "launcherprop_wep*,Enable,,0.1,-1"
+                "OnStartTouchFlag" "launcherparticle*,Start,,0.1,-1"
+                "OnStartTouchFlag" "!activator,SetModelScale,0.1001,0,-1"
+                "OnStartTouchFlag" "classfilters*,TestActivator,,0.1,-1"
+                "OnStartTouchFlag" "launcherofftele*,Teleport,,0.1,-1"
+                "OnStartTouchFlag" "launchershoot*,$setowner,!activator,0.1,-1"
+                "OnStartTouchFlag" "minimimic*,$setowner,!activator,0.1,-1"
 			}
             info_particle_system
             {
@@ -6688,8 +6972,8 @@ Effort
                 "OnTrigger" "attack_transition,Trigger,,0,-1"
                 "OnTrigger" "templatekiller_relay,Disable,,0.01,-1"
                 "OnTrigger" "!activator,$AddItemAttribute,arrow hit kill time|0.1|0,0.01,-1"
-                "OnTrigger" "!activator,$AddItemAttribute,mult projectile count|5|0,0.01,-1"
-                "OnTrigger" "!activator,$AddItemAttribute,projectile spread angle penalty|6|0,0.01,-1"
+                "OnTrigger" "!activator,$AddItemAttribute,mult projectile count|10|0,0.01,-1"
+                "OnTrigger" "!activator,$AddItemAttribute,projectile spread angle penalty|10|0,0.01,-1"
                 "OnTrigger" "!activator,$AddItemAttribute,projectile trail particle|superrare_greenenergy|0,0.01,-1"
             }
             logic_relay
@@ -6938,7 +7222,7 @@ Effort
                 "OnTrigger" "colossus_death_prop_cosmetic,addoutput,rendermode 0,0,-1"
                 "OnTrigger" "colossus_death_prop,setplaybackrate,0.2,7,-1"
                 "OnTrigger" "colossus_death_prop,setplaybackrate,0,8,-1"
-                "OnTrigger" "redplayer,$TeleportToEntity,teleport_capzone_failsafe_destination,5.99,-1"
+                "OnTrigger" "redplayer,$TeleportToEntity,teleport_capzone_failsafe_destination,0.1,-1"
                 "OnTrigger" "camera_boss_death,$DisableAll,,6,-1"
                 "OnTrigger" "fadein_finale,Fade,,4.5,-1"
                 "OnTrigger" "underworld_sfx_shake,StartShake,,4.5,-1"

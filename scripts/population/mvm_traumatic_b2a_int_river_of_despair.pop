@@ -777,6 +777,7 @@ ZombieSchedule
 					"damage penalty" 0.5
 					"apply z velocity on damage" 100
 					"apply look velocity on damage" 180
+					"paintkit_proto_def_index" 285
 				}
 				
 				CharacterAttributes

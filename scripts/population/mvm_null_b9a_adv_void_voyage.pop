@@ -1544,6 +1544,72 @@ WaveSchedule
 	Mission
 	{
 		Objective Engineer
+		InitialCooldown 0
+		Where spawnbot_demoknight_support_time
+		BeginAtWave 5
+		RunForThisManyWaves 1
+		CooldownTime 0
+		DesiredCount 1
+		TFBot
+		{
+			Class Scout
+			Scale 0.00001
+			ClassIcon demoknight
+			SpawnTemplate DemoknightName [$SIGSEGV]
+			Action Idle [$SIGSEGV]
+			CharacterAttributes
+			{
+				"move speed bonus" 0
+			}
+		}
+	}
+	Mission
+	{
+		Objective Engineer
+		InitialCooldown 0
+		Where spawnbot_pyro_support_time
+		BeginAtWave 5
+		RunForThisManyWaves 1
+		CooldownTime 0
+		DesiredCount 1
+		TFBot
+		{
+			Class Scout
+			Scale 0.00001
+			ClassIcon pyro
+			SpawnTemplate PyroName [$SIGSEGV]
+			Action Idle [$SIGSEGV]
+			CharacterAttributes
+			{
+				"move speed bonus" 0
+			}
+		}
+	}
+	Mission
+	{
+		Objective Engineer
+		InitialCooldown 0
+		Where spawnbot_samurai_support_time
+		BeginAtWave 5
+		RunForThisManyWaves 1
+		CooldownTime 0
+		DesiredCount 1
+		TFBot
+		{
+			Class Scout
+			Scale 0.00001
+			ClassIcon demoknight_samurai
+			SpawnTemplate SamuraiName [$SIGSEGV]
+			Action Idle [$SIGSEGV]
+			CharacterAttributes
+			{
+				"move speed bonus" 0
+			}
+		}
+	}
+	Mission
+	{
+		Objective Engineer
 		InitialCooldown 45
 		Where spawnbot
 		BeginAtWave 5
@@ -2710,11 +2776,22 @@ WaveSchedule
 			WaitBetweenSpawns 10
 			TotalCurrency 0
 			Support 1
-			TFBot
+			FirstSpawnOutput
 			{
-				Template T_TFBot_Demoman_Knight
-				Item "The Glasgow Great Helm"
-				Tag bouncesupportbot
+				Target demoknight_support_icon_activate_relay
+				Action Trigger
+			}
+			RandomChoice
+			{
+				Squad
+				{
+					TFBot
+					{
+						Template T_TFBot_Demoman_Knight
+						Item "The Glasgow Great Helm"
+						Tag bouncesupportbot
+					}
+				}
 			}
 		}
 		WaveSpawn
@@ -2797,10 +2874,22 @@ WaveSchedule
 			WaitBetweenSpawns 20
 			TotalCurrency 100
 			Support 1
-			TFBot
+			FirstSpawnOutput
 			{
-				Class Pyro
-				Skill Easy
+				Target pyro_support_icon_activate_relay
+				Action Trigger
+			}
+			RandomChoice
+			{
+				Squad
+				{
+					TFBot
+					{
+						Class Pyro
+						Skill Easy
+						Tag pyro_support
+					}
+				}
 			}
 		}
 		WaveSpawn
@@ -2961,6 +3050,17 @@ WaveSchedule
 		}
 		WaveSpawn
 		{
+			Name "EndPyroSupport"
+			WaitForAllDead "W5-AllGiantsDead"
+			Support Limited
+			FirstSpawnOutput
+			{
+				Target deactivate_pyro_support_relay
+				Action Trigger
+			}
+		}
+		WaveSpawn
+		{
 			Name "LIGHTNING"
 			WaitForAllDead "W5-AllGiantsDead"
 			WaitBeforeStarting 9
@@ -3004,36 +3104,47 @@ WaveSchedule
 			WaitBetweenSpawns 0
 			TotalCurrency 0
 			Support 1
-			TFBot
+			FirstSpawnOutput
 			{
-				Class Demoman
-				Name "Undead Samurai Demo"
-				ClassIcon demoknight_samurai
-				Skill Expert
-				Item "The Half-Zatoichi"
-				Item "The Splendid Screen"
-				ItemAttributes
+				Target samurai_support_icon_activate_relay
+				Action Trigger
+			}
+			RandomChoice
+			{
+				Squad
 				{
-					ItemName "The Splendid Screen"
-					"Attack not cancel charge" 1
-				}
-				Item "The Glasgow Great Helm"
-				Item "Zombie Demo"
-				UseHumanModel 1 [$SIGSEGV]
-				Scale "1.3"
-				Health 650
-				WeaponRestrictions MeleeOnly
-				Attributes AirChargeOnly
-				Attributes AutoJump
-				Action Mobber [$SIGSEGV]
-				AutoJumpMin 4
-				AutoJumpMax 4
-				CharacterAttributes
-				{
-					"charge time increased" 6
-					"charge recharge rate increased" 7
-					"increased jump height" 2.3
-					"bot custom jump particle"	1
+					TFBot
+					{
+						Class Demoman
+						Name "Undead Samurai Demo"
+						ClassIcon demoknight_samurai
+						Skill Expert
+						Item "The Half-Zatoichi"
+						Item "The Splendid Screen"
+						ItemAttributes
+						{
+							ItemName "The Splendid Screen"
+							"Attack not cancel charge" 1
+						}
+						Item "The Glasgow Great Helm"
+						Item "Zombie Demo"
+						UseHumanModel 1 [$SIGSEGV]
+						Scale "1.3"
+						Health 650
+						WeaponRestrictions MeleeOnly
+						Attributes AirChargeOnly
+						Attributes AutoJump
+						Action Mobber [$SIGSEGV]
+						AutoJumpMin 4
+						AutoJumpMax 4
+						CharacterAttributes
+						{
+							"charge time increased" 6
+							"charge recharge rate increased" 7
+							"increased jump height" 2.3
+							"bot custom jump particle"	1
+						}
+					}
 				}
 			}
 		}
@@ -4045,6 +4156,45 @@ WaveSchedule
 		{
 			Name "W6-P5"
 			Where spawnbot_frontline1
+			WaitForAllDead "W6-P5-BEGIN"
+			WaitBeforeStarting 2.5
+			Support Limited
+			PointTemplate [$SIGSEGV]
+			{
+				SpawnAtEntity Where
+				Name "Push"
+			}
+		}
+		WaveSpawn
+		{
+			Name "W6-P5"
+			Where spawnbot_frontline2
+			WaitForAllDead "W6-P5-BEGIN"
+			WaitBeforeStarting 4.5
+			Support Limited
+			PointTemplate [$SIGSEGV]
+			{
+				SpawnAtEntity Where
+				Name "Push"
+			}
+		}
+		WaveSpawn
+		{
+			Name "W6-P5"
+			Where spawnbot_frontline3
+			WaitForAllDead "W6-P5-BEGIN"
+			WaitBeforeStarting 6.5
+			Support Limited
+			PointTemplate [$SIGSEGV]
+			{
+				SpawnAtEntity Where
+				Name "Push"
+			}
+		}
+		WaveSpawn
+		{
+			Name "W6-P5"
+			Where spawnbot_frontline1
 			SpawnCount 1
 			MaxActive 1
 			TotalCount 1
@@ -4124,6 +4274,33 @@ WaveSchedule
         X "-3600"       
         Y "-2854"                  
         Z "-220"        
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_demoknight_support_time"
+		StartDisabled 1
+        TeamNum 3
+        X "-4032"
+        Y "-3056"                  
+        Z "-15.9954"       
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_pyro_support_time"
+		StartDisabled 1
+        TeamNum 3
+        X "-4032"
+        Y "-3056"                  
+        Z "-15.9954"     
+    }
+	ExtraSpawnPoint [$SIGSEGV]
+    {
+        Name "spawnbot_samurai_support_time"
+		StartDisabled 1
+        TeamNum 3
+        X "-4032"
+        Y "-3056"                  
+        Z "-15.9954"     
     }
 	ExtraSpawnPoint [$SIGSEGV]
     {

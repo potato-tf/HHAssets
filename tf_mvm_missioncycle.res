@@ -41,8 +41,8 @@
 		}
 		"8"
 		{
-			"map"		"mvm_heatrock_rc5"
-			"popfile"		"mvm_heatrock_rc5"
+			"map"		"mvm_heatrock_rc6a"
+			"popfile"		"mvm_heatrock_rc6a"
 		}
 		"9"
 		{

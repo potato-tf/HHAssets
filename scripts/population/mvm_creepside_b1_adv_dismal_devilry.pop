@@ -69,7 +69,7 @@ WaveSchedule
     PrecacheSound "grayworker_sounds/flechette_explode1.wav"
     PrecacheSound "music/vlvx_song23.mp3"
     PrecacheSound "penulti_cmprsd.mp3" 
-    PrecacheSound "music/lastlegs_cmprsd.mp3"	
+    PrecacheSound "music/lastlegs_alt_cmprsd.mp3"	
     SpellBookRareRoll [$SIGSEGV]
 	{
 		"Meteor Shower" 1
@@ -77,6 +77,10 @@ WaveSchedule
         "Minify" 1
 		"Summon Skeletons" 2
 	}
+    PlayerAttributes
+    {
+        "add cond on kill" 39
+    }
     //one item (#1) 
     ItemAttributes 
 	{
@@ -111,7 +115,7 @@ WaveSchedule
         "Projectile speed increased" 0.2
         "fire rate bonus hidden" 2
         "damage penalty" 1
-        "damage bonus hidden" 2
+        "CARD: damage bonus" 2
         "clip size bonus" .25
         "projectile acceleration" 5000
         "projectile acceleration time" .1
@@ -126,13 +130,13 @@ WaveSchedule
         ItemName "The B.A.S.E. Jumper"
         "dmg taken from blast reduced" 0.65
         "increased air control" 4
-        "air dash count" 1
     }
+    
     //one item (#6)
     ItemAttributes
     {
         ItemName "The Gunboats"
-        "max health additive bonus" 50
+        "max health additive bonus" 25
         "deploy time decreased" 0.35
         "rocket jump damage reduction" .05
         "cancel falling damage" 2
@@ -277,11 +281,11 @@ WaveSchedule
 		Name "gunslinger_buff"
 		ItemName "The Gunslinger"
 	}
-    PlayerItemEquipSpawnTemplate
-	{
-		Name "gunslinger_buff_fix"
-		ClassName "tf_weapon_wrench"
-	}
+    //PlayerItemEquipSpawnTemplate
+	//{
+	//	Name "gunslinger_buff_fix"
+	//	ClassName "tf_weapon_wrench"
+	//}
     //PlayerItemEquipSpawnTemplate
 	//{
 	//	Name "not_gunslinger"
@@ -2809,7 +2813,7 @@ WaveSchedule
             DoneOutput
             {
                 Target grybot_end_relay
-                Action Enable
+                Action Trigger
             }
         }
 
@@ -3021,11 +3025,11 @@ WaveSchedule
         {
             Name "w5_a"
             Where spawnbot_all
-            TotalCount 12
+            TotalCount 6
             MaxActive 3
             SpawnCount 1
             WaitBeforeStarting 1.5
-            WaitBetweenSpawns 4
+            WaitBetweenSpawns 10
             TotalCurrency 110
         
             TFBot
@@ -3047,7 +3051,7 @@ WaveSchedule
             MaxActive 3
             SpawnCount 1
             WaitBeforeStarting 1
-            WaitBetweenSpawns 9
+            WaitBetweenSpawns 12
             TotalCurrency 110
         
             TFBot
@@ -7441,7 +7445,7 @@ WaveSchedule
             {
                 "targetname" "wave7_c_music"            
                 "health"     "7"
-                "message"    "#lastlegs_cmprsd.mp3"
+                "message"    "#lastlegs_alt_cmprsd.mp3"
                 "pitch"      "100"
                 "pitchstart" "100"
                 "radius"     "200000"
@@ -7452,7 +7456,7 @@ WaveSchedule
             {
                 "targetname" "wave7_c_music"            
                 "health"     "7"
-                "message"    "#lastlegs_cmprsd.mp3"
+                "message"    "#lastlegs_alt_cmprsd.mp3"
                 "pitch"      "100"
                 "pitchstart" "100"
                 "radius"     "200000"
@@ -9348,23 +9352,21 @@ WaveSchedule
             RemoveIfKilled "rpg_template_aliveness"
 		}
         playerweapon_fix
-		{  
-			NoFixup 1
+		{
             OnSpawnOutput
 			{
-				Target "regenerate"
-				Action Kill
-				Delay 0.01
+				Target "!activator"
+				Action "$Regenerate"
 			}
-			trigger_multiple
-			{
-				"targetname" "regenerate"
-				"spawnflags"      "1"
-				"mins"            "-2 -2 -2"
-				"maxs"            "2 2 2"
-                "OnTrigger" "!activator,$Regenerate,,0,-1"
-			}
+            OnSpawnOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "CARD: damage bonus|2"
+	    		Delay 0.1
+	    	}
 		}
+        
         tosser_glitch_fix
         {
             NoFixup 1
@@ -15623,12 +15625,26 @@ WaveSchedule
         gunslinger_buff_fix
         {
             OnSpawnOutput
-            {
-                Target "!activator"
-                Action "$RemoveCond"
-                Param "131"
-                Delay 0.125
-            }
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "damage bonus|0"
+	    		Delay 0.1
+	    	}
+            OnSpawnOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "damage bonus|1"
+	    		Delay 0.1
+	    	}
+            OnSpawnOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "damage bonus|2"
+	    		Delay 0.1
+	    	}
         }
         gunslinger_buff
         {   
@@ -15636,91 +15652,109 @@ WaveSchedule
             {
                 Target "pistol_checker"
 	        	Action "Trigger"
-	        	Delay 0.12
-            }
-            OnSpawnOutput
-            {
-                Target "slinger_checker"
-                Action "Trigger"
-                Delay 0.12
-            }
-            OnSpawnOutput
-            {
-                Target "!activator"
-                Action "$AddCond"
-                Param "131"
-                Delay 0.1
-            }
-            OnSpawnOutput
-            {
-                Target "give_damage"
-                Action Trigger
-                Delay 0.1
+	        	Delay 0.1
             }
             OnParentKilledOutput
 	    	{
 	    		Target "!activator"
 	    		Action "$RemoveItemAttribute"
                 Param "damage bonus|0"
-	    		//Delay 0.1
+	    		Delay 0.1
 	    	}
             OnParentKilledOutput 
 	    	{
 	    		Target "!activator"
 	    		Action "$RemoveItemAttribute"
                 Param "damage bonus|1"
-	    		//Delay 0.1
+	    		Delay 0.1
 	    	}
             OnParentKilledOutput 
 	    	{
 	    		Target "!activator"
 	    		Action "$RemoveItemAttribute"
                 Param "damage bonus|2"
-	    		//Delay 0.1
+	    		Delay 0.1
 	    	}
+
   	    	filter_tf_condition
 	    	{
 	    		"targetname" "filter_has_pistol"
 	    		"Negated" "0"
 	    		"condition" "130"
 
-                //"OnPass" "!activator,$AddItemAttribute,damage bonus|1.85|0,0,-1" 
-                //"OnPass" "!activator,$RemoveItemAttribute,damage bonus|1,0,-1" //no pistol damage bonus
-                //"OnPass" "!activator,$AddItemAttribute,damage bonus|2|2,0,-1"
-                //"OnFail" "!activator,$AddItemAttribute,damage bonus|1.85|0,0,-1"
+                "OnPass" "!activator,$AddItemAttribute,damage bonus|1.85|0,0,-1"
+                //"OnPass" "!activator,$AddItemAttribute,damage bonus|1|1,0,-1" //no pistol damage bonus
+                "OnPass" "!activator,$AddItemAttribute,damage bonus|2|2,0,-1"
+                "OnFail" "!activator,$AddItemAttribute,damage bonus|1.85|0,0,-1"
                 "OnFail" "!activator,$AddItemAttribute,damage bonus|1.85|1,0,-1"
-                //"OnFail" "!activator,$AddItemAttribute,damage bonus|2|2,0,-1"
+                "OnFail" "!activator,$AddItemAttribute,damage bonus|2|2,0,-1"
 	    	}
-  	    	filter_tf_condition
-	    	{
-	    		"targetname" "filter_has_slinger"
-	    		"Negated" "0"
-	    		"condition" "131"
-
-                "OnFail" "!activator,$RemoveItemAttribute,damage bonus|0,0,-1"
-                "OnFail" "!activator,$RemoveItemAttribute,damage bonus|1,0,-1"
-                "OnFail" "!activator,$RemoveItemAttribute,damage bonus|2,0,-1"
-                "OnFail" "slinger_checker,Kill,,0.1,-1"
-	    	}
+    
             logic_relay
-            {
-                "targetname" "give_damage"
-                "OnTrigger" "!activator,$AddItemAttribute,damage bonus|1.85|0,0,-1"
-                "OnTrigger" "!activator,$AddItemAttribute,damage bonus|1.85|1,0,-1"
-                "OnTrigger" "!activator,$AddItemAttribute,damage bonus|2|2,0,-1"
-            }
-            logic_relay 
             {
               "targetname" "pistol_checker"
               "OnTrigger" "filter_has_pistol,TestActivator,!activator,0,-1"
-            }
-            logic_relay
-            {
-                "targetname" "slinger_checker"
-                "spawnflags" "2"
-                "OnTrigger" "filter_has_slinger,TestActivator,!activator,0,-1"
-                "OnTrigger" "!self,Trigger,,0.1,-1"
-            } 	
+            } 
+
+            //Made by Lite
+
+            OnParentKilledOutput
+			{
+				Target "gunslingercounter"
+				Action Subtract
+				Param 1
+			}
+			OnSpawnOutput
+			{
+				Target "gunslingercounter"
+				Action Add
+				Param 1
+			}
+			OnParentKilledOutput
+			{
+				Target "switchofffix"
+				Action cancelpending
+				Delay 0.01
+			}
+			OnSpawnOutput
+			{
+				Target "switchofffix"
+				Action Trigger
+			}
+			logic_relay
+			{
+				"targetname" "switchofffix"
+				"ontrigger" "@c@!activator,use,,0.02,-1"
+			}
+			OnSpawnOutput
+			{
+				Target "disablenbuild"
+				Action trigger
+			}
+			func_nobuild
+			{
+				"targetname" "nbuild"
+				"mins" "-96 -96 -150"
+				"maxs" "96 96 96"
+				"teamnum" "2"
+				"allowdispenser" "1"
+				"allowteleporters" "1"
+			}
+			trigger_multiple
+			{
+				"targetname" "buildbot"
+				"mins" "-96 -96 -96"
+				"maxs" "96 96 96"
+				"startdisabled" "1"
+				"filtername" "filter_red_sentrygun"
+				"spawnflags" "64"
+				"onstarttouch" "!activator,kill,,0,-1"
+				"onstarttouch" "spawnredbot,forcespawnatentityorigin,!activator,0,-1"
+				"onstarttouch" "spawnbot_build,enable,,0,-1"
+				"onstarttouch" "sentrygun_teleparticle,start,,0.01,-1"
+				"onstarttouch" "sentrygun_teleparticle,fireuser1,,0.01,-1"
+				"onstarttouch" "sentrygun_point,kill,,0,-1"
+			}
         }
         pistol_equipped
         {
@@ -15736,8 +15770,7 @@ WaveSchedule
                 Target "!activator"
 	        	Action "$AddCond"
                 Param "130"
-	        	Delay 0.1
-            }
+            } 
         }
         prevent_redbotbuilding // Made by lite
 		{
@@ -15790,12 +15823,6 @@ WaveSchedule
 		}
 		redbotbuilding_gunslinger // Made by lite
 		{
-            OnSpawnOutput
-            {
-                Target "!activator"
-                Action AddOutput
-                Param "targetname bot_owner"
-            }
 			OnParentKilledOutput
 			{
 				Target "gunslingercounter"
@@ -15954,12 +15981,6 @@ WaveSchedule
 		}
 		builtbot // Made by lite
 		{
-            OnSpawnOutput
-            {
-                Target "!activator"
-                Action "$SetOwner"
-                Param "bot_owner"
-            }
 			OnSpawnOutput
 			{
 				Target "builtbotcounter"
@@ -16342,11 +16363,11 @@ WaveSchedule
     }
     SpawnTemplate "potiontosser_logic"
     SpawnTemplate Widowmaker_Dudebro_Logic
-    PlayerItemEquipSpawnTemplate
-	{
-		Name "redbotbuilding_gunslinger"
-		ItemName "The Gunslinger"
-	}
+    //PlayerItemEquipSpawnTemplate
+	//{
+	//	Name "redbotbuilding_gunslinger"
+	//	ItemName "The Gunslinger"
+	//}
 	PlayerSpawnTemplate
 	{
 		Name "prevent_redbotbuilding"
