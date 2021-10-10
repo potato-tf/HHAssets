@@ -33,6 +33,7 @@ WaveSchedule
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl"  
 	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl"  
 	PrecacheModel "models/bots/boss_bot/boss_tank_color.mdl"  
+	PrecacheModel "models/props_frontline/tank_turret.mdl"  
 	ExtraTankPath   //Rocket Blimp
     {
         Name blimp_rocket
