@@ -498,7 +498,7 @@ population
 			WaitForAllSpawned	1
 			TFBot
 			{
-                        ClassIcon scout_bat
+                        ClassIcon scout_giant
 				WeaponRestrictions	MeleeOnly
 				Name	"Giant Bat Scout"
 				Template	T_TFBot_Giant_Scout
