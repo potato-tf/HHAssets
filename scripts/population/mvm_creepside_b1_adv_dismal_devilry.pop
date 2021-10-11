@@ -77,10 +77,6 @@ WaveSchedule
         "Minify" 1
 		"Summon Skeletons" 2
 	}
-    PlayerAttributes
-    {
-        "add cond on kill" 39
-    }
     //one item (#1) 
     ItemAttributes 
 	{
@@ -8561,8 +8557,8 @@ WaveSchedule
 		
 		VacTankFilters
 		{
+            NoFixup 1
 			//// BULLET ////
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "2097154"
@@ -8672,10 +8668,10 @@ WaveSchedule
 			{
 				"targetname" "filter_bullet_sub2"
 				"Filter01" "filter_bullet6"
-				"Filter02" "filter_bullet7"
-				"Filter03" "filter_bullet8"
-				"Filter04" "filter_bullet9"
-				"Filter05" "filter_bullet10"
+				//"Filter01" "filter_bullet7"
+				"Filter02" "filter_bullet8"
+				"Filter03" "filter_bullet9"
+				"Filter04" "filter_bullet10"
 			}
 			filter_multi
 			{
@@ -8697,77 +8693,67 @@ WaveSchedule
 
 			//// BLAST ////
 
-			NoFixup 1
+			
 			filter_damage_type
 			{
 				"damagetype" "2359360"
 				"Negated" "1"
 				"targetname" "filter_blast1"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "3407936"
 				"Negated" "1"
 				"targetname" "filter_blast2"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "20185152"
 				"Negated" "1"
 				"targetname" "filter_blast3"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "262208"
 				"Negated" "1"
 				"targetname" "filter_blast4"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "1310784"
 				"Negated" "1"
 				"targetname" "filter_blast5"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "2490432"
 				"Negated" "1"
 				"targetname" "filter_blast6"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "3539008"
 				"Negated" "1"
 				"targetname" "filter_blast7"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "17039362"
 				"Negated" "1"
 				"targetname" "filter_blast8"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "18087938"
 				"Negated" "1"
 				"targetname" "filter_blast9"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "00240040"
 				"Negated" "1"
 				"targetname" "filter_blast10"
 			}
-			NoFixup 1
 			filter_multi
 			{
 				"targetname" "filter_blast_sub1"
@@ -8777,7 +8763,6 @@ WaveSchedule
 				"Filter04" "filter_blast4"
 				"Filter05" "filter_blast5"
 			}
-			NoFixup 1
 			filter_multi
 			{
 				"targetname" "filter_blast_sub2"
@@ -8787,60 +8772,51 @@ WaveSchedule
 				"Filter04" "filter_blast9"
 				"Filter05" "filter_blast10"
 			}
-			NoFixup 1
 			filter_multi
 			{
 				"targetname" "filter_blast"
 				"Filter01" "filter_blast_sub1"
 				"Filter02" "filter_blast_sub2"
 			}
-
+            
 			//// FIRE ////
 
-			NoFixup 1
 			filter_damage_type
 			{
-                "damagetype" "01000800"
 				"damagetype" "16779264"
 				"Negated" "1"
 				"targetname" "filter_fire1"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "17827840"
 				"Negated" "1"
 				"targetname" "filter_fire2"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "19005440"
 				"Negated" "1"
 				"targetname" "filter_fire3"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "20054016"
 				"Negated" "1"
 				"targetname" "filter_fire4"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "16777218"
 				"Negated" "1"
 				"targetname" "filter_fire5"
 			}
-			NoFixup 1
 			filter_damage_type
 			{
 				"damagetype" "17825794"
 				"Negated" "1"
 				"targetname" "filter_fire6"
 			}
-			NoFixup 1
 			filter_multi
 			{
 				"targetname" "filter_fire_sub1"
@@ -8850,7 +8826,6 @@ WaveSchedule
 				"Filter04" "filter_fire4"
 				"Filter05" "filter_fire5"
 			}
-			NoFixup 1
 			filter_multi
 			{
 				"targetname" "filter_fire"
