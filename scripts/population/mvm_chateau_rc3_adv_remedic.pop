@@ -100,21 +100,22 @@ population
 	{
 		ItemName "The Solemn Vow"
 		"add cond when active" 42
+		"maxammo primary reduced" 0
+		"mod max primary clip override" 0
 		"damage penalty" 0
-		"melee bounds multiplier" 0
-		"stomp player time" 0.25
-		"stomp player damage" 5
+		"stomp player time" 0.2
+		"stomp player damage" 15
 		"stomp player force" 10
-		"special item description" "When this weapon is out, you take 35% less damage, your attacks do no damage but touching enemies hurt them."
+		"special item description" "When this weapon is out, you take 35% less damage, your attacks do no damage but touching enemies hurt them. -100% max ammo on primaries."
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "The Vita-Saw"
 		"melee cleave attack" 1
-		"dmg penalty vs nonburning" 1.35
-		"damage bonus vs burning" 1.35
+		"dmg penalty vs nonburning" 1.25
+		"damage bonus vs burning" 1.25
 		"special item description" "Extremely sharp needle pierces through enemies and deals extra damage, but swing speed is heavily lowered."
-		"fire rate bonus" 1.75
+		"fire rate penalty" 1.7
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
@@ -500,8 +501,8 @@ population
 				"modelscale" "1.8"
 				"renderfx" "0"
 				"rendermode" "0"
-				"skin" "1"
-				"model" "models/bots/engineer/bot_engineer.mdl"
+				"skin" "4"
+				"model" "models/player/engineer.mdl"
                 //"DefaultAnim" "competitive_loserstate_idle"
                     //PRIMARY_stun_begin
                     //PRIMARY_stun_middle
@@ -517,7 +518,7 @@ population
 				"spawnflags" "256"
                 "skin" "1"
 				"initialowner" "root_prop"
-				"model" "models/player/items/pyro/pyro_zombie.mdl"
+				"model" "models/player/items/engineer/engineer_zombie.mdl"
 			}
         }
 		blimp_ending
@@ -589,9 +590,9 @@ population
 				"targetname" "blimp_end_relay"
 				"OnTrigger" "ending_music,PlaySound,,0,-1"
 				"OnTrigger" "blimpmodel,Disable,,0,-1"
-				"OnTrigger" "blimpmodel,DisableCollision,,0,-1"
+				"OnTrigger" "blimpcollision,DisableCollision,,0,-1"
 				"OnTrigger" "blimpmodel_ending,Enable,,0,-1"
-				"OnTrigger" "blimp_tracktrain,SetSpeed,0.75,0,-1"
+				"OnTrigger" "blimp_tracktrain,SetSpeed,1,0,-1"
 				"OnTrigger" "camera_blimp,$EnableAll,,0,-1"
 				"OnTrigger" "root_prop*,Enable,,8.1,-1"
 				"OnTrigger" "root_prop,SetAnimation,competitive_loserstate_idle,8.1,0,-1"
@@ -6205,7 +6206,7 @@ population
       MaxActive 1
       SpawnCount 1
       WaitBetweenSpawns 0
-      WaitBeforeStarting 5
+      WaitBeforeStarting 60
       TotalCurrency 0
 	  FirstSpawnMessage "{blue}The Blimp has arrived!{green} AT LEAST 4{blue} people must be on board. Run to point C!"
 	  FirstSpawnOutput

@@ -302,11 +302,24 @@ WaveSchedule
 				"condition" "134"
 				"Negated" "0"
 			}
+			filter_activator_name
+			{
+				"targetname" "filter_lacks_in_spawn_targetname"
+				"filtername" "in_spawn"
+				"Negated" "1"
+			}
+			filter_activator_name
+			{
+				"targetname" "filter_lacks_blu_robot_targetname"
+				"filtername" "blu_robot"
+				"Negated" "1"
+			}
 			filter_multi
 			{
 				"targetname" "filter_blueteam_in_spawn"
 				"Negated" "0"
 				"filtertype" "0"
+				"Filter03" "filter_lacks_in_spawn_targetname"
 				"Filter02" "filter_in_spawn"
 				"Filter01" "filter_blueteam"
 			}
@@ -315,6 +328,7 @@ WaveSchedule
 				"targetname" "filter_blueteam_not_in_spawn"
 				"Negated" "0"
 				"filtertype" "0"
+				"Filter03" "filter_lacks_blu_robot_targetname"
 				"Filter02" "filter_not_in_spawn"
 				"Filter01" "filter_blueteam"
 			}
@@ -760,7 +774,7 @@ WaveSchedule
 				"OnCase08" "move_control,AddOutput,refiretime 3.75,0,-1"
 				"OnCase08" "babyfaceblaster_dissipation_info,AddOutput,message Decay rate - 3.75s,0,-1"
 				"OnCase09" "move_control,AddOutput,refiretime 4,0,-1"
-				"OnCase09" "babyfaceblaster_dissipation_info,AddOutput,message Decay rate - 4ss,0,-1"
+				"OnCase09" "babyfaceblaster_dissipation_info,AddOutput,message Decay rate - 4s,0,-1"
 				"OnCase10" "move_control,AddOutput,refiretime 4.25,0,-1"
 				"OnCase10" "babyfaceblaster_dissipation_info,AddOutput,message Decay rate - 4.25s,0,-1"
 				"OnCase11" "move_control,AddOutput,refiretime 4.5,0,-1"
@@ -1004,11 +1018,13 @@ WaveSchedule
 				"OnTrigger" "!parent,$AddItemAttribute,disable weapon switch|1|0,0,-1"
 				"OnTrigger" "!parent,$AddItemAttribute,override projectile type extra|mechanicalarmorb|0,0,-1"
 				"OnTrigger" "!parent,$AddItemAttribute,mult projectile count|5|0,0,-1"
+				"OnTrigger" "!parent,$AddItemAttribute,projectile speed decreased|0.7|0,0,-1"
 				"OnTrigger" "!parent,$AddCond,32 0.01,0,-1"
 				"OnTrigger" "!parent,$RemoveCond,0,0,-1"
 				"OnTrigger" "!parent,$RemoveItemAttribute,disable weapon switch|0,2.1,-1"
 				"OnTrigger" "!parent,$RemoveItemAttribute,override projectile type extra|0,2.1,-1"
 				"OnTrigger" "!parent,$RemoveItemAttribute,mult projectile count|0,2.1,-1"
+				"OnTrigger" "!parent,$RemoveItemAttribute,projectile speed decreased|0,2.1,-1"
 			}
 		}
 		AirStrike_BlastJumping
@@ -1155,6 +1171,16 @@ WaveSchedule
 		{
 			OnSpawnOutput
 			{
+				Target vitasaw_info
+				Action FireUser1
+			}
+			OnSpawnOutput
+			{
+				Target vitasaw_info_name
+				Action Display
+			}
+			OnSpawnOutput
+			{
 				Target zombie_spawnpoint
 				Action Disable
 			}
@@ -1186,12 +1212,57 @@ WaveSchedule
 			logic_case
 			{
 				"targetname" "hit_count"
+				"Case07" "0"
+				"Case06" "1"
+				"Case05" "2"
+				"Case04" "3"
+				"Case03" "4"
+				"Case02" "5"
 				"Case01" "6"
 				"OnCase01" "zombie_spawnpoint,Enable,,0,-1"
 				"OnCase01" "spawnbot_zombie,Enable,,0,-1"
 				"OnCase01" "zombie_spawnpoint,Disable,0.01,0,-1"
 				"OnCase01" "spawnbot_zombie,Disable,,0.01,-1"
 				"OnCase01" "how_many_hits,SetValue,0,0,-1"
+				"OnCase01" "vitasaw_info,AddOutput,message [IIIIII],0,-1"
+				"OnCase02" "vitasaw_info,AddOutput,message [IIIII-],0,-1"
+				"OnCase03" "vitasaw_info,AddOutput,message [IIII--],0,-1"
+				"OnCase04" "vitasaw_info,AddOutput,message [III---],0,-1"
+				"OnCase05" "vitasaw_info,AddOutput,message [II----],0,-1"
+				"OnCase06" "vitasaw_info,AddOutput,message [I-----],0,-1"
+				"OnCase07" "vitasaw_info,AddOutput,message [------],0,-1"
+			}
+			game_text
+			{
+				"channel" "2"
+				"color" "200 50 0"
+				"effect" "0"
+				"fadein" "0"
+				"fadeout" "0"
+				"fxtime" "0.25"
+				"message" "ZOMBIE METER"
+				"holdtime" "9999999999"
+				"spawnflags" "0"
+				"targetname" "vitasaw_info_name"
+				"x" "0.65"
+				"y" "0.88"
+			}
+			game_text
+			{
+				"channel" "1"
+				"color" "200 50 0"
+				"effect" "0"
+				"fadein" "0"
+				"fadeout" "0"
+				"fxtime" "0.25"
+				"message" "[------]"
+				"holdtime" "9999999999"
+				"spawnflags" "0"
+				"targetname" "vitasaw_info"
+				"x" "0.683"
+				"y" "0.92"
+				"OnUser1" "!self,Display,,0,-1"
+				"OnUser1" "!self,FireUser1,,0.01,-1"
 			}
 		}
 	}
@@ -1384,7 +1455,7 @@ WaveSchedule
 			MaxActive 2
 			TotalCount 2
 			WaitForAllSpawned "W1B-1"
-			WaitBeforeStarting 10
+			WaitBeforeStarting 0
 			WaitBetweenSpawns 0
 			TotalCurrency 200
 			TFBot
@@ -1403,7 +1474,7 @@ WaveSchedule
 				}
 				CharacterAttributes
 				{
-					"move speed bonus"	0.5
+					"move speed bonus" 0.5
 					"damage force reduction" 0.4
 					"airblast vulnerability multiplier" 0.4
 					"override footstep sound set" 4
@@ -1630,7 +1701,7 @@ WaveSchedule
 			TotalCount 6
 			WaitForAllDead "W2B-2"
 			WaitBeforeStarting 5
-			WaitBetweenSpawns 30
+			WaitBetweenSpawns 20
 			TotalCurrency 125
 			Squad
 			{
@@ -1991,7 +2062,7 @@ WaveSchedule
 			TotalCount 16
 			WaitForAllDead "W4D"
 			WaitBeforeStarting 0
-			WaitBetweenSpawns 2
+			WaitBetweenSpawns 1.5
 			TotalCurrency 75
 			TFBot
 			{
@@ -2051,7 +2122,7 @@ WaveSchedule
 			TotalCount 16
 			WaitForAllSpawned "W4E-1"
 			WaitBeforeStarting 5
-			WaitBetweenSpawns 2
+			WaitBetweenSpawns 1.5
 			TotalCurrency 75
 			TFBot
 			{
@@ -2197,8 +2268,8 @@ WaveSchedule
 			MaxActive 6
 			TotalCount 21
 			WaitForAllDead "W5A"
-			WaitBeforeStarting 9
-			WaitBetweenSpawns 18
+			WaitBeforeStarting 8
+			WaitBetweenSpawns 16
 			TotalCurrency 100
 			TFBot
 			{
@@ -2214,8 +2285,8 @@ WaveSchedule
 			MaxActive 8
 			TotalCount 32
 			WaitForAllDead "W5A"
-			WaitBeforeStarting 18
-			WaitBetweenSpawns 18
+			WaitBeforeStarting 16
+			WaitBetweenSpawns 16
 			TotalCurrency 150
 			TFBot
 			{
