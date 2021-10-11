@@ -1126,7 +1126,9 @@ WaveSchedule
 				ClassIcon scout_giant_fast
 				Item "Bonk Boy"
 				Attributes	AlwaysCrit
-
+				Health 200
+				Scale 1.35
+				
 				CharacterAttributes
 				{
 					"move speed bonus"	2
@@ -1719,12 +1721,16 @@ WaveSchedule
 				Item	"The Phlogistinator"
 				Name	"Alien Body Burner"
 				Attributes	SpawnWithFullCharge
-
-
+				Attributes IgnoreFlag
+				Action Mobber	
+				AlwaysGlow 1
+				ExtAttr AlwaysFireWeaponAlt [$SIGSEGV]
+				
 				ItemAttributes
 				{
 					ItemName	"The Phlogistinator"
 					"airblast disabled" 0
+					"damage bonus" 1.25
 				}	
 				
 				CharacterAttributes
@@ -2228,14 +2234,28 @@ WaveSchedule
 		
 		WaveSpawn
 		{
+			Name	SaucerSpawnEnabler
+			Support	1
+			WaitBeforeStarting	1
+			WaitBetweenSpawns	9999999
+		
+			FirstSpawnOutput
+			{
+				Target saucer_airraid_relay				
+				Action Trigger
+			}	
+		}
+		
+		WaveSpawn
+		{
 			Name	wave7a
 			TotalCurrency	100
 			TotalCount	1
 			MaxActive	1
 			SpawnCount	1
-			WaitBeforeStarting	10
+			WaitBeforeStarting	7
 			WaitBetweenSpawns	5
-			Where	spawnbot
+			Where	spawnbot_aerial
 			FirstSpawnWarningSound "npc\stalker\go_alert2.wav"
 			
 			DoneOutput
@@ -2291,6 +2311,7 @@ WaveSchedule
 					"override footstep sound set" 3
 					"airblast vertical vulnerability multiplier" 0.1
 					"rage giving scale"	0.25
+					"cancel falling damage" 1
 				}
 			}
 		}
