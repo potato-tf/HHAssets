@@ -96,7 +96,7 @@ Effort
     ItemAttributes
     {
         ItemName "The Gunboats"
-        "max health additive bonus" 50
+        "max health additive bonus" 25
         "deploy time decreased" 0.35
         "rocket jump damage reduction" .05
         "cancel falling damage" 2
@@ -2456,6 +2456,10 @@ Effort
     {
         SpawnTemplate "crystalcapture"
         SpawnTemplate "finale_logic"
+        PlayerAttributes
+        {
+            "damage force increase hidden" 0.1
+        }
         Explanation
         {
             Line "{FFC144}Something {B266FF}seeks to draw you in to the underworld."
@@ -3272,6 +3276,7 @@ Effort
                 "move speed bonus" 0.7
                 "voice pitch scale" 0
                 "no_jump" 1
+                "not solid to players" 1
                 //"attach particle effect" 3013
 			}
             CustomWeaponModel
@@ -3299,6 +3304,7 @@ Effort
                 "move speed bonus" 0.7
                 "voice pitch scale" 0
                 "no_jump" 1
+                "not solid to players" 1
                 //"attach particle effect" 3013
 			}
             CustomWeaponModel
@@ -3331,6 +3337,7 @@ Effort
                 "move speed bonus" 0.7
                 "voice pitch scale" 0
                 "no_jump" 1
+                "not solid to players" 1
                 //"attach particle effect" 3013
 			}
             CustomWeaponModel
@@ -3365,6 +3372,7 @@ Effort
                 "move speed bonus" 0.7
                 "voice pitch scale" 0
                 "no_jump" 1
+                "not solid to players" 1
                 //"attach particle effect" 3013
 			}
             CustomWeaponModel
@@ -4200,7 +4208,7 @@ Effort
 				"spawnflags" "96"
 				"fieldofview" "-1"
 
-				"PlayerOff" "!activator,AddOutput,targetname ,0,-1"
+				"PlayerOff" "!activator,AddOutput,targetname redplayer,0,-1"
                 "PlayerOff" "!activator,$RemoveCond,51,0,-1"
 				"PlayerOff" "launchertrigger,Enable,,0.01,-1"
 				"PlayerOff" "launchermove,SetMeasureTarget,launcherbase,0,-1"
@@ -7210,6 +7218,7 @@ Effort
                 "OnTrigger" "launcheraliveness*,Kill,,0.15,-1"
                 "OnTrigger" "redplayer,$ForceRespawnDead,,0,-1"
                 "OnTrigger" "redplayer,$AddCond,51,0.001,-1"
+
                 "OnTrigger" "player,SetHudVisibility,0,0.001,-1"
                 "OnTrigger" "bots_win_relay,Disable,,0,-1"
                 "OnTrigger" "colossus_death_prop*,Enable,,0,-1"
@@ -7413,6 +7422,7 @@ Effort
                 Delay 0.01
             } 
         }
+        
     }
     PlayerSpawnTemplate "playerweapon_fix"
     PlayerSpawnTemplate "redplayer_targetname"
