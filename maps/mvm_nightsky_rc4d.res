@@ -135,4 +135,9 @@ Resources
 	"materials/hud/leaderboard_class_tank_tele.vmt"	"file"
 	"materials/hud/leaderboard_class_tank_tele.vtf"	"file"
 	"models/empty.phy"	"file"
+	"models/props_mvm/robot_spawnpoint.dx80.vtx"	"file"
+	"models/props_mvm/robot_spawnpoint.dx90.vtx"	"file"
+	"models/props_mvm/robot_spawnpoint.sw.vtx"	"file"
+	"models/props_mvm/robot_spawnpoint.vvd"	"file"
+	"models/props_mvm/robot_spawnpoint.mdl"	"file"
 }

@@ -36,6 +36,7 @@ population
 	DisableSound "Announcer.mvm_spybot_death"					 
 	DisableSound "Announcer.mvm_spybot_death_all"	                         
 
+	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl"	 
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl"	 
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl"	 
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage3.mdl"
