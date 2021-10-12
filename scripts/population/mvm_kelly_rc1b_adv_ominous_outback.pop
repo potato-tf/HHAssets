@@ -1643,11 +1643,12 @@ WaveSpawn
 
 
 	}
-
+	
 Wave //wave 6 code
 //Currency: $750
 	{
-		StartWaveOutput
+	
+	StartWaveOutput
 		{
 			Target	wave_start_relay
 			Action	Trigger
@@ -1962,7 +1963,7 @@ Item "Larrikin Robin"
 			WeaponRestrictions PrimaryOnly
 			ItemAttributes
 			{
-				ItemName Item "The Fortified Compound"
+				ItemName "The Fortified Compound"
 				"Set DamageType Ignite" 1
                                 "attach particle effect" 13
 			}
@@ -1971,5 +1972,4 @@ Item "Larrikin Robin"
 	}
 
 }
-}
-	     
+}	     
