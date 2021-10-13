@@ -104,7 +104,7 @@ population
 		"mod max primary clip override" 0
 		"damage penalty" 0
 		"stomp player time" 0.2
-		"stomp player damage" 15
+		"stomp player damage" 20
 		"stomp player force" 10
 		"special item description" "When this weapon is out, you take 35% less damage, your attacks do no damage but touching enemies hurt them. -100% max ammo on primaries."
 	}
@@ -115,7 +115,7 @@ population
 		"dmg penalty vs nonburning" 1.25
 		"damage bonus vs burning" 1.25
 		"special item description" "Extremely sharp needle pierces through enemies and deals extra damage, but swing speed is heavily lowered."
-		"fire rate penalty" 1.7
+		"fire rate penalty" 1.6
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
@@ -1518,14 +1518,14 @@ population
 			Cap 10
 			Increment 10
 			Cost 200
-			description "10% more damage, reload faster, slows enemies down for 10s"
+			description "20% more damage, reload faster, slows enemies down for 10s"
             AllowedWeapons
 			{
 			    ItemName "Festive Crusader's Crossbow"
 			}
       SecondaryAttributes 
 			{
-				"damage bonus HIDDEN" 0.1
+				"damage bonus HIDDEN" 0.2
 				"set turn to ice" 1
 				"faster reload rate" -0.65
 			}
@@ -4873,6 +4873,7 @@ population
 			WeaponRestrictions	MeleeOnly
 			Usehumanmodel 1
 			Item "Zombie Spy"
+			Attributes AlwaysFireWeapon
 			tag nav_path_b_left
 			AddCond [$SIGSEGV]
 			{
@@ -5122,6 +5123,7 @@ population
 			Action mobber
 			name "Illusion Zombie"
 			WeaponRestrictions	MeleeOnly
+			Attributes AlwaysFireWeapon
 			Usehumanmodel 1
 			Item "Zombie Spy"
 			AddCond [$SIGSEGV]
