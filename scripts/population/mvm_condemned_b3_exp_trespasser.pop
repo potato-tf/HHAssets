@@ -85,6 +85,7 @@ WaveSchedule
 	PrecacheModel "models/workshop/weapons/c_models/c_xms_gloves/c_xms_gloves_ushanka.mdl"		[$SIGSEGV]
 	PrecacheModel "models/weapons/c_models/c_the_bolshevik_bomber/c_the_bolshevik_bomber_1.mdl"	[$SIGSEGV]
 	PrecacheModel "models/weapons/c_models/c_hmg/c_hmg.mdl"	[$SIGSEGV]
+	PrecacheModel "models/workshop/weapons/c_models/c_winger_distol/c_winger_distol.mdl"	[$SIGSEGV]
 
 	//Custom Shop
 	CustomUpgradesFile "mvm_upgrades_trespasser.txt"					[$SIGSEGV]
