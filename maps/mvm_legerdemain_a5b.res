@@ -106,6 +106,7 @@ Resources
 	"models/bots/merasmus/merasmussmall.mdl"	"file"
 	"models/bots/merasmus/merasmussmall.phy"	"file"
 	"models/bots/merasmus/merasmussmall.vvd"	"file"
+	"models/bots/merasmus/merasmussmall_animations.mdl"	"file"
 	"models/props_halloween/cobweb_01.phy"	"file"
 	"models/props_halloween/smlprop_spider.phy"	"file"
 	"models/props_mvm/mvm_human_skull.phy"	"file"
