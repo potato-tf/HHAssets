@@ -74,7 +74,7 @@ WaveSchedule
 	PrecacheSound "trespasser/zombieintroquiet.mp3" 						[$SIGSEGV]
 	PrecacheSound "trespasser/zombiewait2.mp3" 								[$SIGSEGV]
 
-	PrecacheModel "models/Bornacle.mdl"										[$SIGSEGV]
+	PrecacheModel "models/bornacle.mdl"										[$SIGSEGV]
 	PrecacheModel "models/bots/soldier/bot_soldier_gibby.mdl"				[$SIGSEGV]
 	PrecacheModel "models/bots/soldier_boss/bot_soldier_boss_gibby.mdl"		[$SIGSEGV]
 	PrecacheModel "models/bots/heavy/bot_heavy_gibby.mdl"					[$SIGSEGV]
