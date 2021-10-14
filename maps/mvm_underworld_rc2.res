@@ -304,4 +304,12 @@ Resources
 	"sound/underworld/mrmodez_fear_is_you.mp3"	"file"
 	"sound/utsuho_reiuji.mp3"	"file"
 	"sound/yatagarasu_boss_new.mp3"	"file"
+	"models/weapons/c_models/c_rapidfire/c_rapidfire_1.dx80.vtx"	"file"
+	"models/weapons/c_models/c_rapidfire/c_rapidfire_1.dx90.vtx"	"file"
+	"models/weapons/c_models/c_rapidfire/c_rapidfire_1.mdl"	"file"
+	"models/weapons/c_models/c_rapidfire/c_rapidfire_1.phy"	"file"
+	"models/weapons/c_models/c_rapidfire/c_rapidfire_1.vvd"	"file"
+	"materials/models/weapons/c_items/c_kanopykiller.vtf"	"file"
+	"materials/models/weapons/c_items/c_kanopykiller_1.vmt"	"file"
+	"materials/models/weapons/c_items/c_kanopykiller_normal.vtf"	"file"
 }
