@@ -81,24 +81,6 @@
 //removed alwayscrit from medics
 //toned down w3 engies
 
-//ok so i've played it in the beta, and heard from some friends that it was too much on the easy side for the most part, HERE I GO BUFFING AGAIN
-
-//
-// Starting Currency: 1600
-//
-// +----------+----------+----------+
-// | Wave     | Currency | A+       |
-// +----------+----------+----------+
-// | Wave 1   | 800      | 900      |
-// | Wave 2   | 900      | 1000     |
-// | Wave 3   | 700      | 800      |
-// | Wave 4   | 900      | 1000     |
-// | Wave 5   | 900      | 1000     |
-// +----------+----------+----------+
-// | Total    | 4200     | 4700     |
-// +----------+----------+----------+
-//
-
 #base robot_standard.pop
 #base robot_giant.pop
 
@@ -106,7 +88,7 @@ WaveSchedule
 {
 	CanBotsAttackWhileInSpawnRoom no
 	RespawnWaveTime	2
-	StartingCurrency 1600 //1200 //1600 yoovy you ape (outdated yoovy is no longer ape)
+	StartingCurrency 1600 //1200 //1600 yoovy you fucking ape
 	Advanced 1
 	EventPopFile Halloween
 	ZombiesNoWave666 1 [$SIGSEGV] // If set to 1, the game will not display wave 666 when EventPopFile is set (default: 0)
@@ -116,9 +98,6 @@ WaveSchedule
 	NoCritPumpkin 1 [$SIGSEGV]
 	ImprovedAirblast 0 [$SIGSEGV] //APEEEEEEEEEEEEEEEEEEEE
 	TextPrintTime 0 [$SIGSEGV] //rafradek you retard why is this on by default who even watned this
-	RobotLimit 22   //REBALANCE: MAKE ROOM FOR THE MEDICS
-	MaxSpectators 0   //REBALANCE: MAKE ROOM FOR THE MEDICS
-	SendBotsToSpectatorImmediately 1   //REBALANCE: MAKE ROOM FOR THE MEDICS
 	PrecacheModel "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage1.mdl" [$SIGSEGV]
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage2.mdl" [$SIGSEGV]
@@ -568,14 +547,14 @@ WaveSchedule
 		{
 		    Class Medic
 			ClassIcon medic_kritz_armored_lite
-			Name "Armored Kritzkrieg Medic"
+			Name "Kritzkrieg Medic"
 			Health 750
 			Scale 1.5
 			Skill Expert
 			Attributes SpawnWithFullCharge
 			Tag "bot_squad_member"
 			Item "The Kritzkrieg"
-			Item "The Weather Master"
+			Item "The U-clank-a"
 			Tag bot_squad_member
 			ItemAttributes
 			{
@@ -599,7 +578,6 @@ WaveSchedule
 			Attributes SpawnWithFullCharge
 			Tag "bot_squad_member"
 			Item "The Kritzkrieg"
-			Item "The Weather Master"
 			Tag bot_squad_member
 			ItemAttributes
 			{
@@ -611,36 +589,6 @@ WaveSchedule
 			CharacterAttributes
 			{
 				"bot medic uber health threshold" 200
-			}
-		}
-
-		T_TFBot_Giant_Medic_Kritz
-		{
-		    Class Medic
-			ClassIcon medic_kritz
-			Name "Giant Kritzkrieg Medic"
-			Skill Expert
-			Health 4500
-			Attributes SpawnWithFullCharge
-			Attributes MiniBoss Tag bot_giant 
-			Attributes AlwaysCrit
-			Tag bot_giant
-			Tag bot_squad_member
-			Item "The Kritzkrieg"
-			Item "The Weather Master"
-			ItemAttributes
-			{
-			     ItemName "The Kritzkrieg"
-			     "ubercharge rate bonus" 150
-			     "uber duration bonus" 300
-				 "heal rate bonus" 200
-			}
-			CharacterAttributes
-			{
-			    "bot medic uber health threshold" 5000
-			    "move speed bonus"	0.5
-				"damage force reduction" 0.5
-				"airblast vulnerability multiplier"	0.5
 			}
 		}
 
@@ -1060,7 +1008,6 @@ WaveSchedule
 		TFBot
 		{
 			Template T_TFBot_SentryBuster
-			Item "EOTL_demopants"
 		}
 	}
 
@@ -1131,28 +1078,19 @@ WaveSchedule
 			Name stage2
 			WaitForAllDead stage1
 			Where spawnbot
-			TotalCount 6 //3
-			MaxActive 6 //3
-			SpawnCount 2 //1
+			TotalCount 3
+			MaxActive 3
+			SpawnCount 1
 			WaitBeforeStarting 5
 			WaitBetweenSpawns 25
 			TotalCurrency 100
 			RandomSpawn 1
 			
 			
-			Squad
-			{
 				TFBot
 				{
-					Template T_TFBot_Giant_Soldier_Spammer //_Soldier_Crit
-					Attributes Alwayscrit
+					Template T_TFBot_Giant_Soldier_Crit
 				}
-
-				TFBot
-				{
-					Template T_TFBot_Medic_QuickUber
-				}
-			}
 		}
 		
 		WaveSpawn [$SIGSEGV]
@@ -1165,9 +1103,9 @@ WaveSchedule
 			TotalCurrency 100
 			
 			
-			Tank // mvm blimp concept designed by Hell-met
+			Tank // mvm blimp concept designed by hell-met
 			{
-				Health 12500 //9000 //7500 //10000 //15000 //12500
+				Health 7500 //10000 //15000 //12500
 				Speed 150 //225
 				DisableSmokestack 1 [$SIGSEGV]
 				Classicon blimp2_lite [$SIGSEGV]
@@ -1220,20 +1158,17 @@ WaveSchedule
 				{
 					Template T_TFBot_Giant_Scout
 					Item "The Soda Popper"
-					Item "EOTL_demopants"
 				}
 
 				TFBot
 				{
 					Template T_TFBot_Giant_Scout
 					Item "The Force-a-Nature"
-					Item "EOTL_demopants"
 				}
 
 				TFBot
 				{
 					Template T_TFBot_Giant_Scout
-					Item "EOTL_demopants"
 				}
 			}
 		}
@@ -1243,27 +1178,19 @@ WaveSchedule
 			Name stage3
 			WaitForAllDead stage2
 			Where spawnbot
-			TotalCount 6 //3
-			MaxActive 6 //3
-			SpawnCount 2 //1
+			TotalCount 3
+			MaxActive 3
+			SpawnCount 1
 			WaitBeforeStarting 5
 			WaitBetweenSpawns 25
 			TotalCurrency 150
 			RandomSpawn 1
 			
 			
-			Squad
-			{
 				TFBot
 				{
 					Template T_TFBot_Giant_HeavyWeapons_ShotGun
 				}
-
-				TFBot
-				{
-					Template T_TFBot_Medic_QuickUber
-				}
-			}
 		}
 		
 		WaveSpawn
@@ -1301,32 +1228,6 @@ WaveSchedule
 		{
 			Target wave_finished_relay
 			Action trigger
-		}
-
-		WaveSpawn
-		{
-			TotalCount 1
-			SpawnCount 1
-			WaitBeforeStarting 10
-			TotalCurrency 75
-			
-			
-			Tank
-			{
-				Health 35000 //25000
-				Speed 75
-				Name "tankboss"
-				Skin 0									// 0 - normal skin, 1 - final wave skin
-				StartingPathTrackNode "tank_path_1"		// if this is not here have fun with the hatch tank
-
-				OnBombDroppedOutput						// output sent when the Tank drops its bomb once it reaches the end of its path 
-				{
-					Target boss_deploy_relay
-					Action Trigger                         
-				}
-				SpawnTemplate "ColorTank_Prpl" [$SIGSEGV]
-				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
-			}
 		}
 		
 		WaveSpawn
@@ -1393,29 +1294,26 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName "The Direct Hit"
-						"rocket specialist" 4
+						"rocket specialist" 1
 					}
 				}
 				
 				TFBot
 				{
 					Template T_TFBot_Scout_Shortstop_Small
-					Item "EOTL_demopants"
-					Skill Expert
+					Skill Easy
 				}
 				
 				TFBot
 				{
 					Template T_TFBot_Scout_Shortstop_Small
-					Item "EOTL_demopants"
-					Skill Expert
+					Skill Easy
 				}
 				
 				TFBot
 				{
 					Template T_TFBot_Scout_Shortstop_Small
-					Item "EOTL_demopants"
-					Skill Expert 
+					Skill Easy
 				}
 			}
 		}
@@ -1473,7 +1371,7 @@ WaveSchedule
 			Name stage3
 			WaitForAllDead stage2
 			Where spawnbot
-			TotalCount 4 //3 //5 //4
+			TotalCount 3 //5 //4
 			MaxActive 2
 			SpawnCount 1
 			WaitBeforeStarting 5
@@ -1484,8 +1382,7 @@ WaveSchedule
 			
 				TFBot
 				{
-					Template T_TFBot_Giant_Scout //_Pistol
-					Item "EOTL_demopants"
+					Template T_TFBot_Giant_Scout_Pistol
 					Attributes AlwaysCrit
 				}
 		}
@@ -1501,14 +1398,13 @@ WaveSchedule
 			WaitBeforeStarting 5
 			WaitBetweenSpawns 7
 			TotalCurrency 150
-			Support 1
 			RandomSpawn 1
 			
 			
 				TFBot
 				{
-					Template T_TFBot_Demo_Burst
-					Skill Expert //Easy //Hard
+					Class Demoman
+					Skill Hard //Easy //Hard
 				}
 		}
 		
@@ -1522,13 +1418,13 @@ WaveSchedule
 			SpawnCount 1
 			WaitBeforeStarting 5
 			WaitBetweenSpawns 7
-			TotalCurrency 75
+			TotalCurrency 150
 			RandomSpawn 1
 			
 			
 			Tank
 			{
-				Health 35000 //30000
+				Health 30000
 				Speed 75
 				Name "tankboss"
 				Skin 0									// 0 - normal skin, 1 - final wave skin
@@ -1643,7 +1539,7 @@ WaveSchedule
 			MaxActive 3
 			SpawnCount 3
 			WaitBeforeStarting 15
-			WaitBetweenSpawns 10 //6
+			WaitBetweenSpawns 6
 			//TotalCurrency 100
 			Support 1
 			
@@ -1697,28 +1593,19 @@ WaveSchedule
 			Name stage2
 			//WaitForAllDead stage1
 			Where spawnbot
-			TotalCount 10 //5 //4
-			MaxActive 6 //5 //4
-			SpawnCount 2 //1
+			TotalCount 5 //4
+			MaxActive 5 //4
+			SpawnCount 1
 			WaitBeforeStarting 0 //5
 			WaitBetweenSpawns 13 //15 //20
 			TotalCurrency 100
 			RandomSpawn 1
 			
-
-			Squad
-			{
 				TFBot
 				{
 					Template T_TFBot_Giant_Soldier_Spammer //_SlowBarrage
 					Attributes AlwaysCrit
 				}
-
-				TFBot
-				{
-					Template T_TFBot_Giant_Medic_Regen
-				}
-			}
 		}
 		
 		WaveSpawn
@@ -1750,51 +1637,6 @@ WaveSchedule
 					Template T_TFBot_Medic
 					Attributes IgnoreFlag
 				} 
-			}
-		}
-
-		WaveSpawn [$SIGSEGV]
-		{
-			Name stage3
-			WaitForAllDead stage2
-			TotalCount 1
-			SpawnCount 1
-			WaitBeforeStarting 10
-			TotalCurrency 100
-			
-			
-			Tank // mvm blimp concept designed by Hell-met
-			{
-				Health 15000 //11000
-				Speed 150
-				DisableSmokestack 1 [$SIGSEGV]
-				Classicon blimp2_lite [$SIGSEGV]
-				Skin 1 
-				MaxTurnRate 75 [$SIGSEGV]
-				Model "models/bots/boss_bot/boss_blimp.mdl" [$SIGSEGV]
-				Gravity 0 [$SIGSEGV]
-				DisableTracks 1 [$SIGSEGV]
-				DisableChildModels 1 [$SIGSEGV]
-				ReplaceModelCollisions 1 [$SIGSEGV]
-				EngineLoopSound "npc\combine_gunship\dropship_engine_distant_loop1.wav" [$SIGSEGV]
-				PingSound "npc\combine_gunship\ping_search.wav" [$SIGSEGV]
-				Name "tankboss"
-				StartingPathTrackNode "downpour_blimp_path_1"
-				OnKilledOutput
-				{
-					Target boss_dead_relay
-					Action Trigger
-				}
-				OnBombDroppedOutput
-				{
-					Target boss_deploy_relay
-					Action Trigger
-				}
-			}
-			StartWaveOutput //display the blimp arrow
-			{
-				Target blimp_hint
-				Action Show
 			}
 		}
 		
@@ -1950,8 +1792,8 @@ WaveSchedule
 			{
 				TFBot
 				{
-					Template T_TFBot_Soldier_BurstFire
-					Name "Giga Burst Fire Soldier"
+					Template T_TFBot_Giant_Soldier_Spammer_Reload //T_TFBot_Soldier_BurstFire
+					//Name "Giga Burst Fire Soldier"
 					Attributes AlwaysCrit
 				}
 
@@ -1967,9 +1809,9 @@ WaveSchedule
 			Name stage2
 			WaitForAllDead stage1
 			Where spawnbot
-			TotalCount 9
-			MaxActive 6
-			SpawnCount 3
+			TotalCount 6
+			MaxActive 4 //6
+			SpawnCount 2
 			WaitBeforeStarting 0
 			WaitBetweenSpawns 45
 			TotalCurrency 400
@@ -1981,21 +1823,10 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFBot_Giant_HeavyWeapons_Deflector
-					Item "The Brass Beast"
-					ItemAttributes
-					{
-						ItemName "The Brass Beast"
-						"damage bonus"	1.8
-						"attack projectiles" 2
-					}
 				} 
 				TFBot
 				{
 					Template T_TFBot_Giant_Medic_Shield_Nopop
-				} 
-				TFBot
-				{
-					Template T_TFBot_Giant_Medic_Kritz
 				} 
 			}
 		}
@@ -2018,30 +1849,7 @@ WaveSchedule
 				TFBot
 				{
 					Class Soldier
-					Skill Normal
-				}
-		}
-
-		WaveSpawn
-		{
-			Name support_uwu
-			WaitForAllDead stage1
-			Where spawnbot_left
-			TotalCount 30
-			MaxActive 3
-			SpawnCount 1
-			WaitBeforeStarting 10
-			WaitBetweenSpawns 5
-			TotalCurrency 100
-			RandomSpawn 1
-			Support 1
-			
-			
-				TFBot
-				{
-					Class Pyro
-					Skill Normal
-					Attributes AlwaysFireWeapon
+					Skill Easy //Normal
 				}
 		}
 		
@@ -2064,7 +1872,7 @@ WaveSchedule
 				Health 35000 //30000 //35000
 				Speed 75
 				Name "tankboss"
-				Skin 0									// 0 - normal skin, 1 - final wave skin
+				Skin 1									// 0 - normal skin, 1 - final wave skin
 				StartingPathTrackNode "tank_path_1"		// if this is not here have fun with the hatch tank
 
 				OnBombDroppedOutput						// output sent when the Tank drops its bomb once it reaches the end of its path 
@@ -2092,22 +1900,57 @@ WaveSchedule
 			Action trigger
 		}
 
+		Explanation [$SIGSEGV]  //Dispayed once the wave is initialized
+		{
+			Line "{red}There are support giants coming this wave!{reset}"
+		}
+
 		WaveSpawn
 		{
 			Name trolling
 			Where spawnbot_chief
-			TotalCount 25
-			MaxActive 4
+			TotalCount 10
+			MaxActive 1
 			SpawnCount 1
-			WaitBeforeStarting 15
-			WaitBetweenSpawns 10
+			WaitBeforeStarting 5
+			WaitBetweenSpawnsAfterDeath 10
 			TotalCurrency 100
 			Support 1trolling
 			
 			
-				TFBot
+				TFBot //why do people think this is a herp reference it's a fucking modification of a valve bot you fucking apetards
 				{
-					Template T_TFBot_Medic_Kritz_Armor
+					Class Scout
+					Skill Expert
+					Health 1200
+					ClassIcon scout_jumping_g
+					Name "Giant Annoying Scout" //skin why do you want me to call this giant femboy scout
+					WeaponRestrictions MeleeOnly
+					Item "The Sandman"
+					Item "The Hanger-On Hood"
+					Item "The Flight of the Monarch"
+					Action Mobber [$SIGSEGV]
+					Attributes MiniBoss Tag bot_giant 
+					Attributes AutoJump //lollery
+						AutoJumpMin 3 //5
+						AutoJumpMax 10 //5
+					ItemAttributes
+					{
+						ItemName "The Sandman"
+						"effect bar recharge rate increased" 0.2
+						"max health additive penalty" -0
+						//"mod bat launches balls" 2 [$SIGSEGV] //Overrides the global sandman stun toggle, the ball will stun players regardless //this is retarded
+					}
+					CharacterAttributes
+					{
+						"increased jump height" 3
+						"move speed bonus"	1.5
+						"damage force reduction" 0.0
+						"airblast vulnerability multiplier" 0.0
+						"override footstep sound set" 5
+						"head scale" 1.5
+						"cancel falling damage" 1
+					}
 				}
 		}
 		
@@ -2135,9 +1978,6 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFBot_Scout_Shortstop_Small
-					Item "EOTL_demopants"
-					Attributes AlwaysCrit
-					Skill Expert
 				}
 				
 				TFBot
@@ -2171,7 +2011,6 @@ WaveSchedule
 					Skill Expert
 					WeaponRestrictions PrimaryOnly
 					Attributes MiniBoss Tag bot_giant
-					Attributes AlwaysFireWeapon
 					ItemAttributes
 					{
 						ItemName "TF_WEAPON_ROCKETLAUNCHER"
@@ -2204,7 +2043,7 @@ WaveSchedule
 				
 				TFBot
 				{
-					Template T_TFBot_Giant_Medic //_Regen
+					Template T_TFBot_Giant_Medic_Regen
 				}
 			}
 		}
@@ -2214,9 +2053,9 @@ WaveSchedule
 			Name stage2
 			WaitForAllDead stage1
 			Where spawnbot
-			TotalCount 8 //3
-			MaxActive 8 //3
-			SpawnCount 2 //1
+			TotalCount 3
+			MaxActive 3
+			SpawnCount 1
 			WaitBeforeStarting 0
 			WaitBetweenSpawns 25
 			TotalCurrency 100
@@ -2254,37 +2093,8 @@ WaveSchedule
 				
 				TFBot
 				{
-					Template T_TFBot_Medic //_QuickUber
+					Template T_TFBot_Medic_QuickUber
 				}
-			}
-		}
-
-		WaveSpawn
-		{
-			Name stage3
-			waitforallDead stage2
-			Where spawnbot
-			TotalCount 1
-			SpawnCount 1
-			WaitBeforeStarting 5
-			TotalCurrency 50
-			
-			
-			Tank
-			{
-				Health 35000 //30000
-				Speed 75
-				Name "tankboss"
-				Skin 1									// 0 - normal skin, 1 - final wave skin
-				StartingPathTrackNode "tank_path_1"		// if this is not here have fun with the hatch tank
-
-				OnBombDroppedOutput						// output sent when the Tank drops its bomb once it reaches the end of its path 
-				{
-					Target boss_deploy_relay
-					Action Trigger                         
-				}
-				SpawnTemplate "ColorTank_Prpl" [$SIGSEGV]
-				Model  "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV]
 			}
 		}
 		
@@ -2305,9 +2115,8 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFBot_Scout_Shortstop
-					Item "EOTL_demopants"
-					Attributes AlwaysCrit
-					Skill Expert
+					//Attributes AlwaysCrit
+					//ClassIcon scout_shortstop_giant
 				}
 		}
 		
