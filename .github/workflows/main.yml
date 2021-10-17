@@ -45,7 +45,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install web assets
         run: |
-          rsync -a --no-o --no-g --no-p --delete --exclude=".*" . /var/www/html/HHAssets/
+          echo . -type f -not \( -name "*.bsp" -or -name "*.mp3" -or -name "*.nav" -or -name "*.res" -or -name ".bz2" \)  -exec pbzip2 -n 1 -f -k -4 {} +
           find . -type f -not \( -name "*.bsp" -or -name "*.mp3" -or -name "*.nav" -or -name "*.res" -or -name ".bz2" \)  -exec pbzip2 -n 1 -f -k -4 {} +
+          rsync -a --no-o --no-g --no-p --delete --exclude=".*" . /var/www/html/HHAssets/
     
           
