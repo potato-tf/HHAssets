@@ -314,30 +314,7 @@ Wave //wave 1 code
                                 Skill Easy	
 			}
 		}
-		WaveSpawn
-		{
-			Name	wave1b_support	
-			WaitForAllDead	wave1a
-			TotalCurrency	100
-			TotalCount	32
-			MaxActive	2
-			SpawnCount	4
-			WaitBeforeStarting	4
-			WaitBetweenSpawns	8
-			Support	1
-			Where	spawnbot
-			TFBot
-			{
-				ClassIcon	pyro_fireaxe_lite
-					Health	175
-					Name	"Thursday the 17th"
-                                        Item "The Face of Mercy"
-					Class	Pyro
-					Skill	Expert
-                                        Attributes AlwaysCrit
-					WeaponRestrictions	MeleeOnly
-			}
-		}
+		
 	}
 
 Wave
@@ -370,7 +347,7 @@ Wave
 			              Name "Giant Explosive Puke Zombie"
 			              ClassIcon soldier_crit
 			              Health 3800
-                                      Skill Normal
+                                      Skill Hard
 					Item "The Original"
 					Attributes AlwaysCrit
 					WeaponRestrictions PrimaryOnly
@@ -476,8 +453,8 @@ FirstSpawnOutput
 			MaxActive 12
 			
 			
-			WaitBetweenSpawns 5
-			WaitBeforeStarting 5
+			WaitBetweenSpawns 2
+			WaitBeforeStarting 8
 			
 			TotalCurrency 100
 			

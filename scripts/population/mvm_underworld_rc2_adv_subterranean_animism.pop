@@ -1593,6 +1593,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 							"cancel falling damage" 1 // Does take fall damage for some odd reason?
 							"cannot be sapped" 1		// A Spy can sap the bot lol
 							"not solid to players" 1 // Forgot it has no scale reduction
+							"rage giving scale" 0 // Pyro with Phlog can gain rage, oops
                             "no_jump" 1
                             "move speed bonus" 0.001
                             "cannot pick up intelligence" 1
@@ -2345,7 +2346,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		WaveSpawn // Real Conch shit 
         {
             Name 3S-ConchSupport
-            Where death_pit
+            Where outside
             TotalCount 1
             SpawnCount 1
              Support Limited
@@ -2372,6 +2373,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 							"not solid to players" 1
 							"cancel falling damage" 1
 							"cannot be sapped" 1
+							"rage giving scale" 0 
                             "no_jump" 1
                             "move speed bonus" 0.001
                             "cannot pick up intelligence" 1
@@ -2392,7 +2394,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		WaveSpawn // Real Conch shit part 2 // It's fixed now, thank god Jurrell for the fix
         {
             Name 3S-ConchSupport-2
-            Where death_pit
+            Where outside
 			WaitForAllDead 3A-1-Tank
             TotalCount 1
             SpawnCount 1
@@ -2421,6 +2423,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 							"not solid to players" 1
 							"cancel falling damage" 1
 							"cannot be sapped" 1
+							"rage giving scale" 0 
                             "no_jump" 1
                             "move speed bonus" 0.001
                             "cannot pick up intelligence" 1
@@ -3036,7 +3039,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		WaveSpawn // Spell Casting Wizard Tank 20k 
 		{
 			Name 5C-2-Tank
-			WaitForAllDead 5B-1-Barrage
+			WaitForAllDead 5B-2-Tank
 			Where spawnbot
 			TotalCurrency	225
 			TotalCount 1
@@ -3128,12 +3131,12 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		}
 		WaveSpawn // Real Spell Shit 2??
         {
-            Name 4S1-SpellCaster
+            Name 5S1-SpellCaster
 			WaitForAllDead 5A-1-Demo-Soldier
             TotalCount 1
             SpawnCount 1
             Support Limited
-			 Where outside
+			Where outside
             RandomChoice
             {
                 RandomChoice
@@ -3168,6 +3171,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 							"cancel falling damage" 1 // Does take fall damage for some odd reason?
 							"cannot be sapped" 1		// A Spy can sap the bot lol
 							"not solid to players" 1 // Forgot it has no scale reduction
+							"rage giving scale" 0 
                             "no_jump" 1
                             "move speed bonus" 0.001
                             "cannot pick up intelligence" 1
@@ -3197,12 +3201,12 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		}
 		WaveSpawn // Real Spell Shit 3??
         {
-            Name 4S1-SpellCaster
-			WaitForAllDead 5B-1-Barrage
+            Name 5S1-SpellCaster
+			WaitForAllDead 5B-2-Tank
             TotalCount 1
             SpawnCount 1
             Support Limited
-			 Where outside
+			Where outside
             RandomChoice
             {
                 RandomChoice
@@ -3237,6 +3241,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 							"cancel falling damage" 1 // Does take fall damage for some odd reason?
 							"cannot be sapped" 1		// A Spy can sap the bot lol
 							"not solid to players" 1 // Forgot it has no scale reduction
+							"rage giving scale" 0 
                             "no_jump" 1
                             "move speed bonus" 0.001
                             "cannot pick up intelligence" 1
@@ -3713,7 +3718,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 		WaveSpawn // Real Conch shit Part 3
         {
             Name 6S-ConchSupport
-            Where death_pit
+            Where outside
             TotalCount 1
             SpawnCount 1
              Support Limited
@@ -3739,6 +3744,7 @@ WaveSchedule // Hello, why are you reading my popfile go away please. Just kiddi
 							"not solid to players" 1
 							"cancel falling damage" 1
 							"cannot be sapped" 1
+							"rage giving scale" 0 
                             "no_jump" 1
                             "move speed bonus" 0.001
                             "cannot pick up intelligence" 1
