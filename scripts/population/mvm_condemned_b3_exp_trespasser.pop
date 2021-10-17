@@ -865,7 +865,7 @@ WaveSchedule
 	CustomWeapon [$SIGSEGV]
 	{
 		Name "Deagle"
-		OriginalItemName "TF_WEAPON_PISTOL"
+		OriginalItemName "Upgradeable TF_WEAPON_PISTOL"
 		"cannot be upgraded" 1
 		"can headshot" 1
 		"damage bonus" 3
@@ -882,7 +882,7 @@ WaveSchedule
 	CustomWeapon [$SIGSEGV]
 	{
 		Name "Rifle"
-		OriginalItemName "TF_WEAPON_SMG"
+		OriginalItemName "Upgradeable TF_WEAPON_SMG"
 		"cannot be upgraded" 1
 		"clip size bonus" 2
 		"Reload time increased" 2.5
