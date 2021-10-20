@@ -27,7 +27,7 @@ Resources
 	"materials/hud/leaderboard_class_heavy_shotgun_burst_lite.vmt"	"file"
 	"materials/hud/leaderboard_class_heavy_shotgun_burst_lite.vtf"	"file"
 	"materials/hud/leaderboard_class_heavy_warrior.vtf"	"file"
-	"materials/hud/leaderboard_class_heavy_warrior.vmt"	"file"
+	"materials/hud/leaderboard_class_heavy_warrior_d.vmt"	"file"
 	"materials/hud/leaderboard_class_medic_crossbow.vmt"	"file"
 	"materials/hud/leaderboard_class_medic_crossbow.vtf"	"file"
 	"materials/hud/leaderboard_class_medic_king.vmt"	"file"
