@@ -302,6 +302,7 @@ WaveSchedule
 			SpawnCount 1
 			TotalCurrency 300
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
+			FirstSpawnMessage "{blue}Tank spawned in with 13k (13000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			
 			Tank
@@ -336,6 +337,7 @@ WaveSchedule
 			WaitBeforeStarting 5
 			TotalCurrency 300
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
+			FirstSpawnMessage "{blue}Tank spawned in with 10k (10000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			
 			Tank
@@ -660,6 +662,7 @@ WaveSchedule
 			WaitBeforeStarting 40
 			TotalCurrency 400
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
+			FirstSpawnMessage "{blue}Tank spawned in with 20k (20000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			
 			Tank
@@ -984,6 +987,7 @@ WaveSchedule
 			WaitBetweenSpawns 0
 			TotalCurrency 300
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
+			FirstSpawnMessage "{blue}Tank spawned in with 22k (22000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			
 			Tank
@@ -1021,6 +1025,7 @@ WaveSchedule
 			WaitBetweenSpawns 0
 			TotalCurrency 300
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
+			FirstSpawnMessage "{blue}Tank spawned in with 22k (22000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			
 			Tank

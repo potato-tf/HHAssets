@@ -1101,7 +1101,7 @@ WaveSchedule
 			SpawnCount 1
 			WaitBeforeStarting 10
 			TotalCurrency 100
-			
+			FirstSpawnMessage "{blue}Blimp spawned in with 7.5k (7500) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			Tank // mvm blimp concept designed by hell-met
 			{
@@ -1420,7 +1420,7 @@ WaveSchedule
 			WaitBetweenSpawns 7
 			TotalCurrency 150
 			RandomSpawn 1
-			
+			FirstSpawnMessage "{blue}Tank spawned in with 30k (30000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			Tank
 			{
@@ -1865,6 +1865,7 @@ WaveSchedule
 			WaitBetweenSpawns 20
 			TotalCurrency 50
 			RandomSpawn 1
+			FirstSpawnMessage "{blue}Tank spawned in with 35k (35000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time																														
 			
 			
 			Tank

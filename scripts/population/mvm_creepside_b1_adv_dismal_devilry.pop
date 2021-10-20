@@ -1155,7 +1155,7 @@ WaveSchedule
             { 
                 Class Heavyweapons
 			    Name "Warrior Heavy"
-    			ClassIcon heavy_warrior_d
+    			ClassIcon heavy_warrior
 	    		Skill Expert
                 
 		    	Health 900

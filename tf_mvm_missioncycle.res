@@ -96,8 +96,8 @@
 		}
 		"19"
 		{
-			"map"		"mvm_legerdemain_a5b"
-			"popfile"		"mvm_legerdemain_a5b"
+			"map"		"mvm_legerdemain_a5c"
+			"popfile"		"mvm_legerdemain_a5c"
 		}
 		"20"
 		{
@@ -106,8 +106,8 @@
 		}
 		"21"
 		{
-			"map"		"mvm_whitecliff_event_rc1a"
-			"popfile"		"mvm_whitecliff_event_rc1a"
+			"map"		"mvm_whitecliff_event_rc2"
+			"popfile"		"mvm_whitecliff_event_rc2"
 		}
 		"25"
 		{
