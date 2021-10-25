@@ -778,7 +778,7 @@ WaveSchedule
 		{
 			Class	Demoman
 			Name	"Giant Demoman"
-			ClassIcon	demo_spammer_giant
+			ClassIcon	demo_giant
 			Health		3300
 			EventChangeAttributes
 			{
@@ -794,12 +794,6 @@ WaveSchedule
 					WeaponRestrictions PrimaryOnly
 					Attributes MiniBoss
 					Attributes HoldFireUntilFullReload
-					ItemAttributes
-					{
-						ItemName "TF_WEAPON_GRENADELAUNCHER"
-						"faster reload rate" -0.4
-						"fire rate bonus" 0.75
-					}
 					CharacterAttributes
 					{
 						"move speed bonus"	0.5
@@ -815,12 +809,6 @@ WaveSchedule
 					{
 						ItemName "MvM GateBot Light Demoman"
 						"item style override" 1
-					}
-					ItemAttributes
-					{
-						ItemName "TF_WEAPON_GRENADELAUNCHER"
-						"faster reload rate" -0.4
-						"fire rate bonus" 0.75
 					}
 					Tag bot_giant
 					Skill Expert
@@ -923,50 +911,6 @@ WaveSchedule
 			}
 		}
 	}
-	CustomWeapon  // (SHITPOST) dev room weapon and solo test weapon
-	{
-		Name				"FUCK YOU (Dev Gun)"
-		OriginalItemName	"The Pomson 6000"
-		"special item description"	"We're gonna be talkin' about the PENIS! We'll be talkin' about the PENIS! Do you think that's funny, Butt-head?! Do you find it amusing that we'll be talkin' about the PENIS?! Yes, we're also gonna be talkin' about PENIS!"
-		"custom item model"	"models/player/heavy.mdl"
-		"fire rate bonus"	-1
-		"faster reload rate"	-1
-		"clip size bonus"	420
-		"dmg penalty vs players"	6969
-		"energy weapon penetration"	1
-		"SPELL: set item tint RGB"	"5"
-		"projectile speed increased"	2
-		"mod projectile heat seek power"	690
-		"mod projectile heat aim error"		420
-		"dmg taken increased"	0.000001
-		"heal on kill"	690
-	}
-	CustomWeapon  // (SHITPOST) dev room weapon and solo test weapon
-	{
-		Name				"FUCK YOU (Weak Dev Gun)"
-		OriginalItemName	"The Pomson 6000"
-		"special item description"	"We're gonna be talkin' about the PENIS! We'll be talkin' about the PENIS! Do you think that's funny, Butt-head?! Do you find it amusing that we'll be talkin' about the PENIS?! Yes, we're also gonna be talkin' about PENIS!"
-		"custom item model"	"models/player/heavy.mdl"
-		"fire rate bonus"	-1
-		"faster reload rate"	-1
-		//"dmg penalty vs players"	6969
-		"energy weapon penetration"	1
-		"SPELL: set item tint RGB"	"5"
-		"projectile speed increased"	2
-		"mod projectile heat seek power"	690
-		"mod projectile heat aim error"		420
-		"dmg taken increased"	0.000001
-		"heal on kill"	690
-	}
-	//ExtraLoadoutItems [$SIGSEGV] // Extra loadout items available after typing !missionitems in chat
-	//{
-	//	Engineer
-	//	{
-	//		Primary	"FUCK YOU (Dev Gun)"
-	//		Primary	"FUCK YOU (Weak Dev Gun)"
-	//	}
-	//}
-
 
 	Mission
 	{
@@ -1138,7 +1082,6 @@ WaveSchedule
 				{
 					Template	T_TFBot_Demoman_Knight
 					UseHumanModel	2	[$SIGSEGV]
-					Attributes	AlwaysCrit
 				}
 			}
 		}
@@ -1623,10 +1566,10 @@ WaveSchedule
 			WaitForAllDead	wave2c
 			Support	1
 			TotalCount	69
-			MaxActive	12
+			MaxActive	10
 			SpawnCount	4
 			WaitBeforeStarting	4
-			WaitBetweenSpawns	4
+			WaitBetweenSpawns	5
 			Where	spawnbot_scattered0
 			Where	spawnbot_main_slow1
 			RandomChoice
@@ -1872,7 +1815,7 @@ WaveSchedule
 				{
 					ItemName	"The Soda Popper"
 					"fire rate penalty"	2.0
-					"bullets per shot bonus"	5
+					"bullets per shot bonus"	3
 					"damage penalty"	0.5
 					"reload time increased"	1.5
 				}

@@ -27,8 +27,6 @@ Resources
 	"materials/hud/leaderboard_class_medic_kritz.vmt"	"file"
 	"materials/hud/leaderboard_class_medic_kritz.vtf"	"file"
 	"materials/hud/leaderboard_class_medic_kritz_giant.vmt"	"file"
-	"materials/hud/leaderboard_class_medic_shield_infpop.vmt"	"file"
-	"materials/hud/leaderboard_class_medic_shield_infpop.vtf"	"file"
 	"materials/hud/leaderboard_class_medic_uber_giant.vmt"	"file"
 	"materials/hud/leaderboard_class_pyro_armored2.vmt"	"file"
 	"materials/hud/leaderboard_class_pyro_armored2.vtf"	"file"

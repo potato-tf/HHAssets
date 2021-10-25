@@ -354,6 +354,7 @@ WaveSchedule
 			{
 				Template T_TFBot_Spy
 				UseCustomModel "models/bots/skeleton_sniper/skeleton_sniper.mdl" [$SIGSEGV]
+				UseHumanAnimations 1 [$SIGSEGV]
 				Skin 1 // proper colored bones
 				Scale 1.1
 				Name "Skeleton"
@@ -475,6 +476,7 @@ WaveSchedule
 					Name "Deadweight Champ"
 					ClassIcon heavy
 					UseCustomModel "models/bots/skeleton_sniper/skeleton_sniper.mdl" [$SIGSEGV]
+					UseHumanAnimations 1 [$SIGSEGV] // fix janky hitbox
 					Skin 1 // proper colored bones
 					CharacterAttributes
 					{
@@ -487,6 +489,7 @@ WaveSchedule
 					Name "Deadweight Champ"
 					ClassIcon heavy
 					UseCustomModel "models/bots/skeleton_sniper/skeleton_sniper.mdl" [$SIGSEGV]
+					UseHumanAnimations 1 [$SIGSEGV]
 					Skin 1 // proper colored bones
 					CharacterAttributes
 					{
@@ -499,6 +502,7 @@ WaveSchedule
 					Name "Deadweight Champ"
 					ClassIcon heavy
 					UseCustomModel "models/bots/skeleton_sniper/skeleton_sniper.mdl" [$SIGSEGV]
+					UseHumanAnimations 1 [$SIGSEGV]
 					Skin 1 // proper colored bones
 					CharacterAttributes
 					{
@@ -524,6 +528,7 @@ WaveSchedule
 				Class Heavy
 				Skill Easy
 				UseCustomModel "models/bots/skeleton_sniper/skeleton_sniper.mdl" [$SIGSEGV]
+				UseHumanAnimations 1 [$SIGSEGV]
 				Skin 1 // proper colored bones
 				CharacterAttributes
 				{
@@ -1211,6 +1216,7 @@ WaveSchedule
 					Item "Binoculus"
 					Item "The Law"
 					UseCustomModel "models/bots/skeleton_sniper/skeleton_sniper.mdl" [$SIGSEGV]
+					UseHumanAnimations 1 [$SIGSEGV]
 					Name "Bone Patrol"
 					Skin 1 // proper colored bones
 					
@@ -1222,6 +1228,7 @@ WaveSchedule
 					Item "The Law"
 					Item "Binoculus"
 					UseCustomModel "models/bots/skeleton_sniper/skeleton_sniper.mdl" [$SIGSEGV]
+					UseHumanAnimations 1 [$SIGSEGV]
 					Name "Bone Patrol"
 					Skin 1 // proper colored bones
 					CharacterAttributes
@@ -1235,6 +1242,7 @@ WaveSchedule
 					Item "Binoculus"
 					Item "The Law"
 					UseCustomModel "models/bots/skeleton_sniper/skeleton_sniper.mdl" [$SIGSEGV]
+					UseHumanAnimations 1 [$SIGSEGV]
 					Name "Bone Patrol"
 					Skin 1 // proper colored bones
 				}
@@ -1290,11 +1298,11 @@ WaveSchedule
 		{
 			Name "stage4b"
 			Where spawnbot
-			TotalCount 10
-			MaxActive 6
+			TotalCount 8
+			MaxActive 8
 			SpawnCount 2
-			WaitBeforeStarting 20
-			WaitBetweenSpawns 25
+			WaitBeforeStarting 45
+			WaitBetweenSpawns 35
 			WaitForAllSpawned "stage4a"
 			TotalCurrency 500	
 
@@ -1308,12 +1316,18 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFBot_Giant_Heavyweapons
+					Skill Hard
 					Item "The Manneater"
 					Item "Big Steel Jaw of Summer Fun"
 				}
 				TFBot
 				{
 					Template T_TFBot_Giant_Medic
+					ItemAttributes
+					{
+						ItemName "The Quick-Fix"
+						"uber duration bonus" -7 // give them a little leeway, here
+					}
 					Item "The Steam Pipe"
 					Item "The Gauzed Gaze"
 				}
@@ -1951,6 +1965,11 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFBot_Giant_Medic
+					ItemAttributes
+					{
+						ItemName "The Quick-Fix"
+						"uber duration bonus" -7 // give them a little leeway, here
+					}
 					Item "The Steam Pipe"
 					Item "The Gauzed Gaze"
 				}
@@ -1978,6 +1997,7 @@ WaveSchedule
 				Skin 1 // proper colored bones
 				UseCustomModel "models/bots/skeleton_sniper/skeleton_sniper.mdl" [$SIGSEGV]
 				UseMeleeThreatPrioritization 1 [$SIGSEGV]
+				UseHumanAnimations 1 [$SIGSEGV]
 				ItemAttributes
 				{
 					ItemName "The Huntsman"

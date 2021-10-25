@@ -142,46 +142,6 @@ WaveSchedule
 		}
 		
 		//SMALL ROBOT
-		
-		T_TFBot_Scout_Milk
-		{
-			Class Scout
-			Name "Milkman"
-			Item "Mad Milk"
-			Item "The Milkman"
-			WeaponRestrictions SecondaryOnly
-			ClassIcon scout_milk
-			Attributes AlwaysFireWeapon
-				
-			ItemAttributes
-			{
-				ItemName "Mad Milk"
-				"fire rate bonus" 0.7
-			}
-			
-			CharacterAttributes
-			{
-				"effect bar recharge rate increased" 0.01
-			}	
-		}	
-		
-		T_TFBot_Sniper_Huntsman_Penetrate
-		{
-			Class Sniper
-			Name "Penetrating Bowman"
-			Skill Hard
-			ClassIcon sniper_bow_penetrator
-			WeaponRestrictions PrimaryOnly
-			Item "The Huntsman"
-
-			ItemAttributes
-			{
-				ItemName "The Huntsman"
-				"damage bonus" 0.5
-				"projectile penetration" 1
-			}
-		}
-		
 		T_TFBot_Soldier_Rapid_Fire_MiniGiant
 		{
 			Class Soldier
@@ -200,7 +160,7 @@ WaveSchedule
 			{	
 				ItemName "TF_WEAPON_ROCKETLAUNCHER"
 				"faster reload rate" -0.8
-				"fire rate bonus" 0.75
+				"fire rate bonus" 0.8
 				"projectile speed increased" 0.8
 			}
 			
@@ -214,16 +174,21 @@ WaveSchedule
 			}
 		}	
 		
-		T_TFBot_Heavyweapons_Tomislav
+		T_TFBot_Soldier_Escape_Plan
 		{
-			Class Heavyweapons
-			Skill Normal
-			Name "Gangster Heavy"
-			Item "Tomislav"
-			Item "El Duderino"
-			Item "Capone's Capper"
+			Class Soldier
+			Skill Hard
+			ClassIcon soldier_pickaxe_escape
+			Item "The Escape Plan"
+			WeaponRestrictions MeleeOnly
+			
+			ItemAttributes
+			{
+				ItemName "The Escape Plan"
+				"self mark for death" 0
+			}
 		}	
-		
+			
 		T_TFBot_Spy_Kunai
 		{
 			Class Spy
@@ -264,18 +229,24 @@ WaveSchedule
 		{
 			Class Demoman
 			Name "Axe Demoknight"
+			Health 200
 			ClassIcon demoknight
 			Skill Expert
-			Item "The Chargin' Targe"
+			Item "The Splendid Screen"
 			Item "The Scotsman's Skullcutter"
-			Item "Ali Baba's Wee Booties"
 			WeaponRestrictions MeleeOnly
 			
 			ItemAttributes
 			{
 				ItemName "The Scotsman's Skullcutter"
-				"critboost on kill" 3
+				"critboost on kill" 4
+				"fire rate bonus" 1.3
 			}
+			
+			CharacterAttributes
+			{
+				"move speed bonus" 0.75
+			}	
 		}
 		
 		T_TFBot_Demoman_Knight_Charge
@@ -283,7 +254,7 @@ WaveSchedule
 			Class Demoman
 			Name "Charging Demoknight"
 			ClassIcon demoknight
-			Skill Expert
+			Skill Hard
 			Item "The Chargin' Targe"
 			Item "The Claidheamohmor"
 			Item "Ali Baba's Wee Booties"
@@ -291,39 +262,29 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName "The Claidheamohmor"
-				"critboost on kill" 3
+				"critboost on kill" 2
+				"kill refills meter" 0.85
 			}
 		}
 		
 		T_TFBot_Demoman_Knight_Zatoichi
 		{
 			Class Demoman
-			Skill Expert
+			Skill Hard
 			ClassIcon demoknight
 			WeaponRestrictions MeleeOnly
 			Name "Zatoichi Demoknight"
+			Item "Demo Kabuto"
 			Item "The Half-Zatoichi"
 			Item "The Chargin' Targe"
 			Item "Ali Baba's Wee Booties"
-			
-			ItemAttributes
-			{
-				ItemName "The Chargin' Targe"
-				"Attack not cancel charge" 1
-			}
-			
-			ItemAttributes
-			{
-				ItemName "The Half-Zatoichi"
-				"critboost on kill" 3
-			}
 		}
 		
 		T_TFBot_Demoman_Knight_Persian
 		{
 			Class Demoman
 			ClassIcon demoknight
-			Skill Expert
+			Skill Hard
 			Name "Persian Demoknight"
 			Item "Sultan's Ceremonial"	
 			Item "Ali Baba's Wee Booties"
@@ -335,11 +296,6 @@ WaveSchedule
 				"Attack not cancel charge" 1
 			}		
 			WeaponRestrictions MeleeOnly
-			
-			CharacterAttributes
-			{
-				"critboost on kill" 3
-			}
 		}
 		
 		T_TFBot_Medic_Kritz
@@ -366,14 +322,6 @@ WaveSchedule
 				"bot medic uber health threshold" 200
 			}
 		}	
-		
-		T_TFBot_Soldier_DH
-		{
-			Class Soldier
-			Name "Direct Hit Soldier" 
-			Item "Honcho's Headgear"
-			Item "The Direct Hit"
-		}
 		
 		T_TFBot_Spy_Enforcer_Cheers
 		{
@@ -525,44 +473,6 @@ WaveSchedule
 			}
 		}	
 		
-		T_TFBot_Medic_Shield_Superheal
-		{
-			Class Medic
-			Name "Shield Superheal Medic"
-			Skill Expert
-			ClassIcon medic_shield_infpop
-			WeaponRestrictions SecondaryOnly
-			Attributes SpawnWithFullCharge
-			Attributes ProjectileShield
-			Attributes IgnoreEnemies
-			Item "The Quick-Fix"
-			
-			FireWeapon [$SIGSEGV]  
-            {
-                Delay 1 
-                Cooldown 3 
-                Repeats 0 
-                Duration 0.6 
-				Type "Special" 
-			}
-			
-			ItemAttributes
-			{
-				ItemName "The Quick-Fix"
-				"heal rate bonus" 100
-				"uber duration bonus" 200
-				"ubercharge rate bonus" 200
-			}
-			
-			CharacterAttributes
-			{
-				"generate rage on heal" 2
-				"increase buff duration"	9
-				"health from healers increased" 0
-				"bot medic uber health threshold" 300
-			}
-		}
-		
 		T_TFBot_Heavyweapons_Shotgun_Plasma
 		{
 			Class Heavyweapons
@@ -672,10 +582,10 @@ WaveSchedule
 			}		
 		}	
 			
-		T_TFBot_Giant_Sniper_Multishot
+		T_TFBot_Giant_Sniper_Huntsman
 		{
 			Class Sniper
-			Name "Giant Multishot Bowman"
+			Name "Giant Rapid Fire Bowman"
 			Skill Expert
 			Health 3300
 			ClassIcon sniper_bow_multi
@@ -687,9 +597,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName "The Huntsman"
-				"fire rate bonus" 0.8
-				"damage bonus" 0.75
-				"arrow mastery" 2
+				"fire rate bonus" 0.6
 			}
 				
 			CharacterAttributes
@@ -719,7 +627,7 @@ WaveSchedule
 			{
 				ItemName "Deflector"
 				"damage bonus"	1.2
-				"attack projectiles" 2
+				"attack projectiles" 1
 				"heal on kill" 5000
 			}
 			CharacterAttributes
@@ -882,6 +790,7 @@ WaveSchedule
 				"airblast vulnerability multiplier" 0.01
 				"heal rate bonus" 200 
 				"bot medic uber health threshold" 1000
+				"bot medic uber deploy delay duration" 2
 				"cancel falling damage" 1
 			}
 		}
@@ -1102,6 +1011,8 @@ WaveSchedule
 						"dmg bonus vs buildings" 5
 						"critboost on kill" 5
 						"melee range multiplier" 1.5
+						"damage all connected" 1
+						"ragdolls become ash" 1
 					}	
 					
 					CharacterAttributes
@@ -1137,6 +1048,7 @@ WaveSchedule
 						"projectile spread angle penalty" 4
 						"clip size upgrade atomic" 16
 						"Projectile speed increased" 0.8
+						"ragdolls become ash" 1
 					}
 					
 					CharacterAttributes
@@ -1223,8 +1135,10 @@ WaveSchedule
 						"dmg bonus vs buildings" 5
 						"fire rate bonus" 0.6
 						"critboost on kill" 5
-						"heal on hit for rapidfire" 500
+						"heal on hit for rapidfire" 750
 						"melee range multiplier" 1.5
+						"damage all connected" 1
+						"ragdolls become ash" 1
 					}	
 					
 					CharacterAttributes
@@ -1256,12 +1170,13 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName "TF_WEAPON_ROCKETLAUNCHER"
-						"faster reload rate" 0.1
+						"faster reload rate" 0.05
 						"dmg bonus vs buildings" 3
 						"attach particle effect" 701
 						"fire rate bonus" 0.075
 						"projectile spread angle penalty" 4
-						"Projectile speed increased" 0.25
+						"Projectile speed increased" 0.3
+						"ragdolls become ash" 1
 					}
 					
 					CharacterAttributes
@@ -1321,6 +1236,7 @@ WaveSchedule
 				"dmg bonus vs buildings" 3
 				"clip size upgrade atomic" 16
 				"projectile spread angle penalty" 45
+				"ragdolls become ash" 1
 			}
 		
 			HomingRockets [$SIGSEGV] 
@@ -1474,6 +1390,7 @@ WaveSchedule
 				"clip size upgrade atomic" 116
 				"Projectile speed increased" 0.35
 				"projectile spread angle penalty" 90
+				"ragdolls become ash" 1
 			}
 								
 			CharacterAttributes
@@ -1570,21 +1487,21 @@ WaveSchedule
 				Target   "boss_spook_relay"
 				Action   Trigger
 				Delay    11
-				Cooldown 14
+				Cooldown 12
 				Repeats  0
 			}
 			
 			Taunt [$SIGSEGV]  //Taunt periodically
 			{
 				Delay 9 //Time before the first taunt starts (Default: 10)
-				Cooldown 14 //Time between each taunt (Default: 10)
+				Cooldown 12 //Time between each taunt (Default: 10)
 				Repeats 0 //How many times the bot should taunt in total (Default: 0 - Infinite)
 			}
 			
 			VoiceCommand [$SIGSEGV]  
 			{
 				Delay 11 
-				Cooldown 14
+				Cooldown 12
 				Repeats 0 
 				Type "Battle cry" 
 			}
@@ -1891,27 +1808,6 @@ WaveSchedule
 		
 		WaveSpawn
 		{
-			Name wave1support
-			WaitForAllDead wave1a
-			Where spawnbot
-			Where spawnbot_left
-			Where spawnbot_jeep
-			Where spawnbot_alley
-			TotalCount 25
-			MaxActive 5
-			SpawnCount 1
-			WaitBeforeStarting 0
-			WaitBetweenSpawns 3.75
-			Support Limited
-		
-			TFBot
-			{
-				Template  T_TFBot_Scout_Milk
-			}
-		}
-		
-		WaveSpawn
-		{
 			Name wave1b
 			WaitForAllDead wave1a
 			Where spawnbot
@@ -2148,7 +2044,9 @@ WaveSchedule
 			
 			TFBot
 			{
-				Template  T_TFBot_Pyro_Normal
+				Class Pyro
+				Skill Easy
+				Item "Ghastly Gibus 2011"
 			}
 		}
 		
@@ -2169,7 +2067,9 @@ WaveSchedule
 			
 			TFBot
 			{
-				Template  T_TFBot_Pyro_Normal
+				Class Pyro
+				Skill Easy
+				Item "Ghastly Gibus 2011"
 			}
 		}
 		
@@ -2190,19 +2090,21 @@ WaveSchedule
 			
 			TFBot
 			{
-				Template  T_TFBot_Pyro_Normal
+				Class Pyro
+				Skill Easy
+				Item "Ghastly Gibus 2011"
 			}
 		}
 	
 		WaveSpawn
 		{
-			Name wave2a-1
+			Name wave2a
 			Where spawnbot_alley
-			TotalCount 3
+			TotalCount 6
 			MaxActive 3
 			SpawnCount 3
 			WaitBeforeStarting 0
-			WaitBetweenSpawns 1
+			WaitBetweenSpawnsAfterDeath 10
 			TotalCurrency 75
 			
 			Squad
@@ -2220,61 +2122,18 @@ WaveSchedule
 				
 				TFBot
 				{
-					Template  T_TFBot_Heavyweapons_Tomislav
+					Class Heavy
+					Skill Easy
+					Item "Ghastly Gibus 2011"
 				}
 				
 				TFBot
 				{
-					Template  T_TFBot_Heavyweapons_Tomislav
+					Class Heavy
+					Skill Easy
+					Item "Ghastly Gibus 2011"
 				}
 			}	
-		}
-		
-		WaveSpawn
-		{
-			Name wave2a
-			WaitForAllDead wave2a-1
-			Where spawnbot_alley
-			TotalCount 5
-			MaxActive 5
-			SpawnCount 5
-			WaitBeforeStarting 10
-			WaitBetweenSpawns 1
-			TotalCurrency 75
-			
-			Squad
-			{
-				TFBot
-				{
-					Template  T_TFBot_Giant_Soldier_Spammer_Reload
-					CharacterAttributes
-					{
-						"damage force reduction" 0.01
-						"airblast vulnerability multiplier" 0.01
-						"airblast vertical vulnerability multiplier" 0.01		
-					}
-				}
-				
-				TFBot
-				{
-					Template  T_TFBot_Heavyweapons_Tomislav
-				}
-				
-				TFBot
-				{
-					Template  T_TFBot_Heavyweapons_Tomislav
-				}
-				
-				TFBot
-				{
-					Template  T_TFBot_Heavyweapons_Tomislav
-				}
-				
-				TFBot
-				{
-					Template  T_TFBot_Heavyweapons_Tomislav
-				}
-			}
 		}
 		
 		WaveSpawn
@@ -2291,7 +2150,7 @@ WaveSchedule
 		
 			TFBot
 			{
-				Template  T_TFBot_Giant_Sniper_Multishot
+				Template  T_TFBot_Giant_Sniper_Huntsman
 			}
 		}
 		
@@ -2309,7 +2168,7 @@ WaveSchedule
 		
 			TFBot
 			{
-				Template  T_TFBot_Giant_Sniper_Multishot
+				Template  T_TFBot_Giant_Sniper_Huntsman
 			}
 		}
 		
@@ -2330,7 +2189,9 @@ WaveSchedule
 			
 			TFBot
 			{
-				Template  T_TFBot_Pyro_Normal
+				Class Pyro
+				Skill Easy
+				Item "Ghastly Gibus 2011"
 			}
 		}
 		
@@ -2387,9 +2248,9 @@ WaveSchedule
 			Name wave2c
 			WaitForAllDead wave2b
 			Where spawnbot_tank
-			TotalCount 5
-			MaxActive 5
-			SpawnCount 5
+			TotalCount 2
+			MaxActive 2
+			SpawnCount 2
 			WaitBeforeStarting 8
 			WaitBetweenSpawns 1
 			TotalCurrency 50
@@ -2399,29 +2260,12 @@ WaveSchedule
 			{
 				TFBot
 				{
-					Template  T_TFBot_Giant_Sniper_Multishot
+					Template  T_TFBot_Giant_Sniper_Huntsman
 				}
 				
 				TFBot
 				{
 					Template  T_TFBot_Medic_QuickUber
-				}
-				
-				TFBot
-				{
-					Template  T_TFBot_Medic_QuickUber
-				}
-				
-				TFBot
-				{
-					Template  T_TFBot_Pyro_Normal
-					Attributes AlwaysFireWeapon
-				}
-				
-				TFBot
-				{
-					Template  T_TFBot_Pyro_Normal
-					Attributes AlwaysFireWeapon
 				}
 			}
 		}
@@ -2440,7 +2284,9 @@ WaveSchedule
 			
 			TFBot
 			{
-				Template  T_TFBot_Pyro_Normal
+				Class Pyro
+				Skill Easy
+				Item "Ghastly Gibus 2011"
 			}		
 		}
 		
@@ -2465,7 +2311,9 @@ WaveSchedule
 				
 				TFBot
 				{
-					Template  T_TFBot_Pyro_Normal
+					Class Pyro
+					Skill Easy
+					Item "Ghastly Gibus 2011"
 					Attributes AlwaysFireWeapon
 				}
 			}		
@@ -2594,12 +2442,12 @@ WaveSchedule
 				
 				TFBot
 				{
-					Template  T_TFBot_Medic
+					Template  T_TFBot_Medic_QuickUber
 				}
 				
 				TFBot
 				{
-					Template  T_TFBot_Medic
+					Template  T_TFBot_Medic_QuickUber
 				}
 			}
 		}
@@ -2638,7 +2486,9 @@ WaveSchedule
 			
 			TFBot
 			{
-				Template  T_TFBot_Heavyweapons_Tomislav
+				Class Heavy 
+				Skill Easy
+				Item "Ghastly Gibus 2011"
 			}
 		}
 	}
@@ -2702,13 +2552,12 @@ WaveSchedule
 			WaitBeforeStarting 0
 			WaitBetweenSpawns 1.3
 			TotalCurrency 100
+			Support Limited
 			
 			
 			TFBot
 			{
-				Template  T_TFBot_Scout_Melee
-				Attributes AlwaysCrit
-				ClassIcon scout_bat
+				Template  T_TFBot_Soldier_Escape_Plan
 			}
 		}
 		
@@ -2946,10 +2795,10 @@ WaveSchedule
 			WaitForAllDead wave3b
 			Where spawnbot_left
 			TotalCount 3
-			MaxActive 3
+			MaxActive 2
 			SpawnCount 1
 			WaitBeforeStarting 8
-			WaitBetweenSpawns 1
+			WaitBetweenSpawns 5
 			TotalCurrency 50
 			
 			
@@ -2962,8 +2811,6 @@ WaveSchedule
 					"airblast vulnerability multiplier" 0.5
 					"airblast vertical vulnerability multiplier" 0.5		
 				}
-				Attributes AlwaysCrit
-				Action Mobber
 			}
 		}
 		
@@ -2980,13 +2827,12 @@ WaveSchedule
 			WaitBeforeStarting 4
 			WaitBetweenSpawns 1
 			TotalCurrency 25
+			Support Limited
 			
 			
 			TFBot
 			{
-				Template  T_TFBot_Scout_Melee
-				Attributes AlwaysCrit
-				ClassIcon scout_bat
+				Template  T_TFBot_Soldier_Escape_Plan
 			}
 		}
 		
@@ -3001,15 +2847,14 @@ WaveSchedule
 			MaxActive 6
 			SpawnCount 6
 			WaitBeforeStarting 5
-			WaitBetweenSpawns 1
+			WaitBetweenSpawns 0
 			TotalCurrency 25
+			Support Limited
 			
 			
 			TFBot
 			{
-				Template  T_TFBot_Scout_Melee
-				Attributes AlwaysCrit
-				ClassIcon scout_bat
+				Template  T_TFBot_Soldier_Escape_Plan
 			}
 		}
 		
@@ -3211,7 +3056,7 @@ WaveSchedule
 			
 			TFBot
 			{
-				Template  T_TFBot_Pyro_Expert_Danger
+				Template  T_TFBot_Pyro_Normal
 			}
 		}
 		
@@ -3377,44 +3222,11 @@ WaveSchedule
 			WaitBetweenSpawns 1.5
 			TotalCurrency 50
 			
-			RandomChoice
+			TFBot
 			{
-				TFBot
-				{
-					Class Scout
-					Skill Normal
-				}
-				
-				TFBot
-				{
-					Class Scout
-					Skill Normal
-				}
-				
-				TFBot
-				{
-					Class Scout
-					Skill Normal
-				}
-				
-				TFBot
-				{
-					Class Scout
-					Skill Normal
-				}
-				
-				TFBot
-				{
-					Class Scout
-					Skill Normal
-				}
-				
-				TFBot
-				{
-					Class Scout
-					Skill Hard
-				}
-			}			
+				Class Scout
+				Skill Normal
+			}	
 		}
 	}
 	
@@ -3456,7 +3268,8 @@ WaveSchedule
 			{
 				TFBot
 				{
-					Template  T_TFBot_Soldier_DH
+					Class Soldier
+					Skill Normal
 				}
 				
 				TFBot
@@ -3512,31 +3325,6 @@ WaveSchedule
 		
 		WaveSpawn
 		{
-			Name wave5demo
-			Where spawnbot_alley
-			TotalCount 8
-			MaxActive 2
-			SpawnCount 2
-			WaitBeforeStarting 0
-			WaitBetweenSpawns 0
-			TotalCurrency 50
-			
-			Squad
-			{
-				TFBot
-				{
-					Template  T_TFBot_Demo_Burst_Fixed
-				}
-				
-				TFBot
-				{
-					Template  T_TFBot_Medic_Kritz
-				}
-			}	
-		}
-		
-		WaveSpawn
-		{
 			Name wave5a
 			Where spawnbot_left
 			Where spawnbot
@@ -3550,7 +3338,8 @@ WaveSchedule
 			
 			TFBot
 			{
-				Template  T_TFBot_Soldier_DH
+				Class Soldier
+				Skill Normal
 			}
 		}
 		
@@ -3638,7 +3427,7 @@ WaveSchedule
 			TFBot
 			{
 				Class Soldier 
-				Skill Hard
+				Skill Normal
 			}
 		}
 		
@@ -3755,7 +3544,7 @@ WaveSchedule
 			Where spawnbot
 			Where spawnbot_left
 			Where spawnbot_jeep
-			TotalCount 18
+			TotalCount 20
 			MaxActive 5
 			SpawnCount 1
 			WaitBeforeStarting 0
@@ -3766,28 +3555,6 @@ WaveSchedule
 			TFBot
 			{
 				Template  T_TFBot_Demo_Burst_Fixed
-			}
-		}
-		
-		WaveSpawn
-		{
-			Name wave5c
-			WaitForAllDead wave5b
-			Where spawnbot_alley
-			Where spawnbot
-			Where spawnbot_left
-			Where spawnbot_jeep
-			TotalCount 15
-			MaxActive 3
-			SpawnCount 1
-			WaitBeforeStarting 4
-			WaitBetweenSpawns 3
-			TotalCurrency 50
-			
-			
-			TFBot
-			{
-				Template  T_TFBot_Soldier_DH
 			}
 		}
 		
@@ -4013,13 +3780,14 @@ WaveSchedule
 				{
 					Class Demoman
 					Skill Easy
+					Item "Ghastly Gibus 2011"
 					Attributes AlwaysCrit
 				}
 				
 				TFBot
 				{
 					Class Demoman
-					Skill Expert
+					Skill Normal
 					Attributes AlwaysCrit
 				}
 			}	
@@ -4293,13 +4061,14 @@ WaveSchedule
 				{
 					Class Demoman
 					Skill Easy
+					Item "Ghastly Gibus 2011"
 					Attributes AlwaysCrit
 				}
 				
 				TFBot
 				{
 					Class Demoman
-					Skill Expert
+					Skill Normal
 					Attributes AlwaysCrit
 				}
 			}
@@ -4539,64 +4308,37 @@ WaveSchedule
 			FirstSpawnWarningSound "vo/mvm/norm/soldier_mvm_hatoverhearttaunt02.mp3"
 		}
 	}
-}	
+}	 
 		
 
+//Post Launch Changelog
+//
+//Wave 1:
+//-Removed straggling issues
+//-Removed Milk Scouts
 
-//deez nuts
-
-//Changelog
-
-//Wave 1
-//-Replaced Bigheal Medics (on the Giant Rocket Shotgun Soldier) to Quickfix Medics
-//=Nerfed Giant Rocket Shotgun Soldier
-//	-Reduced damage by 33%
-
-//Wave 2
-//-Delayed first Pyro spawns
-//-Removed Penetration from Bowmen
-
-//Wave 3
-//-Fixed bad english
-//-Fixed Headless Mann going very fast when having heads
-//=Nerfed Headless Mann
-//	-Reduced stun radius by 50 units
-//	-Shortened stun duration to 3s
-
-//Wave 4
-//-Replaced Giant Natascha Heavy with Giant Heavy
-
-//Wave 5
-//-Removed crits from Giant Armored Sandman Scouts
-
-//Wave 6
-//-Fixed the icon disappearing after phase 1 is dead
-//=Nerfed Slave Knight Dael:
-//	-Removed damage bonuses in all phases
-
-
-//Changelog Version 2
+//Wave 2:
+//-Changed all pyros' skill to Easy and gave them the Gibus Hat
+//-Replaced all Tomislav Heavies with regular Heavies
+//-Removed 2 Heavies
+//-Replaced Giant Multishop Bowmen with Giant Rapid Fire Bowmen (50% fire rate bonus, no damage penalty)
+//-Replaced the last giant's Uber Medics with Short Uber Medics
 
 //Wave 3:
-//-Replaced Flare Gatling Gun Heavies with Heater Heavies
+//-Replaced crit Bat Scouts with Escape Plan Soldiers (no mark for death)
+//-Nerfed the Giant HoK Heavy's Projectile Deflection to level 1
+//-Made Super Scouts go for the bomb and removed their crits
+//-Slightly buffed Headless Mann (stuns more often)
 
-//Wave 4: 
-//-Removed final subwave
-//-Demoknights spawn faster now and there's 90 of them now
-//-Replaced Giant Heavy with Giant Deflector Heavy
+//Wave 4:
+//-Made Demoknights more distinct from one another (and of equal threat)
+//-Made the Pyros Normal Skill
 
-//Wave 5:
-//Nerfed Giant Bison Ray Soldier
-//	-Removed damage bonus
-//	-Reduced fire rate bonus to 80% (was 90% before)
-//
-//Nerfed Giant Plasma Heavy
-//	-Decreased fire rate to 35% slower 
-//
-//-Reduced the size of Burst Demo groups in the 2nd subwave
-//-Reduced MaxActives of 2nd subwave soldiers
-//-Final Colonel Barrage comes out faster
+//Wave 5
+//-Replaced all Direct Hit Soldiers with Soldiers 
+//-Removed Burst Demo + Kritz Medic pairs
+//-Added 2 second pop delay to the Giant Uber Medic 
+//-Removed soldiers from the last subwave
 
 //Wave 6
-//Nerfed Slave Knight Gael
-//	-Phase 2 sword does 500 HoH instead of 1000
+//-Slightly buffed Slave Knight Dael in Phase 1 and 2 (and made him turn people into ash on kill)

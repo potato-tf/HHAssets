@@ -1051,7 +1051,7 @@ WaveSchedule
 			TotalCurrency 100
 			Where spawnbot_airdrop1
 			
-			StartWaveOutput
+			FirstSpawnOutput
 			{
 				Target air_warning_relay
 				Action Trigger
