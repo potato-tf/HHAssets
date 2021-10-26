@@ -1,0 +1,229 @@
+################################################################
+Mission updates
+################################################################
+
+Condemned - Trespasser
+
+General
+
+Fixed various god spots
+Added an additional small medkit and small ammopack below the slippy plank
+Added new intro camera to fix a problem with bugged screenview in setup
+All enemies will now reach to elevated players and climb obstacles much faster
+All friendly shots and attacks now pass through teammates
+Removed refund button to fix a money exploit
+Moved the courtyard dispenser position
+Possibly fixed infinite class menu music problem
+Last Man slow is now permanently removed after Virophage is defeated
+Decreased Headless Zombie count by 25 in second part
+Bomb robots now arrive a little later to give players time to hit the tank
+Starting a game solo will no longer overlap music
+New weapons can now be equipped from the shop. Look for the menu on the left of your screen when inside the shop
+Bot Survivors
+
+Standardized Survivor skill : Expert
+Standardized Zombie Survivor skill : Normal with 1 second aim lag
+Survivors will now switch back to their gun if they are healed
+Survivors are no longer slowed down by Last Man sequence
+Survivors now yell out in agony when killed to warn players ahead
+Weapons
+
+Added new Heavy shotgun : Riot Rifle (can be chosen from the start)
+Added new Scout melee : Bludgeoner (non-scout standard melee stats)
+Allowed Force-A-Nature with large downsides
+Slug Rifle can be chosen from the start (Unique Soldier Shotgun)
+Incendiary Rifle can be chosen from the start (Unique Pyro Shotgun)
+Removed crossbow rework (now valve stats)
+Ambassador now ignores enemy resistances
+Flying Guillotine is now permanently crit-boosted
+Decreased Heavy Machine Gun reload penalty from 150% to 100%
+Decreased Caber self damage from 50 to 25
+Decreased Banners duration penalty from -35% to -25%
+Decreased Handcannon (Deagle) accuracy bonus from +50% to +25%
+Handcannon now passively reduces a engineer's dispenser effectiveness by 75%
+Added 1 person bullet penetration to Force-a-nature
+Added 1 person bullet penetration to Shortstop
+Added +25 health on wearer for Bonk! Atomic Drink
+Added +25 health on wearer for Crit-A-Cola
+Added -25 health on wearer for Widowmaker
+Added double Burn Damage for Gas Passer
+Added slow immunity for the Thermal Thruster
+Added new stats for Market Gardener : 100% crit from behind and +25% jump height
+Re-added stickybomb jumps at 25% effectiveness
+Removed stickybomb's adhesiveness to targets
+Removed +20 health from Battalion's Backup
+Removed +4 health regen from Concheror
+Zombies
+
+Large zombies and large robots no longer ignore buildables
+Increased Poison Zombie health from 125 to 150
+Increased Atomic Skeleton health from 200 to 250 (use melee weapons!)
+Increased Dire Skeleton health from 200 to 300 (use melee weapons!)
+Possibly fixed case where Horsemann dealt 0 damage
+Virophage now spits faster; reduced stun time to compensate
+Fixed Virophage and Leaper damage being resistable
+Increased Virophage damage vulnerability to melee damage from +500% to +800%
+Decreased Plague Zombie health from 1000 to 750
+Increased Leaper health from 750 to 1000
+Reworked Leaper; very significantly reduced rate of damage given. Tripled base damage to compensate
+Rocketjumpers; decreased health to 125 and increased count to 50
+Giant Direct Hit now lead their shots
+Riot Heavy Zombies now use the Riot Rifle (with poor aim)
+Kelly - Ominous Outback
+
+Wave 1
+Axe Pyros Removed
+Wave 2
+Fixed bug where Roadkill Pyros get stuck in spawn
+Decay - Horrific Hex
+
+Increased starting cash to $1000
+Tank/Blimp HP is displayed in chat
+Wave 2
+Removed medics from giant soldiers, nerfed tank hp to 25000
+Traumatic - Bloodwater
+
+Tank HP is displayed in chat
+Wave 3
+Bigheal Kritz Medics changed to Kritz Medics
+Boogge - Freaky Fodder
+
+Tank HP is displayed in chat
+Deathpour - Blackout
+
+Tank/Blimp HP is displayed in chat
+Chateau - Remedic
+
+Vitasaw fire rate penalty is now 70%
+Vitsaw damage bonus decreased to +15%
+Super Syringe, Landmine Crossbow upgrade price raised to 500
+Melee Master damage bonus reduced to 10%
+Berserker max damage bonus increased to 80%
+Wave 3 Reworked
+Removed Regenerator due to issue of being respawned inside walls
+Replaced with regular subwaves
+Wave 4
+Adaptor HP increased to 7500
+Combo Pyros WaitBetweenSpawns 3 > 5
+Wave 5
+Foggy Zombie (Dodge Scouts) increased HP to 425
+Added 1 Giant Sandman Scout Zombie to wave
+Wave 6
+Killing the Engineer after the payload explodes now wins the game (35000 HP)
+Added Scout zombies to support
+Deathpour - Bloodpour
+
+Wave 2
+Giant Demoknights have a 35% fire rate penalty and 60% less movement speed instead of 50%
+Changed Giant Burst Fire Soldiers to Giant Charged Soldiers
+Changed Steel Gauntlet Pushers to normal Steel Gauntlets
+Equalizer Soldiers changed to Shovel Soldiers
+Changed the HP of the giant demoknights from 3300 to 3000
+Changed the Bigheal medics to QuickFix medics
+Wave 3
+Removed 50% damage bonus from the Giant Heavies
+Wave 4
+Changed first tank's hp to 24000
+Changed second tank's hp to 26500
+Reduced final tank's speed from 75 to 70
+Changed the TotalCount and MaxActive of the giants to 4
+Removed AlwaysFireWeapon from Giant Pyros and disabled airblast
+Wave 6
+Changed the MaxActive of the commons to 11 to prevent bots getting stuck
+Underworld - Subterranean Animism
+
+Fixed bug where players would teleport inside the tank
+Fixed sentries being unable to target the conch tank correctly
+Wave 3
+Buffed Captain Punch Huolong heater damage bonus to 600% (125% damage bonus)
+Reduced bonus vs building damage to 300%
+Wave 5
+Made Maxactive 8 to the Bowman to avoid straggling
+Bumped both tanks by 2k hp
+Wave 6
+Bumped Captain Punch health to 8k hp
+Reduced bonus vs building damage to 300%
+Nightsky - Death Con One
+
+Made it so the air raid siren goes off when the Giant Burst Fire Soldier gets airdropped in
+Lostvalley Dreadful Discernment
+
+Wave 1
+Giant Spammer Demomen are now stock demomen
+Removed Crits from Demoknights
+Wave 2
+Lowered maxactive and spawn rate on supports so the spies don't clog up the last giants spawning
+Wave 3
+Nerfed bullets per shot on the Giant Soda Poppers
+Shank - Spookee
+
+Added UseHumanAnimations to all nonboss skeletons to address some funny business regarding hitboxes
+Giant Medics now have their uber effect last a single second
+Stage 4:
+Raised Giant HeavyMedic WaitBeforeStarting to 45, from 20
+Raised WaitBetweenSpawns to 35, from 25
+Removed one pair of Giant HeavyMedic combo
+Giant Heavy is Hard skill now
+Null - Baneful Harvest
+
+Wave 1:
+Removed straggling issues
+Removed Milk Scouts
+Wave 2:
+Changed all pyros' skill to Easy and gave them the Gibus Hat
+Replaced all Tomislav Heavies with regular Heavies
+Removed 2 Heavies
+Replaced Giant Multishop Bowmen with Giant Rapid Fire Bowmen (50% fire rate bonus, no damage penalty)
+Replaced the last giant's Uber Medics with Short Uber Medics
+Wave 3:
+Replaced crit Bat Scouts with Escape Plan Soldiers (no mark for death)
+Nerfed the Giant HoK Heavy's Projectile Deflection to level 1
+Made Super Scouts go for the bomb and removed their crits
+Slightly buffed Headless Mann (stuns more often)
+Wave 4:
+Made Demoknights more distinct from one another (and of equal threat)
+Made the Pyros Normal Skill
+Wave 5
+Replaced all Direct Hit Soldiers with Soldiers
+Removed Burst Demo + Kritz Medic pairs
+Added 2 second pop delay to the Giant Uber Medic
+Removed soldiers from the last subwave
+Wave 6
+Slightly buffed Slave Knight Dael in Phase 1 and 2 (and made him turn people into ash on kill)
+Cliffside - Descent
+
+Added "not solid to players" to sentient witch's hat (Spell Casting Tank)
+################################################################
+Map updates
+################################################################
+
+Whitecliff Event
+
+Dropped spellbooks now have a corresponding icon above them to represent what book they are
+This will hopefully reduce confusion in regards to what books do what.
+Removed the vaccinator resist spellbook effects. (these were unused and removed to make way for the spellbook icons)
+Fixed a clipping error in the flankers spawn that bots attempted to walk through.
+Smoothed out various displacements at botspawn and red spawn to not look as jarring/out of place.
+Legerdemain
+
+Fixed hole in forest cliff wall
+Fixed robots getting stuck in left spawn
+Fixed robots being vulnerable in left spawn
+Fixed texture alignment problem in castle area
+Cliffside
+
+Reduced bloomscale significantly to make bright things appear much less bright.
+Added some nobuild by the front to fix a sentry spot which couldn't be reached.
+Added textures to robot spawn.
+################################################################
+Miscellaneous
+################################################################
+
+Renamed Whitecliff and Legerdemain missions to match map update
+Update .res files of updated maps
+Added Shovel Soldier icon, removed Equalizer Soldier icon since it was no longer being used
+Removed medic_shield_infpop icon as it is no longer being used
+Giant Bat Scouts now use scout_bat icon where appropriate (except Deathpour - Bloodpour due to icon stacking)
+-Powerplant - Virutal Vortex
+-Traumatic - Bloodwater
+-Traumatic - River of Despair
