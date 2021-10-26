@@ -6,7 +6,7 @@ yes_spy_counters_w4_got_a_fucking_problem?
 {
 	CanBotsAttackWhileInSpawnRoom no
 	RespawnWaveTime	2
-	StartingCurrency 800
+	StartingCurrency 1000 //800
 	Advanced 1
 	EventPopFile Halloween
 	ZombiesNoWave666 1 [$SIGSEGV] // If set to 1, the game will not display wave 666 when EventPopFile is set (default: 0)
@@ -509,11 +509,12 @@ yes_spy_counters_w4_got_a_fucking_problem?
 			WaitBetweenSpawns 0
 			TotalCurrency 275
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
+			FirstSpawnMessage "{blue}Tank spawned in with 25k (25000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			
 			Tank
 			{
-				Health 27500 //25000 //30000
+				Health 25000 //27500 //25000 //30000
 				Speed 75
 				Name "tankboss"
 				Skin 0									// 0 - normal skin, 1 - final wave skin
@@ -664,9 +665,9 @@ yes_spy_counters_w4_got_a_fucking_problem?
 			Name stage2
 			WaitForAllSpawned stage1
 			Where spawnbot
-			TotalCount 6 //2
-			MaxActive 6 //4 //2
-			SpawnCount 2
+			TotalCount 3
+			MaxActive 3
+			SpawnCount 1
 			WaitBeforeStarting 15
 			WaitBetweenSpawns 15 //20 //2
 			TotalCurrency 300
@@ -678,11 +679,6 @@ yes_spy_counters_w4_got_a_fucking_problem?
 				TFBot
 				{
 					Template T_TFBot_Giant_Soldier_Spammer_Reload
-				}
-
-				TFBot
-				{
-					Template T_TFBot_Medic_BigHeal
 				}
 			}
 		}
@@ -1220,6 +1216,7 @@ yes_spy_counters_w4_got_a_fucking_problem?
 			WaitBetweenSpawns 0
 			TotalCurrency 300
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
+			FirstSpawnMessage "{blue}Blimp spawned in with 10k (10000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			
 			Tank // mvm blimp concept designed by Hell-met
@@ -1441,6 +1438,7 @@ yes_spy_counters_w4_got_a_fucking_problem?
 			WaitBetweenSpawns 0
 			TotalCurrency 300
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
+			FirstSpawnMessage "{blue}Tank spawned in with 27.5k (27500) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			
 			Tank

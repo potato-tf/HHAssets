@@ -116,11 +116,11 @@ we_do_a_little_trollllllllllllling
 			}
 		}
 
-		T_TFBot_Medic_Kritz_BigHeal //HEY GUYS, KILL THE MEDIC FIRST //not bigheal fuck you
+		T_TFBot_Medic_Kritz //HEY GUYS, KILL THE MEDIC FIRST //not bigheal fuck you
 		{
 		    Class Medic
 			ClassIcon medic_kritz ///custom icon
-			Name "Bigheal Kritzkrieg Medic"
+			Name "Kritzkrieg Medic"
 			Skill Expert
 			Attributes SpawnWithFullCharge
 			//Attributes AlwaysCrit
@@ -592,7 +592,7 @@ we_do_a_little_trollllllllllllling
 			WaitBeforeStarting 5
 			TotalCurrency 300
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
-			
+			FirstSpawnMessage "{blue}Tank spawned in with 15k (15000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			Tank
 			{
@@ -638,7 +638,7 @@ we_do_a_little_trollllllllllllling
 					Template T_TFBot_Giant_Scout
 					WeaponRestrictions MeleeOnly
 					Health 1200
-					ClassIcon scout_giant
+					ClassIcon scout_bat //_nys
 					Tag noflank
 				}
 		}
@@ -781,7 +781,7 @@ we_do_a_little_trollllllllllllling
 
 				TFBot
 				{
-					Template T_TFBot_Medic_Kritz_BigHeal
+					Template T_TFBot_Medic_Kritz
 					Tag noflank
 				}
 			}
@@ -987,6 +987,7 @@ we_do_a_little_trollllllllllllling
 			WaitBeforeStarting 50
 			TotalCurrency 200
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
+			FirstSpawnMessage "{blue}Tank spawned in with 20k (20000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			
 			Tank
@@ -1056,6 +1057,7 @@ we_do_a_little_trollllllllllllling
 			SpawnCount 1
 			TotalCurrency 200
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
+			FirstSpawnMessage "{blue}Tank spawned in with 20k (20000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			
 			Tank
@@ -1176,6 +1178,7 @@ we_do_a_little_trollllllllllllling
 			TotalCurrency 200
 			WaitBeforeStarting 40
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
+			FirstSpawnMessage "{blue}Tank spawned in with 22k (22000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			
 			Tank

@@ -1847,7 +1847,7 @@ ZombieSchedule
 			TFBot
 			{
 			    Template T_TFBot_Giant_Scout
-				ClassIcon scout_giant
+				ClassIcon scout_bat
 				WeaponRestrictions MeleeOnly
 				Tag noflank
 			    UseHumanModel 2

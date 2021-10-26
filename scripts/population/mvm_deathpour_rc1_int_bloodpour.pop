@@ -505,7 +505,7 @@ WaveSchedule
 			ClassIcon demoknight_giant
 			Name "Giant Demoknight"
 			Skill Expert
-			Health 3300
+			Health 3000
 			Item "Forgotten King's Restless Head"
 			Item "Forgotten King's Pauldrons"
 			Item "The Chargin' Targe"
@@ -517,11 +517,12 @@ WaveSchedule
 			{
 				ItemName "The Horseless Headless Horseman's Headtaker"
 				"critboost on kill" 3
+				"fire rate bonus" 1.35
 				"charge recharge rate increased" 0.33
 			}
 			CharacterAttributes
 			{
-				"move speed bonus" 0.5
+				"move speed bonus" 0.4
 				"damage force reduction" 0.5
 				"airblast vulnerability multiplier" 0.25
 				"override footstep sound set" 4
@@ -541,7 +542,6 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName "The Bread Bite"
-				"fire rate bonus" 0.75
 				"self mark for death" 1
 				"mod_maxhealth_drain_rate" 0
 			}
@@ -763,11 +763,10 @@ WaveSchedule
 			TFBot
 			{
 				Class Soldier
-				ClassIcon soldier_pickaxe_equalize
-				Name "Pickaxe Soldier"
+				ClassIcon soldier_shovel
+				Name "Shovel Soldier"
 				Skill Hard
 				WeaponRestrictions MeleeOnly
-				Item "The Equalizer"
 			}
 		}
 		WaveSpawn
@@ -790,7 +789,7 @@ WaveSchedule
 			}
 			TFBot
 			{
-				Template T_TFBot_Medic_Bigheal
+				Template T_TFBot_Medic_QuickFix
 			}
 		  }
 		}
@@ -808,7 +807,7 @@ WaveSchedule
 			
 			TFBot
 			{
-				Template T_TFBot_Heavy_IronFist_Airblast
+				Template T_TFBot_Heavyweapons_Fist
 				Item "Mad Mask"
 			}
 		}
@@ -861,7 +860,7 @@ WaveSchedule
 			
 			TFBot
 			{
-				Template T_TFBot_Giant_Soldier_Spammer_Reload
+				Template T_TFBot_Giant_Soldier_Crit
 				//Item "The Hell-met"
 				Item "The Hellmet"
 			}
@@ -954,8 +953,12 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Giant_Heavyweapons
-				Skill Hard
 				Item "Der Maschinensoldaten-Helm"
+				ItemAttributes
+				{
+					ItemName "TF_WEAPON_MINIGUN"
+					"damage bonus" 1.0
+				}
 				//Item "Immobile Suit"
 				//Stupid item keeps stretching smh
 			}
@@ -1182,8 +1185,8 @@ WaveSchedule
 			Name "w4-b1"
 			WaitForAllDead w4-a1
 			TotalCurrency 120
-			TotalCount 6
-			MaxActive 6
+			TotalCount 4
+			MaxActive 4
 			SpawnCount 2
 			WaitBetweenSpawns 20
 			WaitBeforeStarting 0
@@ -1194,8 +1197,11 @@ WaveSchedule
 			TFBot
 			{
 				Template T_TFBot_Giant_Pyro
-				Attributes AlwaysFireWeapon
-				//Attributes AlwaysCrit
+				ItemAttributes
+				{
+					ItemName "TF_WEAPON_FLAMETHROWER"
+					"airblast disabled" 1.0
+				}
 			}
 			TFBot
 			{
@@ -1219,7 +1225,7 @@ WaveSchedule
 			Tank
 			{
 				Name "tankboss"
-				Health 35000
+				Health 26500
 				Speed 70
 				StartingPathTrackNode tank_path_1
 				
@@ -1243,7 +1249,7 @@ WaveSchedule
 			TotalCount 75
 			MaxActive 8
 			SpawnCount 2
-			WaitBetweenSpawns 2
+			WaitBetweenSpawns 4
 			WaitBeforeStarting 0
 			Where spawnbot
 			Support 1
@@ -1535,7 +1541,7 @@ WaveSchedule
 			WaitForAllDead w6-a1
 			TotalCurrency 175
 			TotalCount 30
-			MaxActive 10
+			MaxActive 11
 			SpawnCount 10
 			WaitBetweenSpawns 0
 			WaitBeforeStarting 0
@@ -1555,7 +1561,7 @@ WaveSchedule
 			WaitForAllDead w6-a1
 			TotalCurrency 175
 			TotalCount 30
-			MaxActive 10
+			MaxActive 11
 			SpawnCount 10
 			WaitBetweenSpawns 0
 			WaitBeforeStarting 5
