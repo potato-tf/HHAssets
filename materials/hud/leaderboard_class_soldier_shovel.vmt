@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$basetexture" "hud/leaderboard_class_soldier_pickaxe_equalize"
+	"$baseTexture" "hud/leaderboard_class_soldier_shovel"
 	"$vertexcolor" 1
 	"$no_fullbright" 1
 	"$ignorez" 1
