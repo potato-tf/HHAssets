@@ -14,7 +14,7 @@ population
     FixedRespawnWaveTime 1
 	CanBotsAttackWhileInSpawnRoom	no
 	Advanced	1
-    PrecacheModel "models/bots/sniper_boss/bot_sniper_boss.mdl" [$SIGSEGV]
+    //PrecacheModel "models/bots/sniper_boss/bot_sniper_boss.mdl" [$SIGSEGV]
     PrecacheModel "models/props_bigrock_event/bot_heavy_punchboss_nogibs.mdl" [$SIGSEGV]
     PrecacheModel "models/props_bigrock_event/bot_heavy_punchboss.mdl" [$SIGSEGV]
     PrecacheModel "models/props_halloween/crumpkin_loot.mdl" [$SIGSEGV]
@@ -1982,7 +1982,7 @@ population
 			WeaponRestrictions PrimaryOnly
 			Attributes MiniBoss
 			Attributes AlwaysFireWeapon
-            UseCustomModel "models/bots/sniper_boss/bot_sniper_boss.mdl" [$SIGSEGV]
+            //UseCustomModel "models/bots/sniper_boss/bot_sniper_boss.mdl" [$SIGSEGV]
 			ItemAttributes
 			{
 				ItemName "The Machina"
@@ -1996,7 +1996,7 @@ population
 				"damage force reduction" 0.5
 				"airblast vulnerability multiplier" 0.5
 				"override footstep sound set" 3
-				//"head scale" 0.7
+				"head scale" 0.7
 			}
 		}
         T_TFBot_Heavy_BigrockCrit

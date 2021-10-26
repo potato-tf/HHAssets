@@ -1307,10 +1307,11 @@ WaveSchedule
         Boss_Merasmus_Stationary
         {
             Name "MERASMUS!"
-            Class Sniper
+            Class Pyro
 			ClassIcon boss_merasmus
 			WeaponRestrictions PrimaryOnly
 			Scale 1.9
+            UseHumanModel 1
             UseCustomModel "models/bots/merasmus/merasmussmall.mdl"
 			Skill Expert
 			Health 47666
@@ -1320,10 +1321,12 @@ WaveSchedule
             UseMeleeThreatPrioritization 1
 			Tag bot_giant
 			Tag bot_boss
-            StripItem "zombie sniper"
+            PainSound "nosound.wav"
+            StripItem "zombie pyro"
+			NoIdleSound 1
 			ItemAttributes
 			{
-				ItemName "TF_WEAPON_CLUB"
+				ItemName "TF_WEAPON_FIREAXE"
 				"is_passive_weapon" 1
 				"damage bonus" 1.2
 				"damage causes airblast" 1
