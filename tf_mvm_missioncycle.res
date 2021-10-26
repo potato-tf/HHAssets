@@ -26,8 +26,8 @@
 		}
 		"5"
 		{
-			"map"		"mvm_creepside_b1"
-			"popfile"		"mvm_creepside_b1"
+			"map"		"mvm_creepside_b2"
+			"popfile"		"mvm_creepside_b2"
 		}
 		"6"
 		{
