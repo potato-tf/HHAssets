@@ -2130,7 +2130,7 @@ WaveSchedule
                         AimOffset "0 0 200"
                         CharacterAttributes 
                         {
-                            "not solid to players"
+                            "not solid to players" 1
                             "no_jump" 1
                             "move speed bonus" 0.001
                             "cannot pick up intelligence" 1
