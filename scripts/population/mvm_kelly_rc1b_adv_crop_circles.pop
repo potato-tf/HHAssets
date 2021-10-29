@@ -771,7 +771,7 @@ WaveSchedule
 			TFBot
 			{
 				Template	T_TFBot_Scout_Melee
-				ClassIcon	scout_bat
+				ClassIcon	scout_bat_nys
 			}
 		}	
 			
@@ -2291,6 +2291,8 @@ WaveSchedule
 					"fire rate bonus" 0.1
 					"projectile spread angle penalty" 4
 					"no self blast dmg" 1
+					"damage bonus" 1.25
+					"dmg bonus vs buildings" 5
 				}
 				
 				ItemAttributes

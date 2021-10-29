@@ -1,6 +1,6 @@
 #base robot_giant.pop
 #base robot_standard.pop
-//Trespasser - Zombie Survival - V2
+//Trespasser - Zombie Survival - V3
 //Made By Hell-met http://steamcommunity.com/id/hell-met/
 //Entwork help By washy https://steamcommunity.com/id/gg2washy/
 //Big entwork help By Jurrell https://steamcommunity.com/profiles/76561198145026974/
@@ -13,7 +13,7 @@ WaveSchedule
 {
 
 	StartingCurrency				500
-	RespawnWaveTime					999
+	RespawnWaveTime					9999
 	FixedRespawnWaveTime 			1
 	CanBotsAttackWhileInSpawnRoom 	Yes
 	//EventPopfile					Halloween
@@ -295,6 +295,7 @@ WaveSchedule
 		"MVM.GiantCommonExplodes"				"misc/null.wav"
 		"Building_Sentrygun.Alert"				"misc/null.wav"
 		"Weapon_General.CritPower"				"misc/null.wav"
+		"Regenerate.Touch"						"misc/null.wav"
 		"BumperCar.SpeedBoostStart"				"npc\barnacle\barnacle_tongue_pull1.wav"
 		"BumperCar.SpeedBoostStop"				"items\medshot4.wav"
 	}
@@ -326,6 +327,14 @@ WaveSchedule
 		Name "gentlemanne_scattergun_coffinnail"
 		Name "warbird_scattergun_killerbee"
 		Name "warbird_scattergun_corsair"
+		Name "Silver Botkiller Scattergun Mk.I"
+		Name "Gold Botkiller Scattergun Mk.I"
+		Name "Rust Botkiller Scattergun Mk.I"
+		Name "Blood Botkiller Scattergun Mk.I"
+		Name "Carbonado Botkiller Scattergun Mk.I"
+		Name "Diamond Botkiller Scattergun Mk.I"
+		Name "Silver Botkiller Scattergun Mk.II"
+		Name "Gold Botkiller Scattergun Mk.II"
 		ClassName	"tf_weapon_pep_brawler_blaster"
 		ClassName	"tf_weapon_soda_popper"
 
@@ -352,6 +361,7 @@ WaveSchedule
 		//engineer
 
 		//sniper
+		ClassName	"tf_weapon_compound_bow"
 		ClassName 	"tf_weapon_sniperrifle"
 		ClassName 	"tf_weapon_sniperrifle_decap"
 		ClassName	"tf_weapon_sniperrifle_classic"
@@ -368,7 +378,7 @@ WaveSchedule
 	
 	PlayerAttributes [$SIGSEGV]
 	{
-		"min respawn time" 999
+		"min respawn time" 9999
 		"always allow taunt" 1
 		"crit mod disabled" 0
 		Soldier
@@ -381,21 +391,16 @@ WaveSchedule
 			"engy sentry fire rate increased" 5			//experimental sentry
 			"mult teleporter recharge rate" 0.25		//make level 1 tele usable
 			"building max level" 1						//make dispenser not meta or essential
+			"mod teleporter speed boost" 1				//teleport buff
 			"hidden secondary max ammo penalty" 0.18	//nerf dumb 200 ammo to scout's 36
-		}
-		Medic
-		{
-			"maxammo primary reduced" 0.535				//less ammo
 		}
 	}
 
 	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "The Force-a-Nature"
-		"projectile penetration heavy" 1
-		"damage penalty" 0.65
+		"damage penalty" 0.75
 		"bullets per shot bonus" 1
-		"mod ammo per shot" 2
 		"scattergun has knockback" 0
 		"custom weapon fire sound" "=80|trespasser/sg-1.wav"
 	}
@@ -403,10 +408,8 @@ WaveSchedule
 	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "Festive Force-a-Nature"
-		"projectile penetration heavy" 1
-		"damage penalty" 0.65
+		"damage penalty" 0.75
 		"bullets per shot bonus" 1
-		"mod ammo per shot" 2
 		"scattergun has knockback" 0
 		"custom weapon fire sound" "=80|trespasser/sg-1.wav"
 	}
@@ -414,9 +417,8 @@ WaveSchedule
 	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "The Shortstop"
-		"projectile penetration heavy" 1
 		"reload time increased hidden" 1
-		"damage penalty" 0.65
+		"damage penalty" 0.75
 	}
 
 	ItemAttributes [$SIGSEGV]
@@ -466,18 +468,6 @@ WaveSchedule
 
 	ItemAttributes [$SIGSEGV]
 	{
-		ItemName "Jarate"
-		"mult effect duration" 0.5
-	}
-
-	ItemAttributes [$SIGSEGV]
-	{
-		ItemName "The Self-Aware Beauty Mark"
-		"mult effect duration" 0.5
-	}
-
-	ItemAttributes [$SIGSEGV]
-	{
 		ItemName "The Gas Passer"
 		"weapon burn dmg increased" 2
 		"item_meter_charge_type" 1
@@ -520,7 +510,6 @@ WaveSchedule
 	{
 		ItemName "The B.A.S.E. Jumper"
 		"increased air control" 4
-		"cancel falling damage" 1
 	}
 
 	ItemAttributes [$SIGSEGV]
@@ -613,8 +602,7 @@ WaveSchedule
 		ClassName "TF_WEAPON_PIPEBOMBLAUNCHER"
 		"damage penalty" 0.35
 		"max pipebombs increased" -4
-		"self dmg push force decreased" 0.25
-		//"stickybomb stick to enemies" 1
+		"self dmg push force decreased" 0
 	}
 
 	ItemAttributes [$SIGSEGV]	//too suicidal, removed mobility
@@ -653,20 +641,25 @@ WaveSchedule
 	{
 		ItemName "The Widowmaker"
 		"mod ammo per shot" 65
-		"max health additive penalty" -25
 	}
+
+	//ItemAttributes [$SIGSEGV]
+	//{
+	//	ItemName "The Frontier Justice"
+	//	"minicrits become crits" 1
+	//}
+
+	//ItemAttributes [$SIGSEGV]
+	//{
+	//	ItemName "The Gunslinger"
+	//	"move speed penalty" 0.85
+	//}
 
 	ItemAttributes [$SIGSEGV]
 	{
 		ItemName "The Blutsauger"
 		"provide on active" 1
 		"health drain" -6
-	}
-
-	ItemAttributes [$SIGSEGV]
-	{
-		ClassName "tf_weapon_compound_bow"
-		"cannot headshot" 1
 	}
 
 	ItemAttributes [$SIGSEGV]
@@ -694,12 +687,6 @@ WaveSchedule
 		"fire rate bonus" 0.15
 		"spread penalty" 3
 		"Reload time increased" 2
-	}
-	
-	ItemAttributes [$SIGSEGV]
-	{
-		ItemName  "The Cleaner's Carbine"
-		"mult effect duration" 0.5
 	}
 
 	ItemAttributes [$SIGSEGV]
@@ -879,9 +866,7 @@ WaveSchedule
 		"clip size penalty" 0.5
 		"dmg pierces resists absorbs" 1
 		"revolver use hit locations" 1
-		"weapon spread bonus" 0.75
 		"hidden secondary max ammo penalty" 0.68
-		"mult dispenser rate" 0.25
 		"custom weapon fire sound" "=80|trespasser/de_shot1.wav"
 		"custom item model" "models\workshop\weapons\c_models\c_winger_distol\c_winger_distol.mdl"
 	}
@@ -917,7 +902,7 @@ WaveSchedule
 		"crit kill will gib" 1
 		"no damage falloff" 1
 		"damage bonus" 16.7
-		"mult crit dmg" 0.65
+		"crits_become_minicrits" 1
 		"self dmg push force decreased" 0.25
 		"explosion particle" "rd_robot_explosion_smoke_linger"
 		"custom weapon fire sound" "=80|trespasser/sg-1.wav"
@@ -1027,7 +1012,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1
 			Item "Zombie Scout"
 			Item "Basic Spellbook"
@@ -1080,7 +1065,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Soldier"
 			Item "Basic Spellbook"
@@ -1133,7 +1118,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Pyro"
 			Item "Basic Spellbook"
@@ -1191,7 +1176,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Demo"
 			Item "Basic Spellbook"
@@ -1243,7 +1228,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Heavy"
 			Item "Basic Spellbook"
@@ -1293,7 +1278,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Engineer"
 			Item "Basic Spellbook"
@@ -1350,7 +1335,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Medic"
 			Item "Basic Spellbook"
@@ -1410,7 +1395,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Sniper"
 			Item "Basic Spellbook"
@@ -1466,7 +1451,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Spy"
 			Item "Basic Spellbook"
@@ -1522,7 +1507,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1
 			Item "Zombie Scout"
 			Item "Basic Spellbook"
@@ -1584,7 +1569,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Soldier"
 			Item "Basic Spellbook"
@@ -1646,7 +1631,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Pyro"
 			Item "Basic Spellbook"
@@ -1714,7 +1699,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Demo"
 			Item "Basic Spellbook"
@@ -1778,7 +1763,7 @@ WaveSchedule
 			MaxVisionRange 750
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			Attributes HoldFireUntilFullReload
 			Item "Zombie Demo"
 			Item "Breach and Bomb"
@@ -1825,7 +1810,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Heavy"
 			Item "Basic Spellbook"
@@ -1886,9 +1871,9 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			DropWeapon 1
-			MaxVisionRange 500
+			MaxVisionRange 750
 			Item "Zombie Heavy"
 			Item "Breach and Bomb"
 			Item "Blast Blocker"
@@ -1928,7 +1913,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Engineer"
 			Item "Basic Spellbook"
@@ -1995,7 +1980,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Medic"
 			Item "Basic Spellbook"
@@ -2058,7 +2043,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Sniper"
 			Item "Basic Spellbook"
@@ -2124,7 +2109,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Spy"
 			Item "Basic Spellbook"
@@ -2190,7 +2175,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Scout"
 			Item "Basic Spellbook"
@@ -2244,7 +2229,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Scout"
 			Item "Basic Spellbook"
@@ -2298,7 +2283,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Soldier"
 			Item "Basic Spellbook"
@@ -2353,7 +2338,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Soldier"
 			Item "Basic Spellbook"
@@ -2407,7 +2392,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Pyro"
 			Item "Basic Spellbook"
@@ -2466,7 +2451,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Pyro"
 			Item "Basic Spellbook"
@@ -2525,7 +2510,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Demo"
 			Item "Basic Spellbook"
@@ -2578,7 +2563,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Demo"
 			Item "Basic Spellbook"
@@ -2632,7 +2617,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Heavy"
 			Item "Basic Spellbook"
@@ -2685,7 +2670,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Heavy"
 			Item "Basic Spellbook"
@@ -2738,7 +2723,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Engineer"
 			Item "Basic Spellbook"
@@ -2796,7 +2781,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Engineer"
 			Item "Basic Spellbook"
@@ -2854,7 +2839,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Medic"
 			Item "Basic Spellbook"
@@ -2901,7 +2886,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Medic"
 			Item "Basic Spellbook"
@@ -2955,7 +2940,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Sniper"
 			Item "Basic Spellbook"
@@ -3012,7 +2997,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Sniper"
 			Item "Basic Spellbook"
@@ -3069,7 +3054,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Spy"
 			Item "Basic Spellbook"
@@ -3125,7 +3110,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Spy"
 			Item "Basic Spellbook"
@@ -3181,7 +3166,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Sniper"
 			Item "Basic Spellbook"
@@ -3253,11 +3238,12 @@ WaveSchedule
 			Name "Plague Zombie"
 			Scale 1
 			Skill Expert
-			Health 750
+			Health 666
 			Action Mobber
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Sniper"
 			Item "The Bat Outta Hell"
@@ -3357,7 +3343,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "The Backburner"
 			Item "Basic Spellbook"
@@ -3454,12 +3440,13 @@ WaveSchedule
 			Scale 2
 			FastUpdate 1
 			Skill Expert
-			Health 10000
+			Health 12345
 			Action Mobber
 			NoIdleSound 1
 			Attributes UseBossHealthBar
 			Attributes MiniBoss
 			Attributes DisableDodge
+			//ExtAttr IgnoreBuildings
 			Item "The Bat Outta Hell"
 			UseMeleeThreatPrioritization 1
 			WeaponRestrictions MeleeOnly
@@ -3498,7 +3485,7 @@ WaveSchedule
 				"custom kill icon" "purgatory"
 				"no self blast dmg" 2
 				"faster reload rate" 0.0025
-				"fire rate bonus" 5
+				"fire rate bonus" 8
 				"clip size upgrade atomic" -3
 				"mult projectile scale" 2
 				"crit vs non burning players" 1
@@ -3540,6 +3527,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{	
+				"wet immunity" 1
 				"dmg pierces resists absorbs" 1
 				"increased air control" 100
 				"increased jump height" 2
@@ -3588,6 +3576,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "The Bolshevik Biker"
 			//Item "Zombie Heavy"
@@ -3633,6 +3622,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
+				"dmg bonus vs buildings" 1000
 				"increased jump height" 1.3
 				"move speed bonus" 0.65
 				"fire rate penalty" 1.5
@@ -3663,6 +3653,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "The Bolshevik Biker"
 			//Item "Zombie Heavy"
@@ -3708,6 +3699,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
+				"dmg bonus vs buildings" 1000
 				"increased jump height" 1.3
 				"move speed bonus" 0.65
 				"fire rate penalty" 1.5
@@ -3738,6 +3730,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "The Bolshevik Biker"
 			//Item "Zombie Heavy"
@@ -3783,6 +3776,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{
+				"dmg bonus vs buildings" 1000
 				"increased jump height" 1.3
 				"move speed bonus" 0.65
 				"fire rate penalty" 1.5
@@ -3816,6 +3810,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			WeaponRestrictions MeleeOnly
+			//ExtAttr IgnoreBuildings
 			CustomEyeParticle "killstreak_t6_lvl2" [$SIGSEGV]
 			CustomEyeGlowColor "255 255 255" [$SIGSEGV]
 			UseCustomModel models/bots/heavy/bot_heavy_gibby.mdl [$SIGSEGV]
@@ -3827,6 +3822,7 @@ WaveSchedule
 			{
 				ItemName "The Persian Persuader"
 				"provide on active" 1
+				"dmg bonus vs buildings" 1000
 				"move speed bonus" 3
 				"dmg pierces resists absorbs" 1
 				"dmg penalty vs players" 1.4
@@ -3947,6 +3943,7 @@ WaveSchedule
 			Attributes MiniBoss
 			Attributes DisableDodge
 			WeaponRestrictions MeleeOnly
+			//ExtAttr IgnoreBuildings
 			CustomEyeParticle "killstreak_t6_lvl2" [$SIGSEGV]
 			CustomEyeGlowColor "255 255 255" [$SIGSEGV]
 			UseCustomModel models/bots/heavy/bot_heavy_gibby.mdl [$SIGSEGV]
@@ -3958,6 +3955,7 @@ WaveSchedule
 			{
 				ItemName "The Persian Persuader"
 				"provide on active" 1
+				"dmg bonus vs buildings" 1000
 				"move speed bonus" 3
 				"dmg pierces resists absorbs" 1
 				//"dmg penalty vs players" 2
@@ -4001,6 +3999,7 @@ WaveSchedule
 			{
 				ItemName "Natascha"
 				"mod minigun can holster while spinning" 1
+				//"dmg pierces resists absorbs" 1
 				"damage bonus" 1.25
 				"ammo regen" 1
 			}
@@ -4076,7 +4075,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes MiniBoss
 			Attributes DisableDodge
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			Item "Zombie Scout"
 			Item "Baseball Bill's Sports Shine"
@@ -4093,6 +4092,7 @@ WaveSchedule
 				"is invisible" 1
 				"Blast radius decreased" 0.0025
 				"damage bonus" 0.0025
+				"dmg bonus vs buildings" 99999
 				"hit self on miss" 1
 				"apply look velocity on damage" 1000
 				"melee range multiplier" 0.0025
@@ -4235,11 +4235,12 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName "TF_WEAPON_CLUB"
-				"custom kill icon" "pro_smg"
+				"is invisible" 1
+				"custom kill icon" "skull_tf"
 				"dmg taken from bullets increased" 0.5
 				"dmg from melee increased" 2
 				"dmg taken from blast increased" 2
-				"custom hit sound" npc/zombie/claw_strike3.wav
+				"custom hit sound" "trespasser/SKELT03.mp3"
 			}
 			CustomWeaponModel [$SIGSEGV]
 			{
@@ -4256,7 +4257,8 @@ WaveSchedule
 			CharacterAttributes
 			{
 				"move speed bonus" 0.65
-				"damage bonus" 0.385
+				"damage bonus" 0.0025
+				"bleeding duration" 8
 				"fire rate penalty" 1.5
 				"afterburn immunity" 1
 				"increased jump height" 1.3
@@ -4749,7 +4751,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes Miniboss
 			Scale 1
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			Skill Normal
 			DropWeapon 1
 			Skin 4
@@ -4769,6 +4771,7 @@ WaveSchedule
 				"cancel falling damage" 1
 			}
 			Action Mobber
+			AimAt Head [$SIGSEGV]
 			AimTrackingInterval 1
 			StripItemSlot 0
 			StripItemSlot 2
@@ -4785,7 +4788,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes Miniboss
 			Scale 1
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			Skill Normal
 			DropWeapon 1
 			Skin 4
@@ -4820,7 +4823,7 @@ WaveSchedule
 			NoIdleSound 1
 			Attributes Miniboss
 			Scale 1
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			Skill Normal
 			DropWeapon 1
 			Skin 4
@@ -4846,6 +4849,7 @@ WaveSchedule
 				"cancel falling damage" 1
 			}		
 			Action Mobber
+			AimAt Head [$SIGSEGV]
 			AimTrackingInterval 1
 			StripItemSlot 0
 			StripItemSlot 2
@@ -4863,7 +4867,7 @@ WaveSchedule
 			Attributes Miniboss
 			Attributes DisableDodge
 			Scale 1
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			Skill Normal
 			DropWeapon 1
 			Skin 4
@@ -4887,6 +4891,7 @@ WaveSchedule
 				"cancel falling damage" 1
 			}
 			Action Mobber
+			AimAt Head [$SIGSEGV]
 			AimTrackingInterval 1
 			StripItemSlot 0
 			StripItemSlot 2
@@ -4906,7 +4911,7 @@ WaveSchedule
 			Health 200
 			Skill Expert
 			Action Mobber
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			NoBombUpgrades 1
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			UseCustomModel models/bots/soldier/bot_soldier_gibby.mdl [$SIGSEGV]
@@ -4945,7 +4950,7 @@ WaveSchedule
 			Name "Corrupted"
 			Health 65
 			Skill Expert
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			Attributes DisableDodge
 			Attributes IgnoreEnemies
 			Attributes SuppressFire
@@ -4991,7 +4996,7 @@ WaveSchedule
 			Action Mobber
 			RocketJump 1
 			FastUpdate 1
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			NoBombUpgrades 1
 			AimTrackingInterval 0
 			Attributes DisableDodge
@@ -5034,7 +5039,7 @@ WaveSchedule
 			MaxVisionRange 500
 			Health 175
 			Skill Normal
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			Action Mobber
 			Item "The Gilded Guard"
 			DropWeapon 1
@@ -5058,6 +5063,7 @@ WaveSchedule
 			MaxVisionRange 500
 			Action Mobber
 			Attributes DisableDodge
+			//ExtAttr IgnoreBuildings
 			CustomEyeGlowColor "255 0 0" [$SIGSEGV]
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			UseCustomModel models/bots/heavy/bot_heavy_gibby.mdl [$SIGSEGV]
@@ -5081,6 +5087,7 @@ WaveSchedule
 			Skill Normal
 			MaxVisionRange 500
 			Attributes DisableDodge
+			//ExtAttr IgnoreBuildings
 			Item "Dillinger's Duffel"
 			CustomEyeGlowColor "0 255 0" [$SIGSEGV]
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
@@ -5137,7 +5144,7 @@ WaveSchedule
 			Health 150
 			Skill Expert
 			Scale 1.0025
-			ExtAttr IgnoreBuildings
+			//ExtAttr IgnoreBuildings
 			Attributes DisableDodge
 			Attributes SpawnWithFullCharge
 			CustomEyeGlowColor "255 0 0" [$SIGSEGV]
@@ -5181,6 +5188,7 @@ WaveSchedule
 			Attributes HoldFireUntilFullReload
 			NoBombUpgrades 1
 			Action Mobber
+			//ExtAttr IgnoreBuildings
 			AimLeadProjectileSpeed 1100 [$SIGSEGV] 
 			UseMeleeThreatPrioritization 1 [$SIGSEGV]
 			UseCustomModel models/bots/soldier_boss/bot_soldier_boss_gibby.mdl [$SIGSEGV]
@@ -5213,6 +5221,7 @@ WaveSchedule
 			Attributes HoldFireUntilFullReload
 			NoBombUpgrades 1
 			Action Mobber
+			//ExtAttr IgnoreBuildings
 			Item "The Direct Hit"
 			AimLeadProjectileSpeed 1980 [$SIGSEGV] 
 			UseCustomModel models/bots/soldier_boss/bot_soldier_boss_gibby.mdl [$SIGSEGV]
@@ -5248,6 +5257,7 @@ WaveSchedule
 			Attributes UseBossHealthBar
 			NoBombUpgrades 1
 			Action Mobber
+			//ExtAttr IgnoreBuildings
 			AimLeadProjectileSpeed 0 [$SIGSEGV]
 			AimAt Head [$SIGSEGV]
 			UseCustomModel models/bots/soldier_boss/bot_soldier_boss_gibby.mdl [$SIGSEGV]
@@ -6354,6 +6364,18 @@ WaveSchedule
 			}
 		}
 
+		p_engiblock
+		{
+			func_nobuild
+			{
+				"mins" "-8000 -8000 -1000"
+				"maxs" "8000 8000 1000"
+				"AllowTeleporters" "1"
+				"AllowSentry" "1"
+				"AllowDispenser" "1"
+			}
+		}
+
 		p_survrelay1
 		{
 			NoFixup 1
@@ -6446,10 +6468,11 @@ WaveSchedule
 			{
 				"targetname" "locker_model"
 				"model"      "models/props_gameplay/resupply_locker.mdl"
-				"solid"      "6"
+				"solid"      "0"
 				"angles"     "0 0 0"
 				"disableshadows" "1"
-
+				"rendermode" "1"
+				"renderamt" "125"
 			}
 			filter_tf_bot_has_tag
 			{
@@ -6464,8 +6487,8 @@ WaveSchedule
                 "associatedmodel" "locker_model"
                 "TeamNum"         "2"
                 "origin"          "136 112 160"
-                "mins"            "-152 -160 -160"
-                "maxs"            "152 160 160"
+                "mins"            "-152 -468 -160"
+                "maxs"            "152 468 160"
                 
                 "OnStartTouchAll"  "locker_model,SetAnimation,open,0,-1"
                 "OnEndTouchAll"    "locker_model,SetAnimation,close,0,-1"
@@ -7101,6 +7124,17 @@ WaveSchedule
 				"model" "models\bots\skeleton_sniper\skeleton_sniper.mdl"
 			}
 		}
+
+		p_viewblocker_window
+        {
+            NoFixup 1
+            func_brush
+            {
+                "origin" "-1 260 368"
+                "mins" "-320.5 -4 -144"
+                "maxs" "320.5 4 144"
+            }
+        }
 
 		p_plane
 		{
@@ -8369,8 +8403,8 @@ WaveSchedule
 			trigger_hurt
 			{
             "origin" "0 0 0"
-            "mins" "-100 -100 -100"
-            "maxs" "100 100 100"
+            "mins" "-200 -200 -200"
+            "maxs" "200 200 200"
             "nodmgforce" "1"
             "damagetype" "0"
             "damagemodel" "0"
@@ -8718,7 +8752,6 @@ WaveSchedule
 				"ontrigger" "gameover2,playsound,,0,-1"
 				"ontrigger" "sign0,show,,2.5,-1"
 				"ontrigger" "virospook,playsound,,2.5,-1"
-				"ontrigger" "player,$AddPlayerAttribute,mult dmg vs tanks|3,0,-1"
 				"ontrigger" "obj_dispenser,removehealth,9999,2.5,-1"
 				"ontrigger" "obj_sentrygun,removehealth,9999,2.5,-1"
 				"ontrigger" "obj_teleporter,removehealth,9999,2.5,-1"
@@ -8733,7 +8766,6 @@ WaveSchedule
 				"ontrigger" "gameover,stopsound,,0,-1"
 				"ontrigger" "gameover2,stopsound,,0,-1"
 				"ontrigger" "sign0,hide,,0,-1"
-				"ontrigger" "player,$AddPlayerAttribute,mult dmg vs tanks|1,0,-1"
 				"ontrigger" "virospook,stopsound,,0,-1"
 			}
 		}
@@ -9620,6 +9652,11 @@ WaveSchedule
 
 	SpawnTemplate [$SIGSEGV]
 	{
+		Name	"p_viewblocker_window"
+	}
+
+	SpawnTemplate [$SIGSEGV]
+	{
 		Name	"p_signbomb"
 	}
 
@@ -9940,6 +9977,11 @@ WaveSchedule
 	{
 		Name	"p_deskblock"
 		Origin 	"0 488 192"
+	}
+
+	SpawnTemplate [$SIGSEGV]
+	{
+		Name	"p_engiblock"
 	}
 
 	SpawnTemplate [$SIGSEGV]
@@ -12035,6 +12077,11 @@ WaveSchedule
 				AddCond [$SIGSEGV]
 				{
 					Name TF_COND_CRITBOOSTED_ON_KILL
+				}
+				AddCond [$SIGSEGV]
+				{
+					Name TF_COND_SPEED_BOOST
+					Duration 15
 				}
 			}
 
@@ -17353,6 +17400,26 @@ WaveSchedule
 
 				TFBot
 				{
+					Template Zombie_Headless5a
+					Attributes AlwaysCrit
+					AddCond [$SIGSEGV]
+					{
+						Name TF_COND_SPEED_BOOST
+					}
+				}
+
+				TFBot
+				{
+					Template Zombie_Headless5b
+					Attributes AlwaysCrit
+					AddCond [$SIGSEGV]
+					{
+						Name TF_COND_SPEED_BOOST
+					}
+				}
+
+				TFBot
+				{
 					Template Zombie_Headless6a
 					Attributes AlwaysCrit
 					AddCond [$SIGSEGV]
@@ -17473,6 +17540,24 @@ WaveSchedule
 
 				TFBot
 				{
+					Template Zombie_Skeleton2
+					Name "Dire Skeleton"
+					UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
+					Health 300
+					Skin 4
+					AddCond [$SIGSEGV]
+					{
+						Name TF_COND_SPEED_BOOST
+					}
+					CharacterAttributes
+					{
+						"crit vs burning players" 1
+						"crit vs non burning players" 1
+					}
+				}
+
+				TFBot
+				{
 					Template Zombie_Skeleton3
 					Name "Dire Skeleton"
 					UseCustomModel models/bots/skeleton_sniper/skeleton_sniper_fixed.mdl [$SIGSEGV]
@@ -17529,22 +17614,6 @@ WaveSchedule
 
 		RandomChoice
 		{
-			TFBot
-			{
-				Template Zombie_Generic1
-				Name "Possessed"
-				Item "The Abhorrent Appendages"
-				Item "Wandering Wraith"
-				ItemAttributes
-				{
-					ItemName "Wandering Wraith"
-					"SPELL: set item tint RGB" 5
-				}
-				CharacterAttributes
-				{
-					"dmg penalty vs players" 1.4
-				}
-			}
 
 			TFBot
 			{
@@ -17683,11 +17752,6 @@ WaveSchedule
 			TFBot
 			{
 				Template Zombie_Burning
-				AddCond [$SIGSEGV]
-				{
-					Name TF_COND_SPEED_BOOST
-					Duration 5
-				}
 			}
 
 		}
