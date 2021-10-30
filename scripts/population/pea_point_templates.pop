@@ -4,7 +4,37 @@ WaveSchedule
 {
 	PointTemplates [$SIGSEGV]
 	{
-		Push
+		DieRelay
+		{
+			logic_relay
+			{
+				"targetname" "kill_bots_relay"
+				"spawnflags" "0"
+				"OnTrigger" "!parent,$Suicide,,0,-1"
+			}
+		}
+		TeleportToBomb
+		{
+			OnSpawnOutput
+			{
+				Target !activator
+				Action $TeleportToEntity
+				Param res
+			}
+			OnSpawnOutput
+			{
+				Target res
+				Action Kill
+				Delay 0.01
+			}
+			OnSpawnOutput
+			{
+				Target no_building1
+				Action Kill
+				Delay 0.01
+			}
+		}
+		Push1
 		{
 			OnSpawnOutput
 			{
@@ -19,18 +49,78 @@ WaveSchedule
 				Param "spawnbot_frontline1"
 				Delay 0.5
 			}
+			trigger_catapult
+			{
+				"targetname" "push_red3"
+				"useThresholdCheck" "0"
+				"useExactVelocity" "1"
+				"upperThreshold" "0.30"
+				"StartDisabled" "0"
+				"spawnflags" "9"
+				"playerSpeed" "800"
+				"physicsSpeed" "900"
+				"onlyVelocityCheck" "0"
+				"lowerThreshold" "0.15"
+				"launchDirection" "-10 35 30"
+				"filtername" "filter_redteam"
+				"mins" "-50 -50 -50"
+				"maxs" "50 50 50"
+				"exactVelocityChoiceType" "0"
+				"entryAngleTolerance" "0.0"
+				"applyAngularImpulse" "0"
+				"AirCtrlSupressionTime" "1"
+			}
+		}
+		Push2
+		{
 			OnSpawnOutput
 			{
-				Target lightning_template_3x
-				Action ForceSpawnAtEntityOrigin
-				Param "spawnbot_frontline2"
+				Target push_red3
+				Action Kill
 				Delay 0.5
 			}
 			OnSpawnOutput
 			{
 				Target lightning_template_3x
 				Action ForceSpawnAtEntityOrigin
-				Param "spawnbot_frontline3"
+				Param "spawnbot_frontline1"
+				Delay 0.5
+			}
+			trigger_catapult
+			{
+				"targetname" "push_red3"
+				"useThresholdCheck" "0"
+				"useExactVelocity" "1"
+				"upperThreshold" "0.30"
+				"StartDisabled" "0"
+				"spawnflags" "9"
+				"playerSpeed" "800"
+				"physicsSpeed" "900"
+				"onlyVelocityCheck" "0"
+				"lowerThreshold" "0.15"
+				"launchDirection" "-10 35 30"
+				"filtername" "filter_redteam"
+				"mins" "-50 -50 -50"
+				"maxs" "50 50 50"
+				"exactVelocityChoiceType" "0"
+				"entryAngleTolerance" "0.0"
+				"applyAngularImpulse" "0"
+				"AirCtrlSupressionTime" "1"
+			}
+		}
+		Push3
+		{
+			OnSpawnOutput
+			{
+				Target push_red3
+				Action Kill
+				Delay 0.5
+			}
+			OnSpawnOutput
+			{
+				Target lightning_template_3x
+				Action ForceSpawnAtEntityOrigin
+				Param "spawnbot_frontline1"
 				Delay 0.5
 			}
 			trigger_catapult
@@ -402,12 +492,6 @@ WaveSchedule
 		{
 			NoFixup 1
 			KeepAlive 1
-			point_teleport
-			{
-				"targetname" "teleport_me"
-				"target" "!activator"
-				"origin" "0 0 32"
-			}
 			trigger_hurt // prevent from blocking bouncealot with buildings
 			{
 			 	"StartDisabled" "0"
@@ -421,26 +505,6 @@ WaveSchedule
 			 	"damagemodel" "0"
 			 	"damagecap" "0"
 			 	"damage" "1"
-			}
-		}
-		TeleportMe
-		{
-			NoFixup 1
-			trigger_hurt // teleport robots in the radius
-			{
-			 	"StartDisabled" "0"
-			 	"spawnflags" "1"
-			 	"origin" "-3360 -3712 -208"
-			 	"mins" "-50 -50 -50"
-			 	"maxs" "50 50 50"
-			 	"nodmgforce" "0"
-			 	"filtername" "filter_bluteam"
-			 	"damagetype" "32"
-			 	"damagemodel" "0"
-			 	"damagecap" "0"
-			 	"damage" "0"
-			 	"OnStartTouch" "teleport_me,Teleport,,0,-1"
-			 	"OnStartTouch" "no_building1,Kill,,0,-1"
 			}
 		}
 		Lightning // bouncealot's revenge stuff
@@ -1359,8 +1423,10 @@ WaveSchedule
 				"OnTrigger" "spawnbot_jeep_phase5,Enable,,0,-1"
 				"OnTrigger" "spawnbot_alley_phase5,Enable,,0,-1"
 				"OnTrigger" "spawnbot_alley_zombie,Disable,,0,-1"
+				"OnTrigger" "spawnbot,Disable,,0,-1"
 				"OnTrigger" "killallblu,Enable,,0,-1"
 				"OnTrigger" "killallblu,Disable,,0.01,-1"
+				"OnTrigger" "kill_bots_relay*,Trigger,,0,-1"
 				"OnTrigger" "thunder,PlaySound,,0,-1"
 				"OnTrigger" "spooky,PlaySound,,0,-1"
 				"OnTrigger" "fade_boss_1,Fade,,0,-1"
@@ -1544,7 +1610,7 @@ WaveSchedule
 				"spawnflags" "0"
 				"targetname" "relay_wheel_finale"
 				"StartDisabled" "0"
-				"OnTrigger" "wheel_sound,PlaySound,,0,1"
+				"OnTrigger" "wheel_sound,PlaySound,,0,-1"
 				"OnTrigger" "green_steam_cap_relay,Trigger,,0,-1"
 				"OnTrigger" "plumes_long,PlaySound,,0,-1"
 				"OnTrigger" "wheel_plane,Enable,,0,-1"
@@ -1726,6 +1792,7 @@ WaveSchedule
 				"OnTrigger" "wheel_explosion_sound,PlaySound,,0,-1"
 				"OnTrigger" "wheel_explosion_shake,StartShake,,0,-1"
 				"OnTrigger" "killallblu,Enable,,0,-1"
+				"OnTrigger" "kill_bots_relay*,Trigger,,0,-1"
 				"OnTrigger" "spawnbot_phase5,Disable,,0,-1"
 				"OnTrigger" "spawnbot_left_phase5,Disable,,0,-1"
 				"OnTrigger" "spawnbot_jeep_phase5,Disable,,0,-1"
@@ -2516,6 +2583,7 @@ WaveSchedule
 				"OnTrigger" "teleportvip,Enable,,0,-1"
 				"OnTrigger" "tint,Disable,,0,-1"
 				"OnTrigger" "teleport,Disable,,0,-1"
+				"OnTrigger" "spawnbot_victory,Enable,,12.5,-1"
 			}
 			trigger_once
 			{
@@ -2546,7 +2614,6 @@ WaveSchedule
 				"OnStartTouch" "lightning_sfx,PlaySound,,10.25,-1"
 				"OnStartTouch" "lightning_sfx,PlaySound,,10.25,-1"
 				"OnStartTouch" "lightning_sfx,PlaySound,,10.25,-1"
-				"OnStartTouch" "spawnbot_victory,Enable,,12.5,-1"
 			}
 			info_target
 			{

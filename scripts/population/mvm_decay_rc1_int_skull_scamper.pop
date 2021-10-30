@@ -650,7 +650,7 @@ WaveSchedule
 				"maxs" "46 26 151"
 				"OnStartTouch" "infobooth_menu,$DisplayMenu,!activator,0,-1"
 			}
-			trigger_brush
+			func_button
 			{
 				"targetname" "infobooth_collision_box"
 				"origin" "-100 -2335 480"

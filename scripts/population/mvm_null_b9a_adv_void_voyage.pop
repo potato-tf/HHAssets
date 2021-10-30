@@ -166,6 +166,7 @@ WaveSchedule
 			Attributes HoldFireUntilFullReload
 			UseHumanModel 1 [$SIGSEGV]
 			AlwaysGlow 1 [$SIGSEGV]
+			SpawnTemplate "TeleportToBomb" [$SIGSEGV]
 			SpawnTemplate [$SIGSEGV]
 			{
 				Name "BouncealotTeleporter_2"
@@ -240,6 +241,7 @@ WaveSchedule
 			ExtAttr IgnoreBuildings [$SIGSEGV]
 			UseHumanModel 1 [$SIGSEGV]
 			SpawnTemplate "ZombieMarker" [$SIGSEGV]
+			SpawnTemplate "DieRelay" [$SIGSEGV]
 			Tag zombiebot
 			Tag bot_giant
 		}
@@ -2725,7 +2727,6 @@ WaveSchedule
 		Checkpoint Yes
 		SpawnTemplate "ResurrectLogic" [$SIGSEGV]
 		SpawnTemplate "NoFallDamage" [$SIGSEGV]
-		SpawnTemplate "TeleportMe" [$SIGSEGV]
 		WaveSpawn
 		{
 			Name "W5A"
@@ -3082,11 +3083,6 @@ WaveSchedule
 			WaitBeforeStarting 10
 			WaitBetweenSpawns 0
 			TotalCurrency 125
-			FirstSpawnOutput
-			{
-				Target res
-				Action Kill
-			}
 			TFBot
 			{
 				Template T_TFBot_Chief_Demo_Bouncealot_Revenge
@@ -3201,6 +3197,7 @@ WaveSchedule
 				Attributes MiniBoss
 				ClassIcon wheelofdoom_whammy
 				DeathSound "misc/null.wav"
+				Name "Victory!"
 				CharacterAttributes
 				{
 					"is suicide counter" 500
@@ -3371,6 +3368,7 @@ WaveSchedule
 				ClassIcon tf2_lite
 				DeathSound "misc/null.wav"
 				Attributes AlwaysCrit
+				Name "Victory!"
 				CharacterAttributes
 				{
 					"is suicide counter" 500
@@ -3993,6 +3991,7 @@ WaveSchedule
 						Action Mobber [$SIGSEGV]
 						ExtAttr IgnoreRealPlayers [$SIGSEGV]
 						ExtAttr IgnoreBuildings [$SIGSEGV]
+						SpawnTemplate DieRelay [$SIGSEGV]
 						ItemAttributes
 						{
 							ItemName "The Liberty Launcher"
@@ -4041,6 +4040,7 @@ WaveSchedule
 						Action Mobber [$SIGSEGV]
 						ExtAttr IgnoreRealPlayers [$SIGSEGV]
 						ExtAttr IgnoreBuildings [$SIGSEGV]
+						SpawnTemplate DieRelay [$SIGSEGV]
 						ItemAttributes
 						{
 							ItemName "The Killing Gloves of Boxing"
@@ -4083,6 +4083,7 @@ WaveSchedule
 						Action Mobber [$SIGSEGV]
 						ExtAttr IgnoreRealPlayers [$SIGSEGV]
 						ExtAttr IgnoreBuildings [$SIGSEGV]
+						SpawnTemplate DieRelay [$SIGSEGV]
 						ItemAttributes
 						{
 							ItemName "The Nostromo Napalmer"
@@ -4103,6 +4104,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Medic
 						Tag bot_giant
+						SpawnTemplate DieRelay [$SIGSEGV]
 					}
 				}
 			}
@@ -4162,7 +4164,7 @@ WaveSchedule
 			PointTemplate [$SIGSEGV]
 			{
 				SpawnAtEntity Where
-				Name "Push"
+				Name "Push1"
 			}
 		}
 		WaveSpawn
@@ -4175,7 +4177,7 @@ WaveSchedule
 			PointTemplate [$SIGSEGV]
 			{
 				SpawnAtEntity Where
-				Name "Push"
+				Name "Push2"
 			}
 		}
 		WaveSpawn
@@ -4188,7 +4190,7 @@ WaveSchedule
 			PointTemplate [$SIGSEGV]
 			{
 				SpawnAtEntity Where
-				Name "Push"
+				Name "Push3"
 			}
 		}
 		WaveSpawn
@@ -4212,6 +4214,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Giant_Metalbeard
 						Action Mobber [$SIGSEGV]
+						SpawnTemplate DieRelay [$SIGSEGV]
 					}
 				}
 			}
@@ -4237,6 +4240,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Chief_Gauntlet
 						Action Mobber [$SIGSEGV]
+						SpawnTemplate DieRelay [$SIGSEGV]
 					}
 				}
 			}
@@ -4262,6 +4266,7 @@ WaveSchedule
 					{
 						Template T_TFBot_Chief_Soldier
 						Action Mobber [$SIGSEGV]
+						SpawnTemplate DieRelay [$SIGSEGV]
 					}
 				}
 			}
