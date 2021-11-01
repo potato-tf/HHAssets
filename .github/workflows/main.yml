@@ -30,7 +30,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          for i in "22 /" "22 pterodactyl@us.potato.tf:/" "22 pterodactyl@sgp.potato.tf:/" "22 pterodactyl@aus.potato.tf:/" "22 pterodactyl@usw.potato.tf:/" "22 pterodactyl@euvultr.potato.tf:/" "22 pterodactyl@br.potato.tf:/" "22 pterodactyl@eu.potato.tf:/" "22 pterodactyl@eu2.potato.tf:/" "22 pterodactyl@use.potato.tf:/" "22 pterodactyl@euvultr2.potato.tf:/"; do a=( $i );
+          for i in "22 /" "22 pterodactyl@us.potato.tf:/" "22 pterodactyl@sgp.potato.tf:/" "22 pterodactyl@aus.potato.tf:/" "22 pterodactyl@usw.potato.tf:/" "22 pterodactyl@euvultr.potato.tf:/" "22 pterodactyl@br.potato.tf:/" "22 pterodactyl@eu.potato.tf:/" "22 pterodactyl@eu2.potato.tf:/" "22 pterodactyl@eu3.potato.tf:/" "22 pterodactyl@use.potato.tf:/" "22 pterodactyl@euvultr2.potato.tf:/"; do a=( $i );
           rsync -a -e "ssh -p ${a[0]}" --delete --update --exclude=".*" . ${a[1]}var/tf2server/tf/custom/uploaded/
           done
           
