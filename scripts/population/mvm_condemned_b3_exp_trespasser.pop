@@ -598,7 +598,7 @@ WaveSchedule
 		ClassName "TF_WEAPON_PIPEBOMBLAUNCHER"
 		"damage penalty" 0.35
 		"max pipebombs increased" -4
-		"self dmg push force decreased" 0
+		"self dmg push force decreased" 0.25
 	}
 
 	ItemAttributes [$SIGSEGV]	//too suicidal, removed mobility
@@ -1860,7 +1860,6 @@ WaveSchedule
 			Name "Riot Zombie"
 			Scale 1
 			Skill Easy
-			AimTrackingInterval 0.5
 			Health 400
 			//ExtAttr IgnoreBots
 			Action Mobber
@@ -1869,7 +1868,7 @@ WaveSchedule
 			Attributes DisableDodge
 			ExtAttr IgnoreBuildings
 			DropWeapon 1
-			MaxVisionRange 750
+			MaxVisionRange 500
 			Item "Zombie Heavy"
 			Item "Breach and Bomb"
 			Item "Blast Blocker"
@@ -7225,6 +7224,23 @@ WaveSchedule
 			}
 		}
 
+		p_brushbug_fix
+		{
+			NoFixup 1
+			trigger_multiple
+			{
+				"targetname"	"brushbug_fix"
+                "origin"        "136 112 160"
+                "mins"          "-152 -468 -160"
+                "maxs"          "152 468 160"
+				"spawnflags" 	"1"
+				"startdisabled" "1"
+				"onstarttouch" 	"cargodoor,kill,,0,-1"
+                "onstarttouch" "!self,disable,,0,-1"
+                "onstarttouch" "!self,kill,,0.1,-1"
+			}
+		}
+
 		p_cargoshop1
 		{
 			NoFixup 1
@@ -8018,22 +8034,6 @@ WaveSchedule
 			{
 			"filterclass" "headless_hatman"
 			"targetname" "filter_headless"
-			}
-		}
-
-		p_helper
-		{
-			NoFixup 1
-			trigger_add_tf_player_condition
-			{
-				"targetname"    "helper"
-				"filtername"    "filter_redplayer"
-				"condition"     "70"
-				"duration"      "9999999999" // It doesn't like applying when it's -1??
-				"spawnflags"    "1"
-				"StartDisabled" "0"
-				"mins"          "-9216 -8192 -4096"
-				"maxs"          "9216 8192 4096"
 			}
 		}
 
@@ -9608,7 +9608,7 @@ WaveSchedule
 
 ////////////////////////////////////////////////////////////
 	
-	//SpawnTemplate "p_helper" [$SIGSEGV]
+	SpawnTemplate "p_brushbug_fix" [$SIGSEGV]
 
 	SpawnTemplate "reviveredasblu" [$SIGSEGV]
 
