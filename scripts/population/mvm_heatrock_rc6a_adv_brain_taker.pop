@@ -357,6 +357,12 @@ population
 				Delay 0.00
 				Param 1
 			}
+            OnSpawnOutput		//failsafe if trigger_hurt fails to spawn
+			{
+				Target "!activator"
+				Action "$Suicide"
+				Delay 7
+			}
             logic_relay
             {
                 "targetname" "deathanim_bigboom_relay"

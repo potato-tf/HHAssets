@@ -98,17 +98,17 @@ WaveSchedule
 		{
 			NoFixup 1
 			
-			trigger_teleport
-			{
-				"OnStartTouch" "teleporter_text,Display,,0,-1"
-				"targetname" "phase_activator"
-				"filtername" "sknight_filter"
-				"target" "intel"
-				"spawnflags" "1"
-				"mins" "-100 -100 -100"
-				"maxs" "100 100 100"
-				"origin" "-4391.82 -2509.01 -139.97" //whatever the origin of phase bots spawn is
-			}
+			//trigger_teleport
+			//{
+			//	"OnStartTouch" "teleporter_text,Display,,0,-1"
+			//	"targetname" "phase_activator"
+			//	"filtername" "sknight_filter"
+			//	"target" "intel"
+			//	"spawnflags" "1"
+			//	"mins" "-100 -100 -100"
+			//	"maxs" "100 100 100"
+			//	"origin" "-4391.82 -2509.01 -139.97" //whatever the origin of phase bots spawn is
+			//}
 
 			filter_tf_bot_has_tag 
 			{
@@ -4132,6 +4132,13 @@ WaveSchedule
 					TFBot
 					{
 						Template  T_TFBot_Slave_Knight_Phase_1	
+						FireInput
+						{
+							Target "!activator"
+							Action "$TeleportToEntity"
+							Delay 0.03
+							Param "item_teamflag"
+						}
 					}
 				}
 			}	
@@ -4157,6 +4164,13 @@ WaveSchedule
 					TFBot
 					{
 						Template  T_TFBot_Slave_Knight_Phase_2
+						FireInput
+						{
+							Target "!activator"
+							Action "$TeleportToEntity"
+							Delay 0.03
+							Param "intel"
+						}
 					}
 				}
 			}	
@@ -4181,6 +4195,13 @@ WaveSchedule
 					TFBot
 					{
 						Template  T_TFBot_Slave_Knight_PrePhase3-1
+						FireInput
+						{
+							Target "!activator"
+							Action "$TeleportToEntity"
+							Delay 0.03
+							Param "intel"
+						}
 					}
 				}
 			}	
@@ -4205,6 +4226,13 @@ WaveSchedule
 					TFBot
 					{
 						Template  T_TFBot_Slave_Knight_PrePhase3-2
+						FireInput
+						{
+							Target "!activator"
+							Action "$TeleportToEntity"
+							Delay 0.03
+							Param "intel"
+						}
 					}
 				}
 			}	
@@ -4252,6 +4280,13 @@ WaveSchedule
 					TFBot
 					{
 						Template  T_TFBot_Slave_Knight_Phase_3
+						FireInput
+						{
+							Target "!activator"
+							Action "$TeleportToEntity"
+							Delay 0.03
+							Param "intel"
+						}
 					}	
 				}
 			}	
@@ -4272,6 +4307,13 @@ WaveSchedule
 			TFBot
 			{
 				Template  T_TFBot_Slave_Knight_PostPhase3
+				FireInput
+				{
+							Target "!activator"
+							Action "$TeleportToEntity"
+							Delay 0.03
+							Param "intel"
+				}
 			}		
 		}
 		
