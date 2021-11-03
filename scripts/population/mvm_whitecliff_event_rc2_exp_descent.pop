@@ -7473,10 +7473,10 @@ Effort
             {
                 "targetname" "brushbug_init_relay"
 				"spawnflags" "1"
-                "OnTrigger" "!activator,$DisplayTextChat,{red}WARNING! {FFBC00}If you're seeing this you are currently playing a {red}bugged version of this mission!,0,-1"
-                "OnTrigger" "!activator,$DisplayTextChat,{FFBC00}This means that many intended features will {red}NOT {FFBC00}be functional!,0.01,-1"
-                "OnTrigger" "!activator,$DisplayTextChat,{FFBC00}Please report this occurrence along with the server number in the #hexadecimalhorrors-feedback channel in the {AE703A}Potato's Custom MvM Servers discord.,0.02,-1"
-                "OnTrigger" "!activator,$DisplayTextChat,{FFBC00}Thank you and sorry for the inconvenience.,0.03,-1"
+                "OnTrigger" "player,$DisplayTextChat,{red}WARNING! {FFBC00}If you're seeing this you are currently playing a {red}bugged version of this mission!,0,-1"
+                "OnTrigger" "player,$DisplayTextChat,{FFBC00}This means that many intended features will {red}NOT {FFBC00}be functional!,0.01,-1"
+                "OnTrigger" "player,$DisplayTextChat,{FFBC00}Please report this occurrence along with the server number in the #hexadecimalhorrors-feedback channel in the {AE703A}Potato's Custom MvM Servers discord.,0.02,-1"
+                "OnTrigger" "player,$DisplayTextChat,{FFBC00}Thank you and sorry for the inconvenience.,0.03,-1"
             }
             logic_relay
             {
