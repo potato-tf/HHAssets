@@ -2465,7 +2465,7 @@ Effort
         Explanation
         {
             Line "{FFC144}Something {B266FF}seeks to draw you in to the underworld."
-            Line "{B266FF}Allow yourself to be {white}conveyed {B266FF}and you'll have the opportunity to take down one of hell's {FFC144}most prominent lieutenants."
+            Line "{B266FF}Allow yourself to be conveyed {B266FF}and you'll have the opportunity to take down one of hell's {FFC144}most prominent lieutenants."
             Line "{B266FF}But be wary, there's {999900}something in the air {B266FF}down there. If you take too long to kill the brute, you'll become {red}one of them."
         }
         StartWaveOutput
@@ -2478,8 +2478,22 @@ Effort
             Target wave_finished_relay
             Action Trigger
         }
+        InitWaveOutput
+        {
+            Target brushbug_check
+            Action Enable
+        }
         WaveSpawn // Dummy
         {
+            DoneOutput
+            {
+                Target brushbug_finale_relay
+                Action Trigger
+            }
+        }
+        WaveSpawn // Dummy
+        {
+            WaitBeforeStarting 0.1
             DoneOutput
             {
                 Target underworld_loot_relay
@@ -7424,10 +7438,99 @@ Effort
                 Delay 0.01
             } 
         }
-        
+        brushbug_fix_template
+        {
+            NoFixup 1
+            trigger_multiple
+            {
+                "targetname" "brushbug_check"
+	            "StartDisabled" "1"
+	            "spawnflags" "1"
+	            "origin" "-64 -1408 -600"
+                "mins" "-5000 -7000 -1200"
+                "maxs" "5000 7000 1200"
+	            "filtername" "filter_redteam"
+                //"OnStartTouch" "player,$DisplayTextChat,works,0,-1"
+                "OnStartTouch" "brushbug_finale_relay,Kill,,0,-1"
+                "OnStartTouch" "finale_spawnedplayer_relay,Kill,,0,-1"
+                "OnStartTouch" "!self,Disable,,0,-1"
+                "OnStartTouch" "!self,Kill,,0.01,-1"
+            }
+            trigger_multiple
+            {
+                "targetname" "brushbug_init_check"
+	            "spawnflags" "1"
+	            "origin" "-64 -1408 -600"
+                "mins" "-5000 -7000 -1200"
+                "maxs" "5000 7000 1200"
+	            "filtername" "filter_redteam"
+                //"OnStartTouch" "player,$DisplayTextChat,works,0,-1"
+                "OnStartTouch" "brushbug_init_relay,Kill,,0,-1"
+                "OnStartTouch" "!self,Disable,,0,-1"
+                "OnStartTouch" "!self,Kill,,0.01,-1"
+            }
+            logic_relay
+            {
+                "targetname" "brushbug_init_relay"
+				"spawnflags" "1"
+                "OnTrigger" "!activator,$DisplayTextChat,{red}WARNING! {FFBC00}If you're seeing this you are currently playing a {red}bugged version of this mission!,0,-1"
+                "OnTrigger" "!activator,$DisplayTextChat,{FFBC00}This means that many intended features will {red}NOT {FFBC00}be functional!,0.01,-1"
+                "OnTrigger" "!activator,$DisplayTextChat,{FFBC00}Please report this occurrence along with the server number in the #hexadecimalhorrors-feedback channel in the {AE703A}Potato's Custom MvM Servers discord.,0.02,-1"
+                "OnTrigger" "!activator,$DisplayTextChat,{FFBC00}Thank you and sorry for the inconvenience.,0.03,-1"
+            }
+            logic_relay
+            {
+                "targetname" "brushbug_finale_relay"
+                "OnTrigger" "underworld_loot_relay,Kill,,0,-1"
+                "OnTrigger" "gamerules,SetRedTeamRespawnWaveTime,3,0,-1"
+                "OnTrigger" "underworld_hurt_zone,Disable,,0,-1"
+                "OnTrigger" "yea room,Disable,,0,-1"
+                "OnTrigger" "yea room finale,Enable,,0,-1"
+                "OnTrigger" "island_door_fx,Enable,,0,-1"
+                "OnTrigger" "fadein,Fade,,0,-1"
+                "OnTrigger" "underworld_gatehouse_open,PlaySound,,0,-1"
+                "OnTrigger" "underworld_sfx_shake,StartShake,,0,-1"
+                "OnTrigger" "underworld_gatehouse_open,PlaySound,,2,-1"
+                "OnTrigger" "underworld_sfx_shake,StartShake,,2,-1"
+                "OnTrigger" "redplayer,$TeleportToEntity,spawn_gate,3,-1"
+                "OnTrigger" "clearbuildings_trigger,Enable,,3,-1"
+                "OnTrigger" "finale_spawnedplayer_relay,Enable,,0,-1"
+                "OnTrigger" "trigger_add_tf_player_condition,Disable,,0,-1"
+                "OnTrigger" "env_soundscape,Disable,,0,-1"
+                "OnTrigger" "spawnbot_underworld*,Enable,,0,-1"
+                "OnTrigger" "intel*,Kill,,0.01,-1"
+                "OnTrigger" "finale_music_start_relay,Trigger,,3,-1"
+                "OnTrigger" "spawnbot_colossus,Enable,,3,-1"
+                "OnTrigger" "middle_text,Display,,4,-1"
+                "OnTrigger" "colossus_sound,PlaySound,,4.5,-1"
+                "OnTrigger" "spawnbot_timer,Enable,,9,-1"
+            }
+            logic_relay
+            {
+                "targetname" "finale_spawnedplayer_relay"
+                "StartDisabled" "1"
+                "OnTrigger" "!activator,$TeleportToEntity,spawn_gate,0,-1"
+            }
+        }
+        brushbug_fix_playertemplate
+        {
+            OnSpawnOutput
+            {
+                Target "finale_spawnedplayer_relay"
+                Action Trigger
+            }
+            OnSpawnOutput
+            {
+                Target "brushbug_init_relay"
+                Action Trigger
+                Delay 3   
+            }
+        }
     }
+    PlayerSpawnTemplate "brushbug_fix_playertemplate"
     PlayerSpawnTemplate "playerweapon_fix"
     PlayerSpawnTemplate "redplayer_targetname"
+    SpawnTemplate "brushbug_fix_template"
     SpawnTemplate "colossus_death"
     SpawnTemplate "bigpointyrocks_template"
     SpawnTemplate "flagtimer_fix"
