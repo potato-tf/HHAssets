@@ -424,9 +424,9 @@ tomboy
     {
       KeepAlive 1
 
-      OnSpawnOutput 
+  		OnSpawnOutput 
 			{
-				Target "tip_explosion"
+				Target "explosion_hitbox"
 				Action "$InheritOwner"
         Param "!activator"
 				Delay 0.1
@@ -467,33 +467,32 @@ tomboy
         "OnUser1" "!self,Kill,,5,-1"
       }
 
-      tf_point_weapon_mimic
-      {
-        "targetname" "tip_explosion"
-
-        "spawnflags" "1"
-        "angles" "0 0 0"
-        "origin" "-1 0 -3"
-        "teamnum" "2"
-        "Crits" "0"
-        "Damage" "75"
-        "ModelScale" "1"
-        "SpeedMax" "1000000"
-        "SpeedMin" "1000000"
-        "SplashRadius" "144"
-        "SpreadAngle" "0"
-        "WeaponType" "3"
-
-        "OnUser1" "!self,FireOnce,,2,-1"
-				"OnUser4" "!self,DetonateStickies,,0,-1"
-      }
-      
       logic_measure_movement 
       {
         "MeasureReference" "detonate_position"
         "MeasureTarget" "detonate_position"
         "MeasureType" "0"
-        "Target" "tip_explosion"
+        "Target" "explosion_maker"
+        "TargetReference" "detonate_position"
+        "TargetScale" "1"
+      }
+
+      logic_measure_movement 
+      {
+        "MeasureReference" "detonate_position"
+        "MeasureTarget" "detonate_position"
+        "MeasureType" "0"
+        "Target" "explosion_hitbox"
+        "TargetReference" "detonate_position"
+        "TargetScale" "1"
+      }
+
+      logic_measure_movement 
+      {
+        "MeasureReference" "detonate_position"
+        "MeasureTarget" "detonate_position"
+        "MeasureType" "0"
+        "Target" "sticky_flicker_maker"
         "TargetReference" "detonate_position"
         "TargetScale" "1"
       }
@@ -512,6 +511,32 @@ tomboy
         "OnUser1" "!self,Kill,,2.1,-1"
       }
 
+      env_entity_maker
+      {
+        "targetname" "explosion_maker"
+        "EntityTemplate" "Explosion_Particle"
+        "PostSpawnDirection" "0 0 0"
+        "PostSpawnDirectionVariance" "0"
+        "PostSpawnInheritAngles" "0"
+        "PostSpawnSpeed" "0"
+        "spawnflags" "0"
+
+        "OnUser1" "!self,ForceSpawn,,2,-1"
+        "OnUser1" "!self,Kill,,2.1,-1"
+      }
+
+      ambient_generic
+      {
+        "targetname" "explode_sound"
+        "message" "weapons/explode1.wav"
+        "radius" "7000"
+        "health" "5"
+        "spawnflags" "48"
+
+        "OnUser1" "!self,PlaySound,,2,-1"
+        "OnUser1" "!self,Kill,,3,-1"
+      }
+
       ambient_generic
       {
         "targetname" "sticky_sound"
@@ -522,6 +547,16 @@ tomboy
 
         "OnUser1" "!self,PlaySound,,1,-1"
         "OnUser1" "!self,Kill,,3,-1"
+      }
+
+      logic_measure_movement 
+      {
+        "MeasureReference" "detonate_position"
+        "MeasureTarget" "detonate_position"
+        "MeasureType" "0"
+        "Target" "explode_sound"
+        "TargetReference" "detonate_position"
+        "TargetScale" "1"
       }
 
       logic_measure_movement 
@@ -553,22 +588,42 @@ tomboy
         "spawnflags" "1" 
         "filtername" "filter_is_blu"
 
+        //"OnStartTouch" "player,$DisplayTextCenter,rad,0,-1" //used for debugging
         "OnStartTouch" "detonate_position,SetParent,!activator,0.1,-1"
+        // "OnStartTouch" "sticky_flicker_maker,SetParent,!activator,0.1,-1"
+        // "OnStartTouch" "explosion_maker,SetParent,!activator,0.1,-1"
+        // "OnStartTouch" "explosion_hitbox,SetParent,!activator,0.1,-1"
         "OnStartTouch" "!self,Disable,,0,-1"
 
+        "OnUser1" "!self,Kill,,2.1,-1"
+      }
+
+      trigger_hurt
+      {
+        "targetname" "explosion_hitbox"
+        "origin" "0 0 0"
+        "mins" "-144 -144 -144"
+        "maxs" "144 144 144"
+        "Damage" "150" //actual damage is half of this
+        "spawnflags" "1" 
+        "filtername" "filter_is_blu" //prevent self splash damage
+        "choices" "64" //blast damage type
+        "StartDisabled" "1"
+
+        "OnUser1" "!self,Enable,,2,-1"
         "OnUser1" "!self,Kill,,2.1,-1"
       }
 
       RemoveIfKilled "explosive_tip_relay"
     }
 
-    Explosive_Tip_Bot //explosive tip variant used by blu bots, base splash damage is 100
+    Explosive_Tip_Bot //explosive tip variant used by blu bots
     {
       KeepAlive 1
 
-      OnSpawnOutput 
+  		OnSpawnOutput 
 			{
-				Target "tip_explosion"
+				Target "explosion_hitbox"
 				Action "$InheritOwner"
         Param "!activator"
 				Delay 0.1
@@ -609,25 +664,14 @@ tomboy
         "OnUser1" "!self,Kill,,5,-1"
       }
 
-      tf_point_weapon_mimic
+      logic_measure_movement 
       {
-        "targetname" "tip_explosion"
-
-        "spawnflags" "1"
-        "angles" "0 0 0"
-        "origin" "-1 0 -3"
-        "teamnum" "3"
-        "Crits" "0"
-        "Damage" "100"
-        "ModelScale" "1"
-        "SpeedMax" "1000000"
-        "SpeedMin" "1000000"
-        "SplashRadius" "144"
-        "SpreadAngle" "0"
-        "WeaponType" "3"
-
-        "OnUser1" "!self,FireOnce,,2,-1"
-				"OnUser4" "!self,DetonateStickies,,0,-1"
+        "MeasureReference" "detonate_position"
+        "MeasureTarget" "detonate_position"
+        "MeasureType" "0"
+        "Target" "explosion_maker"
+        "TargetReference" "detonate_position"
+        "TargetScale" "1"
       }
 
       logic_measure_movement 
@@ -635,7 +679,17 @@ tomboy
         "MeasureReference" "detonate_position"
         "MeasureTarget" "detonate_position"
         "MeasureType" "0"
-        "Target" "tip_explosion"
+        "Target" "explosion_hitbox"
+        "TargetReference" "detonate_position"
+        "TargetScale" "1"
+      }
+
+      logic_measure_movement 
+      {
+        "MeasureReference" "detonate_position"
+        "MeasureTarget" "detonate_position"
+        "MeasureType" "0"
+        "Target" "sticky_flicker_maker"
         "TargetReference" "detonate_position"
         "TargetScale" "1"
       }
@@ -654,6 +708,33 @@ tomboy
         "OnUser1" "!self,Kill,,2.1,-1"
       }
 
+      env_entity_maker
+      {
+        "targetname" "explosion_maker"
+        "EntityTemplate" "Explosion_Particle"
+        "PostSpawnDirection" "0 0 0"
+        "PostSpawnDirectionVariance" "0"
+        "PostSpawnInheritAngles" "0"
+        "PostSpawnSpeed" "0"
+        "spawnflags" "0"
+
+        "OnUser1" "!self,ForceSpawn,,2,-1"
+        "OnUser1" "!self,Kill,,2.1,-1"
+      }
+
+
+      ambient_generic
+      {
+        "targetname" "explode_sound"
+        "message" "weapons/explode1.wav"
+        "radius" "7000"
+        "health" "5"
+        "spawnflags" "48"
+
+        "OnUser1" "!self,PlaySound,,2,-1"
+        "OnUser1" "!self,Kill,,3,-1"
+      }
+
       ambient_generic
       {
         "targetname" "sticky_sound"
@@ -664,6 +745,16 @@ tomboy
 
         "OnUser1" "!self,PlaySound,,1,-1"
         "OnUser1" "!self,Kill,,3,-1"
+      }
+
+      logic_measure_movement 
+      {
+        "MeasureReference" "detonate_position"
+        "MeasureTarget" "detonate_position"
+        "MeasureType" "0"
+        "Target" "explode_sound"
+        "TargetReference" "detonate_position"
+        "TargetScale" "1"
       }
 
       logic_measure_movement 
@@ -695,9 +786,29 @@ tomboy
         "spawnflags" "1" 
         "filtername" "filter_is_red"
 
+        //"OnStartTouch" "player,$DisplayTextCenter,rad,0,-1" //used for debugging
         "OnStartTouch" "detonate_position,SetParent,!activator,0.1,-1"
+        // "OnStartTouch" "sticky_flicker_maker,SetParent,!activator,0.1,-1"
+        // "OnStartTouch" "explosion_maker,SetParent,!activator,0.1,-1"
+        // "OnStartTouch" "explosion_hitbox,SetParent,!activator,0.1,-1"
         "OnStartTouch" "!self,Disable,,0,-1"
 
+        "OnUser1" "!self,Kill,,2.1,-1"
+      }
+
+      trigger_hurt
+      {
+        "targetname" "explosion_hitbox"
+        "origin" "0 0 0"
+        "mins" "-144 -144 -144"
+        "maxs" "144 144 144"
+        "Damage" "200" //actual damage is half of this
+        "spawnflags" "1" 
+        "filtername" "filter_is_red" //prevent self splash damage
+        "choices" "64" //blast damage type
+        "StartDisabled" "1"
+
+        "OnUser1" "!self,Enable,,2,-1"
         "OnUser1" "!self,Kill,,2.1,-1"
       }
 
@@ -2900,9 +3011,9 @@ tomboy
         "spawnflags" "1"
         "filtername" "candycane_filter_is_red"
 
+        //"OnTrigger" "!activator,$AddPlayerAttribute,ammo regen|0,0,-1"
         "OnEndTouch" "!activator,$RemovePlayerAttribute,ammo regen,0,-1"
 
-        //refresh 
         "OnUser1" "!self,Disable,,0,-1"
         "OnUser1" "!self,Enable,,0.01,-1"
       }
@@ -2914,7 +3025,7 @@ tomboy
         "min" "0"
         "max" "0.3" //cap
 
-        "OnGetValue" "aoe_regen_increaser,$SetKey$case01,,0,-1"
+        "OnGetValue" "aoe_regen_increaser,$FormatInput1,,0,-1"
         "OnGetValue" "aoe_regen_increaser,$Format,,0.1,-1"
         "OnUser1" "delay_count,FireUser1,,0,-1"
         "OnUser1" "stacks_count,FireUser1,,0,-1"
@@ -2929,7 +3040,7 @@ tomboy
         "min" "0"
         "max" "10"
 
-        "OnGetValue" "aoe_regen_increaser,$SetKey$case01,,0,-1"
+        "OnGetValue" "aoe_regen_increaser,$FormatInput2,,0,-1"
         "OnGetValue" "aoe_regen_increaser,$Format,,0.1,-1"
         "OnUser1" "!self,Add,0.001,0,-1"
         "OnUser1" "!self,GetValue,,0.1,-1"
@@ -2942,7 +3053,7 @@ tomboy
         "min" "0"
         "max" "10" //max stacks (visual only)
 
-        "OnGetValue" "stack_counter_formatter,$SetKey$case01,,0,-1"
+        "OnGetValue" "stack_counter_formatter,$FormatInput1,,0,-1"
         "OnGetValue" "stack_counter_formatter,$Format,,0.1,-1"
         "OnUser1" "!self,Add,1,0,-1"
         "OnUser1" "!self,GetValue,,0.1,-1"
@@ -3085,8 +3196,7 @@ tomboy
         "max" "5"
         "StartDisabled" "1"
 
-        //"OutValue" "red_player,$DisplayTextCenter,,0,-1"
-        "OnGetValue" "dmg_multi_formatter,$SetKey$case01,,0,-1"
+        "OnGetValue" "dmg_multi_formatter,$FormatInput1,,0,-1"
         "OnGetValue" "dmg_multi_formatter,$Format,,0.1,-1"
         "OnGetValue" "final_multiplier_storer,SetValueNoFire,,0,-1"
         "OnUser1" "!self,Add,0.1,0,-1"
@@ -3118,7 +3228,7 @@ tomboy
       {
         "targetname" "dmg_multi_formatter"
         "case16" "message Explosive Landing Damage Multi %x"
-        "case01" "<DISPLAY_NUMBER_BROKEN>"
+        "case01" "69"
         "ondefault" "land_dmg_multi_indicator,AddOutput,,0,-1"
         "ondefault" "land_dmg_multi_indicator,Display,,0.1,-1"
       }
@@ -3762,8 +3872,7 @@ tomboy
         "max" "2500" //damage requirement
   
         //"OutValue" "red_player,$DisplayTextCenter,,0,-1" 
-        "OutValue" "Natascha_berserkpoints_apply,$SetKey$case01,,0,-1"
-        "OutValue" "Natascha_berserkpoints_apply,$Format,,0,-1"
+        "OutValue" "Natascha_berserkpoints_apply,$FormatInput1,,0,-1"
       }
 
       logic_case
@@ -3774,8 +3883,7 @@ tomboy
 
         //"ondefault" "red_player,$DisplayTextCenter,,0,-1" 
         "ondefault" "!activator,AddOutput,,0,-1"
-        "ondefault" "!self,$SetKey$case01,0,0,-1"
-        "ondefault" "!self,$Format,0,0,-1"
+        "ondefault" "!self,$FormatInputNoFire1,0,0,-1"
       }
 
       logic_case 
@@ -3815,15 +3923,7 @@ tomboy
       OnSpawnOutput
       {
         Target "beserk_meter_formatter"
-        Action "$SetKey$case01"
-        Param "0"
-        Delay 0
-      }
-
-      OnSpawnOutput
-      {
-        Target "beserk_meter_formatter"
-        Action "$Format"
+        Action "$FormatInput1"
         Param "0"
         Delay 0
       }
@@ -3885,7 +3985,7 @@ tomboy
       {
         "targetname" "beserk_meter_formatter"
         "case16" "message Berserk %/2500" //damage requirement (visual only)
-        "case01" "<ERROR>"
+        "case01" "69"
 
         "ondefault" "berserk_meter,AddOutput,,0,-1"
         "ondefault" "berserk_meter,Display,,0.01,-1"
@@ -3901,8 +4001,7 @@ tomboy
         
         //"OnHitMax" "player,$DisplayTextCenter,full,0,-1" 
         "OnHitMax" "is_berserk_ready,SetValueTest,1,0,-1"
-        "OnGetValue" "beserk_meter_formatter,$SetKey$case01,,0,-1"
-        "OnGetValue" "beserk_meter_formatter,$Format,,0,-1"
+        "OnGetValue" "beserk_meter_formatter,$FormatInput1,,0,-1"
       }
 
       game_text
@@ -4234,7 +4333,7 @@ tomboy
       }
     }
 
-     Amputator_Id 
+    Amputator_Id 
     {
       NoFixup 1
 
@@ -4246,8 +4345,7 @@ tomboy
         "min" "0"
         "max" "0"
         
-        "OnGetValue" "amputator_id_assigner,$SetKey$case01,,0,-1"
-        "OnGetValue" "amputator_id_assigner,$Format,,0,-1"
+        "OnGetValue" "amputator_id_assigner,$FormatInput1,,0,-1"
         "OnUser1" "!self,GetValue,,0,-1"  
       }
 
@@ -4296,7 +4394,7 @@ tomboy
         "min" "0"
         "max" "40"
 
-        "OnGetValue" "cooldown_formatter,$SetKey$case01,,0,-1"
+        "OnGetValue" "cooldown_formatter,$FormatInput1,,0,-1"
         "OnGetValue" "cooldown_formatter,$Format,,0.1,-1"
         "OnGetValue" "cooldown_handler,SetValueCompare,,0.1,-1"
         "OnUser1" "cooldown,Subtract,1,0,-1"
@@ -4358,8 +4456,8 @@ tomboy
       {
         "targetname" "amputator_id_self_assigners_middleman"
 
-        "ondefault" "amputator_id_self_assigner1,$SetKey$case01,,0,-1"
-        "ondefault" "amputator_id_self_assigner2,$SetKey$case01,,0,-1"
+        "ondefault" "amputator_id_self_assigner1,$FormatInput1,,0,-1"
+        "ondefault" "amputator_id_self_assigner2,$FormatInput1,,0,-1"
       }
 
       logic_case
@@ -4396,7 +4494,7 @@ tomboy
       {
         "targetname" "cooldown_formatter"
         "case16" "message Ability Cooldown %"
-        "case01" "<COOLDOWN_BROKEN>"
+        "case01" "69"
         "ondefault" "cooldown_indicator,AddOutput,,0,-1"
         "ondefault" "cooldown_indicator,Display,,0.1,-1"
       }
