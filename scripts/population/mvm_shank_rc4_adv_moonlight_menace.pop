@@ -15,7 +15,6 @@ tomboy
   CanBotsAttackWhileInSpawnRoom	no
 
   Advanced 1
-  WaveStartCountdown 1
   //EventPopfile Halloween //using these cause the skeletons to look fucky
   //ZombiesNoWave666 1
   AddSentryBusterWhenDamageDealtExceeds 3000
