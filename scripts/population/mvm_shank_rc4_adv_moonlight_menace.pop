@@ -381,12 +381,6 @@ tomboy
         "flag_as_weather" "0"
         "start_active" "1"
       }
-	  phys_constraint
-	  {
-		"targetname" "sticky_flicker_constraint"
-		"attach1" "sticky_flicker"
-		"attach2" "detonate_position"
-	  }
     }
 
     Stickybomb_Flicker_Particle_Blue
