@@ -20,6 +20,14 @@
 //- Ditto (maybe no 2nd set of fan spawns?)
 //- Reduce Giant Uber duration to 6, health threshold to...1200?
 
+//Changelog 31-10 (spooky)
+//- Added changes to Vita-saw, Huntsman, Spy-cicle
+//- Wave 2, wave 5: Added Hype condition to Homing Flare Rains, indicating their homing ability
+//- Wave 5: Added 12 Killer Bee Scouts to the first subwave.
+//- Wave 6 support's cash moved to teletank's cash to prevent potentially missed money from the support not spawning.
+//- Fixed both wave 6 tanks not deploying the bomb.
+//- Added a forcefield around the scaffolds on the left route, to prevent giants from getting stuck.
+
 //Themed waves:
 //- Nautical Nightmares (FireWeapon)
 //- Demonic Demolition
@@ -113,6 +121,15 @@ popuwashyon
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" [$SIGSEGV]
 	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" [$SIGSEGV]
 	PrecacheModel "models/props_mvm/robot_spawnpoint.mdl" [$SIGSEGV]
+	
+	//mmmmm nah
+	// ItemBlacklist  [$SIGSEGV]
+	// {
+		// Name "Kritz Or Treat Canteen"
+		// Name "Default Power Up Canteen (MvM)"
+		// Name "Power Up Canteen (MvM)"
+		// Name "Battery Canteens"
+	// }
 	
 	ExtraSpawnPoint [$SIGSEGV]
 	{
@@ -335,6 +352,39 @@ popuwashyon
         }
 		
 		////////////////////////////////////////////////////////////////////////////
+		
+		GetOffMe
+		{
+			// func_nav_avoid
+			// {
+				// "tags" "giant"
+				// "start_disabled" "0"
+				// "team" "-2"
+				// "maxs" "180 178 103"
+				// "mins" "-180 -178 -103"
+				// "origin" "-4077 -3902 337"
+			// }
+			NoFixup 1
+            trigger_push
+            {
+                "alternateticksfix" "0"
+                "filtername" "filter_giants"
+				"maxs" "105 158 102"
+				"mins" "-105 -158 -102"
+				"origin" "-4090 -3882 337"
+                "pushdir" "0 15 0"
+                "spawnflags" "64"
+                "speed" "75"
+                "startdisabled" "0"
+            }
+			filter_tf_bot_has_tag
+			{
+				"Negated" "0"
+				"require_all_tags" "1"
+				"tags" "giant"
+				"targetname" "filter_giants"
+			}
+		}
 		
 		Vortex
 		{
@@ -720,16 +770,148 @@ popuwashyon
             }
         }
 		
+		//Vita-saw change
+		//ty @ Jurrell for making the base form of this. Quite neat!
+		//For those unfamiliar (me):
+		//- when Vita-saw is equipped, spawn this entire template
+		//- on spawn, add condition 130 and remove the machinery beam attrib from secondary slot
+		//- then, trigger a logic relay, which activates a filter
+		//- filter checks for cond 130, then adds the attrib with value 2.5 to slot 2
+        vsaw_equipped
+        {
+            OnSpawnOutput
+	    	{
+	    		Target "vsaw_checker"
+	    		Action "Trigger"
+	    		Delay 0.1
+	    	}
+            OnSpawnOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "medic machinery beam|1" //15 hp/sec
+	    		Delay 0.1
+	    	}
+            OnParentKilledOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "medic machinery beam|1" //15 hp/sec
+	    		Delay 0.1
+	    	}
+            OnSpawnOutput
+            {
+                Target "!activator"
+	        	Action "$AddCond"
+                Param "130"
+            }
+			filter_tf_condition
+			{
+				"targetname" "filter_has_vsaw"
+				"Negated" "0"
+				"condition" "130"
+				"OnPass" "!activator,$AddItemAttribute,medic machinery beam|2.5|1,0.1,-1"
+				"OnFail" "!activator,$AddItemAttribute,medic machinery beam|2.5|1,0.1,-1"
+			}
+            logic_relay 
+            {
+				"targetname" "vsaw_checker"
+				"OnTrigger" "filter_has_vsaw,TestActivator,!activator,0,-1"
+            }
+        }
+		
+		//The Spy-cicle tweak
+		//Gun spy REAL?
+		ice_equipped
+        {
+            OnSpawnOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "bullets per shot bonus|0"
+	    		Delay 0.1
+	    	}
+            OnSpawnOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "damage bonus HIDDEN|0"
+	    		Delay 0.1
+	    	}
+            OnSpawnOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "spread penalty|0"
+	    		Delay 0.1
+	    	}
+			
+            OnParentKilledOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "bullets per shot bonus|0"
+	    		Delay 0.1
+	    	}
+            OnParentKilledOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "damage bonus HIDDEN|0"
+	    		Delay 0.1
+	    	}
+            OnParentKilledOutput
+	    	{
+	    		Target "!activator"
+	    		Action "$RemoveItemAttribute"
+                Param "spread penalty|0"
+	    		Delay 0.1
+	    	}
+			
+            OnSpawnOutput
+	    	{
+	    		Target "ice_checker"
+	    		Action "Trigger"
+	    		Delay 0.1
+	    	}
+            OnSpawnOutput
+            {
+                Target "!activator"
+	        	Action "$AddCond"
+                Param "130"
+            }
+			filter_tf_condition
+			{
+				"targetname" "filter_has_ice"
+				"Negated" "0"
+				"condition" "130"
+				"OnFail" "!activator,$AddItemAttribute,damage bonus HIDDEN|0.7|0,0.1,-1"
+				"OnFail" "!activator,$AddItemAttribute,bullets per shot bonus|4|0,0.1,-1"
+				"OnFail" "!activator,$AddItemAttribute,spread penalty|2|0,0.1,-1"
+				
+				"OnPass" "!activator,$AddItemAttribute,damage bonus HIDDEN|0.7|0,0.1,-1"
+				"OnPass" "!activator,$AddItemAttribute,bullets per shot bonus|4|0,0.1,-1"
+				"OnPass" "!activator,$AddItemAttribute,spread penalty|2|0,0.1,-1"
+			}
+            logic_relay 
+            {
+				"targetname" "ice_checker"
+				"OnTrigger" "filter_has_ice,TestActivator,!activator,0,-1"
+            }
+        }
 	}
 	
 	
 	
 	//Vortex-es. Vortices?
+	//just kidding, now it's just one!
 	SpawnTemplate [$SIGSEGV]
 	{
 		Name "VortexSky"
 		Origin	"2020 3880 2200"
 	}
+	
+	SpawnTemplate "GetOffMe" [$SIGSEGV] //nav fix
 	
 	// SpawnTemplate [$SIGSEGV]
 	// {
@@ -877,8 +1059,48 @@ popuwashyon
 		"bleeding duration"				0
 		"dmg taken from fire increased"	1
 		"crit mod disabled"				1
+		"special item description" "Old stats removed. Can randomly crit now!"
 	}
 	
+	//Vita-saw: enable building healing!
+	//yes I picked up this stuff from Jurrell. Thanks, nerd :3
+    PlayerItemEquipSpawnTemplate
+	{
+		Name "vsaw_equipped"
+		ItemName "The Vita-saw"
+	}
+	ItemAttributes [$SIGSEGV]
+	{
+		ItemName "The Vita-saw"
+		"special item description" "When equipped: allows you to heal buildings for 15 hp/sec!"
+	}
+	
+	
+	//Arrow shotgun! Because it's just really cool to use 8) 
+	ItemAttributes [$SIGSEGV]
+	{
+		ItemName "The Huntsman"
+		"arrow mastery" 1
+		"projectile penetration" 1
+		"projectile penetration" -1 //Disallows buying pene. Does not break middle arrow.
+		"special item description" "Penetration is disabled to prevent arrows from breaking."
+	}
+	
+	//The Spy-cicle's niche is too niche for MvM, making it a stock knife...
+	//with a weird sapper interaction...
+	//So here's something cool for it.
+    PlayerItemEquipSpawnTemplate
+	{
+		Name "ice_equipped"
+		ItemName "The Spy-cicle"
+	}
+	ItemAttributes [$SIGSEGV]
+	{
+		ItemName "The Spy-cicle"
+		"cannot be upgraded" 1
+		"max health additive bonus" 25
+		"special item description" "When equipped: turns your revolver into a mini shotgun! +3 bullets per shot, -30% damage, double spread."
+	}
 	
 	// The funny blatantly overpowered things
 	
@@ -1409,6 +1631,10 @@ popuwashyon
 			Tag giant
 			AimAt Head [$SIGSEGV]
 			MaxVisionRange 750
+			AddCond [$SIGSEGV]
+			{
+				Index 36 //hype!
+			}
 			ItemAttributes
 			{
 				ItemName "The Manmelter"
@@ -2028,7 +2254,10 @@ popuwashyon
 			Tag giant
 			AimAt Head [$SIGSEGV]
 			MaxVisionRange 750
-			Tag giant
+			AddCond [$SIGSEGV]
+			{
+				Index 36 //hype!
+			}
 			ItemAttributes
 			{
 				ItemName "The Detonator"
@@ -3283,8 +3512,8 @@ popuwashyon
 				StartingPathTrackNode "tank_path_a"
 				OnBombDroppedOutput
 				{
-					Target boss_deploy_relay 					
-					Action Trigger                         		
+					Target boss_deploy_relay
+					Action Trigger
 				}
 			}
 		}
@@ -4179,7 +4408,7 @@ popuwashyon
 			Name "wave5ab"
 			Where spawnbot_invasion
 			WaitBetweenSpawns 0.5
-			TotalCount 48
+			TotalCount 60
 			MaxActive 12
 			SpawnCount 4
 			TotalCurrency 100
@@ -4591,6 +4820,11 @@ popuwashyon
 				Name "tank"
 				Speed 75
 				StartingPathTrackNode "tank_path_b"
+                OnBombDroppedOutput
+                {
+                    Target boss_deploy_relay
+                    Action Trigger
+                }
 			}
 		}
 		WaveSpawn
@@ -4722,7 +4956,7 @@ popuwashyon
 			WaitForAllSpawned "wave6b"
 			WaitBeforeStarting 5
 			TotalCount 1
-			TotalCurrency 80
+			TotalCurrency 90
 			Tank
 			{
 				Health 30000
@@ -4732,6 +4966,11 @@ popuwashyon
 				Speed 75
 				StartingPathTrackNode "tank_path_a"
 				SpawnTemplate Teleporter [$SIGSEGV]
+                OnBombDroppedOutput
+                {
+                    Target boss_deploy_relay
+                    Action Trigger
+                }
 			}
 		}
 		WaveSpawn
@@ -4787,7 +5026,7 @@ popuwashyon
 			TotalCount 10
 			MaxActive 4
 			SpawnCount 1
-			TotalCurrency 10
+			TotalCurrency 0
 			Support 1
 			TFBot
 			{
@@ -5164,24 +5403,20 @@ popuwashyon
 		// {
 			// Name "Support"
 			// WaitBeforeStarting 1
-			// Where spawnbot_invasion
-			// WaitBetweenSpawnsAfterDeath 15
+			// Where spawnbot
+			// WaitBetweenSpawnsAfterDeath 1
 			// TotalCount 8
-			// MaxActive 2
-			// SpawnCount 2
+			// MaxActive 1
+			// SpawnCount 1
 			// Squad
 			// {
 				// TFBot
 				// {
 					// Template T_TFBot_Giant_Pyro
-					// Attributes IgnoreEnemies
-					// Attributes IgnoreFlag
-					// BehaviorModifiers Push
+					// Tag giant
+					// Attributes SuppressFire
+					// Attributes DisableDodge
 					// Health 1000
-				// }
-				// TFBot
-				// {
-					// Template Bee_Giant_Medic_AoE
 				// }
 			// }
 		// }

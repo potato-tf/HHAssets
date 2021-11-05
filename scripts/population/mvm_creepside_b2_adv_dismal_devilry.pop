@@ -1699,7 +1699,7 @@ WaveSchedule
             { 
                 Class Pyro
                 ClassIcon gry_lite
-                Skill Hard
+                Skill Normal
                 Health 650
                 Scale 1.35
                 StripItemSlot 2
@@ -1720,6 +1720,7 @@ WaveSchedule
                 {
                     "collect currency on kill" 1
                     "head scale" 0.8
+                    "move speed bonus" 0.75
                     "crit mod disabled" 0
                     "dmg taken mult from special damage type 2" 2.5
                 }
@@ -2147,16 +2148,16 @@ WaveSchedule
                         Spell [$SIGSEGV]
 			            {
 			            	Type     "Pumpkin MIRV"
-			            	Delay    7.05
-			            	Cooldown 14.1
+			            	Delay    11.35
+			            	Cooldown 23.6
 			            	Charges  1
 			            	Limit    1
 			            }	
                         Spell [$SIGSEGV]
 			            {
 			            	Type     "Summon Monoculus"
-			            	Delay    14.1
-			            	Cooldown 14.1
+			            	Delay    23.1
+			            	Cooldown 23.6
 			            	Charges  1
 			            	Limit    1
 			            }
@@ -3384,6 +3385,11 @@ WaveSchedule
                     "damage penalty" 0.4
                     "spread penalty" 1.35
                 }
+                CharacterAttributes
+                {
+                    "collect currency on kill" 1
+                    "health from healers reduced" .1
+                }
 				Skill Expert
 				Action Mobber
 				AddCond { Name TF_COND_REPROGRAMMED }
@@ -3924,9 +3930,9 @@ WaveSchedule
             Name "w6_c"
             WaitForAllDead "w6_b"
             Where spawnbot
-            TotalCount 12
-            MaxActive 12
-            SpawnCount 4
+            TotalCount 9
+            MaxActive 9
+            SpawnCount 3
             WaitBeforeStarting 0
             WaitBetweenSpawns 12
         
@@ -3944,17 +3950,6 @@ WaveSchedule
                     UseHumanModel 2
 			        Item "Zombie Heavy"
                     SpawnTemplate "powerup_logic"
-                }
-                TFBot
-                {
-                    Template T_TFBot_Medic_Resistance
-                    CharacterAttributes
-			        {
-                        "voice pitch scale" 0.8
-			        }
-                    UseHumanModel 2
-			        Item "Zombie Medic"
-                    SpawnTemplate "powerup_logic_medic"
                 }
                 TFBot
                 {
@@ -5766,6 +5761,7 @@ WaveSchedule
             CharacterAttributes
             {
                 "collect currency on kill" 1
+                "health from healers reduced" .1
             }
             SpawnTemplate "redbot_init"
             UseHumanModel 2
@@ -9630,10 +9626,10 @@ WaveSchedule
 				
 				// Changing how much is added each timer iteration changes the smoothness of the color transition
 				// (5 is smoother than 25, and goes through more colors values, but is also much slower)
-				"OnCase01"   "spelltank_color_bo,Add,2,0,-1"
+				"OnCase01"   "spelltank_color_bo,Add,1.1,0,-1"
                 "OnCase02"   "spelltank_color_ow,Add,18,0,-1"
 				"OnCase03"   "spelltank_color_owb,Add,18,0,-1"
-                "OnCase04"   "spelltank_color_bp,Add,2,0,-1"
+                "OnCase04"   "spelltank_color_bp,Add,1.1,0,-1"
                 "OnCase05"   "spelltank_color_pw,Add,18,0,-1"
                 "OnCase06"   "spelltank_color_pwb,Add,18,0,-1"
 			}
