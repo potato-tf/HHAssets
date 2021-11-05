@@ -277,15 +277,15 @@ WaveSchedule
 
 	ClassLimit [$SIGSEGV]
     {
-		Scout		2
-		Soldier		2
-		Pyro		2
-		Demoman		2
-        Heavy		2
-        Engineer	2
-		Medic		2
-        Sniper		2
-        Spy			2
+		Scout		 2
+		Soldier		 2
+		Pyro		 2
+		Demoman		 2
+        HeavyWeapons 2
+        Engineer	 2
+		Medic		 2
+        Sniper		 2
+        Spy			 2
     }
 
 	OverrideSounds [$SIGSEGV]
@@ -609,6 +609,12 @@ WaveSchedule
 		"blast dmg to self increased" 0.48
 		"self dmg push force decreased" 0.25
 		"regenerate stickbomb" 1
+	}
+
+	ItemAttributes [$SIGSEGV]
+	{
+		ClassName "tf_weapon_lunchbox"
+		"gesture speed increase" 1.75
 	}
 
 	ItemAttributes [$SIGSEGV]
@@ -10224,6 +10230,20 @@ WaveSchedule
 		Name   "p_barrel"
 		Origin "660 375 189"
 		Angles "0 -180 0"
+	}
+
+	SpawnTemplate [$SIGSEGV]
+	{
+		Name   "p_cashsave"
+		Origin "647 375 189"
+		Angles "0 180 0"
+	}
+
+	SpawnTemplate [$SIGSEGV]
+	{
+		Name   "p_cashsave"
+		Origin "660 375 189"
+		Angles "0 180 0"
 	}
 
 	SpawnTemplate [$SIGSEGV]
