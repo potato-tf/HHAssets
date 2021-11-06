@@ -598,16 +598,15 @@ WaveSchedule
 		ClassName "TF_WEAPON_PIPEBOMBLAUNCHER"
 		"damage penalty" 0.35
 		"max pipebombs increased" -4
-		"self dmg push force decreased" 0.25
+		"self dmg push force decreased" 0
 	}
 
 	ItemAttributes [$SIGSEGV]	//too suicidal, removed mobility
 	{
 		ItemName "The Ullapool Caber"
-		"special item description" "[INFO] Consistent self damage, no blast jump"
 		"dmg pierces resists absorbs" 1
 		"blast dmg to self increased" 0.48
-		"self dmg push force decreased" 0.25
+		"self dmg push force decreased" 0
 		"regenerate stickbomb" 1
 	}
 
@@ -644,12 +643,6 @@ WaveSchedule
 		ItemName "The Widowmaker"
 		"mod ammo per shot" 65
 	}
-
-	//ItemAttributes [$SIGSEGV]
-	//{
-	//	ItemName "The Frontier Justice"
-	//	"minicrits become crits" 1
-	//}
 
 	ItemAttributes [$SIGSEGV]
 	{
@@ -6349,9 +6342,9 @@ WaveSchedule
             trigger_teleport
             {
                 "targetname" "leap_tele"
-                "mins" "-134.5 -1 -274"
-                "maxs" "134.5 1 274"
-                "origin" "231 1279 291"
+                "mins" "-134.5 -1 -217.5"
+                "maxs" "134.5 1 217.5"
+                "origin" "231 1279 148"
                 "spawnflags" "1"
                 "filtername" "filter_leaper"
                 "target" "leap_telehere"
@@ -7666,11 +7659,11 @@ WaveSchedule
 		{
 			NoFixup 1
 			func_wall
-			{
-				"origin" "700 280 456"
-				"mins" "-85.35 -113 -224"
-				"maxs" "85.35 113 224"
-			}
+            {
+                "origin" "654 328 456"
+                "mins" "-49 -65 -224"
+                "maxs" "49 65 224"
+            }
 		}
 
 		p_crate
@@ -7899,7 +7892,7 @@ WaveSchedule
 			prop_dynamic
 			{
 				"classname" "prop_dynamic"
-				"model" "models\props_coalmines\wood_fence_128.mdl"
+				"model" "models\props_coalmines\wood_fence_short_64.mdl"
 				"disableshadows" "1"
 				"modelscale" "1"
 				"SetBodyGroup" "0"
@@ -10482,12 +10475,19 @@ WaveSchedule
 		Angles "0 180 0"
 	}
 
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_barricade_nolevel2"
-		Origin "390 2020 382"
-		Angles "0 90 0"
-	}
+	//SpawnTemplate [$SIGSEGV]
+	//{
+	//	Name   "p_barricade_nolevel2"
+	//	Origin "390 2050 285"
+	//	Angles "90 90 0"
+	//}
+
+	//SpawnTemplate [$SIGSEGV]
+	//{
+	//	Name   "p_barricade_nolevel2"
+	//	Origin "390 1925 345"
+	//	Angles "-90 90 0"
+	//}
 
 	SpawnTemplate [$SIGSEGV]
 	{
@@ -11250,6 +11250,16 @@ WaveSchedule
 		}
 
 		WaveSpawn
+        {
+            Name "spawnopener"
+            WaitBeforeStarting 2
+            FirstSpawnOutput                                                                                                                                                            
+            {
+                Target brushbug_fix                                 
+                Action Enable              
+            }
+        }
+		WaveSpawn
 		{
 			Name "spawnopener"
 			WaitBeforeStarting 5
@@ -11299,16 +11309,16 @@ WaveSchedule
 				//Action Trigger          
 			}
 		}
-		WaveSpawn
-		{
-			Name "spawnopener"
-			WaitBeforeStarting 2
-			FirstSpawnOutput                                                                                                                                                            
-			{
-				Target cargodoor                                  
-				Action kill              
-			}
-		}
+		//WaveSpawn
+		//{
+		//	Name "spawnopener"
+		//	WaitBeforeStarting 2
+		//	FirstSpawnOutput                                                                                                                                                            
+		//	{
+		//		Target cargodoor                                  
+		//		Action kill              
+		//	}
+		//}
 		WaveSpawn
 		{
 			Name "shoptroll"
