@@ -440,7 +440,7 @@ Wave
 		WaveSpawn
 		{
 
-FirstSpawnOutput
+StartSpawnOutput
 			{
 				Target saucer_airraid_relay				
 				Action Trigger
