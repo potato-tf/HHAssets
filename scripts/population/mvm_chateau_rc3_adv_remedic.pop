@@ -93,8 +93,18 @@ population
 	{
 		ItemName "The Amputator"
 		"aoe heal chance" 80
-		"halloween fire rate bonus" 0.85
+		"fire rate penalty HIDDEN" 0.85
 		"special item description" "+15% fire rate"
+	}
+	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
+	{
+		ItemName "Festive Bonesaw 2014"
+		"dmg penalty vs nonburning" 0.385
+		"damage bonus vs burning" 0.385
+		"fire rate penalty HIDDEN" 0.25
+		"mult smack time" 43
+		"move speed bonus" 0.75
+		"special item description" "Heavy chainsaw that shreds enemies but lowers your movespeed."
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
@@ -103,7 +113,7 @@ population
 		"maxammo primary reduced" 0
 		"mod max primary clip override" 0
 		"damage penalty" 0
-		"stomp player time" 0.2
+		"stomp player time" 0.33
 		"stomp player damage" 20
 		"stomp player force" 10
 		"special item description" "When this weapon is out, you take 35% less damage, your attacks do no damage but touching enemies hurt them. -100% max ammo on primaries."
@@ -112,16 +122,16 @@ population
 	{
 		ItemName "The Vita-Saw"
 		"melee cleave attack" 1
-		"dmg penalty vs nonburning" 1.15
-		"damage bonus vs burning" 1.15
+		"dmg penalty vs nonburning" 1.25
+		"damage bonus vs burning" 1.25
 		"special item description" "Extremely sharp needle pierces through enemies and deals extra damage, but swing speed is heavily lowered."
 		"fire rate penalty" 1.7
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "The Kritzkrieg"
-		"special item description" "Tripled uber charge rate."
-        "ubercharge rate bonus" 3
+		"special item description" "2.5x uber charge rate."
+        "ubercharge rate bonus" 2.5
 	}
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
@@ -140,7 +150,7 @@ population
 	ItemAttributes [$SIGSEGV] //Adds attributes to specified item given to players
 	{
 		ItemName "The Blutsauger"
-		"dmg penalty vs players" 0.85
+		"dmg penalty vs players" 0.8
 		"health drain" -4
 		"special item description" "Base regen and damage is decreased."
 	}
@@ -1444,11 +1454,11 @@ population
 		{
 			Name "Uber Armor"
 			Attribute "uber on damage taken"
-			Cap 0.25
+			Cap 0.2
 			playerupgrade 1
-			Increment 0.25
+			Increment 0.2
 			Cost 600
-			description "25% chance of being ubered for 3s when attacked"
+			description "20% chance of being ubered for 3s when attacked"
 		}
 		armorer
 		{
@@ -1653,7 +1663,7 @@ population
 			Attribute "sniper fires tracer"
 			Cap 1
 			Increment 1
-			description "Fire deadly beams at the cost of using 2% uber per shot"
+			description "Fire deadly beams at the cost of using 2% uber per shot, gain 2s of minicrit on kill."
 			Cost 200
             AllowedWeapons // Restricts upgrade to specified weapons
 			{
@@ -1671,6 +1681,7 @@ population
 			"attach particle effect" 92
             "projectile penetration" 1
 			"ragdolls become ash" 1
+			"minicritboost on kill" 2
 			}
 			DisallowedUpgrade
 			{
@@ -1724,12 +1735,37 @@ population
 		}
 		upgrade
 		{
+			Name "Carrier's Backpack"
+			Attribute "heal rate penalty"
+			Cap 0.25
+			Increment -0.75
+			description "Heavily weakens all healing for +15 health regen and slight ammo regen."
+			Cost 200
+			DisallowedWeapons // Disallow those weapons
+			{
+				ItemName "The Quick-Fix"
+				ItemName "The Kritzkrieg"
+				ItemName "The Vaccinator"
+			}
+            AllowedWeapons // Restricts upgrade to specified weapons
+			{
+				slot "secondary"
+			}
+			SecondaryAttributes
+			{
+			 "healing received bonus" -0.5
+			 "health regen" 15
+			 "ammo regen" 0.25
+			}
+		}
+		upgrade
+		{
 			Name "Projectile Shield"
 			Attribute "generate rage on heal"
 			Cap 1
 			Description "+1 tier of projectile shield"
 			Increment 1
-			Cost 750
+			Cost 800
             AllowedWeapons // Restricts upgrade to specified weapons
 			{
 				slot "secondary"
@@ -1782,7 +1818,7 @@ population
 			Attribute "Set DamageType Ignite" 
 			Cap 1
 			Increment 1
-			description "Burns for a few seconds and does 30% more damage"
+			description "Burns for a few seconds and does 25% more damage"
 			Cost 150
             AllowedWeapons // Restricts upgrade to specified weapons
 			{
@@ -1793,7 +1829,7 @@ population
 			}
 			SecondaryAttributes 
 			{
-				"damage bonus HIDDEN" 0.3
+				"damage bonus HIDDEN" 0.25
 			}
 			DisallowedUpgrade
 			{
@@ -1807,7 +1843,7 @@ population
 			Attribute "add cond on hit" 
 			Cap 121 //don't change cond
 			Increment 121
-			Cost 150
+			Cost 100
 			description "High chance of converting zombies for 5 seconds"
             AllowedWeapons // Restricts upgrade to specified weapons
 			{
@@ -1874,10 +1910,14 @@ population
 		{
 			Name "Berserker"
 			Attribute "mult dmg with reduced health"
-			Cap 1.80
-			Increment 0.80
+			Cap 2
+			Increment 1
 			description "The lower your health is, the more damage you do."
-			Cost 150
+			Cost 100
+			DisallowedWeapons // Disallow those weapons
+			{
+				ItemName "The Solemn Vow"
+			}
             AllowedWeapons // Restricts upgrade to specified weapons
 			{
 				Slot "Melee"
@@ -3588,7 +3628,7 @@ population
 		{
 			TotalCount 6
 			name 31
-			MaxActive	2
+			MaxActive	4
 			SpawnCount	1
 			WaitBeforeStarting	0
 			WaitBetweenSpawns	3
@@ -3635,7 +3675,7 @@ population
 			MaxActive	2
 			SpawnCount	1
 			WaitBeforeStarting 2
-			WaitBetweenSpawns 8
+			WaitBetweenSpawns 6
 			Where hills
 			Randomchoice
 			{
@@ -3947,10 +3987,10 @@ population
 			name 32
 			waitforalldead 32a
 			TotalCount	18
-			MaxActive	8
-			SpawnCount	2
+			MaxActive	9
+			SpawnCount	3
 			WaitBetweenSpawns 1
-			Where	hills
+			Where	spawnbot_cde
 			Tfbot
 			{
 			Class Scout
@@ -3972,7 +4012,7 @@ population
 			MaxActive	10
 			SpawnCount	1
 			WaitBeforeStarting	0
-			WaitBetweenSpawns 5
+			WaitBetweenSpawns 3
 			Where	Espawn
 				TFBot
 				{
@@ -4006,7 +4046,7 @@ population
 			MaxActive	8
 			SpawnCount	1
 			WaitBeforeStarting	0
-			WaitBetweenSpawns 5
+			WaitBetweenSpawns 3
 			Where	Espawn
 				TFBot
 				{
@@ -4035,7 +4075,7 @@ population
 			MaxActive	5
 			SpawnCount	1
 			WaitBeforeStarting	0
-			WaitBetweenSpawns 7
+			WaitBetweenSpawns 5
 			Where	hills
 				TFBot
 				{
@@ -4057,8 +4097,8 @@ population
 			MaxActive	10
 			SpawnCount	1
 			WaitforallDead 35
-			WaitBeforeStarting 3
-			WaitBetweenSpawns 3
+			WaitBeforeStarting 0
+			WaitBetweenSpawns 1
 			Where	hills
 			TFBot
 			{
@@ -4090,14 +4130,14 @@ population
 			MaxActive	5
 			SpawnCount	1
 			WaitforallDead 36
-			WaitBeforeStarting 3
-			WaitBetweenSpawns 10
+			WaitBeforeStarting 1
+			WaitBetweenSpawns 7
 			Where	spawnbot_cde
 			TFBot
 			{
 			class soldier
 			classicon heavy_fist_nys
-			health 2000
+			health 2200
 			Attributes Miniboss
 			scale 1.5
 			Action Mobber
@@ -4108,7 +4148,7 @@ population
 			WeaponRestrictions	MeleeOnly
 			CharacterAttributes
 			{
-			"move speed bonus" 0.65
+			"move speed bonus" 0.8
 			}
 			Item "Poopy Doe"
 			ItemAttributes
@@ -4275,7 +4315,7 @@ population
 		}
 		WaveSpawn
 		{
-			TotalCurrency	0
+			TotalCurrency	250
 			name a
 			TotalCount	1
 			MaxActive	1
@@ -4684,7 +4724,7 @@ population
 		}
 		WaveSpawn
 		{
-			TotalCurrency	250
+			TotalCurrency	0
 			name 45
 			Waitforalldead 44
 			TotalCount	6
@@ -5150,7 +5190,7 @@ population
 			name "Crusher"
 			usehumanmodel 1
 			skill expert
-			health 250
+			health 300
 			scale 1.25
 			action mobber
 			tag no_reprogram
@@ -5171,6 +5211,7 @@ population
 			{
 			"move speed bonus" 0.85
 			"melee range multiplier" 1.15
+			"damage bonus" 2
 			}
 			}
 			}
@@ -5203,7 +5244,7 @@ population
 			{
 			"cannot disguise" 1
 			"not solid to players" 1
-			"move speed bonus" 0.65
+			"move speed bonus" 0.5
 			"damage bonus" 1.5
 			}
 			}
@@ -5456,7 +5497,7 @@ population
 		}
 		WaveSpawn
 		{
-			TotalCount	1
+			TotalCount	2
 			MaxActive	1
 			waitforalldead 54
 			SpawnCount	1
@@ -5540,7 +5581,7 @@ population
 			CharacterAttributes
 			{
 			"cannot disguise" 1
-			"move speed bonus" 0.7
+			"move speed bonus" 0.5
 			"not solid to players" 1
 			"damage bonus" 1.5
 			}
@@ -5690,11 +5731,11 @@ population
 				}
 					CharacterAttributes
 					{
-						"move speed bonus" 0.45
+						"move speed bonus" 0.4
 						"airblast vulnerability multiplier"	0.1
 						"airblast vertical vulnerability multiplier"	0.1
 						"clip size upgrade atomic" 1
-						"damage bonus" 0.85
+						"damage bonus" 0.8
 						"voice pitch scale" 0.4
 						"projectile speed increased" 0.33
 					}
@@ -5968,12 +6009,14 @@ population
 		 WaveSpawn
 		{
 			MaxActive	2
-			TotalCount 10
+			TotalCount 12
 			SpawnCount	1
 			Support Limited
 			Where	Bspawn
 			WaitBeforeStarting 20
 			FirstSpawnMessage "{blue}A nearby robot scouting squad also came. I've convinced them to help us."
+			RandomChoice
+			{
 			Tfbot
 			{
 			Class Scout
@@ -5988,6 +6031,83 @@ population
 					{
 					"damage bonus" 2
 					}
+			}
+			Tfbot
+			{
+			Class Soldier
+			Action Mobber
+			Skill Expert
+			AddCond [$SIGSEGV] //Adds conditions to bots
+				    {
+					Name "TF_COND_REPROGRAMMED"
+				    }
+					classicon red2_lite
+					CharacterAttributes
+					{
+					"damage bonus" 1.1
+					}
+			}
+			Tfbot
+			{
+			Class Demoman
+			Action Mobber
+			Skill Expert
+			AddCond [$SIGSEGV] //Adds conditions to bots
+				    {
+					Name "TF_COND_REPROGRAMMED"
+				    }
+					classicon red2_lite
+					CharacterAttributes
+					{
+					"damage bonus" 1.2
+					}
+			}
+			Tfbot
+			{
+			Class Pyro
+			Action Mobber
+			Skill Expert
+			AddCond [$SIGSEGV] //Adds conditions to bots
+				    {
+					Name "TF_COND_REPROGRAMMED"
+				    }
+					classicon red2_lite
+					CharacterAttributes
+					{
+					"damage bonus" 0.9
+					}
+			}
+			Tfbot
+			{
+			Class Heavyweapons
+			Action Mobber
+			Skill Expert
+			AddCond [$SIGSEGV] //Adds conditions to bots
+				    {
+					Name "TF_COND_REPROGRAMMED"
+				    }
+					classicon red2_lite
+					CharacterAttributes
+					{
+					"damage bonus" 0.66
+					}
+			}
+			Tfbot
+			{
+			Class Sniper
+			WeaponRestrictions SecondaryOnly
+			Action Mobber
+			Skill Expert
+			AddCond [$SIGSEGV] //Adds conditions to bots
+				    {
+					Name "TF_COND_REPROGRAMMED"
+				    }
+					classicon red2_lite
+					CharacterAttributes
+					{
+					"damage bonus" 2.33
+					}
+			}
 			}
 		}
 		WaveSpawn
