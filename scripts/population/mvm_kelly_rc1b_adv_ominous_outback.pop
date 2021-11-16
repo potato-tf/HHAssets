@@ -2,6 +2,7 @@
 //Made for the Hexadecimal Horros
 //Steam Link: https://steamcommunity.com/id/TF2Outrun/
 //Spawns: spawnbot, spawnbot_any, spawnbot_left, spawnbot_right, & spawnbot_aerial
+//UFO fix done by randomguy 
 #base robot_standard.pop
 #base robot_giant.pop
 #base robot_retro_spooky_spooks.pop
@@ -11,9 +12,9 @@ StartingCurrency 800
 RespawnWaveTime	6
 CanBotsAttackWhileInSpawnRoom no
 EventPopfile Halloween
-ZombiesNoWave666 1
-ForceHoliday 2
-NoCritPumpkin 1
+ZombiesNoWave666 1 [$SIGSEGV]
+ForceHoliday 2 [$SIGSEGV]
+NoCritPumpkin 1 [$SIGSEGV]
 Mission
 	{
 		Objective DestroySentries
@@ -445,7 +446,12 @@ StartWaveOutput
 				Target saucer_airraid_relay				
 				Action Trigger
 			}
-			Name	wave2b	
+	LastSpawnOutPut
+	{
+		Target saucer
+		Action startforward
+	}
+			Name	wave2bp	//needed to seperate this for ufo fix
 			WaitForAllDead	wave2a
 			Where spawnbot_aerial
 			TotalCount 36
@@ -499,6 +505,64 @@ StartWaveOutput
 				
 				
 			
+		}
+		WaveSpawn //randomguy fix
+		{
+			Name dummy
+			WaitForAllDead wave2a
+			Where spawnbot_notreal
+			TotalCount 1
+			MaxActive 0
+			SpawnCount 1
+			WaitBeforeStarting 30
+			Support 1
+			
+			RandomChoice
+			{
+			Squad
+			{
+				TFBot
+				{
+					Template T_TFBot_HeavyWeapons_HeavyWeight_Champ
+					ClassIcon tf2
+				}
+			}
+			}
+				
+				FirstSpawnOutput
+				{
+					Target saucer				
+					Action stop
+				}
+		}
+		WaveSpawn //randomguy fix
+		{
+			Name dummy
+			WaitForAllSpawned wave2bp
+			Where spawnbot_notreal
+			TotalCount 1
+			MaxActive 0
+			SpawnCount 1
+			WaitBeforeStarting 2
+			Support 1
+			
+			RandomChoice
+			{
+			Squad
+			{
+				TFBot
+				{
+					Template T_TFBot_HeavyWeapons_HeavyWeight_Champ
+					ClassIcon tf2
+				}
+			}
+			}
+				
+				FirstSpawnOutput
+				{
+					Target saucer				
+					Action startforward
+				}
 		}
 		WaveSpawn
 		{
@@ -1949,4 +2013,4 @@ Item "Larrikin Robin"
 	}
 
 }
-}	     
+}
