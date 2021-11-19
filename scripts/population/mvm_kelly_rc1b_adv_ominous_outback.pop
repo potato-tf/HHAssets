@@ -510,59 +510,23 @@ StartWaveOutput
 		{
 			Name dummy
 			WaitForAllDead wave2a
-			Where spawnbot_notreal
-			TotalCount 1
-			MaxActive 0
-			SpawnCount 1
 			WaitBeforeStarting 30
-			Support 1
-			
-			RandomChoice
+			FirstSpawnOutput
 			{
-			Squad
-			{
-				TFBot
-				{
-					Template T_TFBot_HeavyWeapons_HeavyWeight_Champ
-					ClassIcon tf2
-				}
+				Target saucer				
+				Action stop
 			}
-			}
-				
-				FirstSpawnOutput
-				{
-					Target saucer				
-					Action stop
-				}
 		}
 		WaveSpawn //randomguy fix
 		{
 			Name dummy
 			WaitForAllSpawned wave2bp
-			Where spawnbot_notreal
-			TotalCount 1
-			MaxActive 0
-			SpawnCount 1
 			WaitBeforeStarting 2
-			Support 1
-			
-			RandomChoice
+			FirstSpawnOutput
 			{
-			Squad
-			{
-				TFBot
-				{
-					Template T_TFBot_HeavyWeapons_HeavyWeight_Champ
-					ClassIcon tf2
-				}
+				Target saucer				
+				Action startforward
 			}
-			}
-				
-				FirstSpawnOutput
-				{
-					Target saucer				
-					Action startforward
-				}
 		}
 		WaveSpawn
 		{

@@ -22,6 +22,62 @@ yes_spy_counters_w4_got_a_fucking_problem?
 	PrecacheModel "models/bots/boss_bot/boss_blimp_damage_explode.mdl" [$SIGSEGV]
 	PrecacheModel "models/bots/boss_bot/boss_blimp_explode.mdl" [$SIGSEGV]
 	PrecacheModel "models/bots/boss_bot/boss_tank_color.mdl" [$SIGSEGV] //PRECACHE THESE
+	BotsDropSpells 1 [$SIGSEGV]
+	GiantsDropRareSpells 1 [$SIGSEGV]
+	SpellDropRateCommon 0.1 [$SIGSEGV]
+	SpellDropRateGiant 0.2 [$SIGSEGV]
+	NoThrillerTaunt 1 [$SIGSEGV]
+	FastNPCUpdate 1 [$SIGSEGV]
+
+	SpellBookNormalRoll   // Override spell roll. The value specifies how many spell charges to give. You can duplicate spells to increase their roll chance
+	{
+		"Healing Aura" 2
+		"Fireball" 3
+		"Fireball" 3 // fireball charges increased to 3
+		"Fireball" 3
+		// ball of bats removed entierly.
+		"Healing Aura" 2
+		"Pumpkin MIRV" 2 
+		// super jump removed entierly, replaced with healing instead
+		"Healing Aura" 2
+		"Healing Aura" 2
+		"Invisibility" 1 // still has its niece scenarios
+		"Healing Aura" 2
+		"Pumpkin MIRV" 2 
+		"Fireball" 3
+		"Fireball" 3
+		"Fireball" 3
+		"Pumpkin MIRV" 2
+		"Invisibility" 1
+		"Pumpkin MIRV" 2 
+		"Fireball" 3
+		"Fireball" 3
+		"Fireball" 3
+		"Healing Aura" 2
+		"Pumpkin MIRV" 2 
+		"Healing Aura" 2
+		"Healing Aura" 2
+		"Invisibility" 1
+		//fuck minify
+		"Fireball" 3
+		"Fireball" 3
+		"Minify" 1
+		//small chance for rare
+	    "Tesla Bolt" 1
+		"Meteor Shower" 1
+		"Summon Monoculus" 1
+	}
+
+	SpellBookRareRoll   // Override spell roll. The value specifies how many spell charges to give. You can duplicate spells to increase their roll chance
+	{
+	    "Tesla Bolt" 1
+		"Meteor Shower" 1
+	    "Tesla Bolt" 1
+		"Meteor Shower" 1
+		"Summon Monoculus" 1
+		"Summon Monoculus" 1
+		"Fireball" 15
+	}
 
 	ExtraTankPath [$SIGSEGV] //haha blimp go brrrrr
 	{
@@ -456,6 +512,11 @@ yes_spy_counters_w4_got_a_fucking_problem?
 					Template T_TFBot_Sniper_Huntsman_Spammer
 					Name "Rapid Fire Bowman"
 					ClassIcon sniper_bow_multi
+					ItemAttributes
+					{
+						ItemName "The Huntsman"
+						"damage penalty" 0.5
+					}
 				}
 		}
 	}
@@ -509,12 +570,12 @@ yes_spy_counters_w4_got_a_fucking_problem?
 			WaitBetweenSpawns 0
 			TotalCurrency 275
 			FirstSpawnWarningSound "mvm/mvm_tank_start.wav"
-			FirstSpawnMessage "{blue}Tank spawned in with 25k (25000) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
+			FirstSpawnMessage "{blue}Tank spawned in with 22.5k (22500) HP!" [$SIGSEGV] //Chat message when a bot is spawned for the first time
 			
 			
 			Tank
 			{
-				Health 25000 //27500 //25000 //30000
+				Health 22500 //25000 //27500 //25000 //30000
 				Speed 75
 				Name "tankboss"
 				Skin 0									// 0 - normal skin, 1 - final wave skin
@@ -804,21 +865,21 @@ yes_spy_counters_w4_got_a_fucking_problem?
 				TFBot
 				{
 					Template T_TFBot_Giant_Soldier
-					ClassIcon soldier_homing_nys
-					AddCond [$SIGSEGV]
-					{
-						Index 36
-						Delay 1
-					}
-					RocketCustomParticle eyeboss_projectile [$SIGSEGV]
-					HomingRockets [$SIGSEGV] 
-					{
-						IgnoreDisguisedSpies 1
-						IgnoreStealthedSpies 1
-						RocketSpeed 0.75 // Multiplier of rocket speed. 1 for default speed
-						TurnPower 45 //How fast should the rocket rotate to face the target=
-						MaxAimError 90 //Max angle between rocket and the target
-					}
+					//ClassIcon soldier_homing_nys
+					//AddCond [$SIGSEGV]
+					//{
+						//Index 36
+						//Delay 1
+					//}
+					//RocketCustomParticle eyeboss_projectile [$SIGSEGV]
+					//HomingRockets [$SIGSEGV] 
+					//{
+						//IgnoreDisguisedSpies 1
+						//IgnoreStealthedSpies 1
+						//RocketSpeed 0.75 // Multiplier of rocket speed. 1 for default speed
+						//TurnPower 45 //How fast should the rocket rotate to face the target=
+						//MaxAimError 90 //Max angle between rocket and the target
+					//}
 				}
 				TFBot
 				{
@@ -988,8 +1049,8 @@ yes_spy_counters_w4_got_a_fucking_problem?
 			{
 				TFBot
 				{
-					Template T_TFBot_HeavyWeapons_Heater
-					Name "Giant Heater Heavy"
+					Template T_TFBot_Giant_HeavyWeapons //T_TFBot_HeavyWeapons_Heater
+					//Name "Giant Heater Heavy"
 				}
 				TFBot
 				{

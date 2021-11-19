@@ -5,7 +5,7 @@
 //Advanced Difficulty
 //Made by Package O Lies
 
-
+//rip the underscore at the end from the beginning of HH sadge
 
 WaveSchedule
 {
@@ -17,8 +17,6 @@ WaveSchedule
 	AddSentryBusterWhenKillCountExceeds	20
 	Advanced	1
 	
-	NoMvMDeathTune 1 			[$SIGSEGV]
-	StandableHeads 1 			[$SIGSEGV]
 	//EnableDominations 1         [$SIGSEGV]  (Andrew is cringe lol ecksdee sussy baka)
 	TextPrintTime 0 			[$SIGSEGV]
 	RobotLimit 23				[$SIGSEGV]
@@ -91,11 +89,11 @@ WaveSchedule
 			Class	Medic
 			Name	"The First Experiment"
 			ClassIcon	pyro_armored2
-			Skill	Easy
-			Health	3300
+			Skill	Expert
+			Health	12000
 			WeaponRestrictions	PrimaryOnly
 			Attributes	MiniBoss
-			//Attributes	UseBossHealthBar
+			Attributes	UseBossHealthBar
 			Attributes	ProjectileShield
 			Attributes	SpawnWithFullCharge
 			Tag		giant
@@ -118,7 +116,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName	"The Quick-Fix"
-				"generate rage on heal"	2
+				"generate rage on heal"	1
 				"increase buff duration"	7.9
 				"is_passive_weapon"	1
 			}
@@ -129,6 +127,7 @@ WaveSchedule
 				"airblast vulnerability multiplier"	0.2
 				"override footstep sound set"	6
 				"voice pitch scale"	0
+				"Airblast Disabled" 1
 			}
 		}
 		T_TFBot_Soda_Popper_Scout_Super
@@ -262,7 +261,7 @@ WaveSchedule
 			ItemAttributes
 			{
 				ItemName "The Brass Beast"
-				"damage bonus" 1.6
+				"damage bonus" 1.5
 			}
 			
 			CharacterAttributes
@@ -502,8 +501,8 @@ WaveSchedule
 		Where	spawnbot_alley
 		BeginAtWave	3
 		RunForThisManyWaves	1
-		InitialCooldown	50
-		CooldownTime	35
+		InitialCooldown	60
+		CooldownTime	120
 		DesiredCount	2
 		TFBot
 		{
@@ -602,6 +601,7 @@ WaveSchedule
 					Class Scout
 					Skill Hard
 					Name "Fallen Scout"
+					ClassIcon scout_bat
 					WeaponRestrictions MeleeOnly
 					BehaviorModifiers push
 				}
@@ -642,12 +642,12 @@ WaveSchedule
 		{
 			Name 1bb
 			Where	spawnbot
-			Totalcount 15
+			Totalcount 18
 			Spawncount 3
-			MaxActive 6
+			MaxActive 9
 			WaitForAllDead 1aa
-			WaitBeforeStarting	8
-			WaitBetweenSpawns	7
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	5
 			TotalCurrency 100
 			
 			TFBot
@@ -805,8 +805,8 @@ WaveSchedule
 			Spawncount 3
 			MaxActive 6
 			WaitForAllDead 2aa
-			WaitBeforeStarting	27
-			WaitBetweenSpawns	16
+			WaitBeforeStarting	20
+			WaitBetweenSpawns	15
 			TotalCurrency 300
 			
 			Squad
@@ -839,8 +839,8 @@ WaveSchedule
 			Totalcount 2
 			Spawncount 2
 			MaxActive 2
-			WaitForAllDead 2ca
-			WaitBeforeStarting	8
+			WaitForAllSpawned 2ca
+			WaitBeforeStarting	15
 			WaitBetweenSpawns	15
 			TotalCurrency 300
 			
@@ -905,10 +905,14 @@ WaveSchedule
 	{
 		Explanation [$SIGSEGV]
 		{
-			Line "{Grey}We were special."
-			Line "{White}That's what we were told."
+			Line "{White}We were special. {Grey}That's what we were told."
 			Line "{Grey}But we were torn down like the rest."
 			Line "{White}Now we're nothing but {Blue}Broken Parts."
+			Line "{white} _________________________________________"
+			Line "{Grey} WARNING: UNEXPECTED BOT VARIANTS DETECTED"
+			Line "{Grey} -{Blue} CHIEF_SOLDIER_MODIFIED_TYPE1"
+			Line "{Grey} -{red} CHIEF_SOLDIER_MODIFIED_TYPE2"
+			Line "{Grey} _________________________________________"
 		}
 		StartWaveOutput
 		{
@@ -935,7 +939,7 @@ WaveSchedule
 			}
 			Tank
 			{
-				Health	25000
+				Health	24500
 				Name	sticky_tank
 				Classicon tank_sticky_hellmet
 				Speed	75
@@ -961,29 +965,12 @@ WaveSchedule
 			MaxActive 2
 			WaitBeforeStarting	10
 			WaitBetweenSpawns	25
-			TotalCurrency 100
+			TotalCurrency 150
 			
 			TFBot
 			{
-				Template T_TFBot_Giant_Soldier_Spammer
-				Name "Fallen Giant Rapid-Fire Soldier"
-			}
-		}
-		WaveSpawn
-		{
-			Name 3aa
-			Where	spawnbot_alley
-			Totalcount 2
-			Spawncount 1
-			MaxActive 2
-			WaitBeforeStarting	10
-			WaitBetweenSpawns	25
-			TotalCurrency 100
-			
-			TFBot
-			{
-				Template T_TFBot_Giant_Soldier_Spammer
-				Name "Fallen Giant Rapid-Fire Soldier"
+				Template T_TFBot_Giant_Heavyweapons
+				Name "Fallen Giant Heavy"
 			}
 		}
 		WaveSpawn
@@ -994,8 +981,8 @@ WaveSchedule
 			Totalcount 30
 			Spawncount 5
 			MaxActive 10
-			WaitBeforeStarting	13
-			WaitBetweenSpawns	8
+			WaitBeforeStarting	11
+			WaitBetweenSpawns	7
 			TotalCurrency 50
 			
 			Squad
@@ -1004,6 +991,7 @@ WaveSchedule
 				{
 					Class Scout
 					WeaponRestrictions MeleeOnly
+					ClassIcon Scout_bat
 					Attributes AlwaysCrit
 					Name "Scrapped Scout"
 				}
@@ -1014,12 +1002,32 @@ WaveSchedule
 			Name 3ba
 			Where	spawnbot_alley
 			Where	spawnbot_left
-			Totalcount 20
+			Totalcount 12
+			Spawncount 12
+			MaxActive 12
+			WaitForAllDead 3s1
+			WaitBeforeStarting	0
+			WaitBetweenSpawns	3
+			TotalCurrency 100
+			
+			TFBot
+			{
+				Class Soldier
+				Skill Hard
+				Name "Scrapped Soldier"
+			}
+		}
+		WaveSpawn
+		{
+			Name 3cc
+			Where	spawnbot_alley
+			Where	spawnbot_left
+			Totalcount 16
 			Spawncount 4
 			MaxActive 8
-			WaitForAllDead 3aa
-			WaitBeforeStarting	5
-			WaitBetweenSpawns	5
+			WaitForAllDead 3ba
+			WaitBeforeStarting	1
+			WaitBetweenSpawns	10
 			TotalCurrency 100
 			
 			Squad
@@ -1027,15 +1035,9 @@ WaveSchedule
 				TFBot
 				{
 					Class Heavy
-					Skill Hard
+					Skill Normal
 					Name "Scrapped Heavy"
 				}
-				TFBot
-				{
-					Class Soldier
-					Skill Hard
-					Name "Scrapped Soldier"
-				}
 			}
 		}
 		WaveSpawn
@@ -1043,34 +1045,12 @@ WaveSchedule
 			Name 3cc
 			Where	spawnbot_alley
 			Where	spawnbot_left
-			Totalcount 20
+			Totalcount 12
 			Spawncount 4
-			MaxActive 8
+			MaxActive 4
 			WaitForAllDead 3ba
-			WaitBeforeStarting	5
-			WaitBetweenSpawns	12
-			TotalCurrency 100
-			
-			Squad
-			{
-				TFBot
-				{
-					Class Soldier
-					Name "Scrapped Soldier"
-				}
-			}
-		}
-		WaveSpawn
-		{
-			Name 3cc
-			Where	spawnbot_alley
-			Where	spawnbot_left
-			Totalcount 20
-			Spawncount 4
-			MaxActive 8
-			WaitForAllDead 3ba
-			WaitBeforeStarting	5
-			WaitBetweenSpawns	12
+			WaitBeforeStarting	1
+			WaitBetweenSpawns	2
 			TotalCurrency 50
 			
 			TFBot
@@ -1080,21 +1060,38 @@ WaveSchedule
 		}
 		WaveSpawn
 		{
-			Name 3cc
-			Where	spawnbot_alley
-			Where	spawnbot_left
+			Name 3cd
+			Where	spawnbot_tank
+			WaitForAllDead 3ba
 			Totalcount 2
 			Spawncount 1
-			MaxActive 1
-			WaitForAllDead 3ba
-			WaitBeforeStarting	5
-			WaitBetweenSpawnsAfterDeath	2
-			TotalCurrency 150
+			MaxActive 2
+			WaitBeforeStarting	10
+			WaitBetweenSpawns	20
+			TotalCurrency 100
 			
 			TFBot
 			{
-				Template T_TFBot_Giant_Heavyweapons_Deflector
-				Name "Fallen Giant Deflector Heavy"
+				Template T_TFBot_Giant_Soldier_Spammer
+				Name "Fallen Giant Rapid-Fire Soldier"
+			}
+		}
+		WaveSpawn
+		{
+			Name 3cd
+			Where	spawnbot_alley
+			WaitForAllDead 3ba
+			Totalcount 2
+			Spawncount 1
+			MaxActive 2
+			WaitBeforeStarting	5
+			WaitBetweenSpawns	20
+			TotalCurrency 100
+			
+			TFBot
+			{
+				Template T_TFBot_Giant_Soldier_Spammer
+				Name "Fallen Giant Rapid-Fire Soldier"
 			}
 		}
 		WaveSpawn
@@ -1104,8 +1101,9 @@ WaveSchedule
 			Totalcount 2
 			Spawncount 2
 			MaxActive 2
-			WaitForAllDead 3cc
-			WaitBeforeStarting	5
+			WaitForAllDead 3cd
+			FirstSpawnWarningSound "npc/strider/striderx_alert5.wav"
+			WaitBeforeStarting	1
 			WaitBetweenSpawns	69
 			TotalCurrency 400
 			Squad
@@ -1113,10 +1111,11 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFBot_Giant_Soldier_SlowBarrage
-					Health 7500
+					Health 9000
 					Attributes AlwaysCrit
 					Scale 1.8
 					Attributes UseBossHealthBar
+					UseCustomModel models/bots/soldier_boss/bot_soldier_boss_gibby.mdl  
 					Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
 					Item "MvM GateBot Light Soldier"
 					Item "The Gunboats"
@@ -1126,7 +1125,7 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
-						"projectile speed decreased" 0.8
+						"projectile speed decreased" 0.7
 						"faster reload rate" 0.33
 						"fire rate bonus"	.00001
 						"fire rate penalty" 2
@@ -1153,9 +1152,10 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFBot_Giant_Soldier_SlowBarrage
-					Health 8500
+					Health 9000
 					ClassIcon soldier_sergeant_crits
 					Attributes UseBossHealthBar
+					UseCustomModel models/bots/soldier_boss/bot_soldier_boss_gibby.mdl  
 					Scale 1.8
 					Item "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
 					Item "The Gunboats"
@@ -1166,7 +1166,7 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
-						"projectile speed decreased" 2
+						"projectile speed decreased" 1
 						"faster reload rate" 0.33
 						"fire rate bonus"	.00001
 						"fire rate penalty" 2
@@ -1194,11 +1194,11 @@ WaveSchedule
 			Where	spawnbot_alley
 			Where	spawnbot_left
 			Totalcount 50
-			Spawncount 5
-			MaxActive 10
+			Spawncount 4
+			MaxActive 8
 			Support 1
 			WaitForAllDead 3cc
-			WaitBeforeStarting	5
+			WaitBeforeStarting	0
 			WaitBetweenSpawns	8
 			TotalCurrency 50
 			
@@ -1208,8 +1208,8 @@ WaveSchedule
 				{
 					Class Scout
 					WeaponRestrictions MeleeOnly
+					ClassIcon scout_bat
 					Attributes AlwaysCrit
-					ClassIcon Scout
 					Name "Scrapped Scout"
 				}
 			}
@@ -1242,7 +1242,7 @@ WaveSchedule
             TotalCount 1
             SpawnCount 1
 
-			WaitBeforeStarting 3
+			WaitBeforeStarting 1
 			TotalCurrency 200
 			
             Tank
@@ -1268,7 +1268,7 @@ WaveSchedule
 			Totalcount 6
 			Spawncount 2
 			MaxActive 4
-			WaitBeforeStarting	10
+			WaitBeforeStarting	5
 			WaitBetweenSpawnsAfterDeath	2
 			TotalCurrency 150
 			
@@ -1294,7 +1294,7 @@ WaveSchedule
 			Totalcount 6
 			Spawncount 2
 			MaxActive 4
-			WaitBeforeStarting	5
+			WaitBeforeStarting	16
 			WaitBetweenSpawnsAfterDeath	2
 			TotalCurrency 150
 			
@@ -1362,9 +1362,14 @@ WaveSchedule
             TotalCount 1
             SpawnCount 1
 	
-            WaitForAllDead 4ba
-			WaitBeforeStarting 25
+            WaitForAllSpawned 4ba
+			WaitBeforeStarting 15
 			TotalCurrency 200
+			//FirstSpawnOutput
+            //{
+            //    Target smoke_relay
+            //    Action Trigger
+            //}
 			
             Tank
 			{
@@ -1390,7 +1395,7 @@ WaveSchedule
 			Spawncount 2
 			MaxActive 4
 			WaitForAllDead 4ba
-			WaitBeforeStarting	15
+			WaitBeforeStarting	5
 			WaitBetweenSpawns	18
 			TotalCurrency 150
 			
@@ -1421,7 +1426,7 @@ WaveSchedule
 			MaxActive 10
 			WaitForAllDead 4bc
 			WaitBeforeStarting	9
-			WaitBetweenSpawns	10
+			WaitBetweenSpawns	9
 			TotalCurrency 100
 			
 			Squad
@@ -1429,6 +1434,7 @@ WaveSchedule
 				TFBot
 				{
 					Class Pyro
+					Skill Easy
 					Attributes AlwaysCrit
 					Name "Scrapped Pyro"
 				}
@@ -1443,7 +1449,7 @@ WaveSchedule
 			MaxActive 6
 			Support 1
 			WaitForAllDead 4cb
-			WaitBeforeStarting	9
+			WaitBeforeStarting	0
 			WaitBetweenSpawns	10
 			TotalCurrency 0
 			
@@ -1464,8 +1470,14 @@ WaveSchedule
 		{
 			Line "{grey}You better hope {blue}they {grey}find you."
 			Line "{grey}Before {red}the others {grey}find them."
-			Line "{white}We are smarter than {blue}Them."
-			Line "{grey}That's why we didn't resist."
+			Line "{white}They can use {green}You."
+			Line "{green}You {grey}will be a great asset in their resistance."
+			Line "{Grey} __________________________________________"
+			Line "{Grey} WARNING: UNEXPECTED BOT VARIANTS DETECTED"
+			Line "{Grey} -{blue} SCOUT_GIANT_POPPER_SUPPORT_INFINITE"
+			Line "{Grey} -{red} PROTOTYPE_SIEGE_MACHINE_TYPE 1-4"
+			Line "{Grey} -{green} ENERGY_FIELD_MANIPULATOR/EXTRACTOR"
+			Line "{Grey} __________________________________________"
 		}
 		StartWaveOutput
 		{
@@ -1481,9 +1493,10 @@ WaveSchedule
 		{
 			Name 5aa
 			Where	spawnbot_alley
-			Totalcount 2
-			Spawncount 2
-			MaxActive 2
+			Totalcount 1
+			Spawncount 1
+			MaxActive 1
+			FirstSpawnWarningSound "npc/strider/striderx_alert4.wav"
 			WaitBeforeStarting	10
 			WaitBetweenSpawns	10
 			TotalCurrency 100
@@ -1496,23 +1509,23 @@ WaveSchedule
 					Template T_TFBot_Shield_Pyro_Giant
 					Name "The 1st Experiment"
 				}
-				TFBot
-				{	
-					Template T_TFBot_Giant_Medic
-					Name "Fallen Giant Medic"
-				}
 			}
 		}
 		WaveSpawn
 		{
 			Name 5ab
 			Where	spawnbot_jeep
-			Totalcount 36
+			Totalcount 32
 			Spawncount 8
 			MaxActive 16
 			WaitBeforeStarting	0
-			WaitBetweenSpawns	8
+			WaitBetweenSpawns	6
 			TotalCurrency 100
+			FirstSpawnOutput
+            {
+                Target harvester_relay
+  				Action Trigger
+			}
 			
 			Squad
 			{
@@ -1526,11 +1539,13 @@ WaveSchedule
 		{
 			Name 5S1
 			Where	spawnbot_left
-			Totalcount 12
+			WaitForAllDead 5aa
+			Totalcount 10
 			Spawncount 1
 			MaxActive 2
+			Support Limited
 			WaitBeforeStarting	5
-			WaitBetweenSpawns	14
+			WaitBetweenSpawns	22
 			TotalCurrency 100
 			
 			Squad
@@ -1548,8 +1563,8 @@ WaveSchedule
 			Totalcount 3
 			Spawncount 3
 			MaxActive 3
-			WaitForAllDead 5ab
-			WaitBeforeStarting	5
+			WaitForAllDead 5aa
+			WaitBeforeStarting	2
 			WaitBetweenSpawns	10
 			TotalCurrency 200
 			
@@ -1571,7 +1586,7 @@ WaveSchedule
 					ItemAttributes
 					{
 						ItemName "The Righteous Bison"
-						"Fire Rate Bonus" 3
+						"Fire Rate Bonus" 2.5
 						"set item tint rgb" "16738740"
 						"Reload Speed Bonus" -0.8
 						"mod projectile heat" 1
@@ -1595,7 +1610,7 @@ WaveSchedule
 		}
 		WaveSpawn
 		{
-			Name 5ba
+			Name 5bb
 			Where	spawnbot_jeep
 			Where spawnbot
 			Totalcount 20
@@ -1603,7 +1618,7 @@ WaveSchedule
 			MaxActive 8
 			WaitForAllDead 5ab
 			WaitBeforeStarting	5
-			WaitBetweenSpawns	10
+			WaitBetweenSpawns	8
 			TotalCurrency 100
 			
 			Squad
@@ -1611,6 +1626,7 @@ WaveSchedule
 				TFBot
 				{
 					Class Soldier
+					Name "Fallen Soldier"
 					Attributes AlwaysCrit
 				}
 			}
@@ -1676,7 +1692,7 @@ WaveSchedule
                     ItemAttributes
                     {
                         ItemName "Upgradeable TF_WEAPON_ROCKETLAUNCHER"
-                        "mult projectile count" 5
+                        "mult projectile count" 7
                         "reload time decreased" 0.1
                         "projectile spread angle penalty" 50
                     }
@@ -1722,6 +1738,7 @@ WaveSchedule
 				TFBot
 				{
 					Class Heavy
+					Name "Fallen Heavy"
 					Skill Normal
 				}
 			}
@@ -1745,6 +1762,7 @@ WaveSchedule
 				TFBot
 				{
 					Template T_TFBot_Demo_Burst
+					Name "Fallen Burst Fire Demo"
 					Attributes AlwaysCrit
 				}
 			}
@@ -1756,8 +1774,8 @@ WaveSchedule
 			Totalcount 3
 			Spawncount 3
 			MaxActive 3
-			WaitForAllDead 5ca
-			WaitBeforeStarting	5
+			WaitForAllSpawned 5ca
+			WaitBeforeStarting	20
 			WaitBetweenSpawns	10
 			TotalCurrency 200
 			
@@ -1767,8 +1785,27 @@ WaveSchedule
 				{
 					Template T_TFBot_Heavy_Brass_Giant
 					ClassIcon heavy_brass_nys
-					Item 	"the gunboats"
+					Item "tf_weapon_shotgun_HWG"
 					Name "The 4th Experiment"
+					
+					ItemAttributes
+					{
+						ItemName "tf_weapon_shotgun_HWG"
+						"is_passive_weapon" 1
+						"override projectile type" 2
+						"faster reload rate" 0.0001
+						"fire rate bonus" 8
+						"clip size upgrade atomic" 8.0
+						"projectile spread angle penalty" 8
+						"Projectile speed increased" 0.40
+						"mini rockets" 1
+						"mod projectile heat" 1
+						"mod projectile heat seek power" 100
+						"mod projectile heat aim error" 800
+						"mod projectile heat aim time" 30
+						"mark for death" 1
+					}
+					RocketCustomParticle eyeboss_projectile [$SIGSEGV]
 				}
 				TFBot
 				{
@@ -1787,10 +1824,15 @@ WaveSchedule
 	{
 		Explanation [$SIGSEGV]
 		{
-			Line "{Grey}When {Blue}you {Grey}escape, don't stop."
-			Line "{Grey}When {Blue}you {Grey}escape, destroy {red}them."
+			Line "{Grey}When {green}you {Grey}escape, don't stop."
+			Line "{Grey}When {green}you {Grey}escape, destroy {red}them."
 			Line "{Red}Break them apart."
 			Line "{Red}Send them all down here with the rest of us."
+			Line "{Grey} _________________________________________"
+			Line "{Grey} BORDERWORLD EXPEDITION STATUS: {blue}COMPLETED"
+			Line "{Grey} RESEARCH STATUS: {blue}SUFFICIENT"
+			Line "{Grey} {blue}PREPARE FOR EXTRACTION UPON WAVE COMPLETION"
+			Line "{Grey} _________________________________________"
 		}
 		StartWaveOutput
 		{
@@ -1812,9 +1854,14 @@ WaveSchedule
 			SpawnCount	1
 			WaitBeforeStarting	0
 			WaitBetweenSpawns 1
+			FirstSpawnOutput
+			{
+				Target	whiteout_relay
+				Action	Trigger
+			}
 			Tank
 			{
-				Health	2500
+				Health	5000
 				Name	tankboss
 				SpawnTemplate "SentryTank"
 				Speed	150
@@ -1843,7 +1890,7 @@ WaveSchedule
 			WaitBetweenSpawns 1
 			Tank
 			{
-				Health	2500
+				Health	5000
 				Name	tankbosss
 				SpawnTemplate "SentryTank2"
 				Speed	150
@@ -1872,7 +1919,7 @@ WaveSchedule
 			WaitBetweenSpawns 1
 			Tank
 			{
-				Health	2500
+				Health	5000
 				Name	tankbossus
 				SpawnTemplate "SentryTank3"
 				Speed	150
@@ -1927,7 +1974,7 @@ WaveSchedule
 			Name 6aa
 			Where	spawnbot_jeep
 			Where spawnbot_left
-			Totalcount 24
+			Totalcount 16
 			Spawncount 2
 			MaxActive 6
 			WaitForAllDead 5ba
@@ -1987,7 +2034,7 @@ WaveSchedule
 			WaitBetweenSpawns 1
 			Tank
 			{
-				Health	2500
+				Health	5000
 				Name	tankbossussy
 				SpawnTemplate "SentryTank"
 				Speed	150
@@ -2017,7 +2064,7 @@ WaveSchedule
 			WaitBetweenSpawns 1
 			Tank
 			{
-				Health	2500
+				Health	5000
 				Name	tankbossussier
 				SpawnTemplate "SentryTank2"
 				Speed	150
@@ -2047,7 +2094,7 @@ WaveSchedule
 			WaitBetweenSpawns 1
 			Tank
 			{
-				Health	2500
+				Health	5000
 				Name	tankbossussiest
 				SpawnTemplate "SentryTank3"
 				Speed	150
@@ -2074,7 +2121,7 @@ WaveSchedule
 			MaxActive 3
 			WaitForAllDead 6aa
 			WaitBeforeStarting	2
-			WaitBetweenSpawnsAfterDeath	2
+			WaitBetweenSpawnsAfterDeath	0
 			TotalCurrency 100
 			
 			Squad
@@ -2105,7 +2152,7 @@ WaveSchedule
 			MaxActive 3
 			WaitForAllDead 6aa
 			WaitBeforeStarting	2
-			WaitBetweenSpawnsAfterDeath	2
+			WaitBetweenSpawnsAfterDeath	0
 			TotalCurrency 100
 			
 			Squad
@@ -2132,7 +2179,7 @@ WaveSchedule
 			Name 6ca
 			Where	spawnbot_jeep
 			Where spawnbot_left
-			Totalcount 26
+			Totalcount 30
 			Spawncount 2	
 			MaxActive 10
 			WaitForAllDead 6aa
@@ -2184,7 +2231,7 @@ WaveSchedule
 			WaitBetweenSpawns 1
 			Tank
 			{
-				Health	4500
+				Health	9000
 				Name	tankbossultrasus
 				SpawnTemplate "SentryTank"
 				Speed	100
@@ -2215,7 +2262,7 @@ WaveSchedule
 			WaitBetweenSpawns 1
 			Tank
 			{
-				Health	4500
+				Health	9000
 				Name	tankbossultimatesus
 				SpawnTemplate "SentryTank2"
 				Speed	100
@@ -2246,7 +2293,7 @@ WaveSchedule
 			WaitBetweenSpawns 1
 			Tank
 			{
-				Health	4500
+				Health	9000
 				Name	tankbossokthisisgettingold
 				SpawnTemplate "SentryTank3"
 				Speed	100
@@ -2270,11 +2317,11 @@ WaveSchedule
 			Name 6da
 			Where	spawnbot_tank
 			Totalcount 6
-			Spawncount 3
-			MaxActive 3
+			Spawncount 2
+			MaxActive 6
 			WaitForAllDead 6ca
 			WaitBeforeStarting	5
-			WaitBetweenSpawnsAfterDeath	1
+			WaitBetweenSpawns	11
 			TotalCurrency 100
 			
 			Squad
@@ -2285,13 +2332,8 @@ WaveSchedule
 				}
 				TFBot
 				{
-					Template T_TFBot_Medic
-					Name "Fallen Uber Medic"
-				}
-				TFBot
-				{
-					Template T_TFBot_Medic
-					Name "Fallen Uber Medic"
+					Template T_TFBot_Medic_BigHeal
+					Name "Fallen Big-Heal Medic"
 				}
 			}
 		}
@@ -2304,7 +2346,7 @@ WaveSchedule
 			MaxActive 4
 			WaitForAllDead 6ca
 			WaitBeforeStarting	5
-			WaitBetweenSpawnsAfterDeath	6
+			WaitBetweenSpawns	6
 			TotalCurrency 100
 			
 			Squad
