@@ -922,6 +922,7 @@ WaveSchedule
 		Name "Bludgeoner"
 		OriginalItemName "TF_WEAPON_BAT"
 		"is_a_sword" 1
+		"dmg taken increased" 1.15
 		"fire rate bonus" 1.6
 		"damage bonus" 1.857
 		"custom kill icon" "nessieclub"
@@ -3521,6 +3522,7 @@ WaveSchedule
 			}
 			CharacterAttributes
 			{	
+				"cannot be headshot" 1
 				"wet immunity" 1
 				"dmg pierces resists absorbs" 1
 				"increased air control" 100
