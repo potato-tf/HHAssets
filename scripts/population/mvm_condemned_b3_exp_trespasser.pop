@@ -58,6 +58,7 @@ WaveSchedule
 	WaveStartCountdown 3				[$SIGSEGV]
 	StuckTimeMultiplier 3.5				[$SIGSEGV]
 	FastNPCUpdate 1 					[$SIGSEGV]
+	NoCreditsVelocity 1 				[$SIGSEGV]
 	
 	PrecacheSound "trespasser/ap_rotor4.wav" 								[$SIGSEGV]
 	PrecacheSound "trespasser/SKELT05.mp3" 									[$SIGSEGV]
@@ -5695,6 +5696,22 @@ WaveSchedule
 			}
 		}
 
+		p_rock_pusher
+        {
+            NoFixup 1
+            trigger_push
+            {
+                "alternateticksfix" "0"
+                "origin" "-1088 984 48"
+                "mins" "-112 -40 -144"
+                "maxs" "112 40 144"
+                "pushdir" "0 -75 0"
+                "spawnflags" "1"
+                "speed" "150"
+                "targetname" "rock_pusher"
+            }
+        }
+
 		p_crash
 		{
 			NoFixup 1
@@ -6344,17 +6361,40 @@ WaveSchedule
             trigger_teleport
             {
                 "targetname" "leap_tele"
-                "mins" "-134.5 -1 -217.5"
-                "maxs" "134.5 1 217.5"
-                "origin" "231 1279 148"
+                "mins" "-134.5 -0.5 -217.5"
+                "maxs" "134.5 0.5 217.5"
+                "origin" "231.5 1279.5 147.5"
                 "spawnflags" "1"
                 "filtername" "filter_leaper"
                 "target" "leap_telehere"
+                "OnStartTouch" "leap_tele,Disable,,0,-1"
+                "OnStartTouch" "leap_tele,Enable,,2.5,-1"
+                "OnStartTouch" "leap_tele2,Disable,,0,-1"
+                "OnStartTouch" "leap_tele2,Enable,,2.5,-1"
             }
             info_target
             {
                 "targetname" "leap_telehere"
                 "origin" "225 1451 459"
+            }
+            trigger_teleport
+            {
+                "targetname" "leap_tele2"
+                "mins" "-134.5 -0.5 -217.5"
+                "maxs" "134.5 0.5 217.5"
+                "origin" "233.5 1288.5 147.5"
+                "spawnflags" "1"
+                "filtername" "filter_leaper"
+                "target" "leap_telehere2"
+                "OnStartTouch" "leap_tele,Disable,,0,-1"
+                "OnStartTouch" "leap_tele,Enable,,2.5,-1"
+                "OnStartTouch" "leap_tele2,Disable,,0,-1"
+                "OnStartTouch" "leap_tele2,Enable,,2.5,-1"
+            }
+            info_target
+            {
+                "targetname" "leap_telehere2"
+                "origin" "225 1184 459"
             }
         }
 
@@ -6837,9 +6877,6 @@ WaveSchedule
 				"origin" "-1611.31 4748.55 169.35"
 				"targetname" "relay4"
 				"OnTrigger" "barricade_level3,Kill,,0.25,-1"
-				"OnTrigger" "cashsave_barricade1,Kill,,0.25,-1"
-				"OnTrigger" "cashsave_barricade2,Kill,,0.25,-1"
-				"OnTrigger" "cashsave_barricade3,Kill,,0.25,-1"
 			}
 		}
 
@@ -8431,71 +8468,6 @@ WaveSchedule
 			}
 		}
 
-		p_cashsave
-		{
-			NoFixUp 1
-			trigger_hurt
-			{
-            "origin" "0 0 0"
-            "mins" "-200 -200 -200"
-            "maxs" "200 200 200"
-            "nodmgforce" "1"
-            "damagetype" "0"
-            "damagemodel" "0"
-            "damagecap" "0"
-            "damage" "0"
-            "StartDisabled" "0"
-            "spawnflags" "0"
-			}
-		}
-
-		p_cashsave_barricade
-        {
-            NoFixUp 1
-            trigger_hurt
-            {
-                "targetname" "cashsave_barricade1"
-                "origin" "-700 1152 228"
-                "mins" "-8 -112 -34.5"
-                "maxs" "8 112 34.5"
-                "nodmgforce" "1"
-                "damagetype" "0"
-                "damagemodel" "0"
-                "damagecap" "0"
-                "damage" "0"
-                "StartDisabled" "0"
-                "spawnflags" "0"
-            }
-            trigger_hurt
-            {
-                "targetname" "cashsave_barricade2"
-                "origin" "-545 1596 227"
-                "mins" "-112.5 -8 -34.5"
-                "maxs" "112.5 8 34.5"
-                "nodmgforce" "1"
-                "damagetype" "0"
-                "damagemodel" "0"
-                "damagecap" "0"
-                "damage" "0"
-                "StartDisabled" "0"
-                "spawnflags" "0"
-            }
-            trigger_hurt
-            {
-                "targetname" "cashsave_barricade3"
-                "origin" "544 1596 227"
-                "mins" "-112.5 -8 -34.5"
-                "maxs" "112.5 8 34.5"
-                "nodmgforce" "1"
-                "damagetype" "0"
-                "damagemodel" "0"
-                "damagecap" "0"
-                "damage" "0"
-                "StartDisabled" "0"
-                "spawnflags" "0"
-            }
-        }
-
 		p_shutter_pusher
         {
             trigger_push
@@ -8523,23 +8495,6 @@ WaveSchedule
                 "spawnflags" "1"
                 "speed" "400"
                 "targetname" "shutter_pusher"
-            }
-        }
-
-		p_brokestairs_pusher
-        {
-            trigger_push
-            {
-                "alternateticksfix" "0"
-                "filtername" "filter_virophage"
-                "origin" "286 1241 0"
-                "mins" "-69 -39.5 -85"
-                "maxs" "69 39.5 85"
-                "pushdir" "0 -90 0"
-                "spawnflags" "1"
-                "speed" "200"
-                "StartDisabled" "0"
-                "targetname" "pusher"
             }
         }
 
@@ -9625,6 +9580,8 @@ WaveSchedule
 
 	SpawnTemplate "p_shakelong" [$SIGSEGV]
 
+	SpawnTemplate "p_rock_pusher" [$SIGSEGV]
+
 	SpawnTemplate [$SIGSEGV]
 	{
 		Name   "p_voice"
@@ -10110,11 +10067,6 @@ WaveSchedule
 
 	SpawnTemplate [$SIGSEGV]
 	{
-		Name   "p_brokestairs_pusher"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
 		Name   "p_brokenwall_pusher"
 	}
 
@@ -10229,20 +10181,6 @@ WaveSchedule
 
 	SpawnTemplate [$SIGSEGV]
 	{
-		Name   "p_cashsave"
-		Origin "647 375 189"
-		Angles "0 180 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
-		Origin "660 375 189"
-		Angles "0 180 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
 		Name   "r_cade_relay_last"
 		Origin "720 1280 192"
 		Angles "0 0 0"
@@ -10348,18 +10286,6 @@ WaveSchedule
 
 	SpawnTemplate [$SIGSEGV]
 	{
-		Name   "p_cashsave_barricade"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
-		Origin "-184 1000 -65"
-		Angles "0 0 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
 		Name   "p_crate"
 		Origin "-164 1007 -17"
 		Angles "0 90 0"
@@ -10388,20 +10314,6 @@ WaveSchedule
 
 	SpawnTemplate [$SIGSEGV]
 	{
-		Name   "p_cashsave"
-		Origin "-223 1600 220"
-		Angles "0 90 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
-		Origin "-287 1600 220"
-		Angles "0 90 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
 		Name   "p_plank"
 		Origin "-300 1575 205"
 		Angles "45 90 90"
@@ -10419,46 +10331,11 @@ WaveSchedule
 		Name   "p_plank"
 		Origin "-350 1575 205"
 		Angles "45 90 90"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
-		Origin "-300 1575 205"
-		Angles "45 90 90"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
-		Origin "-250 1575 205"
-		Angles "45 90 90"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
-		Origin "-350 1575 205"
-		Angles "45 90 90"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
-		Origin "-184 1000 -65"
-		Angles "0 0 0"
 	}
 
 	SpawnTemplate [$SIGSEGV]
 	{
 		Name   "p_table"
-		Origin "462 854 -65"
-		Angles "0 90 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
 		Origin "462 854 -65"
 		Angles "0 90 0"
 	}
@@ -10533,13 +10410,6 @@ WaveSchedule
 
 	SpawnTemplate [$SIGSEGV]
 	{
-		Name   "p_cashsave"
-		Origin "720 1296 192"
-		Angles "0 0 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
 		Name   "p_shopengi"
 		Origin "945 1616 192"
 		Angles "0 -90 0"
@@ -10582,13 +10452,6 @@ WaveSchedule
 
 	SpawnTemplate [$SIGSEGV]
 	{
-		Name   "p_cashsave"
-		Origin "936 1603 198"
-		Angles "0 180 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
 		Name   "p_cargoshop2"
 		Origin "936 1603 335"
 		Angles "0 180 0"
@@ -10604,13 +10467,6 @@ WaveSchedule
 	SpawnTemplate [$SIGSEGV]
 	{
 		Name   "p_desk"
-		Origin "0 488 192"
-		Angles "0 0 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
 		Origin "0 488 192"
 		Angles "0 0 0"
 	}
@@ -10732,13 +10588,6 @@ WaveSchedule
 		Name   "p_box"
 		Origin "-630 550 192"
 		Angles "0 -25 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
-		Origin "-630 550 192"
-		Angles "0 0 0"
 	}
 
 	SpawnTemplate [$SIGSEGV]
@@ -10953,21 +10802,7 @@ WaveSchedule
 
 	SpawnTemplate [$SIGSEGV]
 	{
-		Name   "p_cashsave"
-		Origin "555 792 -65"
-		Angles "0 -90 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
 		Name   "p_bookcase"
-		Origin "447 265 -65"
-		Angles "0 90 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
 		Origin "447 265 -65"
 		Angles "0 90 0"
 	}
@@ -10981,21 +10816,7 @@ WaveSchedule
 
 	SpawnTemplate [$SIGSEGV]
 	{
-		Name   "p_cashsave"
-		Origin "-696 895 192"
-		Angles "0 0 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
 		Name   "p_bookcase"
-		Origin "696 620 192"
-		Angles "0 180 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
 		Origin "696 620 192"
 		Angles "0 180 0"
 	}
@@ -11023,13 +10844,6 @@ WaveSchedule
 
 	SpawnTemplate [$SIGSEGV]
 	{
-		Name   "p_cashsave"
-		Origin "-655 1225 -65"
-		Angles "0 90 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
 		Name   "p_crate"
 		Origin "-597 1245 -65"
 		Angles "0 180 0"
@@ -11039,20 +10853,6 @@ WaveSchedule
 	{
 		Name   "p_crate"
 		Origin "-660 1146 -65"
-		Angles "0 90 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
-		Origin "-660 1146 -65"
-		Angles "0 90 0"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
-		Origin "600 303 -65"
 		Angles "0 90 0"
 	}
 
@@ -11074,20 +10874,6 @@ WaveSchedule
 		Name   "p_crate"
 		Origin "275 2350 100"
 		Angles "5 90 -5"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
-		Origin "275 2350 100"
-		Angles "5 90 -5"
-	}
-
-	SpawnTemplate [$SIGSEGV]
-	{
-		Name   "p_cashsave"
-		Origin "-597 1245 -65"
-		Angles "0 180 0"
 	}
 
 	SpawnTemplate [$SIGSEGV]
