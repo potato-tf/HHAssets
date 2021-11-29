@@ -5387,7 +5387,6 @@ WaveSchedule
 
 	PointTemplates [$SIGSEGV]
     {
-
 		overlay_stuff
         {
             OnSpawnOutput
@@ -5707,7 +5706,7 @@ WaveSchedule
                 "maxs" "112 40 144"
                 "pushdir" "0 -75 0"
                 "spawnflags" "1"
-                "speed" "150"
+                "speed" "180"
                 "targetname" "rock_pusher"
             }
         }
@@ -7705,6 +7704,53 @@ WaveSchedule
             }
 		}
 
+		p_brokenstairs_clip
+		{
+			NoFixup 1
+			func_wall
+            {
+                "origin" "188 1248 5"
+                "mins" "-36 -32 -77"
+                "maxs" "36 32 77"
+            }
+			func_wall
+            {
+                "origin" "256 1248 23"
+                "mins" "-32 -32 -95"
+                "maxs" "32 32 95"
+            }
+			func_wall
+            {
+                "origin" "326 1248 39"
+                "mins" "-38 -32 -111"
+                "maxs" "38 32 111"
+            }
+			func_wall
+            {
+                "origin" "365 1248 52"
+                "mins" "-19 -32 -124"
+                "maxs" "19 32 124"
+            }
+			func_wall
+            {
+                "origin" "388 1256 48"
+                "mins" "-4 -24 -112"
+                "maxs" "4 24 112"
+            }
+			func_wall
+            {
+                "origin" "396 1264 48"
+                "mins" "-4 -16 -112"
+                "maxs" "4 16 112"
+            }
+			func_wall
+            {
+                "origin" "404 1272 48"
+                "mins" "-4 -8 -112"
+                "maxs" "4 8 112"
+            }
+		}
+		
 		p_crate
 		{
 			NoFixup 1
@@ -8741,6 +8787,7 @@ WaveSchedule
 				"ontrigger" "gameover2,playsound,,0,-1"
 				"ontrigger" "sign0,show,,2.5,-1"
 				"ontrigger" "virospook,playsound,,2.5,-1"
+				"ontrigger" "player,$AddPlayerAttribute,mult dmg vs tanks|3,0,-1"
 				"ontrigger" "obj_dispenser,removehealth,9999,2.5,-1"
 				"ontrigger" "obj_sentrygun,removehealth,9999,2.5,-1"
 				"ontrigger" "obj_teleporter,removehealth,9999,2.5,-1"
@@ -8756,6 +8803,7 @@ WaveSchedule
 				"ontrigger" "gameover2,stopsound,,0,-1"
 				"ontrigger" "sign0,hide,,0,-1"
 				"ontrigger" "virospook,stopsound,,0,-1"
+				"ontrigger" "player,$AddPlayerAttribute,mult dmg vs tanks|1,0,-1"
 			}
 		}
 
@@ -10163,6 +10211,11 @@ WaveSchedule
 	SpawnTemplate [$SIGSEGV]
 	{
 		Name "p_beer"
+	}
+
+	SpawnTemplate [$SIGSEGV]
+	{
+		Name "p_brokenstairs_clip"
 	}
 
 	SpawnTemplate [$SIGSEGV]
