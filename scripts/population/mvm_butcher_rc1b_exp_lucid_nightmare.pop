@@ -1431,6 +1431,7 @@ WaveSchedule_NamesArePointlessEksDee
 			Name 3bc
 			Where spawnbot_left
 			Where spawnbot_right
+			Support Limited
 			Totalcount 12
 			MaxActive 6
 			SpawnCount 3
