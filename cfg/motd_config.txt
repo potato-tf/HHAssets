@@ -1,0 +1,8 @@
+Welcome to Potato's MvM Hexadecimal Horrors Server
+Play unique custom halloween themed missions available for the duration of the event
+
+Available commands: !help, !servers, !progress, !speedruns
+
+Type !speedruns to view speedruns for the mission
+
+Good luck and have fun!
