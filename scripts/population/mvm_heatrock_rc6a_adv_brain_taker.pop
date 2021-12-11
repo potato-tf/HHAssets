@@ -58,7 +58,34 @@ population
         logic
         {
             NoFixup 1
-            filter_damage_type
+            math_counter 
+			{
+			"targetname" "health_to_add"
+
+			"startvalue" "0"
+
+			"OutValue" "health_updater,SetValueNoFire,0,0,-1"
+			"OutValue" "!activator,$GetKey$health,health_updater|Add|0,0,-1"
+			"OutValue" "health_updater,Add,,0,-1"
+			}
+
+			math_counter 
+			{
+			"targetname" "health_updater"
+
+			"startvalue" "0"
+
+			"OutValue" "!activator,$SetKey$health,,0,-1"
+			"OutValue" "health_updater,SetValueNoFire,0,0,-1"
+			}
+
+			logic_relay 
+			{
+			"targetname" "AddHealth"
+
+			"$OnUser5" "health_to_add,SetValue,,0,-1"
+			}
+			filter_damage_type
             {
                 "damagetype" "262144"
                 "Negated" "0"
@@ -282,7 +309,7 @@ population
                 "require_all_tags" "1"
                 "tags" "bot_giant"
                 "targetname" "filter_giant"
-                "onpass" "!activator,$TakeDamage,-2500,0,-1"
+                "onpass" "AddHealth,$FireUser5,2500,0,-1"
             }
             filter_tf_bot_has_tag
             {
@@ -290,7 +317,7 @@ population
                 "require_all_tags" "0"
                 "tags" "bot_giant robotboss"
                 "targetname" "filter_common"
-                "onpass" "!activator,$TakeDamage,-600,0,-1"
+                "onpass" "AddHealth,$FireUser5,600,0,-1"
             }
             logic_auto
             {
