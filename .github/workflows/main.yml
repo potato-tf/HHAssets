@@ -36,6 +36,7 @@ jobs:
           rsync -a -e "ssh -p ${a[0]}" --delete --update --exclude=".*" . ${a[1]}${a[2]}var/tf2server/tf/hh/
           } &
           done
+          wait
           
   webdownload:
     runs-on: [gameserverusa]
