@@ -33,7 +33,7 @@ jobs:
           for i in  "22 pterodactyl@us.potato.tf :/" "22 pterodactyl@eu.potato.tf :/" "22 pterodactyl@eu2.potato.tf :/"; do a=( $i );
           {
           ssh -p ${a[0]} ${a[1]} "mkdir -p /var/tf2server/tf/hh/"
-          rsync -a -e "ssh -p ${a[0]}" --delete --update --exclude=".*" . ${a[1]}${a[2]}var/tf2server/tf/hh/
+          rsync -a -e "ssh -p ${a[0]}" --delete --update --exclude=".*" --exclude="*.bz2" . ${a[1]}${a[2]}var/tf2server/tf/hh/
           } &
           done
           wait
