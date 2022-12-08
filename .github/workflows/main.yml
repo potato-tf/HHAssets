@@ -27,6 +27,19 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
+      - name: Create asset pack
+        run: |
+          mkdir tf
+          mv !(tf) tf
+          mv '.github/HOW TO INSTALL!.gif' .
+          zip -r archive-assets.zip * -x '.*' -x '*.bz2'
+          zip archive-assets.zip 'HOW TO INSTALL!.gif'
+          zip -r archive-assets-no-maps.zip * -x '.*' -x '*.bz2' -x '*.zip' -x 'maps/*'
+          zip archive-assets-no-maps.zip 'HOW TO INSTALL!.gif'
+          rm 'HOW TO INSTALL!.gif'
+          mv tf/* .
+          rm -r tf
+          
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
